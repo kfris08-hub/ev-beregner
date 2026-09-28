@@ -4,35 +4,43 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<title>EV Beregner – Beregn pris, rækkevidde, opladning og økonomi på elbil</title>
+<title>EV Beregner – Elbil beregner, pris, rækkevidde og økonomi</title>
 
-<meta name="description" content="Gratis EV beregner på dansk. Find elbiler efter pris og rækkevidde og beregn opladning, strømforbrug, pris pr. km, værditab, 5 års økonomi og besparelse.">
+<meta name="description"
+      content="Gratis dansk EV beregner. Find elbiler efter pris og rækkevidde og beregn opladning, strømforbrug, pris pr. km, værditab, elbil vs. benzin og diesel samt bilens samlede økonomi.">
 
-<meta name="robots" content="index, follow">
+<meta name="keywords"
+      content="elbil beregner, EV beregner, elbil pris, elbil økonomi, elbil rækkevidde, elbil opladning, pris pr km elbil, værditab elbil, elbil vs benzin, elbil vs diesel, elbil Danmark">
 
-<link rel="canonical" href="https://kfris08-hub.github.io/ev-beregner/">
+<meta name="robots"
+      content="index, follow">
 
-<meta name="author" content="EV Beregner">
+<meta name="author"
+      content="EV Beregner">
 
-<meta name="theme-color" content="#070c17">
+<link rel="canonical"
+      href="https://kfris08-hub.github.io/ev-beregner/">
 
-<!-- Open Graph -->
+<meta property="og:type"
+      content="website">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="EV Beregner – Beregn hvad din elbil egentlig koster">
-<meta property="og:description" content="Gratis dansk elbilberegner med pris, rækkevidde, opladning, strømforbrug, værditab og 5 års økonomi.">
-<meta property="og:url" content="https://kfris08-hub.github.io/ev-beregner/">
-<meta property="og:site_name" content="EV Beregner">
+<meta property="og:title"
+      content="EV Beregner – Beregn hvad din elbil egentlig koster">
 
-<!-- Twitter -->
+<meta property="og:description"
+      content="Find elbiler efter pris og rækkevidde og beregn opladning, strømforbrug, værditab og økonomi. Gratis og uden login.">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EV Beregner">
-<meta name="twitter:description" content="Beregn økonomien i din elbil – gratis og uden login.">
+<meta property="og:url"
+      content="https://kfris08-hub.github.io/ev-beregner/">
 
-<!-- Structured Data -->
+<meta name="theme-color"
+      content="#070c17">
+
+
+<!-- STRUCTURED DATA -->
 
 <script type="application/ld+json">
 {
@@ -40,17 +48,17 @@
   "@type":"WebApplication",
   "name":"EV Beregner",
   "url":"https://kfris08-hub.github.io/ev-beregner/",
-  "description":"Gratis dansk beregner til elbiler med beregning af opladning, strømforbrug, pris pr. kilometer, rækkevidde, værditab og biløkonomi.",
+  "description":"Gratis dansk beregner til elbiler, opladning, rækkevidde, strømforbrug, værditab og økonomi.",
   "applicationCategory":"FinanceApplication",
   "operatingSystem":"Web",
   "offers":{
     "@type":"Offer",
     "price":"0",
     "priceCurrency":"DKK"
-  },
-  "inLanguage":"da-DK"
+  }
 }
 </script>
+
 
 <style>
 
@@ -67,7 +75,6 @@ body{
     background:#070c17;
     color:#fff;
     font-family:Arial,Helvetica,sans-serif;
-    line-height:1.5;
 }
 
 button,
@@ -83,10 +90,13 @@ button{
 .page{
     max-width:850px;
     margin:auto;
-    padding-bottom:70px;
+    padding-bottom:80px;
 }
 
-/* HEADER */
+
+/* ==========================================================
+HEADER
+========================================================== */
 
 .header{
     padding:24px 20px 12px;
@@ -108,31 +118,28 @@ button{
     margin-top:5px;
 }
 
-/* ADVERTISEMENT */
 
-.ad-container{
-    width:100%;
-    min-height:90px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:4px 0 10px;
-    overflow:hidden;
-}
-
-.ad-container iframe{
-    max-width:100%;
-}
-
-/* HERO */
+/* ==========================================================
+HERO
+========================================================== */
 
 .hero{
     margin:5px 15px 15px;
     padding:38px 24px;
     border-radius:0 0 30px 30px;
+
     background:
-        radial-gradient(circle at 90% 20%,#0b6861 0,#10263a 28%,transparent 55%),
-        linear-gradient(140deg,#16233d,#0c1425);
+        radial-gradient(
+            circle at 90% 20%,
+            #0b6861 0,
+            #10263a 28%,
+            transparent 55%
+        ),
+        linear-gradient(
+            140deg,
+            #16233d,
+            #0c1425
+        );
 }
 
 .hero h1{
@@ -153,38 +160,25 @@ button{
     margin:18px 0 0;
 }
 
-/* SEO TEXT */
 
-.seo-intro{
-    margin:0 16px 18px;
-    padding:18px;
-    background:#0d1626;
-    border:1px solid #29374c;
-    border-radius:15px;
-}
-
-.seo-intro h2{
-    margin:0 0 8px;
-    font-size:19px;
-}
-
-.seo-intro p{
-    margin:7px 0;
-    color:#8794a7;
-    font-size:12px;
-    line-height:1.65;
-}
-
-/* DISCLAIMER */
+/* ==========================================================
+DISCLAIMER
+========================================================== */
 
 .disclaimer{
     margin:0 16px 17px;
-    padding:12px 14px;
+    padding:13px 14px;
+
     border:1px solid #29374c;
+
     background:#0e1625;
+
     border-radius:12px;
+
     color:#778599;
+
     font-size:10px;
+
     line-height:1.55;
 }
 
@@ -192,7 +186,10 @@ button{
     color:#aeb9c8;
 }
 
-/* MODE */
+
+/* ==========================================================
+MODE
+========================================================== */
 
 .mode{
     padding:0 16px;
@@ -215,21 +212,38 @@ button{
 
 .mode-button{
     padding:15px 8px;
+
     border-radius:13px;
+
     border:1px solid #30405a;
+
     background:#111a2b;
+
     color:#fff;
+
     cursor:pointer;
+
     font-weight:bold;
+
+    transition:.15s;
+}
+
+.mode-button:hover{
+    border-color:#10ddb2;
 }
 
 .mode-button.active{
     background:#093735;
+
     border-color:#10ddb2;
+
     color:#10ddb2;
 }
 
-/* CAR SEARCH */
+
+/* ==========================================================
+CAR SEARCH
+========================================================== */
 
 .car-section{
     padding:20px 16px 0;
@@ -237,11 +251,17 @@ button{
 
 .search{
     width:100%;
+
     padding:16px;
+
     border-radius:13px;
+
     border:1px solid #344159;
+
     background:#111a2b;
+
     color:#fff;
+
     outline:none;
 }
 
@@ -251,58 +271,145 @@ button{
 
 .filters{
     margin-top:10px;
+
     padding:12px;
+
     background:#0e1727;
+
     border:1px solid #29374d;
+
     border-radius:16px;
 }
 
 .filter-grid{
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:9px;
 }
 
 .field label{
     display:block;
+
     font-size:10px;
+
     color:#78869a;
+
     margin-bottom:5px;
+
     text-transform:uppercase;
 }
 
 .field input,
 .field select{
     width:100%;
+
     padding:11px;
+
     background:#111a2b;
+
     border:1px solid #344159;
+
     border-radius:9px;
+
     color:#fff;
+
     outline:none;
+}
+
+.field input:focus,
+.field select:focus{
+    border-color:#10ddb2;
 }
 
 .filter-buttons{
     display:flex;
+
     gap:8px;
+
     margin-top:9px;
 }
 
 .filter-button{
     flex:1;
+
     padding:11px;
+
     border-radius:9px;
+
     border:1px solid #35425a;
+
     background:#172238;
+
     color:#fff;
+
     cursor:pointer;
+
     font-weight:bold;
 }
 
 .filter-button.primary{
     border-color:#10ddb2;
+
     color:#10ddb2;
 }
+
+
+/* ==========================================================
+SORTERING
+========================================================== */
+
+.sort-box{
+    margin-top:10px;
+
+    padding:12px;
+
+    background:#101a2b;
+
+    border:1px solid #29374d;
+
+    border-radius:12px;
+}
+
+.sort-box label{
+    display:block;
+
+    color:#78869a;
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:6px;
+}
+
+.sort-box select{
+    width:100%;
+
+    padding:12px;
+
+    background:#111a2b;
+
+    color:#fff;
+
+    border:1px solid #344159;
+
+    border-radius:9px;
+
+    outline:none;
+}
+
+.sort-box select:focus{
+    border-color:#10ddb2;
+}
+
+
+/* ==========================================================
+RESULTS
+========================================================== */
 
 .results{
     margin-top:12px;
@@ -310,96 +417,141 @@ button{
 
 .results-info{
     color:#718096;
+
     font-size:11px;
+
     margin:8px 3px;
 }
 
 .car-list{
     display:grid;
+
     gap:8px;
 }
 
 .car-card{
     padding:15px;
+
     border-radius:16px;
+
     border:1px solid #2a374c;
+
     background:#111a2b;
+
     cursor:pointer;
+
     transition:.15s;
 }
 
 .car-card:hover{
     border-color:#10ddb2;
+
     transform:translateY(-1px);
 }
 
 .car-top{
     display:flex;
+
     justify-content:space-between;
+
     gap:10px;
 }
 
 .car-name{
     font-size:17px;
+
     font-weight:900;
 }
 
 .car-price{
     color:#10ddb2;
+
     font-weight:bold;
+
     white-space:nowrap;
 }
 
 .pills{
     display:flex;
+
     flex-wrap:wrap;
+
     gap:6px;
+
     margin-top:9px;
 }
 
 .pill{
     background:#1a2639;
+
     border-radius:20px;
+
     padding:6px 8px;
+
     color:#9ba7b8;
+
     font-size:10px;
 }
 
 .car-source{
     color:#657287;
+
     font-size:9px;
+
     margin-top:9px;
+
     line-height:1.4;
 }
 
 .no-results{
     display:none;
+
     padding:25px;
+
     text-align:center;
+
     color:#718096;
 }
 
-/* SELECTED CAR */
+
+/* ==========================================================
+SELECTED CAR
+========================================================== */
 
 .selected-car{
     display:none;
+
     margin-top:12px;
+
     padding:18px;
+
     border-radius:20px;
+
     border:1px solid #236158;
-    background:linear-gradient(140deg,#092f32,#111a2b);
+
+    background:
+        linear-gradient(
+            140deg,
+            #092f32,
+            #111a2b
+        );
 }
 
 .selected-label{
     color:#10ddb2;
+
     font-size:10px;
+
     font-weight:bold;
+
     letter-spacing:2px;
 }
 
 .selected-name{
     font-size:28px;
+
     font-weight:1000;
+
     margin-top:4px;
 }
 
@@ -409,62 +561,92 @@ button{
 
 .selected-grid{
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
     gap:7px;
+
     margin-top:14px;
 }
 
 .selected-stat{
     background:#081522;
+
     padding:9px 4px;
+
     border-radius:9px;
+
     text-align:center;
+
     color:#718096;
+
     font-size:9px;
 }
 
 .selected-stat strong{
     display:block;
+
     color:#fff;
+
     font-size:13px;
+
     margin-bottom:3px;
 }
 
 .selected-source{
     border-top:1px solid #21433f;
+
     margin-top:12px;
+
     padding-top:10px;
+
     color:#718096;
+
     font-size:9px;
+
     line-height:1.5;
 }
 
 .remove-car{
     margin-top:10px;
+
     padding:9px 12px;
+
     background:transparent;
+
     color:#9ba7b8;
+
     border:1px solid #3b485d;
+
     border-radius:8px;
+
     cursor:pointer;
 }
 
-/* GENERAL */
+
+/* ==========================================================
+GENERAL
+========================================================== */
 
 .general{
     display:none;
+
     padding:20px 16px 0;
 }
 
 .general-box{
     background:#111a2b;
+
     border:1px solid #303e54;
+
     border-radius:18px;
+
     padding:20px;
 }
 
 .general-box h2{
     margin:0;
+
     font-size:21px;
 }
 
@@ -474,40 +656,61 @@ button{
 
 .general-box p{
     color:#8591a4;
+
     line-height:1.5;
+
     font-size:13px;
 }
 
-/* SELECTED INFO */
+
+/* ==========================================================
+SELECTED INFO
+========================================================== */
 
 .my-car{
     display:none;
+
     margin:20px 16px 0;
+
     padding:15px;
+
     border-radius:15px;
+
     background:#0d2729;
+
     border:1px solid #20534d;
 }
 
 .my-car-label{
     color:#10ddb2;
+
     font-size:10px;
+
     letter-spacing:2px;
 }
 
 .my-car-name{
     font-size:20px;
+
     font-weight:bold;
+
     margin-top:4px;
 }
 
-/* CALCULATOR CARDS */
+
+/* ==========================================================
+CALCULATOR CARDS
+========================================================== */
 
 .section-title{
     margin:26px 20px 11px;
+
     color:#778599;
+
     font-size:11px;
+
     font-weight:bold;
+
     letter-spacing:2px;
 }
 
@@ -517,117 +720,129 @@ button{
 
 .calc-card{
     position:relative;
+
     display:flex;
+
     align-items:center;
+
     min-height:105px;
+
     margin-bottom:10px;
+
     padding:18px;
+
     border-radius:24px;
+
     background:#151f32;
+
     border:1px solid #2c394f;
+
     cursor:pointer;
+
     overflow:hidden;
+
     transition:.15s;
 }
 
 .calc-card:hover{
     border-color:#10ddb2;
+
     transform:translateY(-2px);
 }
 
 .number{
     width:43px;
+
     color:#10ddb2;
+
     font-size:14px;
+
     font-weight:bold;
+
     flex-shrink:0;
 }
 
 .card-title{
     font-size:21px;
+
     font-weight:1000;
 }
 
 .card-desc{
     color:#7f8b9d;
+
     font-size:12px;
+
     margin-top:5px;
 }
 
 .arrow{
     position:absolute;
+
     right:19px;
+
     color:#10ddb2;
+
     font-size:34px;
 }
 
-/* FAQ */
 
-.faq{
-    margin:35px 16px 0;
-}
-
-.faq h2{
-    font-size:21px;
-    margin-bottom:15px;
-}
-
-.faq-item{
-    background:#111a2b;
-    border:1px solid #29374c;
-    border-radius:12px;
-    margin-bottom:8px;
-    overflow:hidden;
-}
-
-.faq-item summary{
-    cursor:pointer;
-    padding:14px;
-    font-weight:bold;
-    font-size:13px;
-}
-
-.faq-answer{
-    padding:0 14px 15px;
-    color:#8794a7;
-    font-size:12px;
-    line-height:1.6;
-}
-
-/* FOOTER */
+/* ==========================================================
+FOOTER
+========================================================== */
 
 .footer{
     margin:35px 16px 0;
+
     padding:20px 4px;
+
     border-top:1px solid #202d41;
+
     color:#68768a;
+
     font-size:10px;
+
     line-height:1.6;
 }
 
-/* CALCULATOR */
+
+/* ==========================================================
+CALCULATOR SCREEN
+========================================================== */
 
 #calculator{
     display:none;
+
     position:fixed;
+
     inset:0;
+
     z-index:100;
+
     overflow-y:auto;
+
     background:#070c17;
 }
 
 .calc-header{
     height:64px;
+
     display:flex;
+
     align-items:center;
+
     gap:14px;
+
     padding:0 18px;
+
     border-bottom:1px solid #202c40;
 }
 
 .back{
     color:#10ddb2;
+
     font-size:34px;
+
     cursor:pointer;
 }
 
@@ -637,13 +852,17 @@ button{
 
 .calc-content{
     max-width:620px;
+
     margin:auto;
+
     padding:25px 18px 70px;
 }
 
 .calc-title{
     font-size:37px;
+
     line-height:.98;
+
     font-weight:1000;
 }
 
@@ -653,44 +872,63 @@ button{
 
 .calc-description{
     color:#8b97a9;
+
     line-height:1.5;
+
     margin:9px 0 13px;
 }
 
 .data-badge{
     display:inline-block;
+
     padding:7px 10px;
+
     border-radius:20px;
+
     background:#19253a;
+
     color:#a0adbd;
+
     font-size:10px;
+
     margin-bottom:18px;
 }
 
 .data-badge.car{
     color:#10ddb2;
+
     background:#0b3634;
 }
 
 .calc-fields{
     display:grid;
+
     gap:13px;
 }
 
 .calc-field label{
     display:block;
+
     color:#8e9bad;
+
     font-size:12px;
+
     margin-bottom:6px;
 }
 
 .calc-field input{
     width:100%;
+
     padding:15px;
+
     border-radius:11px;
+
     border:1px solid #344159;
+
     background:#111a2b;
+
     color:#fff;
+
     outline:none;
 }
 
@@ -700,65 +938,115 @@ button{
 
 .auto-info{
     margin-top:7px;
+
     color:#637186;
+
     font-size:9px;
 }
 
 .calculate{
     width:100%;
+
     padding:16px;
+
     margin-top:18px;
+
     border:0;
+
     border-radius:11px;
+
     background:#10ddb2;
+
     color:#04151a;
+
     font-weight:900;
+
     cursor:pointer;
 }
 
 .answer{
     display:none;
+
     margin-top:18px;
+
     padding:20px;
+
     border-radius:17px;
+
     background:#101d2d;
+
     border:1px solid #23584f;
+
     color:#aeb8c7;
+
     line-height:1.65;
 }
 
 .answer strong{
     color:#10ddb2;
+
     font-size:27px;
 }
 
 .answer-table{
     width:100%;
+
     border-collapse:collapse;
+
     margin-top:10px;
 }
 
 .answer-table td{
     padding:8px 3px;
+
     border-bottom:1px solid #273548;
 }
 
 .answer-table td:last-child{
     text-align:right;
+
     color:#10ddb2;
+
     font-weight:bold;
 }
 
 .calc-disclaimer{
     margin-top:20px;
+
     padding:13px;
+
     border-radius:11px;
+
     background:#0d1525;
+
     border:1px solid #28354a;
+
     color:#69778a;
+
     font-size:10px;
+
     line-height:1.55;
 }
+
+
+/* ==========================================================
+AD AREA
+========================================================== */
+
+.ad-space{
+    margin:18px 16px;
+
+    min-height:60px;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
 
 @media(max-width:520px){
 
@@ -778,20 +1066,46 @@ button{
         font-size:19px;
     }
 
-    .ad-container iframe{
-        width:100% !important;
+    .car-top{
+        flex-direction:column;
     }
+
+    .car-price{
+        font-size:14px;
+    }
+
+}
+
+
+/* ==========================================================
+REDUCED MOTION
+========================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    *{
+        scroll-behavior:auto !important;
+        transition:none !important;
+    }
+
 }
 
 </style>
+
 </head>
 
 
 <body>
 
+
 <div class="page">
 
-<header class="header">
+
+<!-- ======================================================
+HEADER
+====================================================== -->
+
+<div class="header">
 
     <div class="logo">
         EV <span>BEREGNER</span>
@@ -801,40 +1115,14 @@ button{
         GRATIS · ENKELT · UDEN LOGIN
     </div>
 
-</header>
-
-
-<!-- A-ADS REKLAME -->
-
-<div class="ad-container">
-
-<!-- BEGIN AADS AD UNIT 2456713 -->
-
-<div style="position:relative;width:100%;text-align:center;">
-
-    <div
-        id="frame"
-        style="width:100%;margin:auto;position:relative;z-index:1;">
-
-        <iframe
-            data-aa="2456713"
-            src="https://acceptable.a-ads.com/2456713/?size=Adaptive"
-            style="border:0;padding:0;width:70%;height:auto;overflow:hidden;margin:auto;"
-            title="Advertisement">
-        </iframe>
-
-    </div>
-
-</div>
-
-<!-- END AADS AD UNIT 2456713 -->
-
 </div>
 
 
-<main>
+<!-- ======================================================
+HERO
+====================================================== -->
 
-<section class="hero">
+<div class="hero">
 
     <h1>
         BEREGN HVAD DIN<br>
@@ -844,33 +1132,16 @@ button{
 
     <p>
         Find en elbil efter pris og rækkevidde,
-        vælg bilen og brug dens data direkte i
-        alle beregninger.
+        vælg bilen og brug dens data direkte
+        i alle beregninger.
     </p>
 
-</section>
+</div>
 
 
-<section class="seo-intro">
-
-    <h2>Elbil beregner – sammenlign elbiler og økonomi</h2>
-
-    <p>
-        Med EV Beregner kan du hurtigt beregne økonomien
-        ved at købe og køre elbil. Søg blandt forskellige
-        elbiler efter pris og rækkevidde og se blandt andet
-        batteristørrelse, forbrug og ladeeffekt.
-    </p>
-
-    <p>
-        Du kan også bruge beregnerne uden at vælge en bestemt
-        bil. Indtast selv dine oplysninger og beregn eksempelvis
-        pris pr. kilometer, opladningspris, strømforbrug,
-        rækkevidde, værditab og 5 års økonomi.
-    </p>
-
-</section>
-
+<!-- ======================================================
+DISCLAIMER
+====================================================== -->
 
 <div class="disclaimer">
 
@@ -886,124 +1157,242 @@ eller forhandler før en økonomisk beslutning.
 </div>
 
 
-<section class="mode">
+<!-- ======================================================
+AD
+====================================================== -->
+
+<div class="ad-space">
+
+<!-- BEGIN AADS AD UNIT 2456713 -->
+
+<div style="position:absolute;z-index:99999">
+
+<input
+autocomplete="off"
+type="checkbox"
+id="aadsstickymuln0k1o"
+hidden
+/>
+
+<div style="padding-top:auto;padding-bottom:0;">
+
+<div
+style="
+width:100%;
+height:auto;
+position:fixed;
+text-align:center;
+font-size:0;
+top:0;
+left:0;
+right:0;
+margin:auto;
+">
+
+<label
+for="aadsstickymuln0k1o"
+style="
+top:50%;
+transform:translateY(-50%);
+right:24px;
+position:absolute;
+border-radius:4px;
+background:rgba(248,248,249,0.70);
+padding:4px;
+z-index:99999;
+cursor:pointer;
+">
+
+<svg
+fill="#000000"
+height="16px"
+width="16px"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 490 490">
+
+<polygon
+points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337"
+/>
+
+</svg>
+
+</label>
+
+
+<div
+id="frame"
+style="
+width:100%;
+margin:auto;
+position:relative;
+z-index:99998;
+">
+
+<iframe
+data-aa="2456713"
+src="https://acceptable.a-ads.com/2456713/?size=Adaptive"
+style="
+border:0;
+padding:0;
+width:70%;
+height:auto;
+overflow:hidden;
+margin:auto;
+"
+></iframe>
+
+</div>
+
+</div>
+
+
+<style>
+
+#aadsstickymuln0k1o:checked + div{
+    display:none;
+}
+
+</style>
+
+</div>
+</div>
+
+<!-- END AADS AD UNIT 2456713 -->
+
+</div>
+
+
+<!-- ======================================================
+MODE
+====================================================== -->
+
+<div class="mode">
 
 <div class="mode-title">
-    HVORDAN VIL DU BEREGNE?
+HVORDAN VIL DU BEREGNE?
 </div>
 
 <div class="mode-buttons">
 
 <button
-    id="carModeBtn"
-    class="mode-button active"
-    onclick="setMode('car')">
+id="carModeBtn"
+class="mode-button active"
+onclick="setMode('car')">
 
-    🚗 VÆLG ELBIL
+🚗 VÆLG ELBIL
 
 </button>
+
 
 <button
-    id="generalModeBtn"
-    class="mode-button"
-    onclick="setMode('general')">
+id="generalModeBtn"
+class="mode-button"
+onclick="setMode('general')">
 
-    🧮 GENEREL BEREGNING
+🧮 GENEREL BEREGNING
 
 </button>
 
 </div>
 
-</section>
-
-
-<!-- CAR MODE -->
-
-<section id="carMode" class="car-section">
-
-<div class="section-label">
-    FIND DIN ELBIL
 </div>
 
+
+<!-- ======================================================
+CAR MODE
+====================================================== -->
+
+<div
+id="carMode"
+class="car-section">
+
+<div class="section-label">
+FIND DIN ELBIL
+</div>
+
+
 <input
-    id="search"
-    class="search"
-    placeholder="🔎 Søg fx Kia EV3, Tesla Model Y..."
-    aria-label="Søg efter elbil"
-    oninput="filterCars()"
->
+id="search"
+class="search"
+placeholder="🔎 Søg fx Kia EV3, Mercedes, ID.Buzz..."
+autocomplete="off"
+/>
 
 
 <div class="filters">
 
+
 <div class="filter-grid">
 
+
 <div class="field">
 
-<label for="maxPrice">
-    Maks. pris
+<label>
+Maks. pris
 </label>
 
 <input
-    id="maxPrice"
-    type="number"
-    placeholder="Fx 300000"
-    oninput="filterCars()"
->
+id="maxPrice"
+type="number"
+placeholder="Fx 300000"
+/>
 
 </div>
 
 
 <div class="field">
 
-<label for="minRange">
-    Min. rækkevidde
+<label>
+Min. rækkevidde
 </label>
 
 <input
-    id="minRange"
-    type="number"
-    placeholder="Fx 450"
-    oninput="filterCars()"
->
+id="minRange"
+type="number"
+placeholder="Fx 450"
+/>
 
 </div>
 
 
 <div class="field">
 
-<label for="priceQuick">
-    Pris
+<label>
+Pris
 </label>
 
-<select id="priceQuick" onchange="quickPrice()">
+<select id="priceQuick">
 
 <option value="">
-    Alle priser
+Alle priser
 </option>
 
 <option value="200000">
-    Under 200.000 kr.
+Under 200.000 kr.
 </option>
 
 <option value="250000">
-    Under 250.000 kr.
+Under 250.000 kr.
 </option>
 
 <option value="300000">
-    Under 300.000 kr.
+Under 300.000 kr.
 </option>
 
 <option value="350000">
-    Under 350.000 kr.
+Under 350.000 kr.
 </option>
 
 <option value="400000">
-    Under 400.000 kr.
+Under 400.000 kr.
 </option>
 
 <option value="500000">
-    Under 500.000 kr.
+Under 500.000 kr.
+</option>
+
+<option value="700000">
+Under 700.000 kr.
 </option>
 
 </select>
@@ -1013,39 +1402,44 @@ eller forhandler før en økonomisk beslutning.
 
 <div class="field">
 
-<label for="rangeQuick">
-    Rækkevidde
+<label>
+Rækkevidde
 </label>
 
-<select id="rangeQuick" onchange="quickRange()">
+<select id="rangeQuick">
 
 <option value="">
-    Alle
+Alle
 </option>
 
 <option value="300">
-    Min. 300 km
+Min. 300 km
 </option>
 
 <option value="400">
-    Min. 400 km
+Min. 400 km
 </option>
 
 <option value="450">
-    Min. 450 km
+Min. 450 km
 </option>
 
 <option value="500">
-    Min. 500 km
+Min. 500 km
 </option>
 
 <option value="600">
-    Min. 600 km
+Min. 600 km
+</option>
+
+<option value="700">
+Min. 700 km
 </option>
 
 </select>
 
 </div>
+
 
 </div>
 
@@ -1053,58 +1447,97 @@ eller forhandler før en økonomisk beslutning.
 <div class="filter-buttons">
 
 <button
-    class="filter-button primary"
-    onclick="filterCars()">
+class="filter-button primary"
+id="showCars">
 
-    VIS BILER
+VIS BILER
 
 </button>
+
 
 <button
-    class="filter-button"
-    onclick="resetFilters()">
+class="filter-button"
+id="resetButton">
 
-    NULSTIL
+NULSTIL
 
 </button>
 
 </div>
 
+
+<div class="sort-box">
+
+<label>
+SORTÉR RESULTATER
+</label>
+
+<select id="sortCars">
+
+<option value="default">
+Standard
+</option>
+
+<option value="priceAsc">
+Billigste først
+</option>
+
+<option value="priceDesc">
+Dyreste først
+</option>
+
+<option value="rangeAsc">
+Korteste rækkevidde først
+</option>
+
+<option value="rangeDesc">
+Længste rækkevidde først
+</option>
+
+</select>
+
+</div>
+
+
 </div>
 
 
 <div
-    id="resultsInfo"
-    class="results-info">
+id="resultsInfo"
+class="results-info">
 </div>
 
 
 <div
-    id="carList"
-    class="car-list">
+id="carList"
+class="car-list">
 </div>
 
 
 <div
-    id="noResults"
-    class="no-results">
+id="noResults"
+class="no-results">
 
-    Ingen biler matcher dine kriterier.
+Ingen biler matcher dine kriterier.
 
 </div>
 
 
 <div
-    id="selectedCar"
-    class="selected-car">
+id="selectedCar"
+class="selected-car">
 </div>
 
-</section>
+</div>
 
 
-<!-- GENERAL MODE -->
+<!-- ======================================================
+GENERAL MODE
+====================================================== -->
 
-<section id="generalMode" class="general">
+<div
+id="generalMode"
+class="general">
 
 <div class="general-box">
 
@@ -1121,185 +1554,119 @@ bildata automatisk brugt.
 
 </div>
 
-</section>
+</div>
 
 
-<div id="myCar" class="my-car">
+<!-- ======================================================
+MY CAR
+====================================================== -->
+
+<div
+id="myCar"
+class="my-car">
 
 <div class="my-car-label">
-    VALGT BIL
+VALGT BIL
 </div>
 
 <div
-    id="myCarName"
-    class="my-car-name">
+id="myCarName"
+class="my-car-name">
 </div>
 
 </div>
 
+
+<!-- ======================================================
+CALCULATORS
+====================================================== -->
 
 <div class="section-title">
-    20 ELBIL-BEREGNERE
+20 ELBIL-BEREGNERE
 </div>
-
 
 <div
-    id="calculatorCards"
-    class="cards">
+id="calculatorCards"
+class="cards">
 </div>
 
 
-<!-- FAQ -->
+<!-- ======================================================
+FOOTER
+====================================================== -->
 
-<section class="faq">
+<div class="footer">
 
-<h2>
-    Ofte stillede spørgsmål om elbilberegning
-</h2>
-
-
-<details class="faq-item">
-
-<summary>
-Hvad koster det at lade en elbil helt op?
-</summary>
-
-<div class="faq-answer">
-
-Prisen afhænger af batteriets størrelse og
-prisen pr. kWh. EV Beregner kan beregne
-en vejledende pris for en fuld opladning.
-
-</div>
-
-</details>
-
-
-<details class="faq-item">
-
-<summary>
-Hvordan beregner man prisen pr. kilometer på en elbil?
-</summary>
-
-<div class="faq-answer">
-
-Forbruget i kWh pr. 100 km ganges med elprisen
-pr. kWh og divideres med 100. Resultatet viser
-den vejledende strømpris pr. kilometer.
-
-</div>
-
-</details>
-
-
-<details class="faq-item">
-
-<summary>
-Kan jeg bruge beregneren uden at vælge en bil?
-</summary>
-
-<div class="faq-answer">
-
-Ja. Vælg "Generel beregning", hvis du selv vil
-indtaste batteristørrelse, forbrug, elpris,
-kilometer eller andre oplysninger.
-
-</div>
-
-</details>
-
-
-<details class="faq-item">
-
-<summary>
-Hvordan beregnes en elbils værditab?
-</summary>
-
-<div class="faq-answer">
-
-Værditabsberegningen bruger en generel matematisk
-model til at estimere restværdien. Den faktiske
-salgspris afhænger blandt andet af alder,
-kilometerstand, stand, udstyr, marked og model.
-
-</div>
-
-</details>
-
-
-<details class="faq-item">
-
-<summary>
-Er oplysningerne om bilerne vejledende?
-</summary>
-
-<div class="faq-answer">
-
-Ja. Priser, rækkevidde, batteristørrelse,
-forbrug og andre tekniske oplysninger kan ændres.
-Kontrollér derfor altid aktuelle oplysninger
-hos producent eller forhandler.
-
-</div>
-
-</details>
-
-</section>
-
-
-<footer class="footer">
-
-<strong>Om EV Beregner</strong><br>
-
-EV Beregner er et gratis informations- og
-beregningsværktøj til personer, der overvejer
-elbil eller ønsker at sammenligne økonomien
-mellem forskellige biler.
+<strong>
+Om EV Beregner
+</strong>
 
 <br><br>
 
-Resultaterne er vejledende og er ikke et tilbud,
-en garanti eller en bindende økonomisk beregning.
+EV Beregner er et gratis informations-
+og beregningsværktøj til elbiler.
 
 <br><br>
 
-Bilpriser og tekniske oplysninger kan ændres.
-Rækkevidde og forbrug påvirkes blandt andet af
-temperatur, hastighed, kørestil, dæk, belastning
-og andre forhold.
+<strong>
+Vejledende oplysninger
+</strong>
+
+<br>
+
+Bilpriser, tekniske specifikationer,
+rækkevidde og beregninger kan ændre sig.
+
+Rækkevidde og forbrug påvirkes blandt andet
+af temperatur, hastighed, kørestil, dæk,
+belastning og andre forhold.
 
 <br><br>
 
-Værditabsberegningen bruger en matematisk
-estimering af restværdi. Den faktiske handelspris
-kan være både højere eller lavere.
+<strong>
+Værditab
+</strong>
 
-</footer>
+<br>
 
-</main>
+Værditabsberegningen er en matematisk
+estimering af restværdi. Den faktiske
+handelspris kan være både højere eller lavere.
+
+<br><br>
+
+EV Beregner er ikke et tilbud, en garanti
+eller en bindende økonomisk beregning.
 
 </div>
 
 
-<!-- CALCULATOR SCREEN -->
+</div>
 
-<div id="calculator">
+
+<!-- ======================================================
+CALCULATOR SCREEN
+====================================================== -->
+
+<div
+id="calculator">
+
 
 <div class="calc-header">
 
 <div
-    class="back"
-    onclick="closeCalculator()">
+class="back"
+id="backButton">
 
-    ‹
+‹
 
 </div>
 
 <div
-    id="calcHeaderTitle"
-    class="calc-header-title">
+id="calcHeaderTitle"
+class="calc-header-title">
 
-    Beregner
+Beregner
 
 </div>
 
@@ -1308,52 +1675,61 @@ kan være både højere eller lavere.
 
 <div class="calc-content">
 
-<div
-    id="calcTitle"
-    class="calc-title">
-</div>
 
 <div
-    id="calcDescription"
-    class="calc-description">
+id="calcTitle"
+class="calc-title">
 </div>
 
-<div
-    id="dataBadge"
-    class="data-badge">
-</div>
 
 <div
-    id="calcFields"
-    class="calc-fields">
+id="calcDescription"
+class="calc-description">
 </div>
+
+
+<div
+id="dataBadge"
+class="data-badge">
+</div>
+
+
+<div
+id="calcFields"
+class="calc-fields">
+</div>
+
 
 <button
-    class="calculate"
-    onclick="calculate()">
+class="calculate"
+id="calculateButton">
 
-    BEREGN
+BEREGN
 
 </button>
 
 
 <div
-    id="answer"
-    class="answer">
+id="answer"
+class="answer">
 </div>
 
 
 <div class="calc-disclaimer">
 
-<strong>Vejledende resultat:</strong>
+<strong>
+Vejledende resultat:
+</strong>
 
 Beregningen er baseret på de viste oplysninger.
+
 Hvis en bil er valgt, kommer relevante oplysninger
 automatisk fra bilens registrerede data.
 
 Den faktiske økonomi kan afvige.
 
 </div>
+
 
 </div>
 
@@ -1362,128 +1738,358 @@ Den faktiske økonomi kan afvige.
 
 <script>
 
+
 /* ==========================================================
 BILDATABASE
+
+Format:
+
+0 = mærke
+1 = model
+2 = pris
+3 = batteri
+4 = WLTP
+5 = forbrug
+6 = DC ladeeffekt
+7 = kilde
+8 = status
+
+Oplysningerne er vejledende.
 ========================================================== */
 
 const cars = [
 
-["Abarth","500e",199990,42.2,320,18,85,"Producent / dansk prisliste","Ikke verificeret"],
-["Alfa Romeo","Junior Elettrica",269900,54,410,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Audi","Q4 e-tron",364990,77,577,16,135,"Producent / dansk prisliste","Ikke verificeret"],
-["Audi","Q6 e-tron",519990,94.9,628,17,270,"Producent / dansk prisliste","Ikke verificeret"],
-["BMW","iX1",399900,65,474,16.5,130,"Producent / dansk prisliste","Ikke verificeret"],
-["BMW","iX2",419900,65,478,16.5,130,"Producent / dansk prisliste","Ikke verificeret"],
-["BMW","i4",489900,84,585,16,205,"Producent / dansk prisliste","Ikke verificeret"],
-["BYD","Dolphin Surf",149995,43,322,15,85,"Producent / dansk prisliste","Ikke verificeret"],
-["BYD","Dolphin",214995,60,427,14.5,80,"Producent / dansk prisliste","Ikke verificeret"],
-["BYD","Atto 2",199995,45,312,16,65,"Producent / dansk prisliste","Ikke verificeret"],
-["BYD","Atto 3",239995,60.5,420,16,80,"Producent / dansk prisliste","Ikke verificeret"],
-["BYD","Seal",299995,82.5,570,16,150,"Producent / dansk prisliste","Ikke verificeret"],
-["BYD","Sealion 7",329995,91,502,18,230,"Producent / dansk prisliste","Ikke verificeret"],
-["Citroën","ë-C3",139990,44,320,15,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Citroën","ë-C3 Aircross",199990,54,399,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Cupra","Born",249990,79,623,15,135,"Producent / dansk prisliste","Ikke verificeret"],
-["Ford","Puma Gen-E",209990,54,417,15,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Ford","Explorer",347990,79,566,16,185,"Producent / dansk prisliste","Ikke verificeret"],
-["Ford","Capri",369990,79,592,16,185,"Producent / dansk prisliste","Ikke verificeret"],
-["Hyundai","Inster",169995,49,370,15,85,"Producent / dansk prisliste","Ikke verificeret"],
-["Hyundai","Kona Electric",254995,65,513,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Hyundai","Ioniq 5",349995,84,570,16,235,"Producent / dansk prisliste","Ikke verificeret"],
-["Hyundai","Ioniq 6",279995,63,521,14.5,235,"Producent / dansk prisliste","Ikke verificeret"],
-["JAC","e30X",185995,51.5,374,15,50,"Producent / dansk prisliste","Ikke verificeret"],
-["Jaecoo","J5 EV",234900,60,420,16,85,"Producent / dansk prisliste","Ikke verificeret"],
-["Kia","EV3",269900,81.4,605,14.9,128,"Producent / dansk prisliste","Ikke verificeret"],
-["Kia","EV4",264999,58.3,590,14.5,101,"Producent / dansk prisliste","Ikke verificeret"],
-["Kia","EV6",374999,84,546,16,235,"Producent / dansk prisliste","Ikke verificeret"],
-["Kia","EV9",549999,99.8,512,22,210,"Producent / dansk prisliste","Ikke verificeret"],
-["Lexus","RZ",439500,77,493,17,150,"Producent / dansk prisliste","Ikke verificeret"],
-["MG","4 EV",219999,64,450,15.5,140,"Producent / dansk prisliste","Ikke verificeret"],
-["MG","S5 EV",199999,49,340,15.5,120,"Producent / dansk prisliste","Ikke verificeret"],
-["MG","S5 EV Long Range",224999,64,480,15.5,140,"Producent / dansk prisliste","Ikke verificeret"],
-["Mini","Cooper E",224800,40.7,305,15.5,75,"Producent / dansk prisliste","Ikke verificeret"],
-["Mini","Cooper SE",259900,54.2,402,15.9,95,"Producent / dansk prisliste","Ikke verificeret"],
-["Nissan","Micra",179900,52,415,15.2,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Nissan","Ariya",329900,87,535,17,130,"Producent / dansk prisliste","Ikke verificeret"],
-["Opel","Corsa Electric",179990,54,359,15,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Opel","Mokka Electric",239990,54,403,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Peugeot","e-208",179990,54,400,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Peugeot","e-2008",219990,54,406,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Peugeot","e-3008",304990,73,525,16,160,"Producent / dansk prisliste","Ikke verificeret"],
-["Renault","5 E-Tech",189990,52,410,15,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Renault","4 E-Tech",219990,52,409,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Renault","Megane E-Tech",244990,60,442,15.5,130,"Producent / dansk prisliste","Ikke verificeret"],
-["Renault","Scenic E-Tech",299990,87,625,16,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Skoda","Elroq",259995,63,453,15.5,135,"Producent / dansk prisliste","Ikke verificeret"],
-["Skoda","Enyaq",329995,77,565,16,135,"Producent / dansk prisliste","Ikke verificeret"],
-["Smart","#1",279900,66,440,16,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Smart","#3",299900,66,455,16,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Subaru","Solterra",324900,73.1,532,17,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Tesla","Model 3",269990,60,534,14,170,"Producent / dansk prisliste","Ikke verificeret"],
-["Tesla","Model 3 Long Range",339990,79,750,13.5,250,"Producent / dansk prisliste","Ikke verificeret"],
-["Tesla","Model Y",304990,60,534,15.5,250,"Producent / dansk prisliste","Ikke verificeret"],
-["Toyota","Urban Cruiser",234990,61,426,15.5,100,"Producent / dansk prisliste","Ikke verificeret"],
-["Toyota","bZ4X",299990,73.1,573,16,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Volkswagen","ID.3",249995,58,430,15,135,"Producent / dansk prisliste","Ikke verificeret"],
-["Volkswagen","ID.4",329995,77,550,16,135,"Producent / dansk prisliste","Ikke verificeret"],
-["Volkswagen","ID.7",429995,86,709,15,200,"Producent / dansk prisliste","Ikke verificeret"],
-["Volvo","EX30",249900,69,480,16,153,"Producent / dansk prisliste","Ikke verificeret"],
-["Volvo","EX40",365900,79,535,16.5,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Volvo","EX90",699900,111,614,21,250,"Producent / dansk prisliste","Ikke verificeret"],
-["Xpeng","G6",349900,80,525,16,215,"Producent / dansk prisliste","Ikke verificeret"],
-["Xpeng","G9",499900,93.1,570,18,300,"Producent / dansk prisliste","Ikke verificeret"],
-["Zeekr","X",299900,69,445,17,150,"Producent / dansk prisliste","Ikke verificeret"],
-["Zeekr","001",449900,100,620,16,200,"Producent / dansk prisliste","Ikke verificeret"],
-["Zeekr","7X",374900,75,615,16,300,"Producent / dansk prisliste","Ikke verificeret"]
+
+/* ABARTH */
+
+["Abarth","500e",199990,42.2,320,18,85,"Producent / dansk marked","Vejledende"],
+
+
+/* ALFA ROMEO */
+
+["Alfa Romeo","Junior Elettrica",269900,54,410,15.5,100,"Producent / dansk marked","Vejledende"],
+
+
+/* AUDI */
+
+["Audi","Q4 e-tron",364990,77,577,16,135,"Producent / dansk marked","Vejledende"],
+["Audi","Q4 Sportback e-tron",384990,77,548,16,135,"Producent / dansk marked","Vejledende"],
+["Audi","Q6 e-tron",519990,94.9,628,17,270,"Producent / dansk marked","Vejledende"],
+["Audi","Q6 Sportback e-tron",539990,94.9,656,16.5,270,"Producent / dansk marked","Vejledende"],
+["Audi","A6 e-tron",549990,94.9,750,14.5,270,"Producent / dansk marked","Vejledende"],
+["Audi","S6 e-tron",699990,94.9,647,16,270,"Producent / dansk marked","Vejledende"],
+
+
+/* BMW */
+
+["BMW","iX1",399900,65,474,16.5,130,"Producent / dansk marked","Vejledende"],
+["BMW","iX2",419900,65,478,16.5,130,"Producent / dansk marked","Vejledende"],
+["BMW","i4",489900,84,585,16,205,"Producent / dansk marked","Vejledende"],
+["BMW","i5",579900,81.2,582,16,205,"Producent / dansk marked","Vejledende"],
+["BMW","iX",699900,94.8,701,17,195,"Producent / dansk marked","Vejledende"],
+["BMW","i7",899900,101.7,624,18,195,"Producent / dansk marked","Vejledende"],
+
+
+/* BYD */
+
+["BYD","Dolphin Surf",149995,43,322,15,85,"Producent / dansk marked","Vejledende"],
+["BYD","Dolphin",214995,60,427,14.5,80,"Producent / dansk marked","Vejledende"],
+["BYD","Atto 2",199995,45,312,16,65,"Producent / dansk marked","Vejledende"],
+["BYD","Atto 3",239995,60.5,420,16,80,"Producent / dansk marked","Vejledende"],
+["BYD","Atto 3 EVO",279995,74.8,510,15.5,150,"Producent / dansk marked","Vejledende"],
+["BYD","Seal",299995,82.5,570,16,150,"Producent / dansk marked","Vejledende"],
+["BYD","Seal U",319995,87,500,17,140,"Producent / dansk marked","Vejledende"],
+["BYD","Sealion 7",329995,91,502,18,230,"Producent / dansk marked","Vejledende"],
+["BYD","Tang",499995,108.8,530,21,170,"Producent / dansk marked","Vejledende"],
+
+
+/* CITROEN */
+
+["Citroën","ë-C3",139990,44,320,15,100,"Producent / dansk marked","Vejledende"],
+["Citroën","ë-C3 Aircross",199990,54,399,15.5,100,"Producent / dansk marked","Vejledende"],
+["Citroën","ë-C4",219990,54,420,15,100,"Producent / dansk marked","Vejledende"],
+
+
+/* CUPRA */
+
+["Cupra","Born",249990,59,427,15,135,"Producent / dansk marked","Vejledende"],
+["Cupra","Born 77 kWh",299990,77,548,15,135,"Producent / dansk marked","Vejledende"],
+["Cupra","Tavascan",379990,77,568,16,135,"Producent / dansk marked","Vejledende"],
+
+
+/* FORD */
+
+["Ford","Puma Gen-E",209990,54,417,15,100,"Producent / dansk marked","Vejledende"],
+["Ford","Explorer",347990,79,566,16,185,"Producent / dansk marked","Vejledende"],
+["Ford","Capri",369990,79,592,16,185,"Producent / dansk marked","Vejledende"],
+["Ford","Mustang Mach-E",329990,72.6,470,17,150,"Producent / dansk marked","Vejledende"],
+["Ford","Mustang Mach-E Extended Range",419990,91,600,16,150,"Producent / dansk marked","Vejledende"],
+["Ford","E-Tourneo Custom",549990,64,337,23,125,"Producent / dansk marked","Vejledende"],
+
+
+/* HONDA */
+
+["Honda","e:Ny1",299900,68.8,412,18,78,"Producent / dansk marked","Vejledende"],
+
+
+/* HYUNDAI */
+
+["Hyundai","Inster",169995,49,370,15,85,"Producent / dansk marked","Vejledende"],
+["Hyundai","Kona Electric",254995,65,513,15.5,100,"Producent / dansk marked","Vejledende"],
+["Hyundai","Ioniq 5",349995,84,570,16,235,"Producent / dansk marked","Vejledende"],
+["Hyundai","Ioniq 5 Long Range",419995,84,570,16,235,"Producent / dansk marked","Vejledende"],
+["Hyundai","Ioniq 6",279995,63,521,14.5,235,"Producent / dansk marked","Vejledende"],
+["Hyundai","Ioniq 6 Long Range",379995,84,614,14,235,"Producent / dansk marked","Vejledende"],
+
+
+/* JAC */
+
+["JAC","e30X",185995,51.5,374,15,50,"Producent / dansk marked","Vejledende"],
+
+
+/* JAECOO */
+
+["Jaecoo","J5 EV",234900,60,420,16,85,"Producent / dansk marked","Vejledende"],
+
+
+/* KIA */
+
+["Kia","EV3 Standard Range",269900,58.3,436,15,101,"Producent / dansk marked","Vejledende"],
+["Kia","EV3 Long Range",299900,81.4,605,14.9,128,"Producent / dansk marked","Vejledende"],
+["Kia","EV4",264999,58.3,390,15,101,"Producent / dansk marked","Vejledende"],
+["Kia","EV4 Long Range",299999,81.4,630,14.5,101,"Producent / dansk marked","Vejledende"],
+["Kia","EV5",349999,81.4,555,16,135,"Producent / dansk marked","Vejledende"],
+["Kia","EV6",374999,84,546,16,235,"Producent / dansk marked","Vejledende"],
+["Kia","EV6 Long Range",419999,84,582,15,235,"Producent / dansk marked","Vejledende"],
+["Kia","EV9",549999,99.8,512,22,210,"Producent / dansk marked","Vejledende"],
+
+
+/* LEXUS */
+
+["Lexus","UX 300e",349500,72.8,450,17,50,"Producent / dansk marked","Vejledende"],
+["Lexus","RZ 300e",439500,77,480,17,150,"Producent / dansk marked","Vejledende"],
+["Lexus","RZ 450e",479500,77,440,19,150,"Producent / dansk marked","Vejledende"],
+
+
+/* MG */
+
+["MG","4 EV",219999,64,450,15.5,140,"Producent / dansk marked","Vejledende"],
+["MG","S5 EV",199999,49,340,15.5,120,"Producent / dansk marked","Vejledende"],
+["MG","S5 EV Long Range",224999,64,480,15.5,140,"Producent / dansk marked","Vejledende"],
+["MG","Marvel R",349999,70,402,19,92,"Producent / dansk marked","Vejledende"],
+
+
+/* MERCEDES */
+
+["Mercedes-Benz","EQA",399900,70.5,528,16,100,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","EQB",449900,70.5,535,16.5,100,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","CLA 250+",449900,85,792,12.5,320,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","CLA 350 4MATIC",499900,85,771,13,320,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","GLA 250+",449900,85,600,15,320,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","GLB 250+",479900,85,620,15,320,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","EQE",699900,90.6,689,16,170,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","EQE SUV",749900,90.6,610,17,170,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","EQS",999900,118,800,17,200,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","EQS SUV",1099900,118,660,19,200,"Producent / dansk marked","Vejledende"],
+["Mercedes-Benz","GLC 400 4MATIC",699900,94,713,16,320,"Producent / dansk marked","Vejledende"],
+
+
+/* MINI */
+
+["Mini","Cooper E",224800,40.7,305,15.5,75,"Producent / dansk marked","Vejledende"],
+["Mini","Cooper SE",259900,54.2,402,15.9,95,"Producent / dansk marked","Vejledende"],
+["Mini","Aceman E",259900,42.5,310,15.5,75,"Producent / dansk marked","Vejledende"],
+["Mini","Aceman SE",299900,54.2,406,15.8,95,"Producent / dansk marked","Vejledende"],
+["Mini","Countryman SE ALL4",399900,66.45,432,17,130,"Producent / dansk marked","Vejledende"],
+
+
+/* NISSAN */
+
+["Nissan","Micra",179900,52,415,15.2,100,"Producent / dansk marked","Vejledende"],
+["Nissan","Ariya",329900,63,403,17,130,"Producent / dansk marked","Vejledende"],
+["Nissan","Ariya 87 kWh",379900,87,533,17,130,"Producent / dansk marked","Vejledende"],
+
+
+/* OPEL */
+
+["Opel","Corsa Electric",179990,54,359,15,100,"Producent / dansk marked","Vejledende"],
+["Opel","Mokka Electric",239990,54,403,15.5,100,"Producent / dansk marked","Vejledende"],
+["Opel","Frontera Electric",249990,54,406,15.5,100,"Producent / dansk marked","Vejledende"],
+["Opel","Grandland Electric",329990,73,523,16,160,"Producent / dansk marked","Vejledende"],
+
+
+/* PEUGEOT */
+
+["Peugeot","e-208",179990,54,400,15.5,100,"Producent / dansk marked","Vejledende"],
+["Peugeot","e-2008",219990,54,406,15.5,100,"Producent / dansk marked","Vejledende"],
+["Peugeot","e-3008",304990,73,525,16,160,"Producent / dansk marked","Vejledende"],
+["Peugeot","e-5008",339990,73,500,17,160,"Producent / dansk marked","Vejledende"],
+
+
+/* POLESTAR */
+
+["Polestar","2",399900,82,659,16,205,"Producent / dansk marked","Vejledende"],
+["Polestar","3",649900,111,567,20,250,"Producent / dansk marked","Vejledende"],
+["Polestar","4",499900,100,620,17,200,"Producent / dansk marked","Vejledende"],
+
+
+/* RENAULT */
+
+["Renault","5 E-Tech",189990,52,410,15,100,"Producent / dansk marked","Vejledende"],
+["Renault","4 E-Tech",219990,52,409,15.5,100,"Producent / dansk marked","Vejledende"],
+["Renault","Megane E-Tech",244990,60,442,15.5,130,"Producent / dansk marked","Vejledende"],
+["Renault","Scenic E-Tech",299990,87,625,16,150,"Producent / dansk marked","Vejledende"],
+
+
+/* SKODA */
+
+["Skoda","Elroq 50",259995,55,375,15.5,145,"Producent / dansk marked","Vejledende"],
+["Skoda","Elroq 60",279995,63,453,15.5,165,"Producent / dansk marked","Vejledende"],
+["Skoda","Elroq 85",329995,82,581,15.5,175,"Producent / dansk marked","Vejledende"],
+["Skoda","Enyaq 60",329995,63,437,16,135,"Producent / dansk marked","Vejledende"],
+["Skoda","Enyaq 85",379995,82,579,16,175,"Producent / dansk marked","Vejledende"],
+["Skoda","Enyaq Coupé",399995,82,580,16,175,"Producent / dansk marked","Vejledende"],
+
+
+/* SMART */
+
+["Smart","#1",279900,66,440,16,150,"Producent / dansk marked","Vejledende"],
+["Smart","#3",299900,66,455,16,150,"Producent / dansk marked","Vejledende"],
+["Smart","#5",379900,100,590,17,400,"Producent / dansk marked","Vejledende"],
+
+
+/* SUBARU */
+
+["Subaru","Solterra",324900,73.1,532,17,150,"Producent / dansk marked","Vejledende"],
+
+
+/* TESLA */
+
+["Tesla","Model 3",269990,60,534,14,170,"Producent / dansk marked","Vejledende"],
+["Tesla","Model 3 Long Range",339990,79,750,13.5,250,"Producent / dansk marked","Vejledende"],
+["Tesla","Model 3 Performance",399990,79,528,16,250,"Producent / dansk marked","Vejledende"],
+["Tesla","Model Y",304990,60,534,15.5,250,"Producent / dansk marked","Vejledende"],
+["Tesla","Model Y Long Range",369990,79,568,15,250,"Producent / dansk marked","Vejledende"],
+["Tesla","Model Y Performance",419990,79,514,17,250,"Producent / dansk marked","Vejledende"],
+["Tesla","Model S",799990,100,634,16,250,"Producent / dansk marked","Vejledende"],
+["Tesla","Model X",899990,100,625,18,250,"Producent / dansk marked","Vejledende"],
+
+
+/* TOYOTA */
+
+["Toyota","Urban Cruiser",234990,61,426,15.5,100,"Producent / dansk marked","Vejledende"],
+["Toyota","bZ4X",299990,73.1,573,16,150,"Producent / dansk marked","Vejledende"],
+
+
+/* VOLKSWAGEN */
+
+["Volkswagen","ID.3",249995,58,430,15,135,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.3 Pro S",319995,79,557,15,175,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.4",329995,77,550,16,135,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.5",359995,77,556,16,135,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.7",429995,86,709,15,200,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.7 Tourer",449995,86,690,16,200,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.Buzz",399995,79,423,21,185,"Producent / dansk marked","Vejledende"],
+["Volkswagen","ID.Buzz Lang",449995,86,453,21,200,"Producent / dansk marked","Vejledende"],
+
+
+/* VOLVO */
+
+["Volvo","EX30",249900,51,344,16,134,"Producent / dansk marked","Vejledende"],
+["Volvo","EX30 Long Range",299900,69,480,16,153,"Producent / dansk marked","Vejledende"],
+["Volvo","EX40",365900,79,535,16.5,150,"Producent / dansk marked","Vejledende"],
+["Volvo","EC40",379900,79,548,16,150,"Producent / dansk marked","Vejledende"],
+["Volvo","EX90",699900,111,614,21,250,"Producent / dansk marked","Vejledende"],
+["Volvo","ES90",699900,92,650,16,300,"Producent / dansk marked","Vejledende"],
+
+
+/* XPENG */
+
+["Xpeng","G6",349900,80,525,16,215,"Producent / dansk marked","Vejledende"],
+["Xpeng","G6 Long Range",399900,87.5,570,15.5,451,"Producent / dansk marked","Vejledende"],
+["Xpeng","G9",499900,93.1,570,18,300,"Producent / dansk marked","Vejledende"],
+["Xpeng","P7",449900,86,576,16,175,"Producent / dansk marked","Vejledende"],
+
+
+/* ZEEKR */
+
+["Zeekr","X",299900,69,445,17,150,"Producent / dansk marked","Vejledende"],
+["Zeekr","001",449900,100,620,16,200,"Producent / dansk marked","Vejledende"],
+["Zeekr","7X",374900,75,615,16,300,"Producent / dansk marked","Vejledende"],
+["Zeekr","7X Long Range",449900,100,615,17,300,"Producent / dansk marked","Vejledende"]
 
 ];
 
 
-let selectedCar=null;
-let currentCalculator=null;
+/* ==========================================================
+STATE
+========================================================== */
+
+let selectedCar = null;
+
+let currentCalculator = null;
 
 
-/* FORMATERING */
+/* ==========================================================
+FORMATTING
+========================================================== */
 
 function money(value){
 
-    return Number(value).toLocaleString("da-DK")+" kr.";
+    return Number(value).toLocaleString("da-DK") + " kr.";
 
 }
 
 function number(value){
 
-    return Number(value).toLocaleString("da-DK",{
-        maximumFractionDigits:1
-    });
+    return Number(value).toLocaleString(
+        "da-DK",
+        {
+            maximumFractionDigits:1
+        }
+    );
 
 }
 
 
-/* MODE */
+/* ==========================================================
+MODE
+========================================================== */
 
 function setMode(mode){
 
-    const carMode=document.getElementById("carMode");
-    const generalMode=document.getElementById("generalMode");
+    const carMode =
+        document.getElementById("carMode");
 
-    const carBtn=document.getElementById("carModeBtn");
-    const generalBtn=document.getElementById("generalModeBtn");
+    const generalMode =
+        document.getElementById("generalMode");
 
-    if(mode==="car"){
+    const carBtn =
+        document.getElementById("carModeBtn");
 
-        carMode.style.display="block";
-        generalMode.style.display="none";
+    const generalBtn =
+        document.getElementById("generalModeBtn");
+
+
+    if(mode === "car"){
+
+        carMode.style.display = "block";
+
+        generalMode.style.display = "none";
 
         carBtn.classList.add("active");
+
         generalBtn.classList.remove("active");
 
-    }else{
+    }
+    else{
 
-        carMode.style.display="none";
-        generalMode.style.display="block";
+        carMode.style.display = "none";
+
+        generalMode.style.display = "block";
 
         generalBtn.classList.add("active");
+
         carBtn.classList.remove("active");
 
     }
@@ -1491,118 +2097,219 @@ function setMode(mode){
 }
 
 
-/* FILTER */
+/* ==========================================================
+FILTER CARS
+========================================================== */
 
 function filterCars(){
 
-    const search=
+    const search =
         document.getElementById("search")
         .value
         .trim()
         .toLowerCase();
 
-    const maxPrice=
-        Number(document.getElementById("maxPrice").value)
-        ||Infinity;
 
-    const minRange=
-        Number(document.getElementById("minRange").value)
-        ||0;
+    const maxPrice =
+        Number(
+            document.getElementById("maxPrice").value
+        ) || Infinity;
 
-    const list=document.getElementById("carList");
-    const noResults=document.getElementById("noResults");
-    const info=document.getElementById("resultsInfo");
 
-    list.innerHTML="";
-    noResults.style.display="none";
+    const minRange =
+        Number(
+            document.getElementById("minRange").value
+        ) || 0;
+
+
+    const sort =
+        document.getElementById("sortCars").value;
+
+
+    const list =
+        document.getElementById("carList");
+
+
+    const noResults =
+        document.getElementById("noResults");
+
+
+    const info =
+        document.getElementById("resultsInfo");
+
+
+    list.innerHTML = "";
+
+    noResults.style.display = "none";
+
+
+    /*
+    Ingen søgning =
+    ingen biler vises.
+    */
 
     if(
-        search==="" &&
-        maxPrice===Infinity &&
-        minRange===0
+        search === "" &&
+        maxPrice === Infinity &&
+        minRange === 0
     ){
 
-        info.innerHTML="";
+        info.innerHTML = "";
+
         return;
 
     }
 
 
-    const results=cars.filter(car=>{
+    let results =
+        cars.filter(car => {
 
-        const name=
-            (car[0]+" "+car[1])
-            .toLowerCase();
-
-        return(
-            name.includes(search) &&
-            car[2]<=maxPrice &&
-            car[4]>=minRange
-        );
-
-    });
+            const name =
+                (
+                    car[0] +
+                    " " +
+                    car[1]
+                )
+                .toLowerCase();
 
 
-    info.innerHTML=
-        results.length+
+            return(
+
+                name.includes(search) &&
+
+                car[2] <= maxPrice &&
+
+                car[4] >= minRange
+
+            );
+
+        });
+
+
+    /* ======================================================
+    SORTERING
+    ====================================================== */
+
+    switch(sort){
+
+        case "priceAsc":
+
+            results.sort(
+                (a,b) => a[2] - b[2]
+            );
+
+            break;
+
+
+        case "priceDesc":
+
+            results.sort(
+                (a,b) => b[2] - a[2]
+            );
+
+            break;
+
+
+        case "rangeAsc":
+
+            results.sort(
+                (a,b) => a[4] - b[4]
+            );
+
+            break;
+
+
+        case "rangeDesc":
+
+            results.sort(
+                (a,b) => b[4] - a[4]
+            );
+
+            break;
+
+    }
+
+
+    info.innerHTML =
+        results.length +
         " biler matcher dine kriterier";
 
 
-    if(results.length===0){
+    if(results.length === 0){
 
-        noResults.style.display="block";
+        noResults.style.display =
+            "block";
+
         return;
 
     }
 
 
-    results.forEach(car=>{
+    results.forEach(car => {
 
-        const div=document.createElement("div");
+        const div =
+            document.createElement("div");
 
-        div.className="car-card";
 
-        div.onclick=()=>selectCar(car);
+        div.className =
+            "car-card";
 
-        div.innerHTML=`
 
-        <div class="car-top">
+        div.onclick =
+            () => selectCar(car);
 
-            <div class="car-name">
-                ${car[0]} ${car[1]}
+
+        div.innerHTML = `
+
+            <div class="car-top">
+
+                <div class="car-name">
+
+                    ${car[0]}
+                    ${car[1]}
+
+                </div>
+
+                <div class="car-price">
+
+                    ${money(car[2])}
+
+                </div>
+
             </div>
 
-            <div class="car-price">
-                ${money(car[2])}
+
+            <div class="pills">
+
+                <div class="pill">
+                    🔋 ${car[3]} kWh
+                </div>
+
+                <div class="pill">
+                    🛣️ ${car[4]} km
+                </div>
+
+                <div class="pill">
+                    ⚡ ${car[5]} kWh/100 km
+                </div>
+
+                <div class="pill">
+                    🔌 ${car[6]} kW
+                </div>
+
             </div>
 
-        </div>
 
-        <div class="pills">
+            <div class="car-source">
 
-            <div class="pill">
-                🔋 ${car[3]} kWh
+                ${car[7]}
+                ·
+                ${car[8]}
+
             </div>
-
-            <div class="pill">
-                🛣️ ${car[4]} km
-            </div>
-
-            <div class="pill">
-                ⚡ ${car[5]} kWh/100 km
-            </div>
-
-            <div class="pill">
-                🔌 ${car[6]} kW
-            </div>
-
-        </div>
-
-        <div class="car-source">
-            ${car[7]} · ${car[8]}
-        </div>
 
         `;
+
 
         list.appendChild(div);
 
@@ -1611,20 +2318,27 @@ function filterCars(){
 }
 
 
-/* QUICK FILTER */
+/* ==========================================================
+QUICK PRICE
+========================================================== */
 
 function quickPrice(){
 
-    document.getElementById("maxPrice").value=
+    document.getElementById("maxPrice").value =
         document.getElementById("priceQuick").value;
 
     filterCars();
 
 }
 
+
+/* ==========================================================
+QUICK RANGE
+========================================================== */
+
 function quickRange(){
 
-    document.getElementById("minRange").value=
+    document.getElementById("minRange").value =
         document.getElementById("rangeQuick").value;
 
     filterCars();
@@ -1632,172 +2346,293 @@ function quickRange(){
 }
 
 
-/* RESET */
+/* ==========================================================
+RESET
+========================================================== */
 
 function resetFilters(){
 
-    document.getElementById("search").value="";
-    document.getElementById("maxPrice").value="";
-    document.getElementById("minRange").value="";
-    document.getElementById("priceQuick").value="";
-    document.getElementById("rangeQuick").value="";
+    document.getElementById("search").value = "";
 
-    document.getElementById("carList").innerHTML="";
-    document.getElementById("resultsInfo").innerHTML="";
-    document.getElementById("noResults").style.display="none";
+    document.getElementById("maxPrice").value = "";
+
+    document.getElementById("minRange").value = "";
+
+    document.getElementById("priceQuick").value = "";
+
+    document.getElementById("rangeQuick").value = "";
+
+    document.getElementById("sortCars").value = "default";
+
+
+    document.getElementById("carList")
+        .innerHTML = "";
+
+
+    document.getElementById("resultsInfo")
+        .innerHTML = "";
+
+
+    document.getElementById("noResults")
+        .style.display = "none";
 
 }
 
 
-/* SELECT CAR */
+/* ==========================================================
+SELECT CAR
+========================================================== */
 
 function selectCar(car){
 
-    selectedCar=car;
+    selectedCar = car;
 
-    const box=document.getElementById("selectedCar");
 
-    box.style.display="block";
+    const box =
+        document.getElementById("selectedCar");
 
-    box.innerHTML=`
 
-    <div class="selected-label">
-        VALGT ELBIL
-    </div>
+    box.style.display = "block";
 
-    <div class="selected-name">
 
-        ${car[0]}
-        <span>${car[1]}</span>
+    box.innerHTML = `
 
-    </div>
+        <div class="selected-label">
 
-    <div class="selected-grid">
+            VALGT ELBIL
 
-        <div class="selected-stat">
-            <strong>${money(car[2])}</strong>
-            Købspris
         </div>
 
-        <div class="selected-stat">
-            <strong>${car[3]} kWh</strong>
-            Batteri
+
+        <div class="selected-name">
+
+            ${car[0]}
+
+            <span>
+                ${car[1]}
+            </span>
+
         </div>
 
-        <div class="selected-stat">
-            <strong>${car[4]} km</strong>
-            WLTP
+
+        <div class="selected-grid">
+
+
+            <div class="selected-stat">
+
+                <strong>
+                    ${money(car[2])}
+                </strong>
+
+                Købspris
+
+            </div>
+
+
+            <div class="selected-stat">
+
+                <strong>
+                    ${car[3]} kWh
+                </strong>
+
+                Batteri
+
+            </div>
+
+
+            <div class="selected-stat">
+
+                <strong>
+                    ${car[4]} km
+                </strong>
+
+                WLTP
+
+            </div>
+
+
+            <div class="selected-stat">
+
+                <strong>
+                    ${car[5]}
+                </strong>
+
+                Forbrug
+
+            </div>
+
+
         </div>
 
-        <div class="selected-stat">
-            <strong>${car[5]}</strong>
-            Forbrug
+
+        <div class="selected-source">
+
+            Kilde:
+            ${car[7]}
+
+            <br>
+
+            Status:
+            ${car[8]}
+
+            <br><br>
+
+            Bilens registrerede data bruges
+            automatisk i relevante beregnere.
+
         </div>
 
-    </div>
 
-    <div class="selected-source">
-
-        Kilde: ${car[7]}<br>
-        Status: ${car[8]}<br><br>
-
-        Bilens registrerede data bruges automatisk
-        i relevante beregnere.
-
-    </div>
-
-    <button
+        <button
         class="remove-car"
-        onclick="removeSelectedCar()">
+        id="removeCar">
 
-        SKIFT / FJERN BIL
+            SKIFT / FJERN BIL
 
-    </button>
+        </button>
 
     `;
 
 
-    document.getElementById("myCar").style.display="block";
+    document.getElementById("myCar")
+        .style.display = "block";
 
-    document.getElementById("myCarName").innerHTML=
-        car[0]+" "+car[1];
+
+    document.getElementById("myCarName")
+        .innerHTML =
+        car[0] + " " + car[1];
+
+
+    document.getElementById("removeCar")
+        .onclick =
+        removeSelectedCar;
+
 
     resetFilters();
 
+
     window.scrollTo({
-        top:box.offsetTop-20,
-        behavior:"smooth"
+
+        top:
+            box.offsetTop - 20,
+
+        behavior:
+            "smooth"
+
     });
 
 }
 
 
+/* ==========================================================
+REMOVE CAR
+========================================================== */
+
 function removeSelectedCar(){
 
-    selectedCar=null;
+    selectedCar = null;
 
-    document.getElementById("selectedCar").style.display="none";
 
-    document.getElementById("myCar").style.display="none";
+    document.getElementById("selectedCar")
+        .style.display = "none";
+
+
+    document.getElementById("myCar")
+        .style.display = "none";
 
 }
 
 
-/* CALCULATORS */
+/* ==========================================================
+CALCULATORS
+========================================================== */
 
-const calculatorList=[
+const calculatorList = [
 
 ["OPLADNING","Pris for en fuld opladning"],
+
 ["PRIS PR. KM","Hvad koster hver kilometer?"],
+
 ["EL VS. BENZIN","Sammenlign energiudgifter"],
+
 ["EL VS. DIESEL","Sammenlign energiudgifter"],
+
 ["ÅRLIG BESPARELSE","Se potentiel forskel"],
+
 ["KØRETUR","Hvad koster din tur?"],
+
 ["RÆKKEVIDDE","Beregn rækkevidde"],
+
 ["OPLADNINGSTID","Hvor lang tid tager opladningen?"],
+
 ["STRØMFORBRUG","Årligt strømforbrug"],
+
 ["HJEMMELADNING","Årlig pris for opladning"],
+
 ["SOLCELLER","Elbil + solceller"],
+
 ["LEASING VS. KØB","Sammenlign muligheder"],
+
 ["MÅNEDLIG ØKONOMI","Samlede månedlige udgifter"],
+
 ["5 ÅRS ØKONOMI","Samlet økonomi"],
+
 ["VEDLIGEHOLDELSE","Pris pr. kilometer"],
+
 ["VÆRDITAB","Estimeret salgspris"],
+
 ["EL VS. FOSSILBIL","Samlet sammenligning"],
+
 ["PRIS PR. 100 KM","Kilometerpris"],
+
 ["ENERGI TIL TUR","Nødvendig energi"],
+
 ["MÅNEDLIG BESPARELSE","Din besparelse"]
 
 ];
 
 
-calculatorList.forEach((item,index)=>{
+calculatorList.forEach(
 
-    document.getElementById("calculatorCards")
-    .innerHTML+=`
+(item,index) => {
+
+    document
+    .getElementById("calculatorCards")
+    .innerHTML += `
 
     <div
         class="calc-card"
-        onclick="openCalculator(${index+1})">
+        data-calculator="${index+1}">
 
         <div class="number">
+
             ${String(index+1).padStart(2,"0")}
+
         </div>
+
 
         <div>
 
             <div class="card-title">
+
                 ${item[0]}
+
             </div>
 
+
             <div class="card-desc">
+
                 ${item[1]}
+
             </div>
 
         </div>
 
+
         <div class="arrow">
+
             →
+
         </div>
 
     </div>
@@ -1807,9 +2642,12 @@ calculatorList.forEach((item,index)=>{
 });
 
 
-/* CALCULATOR DEFINITIONS */
+/* ==========================================================
+CALCULATOR DEFINITIONS
+========================================================== */
 
-const calculators={
+const calculators = {
+
 
 1:{
 name:"Opladning",
@@ -1821,6 +2659,7 @@ fields:[
 ]
 },
 
+
 2:{
 name:"Pris pr. km",
 title:"PRIS PR. <span>KM</span>",
@@ -1830,6 +2669,7 @@ fields:[
 ["electricPrice","Elpris pr. kWh","2","manual"]
 ]
 },
+
 
 3:{
 name:"El vs. benzin",
@@ -1844,6 +2684,7 @@ fields:[
 ]
 },
 
+
 4:{
 name:"El vs. diesel",
 title:"EL VS. <span>DIESEL</span>",
@@ -1857,6 +2698,7 @@ fields:[
 ]
 },
 
+
 5:{
 name:"Årlig besparelse",
 title:"ÅRLIG <span>BESPARELSE</span>",
@@ -1866,6 +2708,7 @@ fields:[
 ["fuelAnnual","Fossilbil pr. år","20000","manual"]
 ]
 },
+
 
 6:{
 name:"Køretur",
@@ -1878,6 +2721,7 @@ fields:[
 ]
 },
 
+
 7:{
 name:"Rækkevidde",
 title:"BEREGN <span>RÆKKEVIDDE</span>",
@@ -1887,6 +2731,7 @@ fields:[
 ["consumption","Forbrug kWh/100 km","15.5","consumption"]
 ]
 },
+
 
 8:{
 name:"Opladningstid",
@@ -1900,6 +2745,7 @@ fields:[
 ]
 },
 
+
 9:{
 name:"Strømforbrug",
 title:"ÅRLIGT <span>STRØMFORBRUG</span>",
@@ -1909,6 +2755,7 @@ fields:[
 ["consumption","Forbrug kWh/100 km","15.5","consumption"]
 ]
 },
+
 
 10:{
 name:"Hjemmeladning",
@@ -1921,6 +2768,7 @@ fields:[
 ]
 },
 
+
 11:{
 name:"Solceller",
 title:"ELBIL + <span>SOLCELLER</span>",
@@ -1931,6 +2779,7 @@ fields:[
 ["solar","Solceller kWh/år","2000","manual"]
 ]
 },
+
 
 12:{
 name:"Leasing vs. køb",
@@ -1943,6 +2792,7 @@ fields:[
 ]
 },
 
+
 13:{
 name:"Månedlig økonomi",
 title:"MÅNEDLIG <span>ØKONOMI</span>",
@@ -1950,10 +2800,11 @@ description:"Beregn bilens månedlige udgifter.",
 fields:[
 ["finance","Finansiering","3000","manual"],
 ["insurance","Forsikring","700","manual"],
-["electric","Strøm","500","manual"],
+["electric","Strøm","500","calculated"],
 ["other","Andre udgifter","500","manual"]
 ]
 },
+
 
 14:{
 name:"5 års økonomi",
@@ -1966,6 +2817,7 @@ fields:[
 ]
 },
 
+
 15:{
 name:"Vedligeholdelse",
 title:"VEDLIGEHOLDELSE <span>PR. KM</span>",
@@ -1975,6 +2827,7 @@ fields:[
 ["annualKm","Årlige km","20000","manual"]
 ]
 },
+
 
 16:{
 name:"Værditab",
@@ -1986,6 +2839,7 @@ fields:[
 ]
 },
 
+
 17:{
 name:"El vs. fossilbil",
 title:"ELBIL VS. <span>FOSSILBIL</span>",
@@ -1995,6 +2849,7 @@ fields:[
 ["fuelAnnual","Fossilbil pr. år","20000","manual"]
 ]
 },
+
 
 18:{
 name:"Pris pr. 100 km",
@@ -2006,6 +2861,7 @@ fields:[
 ]
 },
 
+
 19:{
 name:"Energi til tur",
 title:"ENERGI TIL <span>EN TUR</span>",
@@ -2015,6 +2871,7 @@ fields:[
 ["consumption","Forbrug kWh/100 km","15.5","consumption"]
 ]
 },
+
 
 20:{
 name:"Månedlig besparelse",
@@ -2028,9 +2885,11 @@ fields:[
 };
 
 
-/* VÆRDITAB */
+/* ==========================================================
+RESIDUAL VALUE MODEL
+========================================================== */
 
-const residualPercent={
+const residualPercent = {
 
 1:0.78,
 2:0.67,
@@ -2048,129 +2907,194 @@ const residualPercent={
 
 function estimatedResidual(price,years){
 
-    if(years<=0){
+    if(years <= 0){
+
         return price;
+
     }
+
 
     if(residualPercent[years]){
-        return price*residualPercent[years];
+
+        return price *
+               residualPercent[years];
+
     }
 
-    let value=price*0.25;
 
-    for(let y=11;y<=years;y++){
-        value*=0.94;
+    let value =
+        price * 0.25;
+
+
+    for(
+        let y = 11;
+        y <= years;
+        y++
+    ){
+
+        value *= 0.94;
+
     }
+
 
     return value;
 
 }
 
 
-/* AUTOMATISK BILDATA */
+/* ==========================================================
+AUTO VALUE
+========================================================== */
 
 function autoValue(type){
 
     if(!selectedCar){
+
         return null;
+
     }
+
 
     switch(type){
 
         case "price":
+
             return selectedCar[2];
 
+
         case "battery":
+
             return selectedCar[3];
 
+
         case "range":
+
             return selectedCar[4];
 
+
         case "consumption":
+
             return selectedCar[5];
 
+
         case "charging":
+
             return selectedCar[6];
 
     }
+
 
     return null;
 
 }
 
 
-/* ÅBN BEREGNER */
+/* ==========================================================
+OPEN CALCULATOR
+========================================================== */
 
 function openCalculator(number){
 
-    currentCalculator=number;
+    currentCalculator = number;
 
-    const calc=calculators[number];
+
+    const calc =
+        calculators[number];
+
 
     document.getElementById("calculator")
-    .style.display="block";
+        .style.display = "block";
+
 
     document.getElementById("calcHeaderTitle")
-    .innerText=calc.name;
+        .innerText =
+        calc.name;
+
 
     document.getElementById("calcTitle")
-    .innerHTML=calc.title;
+        .innerHTML =
+        calc.title;
+
 
     document.getElementById("calcDescription")
-    .innerText=calc.description;
+        .innerText =
+        calc.description;
 
-    const badge=document.getElementById("dataBadge");
+
+    const badge =
+        document.getElementById("dataBadge");
+
 
     if(selectedCar){
 
-        badge.className="data-badge car";
+        badge.className =
+            "data-badge car";
 
-        badge.innerText=
-            "🚗 "+
-            selectedCar[0]+" "+
-            selectedCar[1]+
+
+        badge.innerText =
+            "🚗 " +
+            selectedCar[0] +
+            " " +
+            selectedCar[1] +
             " – bildata indlæst automatisk";
 
-    }else{
+    }
+    else{
 
-        badge.className="data-badge";
+        badge.className =
+            "data-badge";
 
-        badge.innerText=
+
+        badge.innerText =
             "🧮 Generel beregning – ingen bil valgt";
 
     }
 
 
-    const fields=document.getElementById("calcFields");
+    const fields =
+        document.getElementById("calcFields");
 
-    fields.innerHTML="";
+
+    fields.innerHTML = "";
 
 
-    calc.fields.forEach(field=>{
+    calc.fields.forEach(field => {
 
-        const key=field[0];
-        const label=field[1];
+        const key =
+            field[0];
 
-        let value=field[2];
+        const label =
+            field[1];
 
-        const source=field[3];
+        let value =
+            field[2];
 
-        let automatic=false;
+        const source =
+            field[3];
+
+
+        let automatic = false;
 
 
         if(
             selectedCar &&
-            ["price","battery","consumption","charging"]
-            .includes(source)
+            [
+                "price",
+                "battery",
+                "consumption",
+                "charging"
+            ].includes(source)
         ){
 
-            const auto=autoValue(source);
+            const auto =
+                autoValue(source);
 
-            if(auto!==null){
 
-                value=auto;
+            if(auto !== null){
 
-                automatic=true;
+                value = auto;
+
+                automatic = true;
 
             }
 
@@ -2178,40 +3102,50 @@ function openCalculator(number){
 
 
         if(
-            source==="depreciation5" &&
+            source === "depreciation5" &&
             selectedCar
         ){
 
-            value=estimatedResidual(
-                selectedCar[2],
-                5
-            ).toFixed(0);
+            value =
+                estimatedResidual(
+                    selectedCar[2],
+                    5
+                ).toFixed(0);
 
-            automatic=true;
+
+            automatic = true;
 
         }
 
 
-        fields.innerHTML+=`
+        fields.innerHTML += `
 
         <div class="calc-field">
 
-            <label for="calc_${key}">
+            <label>
                 ${label}
             </label>
+
 
             <input
                 id="calc_${key}"
                 type="number"
                 step="any"
-                value="${value}">
+                value="${value}"
+            >
+
 
             ${
                 automatic
                 ?
-                `<div class="auto-info">
-                    ✓ Hentet automatisk fra valgt bil
-                </div>`
+                `
+                <div class="auto-info">
+
+                    ✓ Hentet automatisk
+                    fra valgt bil
+
+                </div>
+                `
                 :
                 ""
             }
@@ -2224,678 +3158,1003 @@ function openCalculator(number){
 
 
     document.getElementById("answer")
-    .style.display="none";
+        .style.display = "none";
+
+
+    document.body.style.overflow =
+        "hidden";
 
 }
 
 
-/* LUK */
+/* ==========================================================
+CLOSE
+========================================================== */
 
 function closeCalculator(){
 
     document.getElementById("calculator")
-    .style.display="none";
+        .style.display = "none";
+
+
+    document.body.style.overflow =
+        "";
 
 }
 
 
-/* HENT FELT */
+/* ==========================================================
+GET VALUE
+========================================================== */
 
 function value(name){
 
-    const element=
-        document.getElementById("calc_"+name);
+    const element =
+        document.getElementById(
+            "calc_" + name
+        );
+
 
     return element
-        ? parseFloat(element.value)||0
+        ? parseFloat(element.value) || 0
         : 0;
 
 }
 
 
-/* BEREGN */
+/* ==========================================================
+CALCULATE
+========================================================== */
 
 function calculate(){
 
-    let html="";
+    let html = "";
 
 
     switch(currentCalculator){
 
 
+        /* 1 */
+
         case 1:{
 
-            const total=
-                value("battery")*
+            const total =
+                value("battery") *
                 value("electricPrice");
 
-            html=`
 
-            Fuld opladning:
+            html = `
 
-            <strong>
-                ${number(total)} kr.
-            </strong>
+                Fuld opladning:
 
-            <br>
+                <strong>
+                    ${number(total)} kr.
+                </strong>
 
-            Batteri:
-            ${number(value("battery"))} kWh
+                <br><br>
+
+                Batteri:
+                ${number(value("battery"))}
+                kWh
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 2 */
 
         case 2:{
 
-            const km=
-                value("consumption")*
-                value("electricPrice")/100;
+            const km =
+                value("consumption") *
+                value("electricPrice")
+                / 100;
 
-            html=`
 
-            Pris pr. kilometer:
+            html = `
 
-            <strong>
-                ${km.toFixed(2)} kr.
-            </strong>
+                Pris pr. kilometer:
+
+                <strong>
+                    ${km.toFixed(2)} kr.
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 3 */
 
         case 3:{
 
-            const ev=
-                value("consumption")*
-                value("electricPrice")*
-                value("annualKm")/100;
+            const ev =
+                value("consumption") *
+                value("electricPrice") *
+                value("annualKm")
+                / 100;
 
-            const petrol=
-                value("annualKm")/
-                value("fuelEconomy")*
+
+            const petrol =
+                value("annualKm") /
+                value("fuelEconomy") *
                 value("fuelPrice");
 
-            html=`
+
+            html = `
 
             <table class="answer-table">
 
-            <tr>
-                <td>Elbil</td>
-                <td>${number(ev)} kr./år</td>
-            </tr>
+                <tr>
 
-            <tr>
-                <td>Benzinbil</td>
-                <td>${number(petrol)} kr./år</td>
-            </tr>
+                    <td>
+                        Elbil
+                    </td>
 
-            <tr>
-                <td>Forskel</td>
-                <td>${number(petrol-ev)} kr./år</td>
-            </tr>
+                    <td>
+                        ${number(ev)}
+                        kr./år
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Benzinbil
+                    </td>
+
+                    <td>
+                        ${number(petrol)}
+                        kr./år
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Forskel
+                    </td>
+
+                    <td>
+                        ${number(petrol-ev)}
+                        kr./år
+                    </td>
+
+                </tr>
 
             </table>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 4 */
 
         case 4:{
 
-            const ev=
-                value("consumption")*
-                value("electricPrice")*
-                value("annualKm")/100;
+            const ev =
+                value("consumption") *
+                value("electricPrice") *
+                value("annualKm")
+                / 100;
 
-            const diesel=
-                value("annualKm")/
-                value("fuelEconomy")*
+
+            const diesel =
+                value("annualKm") /
+                value("fuelEconomy") *
                 value("fuelPrice");
 
-            html=`
+
+            html = `
 
             <table class="answer-table">
 
-            <tr>
-                <td>Elbil</td>
-                <td>${number(ev)} kr./år</td>
-            </tr>
+                <tr>
 
-            <tr>
-                <td>Dieselbil</td>
-                <td>${number(diesel)} kr./år</td>
-            </tr>
+                    <td>
+                        Elbil
+                    </td>
 
-            <tr>
-                <td>Forskel</td>
-                <td>${number(diesel-ev)} kr./år</td>
-            </tr>
+                    <td>
+                        ${number(ev)}
+                        kr./år
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Dieselbil
+                    </td>
+
+                    <td>
+                        ${number(diesel)}
+                        kr./år
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Forskel
+                    </td>
+
+                    <td>
+                        ${number(diesel-ev)}
+                        kr./år
+                    </td>
+
+                </tr>
 
             </table>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 5 */
 
         case 5:{
 
-            const saving=
-                value("fuelAnnual")-
+            const saving =
+                value("fuelAnnual") -
                 value("evAnnual");
 
-            html=`
 
-            Årlig forskel:
+            html = `
 
-            <strong>
-                ${number(saving)} kr.
-            </strong>
+                Årlig forskel:
+
+                <strong>
+                    ${number(saving)}
+                    kr.
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 6 */
 
         case 6:{
 
-            const cost=
-                value("km")*
-                value("consumption")*
-                value("electricPrice")/100;
+            const cost =
+                value("km") *
+                value("consumption") *
+                value("electricPrice")
+                / 100;
 
-            html=`
 
-            Turen koster cirka:
+            html = `
 
-            <strong>
-                ${cost.toFixed(2)} kr.
-            </strong>
+                Turen koster cirka:
+
+                <strong>
+                    ${cost.toFixed(2)}
+                    kr.
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 7 */
 
         case 7:{
 
-            const range=
-                value("battery")/
-                value("consumption")*
+            const range =
+                value("battery") /
+                value("consumption") *
                 100;
 
-            html=`
 
-            Beregnet rækkevidde:
+            html = `
 
-            <strong>
-                ${number(range)} km
-            </strong>
+                Beregnet rækkevidde:
 
-            <br><br>
+                <strong>
+                    ${number(range)}
+                    km
+                </strong>
 
-            <small>
-            Dette er en matematisk beregning ud fra
-            batteri og forbrug – ikke en garanti for
-            faktisk rækkevidde.
-            </small>
+                <br><br>
+
+                <small>
+
+                Dette er en matematisk beregning
+                ud fra batteri og forbrug.
+
+                </small>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 8 */
 
         case 8:{
 
-            const energy=
-                value("battery")*
-                (value("to")-value("from"))/
-                100;
+            const energy =
+                value("battery") *
+                (
+                    value("to") -
+                    value("from")
+                )
+                / 100;
 
-            const hours=
-                energy/value("power");
 
-            html=`
+            const hours =
+                energy /
+                value("power");
 
-            Energi:
 
-            <strong>
-                ${number(energy)} kWh
-            </strong>
+            html = `
 
-            <br>
+                Energi:
 
-            Teoretisk tid:
+                <strong>
+                    ${number(energy)}
+                    kWh
+                </strong>
 
-            <strong>
-                ${hours.toFixed(2)} timer
-            </strong>
+                <br>
 
-            <br><br>
+                Teoretisk tid:
 
-            <small>
-            Faktisk ladetid kan være længere på grund
-            af ladeprofil, temperatur og andre forhold.
-            </small>
+                <strong>
+                    ${hours.toFixed(2)}
+                    timer
+                </strong>
+
+                <br><br>
+
+                <small>
+
+                Faktisk ladetid kan være længere
+                på grund af ladeprofil,
+                temperatur og andre forhold.
+
+                </small>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 9 */
 
         case 9:{
 
-            const annual=
-                value("annualKm")*
-                value("consumption")/100;
+            const annual =
+                value("annualKm") *
+                value("consumption")
+                / 100;
 
-            html=`
 
-            Årligt strømforbrug:
+            html = `
 
-            <strong>
-                ${number(annual)} kWh
-            </strong>
+                Årligt strømforbrug:
+
+                <strong>
+                    ${number(annual)}
+                    kWh
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 10 */
 
         case 10:{
 
-            const cost=
-                value("annualKm")*
-                value("consumption")*
-                value("electricPrice")/
-                100;
+            const cost =
+                value("annualKm") *
+                value("consumption") *
+                value("electricPrice")
+                / 100;
 
-            html=`
 
-            Årlig strømudgift:
+            html = `
 
-            <strong>
-                ${number(cost)} kr.
-            </strong>
+                Årlig strømudgift:
+
+                <strong>
+                    ${number(cost)}
+                    kr.
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 11 */
 
         case 11:{
 
-            const annualUse=
-                value("annualKm")*
-                value("consumption")/100;
+            const annualUse =
+                value("annualKm") *
+                value("consumption")
+                / 100;
 
-            const covered=
+
+            const covered =
                 Math.min(
                     value("solar"),
                     annualUse
                 );
 
-            const percent=
-                annualUse>0
-                ? covered/annualUse*100
-                : 0;
 
-            html=`
+            const percent =
+                annualUse > 0
+                ?
+                covered /
+                annualUse *
+                100
+                :
+                0;
 
-            Bilens årlige behov:
 
-            <strong>
-                ${number(annualUse)} kWh
-            </strong>
+            html = `
 
-            <br>
+                Bilens årlige behov:
 
-            Solceller kan dække cirka:
+                <strong>
+                    ${number(annualUse)}
+                    kWh
+                </strong>
 
-            <strong>
-                ${percent.toFixed(0)} %
-            </strong>
+                <br>
+
+                Solceller kan dække cirka:
+
+                <strong>
+                    ${percent.toFixed(0)} %
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 12 */
 
         case 12:{
 
-            const lease=
-                value("monthlyLease")*
+            const lease =
+                value("monthlyLease") *
                 value("months");
 
-            const buy=value("price");
 
-            html=`
+            const buy =
+                value("price");
+
+
+            html = `
 
             <table class="answer-table">
 
-            <tr>
-                <td>Leasing i perioden</td>
-                <td>${number(lease)} kr.</td>
-            </tr>
+                <tr>
 
-            <tr>
-                <td>Købspris</td>
-                <td>${number(buy)} kr.</td>
-            </tr>
+                    <td>
+                        Leasing i perioden
+                    </td>
 
-            <tr>
-                <td>Forskel</td>
-                <td>${number(lease-buy)} kr.</td>
-            </tr>
+                    <td>
+                        ${number(lease)}
+                        kr.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Købspris
+                    </td>
+
+                    <td>
+                        ${number(buy)}
+                        kr.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Forskel
+                    </td>
+
+                    <td>
+                        ${number(lease-buy)}
+                        kr.
+                    </td>
+
+                </tr>
 
             </table>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 13 */
 
         case 13:{
 
-            const monthly=
-                value("finance")+
-                value("insurance")+
-                value("electric")+
+            const monthly =
+                value("finance") +
+                value("insurance") +
+                value("electric") +
                 value("other");
 
-            html=`
 
-            Månedlig økonomi:
+            html = `
 
-            <strong>
-                ${number(monthly)} kr.
-            </strong>
+                Månedlig økonomi:
+
+                <strong>
+                    ${number(monthly)}
+                    kr.
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 14 */
 
         case 14:{
 
-            const price=value("price");
+            const price =
+                value("price");
 
-            const running=
-                value("annualRunning")*5;
 
-            const rest=
+            const running =
+                value("annualRunning") *
+                5;
+
+
+            const rest =
                 value("futureValue");
 
-            const total=
-                price+
-                running-
+
+            const total =
+                price +
+                running -
                 rest;
 
-            html=`
+
+            html = `
 
             <table class="answer-table">
 
-            <tr>
-                <td>Købspris</td>
-                <td>${number(price)} kr.</td>
-            </tr>
+                <tr>
 
-            <tr>
-                <td>Drift i 5 år</td>
-                <td>${number(running)} kr.</td>
-            </tr>
+                    <td>
+                        Købspris
+                    </td>
 
-            <tr>
-                <td>Estimeret restværdi</td>
-                <td>${number(rest)} kr.</td>
-            </tr>
+                    <td>
+                        ${number(price)}
+                        kr.
+                    </td>
 
-            <tr>
-                <td>Netto 5-års økonomi</td>
-                <td>${number(total)} kr.</td>
-            </tr>
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Drift i 5 år
+                    </td>
+
+                    <td>
+                        ${number(running)}
+                        kr.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Estimeret restværdi
+                    </td>
+
+                    <td>
+                        ${number(rest)}
+                        kr.
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Netto 5-års økonomi
+                    </td>
+
+                    <td>
+                        ${number(total)}
+                        kr.
+                    </td>
+
+                </tr>
 
             </table>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 15 */
 
         case 15:{
 
-            const perKm=
-                value("maintenance")/
+            const perKm =
+                value("maintenance") /
                 value("annualKm");
 
-            html=`
 
-            Vedligeholdelse:
+            html = `
 
-            <strong>
-                ${perKm.toFixed(2)} kr./km
-            </strong>
+                Vedligeholdelse:
+
+                <strong>
+                    ${perKm.toFixed(2)}
+                    kr./km
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 16 */
 
         case 16:{
 
-            const price=value("price");
-
-            let years=Math.round(value("years"));
-
-            if(years<0) years=0;
-
-            if(years>20) years=20;
+            const price =
+                value("price");
 
 
-            const residual=
+            let years =
+                Math.round(
+                    value("years")
+                );
+
+
+            if(years < 0)
+                years = 0;
+
+
+            if(years > 20)
+                years = 20;
+
+
+            const residual =
                 estimatedResidual(
                     price,
                     years
                 );
 
 
-            const loss=
-                price-residual;
+            const loss =
+                price -
+                residual;
 
 
-            const percent=
-                price>0
-                ? residual/price*100
-                : 0;
+            const percent =
+                price > 0
+                ?
+                residual /
+                price *
+                100
+                :
+                0;
 
 
-            html=`
+            html = `
 
-            <div style="font-size:12px;color:#8290a3;">
+                <div
+                style="
+                font-size:12px;
+                color:#8290a3;
+                ">
 
                 ${
                     selectedCar
                     ?
-                    "Estimat for "+
-                    selectedCar[0]+" "+
+                    "Estimat for " +
+                    selectedCar[0] +
+                    " " +
                     selectedCar[1]
                     :
                     "Generel værditabsberegning"
                 }
 
-            </div>
+                </div>
 
-            <br>
 
-            Estimeret salgspris efter
-            <strong>${years} år:</strong>
+                <br>
 
-            <strong>
-                ${number(residual)} kr.
-            </strong>
 
-            <br>
+                Estimeret salgspris efter
 
-            Estimeret værditab:
+                <strong>
+                    ${years} år:
+                </strong>
 
-            <strong>
-                ${number(loss)} kr.
-            </strong>
 
-            <br><br>
+                <strong>
+                    ${number(residual)}
+                    kr.
+                </strong>
 
-            Restværdi:
 
-            <strong>
-                ${percent.toFixed(0)} %
-            </strong>
+                <br>
 
-            <br><br>
 
-            <table class="answer-table">
+                Estimeret værditab:
 
-                ${createResidualTable(price)}
+                <strong>
+                    ${number(loss)}
+                    kr.
+                </strong>
 
-            </table>
 
-            <br>
+                <br><br>
 
-            <small>
 
-            Modellen er et generelt estimat og er ikke
-            baseret på en konkret salgsprisgaranti.
+                Restværdi:
 
-            Den faktiske værdi afhænger blandt andet af
-            kilometerstand, stand, marked, udstyr,
-            batteriets tilstand og den konkrete model.
+                <strong>
+                    ${percent.toFixed(0)} %
+                </strong>
 
-            </small>
+
+                <br><br>
+
+
+                <table
+                class="answer-table">
+
+                    ${createResidualTable(price)}
+
+                </table>
+
+
+                <br>
+
+
+                <small>
+
+                Modellen er et generelt estimat
+                og ikke en salgsprisgaranti.
+
+                Den faktiske værdi afhænger blandt
+                andet af kilometerstand, stand,
+                marked, udstyr, batteriets tilstand
+                og den konkrete model.
+
+                </small>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 17 */
 
         case 17:{
 
-            const saving=
-                value("fuelAnnual")-
+            const saving =
+                value("fuelAnnual") -
                 value("evAnnual");
 
-            html=`
 
-            Elbil:
+            html = `
 
-            <strong>
-                ${number(value("evAnnual"))} kr./år
-            </strong>
+                Elbil:
 
-            <br>
+                <strong>
+                    ${number(value("evAnnual"))}
+                    kr./år
+                </strong>
 
-            Fossilbil:
+                <br>
 
-            <strong>
-                ${number(value("fuelAnnual"))} kr./år
-            </strong>
+                Fossilbil:
 
-            <br><br>
+                <strong>
+                    ${number(value("fuelAnnual"))}
+                    kr./år
+                </strong>
 
-            Forskel:
+                <br><br>
 
-            <strong>
-                ${number(saving)} kr./år
-            </strong>
+                Forskel:
+
+                <strong>
+                    ${number(saving)}
+                    kr./år
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 18 */
 
         case 18:{
 
-            const cost=
-                value("consumption")*
+            const cost =
+                value("consumption") *
                 value("electricPrice");
 
-            html=`
 
-            100 km koster cirka:
+            html = `
 
-            <strong>
-                ${cost.toFixed(2)} kr.
-            </strong>
+                100 km koster cirka:
+
+                <strong>
+                    ${cost.toFixed(2)}
+                    kr.
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 19 */
 
         case 19:{
 
-            const energy=
-                value("km")*
-                value("consumption")/
-                100;
+            const energy =
+                value("km") *
+                value("consumption")
+                / 100;
 
-            html=`
 
-            Turen kræver cirka:
+            html = `
 
-            <strong>
-                ${number(energy)} kWh
-            </strong>
+                Turen kræver cirka:
+
+                <strong>
+                    ${number(energy)}
+                    kWh
+                </strong>
 
             `;
 
-        }break;
+        }
 
+        break;
+
+
+        /* 20 */
 
         case 20:{
 
-            const monthly=
-                value("annualSaving")/
+            const monthly =
+                value("annualSaving") /
                 12;
 
-            html=`
 
-            Månedlig besparelse:
+            html = `
 
-            <strong>
-                ${number(monthly)} kr.
-            </strong>
+                Månedlig besparelse:
+
+                <strong>
+                    ${number(monthly)}
+                    kr.
+                </strong>
 
             `;
 
-        }break;
+        }
+
+        break;
 
     }
 
 
-    document.getElementById("answer").innerHTML=html;
+    document.getElementById("answer")
+        .innerHTML = html;
 
-    document.getElementById("answer").style.display="block";
+
+    document.getElementById("answer")
+        .style.display = "block";
 
 }
 
 
-/* VÆRDITABSTABEL */
+/* ==========================================================
+RESIDUAL TABLE
+========================================================== */
 
 function createResidualTable(price){
 
-    let html="";
+    let html = "";
 
 
-    for(let year=1;year<=10;year++){
+    for(
+        let year = 1;
+        year <= 10;
+        year++
+    ){
 
-        const value=
-            estimatedResidual(price,year);
+        const value =
+            estimatedResidual(
+                price,
+                year
+            );
 
 
-        html+=`
+        html += `
 
         <tr>
 
@@ -2904,7 +4163,8 @@ function createResidualTable(price){
             </td>
 
             <td>
-                ${number(value)} kr.
+                ${number(value)}
+                kr.
             </td>
 
         </tr>
@@ -2919,21 +4179,178 @@ function createResidualTable(price){
 }
 
 
-/* ENTER I SØGNING */
+/* ==========================================================
+EVENTS
+========================================================== */
+
+
+/* Search */
+
+document.getElementById("search")
+.addEventListener(
+    "input",
+    filterCars
+);
+
+
+/* Enter */
 
 document.getElementById("search")
 .addEventListener(
     "keydown",
     function(event){
 
-        if(event.key==="Enter"){
+        if(event.key === "Enter"){
+
             filterCars();
+
         }
 
     }
 );
 
+
+/* Price */
+
+document.getElementById("maxPrice")
+.addEventListener(
+    "input",
+    filterCars
+);
+
+
+/* Range */
+
+document.getElementById("minRange")
+.addEventListener(
+    "input",
+    filterCars
+);
+
+
+/* Quick price */
+
+document.getElementById("priceQuick")
+.addEventListener(
+    "change",
+    quickPrice
+);
+
+
+/* Quick range */
+
+document.getElementById("rangeQuick")
+.addEventListener(
+    "change",
+    quickRange
+);
+
+
+/* Sorting */
+
+document.getElementById("sortCars")
+.addEventListener(
+    "change",
+    filterCars
+);
+
+
+/* Show */
+
+document.getElementById("showCars")
+.addEventListener(
+    "click",
+    filterCars
+);
+
+
+/* Reset */
+
+document.getElementById("resetButton")
+.addEventListener(
+    "click",
+    resetFilters
+);
+
+
+/* Back */
+
+document.getElementById("backButton")
+.addEventListener(
+    "click",
+    closeCalculator
+);
+
+
+/* Calculate */
+
+document.getElementById("calculateButton")
+.addEventListener(
+    "click",
+    calculate
+);
+
+
+/* Calculator cards */
+
+document
+.getElementById("calculatorCards")
+.addEventListener(
+    "click",
+    function(event){
+
+        const card =
+            event.target.closest(
+                ".calc-card"
+            );
+
+
+        if(!card)
+            return;
+
+
+        const number =
+            Number(
+                card.dataset.calculator
+            );
+
+
+        openCalculator(number);
+
+    }
+);
+
+
+/* ==========================================================
+ESC TO CLOSE
+========================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(
+            event.key === "Escape" &&
+            document.getElementById("calculator")
+            .style.display === "block"
+        ){
+
+            closeCalculator();
+
+        }
+
+    }
+);
+
+
+/* ==========================================================
+INITIAL STATE
+========================================================== */
+
+setMode("car");
+
 </script>
+
 
 </body>
 </html>
