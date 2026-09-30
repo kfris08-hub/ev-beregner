@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kfris08-hub.github.io/ev-beregner/sitemap.xml
