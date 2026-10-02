@@ -52,8 +52,8 @@ function closeCalculatorFromButton(){
 }
 
 window.addEventListener("popstate", function(){
-  const overlay = document.getElementById("calculatorOverlay");
-  if (overlay && (overlay.classList.contains("active") || overlay.style.display === "block" || overlay.style.display === "flex")) {
+  const calculator = document.getElementById("calculator");
+  if (calculator && calculator.style.display !== "none") {
     closeCalculator();
   }
 });
