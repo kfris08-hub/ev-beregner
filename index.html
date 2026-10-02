@@ -48,10 +48,10 @@ Priser, specifikationer, rækkevidde og beregninger er vejledende. Data kan ænd
 <section class="live-panel" id="live-priser">
   <div class="section-label">DAGENS STRØMPRIS</div>
   <h2>Spotpris i DK1 og DK2</h2>
-  <p class="muted">Hentes fra Energi Data Service. Spotprisen er ikke din samlede elpris; nettarif, afgifter, moms og elaftale kommer oveni.</p>
+  <p class="muted">Aktuelle danske spotpriser inkl. moms. Nettarif, øvrige afgifter og eventuelt tillæg fra dit elselskab kan komme oveni.</p>
   <div class="live-grid">
-    <div class="live-card"><strong>Vest (DK1)</strong><div id="dk1Price" class="live-big">Henter…</div><div class="muted">Dagens gennemsnitlige spotpris</div></div>
-    <div class="live-card"><strong>Øst (DK2)</strong><div id="dk2Price" class="live-big">Henter…</div><div class="muted">Dagens gennemsnitlige spotpris</div></div>
+    <div class="live-card"><strong>Vest (DK1)</strong><div id="dk1Price" class="live-big">Henter…</div><div id="dk1Avg" class="muted">Dagens gennemsnit: henter…</div></div>
+    <div class="live-card"><strong>Øst (DK2)</strong><div id="dk2Price" class="live-big">Henter…</div><div id="dk2Avg" class="muted">Dagens gennemsnit: henter…</div></div>
   </div>
   <div style="margin-top:12px"><label class="muted">Din samlede elpris til beregninger (kr./kWh)</label><input id="siteElectricPrice" type="number" step="0.01" value="2.00" style="width:100%;margin-top:6px;padding:13px;border-radius:11px;border:1px solid #344159;background:#111a2b;color:#fff"></div>
   <div id="liveStatus" class="muted" style="margin-top:8px">Live-data indlæses…</div>
@@ -131,21 +131,37 @@ document.getElementById("siteElectricPrice")?.addEventListener("input",renderCom
 
 async function loadLivePrices(){
  const st=document.getElementById("liveStatus");
+ const fmt=v=>Number.isFinite(v)?v.toFixed(2).replace(".",",")+" kr/kWh":"—";
  try{
-  const now=new Date(), y=now.getFullYear(),mo=String(now.getMonth()+1).padStart(2,"0"),d=String(now.getDate()).padStart(2,"0");
-  const start=`${y}-${mo}-${d}T00:00`;
-  const filter=encodeURIComponent(JSON.stringify({PriceArea:["DK1","DK2"]}));
-  const url=`https://api.energidataservice.dk/dataset/Elspotprices?start=${encodeURIComponent(start)}&filter=${filter}&limit=100`;
-  const r=await fetch(url); if(!r.ok)throw new Error("HTTP "+r.status);
-  const data=await r.json(), rec=data.records||[];
-  const avg=area=>{const xs=rec.filter(x=>x.PriceArea===area).map(x=>Number(x.SpotPriceDKK)/1000).filter(Number.isFinite);return xs.length?xs.reduce((a,b)=>a+b,0)/xs.length:null};
-  const p1=avg("DK1"),p2=avg("DK2");
-  document.getElementById("dk1Price").textContent=p1==null?"—":p1.toFixed(2).replace(".",",")+" kr/kWh";
-  document.getElementById("dk2Price").textContent=p2==null?"—":p2.toFixed(2).replace(".",",")+" kr/kWh";
-  st.textContent="Opdateret fra Energi Data Service · spotpris ekskl. øvrige tariffer og afgifter";
+   const getJSON=async url=>{
+     const r=await fetch(url,{cache:"no-store"});
+     if(!r.ok) throw new Error("HTTP "+r.status);
+     return await r.json();
+   };
+   const [n1,n2,d1,d2]=await Promise.all([
+     getJSON("https://elpriser.org/api/now?area=DK1&mode=spot_inkl"),
+     getJSON("https://elpriser.org/api/now?area=DK2&mode=spot_inkl"),
+     getJSON("https://elpriser.org/api/prices?area=DK1&mode=spot_inkl"),
+     getJSON("https://elpriser.org/api/prices?area=DK2&mode=spot_inkl")
+   ]);
+   const current=x=>Number(x.price);
+   const list=x=>Array.isArray(x)?x:(Array.isArray(x.prices)?x.prices:(Array.isArray(x.data)?x.data:[]));
+   const value=x=>Number(x.price ?? x.DKK_per_kWh ?? x.value);
+   const avg=x=>{
+     const xs=list(x).map(value).filter(Number.isFinite);
+     return xs.length?xs.reduce((a,b)=>a+b,0)/xs.length:NaN;
+   };
+   document.getElementById("dk1Price").textContent=fmt(current(n1))+" lige nu";
+   document.getElementById("dk2Price").textContent=fmt(current(n2))+" lige nu";
+   document.getElementById("dk1Avg").textContent="Dagens gennemsnit: "+fmt(avg(d1));
+   document.getElementById("dk2Avg").textContent="Dagens gennemsnit: "+fmt(avg(d2));
+   st.innerHTML='Live-data · spotpris inkl. moms · kilde: <a href="https://elpriser.org/" target="_blank" rel="noopener" style="color:#10ddb2">elpriser.org</a> / Energinet';
  }catch(e){
-  document.getElementById("dk1Price").textContent="—";document.getElementById("dk2Price").textContent="—";
-  st.textContent="Live spotpris kunne ikke hentes lige nu. Beregnerne virker stadig med din egen elpris.";
+   document.getElementById("dk1Price").textContent="—";
+   document.getElementById("dk2Price").textContent="—";
+   document.getElementById("dk1Avg").textContent="Dagens gennemsnit kunne ikke hentes";
+   document.getElementById("dk2Avg").textContent="Dagens gennemsnit kunne ikke hentes";
+   st.textContent="Live elpris kunne ikke hentes lige nu. Beregnerne virker stadig med din egen elpris.";
  }
 }
 initCompare();loadLivePrices();
