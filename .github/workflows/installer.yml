@@ -1,9 +1,10 @@
-name: Installer EV Beregner KOMPLET
+name: Installer EV Beregner KONTROLLERET
 
 on:
   push:
     paths:
-      - 'EV_Beregner_KOMPLET_2026-10-03.zip'
+      - 'EV_Beregner_SAMLET_KONTROLLERET.zip'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -17,13 +18,17 @@ jobs:
       - name: Hent repository
         uses: actions/checkout@v4
 
-      - name: Pak hjemmesiden ud
-        run: unzip -o EV_Beregner_KOMPLET_2026-10-03.zip
+      - name: Fjern gamle modelsider
+        run: rm -rf elbil
 
-      - name: Gem de udpakkede filer
+      - name: Pak den nye hjemmeside ud
+        run: unzip -o EV_Beregner_SAMLET_KONTROLLERET.zip
+
+      - name: Gem den nye hjemmeside
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html sitemap.xml robots.txt CNAME elbil
-          git commit -m "Opdater EV Beregner med komplet bildatabase" || exit 0
+          git add -A index.html sitemap.xml robots.txt CNAME elbil
+          git diff --cached --quiet && echo "Ingen ændringer" && exit 0
+          git commit -m "Opdater EV Beregner med kontrollerede bildata"
           git push
