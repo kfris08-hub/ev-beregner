@@ -1,0 +1,1 @@
+EV Beregner 4.3: Modelsider søger kun efter udvendige side-/profil-/3/4-billeder på Wikimedia Commons, frasorterer interiør/front/rear/detaljer/grupper og viser intet billede ved usikkert match.
