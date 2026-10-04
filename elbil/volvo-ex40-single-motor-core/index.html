@@ -24,19 +24,19 @@ button{width:100%;padding:14px;border:0;border-radius:10px;background:#10ddb2;co
 <div class="panel"><div class="label">ELBIL</div><h1>Volvo EX40 Single Motor Core</h1>
 <div class="grid">
 <div class="stat"><small>Købspris</small><strong>351.000 kr.</strong></div>
-<div class="stat"><small>Batteri</small><strong>Ikke oplyst</strong></div>
-<div class="stat"><small>WLTP</small><strong>Ikke oplyst</strong></div>
-<div class="stat"><small>Forbrug</small><strong>Ikke oplyst</strong></div>
-<div class="stat"><small>DC-ladning</small><strong>Ikke oplyst</strong></div>
+<div class="stat"><small>Batteri</small><strong>79 kWh</strong></div>
+<div class="stat"><small>WLTP</small><strong>575 km</strong></div>
+<div class="stat"><small>Forbrug</small><strong>16 kWh/100 km</strong></div>
+<div class="stat"><small>DC-ladning</small><strong>200 kW</strong></div>
 </div>
-<p class="note">Data er vejledende og skal kontrolleres hos producent eller forhandler før køb. “Ikke oplyst” betyder, at feltet ikke er registreret sikkert i EV Beregners kontrollerede datasæt.</p>
+<p class="note">Data er vejledende. Pris og tekniske specifikationer kan ændres af producenten; kontrollér altid den aktuelle variant hos producent eller forhandler før køb.</p>
 </div>
 <div class="calc"><div class="label">PRIS PR. 100 KM</div>
 <p class="note">Beregn strømudgiften ud fra bilens registrerede forbrug og din elpris.</p>
 <input id="ep" type="number" step="0.01" value="2.00" aria-label="Elpris i kr. pr. kWh">
 <button onclick="calc()">BEREGN</button><div id="result"></div></div>
 <script>
-const consumption=null;
+const consumption=16.0;
 function calc(){
  const p=Number(document.getElementById('ep').value);
  const r=document.getElementById('result');
