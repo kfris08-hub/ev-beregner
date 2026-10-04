@@ -26,11 +26,14 @@ jobs:
       - name: Pak EV Beregner 3.0 ud
         run: unzip -o EV_Beregner_3_0_AUTO_PRISER_SAMMENLIGNING.zip
 
+      - name: Fjern workflow fra automatisk installation
+        run: rm -f .github/workflows/update-fuel-prices.yml
+
       - name: Gem hjemmesiden
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A index.html sitemap.xml robots.txt CNAME elbil data favicon.ico favicon-48x48.png favicon-192x192.png favicon-512x512.png apple-touch-icon.png .github/workflows/update-fuel-prices.yml
+          git add -A index.html sitemap.xml robots.txt CNAME elbil data favicon.ico favicon-48x48.png favicon-192x192.png favicon-512x512.png apple-touch-icon.png
           git diff --cached --quiet && echo "Ingen ændringer" && exit 0
           git commit -m "EV Beregner 3.0 - automatiske energipriser og ny sammenligning"
           git push
