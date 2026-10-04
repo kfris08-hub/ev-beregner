@@ -1,9 +1,9 @@
-name: Installer EV Beregner 4.1
+name: Installer EV Beregner 4.2
 
 on:
   push:
     paths:
-      - 'EV_Beregner_4_1_RIGTIGE_BILBILLEDER.zip'
+      - 'EV_Beregner_4_2_BILLEDER_FIX.zip'
   workflow_dispatch:
 
 permissions:
@@ -23,8 +23,8 @@ jobs:
           rm -rf elbil
           rm -rf data
 
-      - name: Pak EV Beregner 4.1 ud
-        run: unzip -o EV_Beregner_4_1_RIGTIGE_BILBILLEDER.zip
+      - name: Pak EV Beregner 4.2 ud
+        run: unzip -o EV_Beregner_4_2_BILLEDER_FIX.zip
 
       - name: Gem hjemmesiden
         run: |
@@ -38,4 +38,14 @@ jobs:
             CNAME \
             elbil \
             data \
-            bil-data-komplet.csv
+            bil-data-komplet.csv \
+            favicon.ico \
+            favicon-48x48.png \
+            favicon-192x192.png \
+            favicon-512x512.png \
+            apple-touch-icon.png
+
+          git diff --cached --quiet && echo "Ingen ændringer" && exit 0
+
+          git commit -m "EV Beregner 4.2 - fix rigtige bilbilleder"
+          git push
