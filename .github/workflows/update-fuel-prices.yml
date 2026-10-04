@@ -1,1 +1,87 @@
+name: Opdater braendstofpriser
 
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Hent seneste benzin- og dieselpris
+        run: |
+          python - <<'PY2'
+          import urllib.request,re,json,datetime,pathlib
+
+          url='https://www.drivkraftdanmark.dk/priser-og-forbrug/'
+          req=urllib.request.Request(
+              url,
+              headers={'User-Agent':'Mozilla/5.0 EVBeregner/1.0'}
+          )
+
+          html=urllib.request.urlopen(
+              req,
+              timeout=30
+          ).read().decode('utf-8','ignore')
+
+          text=re.sub(r'<[^>]+>',' ',html)
+          text=re.sub(r'\s+',' ',text)
+
+          def find(label):
+              m=re.search(
+                  label+r'.{0,160}?([0-9]{1,2}[,.][0-9]{2})',
+                  text,
+                  re.I
+              )
+              if not m:
+                  raise RuntimeError('Kunne ikke finde '+label)
+
+              return float(
+                  m.group(1).replace(',','.')
+              )
+
+          petrol=find('Benzin')
+          diesel=find('Diesel')
+
+          p=pathlib.Path('data/fuel-prices.json')
+
+          now=datetime.datetime.now(
+              datetime.timezone.utc
+          ).astimezone().isoformat(timespec='minutes')
+
+          out={
+              'petrol95':petrol,
+              'diesel':diesel,
+              'source_date':datetime.date.today().isoformat(),
+              'updated':now,
+              'source':'Drivkraft Danmark'
+          }
+
+          p.parent.mkdir(exist_ok=True)
+
+          p.write_text(
+              json.dumps(
+                  out,
+                  ensure_ascii=False,
+                  indent=2
+              )+'\n'
+          )
+
+          print(out)
+          PY2
+
+      - name: Gem hvis priserne er aendret
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fuel-prices.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Opdater automatiske braendstofpriser"
+          git push
