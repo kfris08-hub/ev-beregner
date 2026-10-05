@@ -1,9 +1,9 @@
-name: Installer EV Beregner 4.3
+name: Installer EV Beregner 4.4 GRATIS
 
 on:
   push:
     paths:
-      - 'EV_Beregner_4_3_PROFILBILLEDER.zip'
+      - 'EV_Beregner_4_4_GRATIS_BILBILLEDER.zip'
   workflow_dispatch:
 
 permissions:
@@ -18,15 +18,26 @@ jobs:
       - name: Hent repository
         uses: actions/checkout@v4
 
-      - name: Fjern gamle modelsider og data
+      - name: Fjern gammel hjemmesideversion
         run: |
           rm -rf elbil
           rm -rf data
 
-      - name: Pak EV Beregner 4.3 ud
-        run: unzip -o EV_Beregner_4_3_PROFILBILLEDER.zip
+      - name: Pak EV Beregner 4.4 ud
+        run: |
+          unzip -o EV_Beregner_4_4_GRATIS_BILBILLEDER.zip
 
-      - name: Gem hjemmesiden
+      - name: Kontroller modelsider
+        run: |
+          COUNT=$(find elbil -mindepth 2 -maxdepth 2 -name index.html | wc -l)
+          echo "Antal modelsider: $COUNT"
+
+          if [ "$COUNT" -ne 186 ]; then
+            echo "FEJL: Der skal være 186 modelsider."
+            exit 1
+          fi
+
+      - name: Gem EV Beregner 4.4
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -47,5 +58,5 @@ jobs:
 
           git diff --cached --quiet && echo "Ingen ændringer" && exit 0
 
-          git commit -m "EV Beregner 4.3 - bedre profilbilleder"
+          git commit -m "EV Beregner 4.4 - gratis udvendige bilbilleder"
           git push
