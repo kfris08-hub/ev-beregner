@@ -1,9 +1,9 @@
-name: Installer EV Beregner 4.5
+name: Installer EV Beregner 4.6
 
 on:
   push:
     paths:
-      - 'EV_Beregner_4_5_REN_TEKST_UDVENDIGE_BILLEDER.zip'
+      - 'EV_Beregner_4_6_RIGTIG_GENERATION.zip'
   workflow_dispatch:
 
 permissions:
@@ -18,19 +18,18 @@ jobs:
       - name: Hent repository
         uses: actions/checkout@v4
 
-      - name: Fjern gammel hjemmesideversion
+      - name: Fjern gammel version
         run: |
           rm -rf elbil
           rm -rf data
 
-      - name: Pak EV Beregner 4.5 ud
+      - name: Pak EV Beregner 4.6 ud
         run: |
-          unzip -o EV_Beregner_4_5_REN_TEKST_UDVENDIGE_BILLEDER.zip
+          unzip -o EV_Beregner_4_6_RIGTIG_GENERATION.zip
 
       - name: Kontroller modelsider
         run: |
           COUNT=$(find elbil -mindepth 2 -maxdepth 2 -name index.html | wc -l)
-
           echo "Antal modelsider: $COUNT"
 
           if [ "$COUNT" -ne 186 ]; then
@@ -38,7 +37,7 @@ jobs:
             exit 1
           fi
 
-      - name: Gem EV Beregner 4.5
+      - name: Gem EV Beregner 4.6
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -55,9 +54,10 @@ jobs:
             favicon-48x48.png \
             favicon-192x192.png \
             favicon-512x512.png \
-            apple-touch-icon.png
+            apple-touch-icon.png \
+            BILLEDER-4.6.txt
 
           git diff --cached --quiet && echo "Ingen ændringer" && exit 0
 
-          git commit -m "EV Beregner 4.5 - renere modelsider og udvendige bilbilleder"
+          git commit -m "EV Beregner 4.6 - korrekt bilgeneration"
           git push
