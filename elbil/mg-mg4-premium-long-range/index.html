@@ -13,24 +13,38 @@
 <script>const consumption=16.0;let fuel={petrol95:19.39,diesel:20.49};const kr=n=>Math.round(n).toLocaleString('da-DK')+' kr.';function calculate(){const km=Number(document.getElementById('km').value)||20000,ep=Number(document.getElementById('ep').value)||2;const kwh=km*consumption/100,annual=kwh*ep;document.getElementById('r100').textContent=(consumption*ep).toFixed(2).replace('.',',')+' kr.';document.getElementById('rkm').textContent=(consumption*ep/100).toFixed(2).replace('.',',')+' kr.';document.getElementById('ryear').textContent=kr(annual);document.getElementById('rkwh').textContent=Math.round(kwh).toLocaleString('da-DK')+' kWh';document.getElementById('evAnnual').textContent=kr(annual);document.getElementById('petAnnual').textContent=kr(km/16*fuel.petrol95);document.getElementById('dieselAnnual').textContent=kr(km/20*fuel.diesel);document.getElementById('petPrice').textContent=fuel.petrol95.toFixed(2).replace('.',',')+' kr./l';document.getElementById('dieselPrice').textContent=fuel.diesel.toFixed(2).replace('.',',')+' kr./l'}async function loadFuel(){try{const x=await fetch('/data/fuel-prices.json?x='+Date.now()).then(r=>r.json());if(x.petrol95)fuel.petrol95=Number(x.petrol95);if(x.diesel)fuel.diesel=Number(x.diesel)}catch(e){}calculate()}async function loadElectric(){const area=document.getElementById('area').value;localStorage.setItem('evArea',area);try{const x=await fetch('https://elpriser.org/api/now?area='+area+'&mode=inkl_alt',{cache:'no-store'}).then(r=>r.json());let val=null;if(typeof x==='number')val=x;else if(x) val=Number(x.price??x.pris??x.total??x.value??x.kwh);if(Number.isFinite(val)&&val>0){document.getElementById('ep').value=val.toFixed(2);document.getElementById('liveNote').textContent='Aktuel '+area+'-elpris indlæst automatisk.'}else document.getElementById('liveNote').textContent='Elprisen kunne ikke aflæses automatisk – den viste pris kan rettes manuelt.'}catch(e){document.getElementById('liveNote').textContent='Elprisen kunne ikke hentes lige nu – den viste pris kan rettes manuelt.'}calculate()}document.getElementById('area').value=localStorage.getItem('evArea')||'DK1';document.getElementById('area').addEventListener('change',loadElectric);document.getElementById('km').addEventListener('input',calculate);document.getElementById('ep').addEventListener('input',calculate);loadFuel();loadElectric();</script></main><script>
 (function(){
  const brand="MG", baseModel="MG4";
- const searchHint="MG MG4 electric EV 2024 2025 2026", commonsCategory="";
- const required=[], forbidden=[];
  const img=document.getElementById('carPhoto'), loading=document.getElementById('photoLoading'), credit=document.getElementById('photoCredit');
  if(!img)return;
  const bad=/interior|inside|cockpit|dashboard|dash|steering|seat|seats|cabin|console|instrument|infotainment|screen|engine|badge|logo|wheel|rim|lamp|headlight|taillight|charging.port|cutaway|diagram|crash|accident|detail|brochure|manual|toy|model.car|scale.model/i;
- const exterior=/side.view|sideview|side.profile|profile|lateral|three.?quarter|3.?4|exterior|outside|front.?side|rear.?side/i;
- const oldYear=/\b(18\d{2}|19\d{2}|200\d|201[0-7])\b/;
+ const good=/side.view|sideview|side.profile|profile|lateral|three.?quarter|3.?4|exterior|outside|front.?side|rear.?side/i;
+ const modelWords=(brand+' '+baseModel).toLowerCase().replace(/[^a-z0-9æøåäöüéë+#-]+/g,' ').split(/\s+/).filter(x=>x.length>1);
  const clean=x=>String(x||'').replace(/<[^>]*>/g,'').replace(/&[^;]+;/g,' ').trim();
- function safeText(t){t=(t||'').toLowerCase();if(bad.test(t)||oldYear.test(t))return false;for(const x of forbidden)if(t.includes(x.toLowerCase()))return false;for(const x of required)if(!t.includes(x.toLowerCase()))return false;return true;}
+ function modelScore(t){t=(t||'').toLowerCase();let n=0;for(const w of modelWords)if(t.includes(w))n+=14;return n;}
+ function validTitle(t){return !bad.test(t||'') && good.test(t||'');}
  async function commons(q){
-   let search=q+' (side OR profile OR exterior)';
-   if(commonsCategory) search='incategory:"'+commonsCategory+'" '+q;
-   const u='https://commons.wikimedia.org/w/api.php?origin=*&action=query&generator=search&gsrnamespace=6&gsrsearch='+encodeURIComponent(search)+'&gsrlimit=50&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1400&format=json';
+   const u='https://commons.wikimedia.org/w/api.php?origin=*&action=query&generator=search&gsrnamespace=6&gsrsearch='+encodeURIComponent(q)+'&gsrlimit=50&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=1400&format=json';
    const d=await fetch(u,{cache:'force-cache'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()});
-   return Object.values((d.query&&d.query.pages)||{}).map(p=>{const ii=p.imageinfo&&p.imageinfo[0];if(!ii)return null;const title=p.title||'';const meta=clean((ii.extmetadata?.ImageDescription?.value||'')+' '+(ii.extmetadata?.ObjectName?.value||''));const all=(title+' '+meta).toLowerCase();let score=0;if(exterior.test(all))score+=80;if(ii.width&&ii.height&&ii.width/ii.height>1.12)score+=15;for(const x of required)if(all.includes(x.toLowerCase()))score+=35;if(/electric|ev|e-tech|e tech|e-tron|e tron|ë-|electrique|elektro/i.test(all))score+=20;return {title,all,url:ii.thumburl||ii.url,w:ii.width,h:ii.height,author:clean(ii.extmetadata?.Artist?.value)||'Wikimedia Commons',license:clean(ii.extmetadata?.LicenseShortName?.value)||'se licens',licenseUrl:ii.extmetadata?.LicenseUrl?.value||'',page:'https://commons.wikimedia.org/?curid='+p.pageid,source:'Wikimedia Commons',score};}).filter(Boolean);
+   return Object.values((d.query&&d.query.pages)||{}).map(p=>{const ii=p.imageinfo&&p.imageinfo[0];if(!ii)return null;const title=p.title||'';const meta=clean((ii.extmetadata?.ImageDescription?.value||'')+' '+(ii.extmetadata?.ObjectName?.value||''));const all=title+' '+meta;return {title,all,url:ii.thumburl||ii.url,w:ii.width,h:ii.height,author:clean(ii.extmetadata?.Artist?.value)||'Wikimedia Commons',license:clean(ii.extmetadata?.LicenseShortName?.value)||'se licens',licenseUrl:ii.extmetadata?.LicenseUrl?.value||'',page:'https://commons.wikimedia.org/?curid='+p.pageid,source:'Wikimedia Commons',score:modelScore(all)+(good.test(all)?60:0)-(bad.test(all)?200:0)+(ii.width&&ii.height&&ii.width/ii.height>1.25?12:0)};}).filter(Boolean);
  }
- function choose(a){return a.filter(x=>x.url&&safeText(x.all||x.title)&&(!x.w||!x.h||x.w/x.h>1.08)&&(exterior.test(x.all)||commonsCategory)).sort((a,b)=>b.score-a.score)[0]||null;}
- function show(p){img.src=p.url;img.style.display='block';img.alt=brand+' '+baseModel+' – udvendigt modelbillede';img.onload=()=>loading&&loading.remove();img.onerror=()=>{img.style.display='none';if(loading)loading.textContent='Modelbillede ikke tilgængeligt.'};const lic=p.licenseUrl?'<a href="'+p.licenseUrl+'" target="_blank" rel="noopener noreferrer">'+p.license+'</a>':p.license;credit.innerHTML='Foto: '+p.author+' · '+lic+' · <a href="'+p.page+'" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>';}
- (async()=>{let a=[];try{a=await commons(searchHint);}catch(e){}const p=choose(a);if(!p)throw Error('no-safe-generation-match');show(p);})().catch(()=>{img.style.display='none';if(loading)loading.textContent='Modelbillede ikke tilgængeligt.';credit.textContent='';});
+ async function wikipedia(){
+   const q=brand+' '+baseModel;
+   const su='https://en.wikipedia.org/w/api.php?origin=*&action=query&list=search&srsearch='+encodeURIComponent(q)+'&srlimit=6&format=json';
+   const sd=await fetch(su,{cache:'force-cache'}).then(r=>r.json());
+   for(const hit of (sd.query?.search||[])){
+     if(modelScore(hit.title)<14)continue;
+     const pu='https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=pageimages%7Cinfo&piprop=thumbnail%7Cname&pithumbsize=1400&inprop=url&pageids='+hit.pageid+'&format=json';
+     const pd=await fetch(pu,{cache:'force-cache'}).then(r=>r.json()); const p=Object.values(pd.query?.pages||{})[0];
+     if(p?.thumbnail?.source && !bad.test(p.pageimage||'')) return {url:p.thumbnail.source,author:'Wikipedia',license:'se billedlicens',licenseUrl:p.fullurl||'',page:p.fullurl||'',source:'Wikipedia'};
+   }
+   return null;
+ }
+ function choose(a){return a.filter(x=>x.url&&validTitle(x.all||x.title)&&(!x.w||!x.h||x.w/x.h>1.12)&&x.score>=70).sort((a,b)=>b.score-a.score)[0]||null;}
+ function show(p){img.src=p.url;img.style.display='block';img.alt=brand+' '+baseModel+' – udvendigt modelbillede';img.onload=()=>loading&&loading.remove();img.onerror=()=>{img.style.display='none';if(loading)loading.textContent='Modelbillede ikke tilgængeligt.'};const lic=p.licenseUrl?'<a href="'+p.licenseUrl+'" target="_blank" rel="noopener noreferrer">'+p.license+'</a>':p.license;credit.innerHTML='Foto: '+p.author+' · '+lic+' · <a href="'+p.page+'" target="_blank" rel="noopener noreferrer">'+p.source+'</a>';}
+ (async()=>{
+   const queries=[brand+' '+baseModel+' "side view"',brand+' '+baseModel+' "side profile"',brand+' '+baseModel+' exterior "three quarter"'];
+   let a=[]; for(const q of queries){try{a.push(...await commons(q));}catch(e){}} let p=choose(a);
+   if(!p){try{p=await wikipedia();}catch(e){}}
+   if(!p)throw Error('no-safe-exterior'); show(p);
+ })().catch(()=>{img.style.display='none';if(loading)loading.textContent='Modelbillede ikke tilgængeligt.';credit.textContent='';});
 })();
 </script></body></html>
