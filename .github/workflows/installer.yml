@@ -1,9 +1,9 @@
-name: Installer EV Beregner 4.5
+name: Installer EV Beregner 4.5.1 SEO
 
 on:
   push:
     paths:
-      - 'EV_Beregner_4_5_REN_TEKST_UDVENDIGE_BILLEDER.zip'
+      - 'EV_Beregner_4_5_1_SEO_INDEKSERING.zip'
   workflow_dispatch:
 
 permissions:
@@ -23,9 +23,9 @@ jobs:
           rm -rf elbil
           rm -rf data
 
-      - name: Pak EV Beregner 4.5 ud
+      - name: Pak EV Beregner 4.5.1 SEO ud
         run: |
-          unzip -o EV_Beregner_4_5_REN_TEKST_UDVENDIGE_BILLEDER.zip
+          unzip -o EV_Beregner_4_5_1_SEO_INDEKSERING.zip
 
       - name: Kontroller modelsider
         run: |
@@ -37,18 +37,37 @@ jobs:
             exit 1
           fi
 
-      - name: Gem EV Beregner 4.5
+      - name: Kontroller SEO-links
+        run: |
+          LINKS=$(grep -o 'href="/elbil/[^"]*/"' elbil/index.html | wc -l)
+          echo "Links til elbiler: $LINKS"
+
+          if [ "$LINKS" -ne 186 ]; then
+            echo "FEJL: Elbiloversigten skal indeholde 186 links."
+            exit 1
+          fi
+
+      - name: Gem EV Beregner 4.5.1 SEO
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A \
-            index.html sitemap.xml robots.txt CNAME elbil data \
+            index.html \
+            sitemap.xml \
+            robots.txt \
+            CNAME \
+            elbil \
+            data \
             bil-data-komplet.csv \
-            favicon.ico favicon-48x48.png favicon-192x192.png \
-            favicon-512x512.png apple-touch-icon.png
+            favicon.ico \
+            favicon-48x48.png \
+            favicon-192x192.png \
+            favicon-512x512.png \
+            apple-touch-icon.png \
+            SEO-4.5.1.txt
 
           git diff --cached --quiet && echo "Ingen ændringer" && exit 0
 
-          git commit -m "Gendan EV Beregner 4.5"
+          git commit -m "EV Beregner 4.5.1 - SEO og intern linkstruktur"
           git push
