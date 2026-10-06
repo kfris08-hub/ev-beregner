@@ -1,0 +1,7 @@
+EV Beregner 4.5.1 SEO
+- Baseret på 4.5; billedsystem og beregnere er bevaret.
+- /elbil/ har 186 almindelige HTML-links grupperet efter mærke.
+- Forsiden linker tydeligt til /elbil/.
+- Alle modelsider linker tilbage til /elbil/.
+- Eksisterende selvrefererende canonical og BreadcrumbList er bevaret.
+- Sitemap har 188 URLer med lastmod 2026-10-06.
