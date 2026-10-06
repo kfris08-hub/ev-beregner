@@ -1,0 +1,1 @@
+EV Beregner 4.6: streng generationskontrol. Historiske år 1800-2017 afvises. Kendte genbrugte modelnavne har specifikke søgehints/kategorier. Wikipedia-fallback er fjernet; ved usikkerhed vises intet billede.
