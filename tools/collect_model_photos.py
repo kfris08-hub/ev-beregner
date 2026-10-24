@@ -8,6 +8,7 @@ from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).parents[1]
 PLAN=json.loads((ROOT/'data/model-photo-plan.json').read_text())
+OLD=json.loads((ROOT/'data/model-photos.json').read_text())['models'] if (ROOT/'data/model-photos.json').exists() else {}
 HEADERS={'User-Agent':'EVBeregn-photo-catalog/1.0 (https://www.evberegn.dk/; Wikimedia image attribution and model review)'}
 OUT=ROOT/'assets/cars';OUT.mkdir(parents=True,exist_ok=True)
 REVIEW=ROOT/'test-results/photo-catalog';REVIEW.mkdir(parents=True,exist_ok=True)
@@ -37,6 +38,7 @@ def license_ok(meta):
 def candidate(page,p,lead=False):
  info=(page.get('imageinfo') or [{}])[0];meta=info.get('extmetadata',{})
  title=plain(page.get('title',''));name=norm(title)
+ if title in p.get('exclude_files',[]):return None
  if not re.search(p['required'],name,re.I) or re.search(p['exclude'],name,re.I):return None
  if info.get('mime') not in ('image/jpeg','image/png','image/webp'):return None
  if info.get('width',0)<800 or info.get('width',0)/max(1,info.get('height',0))<1.1:return None
@@ -44,8 +46,8 @@ def candidate(page,p,lead=False):
  if not lic:return None
  author=plain(meta.get('Artist',{}).get('value',''))
  if not author:return None
- photo={'file':title,'url':info.get('thumburl') or info.get('url'),'original_url':info.get('url'),'source':info.get('descriptionurl') or 'https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_')),'author':author,'license':lic[0],'license_url':lic[1],'credit':plain(meta.get('Credit',{}).get('value','')),'attribution':plain(meta.get('Attribution',{}).get('value','')),'description':plain(meta.get('ImageDescription',{}).get('value',''))[:1600],'original_width':info['width'],'original_height':info['height'],'checked_at':'2026-10-24','modifications':'Nedskaleret og konverteret til WebP; ingen beskæring.','score':100 if lead else 10}
- if re.search(r'front|side|three|quarter',name):photo['score']+=5
+ photo={'file':title,'url':info.get('thumburl') or info.get('url'),'original_url':info.get('url'),'source':info.get('descriptionurl') or 'https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_')),'author':author,'license':lic[0],'license_url':lic[1],'credit':plain(meta.get('Credit',{}).get('value','')),'attribution':plain(meta.get('Attribution',{}).get('value','')),'description':plain(meta.get('ImageDescription',{}).get('value',''))[:1600],'original_width':info['width'],'original_height':info['height'],'checked_at':'2026-10-24','modifications':'Nedskaleret og konverteret til WebP; ingen beskæring.','score':30 if lead else 10}
+ if re.search(r'front|side|three|quarter',name):photo['score']+=20
  if re.search(r'rear',name):photo['score']-=4
  if re.search(r'202[456]',name):photo['score']+=2
  return photo
@@ -76,18 +78,20 @@ def collect(item):
  slug,p=item
  result={'label':p['label'],'identity':p['identity'],'status':'missing','reason':p['missing_reason'] or 'Intet kontrolleret billede med en godkendt fri licens fundet.','reviewed':False}
  if p['skip']:return slug,result,[]
+ if p.get('reuse') and OLD.get(slug,{}).get('src'):return slug,OLD[slug],[]
  candidates=[]
  lead=leads.get(articles.get(p['article'],''))
  if lead:
   photo=candidate(lead,p,True)
   if photo:candidates.append(photo)
  try:
-  data=api('commons.wikimedia.org',generator='search',gsrnamespace=6,gsrsearch=p['query'],gsrlimit=20,prop='imageinfo',iiprop='url|extmetadata|size|mime',iiurlwidth=1200)
+  data=api('commons.wikimedia.org',generator='search',gsrnamespace=6,gsrsearch=p['query'],gsrlimit=50,prop='imageinfo',iiprop='url|extmetadata|size|mime',iiurlwidth=1200)
   for page in data.get('query',{}).get('pages',{}).values():
    photo=candidate(page,p)
    if photo and all(x['file']!=photo['file'] for x in candidates):candidates.append(photo)
  except Exception as e:result['reason']='Billedkilden svarede ikke under kontrollen.';result['lookup_error']=str(e)
  candidates.sort(key=lambda p:-p['score'])
+ if not candidates:print('NO_CANDIDATE '+json.dumps({'slug':slug,'query':p['query'],'returned':len(data.get('query',{}).get('pages',{})) if 'data' in locals() else 0}),flush=True)
  for photo in candidates:
   try:
    body=request(photo['url'],raw=True)
@@ -111,7 +115,7 @@ manifest={'version':1,'checked_at':'2026-10-24','note':'Modelspecific photo, not
 # Review sheets are log output only, not published as website assets.
 font_path='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 font=ImageFont.truetype(font_path,13)
-selected=[(slug,p) for slug,p in results.items() if p['status']=='candidate']
+selected=[(slug,p) for slug,p in results.items() if p['status']=='candidate' and (not PLAN[slug].get('reuse') or PLAN[slug].get('sheet_only'))]
 for offset in range(0,len(selected),20):
  sheet=Image.new('RGB',(1280,1100),'#eeeeee');draw=ImageDraw.Draw(sheet)
  for j,(slug,p) in enumerate(selected[offset:offset+20]):
@@ -123,7 +127,7 @@ for offset in range(0,len(selected),20):
    draw.text((x+3,y+170),label[:cut],font=font,fill='black');label=label[cut:].strip();y+=15
   draw.text((x+3,y+170),label,font=font,fill='black')
   draw.text((x+3,(j//4)*220+207),str(offset+j+1),font=font,fill='blue')
- buf=io.BytesIO();sheet.save(buf,format='JPEG',quality=78)
+ buf=io.BytesIO();sheet.save(buf,format='JPEG',quality=68)
  (REVIEW/('sheet-'+str(offset//20+1)+'.jpg')).write_bytes(buf.getvalue())
  print('CONTACT_SHEET '+str(offset//20+1)+' '+base64.b64encode(buf.getvalue()).decode(),flush=True)
-print('CATALOG_SUMMARY '+json.dumps({'total':len(results),'candidates':len(selected),'missing':len(results)-len(selected),'bytes':sum(p.get('bytes',0) for p in results.values())}),flush=True)
+print('CATALOG_SUMMARY '+json.dumps({'total':len(results),'candidates':sum(p['status']=='candidate' for p in results.values()),'missing':sum(p['status']=='missing' for p in results.values()),'new_sheets':len(selected),'bytes':sum(p.get('bytes',0) for p in results.values())}),flush=True)
