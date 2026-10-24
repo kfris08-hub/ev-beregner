@@ -19,7 +19,13 @@
     }
   }
   const modelPattern = new RegExp('(?:^| )' + identity.join(' *') + '(?= |$)');
-  const modelMatches = value => modelPattern.test(normalise(value));
+  const modelMatches = value => {
+    const text = normalise(value), match = modelPattern.exec(text);
+    if (!match) return false;
+    // IONIQ 5/6 N have separate model pages; do not use their photos for the standard car.
+    if (normalise(brand) === 'hyundai' && /^ioniq (5|6)$/.test(normalise(model)) && /^n(?: |$)/.test(text.slice(match.index + match[0].length).trim())) return false;
+    return true;
+  };
   // Check the filename, not every word in a long description or photographer biography.
   const badFilename = /interior|inside|cockpit|dashboard|steering|driver.?seat|front.?seat|rear.?seat|seats|cabin|console|infotainment|engine|badge|logo|wheels?|rims?|headlights?|taillights?|cutaway|diagram|crash|accident|brochure|manual|toy|scale.model|\.svg$/i;
   const preferredView = /side.view|sideview|side.profile|profile|lateral|three.?quarter|3.?4|exterior|front.?side|rear.?side/i;
@@ -84,7 +90,8 @@
     const pages = Object.values(data.query?.pages || {}).sort((a, b) => (a.index || 0) - (b.index || 0));
     for (const page of pages) {
       if (!modelMatches(page.title) || !page.thumbnail?.source || !page.pageimage || badFilename.test(page.pageimage)) continue;
-      if (!page.thumbnail.source.startsWith('https://upload.wikimedia.org/wikipedia/commons/')) continue;
+      const thumbnail = new URL(page.thumbnail.source);
+      if (thumbnail.protocol !== 'https:' || !['upload.wikimedia.org', 'thumb.wikimedia.org'].includes(thumbnail.hostname) || !thumbnail.pathname.startsWith('/wikipedia/commons/')) continue;
       return { modelTitle: page.title, fileTitle: page.pageimage, url: page.thumbnail.source, author: '', license: '', licenseURL: 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(page.pageimage), page: page.fullurl || 'https://en.wikipedia.org/wiki/' + encodeURIComponent(page.title.replace(/ /g, '_')), source: 'Wikipedia' };
     }
     throw new Error('Intet Wikipedia-modelmatch');

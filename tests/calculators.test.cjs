@@ -69,11 +69,17 @@ test('a full exterior photo does not need a view keyword and description words d
  m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
  assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');m.cleanup();
 });
-test('Wikipedia restores the image when Commons search has no result',async()=>{
- const fetch=async url=>({ok:true,json:async()=>String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,index:1,title:'Tesla Model Y',pageimage:'2025 Model Y.jpg',fullurl:'https://en.wikipedia.org/wiki/Tesla_Model_Y',thumbnail:{source:'https://upload.wikimedia.org/wikipedia/commons/model-y.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:String(url).includes('elpriser.org')?{price:2.5}:{query:{pages:{}}}});
+test('Wikipedia restores the image from the current thumbnail host when Commons search has no result',async()=>{
+ const fetch=async url=>({ok:true,json:async()=>String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,index:1,title:'Tesla Model Y',pageimage:'2025 Model Y.jpg',fullurl:'https://en.wikipedia.org/wiki/Tesla_Model_Y',thumbnail:{source:'https://thumb.wikimedia.org/wikipedia/commons/model-y.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:String(url).includes('elpriser.org')?{price:2.5}:{query:{pages:{}}}});
  const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
  m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/wikipedia/commons/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');assert.equal(m.elements.get('photoLoading').style.display,'none');m.cleanup();
+ assert.equal(m.elements.get('carPhoto').src,'https://thumb.wikimedia.org/wikipedia/commons/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');assert.equal(m.elements.get('photoLoading').style.display,'none');m.cleanup();
+});
+test('standard IONIQ 5 does not use an IONIQ 5 N photo',async()=>{
+ const photo=(title,url,width)=>({pageid:width,title,imageinfo:[{width,height:1000,thumburl:url,extmetadata:{Artist:{value:'Author'},LicenseShortName:{value:'CC BY-SA 4.0'}}}]});
+ const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{wrong:photo('File:Hyundai Ioniq 5 N side view.jpg','https://upload.wikimedia.org/wrong-n.jpg',2500),right:photo('File:Hyundai Ioniq 5.jpg','https://upload.wikimedia.org/standard.jpg',1600)}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
+ const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Hyundai',model:'IONIQ 5'};m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
+ assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/standard.jpg');m.cleanup();
 });
 test('a broken Commons image falls back to a working Wikipedia image',async()=>{
  const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{one:{pageid:1,title:'File:Tesla Model Y side view.jpg',imageinfo:[{width:1600,height:1000,thumburl:'https://upload.wikimedia.org/broken-image.jpg',extmetadata:{Artist:{value:'Author'},LicenseShortName:{value:'CC BY-SA 4.0'}}}]}}}}:String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,title:'Tesla Model Y',pageimage:'Model Y.jpg',thumbnail:{source:'https://upload.wikimedia.org/wikipedia/commons/working-image.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});

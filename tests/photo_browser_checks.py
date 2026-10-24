@@ -11,7 +11,7 @@ async def main():
  results=[]
  async with async_playwright() as pw:
   browser=await pw.chromium.launch(executable_path=os.environ.get('CHROME_PATH','/usr/bin/google-chrome'),headless=True,args=['--no-sandbox','--disable-dev-shm-usage'])
-  for slug in SLUGS:
+  for slug,force_fallback in [(slug,False) for slug in SLUGS]+[('tesla-model-y-standard-rwd',True)]:
    context=await browser.new_context(viewport={'width':390,'height':844})
    page=await context.new_page();errors=[];responses=[]
    page.on('pageerror',lambda e:errors.append(str(e)))
@@ -24,6 +24,7 @@ async def main():
      file=ROOT/name
      await route.fulfill(status=200 if file.is_file() else 404,body=file.read_bytes() if file.is_file() else b'missing',content_type=mimetypes.guess_type(name)[0] or 'text/plain')
     elif url.netloc=='elpriser.org':await route.fulfill(status=200,json={'price':2.5})
+    elif force_fallback and url.netloc=='commons.wikimedia.org':await route.fulfill(status=200,json={'query':{'pages':{}}})
     elif url.netloc.endswith(('wikimedia.org','wikipedia.org')):await route.continue_()
     else:await route.abort()
    await context.route('**/*',handle)
@@ -34,9 +35,11 @@ async def main():
     passed=await page.locator('#carPhoto').evaluate('(image)=>image.complete && image.naturalWidth>0 && getComputedStyle(image).display!=="none"')
    except Exception:passed=False
    details=await page.locator('#carPhoto').evaluate('(image)=>({src:image.currentSrc,width:image.naturalWidth,height:image.naturalHeight,display:getComputedStyle(image).display,alt:image.alt})')
-   result={'slug':slug,'visibleLoadedImage':passed,'image':details,'credit':await page.locator('#photoCredit').inner_text(),'status':await page.locator('#photoLoading').inner_text(),'errors':errors,'responses':responses}
+   result={'slug':slug,'forcedWikipediaFallback':force_fallback,'visibleLoadedImage':passed,'image':details,'credit':await page.locator('#photoCredit').inner_text(),'status':await page.locator('#photoLoading').inner_text(),'errors':errors,'responses':responses}
+   if slug=='hyundai-ioniq-5-standard-range-rwd-essential':
+    assert 'Ioniq_5_N_' not in unquote(details['src']),details['src']
    results.append(result);print(json.dumps(result,ensure_ascii=False),flush=True)
-   await page.screenshot(path=str(ROOT/'test-results'/('photo-'+slug+'.png')),full_page=True)
+   await page.screenshot(path=str(ROOT/'test-results'/('photo-'+slug+('-fallback' if force_fallback else '')+'.png')),full_page=True)
    await context.close()
   await browser.close()
  (ROOT/'test-results/photo-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
