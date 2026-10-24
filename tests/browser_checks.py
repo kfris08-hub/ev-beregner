@@ -48,6 +48,21 @@ async def main():
    await page.locator('#calc_electricPrice').fill('0');await page.evaluate('calculate()')
    assert '0.00 kr.' in await page.locator('#answer').inner_text()
    await page.screenshot(path=str(ROOT/'test-results'/f'calculator-{label}.png'),full_page=True)
+   await page.goto(BASE+'/?car=elveon-motors-min-e-sedan-base')
+   await page.wait_for_function('selectedCar !== null')
+   assert await page.evaluate('selectedCar.slice(2).every(v=>v===null)')
+   for number in range(1,21):
+    await page.evaluate('(n)=>{openCalculator(n);calculate()}',number)
+    answer=await page.locator('#answer').inner_text()
+    assert not any(x in answer for x in ['NaN','Infinity','undefined'])
+    assert 'eksempelværdier' in await page.locator('#dataBadge').inner_text()
+   await page.goto(BASE+'/elbil/elveon-motors-min-e-sedan-base/')
+   await page.locator('#modelConsumption').fill('20')
+   await page.locator('#ep').fill('2.5')
+   assert await page.locator('#r100').inner_text()=='50,00 kr.'
+   await page.locator('#modelConsumption').fill('0')
+   assert await page.locator('#r100').inner_text()=='–'
+   await page.screenshot(path=str(ROOT/'test-results'/f'unknown-model-data-{label}.png'),full_page=True)
    await page.goto(BASE+'/')
    await page.wait_for_function('typeof calculators !== "undefined"')
    await page.screenshot(path=str(ROOT/'test-results'/f'home-{label}.png'),full_page=True)

@@ -30,10 +30,17 @@ async def main():
   for slug,photo in CATALOG.items():
    response=await page.goto(BASE+'/elbil/'+slug+'/?billedtjek=20261024-static1',wait_until='load',timeout=30000)
    assert response.status==200,(slug,response.status)
+   if photo['status']=='redirect':
+    await page.wait_for_url('**/elbil/'+photo['redirect_to']+'/')
+    results.append({'slug':slug,'result':'canonicalRedirect'});continue
+   if photo['status']=='withdrawn':
+    assert await page.locator('#modelStatus').is_visible()
+    assert 'noindex' in await page.locator('meta[name=robots]').get_attribute('content')
+    results.append({'slug':slug,'result':'withdrawnExplanation'});continue
    if photo['status']=='verified':
     image=page.locator('#carPhoto')
     state=await image.evaluate('(i)=>({complete:i.complete,width:i.naturalWidth,height:i.naturalHeight,display:getComputedStyle(i).display,src:new URL(i.currentSrc).pathname})')
-    assert state['complete'] and state['width']>=700 and state['display']!='none' and state['src']==photo['src'],(slug,state)
+    assert state['complete'] and state['width']>=(480 if photo.get('usage')=='editorial-only' else 700) and state['display']!='none' and state['src']==photo['src'],(slug,state)
     assert photo['author'] in await page.locator('#photoCredit').inner_text(),slug
     kind='loadedWithoutJavaScript'
    else:
@@ -57,7 +64,7 @@ async def main():
   await context.close();await browser.close()
  assert not any('wikimedia.org' in url or 'wikipedia.org' in url for url in external),external
  (ROOT/'test-results/photo-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
- print(json.dumps({'origin':'public' if PUBLIC else 'checked-out source','models':len(results),'loaded_without_javascript':sum(x['result']=='loadedWithoutJavaScript' for x in results),'explicit_missing':sum(x['result']=='explicitMissingState' for x in results),'broken_asset_message':'passed','external_image_api_requests':0,'horizontal_overflow':False},ensure_ascii=False),flush=True)
+ print(json.dumps({'origin':'public' if PUBLIC else 'checked-out source','models':len(results),'loaded_without_javascript':sum(x['result']=='loadedWithoutJavaScript' for x in results),'withdrawn_explanations':sum(x['result']=='withdrawnExplanation' for x in results),'canonical_redirects':sum(x['result']=='canonicalRedirect' for x in results),'explicit_missing':sum(x['result']=='explicitMissingState' for x in results),'broken_asset_message':'passed','external_image_api_requests':0,'horizontal_overflow':False},ensure_ascii=False),flush=True)
 if __name__=='__main__':
  (ROOT/'test-results').mkdir(exist_ok=True)
  asyncio.run(main())
