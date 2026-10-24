@@ -15,6 +15,7 @@ function setup(kind,options={}){
   const el={id,value:'',style:{},className:'',children:[],offsetTop:0,dataset:{},events:new Map(),validityMessage:'',classList:{add(){},remove(){},toggle(){}},
    addEventListener(type,fn){this.events.set(type,fn)},appendChild(child){this.children.push(child)},remove(){elements.delete(id)},
    insertAdjacentHTML(_,value){html+=value;parse(value)},setAttribute(k,v){this[k]=v},setCustomValidity(m){this.validityMessage=m},reportValidity(){return !this.validityMessage},
+   get src(){return this._src||''},set src(value){this._src=value;this.complete=false;queueMicrotask(()=>{if(String(value).includes('broken-image')){this.naturalWidth=0;this.onerror?.();}else{this.complete=true;this.naturalWidth=1600;this.naturalHeight=1000;this.onload?.();}})},
    get innerHTML(){return html},set innerHTML(v){html=String(v);text=html.replace(/<[^>]*>/g,'');parse(html)},get textContent(){return text},set textContent(v){text=String(v)},get innerText(){return text},set innerText(v){text=String(v)}};
   if(id)elements.set(id,el);return el;
  }
@@ -61,4 +62,22 @@ test('photos require the complete model name including Y, then reuse the cache',
  second.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
  assert.equal(second.elements.get('carPhoto').src,'https://upload.wikimedia.org/right.jpg');
  assert.equal(second.requests.filter(x=>String(x).includes('wikimedia.org')).length,0);first.cleanup();second.cleanup();
+});
+test('a full exterior photo does not need a view keyword and description words do not hide it',async()=>{
+ const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{one:{pageid:1,title:'File:2025 Tesla Model Y.jpg',imageinfo:[{width:1600,height:1000,thumburl:'https://upload.wikimedia.org/model-y.jpg',extmetadata:{Artist:{value:'Example Author'},LicenseShortName:{value:'CC BY-SA 4.0'},ImageDescription:{value:'A car with wheels and the standard trim.'}}}]}}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
+ const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
+ m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
+ assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');m.cleanup();
+});
+test('Wikipedia restores the image when Commons search has no result',async()=>{
+ const fetch=async url=>({ok:true,json:async()=>String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,index:1,title:'Tesla Model Y',pageimage:'2025 Model Y.jpg',fullurl:'https://en.wikipedia.org/wiki/Tesla_Model_Y',thumbnail:{source:'https://upload.wikimedia.org/wikipedia/commons/model-y.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:String(url).includes('elpriser.org')?{price:2.5}:{query:{pages:{}}}});
+ const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
+ m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
+ assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/wikipedia/commons/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');assert.equal(m.elements.get('photoLoading').style.display,'none');m.cleanup();
+});
+test('a broken Commons image falls back to a working Wikipedia image',async()=>{
+ const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{one:{pageid:1,title:'File:Tesla Model Y side view.jpg',imageinfo:[{width:1600,height:1000,thumburl:'https://upload.wikimedia.org/broken-image.jpg',extmetadata:{Artist:{value:'Author'},LicenseShortName:{value:'CC BY-SA 4.0'}}}]}}}}:String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,title:'Tesla Model Y',pageimage:'Model Y.jpg',thumbnail:{source:'https://upload.wikimedia.org/wikipedia/commons/working-image.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
+ const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
+ m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
+ assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/wikipedia/commons/working-image.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');m.cleanup();
 });
