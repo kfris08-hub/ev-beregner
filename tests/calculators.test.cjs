@@ -14,7 +14,7 @@ function setup(kind,options={}){
   let text='',html='';
   const el={id,value:'',style:{},className:'',children:[],offsetTop:0,dataset:{},events:new Map(),validityMessage:'',classList:{add(){},remove(){},toggle(){}},
    addEventListener(type,fn){this.events.set(type,fn)},appendChild(child){this.children.push(child)},remove(){elements.delete(id)},
-   insertAdjacentHTML(_,value){html+=value;parse(value)},setAttribute(k,v){this[k]=v},setCustomValidity(m){this.validityMessage=m},reportValidity(){return !this.validityMessage},
+   insertAdjacentHTML(_,value){html+=value;parse(value)},setAttribute(k,v){this[k]=v},getAttribute(k){return this[k]||null},setCustomValidity(m){this.validityMessage=m},reportValidity(){return !this.validityMessage},
    get src(){return this._src||''},set src(value){this._src=value;this.complete=false;queueMicrotask(()=>{if(String(value).includes('broken-image')){this.naturalWidth=0;this.onerror?.();}else{this.complete=true;this.naturalWidth=1600;this.naturalHeight=1000;this.onload?.();}})},
    get innerHTML(){return html},set innerHTML(v){html=String(v);text=html.replace(/<[^>]*>/g,'');parse(html)},get textContent(){return text},set textContent(v){text=String(v)},get innerText(){return text},set innerText(v){text=String(v)}};
   if(id)elements.set(id,el);return el;
@@ -51,39 +51,19 @@ test('zero kilometres gives zero annual cost',async()=>{const m=setup('model');a
 test('blocked browser storage does not disable calculators',async()=>{const h=setup('home',{storageBlocked:true}),m=setup('model',{storageBlocked:true});await settle();h.run('openCalculator(1);calculate()');assert.doesNotMatch(h.elements.get('answer').textContent,/NaN|Infinity/);assert.match(m.elements.get('r100').textContent,/kr\./);h.cleanup();m.cleanup();});
 test('invalid manual price does not silently use 2 kr.',async()=>{const m=setup('model');await settle();m.elements.get('ep').value='';m.run('calculate()');assert.equal(m.elements.get('r100').textContent,'–');m.cleanup();});
 test('late price response cannot overwrite manual price',async()=>{let resolvePrice;const m=setup('model',{fetch:async url=>String(url).includes('elpriser.org')?new Promise(resolve=>{resolvePrice=resolve}):({ok:true,json:async()=>fuel})});m.elements.get('ep').value='0';m.elements.get('ep').events.get('input')();resolvePrice({ok:true,json:async()=>({price:3})});await settle();assert.equal(m.elements.get('ep').value,'0');assert.equal(m.elements.get('r100').textContent,'0,00 kr.');m.cleanup();});
-test('photos require the complete model name including Y, then reuse the cache',async()=>{
- const fixture=(title,width,url,id)=>({title,pageid:id,imageinfo:[{width,height:1000,thumburl:url,extmetadata:{Artist:{value:'Example Author'},LicenseShortName:{value:'CC BY-SA 4.0'},LicenseUrl:{value:'https://creativecommons.org/licenses/by-sa/4.0/'}}}]});
- const fetch=async url=>({ok:true,json:async()=>String(url).includes('wikimedia.org')?{query:{pages:{wrong:fixture('File:Tesla Model 3 side view.jpg',2500,'https://upload.wikimedia.org/wrong.jpg',1),right:fixture('File:Tesla Model Y side view.jpg',1600,'https://upload.wikimedia.org/right.jpg',2)}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
- const first=setup('model',{fetch});first.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
- first.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(first.elements.get('carPhoto').src,'https://upload.wikimedia.org/right.jpg');
- assert.equal(first.requests.filter(x=>String(x).includes('wikimedia.org')).length,1);
- const second=setup('model',{fetch,storage:first.storage});second.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
- second.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(second.elements.get('carPhoto').src,'https://upload.wikimedia.org/right.jpg');
- assert.equal(second.requests.filter(x=>String(x).includes('wikimedia.org')).length,0);first.cleanup();second.cleanup();
+test('fixed photos never start an image search or require storage',async()=>{
+ const m=setup('model',{storageBlocked:true});await settle();
+ const photo=m.elements.get('carPhoto');photo.src='/assets/cars/reviewed-model.webp';await settle();
+ const requests=m.requests.length;
+ m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));
+ assert.equal(photo.src,'/assets/cars/reviewed-model.webp');assert.equal(m.requests.length,requests);
+ assert.equal(photo.style.display,undefined);m.cleanup();
 });
-test('a full exterior photo does not need a view keyword and description words do not hide it',async()=>{
- const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{one:{pageid:1,title:'File:2025 Tesla Model Y.jpg',imageinfo:[{width:1600,height:1000,thumburl:'https://upload.wikimedia.org/model-y.jpg',extmetadata:{Artist:{value:'Example Author'},LicenseShortName:{value:'CC BY-SA 4.0'},ImageDescription:{value:'A car with wheels and the standard trim.'}}}]}}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
- const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
- m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');m.cleanup();
-});
-test('Wikipedia restores the image from the current thumbnail host when Commons search has no result',async()=>{
- const fetch=async url=>({ok:true,json:async()=>String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,index:1,title:'Tesla Model Y',pageimage:'2025 Model Y.jpg',fullurl:'https://en.wikipedia.org/wiki/Tesla_Model_Y',thumbnail:{source:'https://thumb.wikimedia.org/wikipedia/commons/model-y.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:String(url).includes('elpriser.org')?{price:2.5}:{query:{pages:{}}}});
- const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
- m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(m.elements.get('carPhoto').src,'https://thumb.wikimedia.org/wikipedia/commons/model-y.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');assert.equal(m.elements.get('photoLoading').style.display,'none');m.cleanup();
-});
-test('standard IONIQ 5 does not use an IONIQ 5 N photo',async()=>{
- const photo=(title,url,width)=>({pageid:width,title,imageinfo:[{width,height:1000,thumburl:url,extmetadata:{Artist:{value:'Author'},LicenseShortName:{value:'CC BY-SA 4.0'}}}]});
- const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{wrong:photo('File:Hyundai Ioniq 5 N side view.jpg','https://upload.wikimedia.org/wrong-n.jpg',2500),right:photo('File:Hyundai Ioniq 5.jpg','https://upload.wikimedia.org/standard.jpg',1600)}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
- const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Hyundai',model:'IONIQ 5'};m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/standard.jpg');m.cleanup();
-});
-test('a broken Commons image falls back to a working Wikipedia image',async()=>{
- const fetch=async url=>({ok:true,json:async()=>String(url).includes('commons.wikimedia.org')?{query:{pages:{one:{pageid:1,title:'File:Tesla Model Y side view.jpg',imageinfo:[{width:1600,height:1000,thumburl:'https://upload.wikimedia.org/broken-image.jpg',extmetadata:{Artist:{value:'Author'},LicenseShortName:{value:'CC BY-SA 4.0'}}}]}}}}:String(url).includes('en.wikipedia.org')&&String(url).includes('generator=search')?{query:{pages:{one:{pageid:1,title:'Tesla Model Y',pageimage:'Model Y.jpg',thumbnail:{source:'https://upload.wikimedia.org/wikipedia/commons/working-image.jpg'}}}}}:String(url).includes('fuel-prices')?fuel:{price:2.5}});
- const m=setup('model',{fetch});m.context.document.currentScript.dataset={brand:'Tesla',model:'Model Y'};
- m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));await settle();
- assert.equal(m.elements.get('carPhoto').src,'https://upload.wikimedia.org/wikipedia/commons/working-image.jpg');assert.equal(m.elements.get('carPhoto').style.display,'block');m.cleanup();
+test('a failed local photo reveals an explicit retry message',async()=>{
+ const m=setup('model');await settle();
+ const photo=m.elements.get('carPhoto');photo.src='/assets/cars/reviewed-model.webp';await settle();
+ m.run(fs.readFileSync(path.join(root,'assets/car-images.js'),'utf8'));
+ photo.events.get('error')();
+ assert.equal(photo.style.display,'none');assert.equal(m.elements.get('photoLoading').style.display,'block');
+ assert.match(m.elements.get('photoLoading').textContent,/genindlæse/);m.cleanup();
 });

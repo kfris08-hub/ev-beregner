@@ -1,0 +1,45 @@
+name: Klargør og test kontrollerede modelbilleder
+on:
+  push:
+    branches: [fix/curated-model-photos-2026-10-24]
+    paths: [tools/prepare_reviewed_photos.py, data/reviewed-photo-pins.json, .github/workflows/prepare-reviewed-photos.yml]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install Pillow==11.3.0 playwright==1.56.0
+      - name: Gem de visuelt kontrollerede billedvalg og kildeoplysninger
+        run: |
+          python tools/prepare_reviewed_photos.py
+          python tools/render_model_photos.py
+      - name: Kontroller alle sider, licenser og beregnere
+        run: |
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          node tests/calculators.test.cjs
+      - name: Kontroller alle billedfiler uden JavaScript samt mobil og desktop
+        run: |
+          python tests/photo_browser_checks.py
+          python tests/browser_checks.py
+      - name: Gem den kontrollerede version på arbejdsgrenen
+        run: |
+          git config user.name 'EV Beregner billedkontrol'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/cars data/model-photos.json elbil sitemap.xml 'BILLEDDÆKNING.md'
+          git commit -m 'Fastlås 177 gennemgåede modelbilleder med kreditering, HTML og billedsitemap'
+          git push origin HEAD:fix/curated-model-photos-2026-10-24
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kontrollerede-modelbilleder
+          path: test-results/
