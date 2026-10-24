@@ -1,0 +1,1862 @@
+{
+  "aiways-u5-premium": {
+    "label": "Aiways U5 Premium",
+    "identity": "Aiways U5",
+    "article": "Aiways U5",
+    "query": "Aiways U5",
+    "required": "\\baiways[ _-]*u5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "aiways-u6-premium": {
+    "label": "Aiways U6 Premium",
+    "identity": "Aiways U6",
+    "article": "Aiways U6",
+    "query": "Aiways U6",
+    "required": "\\baiways[ _-]*u6\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "alfa-romeo-junior-core": {
+    "label": "Alfa Romeo Junior Core",
+    "identity": "Alfa Romeo Junior",
+    "article": "Alfa Romeo Junior",
+    "query": "Alfa Romeo Junior",
+    "required": "\\balfa[ _-]*romeo[ _-]*junior\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "alpine-a290-gt": {
+    "label": "Alpine A290 GT",
+    "identity": "Alpine A290",
+    "article": "Alpine A290",
+    "query": "Alpine A290",
+    "required": "\\balpine[ _-]*a290\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "alpine-a390-gt": {
+    "label": "Alpine A390 GT",
+    "identity": "Alpine A390",
+    "article": "Alpine A390",
+    "query": "Alpine A390",
+    "required": "\\balpine[ _-]*a390\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "audi-a6-e-tron-sportback-progress-plus": {
+    "label": "Audi A6 e-tron Sportback Progress plus",
+    "identity": "Audi A6 e-tron Sportback",
+    "article": "Audi A6 e-tron",
+    "query": "Audi A6 e-tron Sportback",
+    "required": "\\baudi[ _-]*a6[ _-]*e[ _-]*tron[ _-]*sportback\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "audi-e-tron-50": {
+    "label": "Audi e-tron 50",
+    "identity": "Audi e-tron",
+    "article": "Audi e-tron (2018)",
+    "query": "Audi e-tron",
+    "required": "\\baudi[ _-]*e[ _-]*tron\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|\\bgt\\b|q[ _-]*[468]",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "audi-e-tron-gt-quattro-pro": {
+    "label": "Audi e-tron GT quattro Pro",
+    "identity": "Audi e-tron GT",
+    "article": "Audi e-tron GT",
+    "query": "Audi e-tron GT",
+    "required": "\\baudi[ _-]*e[ _-]*tron[ _-]*gt\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "audi-q4-e-tron-40-e-tron-s-line-edition": {
+    "label": "Audi Q4 e-tron 40 e-tron S line Edition",
+    "identity": "Audi Q4 e-tron",
+    "article": "Audi Q4 e-tron",
+    "query": "Audi Q4 e-tron",
+    "required": "\\baudi[ _-]*q4[ _-]*e[ _-]*tron\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "audi-q6-e-tron-e-tron-s-line-plus": {
+    "label": "Audi Q6 e-tron e-tron S line plus",
+    "identity": "Audi Q6 e-tron",
+    "article": "Audi Q6 e-tron",
+    "query": "Audi Q6 e-tron",
+    "required": "\\baudi[ _-]*q6[ _-]*e[ _-]*tron\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "audi-q8-e-tron-50-quattro": {
+    "label": "Audi Q8 e-tron 50 quattro",
+    "identity": "Audi Q8 e-tron",
+    "article": "Audi Q8 e-tron",
+    "query": "Audi Q8 e-tron",
+    "required": "\\baudi[ _-]*q8[ _-]*e[ _-]*tron\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-i4-edrive35-m-sport": {
+    "label": "BMW i4 eDrive35 M Sport",
+    "identity": "BMW i4",
+    "article": "BMW i4",
+    "query": "BMW i4",
+    "required": "\\bbmw[ _-]*i4\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-i5-2023-edrive40-m-sport": {
+    "label": "BMW i5 (2023) eDrive40 M Sport",
+    "identity": "BMW i5",
+    "article": "BMW 5 Series (G60)",
+    "query": "BMW i5",
+    "required": "\\bbmw[ _-]*i5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|touring|g61",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-i5-touring-edrive40-m-sport": {
+    "label": "BMW i5 Touring eDrive40 M Sport",
+    "identity": "BMW i5 Touring",
+    "article": "BMW 5 Series (G60)",
+    "query": "BMW i5 Touring",
+    "required": "\\bbmw[ _-]*i5[ _-]*touring\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-i7-xdrive40": {
+    "label": "BMW i7 xDrive40",
+    "identity": "BMW i7",
+    "article": "BMW i7",
+    "query": "BMW i7",
+    "required": "\\bbmw[ _-]*i7\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-ix-m60-m60-xdrive": {
+    "label": "BMW iX M60 M60 xDrive",
+    "identity": "BMW iX",
+    "article": "BMW iX",
+    "query": "BMW iX",
+    "required": "\\bbmw[ _-]*ix\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-ix-m70-m70-xdrive": {
+    "label": "BMW iX M70 M70 xDrive",
+    "identity": "BMW iX",
+    "article": "BMW iX",
+    "query": "BMW iX",
+    "required": "\\bbmw[ _-]*ix\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-ix-xdrive60": {
+    "label": "BMW iX xDrive60",
+    "identity": "BMW iX",
+    "article": "BMW iX",
+    "query": "BMW iX",
+    "required": "\\bbmw[ _-]*ix\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-ix1-edrive20-m-sport": {
+    "label": "BMW iX1 eDrive20 M Sport",
+    "identity": "BMW iX1",
+    "article": "BMW iX1",
+    "query": "BMW iX1",
+    "required": "\\bbmw[ _-]*ix1\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-ix2-2024-edrive20-m-sport": {
+    "label": "BMW iX2 (2024) eDrive20 M Sport",
+    "identity": "BMW iX2",
+    "article": "BMW iX2",
+    "query": "BMW iX2",
+    "required": "\\bbmw[ _-]*ix2\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "bmw-ix3-2025-50-xdrive": {
+    "label": "BMW iX3 (2025) 50 xDrive",
+    "identity": "BMW iX3 NA5",
+    "article": "BMW iX3",
+    "query": "BMW iX3 NA5",
+    "required": "ix3.*(na5|2025|2026|2027)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-atto-2-boost": {
+    "label": "BYD Atto 2 Boost",
+    "identity": "BYD Atto 2",
+    "article": "BYD Yuan Up",
+    "query": "BYD Atto 2",
+    "required": "(atto[ _-]*2|yuan[ _-]*up)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-atto-3-evo-design": {
+    "label": "BYD Atto 3 EVO Design",
+    "identity": "BYD Atto 3",
+    "article": "BYD Atto 3",
+    "query": "BYD Atto 3",
+    "required": "\\bbyd[ _-]*atto[ _-]*3\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-dolphin-comfort": {
+    "label": "BYD Dolphin Comfort",
+    "identity": "BYD Dolphin",
+    "article": "BYD Dolphin",
+    "query": "BYD Dolphin",
+    "required": "\\bbyd[ _-]*dolphin\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|surf",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-dolphin-surf-active": {
+    "label": "BYD Dolphin Surf Active",
+    "identity": "BYD Dolphin Surf",
+    "article": "BYD Seagull",
+    "query": "BYD Dolphin Surf",
+    "required": "(dolphin[ _-]*surf|seagull)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-seal-long-range": {
+    "label": "BYD Seal Long Range",
+    "identity": "BYD Seal",
+    "article": "BYD Seal",
+    "query": "BYD Seal",
+    "required": "\\bbyd[ _-]*seal\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|seal[ _-]*u\\b|sealion",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-seal-u-comfort": {
+    "label": "BYD Seal U Comfort",
+    "identity": "BYD Seal U",
+    "article": "BYD Seal U",
+    "query": "BYD Seal U",
+    "required": "\\bbyd[ _-]*seal[ _-]*u\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-sealion-7-design-rwd": {
+    "label": "BYD Sealion 7 Design RWD",
+    "identity": "BYD Sealion 7",
+    "article": "BYD Sealion 07 EV",
+    "query": "BYD Sealion 7",
+    "required": "(sealion[ _-]*(7|07))",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "byd-tang-excellence-awd": {
+    "label": "BYD Tang Excellence AWD",
+    "identity": "BYD Tang",
+    "article": "BYD Tang",
+    "query": "BYD Tang",
+    "required": "\\bbyd[ _-]*tang\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "changan-deepal-s05-pro-rwd": {
+    "label": "Changan Deepal S05 Pro RWD",
+    "identity": "Deepal S05",
+    "article": "Deepal S05",
+    "query": "Deepal S05",
+    "required": "\\bdeepal[ _-]*s05\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "changan-deepal-s07-standard-rwd": {
+    "label": "Changan Deepal S07 Standard RWD",
+    "identity": "Deepal S07",
+    "article": "Deepal S07",
+    "query": "Deepal S07",
+    "required": "\\bdeepal[ _-]*s07\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "citroen-ami-ami": {
+    "label": "Citroën Ami Ami",
+    "identity": "Citroën Ami",
+    "article": "Citroën Ami",
+    "query": "Citroën Ami",
+    "required": "\\bcitroen[ _-]*ami\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "citroen-e-c3-aircross-you": {
+    "label": "Citroën ë-C3 Aircross You!",
+    "identity": "Citroen e-C3 Aircross",
+    "article": "Citroën C3 Aircross",
+    "query": "Citroen e-C3 Aircross",
+    "required": "(e[ _-]*c3|e[ _-]*c[ _-]*3).*aircross",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "citroen-e-c3-you": {
+    "label": "Citroën ë-C3 You!",
+    "identity": "Citroen e-C3",
+    "article": "Citroën C3 (CC21)",
+    "query": "Citroen e-C3",
+    "required": "(e[ _-]*c3|e[ _-]*c[ _-]*3)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "citroen-e-c4-shine-136": {
+    "label": "Citroën ë-C4 Shine 136",
+    "identity": "Citroen e-C4",
+    "article": "Citroën C4",
+    "query": "Citroen e-C4",
+    "required": "e[ _-]*c[ _-]*4",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "citroen-e-c4x-shine-156": {
+    "label": "Citroën ë-C4X Shine 156",
+    "identity": "Citroen e-C4 X",
+    "article": "Citroën C4 X",
+    "query": "Citroen e-C4 X",
+    "required": "e[ _-]*c[ _-]*4[ _-]*x",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "citroen-e-c5-aircross-you-74-kwh": {
+    "label": "Citroën ë-C5 Aircross You! 74 kWh",
+    "identity": "Citroen C5 Aircross 2025",
+    "article": "Citroën C5 Aircross",
+    "query": "Citroen C5 Aircross 2025",
+    "required": "c5.*(2025|2026|cc22|electric)|e[ _-]*c5",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "cupra-born-basis-58-kwh": {
+    "label": "Cupra Born Basis 58 kWh",
+    "identity": "Cupra Born",
+    "article": "Cupra Born",
+    "query": "Cupra Born",
+    "required": "\\bcupra[ _-]*born\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "cupra-raval-base": {
+    "label": "Cupra Raval Base",
+    "identity": "Cupra Raval",
+    "article": "Cupra Raval",
+    "query": "Cupra Raval",
+    "required": "\\bcupra[ _-]*raval\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "cupra-tavascan-basis": {
+    "label": "Cupra Tavascan Basis",
+    "identity": "Cupra Tavascan",
+    "article": "Cupra Tavascan",
+    "query": "Cupra Tavascan",
+    "required": "\\bcupra[ _-]*tavascan\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "ds-automobiles-3-e-tense-3-e-tense": {
+    "label": "DS Automobiles 3 E-Tense 3 E-Tense",
+    "identity": "DS 3 E-Tense",
+    "article": "DS 3 Crossback",
+    "query": "DS 3 E-Tense",
+    "required": "\\bds[ _-]*3[ _-]*e[ _-]*tense\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "elveon-motors-min-e-sedan-base": {
+    "label": "Elveon Motors Min-E Sedan BASE",
+    "identity": "Elveon Motors Min-E Sedan",
+    "article": "Elveon Motors Min-E Sedan",
+    "query": "Elveon Motors Min-E Sedan",
+    "required": "\\belveon[ _-]*motors[ _-]*min[ _-]*e[ _-]*sedan\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "exlantix-es-advanced-74-kwh": {
+    "label": "Exlantix ES Advanced 74 kWh",
+    "identity": "Exeed Sterra ES",
+    "article": "Exeed Sterra ES",
+    "query": "Exeed Sterra ES",
+    "required": "(sterra[ _-]*es|exlantix[ _-]*es)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "fiat-500-electric-24-kwh": {
+    "label": "Fiat 500 Electric 24 kWh",
+    "identity": "Fiat 500e 2020",
+    "article": "Fiat New 500",
+    "query": "Fiat 500e 2020",
+    "required": "(500e|new[ _-]*500|500[ _-]*electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "fiat-grande-panda-la-prima": {
+    "label": "Fiat Grande Panda La Prima",
+    "identity": "Fiat Grande Panda",
+    "article": "Fiat Grande Panda",
+    "query": "Fiat Grande Panda",
+    "required": "\\bfiat[ _-]*grande[ _-]*panda\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "fiat-topolino-topolino": {
+    "label": "Fiat Topolino Topolino",
+    "identity": "Fiat Topolino",
+    "article": "Fiat Topolino",
+    "query": "Fiat Topolino",
+    "required": "\\bfiat[ _-]*topolino\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "firefly-firefly-select": {
+    "label": "Firefly Firefly Select",
+    "identity": "Nio Firefly",
+    "article": "Firefly (car)",
+    "query": "Nio Firefly",
+    "required": "firefly",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "ford-capri-style-rwd-sr": {
+    "label": "Ford Capri Style RWD SR",
+    "identity": "Ford Capri 2024",
+    "article": "Ford Capri (2024)",
+    "query": "Ford Capri 2024",
+    "required": "capri.*(2024|2025|2026|ev|electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "ford-explorer-style-rwd-sr": {
+    "label": "Ford Explorer Style RWD SR",
+    "identity": "Ford Explorer EV",
+    "article": "Ford Explorer EV",
+    "query": "Ford Explorer EV",
+    "required": "\\bford[ _-]*explorer[ _-]*ev\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "ford-mustang-mach-e-standard-range-rwd": {
+    "label": "Ford Mustang Mach-E Standard Range RWD",
+    "identity": "Ford Mustang Mach-E",
+    "article": "Ford Mustang Mach-E",
+    "query": "Ford Mustang Mach-E",
+    "required": "\\bford[ _-]*mustang[ _-]*mach[ _-]*e\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "ford-puma-gen-e-select": {
+    "label": "Ford Puma Gen-E Select",
+    "identity": "Ford Puma Gen-E",
+    "article": "Ford Puma (crossover)",
+    "query": "Ford Puma Gen-E",
+    "required": "puma.*(gen[ _-]*e|electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "gac-aion-aion-ut-ut-60-kwh": {
+    "label": "GAC Aion Aion UT UT 60 kWh",
+    "identity": "Aion UT",
+    "article": "Aion UT",
+    "query": "Aion UT",
+    "required": "aion[ _-]*ut",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "genesis-g80-electrified-standard-awd": {
+    "label": "Genesis G80 Electrified Standard AWD",
+    "identity": "Genesis Electrified G80",
+    "article": "Genesis Electrified G80",
+    "query": "Genesis Electrified G80",
+    "required": "\\bgenesis[ _-]*electrified[ _-]*g80\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "genesis-gv60-standard": {
+    "label": "Genesis GV60 Standard",
+    "identity": "Genesis GV60",
+    "article": "Genesis GV60",
+    "query": "Genesis GV60",
+    "required": "\\bgenesis[ _-]*gv60\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "genesis-gv70-electrified-advanced-awd": {
+    "label": "Genesis GV70 Electrified Advanced AWD",
+    "identity": "Genesis Electrified GV70",
+    "article": "Genesis Electrified GV70",
+    "query": "Genesis Electrified GV70",
+    "required": "\\bgenesis[ _-]*electrified[ _-]*gv70\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "gwm-ora-03-standard-57-kwh": {
+    "label": "GWM ORA 03 Standard 57 kWh",
+    "identity": "Ora Good Cat",
+    "article": "Ora Good Cat",
+    "query": "Ora Good Cat",
+    "required": "(ora[ _-]*(03|good[ _-]*cat|funky[ _-]*cat))",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "honda-e-ny1-advance": {
+    "label": "Honda e:Ny1 Advance",
+    "identity": "Honda e:Ny1",
+    "article": "Honda e:Ny1",
+    "query": "Honda e:Ny1",
+    "required": "\\bhonda[ _-]*e[ _-]*ny1\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hongqi-eh7-luxury": {
+    "label": "Hongqi EH7 Luxury",
+    "identity": "Hongqi EH7",
+    "article": "Hongqi EH7",
+    "query": "Hongqi EH7",
+    "required": "\\bhongqi[ _-]*eh7\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-inster-standard-range-essential": {
+    "label": "Hyundai INSTER Standard Range Essential",
+    "identity": "Hyundai Inster",
+    "article": "Hyundai Inster",
+    "query": "Hyundai Inster",
+    "required": "\\bhyundai[ _-]*inster\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-ioniq-5-n-standard": {
+    "label": "Hyundai IONIQ 5 N Standard",
+    "identity": "Hyundai Ioniq 5 N",
+    "article": "Hyundai Ioniq 5",
+    "query": "Hyundai Ioniq 5 N",
+    "required": "\\bhyundai[ _-]*ioniq[ _-]*5[ _-]*n\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-ioniq-5-standard-range-rwd-essential": {
+    "label": "Hyundai IONIQ 5 Standard Range RWD Essential",
+    "identity": "Hyundai IONIQ 5",
+    "article": "Hyundai IONIQ 5",
+    "query": "Hyundai IONIQ 5",
+    "required": "\\bhyundai[ _-]*ioniq[ _-]*5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|ioniq[ _-]*5[ _-]*n\\b",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-ioniq-6-n-awd": {
+    "label": "Hyundai IONIQ 6 N AWD",
+    "identity": "Hyundai Ioniq 6 N",
+    "article": "Hyundai Ioniq 6",
+    "query": "Hyundai Ioniq 6 N",
+    "required": "\\bhyundai[ _-]*ioniq[ _-]*6[ _-]*n\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-ioniq-6-standard-range-rwd-essential": {
+    "label": "Hyundai IONIQ 6 Standard Range RWD Essential",
+    "identity": "Hyundai IONIQ 6",
+    "article": "Hyundai IONIQ 6",
+    "query": "Hyundai IONIQ 6",
+    "required": "\\bhyundai[ _-]*ioniq[ _-]*6\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|ioniq[ _-]*6[ _-]*n\\b",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-ioniq-7-standard": {
+    "label": "Hyundai IONIQ 7 Standard",
+    "identity": "Hyundai IONIQ 7",
+    "article": "Hyundai IONIQ 7",
+    "query": "Hyundai IONIQ 7",
+    "required": "\\bhyundai[ _-]*ioniq[ _-]*7\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "hyundai-ioniq-9-rwd-advanced": {
+    "label": "Hyundai IONIQ 9 RWD Advanced",
+    "identity": "Hyundai IONIQ 9",
+    "article": "Hyundai IONIQ 9",
+    "query": "Hyundai IONIQ 9",
+    "required": "\\bhyundai[ _-]*ioniq[ _-]*9\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-kona-electric-2023-standard-essential": {
+    "label": "Hyundai KONA Electric (2023) Standard Essential",
+    "identity": "Hyundai Kona Electric SX2",
+    "article": "Hyundai Kona",
+    "query": "Hyundai Kona Electric SX2",
+    "required": "kona.*(sx2|2024|2025|2026|electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "hyundai-staria-electric-wagon-9-sder": {
+    "label": "Hyundai STARIA Electric Wagon 9-sæder",
+    "identity": "Hyundai Staria Electric",
+    "article": "Hyundai Staria",
+    "query": "Hyundai Staria Electric",
+    "required": "staria.*electric",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "jaecoo-j5-ev-comfort": {
+    "label": "Jaecoo J5 EV Comfort",
+    "identity": "Jaecoo J5",
+    "article": "Jaecoo J5",
+    "query": "Jaecoo J5",
+    "required": "(jaecoo[ _-]*j?5|jaecoo[ _-]*e5)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "jeep-avenger-electric-longitude": {
+    "label": "Jeep Avenger Electric Longitude",
+    "identity": "Jeep Avenger electric",
+    "article": "Jeep Avenger",
+    "query": "Jeep Avenger electric",
+    "required": "\\bjeep[ _-]*avenger[ _-]*electric\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kgm-musso-ev-musso-ev-fwd": {
+    "label": "KGM Musso EV Musso EV FWD",
+    "identity": "KGM Musso EV",
+    "article": "KGM Musso EV",
+    "query": "KGM Musso EV",
+    "required": "musso.*(ev|q200)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kgm-torres-evx-standard": {
+    "label": "KGM Torres EVX Standard",
+    "identity": "KGM Torres EVX",
+    "article": "KGM Torres EVX",
+    "query": "KGM Torres EVX",
+    "required": "\\bkgm[ _-]*torres[ _-]*evx\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-ev1-standard-range": {
+    "label": "Kia EV1 Standard Range",
+    "identity": "Kia EV1",
+    "article": "Kia EV1",
+    "query": "Kia EV1",
+    "required": "\\bkia[ _-]*ev1\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "kia-ev2-standard-range-access": {
+    "label": "Kia EV2 Standard Range Access",
+    "identity": "Kia EV2",
+    "article": "Kia EV2",
+    "query": "Kia EV2",
+    "required": "\\bkia[ _-]*ev2\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-ev3-standard-range-access": {
+    "label": "Kia EV3 Standard Range Access",
+    "identity": "Kia EV3",
+    "article": "Kia EV3",
+    "query": "Kia EV3",
+    "required": "\\bkia[ _-]*ev3\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-ev4-standard-range-access": {
+    "label": "Kia EV4 Standard Range Access",
+    "identity": "Kia EV4",
+    "article": "Kia EV4",
+    "query": "Kia EV4",
+    "required": "\\bkia[ _-]*ev4\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-ev5-standard-range-access": {
+    "label": "Kia EV5 Standard Range Access",
+    "identity": "Kia EV5",
+    "article": "Kia EV5",
+    "query": "Kia EV5",
+    "required": "\\bkia[ _-]*ev5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-ev6-standard-range-rwd": {
+    "label": "Kia EV6 Standard Range RWD",
+    "identity": "Kia EV6",
+    "article": "Kia EV6",
+    "query": "Kia EV6",
+    "required": "\\bkia[ _-]*ev6\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-ev9-standard-range-rwd-upgrade": {
+    "label": "Kia EV9 Standard Range RWD Upgrade",
+    "identity": "Kia EV9",
+    "article": "Kia EV9",
+    "query": "Kia EV9",
+    "required": "\\bkia[ _-]*ev9\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-niro-ev-access": {
+    "label": "Kia Niro EV Access",
+    "identity": "Kia Niro EV SG2",
+    "article": "Kia Niro",
+    "query": "Kia Niro EV SG2",
+    "required": "niro.*(ev|sg2)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-pv5-standard-rwd": {
+    "label": "Kia PV5 Standard RWD",
+    "identity": "Kia PV5",
+    "article": "Kia PV5",
+    "query": "Kia PV5",
+    "required": "\\bkia[ _-]*pv5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "kia-sportage-ev-standard": {
+    "label": "Kia Sportage EV Standard",
+    "identity": "Kia Sportage EV",
+    "article": "Kia Sportage EV",
+    "query": "Kia Sportage EV",
+    "required": "\\bkia[ _-]*sportage[ _-]*ev\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "leapmotor-b10-life": {
+    "label": "Leapmotor B10 Life",
+    "identity": "Leapmotor B10",
+    "article": "Leapmotor B10",
+    "query": "Leapmotor B10",
+    "required": "\\bleapmotor[ _-]*b10\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "lexus-es-350e-executive": {
+    "label": "Lexus ES 350e Executive",
+    "identity": "Lexus ES 2026",
+    "article": "Lexus ES",
+    "query": "Lexus ES 2026",
+    "required": "lexus.*es.*(2026|2027|es90|350e|500e)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "lexus-rz-450e": {
+    "label": "Lexus RZ 450e+",
+    "identity": "Lexus RZ",
+    "article": "Lexus RZ",
+    "query": "Lexus RZ",
+    "required": "\\blexus[ _-]*rz\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "maxus-edeliver-3-standard-range-52-kwh": {
+    "label": "Maxus eDeliver 3 Standard Range 52 kWh",
+    "identity": "Maxus eDeliver 3",
+    "article": "Maxus EV30",
+    "query": "Maxus eDeliver 3",
+    "required": "(edeliver[ _-]*3|ev30)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "maxus-eterron-9-luxury": {
+    "label": "Maxus eTerron 9 Luxury",
+    "identity": "Maxus eTerron 9",
+    "article": "Maxus eTerron 9",
+    "query": "Maxus eTerron 9",
+    "required": "eterron[ _-]*9",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mazda-6e-takumi": {
+    "label": "Mazda 6e Takumi",
+    "identity": "Mazda 6e",
+    "article": "Mazda 6e",
+    "query": "Mazda 6e",
+    "required": "\\bmazda[ _-]*6e\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mazda-cx-6e-takumi": {
+    "label": "Mazda CX-6e Takumi",
+    "identity": "Mazda CX-6e",
+    "article": "Mazda EZ-60",
+    "query": "Mazda CX-6e",
+    "required": "(cx[ _-]*6e|ez[ _-]*60)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-cla-200-advance-edition": {
+    "label": "Mercedes-Benz CLA 200 Advance Edition",
+    "identity": "Mercedes-Benz CLA C174",
+    "article": "Mercedes-Benz CLA",
+    "query": "Mercedes-Benz CLA C174",
+    "required": "(cla.*(2025|2026|c174|electric)|c174)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|shooting|x174",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-cla-shooting-brake-cla-250-advance-edition": {
+    "label": "Mercedes-Benz CLA Shooting Brake CLA 250+ Advance Edition",
+    "identity": "Mercedes-Benz CLA Shooting Brake X174",
+    "article": "Mercedes-Benz CLA",
+    "query": "Mercedes-Benz CLA Shooting Brake X174",
+    "required": "(cla.*shooting.*(2025|2026|174)|x174)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqa-250-amg-edition": {
+    "label": "Mercedes-Benz EQA 250+ AMG Edition",
+    "identity": "Mercedes-Benz EQA",
+    "article": "Mercedes-Benz EQA",
+    "query": "Mercedes-Benz EQA",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqa\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqb-eqb-250-amg-edition": {
+    "label": "Mercedes-Benz EQB EQB 250+ AMG Edition",
+    "identity": "Mercedes-Benz EQB",
+    "article": "Mercedes-Benz EQB",
+    "query": "Mercedes-Benz EQB",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqb\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqc-300": {
+    "label": "Mercedes-Benz EQC 300",
+    "identity": "Mercedes-Benz EQC",
+    "article": "Mercedes-Benz EQC",
+    "query": "Mercedes-Benz EQC",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqc\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqe-350": {
+    "label": "Mercedes-Benz EQE 350+",
+    "identity": "Mercedes-Benz EQE",
+    "article": "Mercedes-Benz EQE",
+    "query": "Mercedes-Benz EQE",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqe\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|suv|x294",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqe-suv-350": {
+    "label": "Mercedes-Benz EQE SUV 350",
+    "identity": "Mercedes-Benz EQE SUV",
+    "article": "Mercedes-Benz EQE SUV",
+    "query": "Mercedes-Benz EQE SUV",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqe[ _-]*suv\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqs-580-4matic": {
+    "label": "Mercedes-Benz EQS 580 4MATIC",
+    "identity": "Mercedes-Benz EQS",
+    "article": "Mercedes-Benz EQS",
+    "query": "Mercedes-Benz EQS",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqs\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-eqt-200-standard": {
+    "label": "Mercedes-Benz EQT 200 Standard",
+    "identity": "Mercedes-Benz EQT",
+    "article": "Mercedes-Benz EQT",
+    "query": "Mercedes-Benz EQT",
+    "required": "\\bmercedes[ _-]*benz[ _-]*eqt\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-gla-with-eq-technology-200": {
+    "label": "Mercedes-Benz GLA with EQ Technology 200",
+    "identity": "Mercedes-Benz GLA with EQ",
+    "article": "Mercedes-Benz GLA with EQ",
+    "query": "Mercedes-Benz GLA with EQ",
+    "required": "\\bmercedes[ _-]*benz[ _-]*gla[ _-]*with[ _-]*eq\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-glb-glb-250": {
+    "label": "Mercedes-Benz GLB GLB 250+",
+    "identity": "Mercedes-Benz GLB EQ X244",
+    "article": "Mercedes-Benz GLB",
+    "query": "Mercedes-Benz GLB EQ X244",
+    "required": "(glb.*(2026|electric)|x244)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-glc-with-eq-technology-400-4matic": {
+    "label": "Mercedes-Benz GLC with EQ Technology 400 4MATIC",
+    "identity": "Mercedes-Benz GLC EQ",
+    "article": "Mercedes-Benz GLC",
+    "query": "Mercedes-Benz GLC EQ",
+    "required": "glc.*(eq|electric|x540)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mercedes-benz-vle-vle-300": {
+    "label": "Mercedes-Benz VLE VLE 300",
+    "identity": "Mercedes-Benz VLE",
+    "article": "Mercedes-Benz VLE",
+    "query": "Mercedes-Benz VLE",
+    "required": "\\bmercedes[ _-]*benz[ _-]*vle\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-im5-long-range": {
+    "label": "MG IM5 Long Range",
+    "identity": "IM L6",
+    "article": "IM L6",
+    "query": "IM L6",
+    "required": "(im[ _-]*l6|mg[ _-]*im5)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-im6-long-range": {
+    "label": "MG IM6 Long Range",
+    "identity": "IM LS6",
+    "article": "IM LS6",
+    "query": "IM LS6",
+    "required": "(im[ _-]*ls6|mg[ _-]*im6)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-marvel-r-executive": {
+    "label": "MG Marvel R Executive",
+    "identity": "MG Marvel R",
+    "article": "MG Marvel R",
+    "query": "MG Marvel R",
+    "required": "\\bmg[ _-]*marvel[ _-]*r\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-mg-cyberster-trophy": {
+    "label": "MG MG Cyberster Trophy",
+    "identity": "MG Cyberster",
+    "article": "MG Cyberster",
+    "query": "MG Cyberster",
+    "required": "\\bmg[ _-]*cyberster\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-mg4-premium-long-range": {
+    "label": "MG MG4 Premium Long Range",
+    "identity": "MG MG4",
+    "article": "MG MG4",
+    "query": "MG MG4",
+    "required": "\\bmg[ _-]*mg4\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-mg4-urban-2026-comfort-standard-range": {
+    "label": "MG MG4 Urban (2026) Comfort Standard Range",
+    "identity": "MG4 Urban 2025",
+    "article": "MG4 EV",
+    "query": "MG4 Urban 2025",
+    "required": "(mg4.*(urban|2025|2026)|mg[ _-]*4.*urban)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-mgs5-ev-standard-range-comfort": {
+    "label": "MG MGS5 EV Standard Range Comfort",
+    "identity": "MG S5 EV",
+    "article": "MG S5 EV",
+    "query": "MG S5 EV",
+    "required": "mg[ _-]*s5",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mg-s6-ev-luxury-long-range-rwd": {
+    "label": "MG S6 EV Luxury Long Range RWD",
+    "identity": "MG S6 EV",
+    "article": "MG S6 EV",
+    "query": "MG S6 EV",
+    "required": "mg[ _-]*s6",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "micro-microlino-dolce": {
+    "label": "Micro Microlino Dolce",
+    "identity": "Microlino",
+    "article": "Microlino",
+    "query": "Microlino",
+    "required": "\\bmicrolino\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mini-countryman-electric-countryman-e": {
+    "label": "Mini Countryman Electric Countryman E",
+    "identity": "Mini Countryman U25",
+    "article": "Mini Countryman",
+    "query": "Mini Countryman U25",
+    "required": "countryman.*(u25|2024|2025|2026|se[ _-]*all4)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "mini-electric-cooper-e": {
+    "label": "Mini Electric Cooper E",
+    "identity": "Mini Cooper J01",
+    "article": "Mini Cooper (J01)",
+    "query": "Mini Cooper J01",
+    "required": "(mini.*(j01|cooper.*(2024|2025|2026|electric))|mini[ _-]*cooper[ _-]*se)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nio-el6-long-range-awd": {
+    "label": "NIO EL6 Long Range AWD",
+    "identity": "Nio EL6",
+    "article": "Nio ES6",
+    "query": "Nio EL6",
+    "required": "\\bnio[ _-]*el6\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nio-es6-standard-range-73-kwh": {
+    "label": "NIO ES6 Standard Range 73 kWh",
+    "identity": "Nio ES6",
+    "article": "Nio ES6",
+    "query": "Nio ES6",
+    "required": "\\bnio[ _-]*es6\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nio-et5-standard-range-73-kwh": {
+    "label": "NIO ET5 Standard Range 73 kWh",
+    "identity": "NIO ET5",
+    "article": "NIO ET5",
+    "query": "NIO ET5",
+    "required": "\\bnio[ _-]*et5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nissan-ariya-2022-advance-87-kwh": {
+    "label": "Nissan Ariya (2022) Advance 87 kWh",
+    "identity": "Nissan Ariya",
+    "article": "Nissan Ariya",
+    "query": "Nissan Ariya",
+    "required": "\\bnissan[ _-]*ariya\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nissan-ariya-2026-engage-plus-63-kwh": {
+    "label": "Nissan Ariya (2026) Engage Plus 63 kWh",
+    "identity": "Nissan Ariya",
+    "article": "Nissan Ariya",
+    "query": "Nissan Ariya",
+    "required": "\\bnissan[ _-]*ariya\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nissan-leaf-2026-engage-52-kwh": {
+    "label": "Nissan Leaf (2026) Engage 52 kWh",
+    "identity": "Nissan Leaf ZE2",
+    "article": "Nissan Leaf",
+    "query": "Nissan Leaf ZE2",
+    "required": "leaf.*(ze2|ze3|2026|2027)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "nissan-micra-electric-40-kwh": {
+    "label": "Nissan Micra Electric 40 kWh",
+    "identity": "Nissan Micra 2026",
+    "article": "Nissan Micra",
+    "query": "Nissan Micra 2026",
+    "required": "micra.*(2025|2026|2027|electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "omoda-5-ev-standard-fwd": {
+    "label": "Omoda 5 EV Standard FWD",
+    "identity": "Omoda E5",
+    "article": "Omoda E5",
+    "query": "Omoda E5",
+    "required": "omoda.*(e5|5[ _-]*ev)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "opel-astra-electric-edition": {
+    "label": "Opel Astra Electric Edition",
+    "identity": "Opel Astra Electric",
+    "article": "Opel Astra",
+    "query": "Opel Astra Electric",
+    "required": "astra.*(electric|e[ _-]*astra)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "opel-frontera-electric-edition": {
+    "label": "Opel Frontera Electric Edition",
+    "identity": "Opel Frontera 2024",
+    "article": "Opel Frontera (2024)",
+    "query": "Opel Frontera 2024",
+    "required": "frontera.*(2024|2025|2026)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "opel-grandland-electric-edition": {
+    "label": "Opel Grandland Electric Edition",
+    "identity": "Opel Grandland 2024 electric",
+    "article": "Opel Grandland",
+    "query": "Opel Grandland 2024 electric",
+    "required": "grandland.*(electric|2024|2025|2026)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "opel-mokka-electric-base": {
+    "label": "Opel Mokka Electric Base",
+    "identity": "Opel Mokka electric",
+    "article": "Opel Mokka",
+    "query": "Opel Mokka electric",
+    "required": "mokka.*(electric|mokka[ _-]*e)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "opel-rocks-electric-rocks-electric": {
+    "label": "Opel Rocks Electric Rocks Electric",
+    "identity": "Opel Rocks-e",
+    "article": "Opel Rocks-e",
+    "query": "Opel Rocks-e",
+    "required": "rocks[ _-]*(e|electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "peugeot-208-e-208-vision": {
+    "label": "Peugeot 208 e-208 Vision",
+    "identity": "Peugeot e-208",
+    "article": "Peugeot 208",
+    "query": "Peugeot e-208",
+    "required": "e[ _-]*208",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "peugeot-e-2008-e-2008-vision": {
+    "label": "Peugeot E-2008 e-2008 Vision",
+    "identity": "Peugeot e-2008",
+    "article": "Peugeot 2008",
+    "query": "Peugeot e-2008",
+    "required": "e[ _-]*2008",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "peugeot-e-3008-e-3008-allure": {
+    "label": "Peugeot E-3008 e-3008 Allure",
+    "identity": "Peugeot E-3008",
+    "article": "Peugeot 3008",
+    "query": "Peugeot E-3008",
+    "required": "e[ _-]*3008",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "peugeot-e-308-e-308-allure": {
+    "label": "Peugeot e-308 e-308 Allure",
+    "identity": "Peugeot e-308",
+    "article": "Peugeot 308",
+    "query": "Peugeot e-308",
+    "required": "e[ _-]*308",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "peugeot-e-5008-e-5008-allure": {
+    "label": "Peugeot E-5008 E-5008 Allure",
+    "identity": "Peugeot E-5008",
+    "article": "Peugeot 5008",
+    "query": "Peugeot E-5008",
+    "required": "e[ _-]*5008",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "polestar-2-long-range-single-motor-rwd": {
+    "label": "Polestar 2 Long Range Single Motor RWD",
+    "identity": "Polestar 2",
+    "article": "Polestar 2",
+    "query": "Polestar 2",
+    "required": "\\bpolestar[ _-]*2\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "polestar-3-rear-motor": {
+    "label": "Polestar 3 Rear motor",
+    "identity": "Polestar 3",
+    "article": "Polestar 3",
+    "query": "Polestar 3",
+    "required": "\\bpolestar[ _-]*3\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "polestar-4-long-range-single-motor-rwd": {
+    "label": "Polestar 4 Long Range Single Motor RWD",
+    "identity": "Polestar 4",
+    "article": "Polestar 4",
+    "query": "Polestar 4",
+    "required": "\\bpolestar[ _-]*4\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "polestar-5-dual-motor": {
+    "label": "Polestar 5 Dual Motor",
+    "identity": "Polestar 5",
+    "article": "Polestar 5",
+    "query": "Polestar 5",
+    "required": "\\bpolestar[ _-]*5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "porsche-cayenne-electric-cayenne-e4": {
+    "label": "Porsche Cayenne Electric Cayenne E4",
+    "identity": "Porsche Cayenne Electric",
+    "article": "Porsche Cayenne",
+    "query": "Porsche Cayenne Electric",
+    "required": "cayenne.*electric",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "porsche-macan-electric-macan": {
+    "label": "Porsche Macan Electric Macan",
+    "identity": "Porsche Macan electric",
+    "article": "Porsche Macan (Type XAB)",
+    "query": "Porsche Macan electric",
+    "required": "macan.*(electric|xab)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "porsche-taycan-taycan": {
+    "label": "Porsche Taycan Taycan",
+    "identity": "Porsche Taycan",
+    "article": "Porsche Taycan",
+    "query": "Porsche Taycan",
+    "required": "\\bporsche[ _-]*taycan\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "renault-megane-e-tech-electric-techno-60-kwh": {
+    "label": "Renault Mégane E-Tech Electric Techno 60 kWh",
+    "identity": "Renault Megane E-Tech Electric",
+    "article": "Renault Mégane E-Tech Electric",
+    "query": "Renault Megane E-Tech Electric",
+    "required": "\\brenault[ _-]*megane[ _-]*e[ _-]*tech[ _-]*electric\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "renault-renault-4-e-tech-evolution-40-kwh": {
+    "label": "Renault Renault 4 E-Tech Evolution 40 kWh",
+    "identity": "Renault 4 E-Tech",
+    "article": "Renault 4 E-Tech",
+    "query": "Renault 4 E-Tech",
+    "required": "\\brenault[ _-]*4[ _-]*e[ _-]*tech\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "renault-renault-5-e-tech-evolution-40-kwh": {
+    "label": "Renault Renault 5 E-Tech Evolution 40 kWh",
+    "identity": "Renault 5 E-Tech",
+    "article": "Renault 5 E-Tech",
+    "query": "Renault 5 E-Tech",
+    "required": "\\brenault[ _-]*5[ _-]*e[ _-]*tech\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "renault-scenic-e-tech-evolution-60-kwh": {
+    "label": "Renault Scenic E-Tech Evolution 60 kWh",
+    "identity": "Renault Scenic E-Tech",
+    "article": "Renault Scénic E-Tech",
+    "query": "Renault Scenic E-Tech",
+    "required": "\\brenault[ _-]*scenic[ _-]*e[ _-]*tech\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "renault-twingo-electric-evolution-27-5-kwh": {
+    "label": "Renault Twingo Electric Evolution 27,5 kWh",
+    "identity": "Renault Twingo 2026",
+    "article": "Renault Twingo",
+    "query": "Renault Twingo 2026",
+    "required": "twingo.*(2026|2027|e[ _-]*tech)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "skoda-elroq-60": {
+    "label": "Skoda Elroq 60",
+    "identity": "Skoda Elroq",
+    "article": "Škoda Elroq",
+    "query": "Skoda Elroq",
+    "required": "\\bskoda[ _-]*elroq\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "skoda-enyaq-60-selection": {
+    "label": "Skoda Enyaq 60 Selection",
+    "identity": "Skoda Enyaq",
+    "article": "Škoda Enyaq",
+    "query": "Skoda Enyaq",
+    "required": "\\bskoda[ _-]*enyaq\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|coupe",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "skoda-enyaq-coupe-60": {
+    "label": "Skoda Enyaq Coupé 60",
+    "identity": "Skoda Enyaq Coupe",
+    "article": "Škoda Enyaq",
+    "query": "Skoda Enyaq Coupe",
+    "required": "\\bskoda[ _-]*enyaq[ _-]*coupe\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "skyworth-k-62-kwh": {
+    "label": "Skyworth K 62 kWh",
+    "identity": "Skyworth EV6",
+    "article": "Skyworth EV6",
+    "query": "Skyworth EV6",
+    "required": "(skyworth.*(k|ev6)|skywell[ _-]*et5)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "smart-1-premium": {
+    "label": "Smart #1 Premium",
+    "identity": "Smart 1",
+    "article": "Smart 1",
+    "query": "Smart 1",
+    "required": "\\bsmart[ _-]*1\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "smart-3-premium": {
+    "label": "Smart #3 Premium",
+    "identity": "Smart 3",
+    "article": "Smart 3",
+    "query": "Smart 3",
+    "required": "\\bsmart[ _-]*3\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "smart-5-pro-rwd": {
+    "label": "Smart #5 Pro RWD",
+    "identity": "Smart 5",
+    "article": "Smart 5",
+    "query": "Smart 5",
+    "required": "\\bsmart[ _-]*5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "smart-eq-fortwo-premium": {
+    "label": "Smart EQ ForTwo Premium",
+    "identity": "Smart EQ Fortwo",
+    "article": "Smart Fortwo",
+    "query": "Smart EQ Fortwo",
+    "required": "\\bsmart[ _-]*eq[ _-]*fortwo\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "subaru-e-outback-limited-awd": {
+    "label": "Subaru E-Outback Limited AWD",
+    "identity": "Subaru Trailseeker",
+    "article": "Subaru Trailseeker",
+    "query": "Subaru Trailseeker",
+    "required": "(trailseeker|e[ _-]*outback)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "subaru-solterra-limited": {
+    "label": "Subaru Solterra Limited",
+    "identity": "Subaru Solterra",
+    "article": "Subaru Solterra",
+    "query": "Subaru Solterra",
+    "required": "\\bsubaru[ _-]*solterra\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "suzuki-e-vitara-club-2wd": {
+    "label": "Suzuki e-Vitara Club 2WD",
+    "identity": "Suzuki e Vitara",
+    "article": "Suzuki e Vitara",
+    "query": "Suzuki e Vitara",
+    "required": "\\bsuzuki[ _-]*e[ _-]*vitara\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "tesla-model-3-standard-rwd": {
+    "label": "Tesla Model 3 Standard RWD",
+    "identity": "Tesla Model 3",
+    "article": "Tesla Model 3",
+    "query": "Tesla Model 3",
+    "required": "\\btesla[ _-]*model[ _-]*3\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "tesla-model-s-long-range-awd": {
+    "label": "Tesla Model S Long Range AWD",
+    "identity": "Tesla Model S",
+    "article": "Tesla Model S",
+    "query": "Tesla Model S",
+    "required": "\\btesla[ _-]*model[ _-]*s\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "tesla-model-x-awd": {
+    "label": "Tesla Model X AWD",
+    "identity": "Tesla Model X",
+    "article": "Tesla Model X",
+    "query": "Tesla Model X",
+    "required": "\\btesla[ _-]*model[ _-]*x\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "tesla-model-y-standard-rwd": {
+    "label": "Tesla Model Y Standard RWD",
+    "identity": "Tesla Model Y",
+    "article": "Tesla Model Y",
+    "query": "Tesla Model Y",
+    "required": "\\btesla[ _-]*model[ _-]*y\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "toyota-bz4x-active-57-kwh-fwd": {
+    "label": "Toyota bZ4X Active 57 kWh FWD",
+    "identity": "Toyota bZ4X",
+    "article": "Toyota bZ4X",
+    "query": "Toyota bZ4X",
+    "required": "\\btoyota[ _-]*bz4x\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "toyota-bz4x-touring-fwd": {
+    "label": "Toyota bZ4X Touring FWD",
+    "identity": "Toyota bZ4X Touring",
+    "article": "Toyota bZ Woodland",
+    "query": "Toyota bZ4X Touring",
+    "required": "(bz4x[ _-]*touring|bz[ _-]*woodland)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "toyota-c-hr-active-fwd": {
+    "label": "Toyota C-HR+ Active FWD",
+    "identity": "Toyota C-HR+",
+    "article": "Toyota C-HR+",
+    "query": "Toyota C-HR+",
+    "required": "\\btoyota[ _-]*c[ _-]*hr\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "toyota-urban-cruiser-active": {
+    "label": "Toyota Urban Cruiser Active",
+    "identity": "Toyota Urban Cruiser 2025",
+    "article": "Toyota Urban Cruiser (2025)",
+    "query": "Toyota Urban Cruiser 2025",
+    "required": "urban[ _-]*cruiser.*(2025|2026|electric)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-3-trend": {
+    "label": "Volkswagen ID.3 Trend",
+    "identity": "Volkswagen ID.3",
+    "article": "Volkswagen ID.3",
+    "query": "Volkswagen ID.3",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*3\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-4-pure": {
+    "label": "Volkswagen ID.4 Pure",
+    "identity": "Volkswagen ID.4",
+    "article": "Volkswagen ID.4",
+    "query": "Volkswagen ID.4",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*4\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-5-style-edition": {
+    "label": "Volkswagen ID.5 Style Edition",
+    "identity": "Volkswagen ID.5",
+    "article": "Volkswagen ID.5",
+    "query": "Volkswagen ID.5",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*5\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-7-pure": {
+    "label": "Volkswagen ID.7 Pure",
+    "identity": "Volkswagen ID.7",
+    "article": "Volkswagen ID.7",
+    "query": "Volkswagen ID.7",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*7\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|tourer",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-7-tourer-pro": {
+    "label": "Volkswagen ID.7 Tourer Pro+",
+    "identity": "Volkswagen ID.7 Tourer",
+    "article": "Volkswagen ID.7",
+    "query": "Volkswagen ID.7 Tourer",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*7[ _-]*tourer\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-buzz-kort-life": {
+    "label": "Volkswagen ID. Buzz Kort Life",
+    "identity": "Volkswagen ID. Buzz",
+    "article": "Volkswagen ID. Buzz",
+    "query": "Volkswagen ID. Buzz",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*buzz\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-cross-life": {
+    "label": "Volkswagen ID. Cross Life",
+    "identity": "Volkswagen ID. Cross",
+    "article": "Volkswagen ID. Cross",
+    "query": "Volkswagen ID. Cross",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*cross\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volkswagen-id-polo-trend": {
+    "label": "Volkswagen ID. Polo Trend",
+    "identity": "Volkswagen ID. Polo",
+    "article": "Volkswagen ID. Polo",
+    "query": "Volkswagen ID. Polo",
+    "required": "\\bvolkswagen[ _-]*id[ _-]*polo\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volvo-ec40-single-motor-core": {
+    "label": "Volvo EC40 Single Motor Core",
+    "identity": "Volvo EC40",
+    "article": "Volvo C40",
+    "query": "Volvo EC40",
+    "required": "(ec40|c40)",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volvo-ex30-cross-country-twin-motor-awd-performance": {
+    "label": "Volvo EX30 Cross Country Twin Motor AWD Performance",
+    "identity": "Volvo EX30 Cross Country",
+    "article": "Volvo EX30 Cross Country",
+    "query": "Volvo EX30 Cross Country",
+    "required": "\\bvolvo[ _-]*ex30[ _-]*cross[ _-]*country\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volvo-ex30-standard-range-core": {
+    "label": "Volvo EX30 Standard Range Core",
+    "identity": "Volvo EX30",
+    "article": "Volvo EX30",
+    "query": "Volvo EX30",
+    "required": "\\bvolvo[ _-]*ex30\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volvo-ex40-single-motor-core": {
+    "label": "Volvo EX40 Single Motor Core",
+    "identity": "Volvo EX40",
+    "article": "Volvo XC40",
+    "query": "Volvo EX40",
+    "required": "(ex40|xc40.*(recharge|electric))",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volvo-ex50-single-motor-rwd": {
+    "label": "Volvo EX50 Single Motor RWD",
+    "identity": "Volvo EX50",
+    "article": "Volvo EX50",
+    "query": "Volvo EX50",
+    "required": "\\bvolvo[ _-]*ex50\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "volvo-ex60-p6-plus-rwd": {
+    "label": "Volvo EX60 P6 Plus RWD",
+    "identity": "Volvo EX60",
+    "article": "Volvo EX60",
+    "query": "Volvo EX60",
+    "required": "\\bvolvo[ _-]*ex60\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "volvo-ex70-single-motor": {
+    "label": "Volvo EX70 Single Motor",
+    "identity": "Volvo EX70",
+    "article": "Volvo EX70",
+    "query": "Volvo EX70",
+    "required": "\\bvolvo[ _-]*ex70\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "volvo-ex90-twin-motor-awd": {
+    "label": "Volvo EX90 Twin Motor AWD",
+    "identity": "Volvo EX90",
+    "article": "Volvo EX90",
+    "query": "Volvo EX90",
+    "required": "\\bvolvo[ _-]*ex90\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "xpeng-g6-standard-range-rwd": {
+    "label": "XPENG G6 Standard Range RWD",
+    "identity": "XPENG G6",
+    "article": "XPENG G6",
+    "query": "XPENG G6",
+    "required": "\\bxpeng[ _-]*g6\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "xpeng-g9-standard-range-rwd": {
+    "label": "XPENG G9 Standard Range RWD",
+    "identity": "XPENG G9",
+    "article": "XPENG G9",
+    "query": "XPENG G9",
+    "required": "\\bxpeng[ _-]*g9\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "xpeng-l03-standard-range-rwd": {
+    "label": "XPENG L03 Standard Range RWD",
+    "identity": "XPENG L03",
+    "article": "XPENG L03",
+    "query": "XPENG L03",
+    "required": "\\bxpeng[ _-]*l03\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": true,
+    "missing_reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges."
+  },
+  "xpeng-p7-long-range-rwd": {
+    "label": "XPENG P7+ Long Range RWD",
+    "identity": "XPeng P7+",
+    "article": "XPeng P7+",
+    "query": "XPeng P7+",
+    "required": "\\bxpeng[ _-]*p7\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "xpeng-p7-long-range-rwd-2": {
+    "label": "XPENG P7 Long Range RWD",
+    "identity": "XPeng P7",
+    "article": "XPeng P7",
+    "query": "XPeng P7",
+    "required": "\\bxpeng[ _-]*p7\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|p7\\+",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "zeekr-001-core-rwd": {
+    "label": "Zeekr 001 Core RWD",
+    "identity": "Zeekr 001",
+    "article": "Zeekr 001",
+    "query": "Zeekr 001",
+    "required": "\\bzeekr[ _-]*001\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "zeekr-7gt-core-rwd": {
+    "label": "Zeekr 7GT Core RWD",
+    "identity": "Zeekr 7GT",
+    "article": "Zeekr 007",
+    "query": "Zeekr 7GT",
+    "required": "(zeekr[ _-]*(7gt|007[ _-]*gt))",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "zeekr-7x-core-rwd": {
+    "label": "Zeekr 7X Core RWD",
+    "identity": "Zeekr 7X",
+    "article": "Zeekr 7X",
+    "query": "Zeekr 7X",
+    "required": "\\bzeekr[ _-]*7x\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  },
+  "zeekr-x-core-rwd": {
+    "label": "Zeekr X Core RWD",
+    "identity": "Zeekr X",
+    "article": "Zeekr X",
+    "query": "Zeekr X",
+    "required": "\\bzeekr[ _-]*x\\b",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$",
+    "skip": false,
+    "missing_reason": ""
+  }
+}

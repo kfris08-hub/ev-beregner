@@ -1,0 +1,31 @@
+name: Indsaml modelbilleder til kontrol
+on:
+  push:
+    branches: [fix/curated-model-photos-2026-10-24]
+    paths: [tools/collect_model_photos.py, data/model-photo-plan.json, .github/workflows/collect-photos.yml]
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==11.3.0
+      - name: Hent frit licenserede kandidater og metadata
+        run: python tools/collect_model_photos.py
+      - name: Gem kandidater på kontrolgrenen
+        run: |
+          git config user.name 'EV Beregner billedkontrol'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/cars data/model-photos.json
+          git commit -m 'Indsaml lokale modelbilleder og licensoplysninger til kontrol'
+          git push origin HEAD:fix/curated-model-photos-2026-10-24
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: modelbilleder-til-kontrol
+          path: test-results/photo-catalog/
