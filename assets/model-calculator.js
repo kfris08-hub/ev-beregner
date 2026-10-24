@@ -1,24 +1,25 @@
 (function (global) {
   'use strict';
   const core = global.EVCore;
-  const consumption = core.number(document.currentScript.dataset.consumption);
+  const registeredConsumption = core.number(document.currentScript.dataset.consumption);
   const field = id => document.getElementById(id);
   const fuel = { petrol95: 18.49, diesel: 20.19 };
   let priceStatus = 'Eksempelpris – indtast din elpris, eller afvent automatisk opdatering.';
   let fuelStatus = 'Benzin/diesel: vejledende eksempelpriser.';
   let electricRequest = 0;
-  function showStatus() { field('liveNote').textContent = priceStatus + ' ' + fuelStatus; }
+  function showStatus() { field('liveNote').textContent = priceStatus + ' ' + fuelStatus + (field('modelConsumption') ? ' Forbruget er dit eget skøn, ikke bekræftede fabriksdata.' : ''); }
   const kroner = n => Math.round(n).toLocaleString('da-DK') + ' kr.';
   function calculate() {
+    const consumption = field('modelConsumption') ? core.number(field('modelConsumption').value) : registeredConsumption;
     const km = core.number(field('km').value), price = core.number(field('ep').value);
     const validKm = Number.isFinite(km) && km >= 0;
     const validPrice = Number.isFinite(price);
     field('km').setCustomValidity(validKm ? '' : 'Indtast et kilometertal på 0 eller mere.');
     field('ep').setCustomValidity(validPrice ? '' : 'Indtast en gyldig elpris.');
     const ids = ['r100', 'rkm', 'ryear', 'rkwh', 'evAnnual', 'petAnnual', 'dieselAnnual'];
-    if (!validKm || !validPrice || !Number.isFinite(consumption)) {
+    if (!validKm || !validPrice || (!Number.isFinite(consumption) || consumption <= 0)) {
       ids.forEach(id => { field(id).textContent = '–'; });
-      field('liveNote').textContent = 'Indtast et gyldigt kilometertal og en elpris for at beregne.';
+      field('liveNote').textContent = 'Indtast et gyldigt kilometertal, et forbrug større end 0 og en elpris for at beregne.';
       return false;
     }
     const kwh = km * consumption / 100;
@@ -67,6 +68,7 @@
   field('area').value = core.getArea();
   field('area').addEventListener('change', loadElectric);
   field('km').addEventListener('input', calculate);
+  if (field('modelConsumption')) field('modelConsumption').addEventListener('input', calculate);
   field('ep').addEventListener('input', () => {
     electricRequest++;
     priceStatus = 'Manuelt indtastet elpris.';

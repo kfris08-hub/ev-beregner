@@ -3,7 +3,7 @@ Opel;Rocks Electric Rocks Electric;74000;5.5;75;7.3;0
 Citroën;Ami Ami;75000;5.5;75;7.3;0
 Fiat;Topolino Topolino;77500;5.5;75;7.3;0
 Micro;Microlino Dolce;79000;10.5;177;6.3;0
-Elveon Motors;Min-E Sedan BASE;103995;15.1;170;9.0;22
+Elveon Motors;Min-E Sedan;;;;;
 Maxus;eDeliver 3 Standard Range 52 kWh;124900;52;238;23.6;60
 Citroën;ë-C3 You!;139990;30;204;15.0;30
 Renault;Twingo Electric Evolution 27,5 kWh;146990;27.5;263;10.5;50
@@ -42,7 +42,7 @@ Suzuki;e-Vitara Club 2WD;229990;49;344;15.8;150
 Omoda;5 EV Standard FWD;234900;61;430;15.9;130
 Toyota;Urban Cruiser Active;234990;49;344;15.8;150
 Alfa Romeo;Junior Core;234990;54;410;15.0;100
-XPENG;L03 Standard Range RWD;239995;56;445;15.3;193
+XPENG;L03 Standard Range RWD;239995;58.3;445;15.3;193
 Volvo;EX30 Standard Range Core;244900;49;337;17.1;134
 Renault;Mégane E-Tech Electric Techno 60 kWh;244990;60;468;15.5;130
 Nissan;Leaf (2026) Engage 52 kWh;249900;52;436;14.2;105
@@ -98,7 +98,6 @@ BYD;Sealion 7 Design RWD;329995;82.5;482;19.9;230
 Mercedes-Benz;EQT 200 Standard;334691;45;278;19.3;80
 Subaru;Solterra Limited;334900;73.1;532;17.0;150
 Peugeot;E-5008 E-5008 Allure;344990;73;502;17.7;160
-Kia;EV1 Standard Range;349990;58;420;16.0;150
 Toyota;bZ4X Touring FWD;349990;74.7;560;15.8;150
 MG;Marvel R Executive;349990;70;402;20.9;92
 Volkswagen;ID. Buzz Kort Life;349995;79;461;20.6;185
@@ -123,7 +122,6 @@ Kia;PV5 Standard RWD;379990;51.5;400;15.0;150
 Volkswagen;ID.7 Tourer Pro+;379995;86;690;15.0;200
 Volkswagen;ID.5 Style Edition;384995;77;556;16.0;175
 Mercedes-Benz;GLA with EQ Technology 200;385900;58;426;16.0;200
-Kia;Sportage EV Standard;389990;81.4;550;17.0;128
 MG;IM5 Long Range;389999;96.5;710;15.5;396
 Mercedes-Benz;EQA 250+ AMG Edition;396200;70.5;561;15.9;100
 Mercedes-Benz;EQB EQB 250+ AMG Edition;396200;70.5;535;16.4;100
@@ -134,10 +132,8 @@ Mercedes-Benz;GLB GLB 250+;419900;85;600;16.5;320
 Mercedes-Benz;CLA Shooting Brake CLA 250+ Advance Edition;429900;85;760;13.5;320
 Hyundai;STARIA Electric Wagon 9-sæder;429995;84;460;22.0;200
 BYD;Tang Excellence AWD;429995;108.8;530;23.0;170
-Volvo;EX50 Single Motor RWD;439990;69;480;16.0;175
 NIO;ET5 Standard Range 73 kWh;449900;73.5;456;19.0;140
 BMW;i4 eDrive35 M Sport;449900;67;500;15.5;180
-Volvo;EX70 Single Motor;449990;92;650;16.0;250
 Mercedes-Benz;EQC 300;449990;80;480;19.0;200
 Kia;EV9 Standard Range RWD Upgrade;449999;76.1;443;20.2;210
 Zeekr;001 Core RWD;454900;94;620;17.0;200
@@ -161,7 +157,6 @@ Audi;e-tron 50;569900;64;340;22.0;120
 Genesis;GV60 Standard;579990;77.4;517;17.0;240
 BMW;iX3 (2025) 50 xDrive;599000;108.7;805;15.1;400
 Mercedes-Benz;EQE SUV 350;599990;90.6;565;19.0;170
-Hyundai;IONIQ 7 Standard;599990;84;500;19.0;235
 Mercedes-Benz;GLC with EQ Technology 400 4MATIC;619900;94;713;15.0;330
 Mercedes-Benz;VLE VLE 300;639995;116;700;19.0;320
 Maxus;eTerron 9 Luxury;649990;102.2;430;26.0;115

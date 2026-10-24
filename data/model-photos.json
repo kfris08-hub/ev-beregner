@@ -1071,12 +1071,33 @@
       "reviewed_at": "2026-10-24"
     },
     "elveon-motors-min-e-sedan-base": {
-      "label": "Elveon Motors Min-E Sedan BASE",
-      "identity": "Elveon Motors Min-E Sedan",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "label": "Elveon Min-E Sedan",
+      "identity": "Elveon Min-E Sedan",
+      "status": "verified",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "file": "File:Wuling Hongguang Mini EV II 006.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Wuling_Hongguang_Mini_EV_II_006.jpg/1280px-Wuling_Hongguang_Mini_EV_II_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Wuling_Hongguang_Mini_EV_II_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Wuling_Hongguang_Mini_EV_II_006.jpg",
+      "author": "JustAnotherCarDesigner",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "credit": "Own work",
+      "attribution": "",
+      "description": "Wuling Hongguang Mini EV II",
+      "width_original": 3831,
+      "height_original": 2873,
+      "checked_at": "2026-10-24",
+      "modifications": "Nedskaleret og konverteret til WebP; ingen beskæring.",
+      "caption": "Billedet viser Wuling Hongguang Mini EV II, som Bilbasen identificerer som grundlag for Elveon Min-E. Den danske udgave og dens udstyr kan afvige.",
+      "src": "/assets/cars/elveon-motors-min-e-sedan-base-18bbbda4fbff.webp",
+      "width": 1200,
+      "height": 900,
+      "original_width": 1280,
+      "original_height": 960,
+      "bytes": 272454,
+      "sha256": "18bbbda4fbff1b4e1cfa09f79b06e9617d7f13a52afa7a362e7fd446322c24c0"
     },
     "exlantix-es-advanced-74-kwh": {
       "label": "Exlantix ES Advanced 74 kWh",
@@ -1627,10 +1648,11 @@
     "hyundai-ioniq-7-standard": {
       "label": "Hyundai IONIQ 7 Standard",
       "identity": "Hyundai IONIQ 7",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "status": "redirect",
+      "reason": "Tidligere modelnavn; den aktuelle modelhenvisning er IONIQ 9.",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "redirect_to": "hyundai-ioniq-9-rwd-advanced"
     },
     "hyundai-ioniq-9-rwd-advanced": {
       "label": "Hyundai IONIQ 9 RWD Advanced",
@@ -1817,10 +1839,11 @@
     "kia-ev1-standard-range": {
       "label": "Kia EV1 Standard Range",
       "identity": "Kia EV1",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "status": "withdrawn",
+      "reason": "Den registrerede variant og dens danske pris og specifikationer kunne ikke bekræftes. EV1 omtales som en mulig kommende model; de tidligere tal er derfor taget ud af bilvalget.",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "identity_source": "https://www.kia.com/dk/modeller/modeloversigt/"
     },
     "kia-ev2-standard-range-access": {
       "label": "Kia EV2 Standard Range Access",
@@ -2033,10 +2056,11 @@
     "kia-sportage-ev-standard": {
       "label": "Kia Sportage EV Standard",
       "identity": "Kia Sportage EV",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "status": "withdrawn",
+      "reason": "Kia beskriver Sportage med hybrid-, plug-in-hybrid- og benzinmotorer. Vi har ikke kunnet bekræfte den registrerede fuldt elektriske Sportage-variant. Den er derfor taget ud af bilvalget.",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "identity_source": "https://www.kia.com/uk/new-cars/sportage/"
     },
     "leapmotor-b10-life": {
       "label": "Leapmotor B10 Life",
@@ -2456,11 +2480,31 @@
     },
     "mercedes-benz-gla-with-eq-technology-200": {
       "label": "Mercedes-Benz GLA with EQ Technology 200",
-      "identity": "Mercedes-Benz GLA with EQ",
-      "status": "missing",
-      "reason": "Intet kontrolleret billede med en godkendt fri licens fundet.",
+      "identity": "Mercedes-Benz GLA electric",
+      "status": "verified",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "file": "Mercedes-Benz GLA official press image 222b49fc-2617-42d2-8b7f-695a1e6c076e",
+      "url": "https://api.media.mercedes-benz.com/jsonapi/image/deliver/222b49fc-2617-42d2-8b7f-695a1e6c076e/3_2_568",
+      "original_url": "https://api.media.mercedes-benz.com/jsonapi/image/deliver/222b49fc-2617-42d2-8b7f-695a1e6c076e/3_2_568",
+      "source": "https://media.mercedes-benz.com/en/article/22b96b64-a441-4fad-a22a-bc41718aded7",
+      "author": "© Mercedes-Benz AG",
+      "license": "Pressefoto – kun redaktionel brug",
+      "license_url": "https://media.mercedes-benz.com/en/legal/terms-of-use",
+      "usage": "editorial-only",
+      "credit": "Mercedes-Benz Media",
+      "attribution": "",
+      "description": "Officielt pressefoto på producentens præsentation af den nye elektriske GLA, 29. juli 2026.",
+      "checked_at": "2026-10-24",
+      "modifications": "Nedskaleret efter behov og konverteret til WebP; ingen beskæring eller ændring af motiv.",
+      "caption": "Officielt pressefoto af den elektriske Mercedes-Benz GLA. Udstyr, farve og fælge kan afvige.",
+      "src": "/assets/cars/mercedes-benz-gla-with-eq-technology-200-de7f2ab40a3e.webp",
+      "width": 568,
+      "height": 379,
+      "original_width": 568,
+      "original_height": 379,
+      "bytes": 37150,
+      "sha256": "de7f2ab40a3e16ac93b156522a9be3ee98bfd930a9f5b13841bc90bd1d108844"
     },
     "mercedes-benz-glb-glb-250": {
       "label": "Mercedes-Benz GLB GLB 250+",
@@ -4263,10 +4307,31 @@
     "volkswagen-id-cross-life": {
       "label": "Volkswagen ID. Cross Life",
       "identity": "Volkswagen ID. Cross",
-      "status": "missing",
-      "reason": "Der er kun fundet konceptbilleder; et billede af produktionsmodellen mangler.",
+      "status": "verified",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "file": "File:Volkswagen ID. Cross au Mondial de l'Auto 2026 (01).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Volkswagen_ID._Cross_au_Mondial_de_l%27Auto_2026_%2801%29.jpg/1280px-Volkswagen_ID._Cross_au_Mondial_de_l%27Auto_2026_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Volkswagen_ID._Cross_au_Mondial_de_l%27Auto_2026_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Cross_au_Mondial_de_l%27Auto_2026_(01).jpg",
+      "author": "Y.Leclercq",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "Own work",
+      "attribution": "",
+      "description": "Volkswagen ID. Cross",
+      "width_original": 4425,
+      "height_original": 2950,
+      "checked_at": "2026-10-24",
+      "modifications": "Nedskaleret og konverteret til WebP; ingen beskæring.",
+      "caption": "Modelbillede af Volkswagen ID. Cross fra Paris Motor Show 2026. Udstyr, farve og fælge kan afvige.",
+      "src": "/assets/cars/volkswagen-id-cross-life-b728f9218a60.webp",
+      "width": 1200,
+      "height": 800,
+      "original_width": 1280,
+      "original_height": 853,
+      "bytes": 102510,
+      "sha256": "b728f9218a603257b8fb29f4bb72b7cd75a9acd7e82a960c78751a9ede2554fe"
     },
     "volkswagen-id-polo-trend": {
       "label": "Volkswagen ID. Polo Trend",
@@ -4403,10 +4468,11 @@
     "volvo-ex50-single-motor-rwd": {
       "label": "Volvo EX50 Single Motor RWD",
       "identity": "Volvo EX50",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "status": "withdrawn",
+      "reason": "EX50 omtales som en kommende model i bilmedierne. Den konkrete variant med dansk pris og fabriksdata kunne ikke bekræftes hos Volvo. De tidligere tal er derfor taget ud af bilvalget.",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "identity_source": "https://www.volvocars.com/dk/"
     },
     "volvo-ex60-p6-plus-rwd": {
       "label": "Volvo EX60 P6 Plus RWD",
@@ -4437,10 +4503,11 @@
     "volvo-ex70-single-motor": {
       "label": "Volvo EX70 Single Motor",
       "identity": "Volvo EX70",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "status": "withdrawn",
+      "reason": "Den registrerede EX70-variant med dansk pris og fabriksdata kunne ikke bekræftes hos Volvo. Den er derfor taget ud af bilvalget og sammenligningerne. Den må ikke forveksles med andre Volvo-modeller.",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "identity_source": "https://www.volvocars.com/dk/"
     },
     "volvo-ex90-twin-motor-awd": {
       "label": "Volvo EX90 Twin Motor AWD",
@@ -4523,10 +4590,31 @@
     "xpeng-l03-standard-range-rwd": {
       "label": "XPENG L03 Standard Range RWD",
       "identity": "XPENG L03",
-      "status": "missing",
-      "reason": "Modelbetegnelsen skal bekræftes, før et billede kan vælges.",
+      "status": "verified",
       "reviewed": true,
-      "reviewed_at": "2026-10-24"
+      "reviewed_at": "2026-10-24",
+      "file": "File:(SGP-Singapore) Showcar XPeng L03 No-plate 2026-10-07 - 2.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%28SGP-Singapore%29_Showcar_XPeng_L03_No-plate_2026-10-07_-_2.jpg/1280px-%28SGP-Singapore%29_Showcar_XPeng_L03_No-plate_2026-10-07_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/%28SGP-Singapore%29_Showcar_XPeng_L03_No-plate_2026-10-07_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:(SGP-Singapore)_Showcar_XPeng_L03_No-plate_2026-10-07_-_2.jpg",
+      "author": "S5A-0043",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "credit": "Own work",
+      "attribution": "",
+      "description": "XPeng L03 @ i12 Katong",
+      "width_original": 4061,
+      "height_original": 3249,
+      "checked_at": "2026-10-24",
+      "modifications": "Nedskaleret og konverteret til WebP; ingen beskæring.",
+      "caption": "Modelbillede af XPENG L03. Udstyr, farve og fælge kan afvige fra den valgte variant.",
+      "src": "/assets/cars/xpeng-l03-standard-range-rwd-5c7bc91308e0.webp",
+      "width": 1125,
+      "height": 900,
+      "original_width": 1280,
+      "original_height": 1024,
+      "bytes": 154414,
+      "sha256": "5c7bc91308e08b860f8b3da2237de54faf675d85bf5c0507fa9b6d1d65ce6c8c"
     },
     "xpeng-p7-long-range-rwd": {
       "label": "XPENG P7+ Long Range RWD",

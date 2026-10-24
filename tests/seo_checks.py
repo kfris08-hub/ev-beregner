@@ -26,6 +26,9 @@ class Page(HTMLParser):
   if tag in ('title','script'):self.current=None
 models=sorted((ROOT/'elbil').glob('*/index.html'))
 assert len(models)==186
+WITHDRAWN={'kia-ev1-standard-range','kia-sportage-ev-standard','volvo-ex50-single-motor-rwd','volvo-ex70-single-motor'}
+ALIAS={'hyundai-ioniq-7-standard':'hyundai-ioniq-9-rwd-advanced'}
+EXCLUDED=WITHDRAWN|set(ALIAS)
 pages={}
 for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models]:
  relative=path.relative_to(ROOT).as_posix()
@@ -33,15 +36,16 @@ for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models]:
  pages[url]=Page(path.read_text())
 sitemap=ET.parse(ROOT/'sitemap.xml')
 locations=[x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-assert len(locations)==len(set(locations))==188
-assert set(locations)==set(pages),'Sitemap must match the published HTML pages'
+assert len(locations)==len(set(locations))==183
+assert set(locations)=={u for u in pages if u.rstrip('/').split('/')[-1] not in EXCLUDED},'Sitemap must contain exactly the indexable canonical pages'
 robot=RobotFileParser();robot.parse((ROOT/'robots.txt').read_text().splitlines())
 for url,page in pages.items():
- assert page.canonicals==[url],f'Wrong canonical: {url}'
+ slug=url.rstrip('/').split('/')[-1]
+ assert page.canonicals==[ORIGIN+'/elbil/'+ALIAS[slug]+'/' if slug in ALIAS else url],f'Wrong canonical: {url}'
  assert len(page.titles)==1 and page.titles[0],f'Missing title: {url}'
  assert len(page.descriptions)==1 and page.descriptions[0],f'Missing description: {url}'
  assert page.h1==1,f'Expected one H1: {url}'
- assert not any('noindex' in x.lower() for x in page.robots),f'Unexpected noindex: {url}'
+ assert any('noindex' in x.lower() for x in page.robots)==(slug in WITHDRAWN),f'Wrong indexing state: {url}'
  assert robot.can_fetch('Googlebot',url),f'Blocked by robots.txt: {url}'
  for script in page.scripts:
   src=script['attrs'].get('src')
@@ -51,7 +55,7 @@ for url,page in pages.items():
   target=urlsplit(urljoin(url,link.get('href','')))
   if target.netloc=='www.evberegn.dk' and target.path.startswith('/elbil/') and target.path.endswith('/'):
    assert ORIGIN+target.path in pages,f'Broken model link {url}: {target.path}'
- if url.count('/')>4:assert any(x.get('href','').startswith('/?car=') for x in page.links),f'Missing car link {url}'
+ if url.count('/')>4 and slug not in EXCLUDED:assert any(x.get('href','').startswith('/?car=') for x in page.links),f'Missing car link {url}'
 for field in ('titles','descriptions'):
  values=[getattr(p,field)[0] for p in pages.values()]
  assert len(values)==len(set(values)),f'Duplicate {field}'
@@ -59,14 +63,14 @@ cards=[a for a in pages[ORIGIN+'/'].links if 'calc-card' in a.get('class','').sp
 assert {a.get('href') for a in cards}=={f'#beregner-{i}' for i in range(1,21)}
 data=list(csv.reader((ROOT/'bil-data-komplet.csv').open(encoding='utf-8-sig'),delimiter=';'))
 records={(r[0],r[1]):r for r in data[1:] if len(r)==7}
-assert len(records)==186
+assert len(records)==181
 assert records['XPENG','G6 Standard Range RWD'][4:6]==['470','16.9']
 assert records['XPENG','L03 Standard Range RWD'][5]=='15.3'
 assert records['BYD','Atto 3 EVO Design'][5]=='16.4'
 home_text=(ROOT/'index.html').read_text()
 cars=json.loads(re.search(r'const cars=(\[.*?\]); let selectedCar=',home_text,re.S)[1])
 cars_by_name={(row[0],row[1]):row for row in cars}
-assert len(cars_by_name)==186
+assert len(cars_by_name)==181
 sources=json.loads((ROOT/'data/model-data-sources.json').read_text())
 overview=(ROOT/'elbil/index.html').read_text()
 for slug,source in sources.items():
@@ -82,5 +86,11 @@ for slug,source in sources.items():
  if 'range_km' in source:
   assert cars_by_name[source['brand'],source['model']][4]==source['range_km']
   assert str(source['range_km'])+' km' in page.descriptions[0]
+assert cars_by_name['Elveon Motors','Min-E Sedan'][2:]==[None]*5
+assert records['Elveon Motors','Min-E Sedan'][2:]==['']*5
+assert cars_by_name['XPENG','L03 Standard Range RWD'][3]==58.3
+for forbidden in EXCLUDED:
+ assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',overview)
+ assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',home_text)
 assert 'unzip -o' not in (ROOT/'.github/workflows/installer.yml').read_text()
-print('PASS: 188 pages, sitemap, metadata, links, scripts, 186 models and all 20 calculators.')
+print('PASS: 188 preserved URLs, 183 sitemap entries, 181 selectable models, four noindex explanations, one IONIQ alias, unknown Elveon data and all 20 calculators.')
