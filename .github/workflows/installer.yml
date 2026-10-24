@@ -1,73 +1,19 @@
-name: Installer EV Beregner 4.5.1 SEO
+name: Kontroller eksisterende EV Beregner
 
+# Source files are published directly. Reinstalling an old ZIP can undo fixes.
 on:
-  push:
-    paths:
-      - 'EV_Beregner_4_5_1_SEO_INDEKSERING.zip'
   workflow_dispatch:
-
 permissions:
-  contents: write
-
+  contents: read
 jobs:
-  installer:
-    if: github.actor != 'github-actions[bot]'
+  check:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Hent repository
-        uses: actions/checkout@v4
-
-      - name: Fjern gammel version
-        run: |
-          rm -rf elbil
-          rm -rf data
-
-      - name: Pak EV Beregner 4.5.1 SEO ud
-        run: |
-          unzip -o EV_Beregner_4_5_1_SEO_INDEKSERING.zip
-
-      - name: Kontroller modelsider
-        run: |
-          COUNT=$(find elbil -mindepth 2 -maxdepth 2 -name index.html | wc -l)
-          echo "Antal modelsider: $COUNT"
-
-          if [ "$COUNT" -ne 186 ]; then
-            echo "FEJL: Der skal være 186 modelsider."
-            exit 1
-          fi
-
-      - name: Kontroller SEO-links
-        run: |
-          LINKS=$(grep -o 'href="/elbil/[^"]*/"' elbil/index.html | wc -l)
-          echo "Links til elbiler: $LINKS"
-
-          if [ "$LINKS" -ne 186 ]; then
-            echo "FEJL: Elbiloversigten skal indeholde 186 links."
-            exit 1
-          fi
-
-      - name: Gem EV Beregner 4.5.1 SEO
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A \
-            index.html \
-            sitemap.xml \
-            robots.txt \
-            CNAME \
-            elbil \
-            data \
-            bil-data-komplet.csv \
-            favicon.ico \
-            favicon-48x48.png \
-            favicon-192x192.png \
-            favicon-512x512.png \
-            apple-touch-icon.png \
-            SEO-4.5.1.txt
-
-          git diff --cached --quiet && echo "Ingen ændringer" && exit 0
-
-          git commit -m "EV Beregner 4.5.1 - SEO og intern linkstruktur"
-          git push
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Kontroller de aktuelle sider
+        run: python3 tests/seo_checks.py
+      - name: Kontroller alle 20 beregnere
+        run: node tests/calculators.test.cjs
