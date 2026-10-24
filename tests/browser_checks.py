@@ -6,6 +6,7 @@ from playwright.async_api import async_playwright
 
 ROOT=Path(__file__).parents[1]
 BASE='https://www.evberegn.dk'
+PUBLIC=os.environ.get('CALCULATOR_PUBLIC')=='1'
 async def main():
  results=[]
  async with async_playwright() as pw:
@@ -18,6 +19,7 @@ async def main():
    async def route_request(route):
     url=urlsplit(route.request.url)
     if url.netloc=='www.evberegn.dk':
+     if PUBLIC:await route.continue_();return
      name=unquote(url.path).lstrip('/')
      if not name or name.endswith('/'):name+='index.html'
      file=ROOT/name
