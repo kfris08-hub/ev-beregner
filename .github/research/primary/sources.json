@@ -1,0 +1,25 @@
+{
+  "elveon": {
+    "url": "https://elveon.dk",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  "mercedes-photo-metadata": {
+    "url": "https://api.media.mercedes-benz.com/jsonapi/image/222b49fc-2617-42d2-8b7f-695a1e6c076e",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "mercedes-photo-568": {
+    "url": "https://api.media.mercedes-benz.com/jsonapi/image/deliver/222b49fc-2617-42d2-8b7f-695a1e6c076e/3_2_568",
+    "mime": "image/jpeg",
+    "width": 568,
+    "height": 379,
+    "bytes": 54060
+  },
+  "mercedes-photo-1200": {
+    "url": "https://api.media.mercedes-benz.com/jsonapi/image/deliver/222b49fc-2617-42d2-8b7f-695a1e6c076e/3_2_1200",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "mercedes-photo-1920": {
+    "url": "https://api.media.mercedes-benz.com/jsonapi/image/deliver/222b49fc-2617-42d2-8b7f-695a1e6c076e/3_2_1920",
+    "error": "HTTP Error 404: Not Found"
+  }
+}
