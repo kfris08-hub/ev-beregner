@@ -67,3 +67,23 @@ test('a failed local photo reveals an explicit retry message',async()=>{
  assert.equal(photo.style.display,'none');assert.equal(m.elements.get('photoLoading').style.display,'block');
  assert.match(m.elements.get('photoLoading').textContent,/genindlæse/);m.cleanup();
 });
+test('withdrawn model variants cannot populate a calculator',()=>{
+ for(const slug of ['kia-ev1-standard-range','kia-sportage-ev-standard','volvo-ex50-single-motor-rwd','volvo-ex70-single-motor']){
+  const h=setup('home',{url:'https://www.evberegn.dk/?car='+slug});assert.equal(h.run('selectedCar'),null);h.cleanup();
+ }
+});
+test('old IONIQ 7 car links select the current IONIQ 9',()=>{
+ const h=setup('home',{url:'https://www.evberegn.dk/?car=hyundai-ioniq-7-standard'});assert.equal(h.run('selectedCar[1]'),'IONIQ 9 RWD Advanced');h.cleanup();
+});
+test('unknown model data use editable examples in all 20 calculators',()=>{
+ const h=setup('home',{url:'https://www.evberegn.dk/?car=elveon-motors-min-e-sedan-base'});
+ assert.equal(h.run('selectedCar[1]'),'Min-E Sedan');
+ for(const type of ['price','battery','range','consumption','charging'])assert.equal(h.run('autoValue('+JSON.stringify(type)+')'),null);
+ assert.equal(h.run('money(null)'),'Ikke oplyst');
+ for(let n=1;n<=20;n++){h.run('openCalculator('+n+');calculate()');assert.doesNotMatch(h.elements.get('answer').textContent,/NaN|Infinity|∞|undefined/);assert.match(h.elements.get('dataBadge').textContent,/eksempelværdier/);}
+ h.cleanup();
+});
+test('comparison never treats missing specifications as zero or a winning value',async()=>{
+ const h=setup('home');await settle();h.run('compareCars[0]=cars.find(c=>c[0]==="Elveon Motors");compareCars[1]=cars.find(c=>c[0]==="Tesla"&&c[1].startsWith("Model Y"));renderCompare()');
+ const result=h.elements.get('compareOutput').innerHTML;assert.match(result,/Ikke oplyst/);assert.doesNotMatch(result,/null|undefined|NaN/);assert.doesNotMatch(result,/<td class="winner">Ikke oplyst/);h.cleanup();
+});

@@ -7,6 +7,7 @@ ESC=lambda s:html.escape(str(s),quote=True)
 manifest=json.loads((ROOT/'data/model-photos.json').read_text())
 models=manifest['models']
 for slug,photo in models.items():
+ if photo['status'] in ('withdrawn','redirect'):continue
  path=ROOT/'elbil'/slug/'index.html';text=path.read_text()
  verified=photo['status']=='verified' and photo.get('reviewed') is True
  if verified:
@@ -48,9 +49,16 @@ for entry in sitemap.getroot():
   node=ET.SubElement(entry,'{'+IM+'}image');ET.SubElement(node,'{'+IM+'}loc').text=ORIGIN+models[match[1]]['src']
 ET.indent(sitemap,space='  ');sitemap.write(ROOT/'sitemap.xml',encoding='unicode',xml_declaration=True)
 verified=[p for p in models.values() if p['status']=='verified']
-missing=[(slug,p) for slug,p in models.items() if p['status']!='verified']
-report=['# Billeddækning, 24. oktober 2026','',f'{len(verified)} af {len(models)} modelsider har et fast, lokalt modelbillede med kilde, fotograf og licens.','', 'Billederne viser modellen. Udstyrsvariant, fælge og farve kan afvige; det er angivet ved billederne. Ingen billeder vælges ved automatisk søgning i besøgendes browser.','', '## Resterende modeller','', '| Model | Adresse | Årsag |','|---|---|---|']
+missing=[(slug,p) for slug,p in models.items() if p['status']=='missing']
+withdrawn=[(slug,p) for slug,p in models.items() if p['status']=='withdrawn']
+redirected=[(slug,p) for slug,p in models.items() if p['status']=='redirect']
+active=len(models)-len(withdrawn)-len(redirected)
+report=['# Billeddækning, 24. oktober 2026','',f'{len(verified)} af {active} aktive modelsider har et fast, lokalt modelbillede med kilde, fotograf og licens.','', 'Billederne viser modellen. Udstyrsvariant, fælge og farve kan afvige; det er angivet ved billederne. Ingen billeder vælges ved automatisk søgning i besøgendes browser.','', '## Resterende modeller','', '| Model | Adresse | Årsag |','|---|---|---|']
 for slug,p in missing:report.append(f'| {p["label"]} | [/elbil/{slug}/](https://www.evberegn.dk/elbil/{slug}/) | {p.get("reason","")} |')
+if not missing:report+=['| Ingen | — | Alle aktive modelsider har et billede. |']
+report+=['','## Udtagne varianter og tidligere modelnavn','', '| Model | Status |','|---|---|']
+for slug,p in withdrawn+redirected:report.append(f'| {p["label"]} | {p.get("reason","")} |')
+report+=['','De fire udtagne varianter er fjernet fra bilvalg, sammenligninger og sitemap. Deres gamle adresser har noindex, follow og en forklaring. IONIQ 7-adressen peger med canonical og øjeblikkelig HTML-viderestilling på IONIQ 9.','', 'Kildekontrollen for alle ni oprindeligt manglende billedkoblinger er beskrevet i MODELKONTROL.md. Den elektriske GLA bruger et officielt pressefoto til redaktionel brug; de øvrige modelbilleder bruger de registrerede Creative Commons- eller public domain-vilkår.']
 (ROOT/'.github/docs').mkdir(parents=True,exist_ok=True)
 (ROOT/'.github/docs/BILLEDDÆKNING.md').write_text('\n'.join(report)+'\n')
 print('Rendered',len(verified),'fixed photos;',len(missing),'explicit missing states; 186 existing pages preserved.')

@@ -39,6 +39,9 @@
   <url>
     <loc>https://www.evberegn.dk/elbil/elveon-motors-min-e-sedan-base/</loc>
     <lastmod>2026-10-24</lastmod>
+    <image:image>
+      <image:loc>https://www.evberegn.dk/assets/cars/elveon-motors-min-e-sedan-base-18bbbda4fbff.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/maxus-edeliver-3-standard-range-52-kwh/</loc>
@@ -309,6 +312,9 @@
   <url>
     <loc>https://www.evberegn.dk/elbil/xpeng-l03-standard-range-rwd/</loc>
     <lastmod>2026-10-24</lastmod>
+    <image:image>
+      <image:loc>https://www.evberegn.dk/assets/cars/xpeng-l03-standard-range-rwd-5c7bc91308e0.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/volvo-ex30-standard-range-core/</loc>
@@ -348,6 +354,9 @@
   <url>
     <loc>https://www.evberegn.dk/elbil/volkswagen-id-cross-life/</loc>
     <lastmod>2026-10-24</lastmod>
+    <image:image>
+      <image:loc>https://www.evberegn.dk/assets/cars/volkswagen-id-cross-life-b728f9218a60.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/kia-ev3-standard-range-access/</loc>
@@ -693,10 +702,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.evberegn.dk/elbil/kia-ev1-standard-range/</loc>
-    <lastmod>2026-10-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.evberegn.dk/elbil/toyota-bz4x-touring-fwd/</loc>
     <lastmod>2026-10-24</lastmod>
     <image:image>
@@ -860,10 +865,9 @@
   <url>
     <loc>https://www.evberegn.dk/elbil/mercedes-benz-gla-with-eq-technology-200/</loc>
     <lastmod>2026-10-24</lastmod>
-  </url>
-  <url>
-    <loc>https://www.evberegn.dk/elbil/kia-sportage-ev-standard/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <image:image>
+      <image:loc>https://www.evberegn.dk/assets/cars/mercedes-benz-gla-with-eq-technology-200-de7f2ab40a3e.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/mg-im5-long-range/</loc>
@@ -936,10 +940,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.evberegn.dk/elbil/volvo-ex50-single-motor-rwd/</loc>
-    <lastmod>2026-10-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.evberegn.dk/elbil/nio-et5-standard-range-73-kwh/</loc>
     <lastmod>2026-10-24</lastmod>
     <image:image>
@@ -952,10 +952,6 @@
     <image:image>
       <image:loc>https://www.evberegn.dk/assets/cars/bmw-i4-edrive35-m-sport-5c598479a706.webp</image:loc>
     </image:image>
-  </url>
-  <url>
-    <loc>https://www.evberegn.dk/elbil/volvo-ex70-single-motor/</loc>
-    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/mercedes-benz-eqc-300/</loc>
@@ -1117,10 +1113,6 @@
     <image:image>
       <image:loc>https://www.evberegn.dk/assets/cars/mercedes-benz-eqe-suv-350-9ac2009ec3e3.webp</image:loc>
     </image:image>
-  </url>
-  <url>
-    <loc>https://www.evberegn.dk/elbil/hyundai-ioniq-7-standard/</loc>
-    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/mercedes-benz-glc-with-eq-technology-400-4matic/</loc>

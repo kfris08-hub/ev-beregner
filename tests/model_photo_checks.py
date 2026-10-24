@@ -21,6 +21,12 @@ seen=set();verified=0
 for slug,photo in catalog.items():
  text=(ROOT/'elbil'/slug/'index.html').read_text();page=Page(text)
  assert 'Henter udvendigt modelbillede' not in text,slug
+ if photo['status']=='withdrawn':
+  assert 'noindex, follow' in text and 'modelStatus' in text and not page.image,slug
+  continue
+ if photo['status']=='redirect':
+  assert 'http-equiv="refresh"' in text and photo['redirect_to'] in text and not page.image,slug
+  continue
  if photo['status']=='verified':
   verified+=1
   assert photo['reviewed'] and photo['reviewed_at'],slug
@@ -28,12 +34,17 @@ for slug,photo in catalog.items():
   file=ROOT/photo['src'].lstrip('/');body=file.read_bytes();seen.add(file.name)
   assert body[:4]==b'RIFF' and body[8:12]==b'WEBP',slug
   assert hashlib.sha256(body).hexdigest()==photo['sha256'],slug
-  assert len(body)==photo['bytes'] and photo['width']>=700,slug
+  assert len(body)==photo['bytes'] and photo['width']>=(480 if photo.get('usage')=='editorial-only' else 700),slug
   assert page.image['src']==photo['src'] and page.image.get('width')==str(photo['width']) and page.image.get('height')==str(photo['height']),slug
   assert page.image.get('alt') and 'display:none' not in page.image.get('style',''),slug
   assert photo['author'] in page.credit and photo['license'] in page.credit,slug
-  assert photo['source'].startswith('https://commons.wikimedia.org/'),slug
-  assert re.match(r'https://creativecommons.org/(licenses/by(?:-sa)?/|publicdomain/)',photo['license_url'].replace('http://','https://')),slug
+  if photo.get('usage')=='editorial-only':
+   assert slug=='mercedes-benz-gla-with-eq-technology-200'
+   assert photo['source']=='https://media.mercedes-benz.com/en/article/22b96b64-a441-4fad-a22a-bc41718aded7'
+   assert photo['license_url']=='https://media.mercedes-benz.com/en/legal/terms-of-use'
+  else:
+   assert photo['source'].startswith('https://commons.wikimedia.org/'),slug
+   assert re.match(r'https://creativecommons.org/(licenses/by(?:-sa)?/|publicdomain/)',photo['license_url'].replace('http://','https://')),slug
   assert photo['source'] in html.unescape(text) and photo['license_url'] in html.unescape(text),slug
   assert page.meta.get('og:image')==ORIGIN+photo['src'],slug
   graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)[1])['@graph']
@@ -47,4 +58,4 @@ root=ET.parse(ROOT/'sitemap.xml')
 images=root.findall('.//{http://www.google.com/schemas/sitemap-image/1.1}loc')
 assert {x.text for x in images}=={ORIGIN+p['src'] for p in catalog.values() if p['status']=='verified'}
 assert len(images)==verified
-print(f'PASS: all 186 photo records, {verified} reviewed local photos, {186-verified} explicit missing states, credits, licenses, hashes, static HTML, Open Graph and image sitemap.')
+print(f'PASS: all 186 photo records, {verified} reviewed local photos, {sum(p['status']=='missing' for p in catalog.values())} missing states, four withdrawn entries and one alias, credits, licenses, hashes, static HTML, Open Graph and image sitemap.')
