@@ -1,0 +1,48 @@
+name: Forbered og afprøv beregnersider
+on:
+  push:
+    branches: [fix/calculator-landing-pages-2026-10-24]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Byg fra den uændrede produktionsversion
+        run: |
+          git checkout c5244d333a371269ad844355d3e4ed34eb80544d -- index.html elbil sitemap.xml
+          python tools/prepare_calculator_pages.py
+          python tools/build_calculator_pages.py
+      - name: Kontroller HTML, regnemetoder og alle 20 beregnere
+        run: |
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - name: Installer browser-testværktøj
+        run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller de eksisterende 20 beregnere i Chrome
+        run: python tests/browser_checks.py
+      - name: Kontroller fem nye sider, mobil, desktop og uden JavaScript
+        run: python tests/calculator_browser_checks.py
+      - name: Gem testresultater
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: beregnersider-forhaandskontrol
+          path: test-results/
+      - name: Gem de kontrollerede sider på arbejdsgrenen
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html elbil assets/site.css assets/calculator-cars.json beregnere sitemap.xml
+          git diff --cached --quiet || git commit -m 'Build five calculator pages and links with shared arithmetic'
+          git push

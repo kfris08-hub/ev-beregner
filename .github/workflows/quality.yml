@@ -18,8 +18,11 @@ jobs:
         run: |
           python3 tests/seo_checks.py
           python3 tests/model_photo_checks.py
+          python3 tests/calculator_page_checks.py
       - name: Kontroller alle 20 beregnere og fejlforløb
-        run: node tests/calculators.test.cjs
+        run: |
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
   browser:
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +56,21 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: faste-modelbilleder
+          path: test-results/
+  calculator-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer browser-testværktøj
+        run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller de fem beregnersider på mobil og desktop
+        run: python tests/calculator_browser_checks.py
+      - name: Gem beregnerkontrol og skærmbilleder
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: beregnersider
           path: test-results/

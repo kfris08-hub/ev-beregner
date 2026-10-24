@@ -31,6 +31,7 @@ function setup(kind,options={}){
   },scrollTo(){},addEventListener(name,fn){listeners.set(name,fn)}};
  context.window=context;vm.createContext(context);
  vm.runInContext(fs.readFileSync(path.join(root,'assets/ev-core.js'),'utf8'),context);
+ vm.runInContext(fs.readFileSync(path.join(root,'assets/calculators.js'),'utf8'),context);
  if(kind==='home')for(const s of [...homeSource.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].filter(x=>!x[1].includes('type=')&&!x[1].includes('src=')))vm.runInContext(s[2],context);
  else{context.document.currentScript.dataset={consumption:'15.5'};vm.runInContext(fs.readFileSync(path.join(root,'assets/model-calculator.js'),'utf8'),context);}
  return {context,elements,requests,storage,listeners,run(code){return vm.runInContext(code,context)},cleanup(){for(const timer of timers)clearTimeout(timer)}};
