@@ -6,7 +6,7 @@ p=ROOT/'index.html';text=p.read_text()
 styles=re.search(r'<style>(.*?)</style>',text,re.S)
 assert styles and len(styles[1])>1000
 td=re.search(r'\.answer-table td\{([^}]+)\}',styles[1])
-extra='\n.answer-table th{'+(td[1] if td else 'padding:10px;border-bottom:1px solid #29374d;')+'text-align:left;font-weight:400;}\n'
+extra='\n.answer-table th{'+(td[1] if td else 'padding:10px;border-bottom:1px solid #29374d;').rstrip(';')+';text-align:left;font-weight:400;}\n'
 (ROOT/'assets/site.css').write_text(styles[1]+extra)
 text=text[:styles.start()]+'<link rel="stylesheet" href="/assets/site.css?v=20261024-calculators">'+text[styles.end():]
 old=re.search(r'const calculators=(\{.*?\});',text,re.S)
