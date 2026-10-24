@@ -1,0 +1,44 @@
+{
+  "xpeng-g6-standard-range-rwd": {
+    "brand": "XPENG",
+    "model": "G6 Standard Range RWD",
+    "url": "https://store.xpeng.com/dk/configurator/NEW_G6",
+    "label": "XPENG Danmark",
+    "verified_fields": [
+      "battery_gross_kwh",
+      "range_km",
+      "consumption_kwh_100km",
+      "dc_kw"
+    ],
+    "battery_gross_kwh": 68.5,
+    "range_km": 470,
+    "consumption_kwh_100km": 16.9,
+    "dc_kw": 382,
+    "note": "Opdateret G6, RWD Standard Range med 20-tommer hjul. Batteriet er brutto. Pris er ikke kontrolleret i denne opdatering.",
+    "checked_at": "2026-10-24"
+  },
+  "xpeng-l03-standard-range-rwd": {
+    "brand": "XPENG",
+    "model": "L03 Standard Range RWD",
+    "url": "https://store.xpeng.com/dk/configurator/L03",
+    "label": "XPENG Danmark",
+    "verified_fields": [
+      "consumption_kwh_100km"
+    ],
+    "consumption_kwh_100km": 15.3,
+    "note": "Forbrug for RWD Standard Range med 18-tommer hjul. Den registrerede batteriværdi på 56 kWh er ikke bekræftet som brutto eller netto.",
+    "checked_at": "2026-10-24"
+  },
+  "byd-atto-3-evo-design": {
+    "brand": "BYD",
+    "model": "Atto 3 EVO Design",
+    "url": "https://www.bydauto.dk/modeller/byd-atto-3/pris-og-detaljer",
+    "label": "BYD Danmark",
+    "verified_fields": [
+      "consumption_kwh_100km"
+    ],
+    "consumption_kwh_100km": 16.4,
+    "note": "Design-variantens 164 Wh/km svarer til 16,4 kWh/100 km.",
+    "checked_at": "2026-10-24"
+  }
+}
