@@ -99,11 +99,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|sportback",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:2027 Audi Q4 e-tron IMG 8045.jpg"
-    ],
-    "compare": true
+    ]
   },
   "audi-q6-e-tron-e-tron-s-line-plus": {
     "label": "Audi Q6 e-tron e-tron S line plus",
@@ -128,11 +127,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|sportback",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:2023 Denver Auto Show Audi Q8 e-tron Front Quarter View.jpg"
-    ],
-    "compare": true
+    ]
   },
   "bmw-i4-edrive35-m-sport": {
     "label": "BMW i4 eDrive35 M Sport",
@@ -306,12 +304,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|seal[ _-]*u\\b|sealion|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|seal[ _-]*[56789]|dm[ _-]*i|seal[ _-]*0[56789]|seal[ _-]*[56789]|dm[ _-]*i",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:BYD Seal 6 DM-i Touring IAA 2025 DSC 2249.jpg",
       "File:2025 BYD Seal 06 EV front view.png"
-    ],
-    "compare": true
+    ]
   },
   "byd-seal-u-comfort": {
     "label": "BYD Seal U Comfort",
@@ -322,12 +319,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|dm[ _-]*i|hybrid",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:BYD Seal U DM-i GIMS 2024 1X7A2177.jpg",
       "File:BYD SEAL U, Warsaw (front).jpg"
-    ],
-    "compare": true
+    ]
   },
   "byd-sealion-7-design-rwd": {
     "label": "BYD Sealion 7 Design RWD",
@@ -380,15 +376,17 @@
     "label": "Citroën Ami Ami",
     "identity": "Citroën Ami",
     "article": "Citroën Ami",
-    "query": "Citroen Ami 2020 front",
+    "query": "Citroen Ami 2023",
     "required": "citroen[ _-]*ami.*(2020|2021|2022|2023|2024|2025|2026)",
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|ami[ _-]*[68]|buggy",
     "skip": false,
     "missing_reason": "",
-    "reuse": true,
+    "reuse": false,
     "exclude_files": [
-      "File:0947 Citroen Ami 8 break front right.jpg"
-    ]
+      "File:0947 Citroen Ami 8 break front right.jpg",
+      "File:Citroën Ami (2021) (53137860124).jpg"
+    ],
+    "compare": true
   },
   "citroen-e-c3-aircross-you": {
     "label": "Citroën ë-C3 Aircross You!",
@@ -399,8 +397,7 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
-    "compare": true,
+    "reuse": true,
     "exclude_files": [
       "File:Citroën ë-C3 Aircross DSC 8336.jpg"
     ]
@@ -436,12 +433,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Citroën ë-C4 X (2024) (54708480588).jpg",
       "File:Citroën e-C4 X 1X7A6936.jpg"
-    ],
-    "compare": true
+    ]
   },
   "citroen-e-c5-aircross-you-74-kwh": {
     "label": "Citroën ë-C5 Aircross You! 74 kWh",
@@ -452,11 +448,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|puretech|petrol|diesel|hybrid",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:2024 Citroen C5 Aircross E-Series PureTech - 1199cc 1.2 (136PS) Petrol - Platinum Grey - 02-2025, Front.jpg"
-    ],
-    "compare": true
+    ]
   },
   "cupra-born-basis-58-kwh": {
     "label": "Cupra Born Basis 58 kWh",
@@ -478,12 +473,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|camouf|test[ _-]*car|covered",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Cupra Raval Auto Zuerich 2025 DSC 3584.jpg",
       "File:Cupra Raval Almedalen 2026.jpg"
-    ],
-    "compare": true
+    ]
   },
   "cupra-tavascan-basis": {
     "label": "Cupra Tavascan Basis",
@@ -596,11 +590,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:2025 Ford Explorer EV.jpg"
-    ],
-    "compare": true
+    ]
   },
   "ford-mustang-mach-e-standard-range-rwd": {
     "label": "Ford Mustang Mach-E Standard Range RWD",
@@ -611,8 +604,7 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
-    "compare": true,
+    "reuse": true,
     "exclude_files": [
       "File:FORD MUSTANG MACH-E China.jpg"
     ]
@@ -626,11 +618,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:2025 Ford Puma Gen-E Front View.jpg"
-    ],
-    "compare": true
+    ]
   },
   "gac-aion-aion-ut-ut-60-kwh": {
     "label": "GAC Aion Aion UT UT 60 kWh",
@@ -823,11 +814,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|1[ _-]*6|1[ _-]*5|petrol|hybrid",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:2025 Jaecoo 5 1.6 Luxury (United Kingdom) front view.jpg"
-    ],
-    "compare": true
+    ]
   },
   "jeep-avenger-electric-longitude": {
     "label": "Jeep Avenger Electric Longitude",
@@ -838,8 +828,7 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
-    "compare": true,
+    "reuse": true,
     "exclude_files": [
       "File:Carabinieri-Jeep-Avenger-electrique-Roma-Via-della-Dataria-byMmeRundvald.jpg"
     ]
@@ -963,12 +952,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|chassis|cab|cargo|conversion",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Kia PV5 Chassis Cab IAA Transportation 2026 (DSC8237).jpg",
       "File:Kia PV5 (SW1) Passenger – Seoul Mobility Show 2025 (01).jpg"
-    ],
-    "compare": true
+    ]
   },
   "kia-sportage-ev-standard": {
     "label": "Kia Sportage EV Standard",
@@ -1067,12 +1055,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|shooting|x174|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Blau Mercedes-Benz CLA 180, Deákstrasse, 2026 Budapest.jpg",
       "File:Mercedes-Benz CLA 250+ Coupé (C174, 2025) (54837710776).jpg"
-    ],
-    "compare": true
+    ]
   },
   "mercedes-benz-cla-shooting-brake-cla-250-advance-edition": {
     "label": "Mercedes-Benz CLA Shooting Brake CLA 250+ Advance Edition",
@@ -1083,8 +1070,7 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
-    "compare": true
+    "reuse": true
   },
   "mercedes-benz-eqa-250-amg-edition": {
     "label": "Mercedes-Benz EQA 250+ AMG Edition",
@@ -1106,11 +1092,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Mercedes-Benz EQB 250+ (X243) front.jpg"
-    ],
-    "compare": true
+    ]
   },
   "mercedes-benz-eqc-300": {
     "label": "Mercedes-Benz EQC 300",
@@ -1135,8 +1120,7 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|suv|x294|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
-    "compare": true,
+    "reuse": true,
     "exclude_files": [
       "File:2024 Mercedes-Benz V295 EQE 350+ AMG Line in Obsidian Black, 06-26-2024.jpg"
     ]
@@ -1197,8 +1181,7 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
-    "compare": true
+    "reuse": true
   },
   "mercedes-benz-glc-with-eq-technology-400-4matic": {
     "label": "Mercedes-Benz GLC with EQ Technology 400 4MATIC",
@@ -1220,11 +1203,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|camo|erlkonig",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Mercedes-Benz VLE-Class IMG 6700.jpg"
-    ],
-    "compare": true
+    ]
   },
   "mg-im5-long-range": {
     "label": "MG IM5 Long Range",
@@ -1417,9 +1399,9 @@
     "label": "Nissan Micra Electric 40 kWh",
     "identity": "Nissan Micra 2026",
     "article": "Nissan Micra",
-    "query": "Nissan Micra K15",
-    "required": "(micra.*(2025|2026|k15)|k15)",
-    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo",
+    "query": "Nissan Micra 2025",
+    "required": "nissan[ _-]*micra",
+    "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|k1[01234]|199[0-9]|200[0-9]|201[0-9]|198[0-9]",
     "skip": false,
     "missing_reason": "",
     "reuse": false,
@@ -1997,12 +1979,11 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|gti|2025",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Volkswagen ID.Polo Auto Zuerich 2025 DSC 3271.jpg",
       "File:Volkswagen ID.Polo GTI IAA 2025 DSC 1508.jpg"
-    ],
-    "compare": true
+    ]
   },
   "volvo-ec40-single-motor-core": {
     "label": "Volvo EC40 Single Motor Core",
@@ -2074,11 +2055,10 @@
     "exclude": "interior|cockpit|dashboard|engine|badge|logo|wheel[ _-]*detail|diagram|crash|cutaway|concept|prototype|rendering|camoufl|spy[ _-]*shot|scale[ _-]*model|toy[ _-]*car|\\.svg$|cargo|boot|trunk|steering|speedometer|interieur|innen|detail|advert|camoufl|flow[ _-]*nostokana|cross[ _-]*turismo|sport[ _-]*turismo|\\bad\\b|banner|airport",
     "skip": false,
     "missing_reason": "",
-    "reuse": false,
+    "reuse": true,
     "exclude_files": [
       "File:Volvo EX60 ad Gothenburg airport 2026-02-14.jpg"
-    ],
-    "compare": true
+    ]
   },
   "volvo-ex70-single-motor": {
     "label": "Volvo EX70 Single Motor",

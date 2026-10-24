@@ -31,7 +31,7 @@ def license_ok(meta):
  url=html.unescape(meta.get('LicenseUrl',{}).get('value',''))
  name=plain(meta.get('LicenseShortName',{}).get('value',''))
  match=re.match(r'https?://creativecommons\.org/licenses/by(?:-sa)?/[1-4]\.[05](?:/|$)',url)
- if match:return name,match[0].replace('http://','https://').rstrip('/')+'/'
+ if match:return name,url.replace('http://','https://').split('/deed.')[0].rstrip('/')+'/'
  if 'creativecommons.org/publicdomain/zero/' in url:return name or 'CC0 1.0',url
  if name in ('Public domain','PD','CC0','CC0 1.0') or 'creativecommons.org/publicdomain/mark/' in url:
   return name or 'Public domain',url or 'https://creativecommons.org/publicdomain/mark/1.0/'
