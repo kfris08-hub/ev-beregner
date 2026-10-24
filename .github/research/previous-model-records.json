@@ -1,0 +1,59 @@
+{
+  "note": "Historiske, ikke verificerede værdier. Må ikke bruges som fabriksdata.",
+  "records": {
+    "kia-sportage-ev-standard": [
+      "Kia",
+      "Sportage EV Standard",
+      389990,
+      81.4,
+      550,
+      17.0,
+      128
+    ],
+    "kia-ev1-standard-range": [
+      "Kia",
+      "EV1 Standard Range",
+      349990,
+      58,
+      420,
+      16.0,
+      150
+    ],
+    "elveon-motors-min-e-sedan-base": [
+      "Elveon Motors",
+      "Min-E Sedan BASE",
+      103995,
+      15.1,
+      170,
+      9.0,
+      22
+    ],
+    "volvo-ex70-single-motor": [
+      "Volvo",
+      "EX70 Single Motor",
+      449990,
+      92,
+      650,
+      16.0,
+      250
+    ],
+    "hyundai-ioniq-7-standard": [
+      "Hyundai",
+      "IONIQ 7 Standard",
+      599990,
+      84,
+      500,
+      19.0,
+      235
+    ],
+    "volvo-ex50-single-motor-rwd": [
+      "Volvo",
+      "EX50 Single Motor RWD",
+      439990,
+      69,
+      480,
+      16.0,
+      175
+    ]
+  }
+}

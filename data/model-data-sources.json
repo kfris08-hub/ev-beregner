@@ -23,11 +23,14 @@
     "url": "https://store.xpeng.com/dk/configurator/L03",
     "label": "XPENG Danmark",
     "verified_fields": [
-      "consumption_kwh_100km"
+      "consumption_kwh_100km",
+      "battery_kwh"
     ],
     "consumption_kwh_100km": 15.3,
-    "note": "Forbrug for RWD Standard Range med 18-tommer hjul. Den registrerede batteriværdi på 56 kWh er ikke bekræftet som brutto eller netto.",
-    "checked_at": "2026-10-24"
+    "note": "Batterikapacitet, pris, rækkevidde og DC-ladning kontrolleret i XPENG Danmarks pressemeddelelse. Kilden skelner ikke mellem brutto og netto; kapaciteten gengives uden denne betegnelse.",
+    "checked_at": "2026-10-24",
+    "battery_kwh": 58.3,
+    "identity_source": "https://www.xpeng.com/pressroom/news/01a13b414128a12024aa8a02829e014d"
   },
   "byd-atto-3-evo-design": {
     "brand": "BYD",
