@@ -29,14 +29,16 @@ assert len(models)==186
 WITHDRAWN={'kia-ev1-standard-range','kia-sportage-ev-standard','volvo-ex50-single-motor-rwd','volvo-ex70-single-motor'}
 ALIAS={'hyundai-ioniq-7-standard':'hyundai-ioniq-9-rwd-advanced'}
 EXCLUDED=WITHDRAWN|set(ALIAS)
+guides=sorted((ROOT/'beregnere').glob('*/index.html'))
+assert len(guides)==5
 pages={}
-for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models]:
+for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models,*guides]:
  relative=path.relative_to(ROOT).as_posix()
  url=ORIGIN+('/' if relative=='index.html' else '/'+relative.removesuffix('index.html'))
  pages[url]=Page(path.read_text())
 sitemap=ET.parse(ROOT/'sitemap.xml')
 locations=[x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-assert len(locations)==len(set(locations))==183
+assert len(locations)==len(set(locations))==188
 assert set(locations)=={u for u in pages if u.rstrip('/').split('/')[-1] not in EXCLUDED},'Sitemap must contain exactly the indexable canonical pages'
 robot=RobotFileParser();robot.parse((ROOT/'robots.txt').read_text().splitlines())
 for url,page in pages.items():
@@ -53,9 +55,9 @@ for url,page in pages.items():
   if script['attrs'].get('type')=='application/ld+json':json.loads(script['text'])
  for link in page.links:
   target=urlsplit(urljoin(url,link.get('href','')))
-  if target.netloc=='www.evberegn.dk' and target.path.startswith('/elbil/') and target.path.endswith('/'):
+  if target.netloc=='www.evberegn.dk' and target.path.startswith(('/elbil/','/beregnere/')) and target.path.endswith('/'):
    assert ORIGIN+target.path in pages,f'Broken model link {url}: {target.path}'
- if url.count('/')>4 and slug not in EXCLUDED:assert any(x.get('href','').startswith('/?car=') for x in page.links),f'Missing car link {url}'
+ if '/elbil/' in url and url.count('/')>4 and slug not in EXCLUDED:assert any(x.get('href','').startswith('/?car=') for x in page.links),f'Missing car link {url}'
 for field in ('titles','descriptions'):
  values=[getattr(p,field)[0] for p in pages.values()]
  assert len(values)==len(set(values)),f'Duplicate {field}'
@@ -93,4 +95,4 @@ for forbidden in EXCLUDED:
  assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',overview)
  assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',home_text)
 assert 'unzip -o' not in (ROOT/'.github/workflows/installer.yml').read_text()
-print('PASS: 188 preserved URLs, 183 sitemap entries, 181 selectable models, four noindex explanations, one IONIQ alias, unknown Elveon data and all 20 calculators.')
+print('PASS: 193 preserved URLs, 188 sitemap entries, five dedicated calculator pages, 181 selectable models, four noindex explanations, one IONIQ alias, unknown Elveon data and all 20 calculators.')

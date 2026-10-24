@@ -1275,4 +1275,24 @@
       <image:loc>https://www.evberegn.dk/assets/cars/mercedes-benz-eqs-580-4matic-d3ad0c91a168.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.evberegn.dk/beregnere/ladepris/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.evberegn.dk/beregnere/elbil-vs-benzin/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.evberegn.dk/beregnere/opladningstid/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.evberegn.dk/beregnere/leasing-vs-koeb/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.evberegn.dk/beregnere/samlet-biloekonomi/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
 </urlset>
