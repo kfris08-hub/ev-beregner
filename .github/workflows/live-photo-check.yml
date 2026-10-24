@@ -1,0 +1,23 @@
+name: Kontroller offentlige modelbilleder
+on:
+  push:
+    branches: [verify/live-model-photos-2026-10-24]
+permissions:
+  contents: read
+jobs:
+  live-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller synlige billeder på evberegn.dk
+        run: python tests/live_photo_release_checks.py
+      - name: Gem billeder og resultater
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: offentlige-modelbilleder
+          path: test-results/
