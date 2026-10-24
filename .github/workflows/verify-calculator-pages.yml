@@ -1,0 +1,53 @@
+name: Kontroller udgivne beregnersider
+on:
+  push:
+    branches: [verify/public-calculator-pages-2026-10-24]
+permissions:
+  contents: read
+jobs:
+  public-calculators:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer browser-testværktøj
+        run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller det udgivne sitemap og robots.txt
+        run: |
+          python - <<'PYLIVE'
+          import json,urllib.request,xml.etree.ElementTree as ET
+          origin='https://www.evberegn.dk'
+          def get(path):
+              with urllib.request.urlopen(origin+path,timeout=30) as response:
+                  assert response.status==200,(path,response.status)
+                  assert 'noindex' not in response.headers.get('X-Robots-Tag','').lower(),path
+                  return response.read().decode('utf-8')
+          root=ET.fromstring(get('/sitemap.xml'))
+          urls={n.text for n in root.findall('{*}url/{*}loc')}
+          wanted={origin+'/beregnere/'+s+'/' for s in ['ladepris','elbil-vs-benzin','opladningstid','leasing-vs-koeb','samlet-biloekonomi']}
+          assert wanted<=urls,(wanted-urls)
+          assert len(urls)==188,len(urls)
+          robots=get('/robots.txt')
+          assert 'Sitemap: '+origin+'/sitemap.xml' in robots
+          for url in sorted(wanted):
+              html=get(url.removeprefix(origin))
+              assert '<meta name="robots" content="index, follow">' in html,url
+              assert '<link rel="canonical" href="'+url+'">' in html,url
+          print('PUBLIC_SEO_RESULT '+json.dumps({'sitemap_urls':len(urls),'five_calculators_in_sitemap':True,'robots_sitemap':True,'five_http_200_indexable_canonical_pages':True}))
+          PYLIVE
+      - name: Kontroller de fem udgivne sider på mobil og desktop
+        env:
+          CALCULATOR_PUBLIC: '1'
+        run: python tests/calculator_browser_checks.py
+      - name: Kontroller alle 20 oprindelige beregnere på hjemmesiden
+        env:
+          CALCULATOR_PUBLIC: '1'
+        run: python tests/browser_checks.py
+      - name: Gem resultatet af kontrollen på den rigtige hjemmeside
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: udgivne-beregnersider
+          path: test-results/
