@@ -51,5 +51,6 @@ verified=[p for p in models.values() if p['status']=='verified']
 missing=[(slug,p) for slug,p in models.items() if p['status']!='verified']
 report=['# Billeddækning, 24. oktober 2026','',f'{len(verified)} af {len(models)} modelsider har et fast, lokalt modelbillede med kilde, fotograf og licens.','', 'Billederne viser modellen. Udstyrsvariant, fælge og farve kan afvige; det er angivet ved billederne. Ingen billeder vælges ved automatisk søgning i besøgendes browser.','', '## Resterende modeller','', '| Model | Adresse | Årsag |','|---|---|---|']
 for slug,p in missing:report.append(f'| {p["label"]} | [/elbil/{slug}/](https://www.evberegn.dk/elbil/{slug}/) | {p.get("reason","")} |')
-(ROOT/'BILLEDDÆKNING.md').write_text('\n'.join(report)+'\n')
+(ROOT/'.github/docs').mkdir(parents=True,exist_ok=True)
+(ROOT/'.github/docs/BILLEDDÆKNING.md').write_text('\n'.join(report)+'\n')
 print('Rendered',len(verified),'fixed photos;',len(missing),'explicit missing states; 186 existing pages preserved.')
