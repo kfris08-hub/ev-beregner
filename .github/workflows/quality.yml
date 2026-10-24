@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: '22'
       - name: Kontroller metadata, sitemap og links
-        run: python3 tests/seo_checks.py
+        run: |
+          python3 tests/seo_checks.py
+          python3 tests/model_photo_checks.py
       - name: Kontroller alle 20 beregnere og fejlforløb
         run: node tests/calculators.test.cjs
   browser:
@@ -35,7 +37,7 @@ jobs:
         with:
           name: browserkontrol
           path: test-results/
-  real-model-photos:
+  static-model-photos:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,11 +46,11 @@ jobs:
           python-version: '3.12'
       - name: Installer browser-testværktøj
         run: python -m pip install playwright==1.56.0
-      - name: Kontroller rigtige modelbilleder i Chrome
+      - name: Kontroller alle 186 modelsiders faste billeder i Chrome
         run: python tests/photo_browser_checks.py
       - name: Gem billedkontrol og skærmbilleder
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: rigtige-modelbilleder
+          name: faste-modelbilleder
           path: test-results/
