@@ -1,0 +1,25 @@
+name: Kontroller offentlige modeller efter navnekontrol
+on:
+  push:
+    branches: [verify/public-reviewed-models-2026-10-24]
+permissions:
+  contents: read
+jobs:
+  public-photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Indlæs alle offentlige modeller og billeder uden JavaScript
+        env:
+          PHOTO_PUBLIC: '1'
+        run: python tests/photo_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-faste-modelbilleder
+          path: test-results/
