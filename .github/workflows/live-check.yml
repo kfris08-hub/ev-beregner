@@ -1,0 +1,82 @@
+name: Bekraeft offentlig SEO-version
+on:
+  push:
+    branches: [verify/live-seo-2026-10-24]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kontroller den publicerede hjemmeside
+        run: |
+          python3 - <<'PY'
+          from urllib.request import Request,urlopen
+          from urllib.error import HTTPError
+          from urllib.parse import urlsplit,urljoin
+          from html.parser import HTMLParser
+          import json,xml.etree.ElementTree as ET,time
+
+          BASE='https://www.evberegn.dk'
+          stamp=str(time.time_ns())
+          checks=[]
+          def read(path):
+              url=BASE+path+('?' if '?' not in path else '&')+'release_check='+stamp
+              with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; EVBeregner-release-check/1.0)','Cache-Control':'no-cache'}),timeout=25) as response:
+                  assert response.status==200,(path,response.status)
+                  body=response.read().decode('utf-8-sig')
+                  checks.append({'path':path,'status':response.status,'url':response.url})
+                  return body
+
+          class Links(HTMLParser):
+              def __init__(self,text):
+                  super().__init__();self.anchors=[];self.scripts=[];self.canonical=[];self.feed(text)
+              def handle_starttag(self,tag,attrs):
+                  a=dict(attrs)
+                  if tag=='a':self.anchors.append(a)
+                  if tag=='script' and a.get('src'):self.scripts.append(a['src'])
+                  if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a.get('href'))
+
+          home=read('/')
+          parsed=Links(home)
+          assert len([a for a in parsed.anchors if 'calc-card' in a.get('class','').split()])==20,'Stale calculator navigation'
+          assert parsed.canonical==[BASE+'/']
+          assert '/assets/ev-core.js' in home,'Missing core script'
+          assert 'restoreCarFromURL' in home,'Missing car transfer fix'
+          models=[
+              ('xpeng-g6-standard-range-rwd','16.9','470 km','16,9'),
+              ('xpeng-l03-standard-range-rwd','15.3','445 km','15,3'),
+              ('byd-atto-3-evo-design','16.4','510 km','16,4'),
+              ('tesla-model-y-standard-rwd','15.5','534 km','15,5')
+          ]
+          for slug,consumption,distance,display in models:
+              path='/elbil/'+slug+'/'
+              body=read(path);p=Links(body)
+              assert p.canonical==[BASE+path],('Canonical',slug)
+              assert 'data-consumption="'+consumption+'"' in body,('Consumption',slug)
+              assert distance in body and display in body,('Data',slug)
+              assert any(a.get('href')=='/?car='+slug for a in p.anchors),('Transfer',slug)
+              assert any('/assets/model-calculator.js' in src for src in p.scripts),('Script',slug)
+              assert 'Eksempel:' in body,('Example',slug)
+          directory=Links(read('/elbil/'))
+          assert len([a for a in directory.anchors if a.get('href','').startswith('/elbil/') and a.get('href','').endswith('/')])==186
+          for path,marker in [('/assets/ev-core.js','global.EVCore'),('/assets/model-calculator.js','function calculate()'),('/assets/car-images.js','modelMatches')]:
+              assert marker in read(path),('Missing asset',path)
+          robots=read('/robots.txt')
+          assert 'Sitemap: https://www.evberegn.dk/sitemap.xml' in robots
+          assert 'Disallow: /' not in robots
+          sitemap=ET.fromstring(read('/sitemap.xml'))
+          locs=sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')
+          assert len(locs)==len(set(x.text for x in locs))==188
+          assert json.loads(read('/data/model-data-sources.json'))['xpeng-g6-standard-range-rwd']['range_km']==470
+          fuel=json.loads(read('/data/fuel-prices.json'))
+          assert fuel['petrol95']>0 and fuel['diesel']>0
+          unknown='/elbil/release-check-missing-'+stamp+'/'
+          try:
+              read(unknown)
+              raise AssertionError('Unknown model returned 200')
+          except HTTPError as error:
+              assert error.code==404,error.code
+              checks.append({'path':'unknown-model','status':404})
+          print(json.dumps({'result':'PASS','checked_public_urls':checks,'calculator_links':20,'models_in_directory':186,'sitemap_urls':188},ensure_ascii=False,indent=2))
+          PY
