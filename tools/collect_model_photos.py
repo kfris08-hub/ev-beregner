@@ -30,7 +30,8 @@ def norm(value):
 def license_ok(meta):
  url=html.unescape(meta.get('LicenseUrl',{}).get('value',''))
  name=plain(meta.get('LicenseShortName',{}).get('value',''))
- if re.match(r'https?://creativecommons\.org/licenses/by(?:-sa)?/[1-4]\.0/?$',url):return name,url
+ match=re.match(r'https?://creativecommons\.org/licenses/by(?:-sa)?/[1-4]\.[05](?:/|$)',url)
+ if match:return name,match[0].replace('http://','https://').rstrip('/')+'/'
  if 'creativecommons.org/publicdomain/zero/' in url:return name or 'CC0 1.0',url
  if name in ('Public domain','PD','CC0','CC0 1.0') or 'creativecommons.org/publicdomain/mark/' in url:
   return name or 'Public domain',url or 'https://creativecommons.org/publicdomain/mark/1.0/'
@@ -92,6 +93,8 @@ def collect(item):
  except Exception as e:result['reason']='Billedkilden svarede ikke under kontrollen.';result['lookup_error']=str(e)
  candidates.sort(key=lambda p:-p['score'])
  if not candidates:print('NO_CANDIDATE '+json.dumps({'slug':slug,'query':p['query'],'returned':len(data.get('query',{}).get('pages',{})) if 'data' in locals() else 0}),flush=True)
+ if p.get('compare'):
+  print('CANDIDATE_LIST '+json.dumps({'slug':slug,'files':[c['file'] for c in candidates[:6]],'sample':[{'file':pg.get('title'),'license':pg.get('imageinfo',[{}])[0].get('extmetadata',{}).get('LicenseShortName',{}).get('value'),'url':pg.get('imageinfo',[{}])[0].get('extmetadata',{}).get('LicenseUrl',{}).get('value')} for pg in list(data.get('query',{}).get('pages',{}).values())[:3]] if 'data' in locals() else []},ensure_ascii=False),flush=True)
  for photo in candidates:
   try:
    body=request(photo['url'],raw=True)
@@ -112,6 +115,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
 manifest={'version':1,'checked_at':'2026-10-24','note':'Modelspecific photo, not a guarantee of the trim, colour, wheels or equipment shown.','models':results}
 (ROOT/'data/model-photos.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 (REVIEW/'alternatives.json').write_text(json.dumps(alternatives,ensure_ascii=False,indent=2))
+(ROOT/'data/model-photo-candidates.json').write_text(json.dumps(alternatives,ensure_ascii=False,indent=2)+'\n')
 # Review sheets are log output only, not published as website assets.
 font_path='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 font=ImageFont.truetype(font_path,13)
@@ -131,3 +135,23 @@ for offset in range(0,len(selected),20):
  (REVIEW/('sheet-'+str(offset//20+1)+'.jpg')).write_bytes(buf.getvalue())
  print('CONTACT_SHEET '+str(offset//20+1)+' '+base64.b64encode(buf.getvalue()).decode(),flush=True)
 print('CATALOG_SUMMARY '+json.dumps({'total':len(results),'candidates':sum(p['status']=='candidate' for p in results.values()),'missing':sum(p['status']=='missing' for p in results.values()),'new_sheets':len(selected),'bytes':sum(p.get('bytes',0) for p in results.values())}),flush=True)
+
+comparisons=[]
+for slug,p in PLAN.items():
+ if not p.get('compare'):continue
+ for number,photo in enumerate(alternatives.get(slug,[])[:4],1):
+  try:
+   image=Image.open(io.BytesIO(request(photo['url'],raw=True))).convert('RGB');image.thumbnail((312,165))
+   comparisons.append((slug,number,photo,image))
+  except Exception:pass
+for offset in range(0,len(comparisons),16):
+ sheet=Image.new('RGB',(1280,920),'#eeeeee');draw=ImageDraw.Draw(sheet)
+ for j,(slug,number,photo,image) in enumerate(comparisons[offset:offset+16]):
+  x=j%4*320;y=j//4*230;sheet.paste(image,(x+(312-image.width)//2,y))
+  label=slug+' ['+str(number)+']'
+  draw.text((x+3,y+168),label[:42],font=font,fill='blue')
+  draw.text((x+3,y+183),label[42:84],font=font,fill='blue')
+  label=photo['file'][5:]
+  draw.text((x+3,y+198),label[:42],font=font,fill='black');draw.text((x+3,y+213),label[42:84],font=font,fill='black')
+ buf=io.BytesIO();sheet.save(buf,format='JPEG',quality=62)
+ print('ALTERNATIVE_SHEET '+str(offset//16+1)+' '+base64.b64encode(buf.getvalue()).decode(),flush=True)
