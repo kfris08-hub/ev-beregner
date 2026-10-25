@@ -56,6 +56,11 @@ async def main():
                     await page.locator('#calculator button.back').click()
                     await expect(page.locator('#calculator')).not_to_be_visible()
             await case('calculator-cards-calculate-back',cards)
+            async def overlay_stacking():
+                await page.goto(BASE+'/?car=tesla-model-y-standard-rwd#beregner-2',wait_until='load')
+                await expect(page.locator('#calculator')).to_be_visible()
+                assert await page.evaluate('Boolean(document.elementFromPoint(innerWidth/2,150)?.closest("#calculator"))'),'Advertisement covers the calculator opened from a direct link'
+            await case('calculator-direct-link-overlay',overlay_stacking)
             async def comparison():
                 await page.goto(BASE+'/',wait_until='load')
                 for slot,label2 in enumerate(['Tesla Model Y Standard RWD','Kia EV3 Standard Range Access','Elveon Motors Min-E Sedan']):

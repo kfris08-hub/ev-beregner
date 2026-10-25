@@ -1,0 +1,61 @@
+name: Afklar fund fra hjemmesidekontrol
+on:
+  push:
+    branches: [verify/diagnose-full-site-2026-10-25]
+permissions:
+  contents: read
+  pages: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Læs hostingstatus og elprisformat
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import urllib.request,os,json
+          for url in ['https://api.github.com/repos/kfris08-hub/ev-beregner/pages','https://elpriser.org/api/now?area=DK1&mode=inkl_alt','https://elpriser.org/api/now?area=DK2&mode=inkl_alt']:
+              try:
+                  headers={'User-Agent':'EVBeregnerTechnicalAudit/1.0'}
+                  if 'api.github.com' in url:headers['Authorization']='Bearer '+os.environ['GH_TOKEN']
+                  data=json.load(urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=20))
+                  if 'api.github.com' in url:data={k:data.get(k) for k in ['status','cname','html_url','https_enforced','https_certificate']}
+                  print('DIAGNOSTIC_HTTP '+url+' '+json.dumps(data,ensure_ascii=False)[:7000],flush=True)
+              except Exception as e:print('DIAGNOSTIC_ERROR '+url+' '+str(e),flush=True)
+          PY
+      - run: python -m pip install playwright==1.56.0
+      - name: Afklar overførsel af bilvalg og annoncens placering
+        run: |
+          python - <<'PY'
+          import asyncio,json
+          from urllib.parse import urlsplit
+          from playwright.async_api import async_playwright
+          async def run():
+              async with async_playwright() as pw:
+                  browser=await pw.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+                  for width in [390,1280]:
+                      context=await browser.new_context(viewport={'width':width,'height':900})
+                      async def route(r):
+                          host=urlsplit(r.request.url).netloc
+                          if host=='www.evberegn.dk':await r.continue_()
+                          elif host=='elpriser.org':await r.fulfill(status=200,json={'price':0})
+                          else:await r.abort()
+                      await context.route('**/*',route)
+                      page=await context.new_page()
+                      await page.goto('https://www.evberegn.dk/elbil/tesla-model-y-standard-rwd/')
+                      link=page.get_by_role('link',name='ÅBN ALLE BEREGNERE')
+                      href=await link.get_attribute('href')
+                      await link.click();await page.wait_for_function('typeof selectedCar!=="undefined" && selectedCar!==null')
+                      print('TRANSFER_DIAGNOSTIC '+json.dumps({'width':width,'href':href,'url':page.url,'selected':await page.evaluate('selectedCar')},ensure_ascii=False),flush=True)
+                      await page.goto('https://www.evberegn.dk/?car=tesla-model-y-standard-rwd#beregner-2')
+                      state=await page.evaluate('({selected:selectedCar,topElement:document.elementFromPoint(innerWidth/2,150)?.outerHTML.slice(0,350),iframeZ:getComputedStyle(document.getElementById("frame")).zIndex,calculatorZ:getComputedStyle(document.getElementById("calculator")).zIndex})')
+                      print('OVERLAY_DIAGNOSTIC '+json.dumps(state,ensure_ascii=False),flush=True)
+                      await context.close()
+                  await browser.close()
+          asyncio.run(run())
+          PY
