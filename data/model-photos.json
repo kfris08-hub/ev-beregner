@@ -4771,6 +4771,96 @@
       "bytes": 125152,
       "sha256": "0bd2500daaca831e27cc08d9aff692a411095137883beab49908b883315c59c9",
       "reviewed_at": "2026-10-24"
+    },
+    "alfa-romeo-junior-speciale-el-156-1c915c63": {
+      "label": "Alfa Romeo Junior Speciale EL 156",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "alfa-romeo-junior-veloce-el-280-96c096ad": {
+      "label": "Alfa Romeo Junior Veloce EL 280",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-208-style-el-136-50-kwh-a5afbfc4": {
+      "label": "Peugeot E-208 Style EL 136 / 50 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-208-allure-el-156-54-kwh-69e95618": {
+      "label": "Peugeot E-208 Allure EL 156 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-208-gt-el-156-54-kwh-e3218d76": {
+      "label": "Peugeot E-208 GT EL 156 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-208-gt-pack-el-156-54-kwh-aeea4f65": {
+      "label": "Peugeot E-208 GT Pack EL 156 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-208-prestige-el-156-54-kwh-e73303cd": {
+      "label": "Peugeot E-208 Prestige EL 156 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-208-gti-el-281-54-kwh-f30d7158": {
+      "label": "Peugeot E-208 GTi EL 281 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-2008-gt-el-156-54-kwh-59333caf": {
+      "label": "Peugeot E-2008 GT EL 156 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-2008-gt-sky-el-156-54-kwh-6ff5e04f": {
+      "label": "Peugeot E-2008 GT SKY EL 156 / 54 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "peugeot-e-2008-style-el-136-50-kwh-ab81ad96": {
+      "label": "Peugeot E-2008 Style EL 136 / 50 kWh",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "audi-a2-e-tron-125-kw-7fec4126": {
+      "label": "Audi A2 e-tron 125 kW",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "audi-a6-avant-e-tron-s-line-plus-210-kw-286-hk-c42a5dcf": {
+      "label": "Audi A6 Avant e-tron S line plus 210 kW (286 hk)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "audi-a6-sportback-e-tron-s-line-plus-210-kw-286-hk-16340766": {
+      "label": "Audi A6 Sportback e-tron S line plus 210 kW (286 hk)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "audi-q4-sportback-e-tron-150-kw-204-hk-bc06455a": {
+      "label": "Audi Q4 Sportback e-tron 150 kW (204 hk)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
     }
   }
 }
