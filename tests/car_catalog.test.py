@@ -62,5 +62,20 @@ class CatalogTests(unittest.TestCase):
  def test_unsafe_source_markup_rejected_before_rendering(self):
   altered=copy.deepcopy(CATALOG);altered['models'][0]['model']='</script><script>bad</script>'
   with self.assertRaises(up.SourceError):up.validate_catalog(altered,CONFIG)
+ def test_license_and_truncated_feed_are_rejected(self):
+  for payload in [{'licens':'All rights reserved','opdateret':'2026-10-25','modeller':[{}]*101},{'licens':'CC BY 4.0','opdateret':'2026-10-25','modeller':[]}]:
+   with self.assertRaises(up.SourceError):up.feed_records(payload,CONFIG['feed'],TODAY)
+ def test_all_source_failures_leave_catalogue_bytes_unchanged(self):
+  import tempfile,sys
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory);(root/'data').mkdir();raw=json.dumps(CATALOG);(root/'data/cars.json').write_text(raw);(root/'data/car-sources.json').write_text(json.dumps(CONFIG))
+   from contextlib import redirect_stdout
+   from io import StringIO
+   with patch.object(up,'ROOT',root),patch.object(sys,'argv',['update_car_catalog.py','--fixture-dir',str(root/'missing')]),redirect_stdout(StringIO()):
+    with self.assertRaises(SystemExit):up.main()
+   self.assertEqual((root/'data/cars.json').read_text(),raw)
+   self.assertTrue((root/'test-results/car-update-status.json').is_file())
+   self.assertFalse((root/'data/car-update-status.json').exists())
  def test_catalog_validates_existing_models(self):up.validate_catalog(CATALOG,CONFIG)
 if __name__=='__main__':unittest.main()
