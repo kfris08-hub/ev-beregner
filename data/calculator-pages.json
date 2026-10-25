@@ -1,97 +1,479 @@
 [
   {
-    "slug": "ladepris", "calculator": 1,
+    "slug": "ladepris",
+    "calculator": 1,
     "title": "Beregn ladepris på elbil – hel eller delvis opladning",
     "h1": "Hvad koster det at oplade en elbil?",
     "description": "Beregn ladeprisen ud fra batteri, ladeprocent, samlet elpris og ekstra strømforbrug. Se et gennemregnet eksempel og brug dine egne tal.",
-    "intro": "Prisen for en opladning afhænger af den energi, du skal fylde på batteriet, og den pris, du betaler for strømmen. Her kan du regne på både en fuld opladning og for eksempel 20–80 %. I eksemplet koster 60 kWh fra 0 til 100 % med 10 % ekstra strømforbrug og en elpris på 2 kr./kWh i alt 132 kr.",
-    "defaults": {"battery":60,"electricPrice":2,"from":0,"to":100,"overhead":10},
+    "intro": "Beregn prisen for en hel eller delvis opladning med din egen elpris.",
+    "defaults": {
+      "battery": 60,
+      "electricPrice": 2,
+      "from": 0,
+      "to": 100,
+      "overhead": 10
+    },
     "help": {
-      "battery":"Brug den brugbare batterikapacitet, når ladeprocenterne skal svare til bilens 0–100 %. Brutto- og nettokapacitet er ikke altid ens.",
-      "electricPrice":"Indtast din samlede pris pr. kWh, inklusive relevante netbetalinger, afgifter og moms. Fordel eventuelle faste ladeudgifter særskilt.",
-      "from":"Batteriets ladeprocent, når opladningen begynder.","to":"Batteriets ladeprocent ved afslutning. Den skal være mindst startprocenten.",
-      "overhead":"Ekstra energi fra elmåleren i procent af energien til batteriet. 10 % betyder, at 60 kWh til batteriet kræver betaling for 66 kWh. Det er et skøn, ikke en standard for alle biler."
+      "battery": "Brug den brugbare batterikapacitet, når ladeprocenterne skal svare til bilens 0–100 %. Brutto- og nettokapacitet er ikke altid ens.",
+      "electricPrice": "Indtast din samlede pris pr. kWh, inklusive relevante netbetalinger, afgifter og moms. Fordel eventuelle faste ladeudgifter særskilt.",
+      "from": "Batteriets ladeprocent, når opladningen begynder.",
+      "to": "Batteriets ladeprocent ved afslutning. Den skal være mindst startprocenten.",
+      "overhead": "Ekstra energi fra elmåleren i procent af energien til batteriet. 10 % betyder, at 60 kWh til batteriet kræver betaling for 66 kWh. Det er et skøn, ikke en standard for alle biler."
     },
     "sections": [
-      {"heading":"Sådan beregnes ladeprisen","paragraphs":["Først beregnes energien til batteriet ud fra kapacitet og forskellen mellem start- og slutprocent. Derefter lægges dit skøn over ekstra strømforbrug til. Den samlede energimængde ganges med elprisen."],"formula":"Energi til batteriet = kapacitet × (slutprocent − startprocent) / 100\nBetalt energi = energi til batteriet × (1 + ekstraforbrug / 100)\nLadepris = betalt energi × samlet elpris"},
-      {"heading":"Eksempel: 60 kWh til 2 kr. pr. kWh","paragraphs":["En opladning fra 0 til 100 % tilfører i eksemplet 60 kWh. Med 10 % ekstra strømforbrug betaler du for 66 kWh. Det giver 66 × 2 = 132 kr. Samme bil fra 20 til 80 % skal have tilført 36 kWh. Med de samme forudsætninger bliver prisen 79,20 kr."],"table":{"headers":["Elpris i scenariet","Pris for 0–100 % inkl. 10 % ekstraforbrug"],"rows":[["1,50 kr./kWh","99 kr."],["2,00 kr./kWh","132 kr."],["3,50 kr./kWh","231 kr."]]}},
-      {"heading":"Hjemmeladning og offentlig opladning","paragraphs":["Brug din faktiske aftale i stedet for at antage, at én pris gælder alle ladere. Ved hjemmeladning skal du se på den samlede elregning; ved en offentlig lader skal du se på prisen i appen eller aftalen. Et fast abonnement, en ladeboks eller et startgebyr er ikke automatisk med i en kWh-pris.","Et WLTP-forbrugstal kan allerede omfatte ladeenergi afhængigt af opgørelsen. Denne beregner starter med batteriets energimængde. Bland derfor ikke forskellige forbrugsdefinitioner sammen eller læg et ladetab til to gange."]}
+      {
+        "heading": "Sådan beregnes ladeprisen",
+        "paragraphs": [
+          "Først beregnes energien til batteriet ud fra kapacitet og forskellen mellem start- og slutprocent. Derefter lægges dit skøn over ekstra strømforbrug til. Den samlede energimængde ganges med elprisen."
+        ],
+        "formula": "Energi til batteriet = kapacitet × (slutprocent − startprocent) / 100\nBetalt energi = energi til batteriet × (1 + ekstraforbrug / 100)\nLadepris = betalt energi × samlet elpris"
+      },
+      {
+        "heading": "Eksempel: 60 kWh til 2 kr. pr. kWh",
+        "paragraphs": [
+          "En opladning fra 0 til 100 % tilfører i eksemplet 60 kWh. Med 10 % ekstra strømforbrug betaler du for 66 kWh. Det giver 66 × 2 = 132 kr. Samme bil fra 20 til 80 % skal have tilført 36 kWh. Med de samme forudsætninger bliver prisen 79,20 kr."
+        ],
+        "table": {
+          "headers": [
+            "Elpris i scenariet",
+            "Pris for 0–100 % inkl. 10 % ekstraforbrug"
+          ],
+          "rows": [
+            [
+              "1,50 kr./kWh",
+              "99 kr."
+            ],
+            [
+              "2,00 kr./kWh",
+              "132 kr."
+            ],
+            [
+              "3,50 kr./kWh",
+              "231 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Hjemmeladning og offentlig opladning",
+        "paragraphs": [
+          "Brug din faktiske aftale i stedet for at antage, at én pris gælder alle ladere. Ved hjemmeladning skal du se på den samlede elregning; ved en offentlig lader skal du se på prisen i appen eller aftalen. Et fast abonnement, en ladeboks eller et startgebyr er ikke automatisk med i en kWh-pris.",
+          "Et WLTP-forbrugstal kan allerede omfatte ladeenergi afhængigt af opgørelsen. Denne beregner starter med batteriets energimængde. Bland derfor ikke forskellige forbrugsdefinitioner sammen eller læg et ladetab til to gange."
+        ]
+      }
     ],
-    "faq":[
-      {"question":"Kan jeg beregne en opladning fra 20 til 80 %?","answer":"Ja. Vælg 20 som start og 80 som slut. Beregneren bruger så 60 % af den indtastede batterikapacitet."},
-      {"question":"Er 10 % ekstraforbrug det samme som 90 % effektivitet?","answer":"Nej. 10 % ekstra i forhold til batteriets energi svarer til at gange med 1,10. Ved præcis 90 % effektivitet skal energien i stedet divideres med 0,90. Feltet her bruger den første definition."},
-      {"question":"Er eksemplets elpris en aktuel markedspris?","answer":"Nej. 2 kr./kWh er en tydeligt valgt eksempelpris. Du kan indtaste din egen pris eller hente en vejledende pris med knappen i beregneren."}
+    "faq": [
+      {
+        "question": "Kan jeg beregne en opladning fra 20 til 80 %?",
+        "answer": "Ja. Vælg 20 som start og 80 som slut. Beregneren bruger så 60 % af den indtastede batterikapacitet."
+      },
+      {
+        "question": "Er 10 % ekstraforbrug det samme som 90 % effektivitet?",
+        "answer": "Nej. 10 % ekstra i forhold til batteriets energi svarer til at gange med 1,10. Ved præcis 90 % effektivitet skal energien i stedet divideres med 0,90. Feltet her bruger den første definition."
+      },
+      {
+        "question": "Er eksemplets elpris en aktuel markedspris?",
+        "answer": "Nej. 2 kr./kWh er en tydeligt valgt eksempelpris. Du kan indtaste din egen pris eller hente en vejledende pris med knappen i beregneren."
+      }
     ],
-    "sources":[{"label":"FDM: hvad koster det at lade en elbil op hjemme?","url":"https://fdm.dk/vaerd-at-vide/ladeloesninger/hvad-koster-det-at-lade-en-elbil-op-hjemme"}],
-    "related":["opladningstid","elbil-vs-benzin"]
+    "sources": [
+      {
+        "label": "FDM: hvad koster det at lade en elbil op hjemme?",
+        "url": "https://fdm.dk/vaerd-at-vide/ladeloesninger/hvad-koster-det-at-lade-en-elbil-op-hjemme"
+      }
+    ],
+    "related": [
+      "opladningstid",
+      "elbil-vs-benzin"
+    ]
   },
   {
-    "slug":"elbil-vs-benzin", "calculator":3,
-    "title":"Elbil vs. benzin – beregn forskellen i energiudgift",
-    "h1":"Elbil eller benzin: hvad koster energien?",
-    "description":"Sammenlign elbilens strømudgift med benzinbilens brændstofudgift. Indtast forbrug, priser og årlige kilometer, og se forskellen pr. år.",
-    "intro":"Sammenlign prisen på at køre det samme antal kilometer på el og benzin. Med eksemplets 20.000 km om året, 15,5 kWh/100 km, 2 kr./kWh, 16 km/l og 16 kr./liter er energiudgiften 6.200 kr. for elbilen og 20.000 kr. for benzinbilen. Forskellen er 13.800 kr. om året i dette scenarie.",
-    "defaults":{"consumption":15.5,"electricPrice":2,"fuelEconomy":16,"fuelPrice":16,"annualKm":20000},
-    "help":{"consumption":"Brug et forbrug, der passer til din kørsel. Vil du medregne alle ladeudgifter, skal forbruget svare til den energi, du betaler for; undgå at lægge samme tab til igen.","electricPrice":"Brug den samlede pris for den strøm, du forventer at købe. Bland hjemme- og udepriser efter din egen lademåde.","fuelEconomy":"Bilens forventede kilometer pr. liter, større end 0. Virkeligt forbrug kan afvige fra officielle tal.","fuelPrice":"Pris pr. liter benzin. 16 kr. er en eksempelværdi og kan ændres.","annualKm":"Det samme årlige kilometertal bruges for begge biler."},
-    "sections":[
-      {"heading":"Metoden bag sammenligningen","paragraphs":["Begge biler kører samme distance i beregningen. Elbilens energibehov beregnes i kWh; benzinbilens i liter. Resultatet viser forskellen i energiudgift og omfatter ikke bilernes købspris eller værditab."],"formula":"El pr. år = km pr. år × kWh/100 km / 100 × kr./kWh\nBenzin pr. år = km pr. år / km pr. liter × kr./liter\nForskel = benzinudgift − eludgift"},
-      {"heading":"Eksempel: samme kørsel, to energikilder","paragraphs":["Elbilen bruger i eksemplet 3.100 kWh, som koster 6.200 kr. Benzinbilen bruger 1.250 liter, som koster 20.000 kr. En positiv forskel betyder, at el er billigere i energi i netop det valgte scenarie."],"table":{"headers":["Forudsætning eller resultat","Elbil","Benzinbil"],"rows":[["Årlig kørsel","20.000 km","20.000 km"],["Forbrug","15,5 kWh/100 km","16 km/l"],["Energipris i eksemplet","2 kr./kWh","16 kr./liter"],["Årlig energiudgift","6.200 kr.","20.000 kr."]]}},
-      {"heading":"Hvilke andre udgifter skal du sammenligne?","paragraphs":["Lav energiudgift er kun én del af biløkonomien. En sammenligning af to konkrete biler bør også omfatte købspris eller leasingbetaling, værditab, finansieringsudgifter, forsikring, afgifter, dæk og service. Brug siden om samlet biløkonomi, når du vil lægge et budget for at eje bilen.","Tilpas også forbruget til dine ture. Motorvejskørsel, temperatur og kørselsmønster kan påvirke energibehovet. Et skøn baseret på din faktiske kørsel er mere brugbart end at antage, at begge biler altid rammer deres officielle tal."]}
+    "slug": "elbil-vs-benzin",
+    "calculator": 3,
+    "title": "Elbil vs. benzin – beregn forskellen i energiudgift",
+    "h1": "Elbil eller benzin: hvad koster energien?",
+    "description": "Sammenlign elbilens strømudgift med benzinbilens brændstofudgift. Indtast forbrug, priser og årlige kilometer, og se forskellen pr. år.",
+    "intro": "Sammenlign elbilens og benzinbilens årlige energiudgifter med dine egne tal.",
+    "defaults": {
+      "consumption": 15.5,
+      "electricPrice": 2,
+      "fuelEconomy": 16,
+      "fuelPrice": 16,
+      "annualKm": 20000
+    },
+    "help": {
+      "consumption": "Brug et forbrug, der passer til din kørsel. Vil du medregne alle ladeudgifter, skal forbruget svare til den energi, du betaler for; undgå at lægge samme tab til igen.",
+      "electricPrice": "Brug den samlede pris for den strøm, du forventer at købe. Bland hjemme- og udepriser efter din egen lademåde.",
+      "fuelEconomy": "Bilens forventede kilometer pr. liter, større end 0. Virkeligt forbrug kan afvige fra officielle tal.",
+      "fuelPrice": "Pris pr. liter benzin. 16 kr. er en eksempelværdi og kan ændres.",
+      "annualKm": "Det samme årlige kilometertal bruges for begge biler."
+    },
+    "sections": [
+      {
+        "heading": "Metoden bag sammenligningen",
+        "paragraphs": [
+          "Begge biler kører samme distance i beregningen. Elbilens energibehov beregnes i kWh; benzinbilens i liter. Resultatet viser forskellen i energiudgift og omfatter ikke bilernes købspris eller værditab."
+        ],
+        "formula": "El pr. år = km pr. år × kWh/100 km / 100 × kr./kWh\nBenzin pr. år = km pr. år / km pr. liter × kr./liter\nForskel = benzinudgift − eludgift"
+      },
+      {
+        "heading": "Eksempel: samme kørsel, to energikilder",
+        "paragraphs": [
+          "Elbilen bruger i eksemplet 3.100 kWh, som koster 6.200 kr. Benzinbilen bruger 1.250 liter, som koster 20.000 kr. En positiv forskel betyder, at el er billigere i energi i netop det valgte scenarie."
+        ],
+        "table": {
+          "headers": [
+            "Forudsætning eller resultat",
+            "Elbil",
+            "Benzinbil"
+          ],
+          "rows": [
+            [
+              "Årlig kørsel",
+              "20.000 km",
+              "20.000 km"
+            ],
+            [
+              "Forbrug",
+              "15,5 kWh/100 km",
+              "16 km/l"
+            ],
+            [
+              "Energipris i eksemplet",
+              "2 kr./kWh",
+              "16 kr./liter"
+            ],
+            [
+              "Årlig energiudgift",
+              "6.200 kr.",
+              "20.000 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Hvilke andre udgifter skal du sammenligne?",
+        "paragraphs": [
+          "Lav energiudgift er kun én del af biløkonomien. En sammenligning af to konkrete biler bør også omfatte købspris eller leasingbetaling, værditab, finansieringsudgifter, forsikring, afgifter, dæk og service. Brug siden om samlet biløkonomi, når du vil lægge et budget for at eje bilen.",
+          "Tilpas også forbruget til dine ture. Motorvejskørsel, temperatur og kørselsmønster kan påvirke energibehovet. Et skøn baseret på din faktiske kørsel er mere brugbart end at antage, at begge biler altid rammer deres officielle tal."
+        ]
+      }
     ],
-    "faq":[{"question":"Er forskellen den samlede besparelse ved at skifte bil?","answer":"Nej. Det er alene forskellen på de beregnede energiudgifter. Værditab og andre ejerudgifter kan ændre den samlede økonomi betydeligt."},{"question":"Kan resultatet vise, at benzin er billigere?","answer":"Ja. Med en høj elpris eller et andet forbrug kan forskellen blive negativ. Resultatet viser, hvad der følger af dine indtastninger."},{"question":"Hvordan regner jeg med både hjemme- og udeopladning?","answer":"Indtast en vægtet elpris. Hvis 80 % af strømmen koster 2 kr./kWh og 20 % koster 4 kr./kWh, er den vægtede pris 2,40 kr./kWh."}],
-    "sources":[{"label":"FDM: sådan fungerer en elbil","url":"https://fdm.dk/guides/elbil/hvordan-fungerer-en-elbil"}],
-    "related":["ladepris","samlet-biloekonomi"]
+    "faq": [
+      {
+        "question": "Er forskellen den samlede besparelse ved at skifte bil?",
+        "answer": "Nej. Det er alene forskellen på de beregnede energiudgifter. Værditab og andre ejerudgifter kan ændre den samlede økonomi betydeligt."
+      },
+      {
+        "question": "Kan resultatet vise, at benzin er billigere?",
+        "answer": "Ja. Med en høj elpris eller et andet forbrug kan forskellen blive negativ. Resultatet viser, hvad der følger af dine indtastninger."
+      },
+      {
+        "question": "Hvordan regner jeg med både hjemme- og udeopladning?",
+        "answer": "Indtast en vægtet elpris. Hvis 80 % af strømmen koster 2 kr./kWh og 20 % koster 4 kr./kWh, er den vægtede pris 2,40 kr./kWh."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: sådan fungerer en elbil",
+        "url": "https://fdm.dk/guides/elbil/hvordan-fungerer-en-elbil"
+      }
+    ],
+    "related": [
+      "ladepris",
+      "samlet-biloekonomi"
+    ]
   },
   {
-    "slug":"opladningstid", "calculator":8,
-    "title":"Beregn opladningstid på elbil – kWh, procent og kW",
-    "h1":"Hvor lang tid tager det at oplade en elbil?",
-    "description":"Beregn teoretisk ladetid ud fra batteri, start- og slutprocent og gennemsnitlig ladeeffekt. Se forskellen på kW, kWh og bilens maksimale effekt.",
-    "intro":"Ladetiden afhænger af den energi, batteriet skal modtage, og den gennemsnitlige effekt under opladningen. Et batteri på 60 kWh fra 20 til 80 % skal i dette regneeksempel modtage 36 kWh. Ved konstant 11 kW tager det cirka 3,27 timer, svarende til cirka 3 timer og 16 minutter.",
-    "defaults":{"battery":60,"from":20,"to":80,"power":11},
-    "help":{"battery":"Brug den brugbare kapacitet, der svarer til bilens ladeprocenter. Kontrollér, om et oplyst batterital er brutto eller netto.","from":"Batteriets ladeprocent før opladning, fra 0 til 100.","to":"Ladeprocenten, du vil ende på. Den skal være mindst startprocenten.","power":"Indtast et realistisk gennemsnit i kW, større end 0. Bilens eller standerens højeste angivne effekt er ikke nødvendigvis gennemsnittet."},
-    "sections":[
-      {"heading":"Formlen for teoretisk opladningstid","paragraphs":["Beregneren fordeler den nødvendige energimængde på en konstant ladeeffekt. Derfor er resultatet et matematisk overslag. Hvis effekten er målt før et tab i opladningen, skal du tage højde for, at mindre energi når batteriet."],"formula":"Nødvendig energi = batteri × (slutprocent − startprocent) / 100\nTid i timer = nødvendig energi / gennemsnitlig ladeeffekt"},
-      {"heading":"Eksempel: 36 kWh ved forskellige effekter","paragraphs":["Tabellen bruger samme energimængde i alle tre scenarier og antager konstant effekt. Den er ikke en ladekurve eller en måling af en bestemt bil."],"table":{"headers":["Antaget gennemsnitlig effekt","Teoretisk tid for 36 kWh"],"rows":[["7,4 kW","Cirka 4 timer og 52 minutter"],["11 kW","Cirka 3 timer og 16 minutter"],["50 kW","Cirka 43 minutter"]]}},
-      {"heading":"Hvorfor svarer maksimal kW ikke til hele opladningen?","paragraphs":["Ved DC-opladning kan effekten ændre sig gennem forløbet. Batteriets temperatur og ladeprocent spiller ind, og bilen kan sænke effekten undervejs. Et kort peak på eksempelvis 150 kW betyder derfor ikke, at hele opladningen sker ved 150 kW.","Ved AC-opladning skal både installationen, ladeboksen og bilens indbyggede lader understøtte den valgte effekt. En kraftigere boks giver ikke i sig selv bilen en højere ladeevne. Sammenhold overslaget med producentens angivne ladetid eller en målt ladekurve for din variant."]}
+    "slug": "opladningstid",
+    "calculator": 8,
+    "title": "Beregn opladningstid på elbil – kWh, procent og kW",
+    "h1": "Hvor lang tid tager det at oplade en elbil?",
+    "description": "Beregn teoretisk ladetid ud fra batteri, start- og slutprocent og gennemsnitlig ladeeffekt. Se forskellen på kW, kWh og bilens maksimale effekt.",
+    "intro": "Beregn ladetiden ud fra batteri, ladeprocenter og gennemsnitlig effekt.",
+    "defaults": {
+      "battery": 60,
+      "from": 20,
+      "to": 80,
+      "power": 11
+    },
+    "help": {
+      "battery": "Brug den brugbare kapacitet, der svarer til bilens ladeprocenter. Kontrollér, om et oplyst batterital er brutto eller netto.",
+      "from": "Batteriets ladeprocent før opladning, fra 0 til 100.",
+      "to": "Ladeprocenten, du vil ende på. Den skal være mindst startprocenten.",
+      "power": "Indtast et realistisk gennemsnit i kW, større end 0. Bilens eller standerens højeste angivne effekt er ikke nødvendigvis gennemsnittet."
+    },
+    "sections": [
+      {
+        "heading": "Formlen for teoretisk opladningstid",
+        "paragraphs": [
+          "Beregneren fordeler den nødvendige energimængde på en konstant ladeeffekt. Derfor er resultatet et matematisk overslag. Hvis effekten er målt før et tab i opladningen, skal du tage højde for, at mindre energi når batteriet."
+        ],
+        "formula": "Nødvendig energi = batteri × (slutprocent − startprocent) / 100\nTid i timer = nødvendig energi / gennemsnitlig ladeeffekt"
+      },
+      {
+        "heading": "Eksempel: 36 kWh ved forskellige effekter",
+        "paragraphs": [
+          "Tabellen bruger samme energimængde i alle tre scenarier og antager konstant effekt. Den er ikke en ladekurve eller en måling af en bestemt bil."
+        ],
+        "table": {
+          "headers": [
+            "Antaget gennemsnitlig effekt",
+            "Teoretisk tid for 36 kWh"
+          ],
+          "rows": [
+            [
+              "7,4 kW",
+              "Cirka 4 timer og 52 minutter"
+            ],
+            [
+              "11 kW",
+              "Cirka 3 timer og 16 minutter"
+            ],
+            [
+              "50 kW",
+              "Cirka 43 minutter"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Hvorfor svarer maksimal kW ikke til hele opladningen?",
+        "paragraphs": [
+          "Ved DC-opladning kan effekten ændre sig gennem forløbet. Batteriets temperatur og ladeprocent spiller ind, og bilen kan sænke effekten undervejs. Et kort peak på eksempelvis 150 kW betyder derfor ikke, at hele opladningen sker ved 150 kW.",
+          "Ved AC-opladning skal både installationen, ladeboksen og bilens indbyggede lader understøtte den valgte effekt. En kraftigere boks giver ikke i sig selv bilen en højere ladeevne. Sammenhold overslaget med producentens angivne ladetid eller en målt ladekurve for din variant."
+        ]
+      }
     ],
-    "faq":[{"question":"Hvad er forskellen på kW og kWh?","answer":"kW beskriver effekt, altså hvor hurtigt energi overføres. kWh beskriver energimængde. Beregningen deler kWh med kW og får timer."},{"question":"Hvorfor tager 80–100 % ofte længere tid pr. procent?","answer":"Bilen kan sænke ladeeffekten ved høj ladeprocent. Et gennemsnit fra en opladning på 10–80 % kan derfor ikke uden videre bruges for 80–100 %."},{"question":"Er den beregnede tid garanteret?","answer":"Nej. Tiden følger den konstante gennemsnitseffekt, du har indtastet. Temperatur, effektbegrænsning og tab kan give et andet faktisk forløb."}],
-    "sources":[{"label":"FDM: opladning af elbil og plugin-hybrid","url":"https://fdm.dk/guides/elbil/opladning-af-elbil-plugin-hybrid"}],
-    "related":["ladepris","samlet-biloekonomi"]
+    "faq": [
+      {
+        "question": "Hvad er forskellen på kW og kWh?",
+        "answer": "kW beskriver effekt, altså hvor hurtigt energi overføres. kWh beskriver energimængde. Beregningen deler kWh med kW og får timer."
+      },
+      {
+        "question": "Hvorfor tager 80–100 % ofte længere tid pr. procent?",
+        "answer": "Bilen kan sænke ladeeffekten ved høj ladeprocent. Et gennemsnit fra en opladning på 10–80 % kan derfor ikke uden videre bruges for 80–100 %."
+      },
+      {
+        "question": "Er den beregnede tid garanteret?",
+        "answer": "Nej. Tiden følger den konstante gennemsnitseffekt, du har indtastet. Temperatur, effektbegrænsning og tab kan give et andet faktisk forløb."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: opladning af elbil og plugin-hybrid",
+        "url": "https://fdm.dk/guides/elbil/opladning-af-elbil-plugin-hybrid"
+      }
+    ],
+    "related": [
+      "ladepris",
+      "samlet-biloekonomi"
+    ]
   },
   {
-    "slug":"leasing-vs-koeb", "calculator":12,
-    "title":"Leasing vs. køb – sammenlign bilens omkostninger",
-    "h1":"Skal du lease eller købe bilen?",
-    "description":"Sammenlign leasing med køb over samme periode. Medregn førstegangsydelse, dit skøn over salgspris og øvrige udgifter i stedet for kun købsprisen.",
-    "intro":"En leasingydelse kan ikke sammenlignes direkte med hele købsprisen: den købte bil har stadig en værdi, når perioden slutter. Her sammenlignes leasingbetalingerne med købspris minus din forventede salgspris, plus de øvrige udgifter, du selv tager med. Brug samme bilbehov og periode på begge sider.",
-    "defaults":{"months":36,"monthlyLease":3999,"leaseUpfront":15000,"leaseOther":0,"price":250000,"resaleValue":150000,"purchaseOther":0},
-    "help":{"months":"Samme sammenligningsperiode for leasing og køb. Indtast et positivt helt antal måneder.","monthlyLease":"Den faste månedlige ydelse i dit konkrete leasingtilbud.","leaseUpfront":"Engangsbetaling, som ikke bliver tilbagebetalt. Et depositum, du forventer retur, er ikke en udgift i dette felt.","leaseOther":"Udgifter i hele perioden, som ikke allerede er med i ydelserne: fx gebyrer, overkørte kilometer, forsikring, energi eller service.","price":"Bilens reelle købspris efter eventuel rabat.","resaleValue":"Dit eget skøn over bilens salgspris ved periodens slutning. Det er ikke en garanteret markedsværdi.","purchaseOther":"Udgifter i hele perioden: fx renter, lånegebyrer, service, forsikring, energi og afgifter. Medregn ikke lånets afdrag igen, når købsprisen allerede indgår."},
-    "sections":[
-      {"heading":"Sammenlign samme periode og samme kørsel","paragraphs":["Vælg først, hvor længe du vil have bilen. Brug derefter tilbud med passende kilometertal, og fordel udgifterne ens. Hvis service er inkluderet i leasingydelsen, skal du ikke lægge den samme servicebetaling til én gang mere. Hvis du betaler den ved køb, skal den med på købssiden."],"formula":"Leasing = førstegangsydelse + månedlig ydelse × måneder + øvrige leasingudgifter\nKøb = købspris − skønnet salgspris + øvrige købsudgifter\nForskel = leasingomkostning − købsomkostning"},
-      {"heading":"Eksempel over 36 måneder","paragraphs":["Med 15.000 kr. i førstegangsydelse og 3.999 kr. i månedlig ydelse bliver leasingbetalingen 158.964 kr. over 36 måneder. En bil købt for 250.000 kr. og solgt for de forudsatte 150.000 kr. har et værditab på 100.000 kr. Uden andre udgifter er køb derfor 58.964 kr. lavere i dette eksempel.","Ændrer du den skønnede salgspris til 100.000 kr., bliver købssiden 150.000 kr. og forskellen 8.964 kr. Eksemplet viser, hvor meget restværdien betyder. Det er ikke en forudsigelse af den konkrete bils værdi."],"table":{"headers":["I eksemplet","Leasing","Køb"],"rows":[["Periode","36 måneder","36 måneder"],["Omkostning før øvrige udgifter","158.964 kr.","100.000 kr."],["Gennemsnit pr. måned","4.415,67 kr.","2.777,78 kr."]]}},
-      {"heading":"Udgifter og risici, du selv skal tage med","paragraphs":["Brug felterne for øvrige udgifter til de poster, der er relevante i dine aftaler. Ved finansiering er renter og gebyrer en udgift; afdrag på lånet er tilbagebetaling af kapital og skal ikke tælles en gang mere oven i købsprisen.","Beregneren vurderer ikke kontraktvilkår, kilometergrænser, afleveringsstand eller din privatøkonomiske risiko. Den giver en fælles regnemetode, så du kan se konsekvensen af egne forudsætninger. Gennemsnitsbeløbet pr. måned er ikke nødvendigvis det beløb, der trækkes på kontoen hver måned."]}
+    "slug": "leasing-vs-koeb",
+    "calculator": 12,
+    "title": "Leasing vs. køb – sammenlign bilens omkostninger",
+    "h1": "Skal du lease eller købe bilen?",
+    "description": "Sammenlign leasing med køb over samme periode. Medregn førstegangsydelse, dit skøn over salgspris og øvrige udgifter i stedet for kun købsprisen.",
+    "intro": "Sammenlign leasing og køb over samme periode med dit skøn over salgsprisen.",
+    "defaults": {
+      "months": 36,
+      "monthlyLease": 3999,
+      "leaseUpfront": 15000,
+      "leaseOther": 0,
+      "price": 250000,
+      "resaleValue": 150000,
+      "purchaseOther": 0
+    },
+    "help": {
+      "months": "Samme sammenligningsperiode for leasing og køb. Indtast et positivt helt antal måneder.",
+      "monthlyLease": "Den faste månedlige ydelse i dit konkrete leasingtilbud.",
+      "leaseUpfront": "Engangsbetaling, som ikke bliver tilbagebetalt. Et depositum, du forventer retur, er ikke en udgift i dette felt.",
+      "leaseOther": "Udgifter i hele perioden, som ikke allerede er med i ydelserne: fx gebyrer, overkørte kilometer, forsikring, energi eller service.",
+      "price": "Bilens reelle købspris efter eventuel rabat.",
+      "resaleValue": "Dit eget skøn over bilens salgspris ved periodens slutning. Det er ikke en garanteret markedsværdi.",
+      "purchaseOther": "Udgifter i hele perioden: fx renter, lånegebyrer, service, forsikring, energi og afgifter. Medregn ikke lånets afdrag igen, når købsprisen allerede indgår."
+    },
+    "sections": [
+      {
+        "heading": "Sammenlign samme periode og samme kørsel",
+        "paragraphs": [
+          "Vælg først, hvor længe du vil have bilen. Brug derefter tilbud med passende kilometertal, og fordel udgifterne ens. Hvis service er inkluderet i leasingydelsen, skal du ikke lægge den samme servicebetaling til én gang mere. Hvis du betaler den ved køb, skal den med på købssiden."
+        ],
+        "formula": "Leasing = førstegangsydelse + månedlig ydelse × måneder + øvrige leasingudgifter\nKøb = købspris − skønnet salgspris + øvrige købsudgifter\nForskel = leasingomkostning − købsomkostning"
+      },
+      {
+        "heading": "Eksempel over 36 måneder",
+        "paragraphs": [
+          "Med 15.000 kr. i førstegangsydelse og 3.999 kr. i månedlig ydelse bliver leasingbetalingen 158.964 kr. over 36 måneder. En bil købt for 250.000 kr. og solgt for de forudsatte 150.000 kr. har et værditab på 100.000 kr. Uden andre udgifter er køb derfor 58.964 kr. lavere i dette eksempel.",
+          "Ændrer du den skønnede salgspris til 100.000 kr., bliver købssiden 150.000 kr. og forskellen 8.964 kr. Eksemplet viser, hvor meget restværdien betyder. Det er ikke en forudsigelse af den konkrete bils værdi."
+        ],
+        "table": {
+          "headers": [
+            "I eksemplet",
+            "Leasing",
+            "Køb"
+          ],
+          "rows": [
+            [
+              "Periode",
+              "36 måneder",
+              "36 måneder"
+            ],
+            [
+              "Omkostning før øvrige udgifter",
+              "158.964 kr.",
+              "100.000 kr."
+            ],
+            [
+              "Gennemsnit pr. måned",
+              "4.415,67 kr.",
+              "2.777,78 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Udgifter og risici, du selv skal tage med",
+        "paragraphs": [
+          "Brug felterne for øvrige udgifter til de poster, der er relevante i dine aftaler. Ved finansiering er renter og gebyrer en udgift; afdrag på lånet er tilbagebetaling af kapital og skal ikke tælles en gang mere oven i købsprisen.",
+          "Beregneren vurderer ikke kontraktvilkår, kilometergrænser, afleveringsstand eller din privatøkonomiske risiko. Den giver en fælles regnemetode, så du kan se konsekvensen af egne forudsætninger. Gennemsnitsbeløbet pr. måned er ikke nødvendigvis det beløb, der trækkes på kontoen hver måned."
+        ]
+      }
     ],
-    "faq":[{"question":"Hvorfor bliver bilens salgspris trukket fra ved køb?","answer":"Fordi du forudsætter, at bilen sælges ved periodens slutning. Det er prisforskellen mellem køb og salg sammen med øvrige udgifter, der giver den beregnede omkostning."},{"question":"Kan beregneren sige, hvad bilen er værd om tre år?","answer":"Nej. Salgsprisen er dit eget scenarie. Prøv flere restværdier for at se, hvor følsom sammenligningen er."},{"question":"Er energi og forsikring automatisk med?","answer":"Nej. Medtag dem i de relevante øvrige udgifter, hvis du ønsker en samlet sammenligning. Undgå at tælle en post med igen, hvis den allerede er inkluderet i aftalen."}],
-    "sources":[{"label":"FDM: skal du privatlease eller købe?","url":"https://fdm.dk/guides/bilkoeb-leasing-og-salg-af-bil/skal-du-privatlease-eller-koebe"},{"label":"FDM: hvad koster leasingbilen dig?","url":"https://fdm.dk/guides/biloekonomi-og-billaan/hvad-koster-leasingbilen-dig"}],
-    "related":["samlet-biloekonomi","elbil-vs-benzin"]
+    "faq": [
+      {
+        "question": "Hvorfor bliver bilens salgspris trukket fra ved køb?",
+        "answer": "Fordi du forudsætter, at bilen sælges ved periodens slutning. Det er prisforskellen mellem køb og salg sammen med øvrige udgifter, der giver den beregnede omkostning."
+      },
+      {
+        "question": "Kan beregneren sige, hvad bilen er værd om tre år?",
+        "answer": "Nej. Salgsprisen er dit eget scenarie. Prøv flere restværdier for at se, hvor følsom sammenligningen er."
+      },
+      {
+        "question": "Er energi og forsikring automatisk med?",
+        "answer": "Nej. Medtag dem i de relevante øvrige udgifter, hvis du ønsker en samlet sammenligning. Undgå at tælle en post med igen, hvis den allerede er inkluderet i aftalen."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: skal du privatlease eller købe?",
+        "url": "https://fdm.dk/guides/bilkoeb-leasing-og-salg-af-bil/skal-du-privatlease-eller-koebe"
+      },
+      {
+        "label": "FDM: hvad koster leasingbilen dig?",
+        "url": "https://fdm.dk/guides/biloekonomi-og-billaan/hvad-koster-leasingbilen-dig"
+      }
+    ],
+    "related": [
+      "samlet-biloekonomi",
+      "elbil-vs-benzin"
+    ]
   },
   {
-    "slug":"samlet-biloekonomi", "calculator":14,
-    "title":"Beregn samlet biløkonomi – omkostninger over 5 år",
-    "h1":"Hvad koster bilen samlet over 5 år?",
-    "description":"Beregn bilens nettoomkostning over 5 år ud fra købspris, dit årlige driftsbudget og skønnet salgspris. Se også gennemsnittet pr. måned.",
-    "intro":"Bilens pris og strømforbrug er kun en del af regnestykket. Denne beregner lægger købsprisen sammen med fem års driftsbudget og trækker din skønnede salgspris fra. Med eksemplets 250.000 kr. i købspris, 15.000 kr. i årlige udgifter og 100.000 kr. i salgspris bliver nettoomkostningen 225.000 kr. over fem år.",
-    "defaults":{"price":250000,"annualRunning":15000,"futureValue":100000},
-    "help":{"price":"Den pris, du faktisk forventer at betale for bilen.","annualRunning":"Dit gennemsnitlige årlige budget for energi, forsikring, afgifter, service, dæk og eventuelle renter/gebyrer. Medregn ikke afdrag på købsprisen igen.","futureValue":"Dit skøn over salgsprisen efter fem år. Beregneren forudsiger ikke brugtprisen."},
-    "sections":[
-      {"heading":"Sådan regnes den samlede omkostning","paragraphs":["Metoden opgør en nettoomkostning ved at eje bilen i fem år. Den er ikke et lånetilbud eller en plan over de faktiske månedlige betalinger. Et gennemsnit gør det lettere at sammenligne scenarier, selv om køb, reparationer og salg sker på forskellige tidspunkter."],"formula":"Nettoomkostning = købspris + årlige driftsudgifter × 5 − skønnet salgspris\nGennemsnit pr. måned = nettoomkostning / 60"},
-      {"heading":"Eksempel: 225.000 kr. over fem år","paragraphs":["Købsprisen på 250.000 kr. plus 75.000 kr. i drift og minus 100.000 kr. i salgspris giver 225.000 kr. Det svarer til et gennemsnit på 3.750 kr. om måneden. 15.000 kr. i årligt driftsbudget er alene en eksempelværdi."],"table":{"headers":["Post i regneeksemplet","Beløb"],"rows":[["Købspris","250.000 kr."],["Drift: 15.000 kr. × 5","75.000 kr."],["Skønnet salgspris, fratrækkes","100.000 kr."],["Nettoomkostning","225.000 kr."],["Gennemsnit pr. måned","3.750 kr."]]}},
-      {"heading":"Lav dit eget driftsbudget","paragraphs":["Saml først de udgifter, du forventer i et helt år. Energi kan beregnes med dit kilometertal og forbrug. Indhent forsikring og finansieringsvilkår til din egen situation, og medtag afgifter, service, dæk og et beløb til vedligeholdelse. Fordel større udgifter over perioden, når du vælger et årligt gennemsnit.","Hvis du finansierer bilen, skal renter og gebyrer med i budgettet. Hele købsprisen indgår allerede i modellen, så du skal ikke også lægge lånets afdrag til. Beregningen medregner heller ikke automatisk alternativt afkast af dine penge eller fremtidige prisændringer."],"bullets":["Strøm eller brændstof","Forsikring og relevante afgifter","Service, reparationer og dæk","Finansieringsrenter og gebyrer","Andre udgifter, som hører til dit bilhold"]},
-      {"heading":"Prøv mere end én restværdi","paragraphs":["Restværdien er usikker. Prøv både en højere og en lavere skønnet salgspris. I eksemplet øger en salgspris på 75.000 kr. nettoomkostningen til 250.000 kr.; en salgspris på 125.000 kr. sænker den til 200.000 kr. Det viser udsvinget i dit scenarie, ikke et løfte om en fremtidig handelspris."]}
+    "slug": "samlet-biloekonomi",
+    "calculator": 14,
+    "title": "Beregn samlet biløkonomi – omkostninger over 5 år",
+    "h1": "Hvad koster bilen samlet over 5 år?",
+    "description": "Beregn bilens nettoomkostning over 5 år ud fra købspris, dit årlige driftsbudget og skønnet salgspris. Se også gennemsnittet pr. måned.",
+    "intro": "Beregn bilens omkostninger over fem år med drift og skønnet salgspris.",
+    "defaults": {
+      "price": 250000,
+      "annualRunning": 15000,
+      "futureValue": 100000
+    },
+    "help": {
+      "price": "Den pris, du faktisk forventer at betale for bilen.",
+      "annualRunning": "Dit gennemsnitlige årlige budget for energi, forsikring, afgifter, service, dæk og eventuelle renter/gebyrer. Medregn ikke afdrag på købsprisen igen.",
+      "futureValue": "Dit skøn over salgsprisen efter fem år. Beregneren forudsiger ikke brugtprisen."
+    },
+    "sections": [
+      {
+        "heading": "Sådan regnes den samlede omkostning",
+        "paragraphs": [
+          "Metoden opgør en nettoomkostning ved at eje bilen i fem år. Den er ikke et lånetilbud eller en plan over de faktiske månedlige betalinger. Et gennemsnit gør det lettere at sammenligne scenarier, selv om køb, reparationer og salg sker på forskellige tidspunkter."
+        ],
+        "formula": "Nettoomkostning = købspris + årlige driftsudgifter × 5 − skønnet salgspris\nGennemsnit pr. måned = nettoomkostning / 60"
+      },
+      {
+        "heading": "Eksempel: 225.000 kr. over fem år",
+        "paragraphs": [
+          "Købsprisen på 250.000 kr. plus 75.000 kr. i drift og minus 100.000 kr. i salgspris giver 225.000 kr. Det svarer til et gennemsnit på 3.750 kr. om måneden. 15.000 kr. i årligt driftsbudget er alene en eksempelværdi."
+        ],
+        "table": {
+          "headers": [
+            "Post i regneeksemplet",
+            "Beløb"
+          ],
+          "rows": [
+            [
+              "Købspris",
+              "250.000 kr."
+            ],
+            [
+              "Drift: 15.000 kr. × 5",
+              "75.000 kr."
+            ],
+            [
+              "Skønnet salgspris, fratrækkes",
+              "100.000 kr."
+            ],
+            [
+              "Nettoomkostning",
+              "225.000 kr."
+            ],
+            [
+              "Gennemsnit pr. måned",
+              "3.750 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Lav dit eget driftsbudget",
+        "paragraphs": [
+          "Saml først de udgifter, du forventer i et helt år. Energi kan beregnes med dit kilometertal og forbrug. Indhent forsikring og finansieringsvilkår til din egen situation, og medtag afgifter, service, dæk og et beløb til vedligeholdelse. Fordel større udgifter over perioden, når du vælger et årligt gennemsnit.",
+          "Hvis du finansierer bilen, skal renter og gebyrer med i budgettet. Hele købsprisen indgår allerede i modellen, så du skal ikke også lægge lånets afdrag til. Beregningen medregner heller ikke automatisk alternativt afkast af dine penge eller fremtidige prisændringer."
+        ],
+        "bullets": [
+          "Strøm eller brændstof",
+          "Forsikring og relevante afgifter",
+          "Service, reparationer og dæk",
+          "Finansieringsrenter og gebyrer",
+          "Andre udgifter, som hører til dit bilhold"
+        ]
+      },
+      {
+        "heading": "Prøv mere end én restværdi",
+        "paragraphs": [
+          "Restværdien er usikker. Prøv både en højere og en lavere skønnet salgspris. I eksemplet øger en salgspris på 75.000 kr. nettoomkostningen til 250.000 kr.; en salgspris på 125.000 kr. sænker den til 200.000 kr. Det viser udsvinget i dit scenarie, ikke et løfte om en fremtidig handelspris."
+        ]
+      }
     ],
-    "faq":[{"question":"Er alle biludgifter automatisk inkluderet?","answer":"Nej. Kun de beløb, du indtaster, tæller med. Du skal selv samle de relevante driftsudgifter og tage højde for din finansiering."},{"question":"Er gennemsnittet pr. måned en månedlig ydelse?","answer":"Nej. Det er nettoomkostningen delt med 60. De faktiske betalinger kan ligge meget forskelligt gennem de fem år."},{"question":"Hvorfor bruges fem år?","answer":"Fem år giver en fast periode til denne sammenligning. Vil du sammenligne leasing med køb over en anden periode, kan du bruge leasingberegnerens felt for antal måneder."}],
-    "sources":[{"label":"FDM: valg mellem køb og privatleasing","url":"https://fdm.dk/guides/bilkoeb-leasing-og-salg-af-bil/skal-du-privatlease-eller-koebe"}],
-    "related":["leasing-vs-koeb","ladepris"]
+    "faq": [
+      {
+        "question": "Er alle biludgifter automatisk inkluderet?",
+        "answer": "Nej. Kun de beløb, du indtaster, tæller med. Du skal selv samle de relevante driftsudgifter og tage højde for din finansiering."
+      },
+      {
+        "question": "Er gennemsnittet pr. måned en månedlig ydelse?",
+        "answer": "Nej. Det er nettoomkostningen delt med 60. De faktiske betalinger kan ligge meget forskelligt gennem de fem år."
+      },
+      {
+        "question": "Hvorfor bruges fem år?",
+        "answer": "Fem år giver en fast periode til denne sammenligning. Vil du sammenligne leasing med køb over en anden periode, kan du bruge leasingberegnerens felt for antal måneder."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: valg mellem køb og privatleasing",
+        "url": "https://fdm.dk/guides/bilkoeb-leasing-og-salg-af-bil/skal-du-privatlease-eller-koebe"
+      }
+    ],
+    "related": [
+      "leasing-vs-koeb",
+      "ladepris"
+    ]
   }
 ]

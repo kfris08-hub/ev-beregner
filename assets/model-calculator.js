@@ -4,10 +4,10 @@
   const registeredConsumption = core.number(document.currentScript.dataset.consumption);
   const field = id => document.getElementById(id);
   const fuel = { petrol95: 18.49, diesel: 20.19 };
-  let priceStatus = 'Eksempelpris – indtast din elpris, eller afvent automatisk opdatering.';
-  let fuelStatus = 'Benzin/diesel: vejledende eksempelpriser.';
+  let priceStatus = 'Elpris: eksempelværdi.';
+  let fuelStatus = 'Benzin/diesel: eksempelpriser.';
   let electricRequest = 0;
-  function showStatus() { field('liveNote').textContent = priceStatus + ' ' + fuelStatus + (field('modelConsumption') ? ' Forbruget er dit eget skøn, ikke bekræftede fabriksdata.' : ''); }
+  function showStatus() { field('liveNote').textContent = priceStatus + ' ' + fuelStatus + (field('modelConsumption') ? ' Forbruget er dit eget skøn.' : ''); }
   const kroner = n => Math.round(n).toLocaleString('da-DK') + ' kr.';
   function calculate() {
     const consumption = field('modelConsumption') ? core.number(field('modelConsumption').value) : registeredConsumption;
@@ -43,13 +43,13 @@
       if (!Number.isFinite(petrol) || petrol < 0 || !Number.isFinite(diesel) || diesel < 0) throw new Error('Ugyldig brændstofpris');
       fuel.petrol95 = petrol; fuel.diesel = diesel;
       fuelStatus = 'Benzin/diesel: ' + (data.source || 'vejledende markedspris') + (data.source_date ? ' · ' + data.source_date : '') + '.';
-    } catch (_) { fuelStatus = 'Brændstofpriser kunne ikke opdateres – vejledende eksempelpriser bruges.'; }
+    } catch (_) { fuelStatus = 'Brændstofpriser kunne ikke opdateres – eksempelpriser bruges.'; }
     calculate();
   }
   async function loadElectric() {
     const request = ++electricRequest;
     const area = core.setArea(field('area').value);
-    priceStatus = 'Henter ' + area + '-elpris – den viste eksempelpris kan ændres manuelt.';
+    priceStatus = 'Henter ' + area + '-elpris…';
     showStatus();
     try {
       const data = await core.fetchJSON('https://elpriser.org/api/now?area=' + area + '&mode=inkl_alt', { cache: 'no-store' });
@@ -57,10 +57,10 @@
       if (!Number.isFinite(price)) throw new Error('Ugyldig elpris');
       if (request !== electricRequest) return;
       field('ep').value = price.toFixed(2);
-      priceStatus = 'Automatisk ' + area + '-elpris fra elpriser.org · hentet ' + new Date().toLocaleTimeString('da-DK', { hour: '2-digit', minute: '2-digit' }) + '.';
+      priceStatus = area + ' · elpriser.org · ' + new Date().toLocaleTimeString('da-DK', { hour: '2-digit', minute: '2-digit' }) + '.';
     } catch (_) {
       if (request !== electricRequest) return;
-      priceStatus = 'Elpris kunne ikke opdateres – den viste pris bruges og kan ændres manuelt.';
+      priceStatus = 'Elpris kunne ikke opdateres – brug din egen pris.';
     }
     calculate();
   }
