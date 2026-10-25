@@ -1,0 +1,15 @@
+name: Bekræft automatisk bilopdatering
+on:
+  push:
+    branches: [verify/automatic-catalog-dispatch]
+permissions:
+  contents: read
+  actions: write
+jobs:
+  start-production-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start den daglige opdatering på main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update-car-catalog.yml --repo "$GITHUB_REPOSITORY" --ref main
