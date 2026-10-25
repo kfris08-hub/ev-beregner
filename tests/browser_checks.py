@@ -35,8 +35,8 @@ async def main():
    assert await page.locator('#r100').inner_text()=='0,00 kr.'
    await page.screenshot(path=str(ROOT/'test-results'/f'model-{label}.png'),full_page=True)
    await page.get_by_role('link',name='ÅBN ALLE BEREGNERE').click()
-   await page.wait_for_function('selectedCar !== null')
-   assert await page.evaluate('selectedCar[1]')=='Model Y Standard RWD'
+   await page.wait_for_function('Array.isArray(selectedCar) && selectedCar[1]==="Model Y Standard RWD"')
+   assert await page.evaluate('selectedCar[1]')=='Model Y Standard RWD',{'url':page.url,'selected':await page.evaluate('selectedCar')}
    assert await page.locator('a.calc-card').count()==20
    for number in range(1,21):
     await page.evaluate('(n)=>{openCalculator(n);calculate()}',number)
