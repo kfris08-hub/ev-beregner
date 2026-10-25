@@ -34,7 +34,7 @@ async def main():
       await page.locator('#km').fill('12000');await page.locator('#ep').fill('2');await page.get_by_role('button',name='BEREGN',exact=True).click()
       assert not re.search(r'NaN|Infinity|undefined',await page.locator('.results').inner_text())
       expected=(m['consumption'] if m['consumption'] is not None else 18)*240
-      actual=await page.locator('#ryear').inner_text();assert str(round(expected))==actual.replace('.','').replace(' kr.',''),(m['slug'],actual,expected)
+      actual=await page.locator('#ryear').inner_text();assert str(round(expected))==re.sub(r'\D','',actual),(m['slug'],actual,expected)
      assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),m['slug']
      results.append({'slug':m['slug'],'width':width,'javascript':javascript,'result':'passed'})
     assert not errors,errors
