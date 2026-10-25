@@ -1,8 +1,8 @@
-name: Gennemgå hele den udgivne hjemmeside
+name: Kontroller udgivet tekstoprydning
 on:
   workflow_dispatch:
   push:
-    branches: [verify/full-site-2026-10-25]
+    branches: [verify/concise-copy-2026-10-25]
 permissions:
   contents: read
 jobs:
