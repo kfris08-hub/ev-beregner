@@ -6,8 +6,8 @@ ESC=lambda s:html.escape(str(s),quote=True)
 pages=json.loads((ROOT/'data/calculator-pages.json').read_text());by_slug={p['slug']:p for p in pages}
 examples=json.loads(subprocess.check_output(['node',str(ROOT/'tools/calculator_examples.cjs')],text=True))
 home=(ROOT/'index.html').read_text()
-cars=json.loads(re.search(r'const cars=(\[.*?\]); let selectedCar=',home,re.S)[1]);slugs=json.loads(re.search(r'const modelSlugs=(\{.*?\});',home,re.S)[1])
-models=[{'slug':slugs[c[0]+'|||'+c[1]],'label':c[0]+' '+c[1],'price':c[2],'battery':c[3],'range':c[4],'consumption':c[5],'charging':c[6]} for c in cars]
+catalog=json.loads((ROOT/'data/cars.json').read_text())['models']
+models=[{'slug':m['slug'],'label':m['brand']+' '+m['model'],**{k:m[k] for k in ('price','battery','range','consumption','charging')}} for m in catalog if m['status']=='active']
 (ROOT/'assets/calculator-cars.json').write_text(json.dumps({'models':models},ensure_ascii=False,separators=(',',':'))+'\n')
 NAV='<nav class="page-nav" aria-label="Hovednavigation" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;font-size:13px"><a style="color:#10ddb2" href="/">Forside</a><a style="color:#10ddb2" href="/#beregnere">Alle 20 beregnere</a><a style="color:#10ddb2" href="/elbil/">Bilmodeller</a></nav>'
 # The current ad unit is reused below the form, without adding a new ad network.
@@ -61,4 +61,4 @@ for page in pages:
  node=ET.SubElement(root,'{'+NS+'}url');ET.SubElement(node,'{'+NS+'}loc').text=ORIGIN+'/beregnere/'+page['slug']+'/'
  ET.SubElement(node,'{'+NS+'}lastmod').text=DATE
 ET.indent(sitemap,space='  ');sitemap.write(ROOT/'sitemap.xml',encoding='unicode',xml_declaration=True)
-print('Built five standalone calculator pages, static examples, 181 car presets and sitemap with 188 canonical URLs.')
+print(f'Built five standalone calculator pages and {len(models)} shared car presets.')

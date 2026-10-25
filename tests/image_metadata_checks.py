@@ -27,7 +27,7 @@ for slug,photo in catalog.items():
         assert 'CC0' in notice and 'public domain' in notice and '©' not in notice,slug
     if creator['@type']=='Organization':organizations+=1
     count+=1
-assert count==181 and cc0==17,(count,cc0)
+assert count==sum(p['status']=='verified' for p in catalog.values()) and cc0==sum(p['status']=='verified' and '/publicdomain/zero/' in p['license_url'] for p in catalog.values()),(count,cc0)
 assert by_slug['kia-ev4-standard-range-access']['creator']=={'@type':'Person','name':'Oleg Yunakov'}
 assert by_slug['mercedes-benz-gla-with-eq-technology-200']['creator']=={'@type':'Organization','name':'Mercedes-Benz AG'}
 assert by_slug['mercedes-benz-gla-with-eq-technology-200']['copyrightNotice']=='© Mercedes-Benz AG'

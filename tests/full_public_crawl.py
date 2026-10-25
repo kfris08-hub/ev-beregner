@@ -68,7 +68,7 @@ for path,response in zip(paths,responses):
     if description in descriptions:problem('Duplicate description',url)
     descriptions[description]=url
     noindex=any('noindex' in value.lower() for value in page.robots)
-    if noindex!=bool(photo and photo['status']=='withdrawn'):problem('Wrong index/noindex state',url)
+    if noindex!=bool((photo and photo['status']=='withdrawn') or any(m['slug']==slug and not m['indexable'] for m in json.loads((ROOT/'data/cars.json').read_text())['models'])):problem('Wrong index/noindex state',url)
     try:
         graph=[json.loads(x) for x in page.ld]
         if photo and photo['status']=='verified':
@@ -108,10 +108,11 @@ sitemap_response=fetch(BASE+'/sitemap.xml');robot_response=fetch(BASE+'/robots.t
 try:
     assert sitemap_response['status']==robot_response['status']==200
     root=ET.fromstring(sitemap_response['body']);site_entries=[n.find('{*}loc').text for n in root]
-    expected={BASE+p for p in pages if not (catalog.get(p.rstrip('/').split('/')[-1],{}).get('status') in ('withdrawn','redirect'))}
-    assert len(site_entries)==len(set(site_entries))==188 and set(site_entries)==expected
+    incomplete={m['slug'] for m in json.loads((ROOT/'data/cars.json').read_text())['models'] if not m['indexable']}
+    expected={BASE+p for p in pages if p.rstrip('/').split('/')[-1] not in incomplete and not (catalog.get(p.rstrip('/').split('/')[-1],{}).get('status') in ('withdrawn','redirect'))}
+    assert len(site_entries)==len(set(site_entries))==len(expected) and set(site_entries)==expected
     image_nodes=root.findall('.//{http://www.google.com/schemas/sitemap-image/1.1}loc')
-    assert len(image_nodes)==181 and {i.text for i in image_nodes}=={BASE+p['src'] for p in catalog.values() if p['status']=='verified'}
+    assert len(image_nodes)==sum(p['status']=='verified' for p in catalog.values()) and {i.text for i in image_nodes}=={BASE+p['src'] for p in catalog.values() if p['status']=='verified'}
     robot_text=robot_response['body'].decode('utf-8');robot=RobotFileParser();robot.parse(robot_text.splitlines())
     assert BASE+'/sitemap.xml' in robot_text
     assert all(robot.can_fetch('Googlebot',u) for u in expected|assets)

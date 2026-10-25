@@ -1,0 +1,415 @@
+{
+  "updated_models": [],
+  "new_models": [],
+  "unmatched_existing_variants": [
+    {
+      "family": "Audi Q4 e-tron",
+      "variant": "Q4 e-tron 150 kW (204 hk)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BMW i7",
+      "variant": "i7 50 xDrive M Sport",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BMW iX",
+      "variant": "iX xDrive45 M Sport",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BMW iX2",
+      "variant": "iX2 eDrive20 M Sport",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BYD Atto 2",
+      "variant": "Comfort 64,8 kWh",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BYD Seal",
+      "variant": "Design (RWD)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BYD Sealion 7",
+      "variant": "Comfort (RWD)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "BYD Tang",
+      "variant": "Flagship (AWD)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Citroën ë-C3",
+      "variant": "You! 113 EL (30 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Citroën ë-C3 Aircross",
+      "variant": "You! 113 EL (44 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Citroën ë-C5 Aircross",
+      "variant": "You! 210 EL (73,7 kWh netto)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Cupra Born",
+      "variant": "Born (140 kW, 58 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Cupra Raval",
+      "variant": "Raval Plus (99 kW, 37 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Cupra Tavascan",
+      "variant": "Tavascan (140 kW, 58 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Deepal S05",
+      "variant": "PRO, baghjulstræk (68,8 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Deepal S07",
+      "variant": "MAX, baghjulstræk (78 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Exlantix ES",
+      "variant": "Advanced EL 313 hk RWD (74,7 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Firefly",
+      "variant": "Select (41,2 kWh netto)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Ford Capri",
+      "variant": "Capri Style RWD Standard Range (58 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Ford Explorer",
+      "variant": "Explorer Style RWD Standard Range (58 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Ford Mustang Mach-E",
+      "variant": "Mustang Mach-E Select RWD Standard Range (73 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Ford Puma Gen-E",
+      "variant": "Puma Gen-E Select FWD",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Honda e:Ny1",
+      "variant": "e:Ny1 Elegance",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hongqi EH7",
+      "variant": "Premium 344 hk 2WD (81,6 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hyundai Inster",
+      "variant": "Standard Range 42 kWh 97 hk Essential (4 sæder)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hyundai IONIQ 5 N",
+      "variant": "IONIQ 5 N 84 kWh 4WD",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hyundai IONIQ 6 N",
+      "variant": "IONIQ 6 N 84 kWh 4WD",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hyundai IONIQ 9",
+      "variant": "Advanced 110,3 kWh 218 hk RWD (7 sæder)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hyundai Kona Electric",
+      "variant": "Standard Range 48,4 kWh 156 hk Essential",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Hyundai STARIA Electric",
+      "variant": "Shuttle 84 kWh 218 hk FWD (9 sæder)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "KGM Musso EV",
+      "variant": "4x2, 207 hk (80,6 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "KGM Torres EVX",
+      "variant": "Standard (80,6 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Kia EV2",
+      "variant": "Access (42,2 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Kia EV5",
+      "variant": "EV5 Access Standard Range (60,3 kWh, FWD)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Kia EV6",
+      "variant": "EV6 Access Standard Range (63 kWh, RWD)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Kia EV9",
+      "variant": "Standard Range RWD (76,1 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Leapmotor B10",
+      "variant": "Life 56,2 kWh RWD",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Lexus RZ",
+      "variant": "RZ 350e Executive",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Maxus eTerron 9",
+      "variant": "Luxury, firehjulstræk (102,2 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Mazda CX-6e",
+      "variant": "CX-6e Takumi 258 hk 78 kWh (19\" fælge)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Mercedes-Benz EQE SUV",
+      "variant": "EQE SUV 350 4MATIC AMG Edition",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Mercedes-Benz VLE",
+      "variant": "VLE 300 (lanceringsudgave)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "MG Cyberster",
+      "variant": "MG Cyberster Trophy Long Range (77 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "MG IM5",
+      "variant": "MG IM5 100 Long Range (100 kWh NCM, baghjulstræk)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "MG IM6",
+      "variant": "MG IM6 100 Long Range (100 kWh NCM, baghjulstræk)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "MGS5 EV",
+      "variant": "Standard Range (49 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "MINI Countryman Electric",
+      "variant": "MINI Countryman E Essential Trim",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "NIO EL6",
+      "variant": "Standard Range (73,5 kWh netto)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Nissan Ariya",
+      "variant": "Ariya Engage Plus 63 kWh 2WD",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Nissan Leaf",
+      "variant": "Leaf Engage 52 kWh",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Nissan Micra",
+      "variant": "Micra Engage 40 kWh",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Omoda 5 EV",
+      "variant": "Premium+ (61 kWh LFP)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Peugeot E-3008",
+      "variant": "GT EL 210 (73 kWh netto)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Peugeot E-5008",
+      "variant": "Vision EL 210 (73 kWh netto)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Polestar 2",
+      "variant": "Long range Single motor",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Porsche Cayenne Electric",
+      "variant": "Cayenne Electric",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Skoda Elroq",
+      "variant": "Elroq 60 Essence 140 kW (190 hk)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Skoda Enyaq Coupé",
+      "variant": "Enyaq Coupé 60 Selection 140 kW (190 hk)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Skyworth K",
+      "variant": "Core 150 kW FWD (62,4 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Subaru Solterra",
+      "variant": "Limited AWD (73,1 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Toyota bZ4X",
+      "variant": "bZ4X Active 57,7 kWh 4x2 167 hk",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Toyota bZ4X Touring",
+      "variant": "bZ4X Touring Active Tech 4x2 224 hk",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Toyota C-HR+",
+      "variant": "C-HR+ Active 2WD 77 kWh 224 hk",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Toyota Urban Cruiser",
+      "variant": "Urban Cruiser Active 49 kWh 4x2 144 hk",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volkswagen ID. Buzz",
+      "variant": "ID. Buzz kort akselafstand Life Pure 190 hk (58 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volkswagen ID. Cross",
+      "variant": "ID. Cross Trend 116 hk (37 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volkswagen ID.4",
+      "variant": "ID.4 Move 286 hk (77 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volkswagen ID.5",
+      "variant": "ID.5 Style 286 hk (77 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volkswagen ID.7 Tourer",
+      "variant": "ID.7 Tourer Pure 204 hk (59 kWh)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volvo EC40",
+      "variant": "EC40 Plus P5 Long Range",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volvo EX30",
+      "variant": "EX30 Core P5 Standard Range",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volvo EX30 Cross Country",
+      "variant": "EX30 Cross Country Plus P5 Long Range",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volvo EX40",
+      "variant": "EX40 Plus P5 Long Range",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volvo EX60",
+      "variant": "EX60 P10 AWD Plus",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Volvo EX90",
+      "variant": "EX90 Single Motor Plus, 7 sæder",
+      "reason": "Different or unbound existing variant; old values preserved"
+    },
+    {
+      "family": "Zeekr 001",
+      "variant": "Long Range RWD (100 kWh brutto)",
+      "reason": "Different or unbound existing variant; old values preserved"
+    }
+  ],
+  "quarantine": [],
+  "checked_at": "2026-10-25T17:03:50.972358+00:00",
+  "sources": [
+    {
+      "id": "retail-Junior",
+      "status": "ok",
+      "records": 3
+    },
+    {
+      "id": "retail-e-208",
+      "status": "ok",
+      "records": 7
+    },
+    {
+      "id": "retail-e-2008",
+      "status": "ok",
+      "records": 4
+    },
+    {
+      "id": "bil-portalen",
+      "status": "ok",
+      "records": 201
+    }
+  ],
+  "source_rejections": [],
+  "active_models": 196,
+  "automatically_priced_models": 57,
+  "legacy_models_without_automatic_price": 139,
+  "pending_indexing": 4
+}

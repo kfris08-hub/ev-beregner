@@ -24,8 +24,10 @@ class Page(HTMLParser):
   if self.current=='script':self.scripts[-1]['text']+=data
  def handle_endtag(self,tag):
   if tag in ('title','script'):self.current=None
+catalog=json.loads((ROOT/'data/cars.json').read_text())['models']
+active=[m for m in catalog if m['status']=='active'];unindexed={m['slug'] for m in active if not m['indexable']}
 models=sorted((ROOT/'elbil').glob('*/index.html'))
-assert len(models)==186
+assert len(models)==len(active)+5
 WITHDRAWN={'kia-ev1-standard-range','kia-sportage-ev-standard','volvo-ex50-single-motor-rwd','volvo-ex70-single-motor'}
 ALIAS={'hyundai-ioniq-7-standard':'hyundai-ioniq-9-rwd-advanced'}
 EXCLUDED=WITHDRAWN|set(ALIAS)
@@ -38,8 +40,8 @@ for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models,*guides]:
  pages[url]=Page(path.read_text())
 sitemap=ET.parse(ROOT/'sitemap.xml')
 locations=[x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-assert len(locations)==len(set(locations))==188
-assert set(locations)=={u for u in pages if u.rstrip('/').split('/')[-1] not in EXCLUDED},'Sitemap must contain exactly the indexable canonical pages'
+assert len(locations)==len(set(locations))==len(active)-len(unindexed)+7
+assert set(locations)=={u for u in pages if u.rstrip('/').split('/')[-1] not in EXCLUDED|unindexed},'Sitemap must contain exactly the indexable canonical pages'
 robot=RobotFileParser();robot.parse((ROOT/'robots.txt').read_text().splitlines())
 for url,page in pages.items():
  slug=url.rstrip('/').split('/')[-1]
@@ -47,7 +49,7 @@ for url,page in pages.items():
  assert len(page.titles)==1 and page.titles[0],f'Missing title: {url}'
  assert len(page.descriptions)==1 and page.descriptions[0],f'Missing description: {url}'
  assert page.h1==1,f'Expected one H1: {url}'
- assert any('noindex' in x.lower() for x in page.robots)==(slug in WITHDRAWN),f'Wrong indexing state: {url}'
+ assert any('noindex' in x.lower() for x in page.robots)==(slug in WITHDRAWN|unindexed),f'Wrong indexing state: {url}'
  assert robot.can_fetch('Googlebot',url),f'Blocked by robots.txt: {url}'
  for script in page.scripts:
   src=script['attrs'].get('src')
@@ -65,14 +67,14 @@ cards=[a for a in pages[ORIGIN+'/'].links if 'calc-card' in a.get('class','').sp
 assert {a.get('href') for a in cards}=={f'#beregner-{i}' for i in range(1,21)}
 data=list(csv.reader((ROOT/'bil-data-komplet.csv').open(encoding='utf-8-sig'),delimiter=';'))
 records={(r[0],r[1]):r for r in data[1:] if len(r)==7}
-assert len(records)==181
+assert len(records)==len(active)
 assert records['XPENG','G6 Standard Range RWD'][4:6]==['470','16.9']
 assert records['XPENG','L03 Standard Range RWD'][5]=='15.3'
 assert records['BYD','Atto 3 EVO Design'][5]=='16.4'
 home_text=(ROOT/'index.html').read_text()
 cars=json.loads(re.search(r'const cars=(\[.*?\]); let selectedCar=',home_text,re.S)[1])
 cars_by_name={(row[0],row[1]):row for row in cars}
-assert len(cars_by_name)==181
+assert len(cars_by_name)==len(active)
 sources=json.loads((ROOT/'data/model-data-sources.json').read_text())
 overview=(ROOT/'elbil/index.html').read_text()
 for slug,source in sources.items():
@@ -95,4 +97,4 @@ for forbidden in EXCLUDED:
  assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',overview)
  assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',home_text)
 assert 'unzip -o' not in (ROOT/'.github/workflows/installer.yml').read_text()
-print('PASS: 193 preserved URLs, 188 sitemap entries, five dedicated calculator pages, 181 selectable models, four noindex explanations, one IONIQ alias, unknown Elveon data and all 20 calculators.')
+print(f'PASS: {len(pages)} URLs, {len(locations)} canonical sitemap entries, {len(active)} selectable variants, five calculator pages, historical explanations/alias, unknown data and all 20 calculators.')

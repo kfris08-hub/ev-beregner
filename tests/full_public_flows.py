@@ -48,7 +48,7 @@ async def main():
                 await page.get_by_role('button',name='NULSTIL',exact=True).click()
                 assert await page.locator('#search').input_value()==''
                 await page.get_by_role('button',name='VIS BILER',exact=True).click()
-                await expect(page.locator('#carList .car-card')).to_have_count(181)
+                await expect(page.locator('#carList .car-card')).to_have_count(len(MODELS))
                 assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1')
             await case('search-filters-sort-select-reset',filters)
             async def cards():

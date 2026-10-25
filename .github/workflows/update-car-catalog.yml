@@ -1,0 +1,99 @@
+name: Opdater bilkatalog automatisk
+on:
+  schedule:
+    - cron: '43 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: site-data-updates
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Hent danske varianter og dokumenterede priser
+        run: python tools/update_car_catalog.py
+      - name: Opbyg sider og fælles bildata
+        run: |
+          python tools/build_car_catalog.py
+          python tools/build_calculator_pages.py
+      - name: Kontroller data, historiske adresser, billeder og alle beregnere
+        run: |
+          python tests/car_catalog.test.py
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - name: Installer browserkontrol
+        run: python -m pip install playwright==1.56.0
+      - name: Kontroller nye biler og centrale brugerforløb i Chrome
+        run: |
+          python tests/catalog_browser_checks.py
+          python tests/full_public_flows.py
+      - name: Gem kun en godkendt opdatering
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cars.json data/car-update-status.json data/model-photos.json index.html elbil/ assets/calculator-cars.json bil-data-komplet.csv sitemap.xml beregnere/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Opdater dokumenterede bilpriser og nye varianter automatisk'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      # GITHUB_TOKEN pushes do not start another workflow or a Pages build.
+      # Explicitly request the existing branch-based Pages build after tests pass.
+      - name: Udgiv den kontrollerede opdatering
+        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+      - name: Kontrollér at den nye status er offentliggjort
+        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
+        run: |
+          python - <<'PY2'
+          import json,os,time,urllib.request
+          expected=json.load(open('data/car-update-status.json'))['checked_at']
+          for attempt in range(18):
+            url='https://www.evberegn.dk/data/car-update-status.json?build='+os.environ['GITHUB_RUN_ID']+'-'+str(attempt)
+            try:
+              with urllib.request.urlopen(url,timeout=15) as r:actual=json.load(r)
+              if actual.get('checked_at')==expected:
+                print('Publiceret bilkatalog og kontrolstatus bekræftet');break
+            except Exception:pass
+            time.sleep(10)
+          else:raise SystemExit('Pages har ikke offentliggjort den kontrollerede status inden for tidsgrænsen')
+          PY2
+      - name: Gem kontrolrapport også ved kilde- eller testfejl
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: automatisk-bilkontrol
+          path: test-results/
+      - name: Vis kildekontrol i GitHub
+        if: always()
+        run: |
+          python - <<'PY'
+          import json,os,pathlib
+          p=pathlib.Path('test-results/car-update-status.json')
+          if p.exists():
+            r=json.loads(p.read_text())
+            with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## Automatisk bilkontrol\n\n')
+              f.write(f"Aktive varianter: {r['active_models']} · automatisk prisdækning: {r['automatically_priced_models']} · ældre varianter uden sikker priskobling: {r['legacy_models_without_automatic_price']}\n\n")
+              for s in r['sources']:f.write(f"- {s['id']}: {s['status']} ({s.get('records',0)} varianter)\n")
+              f.write(f"\nNye varianter: {len(r['new_models'])}. Tilbageholdte prisændringer: {len(r['quarantine'])}. Ufuldstændige sider uden Google-indeksering: {r['pending_indexing']}.\n")
+          PY

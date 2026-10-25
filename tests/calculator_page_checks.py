@@ -31,7 +31,7 @@ for page in config:
  assert not any('aggregateRating' in json.dumps(g) for g in graphs)
 home=(ROOT/'index.html').read_text();cars=json.loads(re.search(r'const cars=(\[.*?\]); let selectedCar=',home,re.S)[1])
 slugs=json.loads(re.search(r'const modelSlugs=(\{.*?\});',home,re.S)[1]);catalog=json.loads((ROOT/'assets/calculator-cars.json').read_text())['models']
-assert len(catalog)==181
+assert len(catalog)==len([m for m in json.loads((ROOT/'data/cars.json').read_text())['models'] if m['status']=='active'])
 by_slug={c['slug']:c for c in catalog}
 for c in cars:
  actual=by_slug[slugs[c[0]+'|||'+c[1]]]
@@ -41,4 +41,4 @@ for path in (ROOT/'elbil').glob('*/index.html'):
  text=path.read_text()
  if 'noindex, follow' in text or 'http-equiv="refresh"' in text:continue
  for slug in ['ladepris','elbil-vs-benzin','opladningstid']:assert '/beregnere/'+slug+'/#bil='+path.parent.name in text
-print('PASS: five standalone HTML calculators, shared static examples, canonical metadata, structured data, sources, 181 consistent car presets and links from the homepage and all active models.')
+print('PASS: five standalone HTML calculators, shared static examples, canonical metadata, structured data, sources, consistent shared car presets and links from the homepage and all active models.')
