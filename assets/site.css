@@ -9,3 +9,5 @@
 
 
 .answer-table th{padding:8px 3px;border-bottom:1px solid #273548;text-align:left;font-weight:400;}
+
+.info-details>summary{cursor:pointer;color:#10ddb2;font-weight:700;font-size:15px;line-height:1.5}.info-details .details-content{margin-top:16px}.info-details .seo-content{margin:18px 0 0;padding:0;border:0;background:transparent}.disclaimer a,.footer a{color:#10ddb2}.info-details>summary:focus-visible{outline:2px solid #10ddb2;outline-offset:5px}

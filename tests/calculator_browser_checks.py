@@ -36,6 +36,17 @@ async def main():
      assert await page.locator('#answer').is_visible()
      assert await page.locator('link[rel=canonical]').get_attribute('href')==BASE+'/beregnere/'+slug+'/'
      assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),(slug,label)
+     # Additional explanations are available on demand, including without JavaScript.
+     helpbox=page.locator('details.field-explanations')
+     assert await helpbox.get_attribute('open') is None
+     await helpbox.locator('summary').click()
+     assert await helpbox.locator('dd').first.is_visible()
+     await helpbox.locator('summary').click()
+     explanation=page.locator('details.calculator-explanation')
+     assert await explanation.get_attribute('open') is None
+     await explanation.locator('summary').click()
+     assert await explanation.locator('.guide h2').first.is_visible()
+     await explanation.locator('summary').click()
      if not javascript:
       assert await page.locator('#calculateButton').is_disabled()
       assert await page.locator('noscript').inner_text()

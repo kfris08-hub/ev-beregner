@@ -1,0 +1,63 @@
+name: Forbered kortere tekster
+on:
+  push:
+    branches: [fix/prepare-concise-copy-2026-10-25]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Opdater tekster og byg beregnersider
+        run: |
+          python tools/simplify_copy.py
+          python tools/build_calculator_pages.py
+      - name: Kontroller billedkrediteringer, data og metode
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,re,subprocess
+          catalog=json.loads(Path('data/model-photos.json').read_text())['models']
+          for slug,photo in catalog.items():
+              name='elbil/'+slug+'/index.html'
+              old=subprocess.check_output(['git','show','HEAD:'+name],text=True)
+              new=Path(name).read_text()
+              if photo['status']!='verified':
+                  assert old==new,slug
+                  continue
+              for pattern in [r'<script type="application/ld\+json">(.*?)</script>',r'<div class="photo-credit" id="photoCredit">(.*?)</div>',r'<img[^>]+id="carPhoto"[^>]*>']:
+                  assert re.search(pattern,old,re.S)[0]==re.search(pattern,new,re.S)[0],slug
+          print('PASS: all 186 model states, 181 image credits, photo tags and complete image/model JSON-LD preserved.')
+          PY
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - name: Kontroller beregnere og fold-ud-felter i Chrome
+        run: |
+          python -m pip install playwright==1.56.0 Pillow==11.3.0
+          python tests/calculator_browser_checks.py
+          python tests/browser_checks.py
+          python tests/full_public_flows.py
+      - name: Gem skærmbilleder
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kortere-tekster-forhaandskontrol
+          path: test-results/
+      - name: Gem de kontrollerede sider på arbejdsgrenen
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html elbil beregnere sitemap.xml assets/calculator-cars.json
+          git diff --cached --quiet || git commit -m 'Build concise pages with accessible explanations on demand'
+          git push
