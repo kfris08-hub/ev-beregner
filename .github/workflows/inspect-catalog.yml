@@ -9,24 +9,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Hent kildestruktur
+      - name: Undersøg kilde-API
         run: |
           python3 - <<'PY'
           import urllib.request,json,base64,zlib
-          urls=['https://bil-portalen.dk/data/bilpriser.json','https://pricelists-api.cars4ever.eu/api/models/Model%203/retail','https://pricelists-api.cars4ever.eu/api/models/Junior/retail','https://www.bydauto.dk/modeller/byd-atto-3/pris-og-detaljer','https://store.xpeng.com/dk/configurator/NEW_G6']
+          urls=['https://pricelists-api.cars4ever.eu/swagger/v1/swagger.json','https://pricelists-api.cars4ever.eu/api/models','https://pricelists-api.cars4ever.eu/api/brands','https://pricelists-api.cars4ever.eu/api/models/Junior/retail','https://bil-portalen.dk/bil/alpine/a290','https://www.alfaromeo.dk/modeller/junior-elettrica']
           for url in urls:
             try:
               req=urllib.request.Request(url,headers={'User-Agent':'EVBeregn-source-check/1.0 (+https://www.evberegn.dk)'})
-              with urllib.request.urlopen(req,timeout=30) as r: data=r.read(3000000);content_type=r.headers.get('Content-Type')
-              print('SOURCE',url,content_type,len(data))
-              if 'bilpriser.json' in url:
-                print('CATALOG_ZLIB',base64.b64encode(zlib.compress(data)).decode())
-              elif '/api/models/' in url:
-                print('API_SAMPLE',data[:15000].decode())
+              with urllib.request.urlopen(req,timeout=20) as r:data=r.read(4000000);ctype=r.headers.get('Content-Type')
+              print('SOURCE',url,ctype,len(data))
+              if '/api/models/Junior/' in url or url.endswith('.json') or url.endswith('/api/models') or url.endswith('/api/brands'):
+                try:
+                  d=json.loads(data)
+                  if '/swagger/' in url:print('SWAGGER',json.dumps(d)[:35000])
+                  else:print('API_ZLIB',url,base64.b64encode(zlib.compress(data)).decode())
+                except ValueError: print('NOT_JSON')
               else:
                 import re
-                print('SCRIPTS',re.findall(r'<script[^>]+src=["\x27]([^"\x27]+)',data.decode())[-8:])
-                for pattern in ['application/ld+json','__NEXT_DATA__','16.4','382','470','Standard Range']:
-                  at=data.decode().find(pattern);print('HIT',pattern,data.decode()[max(0,at-100):at+700] if at>=0 else 'missing')
+                t=data.decode()
+                for pattern in ['application/ld+json','cars4ever','Forbrug','kWh','api/']:
+                  at=t.find(pattern);print('HIT',pattern,t[max(0,at-100):at+1100] if at>=0 else 'missing')
             except Exception as e:print('SOURCE_ERROR',url,type(e).__name__,str(e))
           PY
