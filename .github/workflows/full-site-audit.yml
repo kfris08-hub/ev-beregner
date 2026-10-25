@@ -2,7 +2,7 @@ name: Gennemgå hele den udgivne hjemmeside
 on:
   workflow_dispatch:
   push:
-    branches: [verify/full-site-2026-10-25]
+    branches: [verify/full-site-after-fixes-2026-10-25]
 permissions:
   contents: read
 jobs:
