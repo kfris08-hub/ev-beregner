@@ -116,6 +116,7 @@ def build():
             sections+='<a class="car" href="/elbil/'+m['slug']+'/"><b>'+ESC(m['brand']+' '+m['model'])+'</b><span>'+ESC(' · '.join(values))+'</span></a>'
         sections+='</div></section>'
     overview=re.sub(r'<nav class="brandnav".*?</main>',lambda _:nav+sections+'</main>',overview,count=1,flags=re.S)
+    overview=re.sub(r'<p class="intro">.*?</p>','<p class="intro">Find en elbil efter mærke, og se pris, rækkevidde og forbrug.</p>',overview,count=1,flags=re.S)
     overview=meta(overview,'description',f'Se {count} elbiler samlet efter mærke. Sammenlign pris, WLTP-rækkevidde og forbrug, og åbn beregninger for hver elbil.')
     graph={'@context':'https://schema.org','@graph':[{'@type':'CollectionPage','name':'Alle elbiler – priser, rækkevidde og forbrug','url':BASE+'/elbil/'},{'@type':'ItemList','name':'Elbiler i EV Beregner','numberOfItems':count,'itemListElement':[{'@type':'ListItem','position':i,'name':m['brand']+' '+m['model'],'url':BASE+'/elbil/'+m['slug']+'/'} for i,m in enumerate(sorted(models,key=lambda x:(x['brand'].casefold(),x['model'].casefold())),1)]}]}
     overview=re.sub(r'(<script type="application/ld\+json">).*?(</script>)',lambda x:x[1]+json.dumps(graph,ensure_ascii=False)+x[2],overview,count=1,flags=re.S);write(ROOT/'elbil/index.html',overview)
