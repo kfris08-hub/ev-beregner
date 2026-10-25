@@ -1,0 +1,92 @@
+name: Gennemgå hele den udgivne hjemmeside
+on:
+  push:
+    branches: [verify/full-site-2026-10-25]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kontroller metadata, billeder, sitemap og beregnere
+        run: |
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+  public-crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gennemgå alle offentlige sider og lokale links og assets
+        run: python tests/full_public_crawl.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlig-crawl
+          path: test-results/
+  public-calculators:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller 20 beregnere på den rigtige hjemmeside
+        env:
+          CALCULATOR_PUBLIC: '1'
+        run: python tests/browser_checks.py
+      - name: Kontroller fem nye beregnersider med og uden JavaScript
+        env:
+          CALCULATOR_PUBLIC: '1'
+        run: python tests/calculator_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-beregnere
+          path: test-results/
+  public-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller samtlige modelbilleder og billedmetadata
+        env:
+          PHOTO_PUBLIC: '1'
+        run: python tests/photo_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-modelbilleder
+          path: test-results/
+  public-flows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller søgning, bilvalg, sammenligning, knapper og rigtige pristjenester
+        run: python tests/full_public_flows.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-brugerforloeb
+          path: test-results/
