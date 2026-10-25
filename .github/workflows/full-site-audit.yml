@@ -2,7 +2,7 @@ name: Gennemgå hele den udgivne hjemmeside
 on:
   workflow_dispatch:
   push:
-    branches: [verify/full-site-2026-10-25]
+    branches: [verify/automatic-catalog-live]
 permissions:
   contents: read
 jobs:
@@ -18,6 +18,7 @@ jobs:
           python-version: '3.12'
       - name: Kontroller metadata, billeder, sitemap og beregnere
         run: |
+          python tests/car_catalog.test.py
           python tests/seo_checks.py
           python tests/model_photo_checks.py
           python tests/image_metadata_checks.py
@@ -92,4 +93,21 @@ jobs:
         if: always()
         with:
           name: offentlige-brugerforloeb
+          path: test-results/
+  public-new-models:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller nye varianter på den udgivne hjemmeside
+        env:
+          CATALOG_PUBLIC: '1'
+        run: python tests/catalog_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-nye-modelsider
           path: test-results/
