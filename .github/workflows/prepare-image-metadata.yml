@@ -1,0 +1,58 @@
+name: Forbered billedmetadata
+on:
+  push:
+    branches: [fix/prepare-image-metadata-2026-10-25]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tilføj dokumenterede billedrettigheder
+        run: |
+          python tools/update_image_metadata.py
+          python tools/update_image_metadata.py --check
+      - name: Kontroller ændringernes afgrænsning
+        run: |
+          python - <<'PY'
+          import json,re,subprocess
+          from pathlib import Path
+          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          models=[p for p in changed if p.startswith('elbil/')]
+          assert len(models)==181,len(models)
+          assert set(changed)==set(models)|{'sitemap.xml'},changed
+          for name in models:
+              old=subprocess.check_output(['git','show','HEAD:'+name],text=True)
+              new=Path(name).read_text()
+              pattern=r'(<script type="application/ld\+json">)(.*?)(</script>)'
+              a=re.search(pattern,old,re.S);b=re.search(pattern,new,re.S)
+              assert old[:a.start(2)]+old[a.end(2):]==new[:b.start(2)]+new[b.end(2):],name
+              before=json.loads(a[2]);after=json.loads(b[2])
+              for node in after['@graph']:
+                  if node.get('@type')=='WebPage':
+                      image=node['primaryImageOfPage'];image.pop('creator');image.pop('copyrightNotice')
+              assert before==after,name
+          print('PASS: only the two ImageObject fields changed on 181 model pages; all visible HTML preserved byte-for-byte.')
+          PY
+      - name: Kontroller billedkilder, HTML, sitemap og beregnere
+        run: |
+          python tests/image_metadata_checks.py
+          python tests/model_photo_checks.py
+          python tests/seo_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - name: Gem de kontrollerede metadata på arbejdsgrenen
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add elbil sitemap.xml
+          git diff --cached --quiet || git commit -m 'Add source-backed creator and copyright notices to 181 model pages'
+          git push

@@ -1,6 +1,7 @@
 """Render reviewed local photos and their credits into the existing model pages."""
 import html,json,re,xml.etree.ElementTree as ET
 from pathlib import Path
+from photo_rights import image_rights
 ROOT=Path(__file__).parents[1]
 ORIGIN='https://www.evberegn.dk'
 ESC=lambda s:html.escape(str(s),quote=True)
@@ -35,7 +36,7 @@ for slug,photo in models.items():
   if node.get('@type')=='WebPage':
    node.pop('primaryImageOfPage',None)
    if verified:
-    node['primaryImageOfPage']={'@type':'ImageObject','contentUrl':ORIGIN+photo['src'],'url':ORIGIN+photo['src'],'caption':photo.get('caption') or photo['identity']+' – modelbillede; udstyr og farve kan variere.','width':photo['width'],'height':photo['height'],'creditText':photo['author'],'license':photo['license_url'],'acquireLicensePage':photo['source']}
+    node['primaryImageOfPage']={'@type':'ImageObject','contentUrl':ORIGIN+photo['src'],'url':ORIGIN+photo['src'],'caption':photo.get('caption') or photo['identity']+' – modelbillede; udstyr og farve kan variere.','width':photo['width'],'height':photo['height'],'creditText':photo['author'],'license':photo['license_url'],'acquireLicensePage':photo['source'],**image_rights(photo)}
  text=text[:data_match.start(1)]+json.dumps(data,ensure_ascii=False)+text[data_match.end(1):]
  path.write_text(text)
 NS='http://www.sitemaps.org/schemas/sitemap/0.9';IM='http://www.google.com/schemas/sitemap-image/1.1'
