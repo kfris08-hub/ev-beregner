@@ -75,6 +75,7 @@ def render_model(m,models,photo):
     other=sorted([x for x in models if x['slug']!=m['slug']],key=lambda x:abs(x['price']-m['price']) if x['price'] is not None and m['price'] is not None else float('inf'))[:3]
     alts=''.join('<a class="alt" href="/elbil/'+x['slug']+'/"><b>'+ESC(x['brand']+' '+x['model'])+'</b><span>'+fmt(x['price'])+(' kr.' if x['price'] is not None else '')+' · '+fmt(x['range'])+(' km WLTP' if x['range'] is not None else '')+'</span></a>' for x in other)
     text=re.sub(r'(<h2>Andre elbiler</h2><div class="alts">).*?(</div>)',lambda x:x[1]+alts+x[2],text,count=1,flags=re.S)
+    text=text.replace('<button onclick="calculate()">','<button aria-label="BEREGN" onclick="calculate()">')
     text=re.sub(r'Se alle \d+ elbiler',f'Se alle {len(models)} elbiler',text)
     url=BASE+'/elbil/'+m['slug']+'/'
     page={'@type':'WebPage','name':label+' – pris og økonomi','url':url,'description':description,'dateModified':m['modified']}
