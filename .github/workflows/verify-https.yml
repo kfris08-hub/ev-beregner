@@ -1,0 +1,40 @@
+name: Kontroller HTTPS efter aktivering
+on:
+  push:
+    branches: [verify/https-enforced-2026-10-25]
+permissions:
+  contents: read
+  pages: read
+jobs:
+  https:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kontroller hostingflag, certifikat og viderestillinger
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,urllib.request,urllib.parse
+          api='https://api.github.com/repos/kfris08-hub/ev-beregner/pages'
+          request=urllib.request.Request(api,headers={'User-Agent':'EVBeregnerHTTPSCheck/1.0','Authorization':'Bearer '+os.environ['GH_TOKEN']})
+          data=json.load(urllib.request.urlopen(request,timeout=20))
+          class Redirects(urllib.request.HTTPRedirectHandler):
+              def __init__(self):self.chain=[]
+              def redirect_request(self,req,fp,code,msg,headers,newurl):
+                  self.chain.append({'from':req.full_url,'status':code,'to':newurl})
+                  return super().redirect_request(req,fp,code,msg,headers,newurl)
+          results=[]
+          urls=['http://evberegn.dk/','http://www.evberegn.dk/','https://evberegn.dk/','https://www.evberegn.dk/','http://www.evberegn.dk/beregnere/ladepris/','http://evberegn.dk/elbil/tesla-model-y-standard-rwd/','http://www.evberegn.dk/?car=tesla-model-y-standard-rwd']
+          for url in urls:
+              redirects=Redirects();opener=urllib.request.build_opener(redirects)
+              with opener.open(urllib.request.Request(url,headers={'User-Agent':'EVBeregnerHTTPSCheck/1.0'}),timeout=20) as response:
+                  final=response.geturl();parsed=urllib.parse.urlsplit(final);initial=urllib.parse.urlsplit(url)
+                  result={'url':url,'status':response.status,'final':final,'redirects':redirects.chain}
+                  result['passed']=response.status==200 and parsed.scheme=='https' and parsed.netloc=='www.evberegn.dk' and parsed.path==initial.path and parsed.query==initial.query
+                  if initial.scheme=='http':result['passed']=result['passed'] and bool(redirects.chain)
+                  results.append(result)
+          report={'https_enforced':data.get('https_enforced'),'certificate_state':data.get('https_certificate',{}).get('state'),'checked_urls':len(results),'results':results}
+          print('HTTPS_VERIFICATION_RESULT '+json.dumps(report,ensure_ascii=False),flush=True)
+          assert report['https_enforced'] is True,report
+          assert all(r['passed'] for r in results),report
+          PY
