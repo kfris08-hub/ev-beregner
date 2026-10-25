@@ -58,4 +58,4 @@ root=ET.parse(ROOT/'sitemap.xml')
 images=root.findall('.//{http://www.google.com/schemas/sitemap-image/1.1}loc')
 assert {x.text for x in images}=={ORIGIN+p['src'] for p in catalog.values() if p['status']=='verified'}
 assert len(images)==verified
-print(f'PASS: all 186 photo records, {verified} reviewed local photos, {sum(p['status']=='missing' for p in catalog.values())} missing states, four withdrawn entries and one alias, credits, licenses, hashes, static HTML, Open Graph and image sitemap.')
+print(f'PASS: all {len(catalog)} photo records, {verified} reviewed local photos, {sum(p['status']=='missing' for p in catalog.values())} missing states, four withdrawn entries and one alias, credits, licenses, hashes, static HTML, Open Graph and image sitemap.')

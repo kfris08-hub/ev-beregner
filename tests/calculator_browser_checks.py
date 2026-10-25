@@ -52,7 +52,7 @@ async def main():
       assert await page.locator('noscript').inner_text()
      else:
       await page.wait_for_function('!document.getElementById("carSelect").disabled')
-      assert await page.locator('#carSelect option').count()==182
+      assert await page.locator('#carSelect option').count()==len(json.loads((ROOT/'assets/calculator-cars.json').read_text())['models'])+1
       assert not api_requests,'Initial example must not silently become a live price'
       if slug=='ladepris':
        await page.locator('#calc_from').fill('20');await page.locator('#calc_to').fill('80');await page.locator('#calc_electricPrice').fill('2.5')
