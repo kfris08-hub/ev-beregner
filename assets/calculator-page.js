@@ -15,7 +15,7 @@
   const area = document.getElementById('priceArea');
   const dirtyPrices = new Set(), dirtyFields = new Set();
   let catalogue = [], chosen = null, requestToken = 0;
-  let electricStatus = 'Elpris: eksempelværdi, som du kan ændre.', fuelStatus = 'Benzinpris: eksempelværdi, som du kan ændre.';
+  let electricStatus = 'Elpris: eksempelværdi.', fuelStatus = 'Benzin: eksempelpris.';
   const values = () => Object.fromEntries(definition.fields.map(([key]) => [key, field(key).value]));
   function calculate(report) {
     const inputs = values(), errors = api.validate(id, inputs);
@@ -65,11 +65,12 @@
         if (Number.isFinite(chosen[carName])) { field(inputName).value = chosen[carName]; inserted.push(inputName); }
         else field(inputName).value = field(inputName).defaultValue;
       }
-      modelNote.textContent = inserted.length ? chosen.label + ': relevante tal er indsat fra biloversigten og kan ændres. Kontrollér den præcise variant hos producenten. Batteriets brutto-/netto-definition kan variere; brug den kapacitet, der passer til din beregning.' : chosen.label + ': producentdata er ikke bekræftet. Felterne viser redigerbare eksempelværdier, som du skal tilpasse.';
-      if (id === 8) modelNote.textContent += ' Gennemsnitlig ladeeffekt skal du selv angive; bilens maksimale DC-effekt bruges ikke som gennemsnit.';
+      const hasData = Object.entries(keys).some(([inputName, carName]) => field(inputName) && Number.isFinite(chosen[carName]));
+      modelNote.textContent = hasData ? 'Bildata valgt. Ret tallene efter behov.' : 'Producentdata er ikke bekræftet. Tilpas eksempelværdierne.';
+      if (id === 8) modelNote.textContent += ' Angiv selv gennemsnitlig ladeeffekt.';
     } else {
       for (const key of ['battery','consumption','price']) if (field(key) && !(preserveManual && dirtyFields.has(key))) field(key).value = field(key).defaultValue;
-      modelNote.textContent = slug ? 'Modellen findes ikke i den aktive biloversigt. Brug dine egne tal i beregneren.' : 'Generel beregning. Værdierne i felterne kan ændres, så de passer til din situation.';
+      modelNote.textContent = slug ? 'Modellen er ikke i biloversigten. Brug egne tal.' : '';
     }
     if (updateURL) {
       const url = new URL(global.location.href); url.searchParams.delete('car');
@@ -83,8 +84,8 @@
     if(event.target.name) dirtyFields.add(event.target.name);
     if (['electricPrice', 'fuelPrice'].includes(event.target.name)) {
       dirtyPrices.add(event.target.name);
-      if (event.target.name === 'electricPrice') electricStatus = 'Elpris: din egen indtastning.';
-      else fuelStatus = 'Benzinpris: din egen indtastning.';
+      if (event.target.name === 'electricPrice') electricStatus = 'Elpris: egen indtastning.';
+      else fuelStatus = 'Benzin: egen indtastning.';
       showPriceStatus();
     }
     calculate(false);
@@ -97,7 +98,7 @@
     area.value = core.getArea();
     area.addEventListener('change', () => {
       core.setArea(area.value); requestToken++;
-      electricStatus = 'Elområde ændret. Den viste elpris bruges, indtil du henter en ny eller indtaster din egen.';
+      electricStatus = 'Elområde ændret. Hent en ny pris, eller brug din egen.';
       showPriceStatus();
       if (priceButton) { priceButton.disabled = false; priceButton.textContent = 'Hent vejledende priser'; }
     });
@@ -112,8 +113,8 @@
           const value = core.electricPrice(data); if (!Number.isFinite(value)) throw new Error('invalid');
           if (token !== requestToken || dirtyPrices.has('electricPrice')) return;
           field('electricPrice').value = value.toFixed(2);
-          electricStatus = 'Vejledende ' + region + '-elpris fra elpriser.org, hentet ' + new Date().toLocaleTimeString('da-DK', {hour:'2-digit',minute:'2-digit'}) + '. Kontrollér den samlede pris hos din leverandør.';
-        } catch (_) { if (token === requestToken && !dirtyPrices.has('electricPrice')) electricStatus = 'Elprisen kunne ikke hentes. Den viste pris bruges og kan ændres.'; }
+          electricStatus = region + ' · elpriser.org · ' + new Date().toLocaleTimeString('da-DK', {hour:'2-digit',minute:'2-digit'}) + '. Din aftale kan afvige.';
+        } catch (_) { if (token === requestToken && !dirtyPrices.has('electricPrice')) electricStatus = 'Elprisen kunne ikke hentes. Brug din egen pris.'; }
       })()
     ];
     if (field('fuelPrice')) tasks.push((async () => {
@@ -122,8 +123,8 @@
         const value = core.number(data.petrol95); if (!Number.isFinite(value) || value < 0) throw new Error('invalid');
         if (token !== requestToken || dirtyPrices.has('fuelPrice')) return;
         field('fuelPrice').value = value.toFixed(2);
-        fuelStatus = 'Vejledende benzinpris fra ' + (data.source || 'prisoversigten') + (data.source_date ? ', kildedato ' + data.source_date : '') + '.';
-      } catch (_) { if (token === requestToken && !dirtyPrices.has('fuelPrice')) fuelStatus = 'Benzinprisen kunne ikke hentes. Den viste pris bruges og kan ændres.'; }
+        fuelStatus = 'Benzin: ' + (data.source || 'markedspris') + (data.source_date ? ' · ' + data.source_date : '') + '.';
+      } catch (_) { if (token === requestToken && !dirtyPrices.has('fuelPrice')) fuelStatus = 'Benzinprisen kunne ikke hentes. Brug din egen pris.'; }
     })());
     await Promise.allSettled(tasks);
     if (token === requestToken) {
