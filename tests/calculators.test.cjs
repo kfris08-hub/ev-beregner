@@ -88,3 +88,16 @@ test('comparison never treats missing specifications as zero or a winning value'
  const h=setup('home');await settle();h.run('compareCars[0]=cars.find(c=>c[0]==="Elveon Motors");compareCars[1]=cars.find(c=>c[0]==="Tesla"&&c[1].startsWith("Model Y"));renderCompare()');
  const result=h.elements.get('compareOutput').innerHTML;assert.match(result,/Ikke oplyst/);assert.doesNotMatch(result,/null|undefined|NaN/);assert.doesNotMatch(result,/<td class="winner">Ikke oplyst/);h.cleanup();
 });
+test('general mode clears a chosen car and its shared URL while preserving calculator history',()=>{
+ const h=setup('home',{url:'https://www.evberegn.dk/?car=tesla-model-y-standard-rwd#beregner-2'});
+ h.run('setMode("general")');assert.equal(h.run('selectedCar'),null);
+ assert.equal(h.run('new URL(location.href).searchParams.has("car")'),false);
+ assert.equal(h.run('location.hash'),'#beregner-2');
+ h.run('openCalculator(2)');assert.match(h.elements.get('dataBadge').textContent,/ingen bil valgt/);h.cleanup();
+});
+test('selected and removed cars are reflected in URLs used when reloading',()=>{
+ const h=setup('home');h.run('selectCar(cars.find(c=>c[0]==="Tesla"&&c[1]==="Model Y Standard RWD"))');
+ assert.equal(h.run('new URL(location.href).searchParams.get("car")'),'tesla-model-y-standard-rwd');
+ h.run('removeSelectedCar()');assert.equal(h.run('selectedCar'),null);
+ assert.equal(h.run('new URL(location.href).searchParams.has("car")'),false);h.cleanup();
+});
