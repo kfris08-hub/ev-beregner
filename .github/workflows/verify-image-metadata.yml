@@ -1,0 +1,46 @@
+name: Kontroller udgivne billedmetadata
+on:
+  push:
+    branches: [verify/public-image-metadata-2026-10-25]
+permissions:
+  contents: read
+jobs:
+  public-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer browser-testværktøj
+        run: python -m pip install playwright==1.56.0
+      - name: Kontroller alle offentlige modelbilleder og deres metadata uden JavaScript
+        env:
+          PHOTO_PUBLIC: '1'
+        run: python tests/photo_browser_checks.py
+      - name: Kontroller det udgivne sitemap
+        run: |
+          python - <<'PYLIVE'
+          import json,urllib.request,xml.etree.ElementTree as ET
+          from pathlib import Path
+          catalog=json.loads(Path('data/model-photos.json').read_text())['models']
+          with urllib.request.urlopen('https://www.evberegn.dk/sitemap.xml',timeout=30) as response:
+              assert response.status==200
+              root=ET.fromstring(response.read())
+          entries={n.find('{*}loc').text:n for n in root}
+          active={s for s,p in catalog.items() if p['status']=='verified'}
+          assert len(entries)==188
+          for slug in active:
+              node=entries['https://www.evberegn.dk/elbil/'+slug+'/']
+              assert node.find('{*}lastmod').text>='2026-10-25',slug
+              images=node.findall('{http://www.google.com/schemas/sitemap-image/1.1}image')
+              assert len(images)==1,slug
+              assert images[0].find('{http://www.google.com/schemas/sitemap-image/1.1}loc').text=='https://www.evberegn.dk'+catalog[slug]['src'],slug
+          print('PUBLIC_IMAGE_SITEMAP_RESULT '+json.dumps({'canonical_urls':len(entries),'updated_model_dates_and_preserved_image_urls':len(active),'result':'passed'}))
+          PYLIVE
+      - name: Gem offentlig billedkontrol
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: udgivne-billedmetadata
+          path: test-results/
