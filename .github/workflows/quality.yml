@@ -18,6 +18,7 @@ jobs:
         run: |
           python3 tests/seo_checks.py
           python3 tests/model_photo_checks.py
+          python3 tests/image_metadata_checks.py
           python3 tests/calculator_page_checks.py
       - name: Kontroller alle 20 beregnere og fejlforløb
         run: |
