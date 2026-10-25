@@ -8,27 +8,18 @@ jobs:
   sources:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Undersøg kilde-API
+      - name: Afprøv producenternes offentlige variantlister
         run: |
           python3 - <<'PY'
-          import urllib.request,json,base64,zlib
-          urls=['https://pricelists-api.cars4ever.eu/swagger/v1/swagger.json','https://pricelists-api.cars4ever.eu/api/models','https://pricelists-api.cars4ever.eu/api/brands','https://pricelists-api.cars4ever.eu/api/models/Junior/retail','https://bil-portalen.dk/bil/alpine/a290','https://www.alfaromeo.dk/modeller/junior-elettrica']
-          for url in urls:
+          import urllib.request,json,concurrent.futures,base64,zlib
+          def probe(code):
             try:
-              req=urllib.request.Request(url,headers={'User-Agent':'EVBeregn-source-check/1.0 (+https://www.evberegn.dk)'})
-              with urllib.request.urlopen(req,timeout=20) as r:data=r.read(4000000);ctype=r.headers.get('Content-Type')
-              print('SOURCE',url,ctype,len(data))
-              if '/api/models/Junior/' in url or url.endswith('.json') or url.endswith('/api/models') or url.endswith('/api/brands'):
-                try:
-                  d=json.loads(data)
-                  if '/swagger/' in url:print('SWAGGER',json.dumps(d)[:35000])
-                  else:print('API_ZLIB',url,base64.b64encode(zlib.compress(data)).decode())
-                except ValueError: print('NOT_JSON')
-              else:
-                import re
-                t=data.decode()
-                for pattern in ['application/ld+json','cars4ever','Forbrug','kWh','api/']:
-                  at=t.find(pattern);print('HIT',pattern,t[max(0,at-100):at+1100] if at>=0 else 'missing')
-            except Exception as e:print('SOURCE_ERROR',url,type(e).__name__,str(e))
+              url='https://pricelists-api.cars4ever.eu/api/models/'+urllib.parse.quote(code,safe='')+'/retail'
+              with urllib.request.urlopen(url,timeout=15) as r:data=r.read(3000000)
+              d=json.loads(data);ev=[e for e in d.get('engines',[]) if e.get('fuelType')=='el']
+              print('API',code,d.get('name'),len(d.get('variants',[])),len(ev))
+              if ev:print('API_ZLIB',code,base64.b64encode(zlib.compress(data)).decode())
+            except Exception as e:print('API_ERROR',code,str(e))
+          import urllib.parse
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:list(pool.map(probe,['A290','A390','GrandePanda','500e','e-C3','C3','e-208','208','e-2008','2008','Corsa','EV3','G6','Inster','Megane','Scenic','R5','R4']))
           PY
