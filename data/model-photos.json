@@ -4951,6 +4951,18 @@
       "status": "missing",
       "reviewed": false,
       "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "kia-e-soul-39-2-kwh-2019": {
+      "label": "Kia e-Soul 39,2 kWh (2019)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "kia-e-soul-64-kwh-2019": {
+      "label": "Kia e-Soul 64 kWh (2019)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
     }
   }
 }
