@@ -4016,6 +4016,441 @@
         "https://bil-portalen.dk/bil/audi/q4-sportback-e-tron|Q4 Sportback e-tron 150 kW (204 hk)"
       ],
       "discovered": "2026-10-25"
+    },
+    {
+      "slug": "audi-q6-sportback-e-tron-s-line-plus-185-kw-252-hk-2407c33c",
+      "brand": "Audi",
+      "model": "Q6 Sportback e-tron S line plus 185 kW (252 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/audi/q6-sportback-e-tron",
+          "primary_url": "https://ww4.audi.dk/priser/q6-sportback-e-tron/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 544990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/audi/q6-sportback-e-tron|Q6 Sportback e-tron S line plus 185 kW (252 hk)"
+      ]
+    },
+    {
+      "slug": "audi-rs-e-tron-gt-pro-500-kw-680-hk-ce71e289",
+      "brand": "Audi",
+      "model": "RS e-tron GT Pro 500 kW (680 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/audi/rs-e-tron-gt",
+          "primary_url": "https://ww4.audi.dk/priser/rs-e-tron-gt/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1377990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/audi/rs-e-tron-gt|RS e-tron GT Pro 500 kW (680 hk)"
+      ]
+    },
+    {
+      "slug": "audi-rs-e-tron-gt-performance-pro-550-kw-748-hk-1c77b535",
+      "brand": "Audi",
+      "model": "RS e-tron GT performance Pro 550 kW (748 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/audi/rs-e-tron-gt-performance",
+          "primary_url": "https://ww4.audi.dk/priser/rs-e-tron-gt-performance/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1537990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/audi/rs-e-tron-gt-performance|RS e-tron GT performance Pro 550 kW (748 hk)"
+      ]
+    },
+    {
+      "slug": "audi-s-e-tron-gt-pro-435-kw-591-hk-c86d016c",
+      "brand": "Audi",
+      "model": "S e-tron GT Pro 435 kW (591 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/audi/s-e-tron-gt",
+          "primary_url": "https://ww4.audi.dk/priser/s-e-tron-gt/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1117990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/audi/s-e-tron-gt|S e-tron GT Pro 435 kW (591 hk)"
+      ]
+    },
+    {
+      "slug": "audi-s6-avant-e-tron-quattro-370-kw-503-hk-395e6105",
+      "brand": "Audi",
+      "model": "S6 Avant e-tron quattro 370 kW (503 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/audi/s6-avant-e-tron",
+          "primary_url": "https://ww4.audi.dk/priser/s6-avant-e-tron/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 954990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/audi/s6-avant-e-tron|S6 Avant e-tron quattro 370 kW (503 hk)"
+      ]
+    },
+    {
+      "slug": "audi-sq6-e-tron-quattro-360-kw-490-hk-4ddf8aaf",
+      "brand": "Audi",
+      "model": "SQ6 e-tron quattro 360 kW (490 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/audi/sq6-e-tron",
+          "primary_url": "https://ww4.audi.dk/priser/sq6-e-tron/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 764990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/audi/sq6-e-tron|SQ6 e-tron quattro 360 kW (490 hk)"
+      ]
+    },
+    {
+      "slug": "bmw-i3-neue-klasse-i3-40-xdrive-active-9d66072e",
+      "brand": "BMW",
+      "model": "i3 (Neue Klasse) i3 40 xDrive Active",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/bmw/i3",
+          "primary_url": "https://kampagner.bmwservicepris.dk/bmw-kampagnepriser/?_serie=bmw-elbiler&_model=bmw-i3",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 490153,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/bmw/i3|i3 40 xDrive Active"
+      ]
+    },
+    {
+      "slug": "bmw-i5-m60-xdrive-fully-charged-483df0fb",
+      "brand": "BMW",
+      "model": "i5 M60 xDrive Fully Charged",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/bmw/i5-m60",
+          "primary_url": "https://kampagner.bmwservicepris.dk/bmw-kampagnepriser/?_serie=bmw-elbiler&_model=bmw-i5",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1039900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/bmw/i5-m60|i5 M60 xDrive Fully Charged"
+      ]
+    },
+    {
+      "slug": "bmw-i5-sedan-i5-edrive40-m-sport-83442f74",
+      "brand": "BMW",
+      "model": "i5 Sedan i5 eDrive40 M Sport",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/bmw/i5",
+          "primary_url": "https://kampagner.bmwservicepris.dk/bmw-kampagnepriser/?_serie=bmw-elbiler&_model=bmw-i5",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 544900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/bmw/i5|i5 eDrive40 M Sport"
+      ]
+    },
+    {
+      "slug": "bmw-ix3-neue-klasse-ix3-40-active-1847e3b5",
+      "brand": "BMW",
+      "model": "iX3 (Neue Klasse) iX3 40 Active",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/bmw/ix3-2026",
+          "primary_url": "https://kampagner.bmwservicepris.dk/bmw-kampagnepriser/?_serie=bmw-elbiler&_model=bmw-ix3",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 519900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/bmw/ix3-2026|iX3 40 Active"
+      ]
+    },
+    {
+      "slug": "bmw-ix4-40-xdrive-m-sport-deee3322",
+      "brand": "BMW",
+      "model": "iX4 40 xDrive M Sport",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/bmw/ix4",
+          "primary_url": "https://kampagner.bmwservicepris.dk/bmw-kampagnepriser/?_serie=bmw-elbiler&_model=bmw-ix4",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 672903,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/bmw/ix4|iX4 40 xDrive M Sport"
+      ]
+    },
+    {
+      "slug": "bmw-ix5-60-xdrive-active-bdda0537",
+      "brand": "BMW",
+      "model": "iX5 60 xDrive Active",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/bmw/ix5",
+          "primary_url": "https://kampagner.bmwservicepris.dk/bmw-kampagnepriser/?_serie=bmw-elbiler&_model=bmw-ix5",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 973903,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/bmw/ix5|iX5 60 xDrive Active"
+      ]
+    },
+    {
+      "slug": "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5",
+      "brand": "Citroën",
+      "model": "ë-Berlingo VTR Sport XL 136 EL (52 kWh, 7 sæder)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/citroen/e-berlingo",
+          "primary_url": "https://www.citroen.dk/information/prislister/ny-e-berlingo-priser_specs.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 309990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/citroen/e-berlingo|VTR Sport XL 136 EL (52 kWh, 7 sæder)"
+      ]
+    },
+    {
+      "slug": "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984",
+      "brand": "Citroën",
+      "model": "ë-SpaceTourer Business 75 kWh 136 EL (9 sæder)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/citroen/e-spacetourer",
+          "primary_url": "https://www.citroen.dk/information/prislister/e-spacetourer-priser-specs.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 464990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/citroen/e-spacetourer|Business 75 kWh 136 EL (9 sæder)"
+      ]
+    },
+    {
+      "slug": "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89",
+      "brand": "DS Automobiles",
+      "model": "N°8 Pallas 74 kWh 230 (FWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-26",
+      "indexable": false,
+      "modified": "2026-10-26",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/ds/n8",
+          "primary_url": "https://www.dsautomobiles.dk/information/prislister/prisliste-nr8.html",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 415000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/ds/n8|Pallas 74 kWh 230 (FWD)"
+      ]
     }
   ]
 }

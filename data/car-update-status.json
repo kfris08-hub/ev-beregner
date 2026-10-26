@@ -1,6 +1,38 @@
 {
-  "updated_models": [],
-  "new_models": [],
+  "updated_models": [
+    "audi-q6-sportback-e-tron-s-line-plus-185-kw-252-hk-2407c33c",
+    "audi-rs-e-tron-gt-performance-pro-550-kw-748-hk-1c77b535",
+    "audi-rs-e-tron-gt-pro-500-kw-680-hk-ce71e289",
+    "audi-s-e-tron-gt-pro-435-kw-591-hk-c86d016c",
+    "audi-s6-avant-e-tron-quattro-370-kw-503-hk-395e6105",
+    "audi-sq6-e-tron-quattro-360-kw-490-hk-4ddf8aaf",
+    "bmw-i3-neue-klasse-i3-40-xdrive-active-9d66072e",
+    "bmw-i5-m60-xdrive-fully-charged-483df0fb",
+    "bmw-i5-sedan-i5-edrive40-m-sport-83442f74",
+    "bmw-ix3-neue-klasse-ix3-40-active-1847e3b5",
+    "bmw-ix4-40-xdrive-m-sport-deee3322",
+    "bmw-ix5-60-xdrive-active-bdda0537",
+    "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5",
+    "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984",
+    "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89"
+  ],
+  "new_models": [
+    "audi-q6-sportback-e-tron-s-line-plus-185-kw-252-hk-2407c33c",
+    "audi-rs-e-tron-gt-pro-500-kw-680-hk-ce71e289",
+    "audi-rs-e-tron-gt-performance-pro-550-kw-748-hk-1c77b535",
+    "audi-s-e-tron-gt-pro-435-kw-591-hk-c86d016c",
+    "audi-s6-avant-e-tron-quattro-370-kw-503-hk-395e6105",
+    "audi-sq6-e-tron-quattro-360-kw-490-hk-4ddf8aaf",
+    "bmw-i3-neue-klasse-i3-40-xdrive-active-9d66072e",
+    "bmw-i5-m60-xdrive-fully-charged-483df0fb",
+    "bmw-i5-sedan-i5-edrive40-m-sport-83442f74",
+    "bmw-ix3-neue-klasse-ix3-40-active-1847e3b5",
+    "bmw-ix4-40-xdrive-m-sport-deee3322",
+    "bmw-ix5-60-xdrive-active-bdda0537",
+    "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5",
+    "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984",
+    "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89"
+  ],
   "unmatched_existing_variants": [
     {
       "family": "Audi Q4 e-tron",
@@ -384,7 +416,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-10-25T17:09:01.086782+00:00",
+  "checked_at": "2026-10-26T04:14:39.667557+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -408,8 +440,8 @@
     }
   ],
   "source_rejections": [],
-  "active_models": 196,
-  "automatically_priced_models": 57,
+  "active_models": 211,
+  "automatically_priced_models": 72,
   "legacy_models_without_automatic_price": 139,
-  "pending_indexing": 4
+  "pending_indexing": 19
 }
