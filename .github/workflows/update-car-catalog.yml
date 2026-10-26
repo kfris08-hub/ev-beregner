@@ -43,6 +43,7 @@ jobs:
       - name: Kontroller nye biler og centrale brugerforløb i Chrome
         run: |
           python tests/catalog_browser_checks.py
+          python tests/historical_browser_checks.py
           python tests/full_public_flows.py
       - name: Gem kun en godkendt opdatering
         id: commit
@@ -95,5 +96,5 @@ jobs:
               f.write('## Automatisk bilkontrol\n\n')
               f.write(f"Aktive varianter: {r['active_models']} · automatisk prisdækning: {r['automatically_priced_models']} · ældre varianter uden sikker priskobling: {r['legacy_models_without_automatic_price']}\n\n")
               for s in r['sources']:f.write(f"- {s['id']}: {s['status']} ({s.get('records',0)} varianter)\n")
-              f.write(f"\nNye varianter: {len(r['new_models'])}. Tilbageholdte prisændringer: {len(r['quarantine'])}. Ufuldstændige sider uden Google-indeksering: {r['pending_indexing']}.\n")
+              f.write(f"\nTidligere modeller: {r.get('historical_models',0)}. Nye varianter: {len(r['new_models'])}. Tilbageholdte prisændringer: {len(r['quarantine'])}. Ufuldstændige sider uden Google-indeksering: {r['pending_indexing']}.\n")
           PY

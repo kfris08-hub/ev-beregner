@@ -101,3 +101,17 @@ test('selected and removed cars are reflected in URLs used when reloading',()=>{
  h.run('removeSelectedCar()');assert.equal(h.run('selectedCar'),null);
  assert.equal(h.run('new URL(location.href).searchParams.has("car")'),false);h.cleanup();
 });
+
+for(const slug of ['kia-e-soul-39-2-kwh-2019','kia-e-soul-64-kwh-2019'])test('historical car '+slug+' uses documented consumption and requires a personal price',()=>{
+ const h=setup('home',{url:'https://www.evberegn.dk/?car='+slug});
+ assert.equal(h.run('historicalCar()'),true);assert.equal(h.run('autoValue("price")'),null);
+ h.run('openCalculator(2)');assert.equal(Number(h.elements.get('calc_consumption').value),slug.includes('39-2')?15.6:15.7);
+ h.run('openCalculator(14)');assert.equal(h.elements.get('calc_price').value,'');h.run('calculate()');assert.match(h.elements.get('answer').textContent,/gyldigt tal/);
+ for(let n=1;n<=20;n++){
+  h.run('openCalculator('+n+')');
+  for(const field of h.run('calculators[currentCalculator].fields')){const input=h.elements.get('calc_'+field[0]);if(input.value==='')input.value=field[3]==='price'?'120000':'60000';}
+  h.run('calculate()');assert.doesNotMatch(h.elements.get('answer').textContent,/NaN|Infinity|undefined/,'calculator '+n);
+ }
+ h.run('document.getElementById("search").value="KIA E SOUL";filterCars()');assert.match(h.elements.get('resultsInfo').textContent,/2 biler/);
+ h.cleanup();
+});
