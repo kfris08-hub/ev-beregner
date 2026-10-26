@@ -1,0 +1,41 @@
+name: Kontroller offentliggjorte tidligere modeller
+on:
+  push:
+    branches: [verify/historical-models-live]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Afvent det offentliggjorte katalog
+        run: |
+          python - <<'PY'
+          import json,time,urllib.request
+          wanted={'kia-e-soul-39-2-kwh-2019','kia-e-soul-64-kwh-2019'}
+          for attempt in range(18):
+            try:
+              with urllib.request.urlopen('https://www.evberegn.dk/data/cars.json?historiske='+str(attempt),timeout=15) as r:data=json.load(r)
+              found={m['slug'] for m in data['models'] if m.get('availability')=='discontinued' and m.get('price') is None}
+              if wanted<=found:print('Begge tidligere modeller er offentliggjort uden en opdigtet aktuel pris');break
+            except Exception:pass
+            time.sleep(10)
+          else:raise SystemExit('Det opdaterede katalog er endnu ikke offentliggjort')
+          PY
+      - name: Afprøv de rigtige modelsider og prisfelter
+        env:
+          HISTORICAL_PUBLIC: '1'
+        run: python tests/historical_browser_checks.py
+      - name: Kontroller hele den offentliggjorte hjemmesides links og metadata
+        run: python tests/full_public_crawl.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-historiske-modeller
+          path: test-results/
