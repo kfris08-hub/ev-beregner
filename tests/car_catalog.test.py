@@ -3,6 +3,8 @@ import copy, importlib.util, json, unittest
 from pathlib import Path
 from datetime import date
 ROOT=Path(__file__).parents[1]
+import sys
+sys.path.insert(0,str(ROOT/'tools'))
 spec=importlib.util.spec_from_file_location('updater',ROOT/'tools/update_car_catalog.py');up=importlib.util.module_from_spec(spec);spec.loader.exec_module(up)
 CONFIG=json.loads((ROOT/'data/car-sources.json').read_text());CATALOG=json.loads((ROOT/'data/cars.json').read_text());CATALOG['models']=[m for m in CATALOG['models'] if m['origin']=='existing'];TODAY=date(2026,10,25)
 class CatalogTests(unittest.TestCase):
@@ -78,4 +80,29 @@ class CatalogTests(unittest.TestCase):
    self.assertTrue((root/'test-results/car-update-status.json').is_file())
    self.assertFalse((root/'data/car-update-status.json').exists())
  def test_catalog_validates_existing_models(self):up.validate_catalog(CATALOG,CONFIG)
+class HistoricalCatalogTests(unittest.TestCase):
+ def history(self):return json.loads((ROOT/'data/historical-cars.json').read_text())
+ def test_historical_records_are_readded_and_idempotent(self):
+  from car_catalog import merge_historical
+  base=copy.deepcopy(CATALOG);first=merge_historical(base,self.history());second=merge_historical(first,self.history())
+  self.assertEqual(first,second);self.assertEqual(len(first['models']),len(base['models'])+2)
+  self.assertTrue(all(m['price'] is None for m in first['models'] if m['origin']=='historical'))
+ def test_current_price_record_cannot_overwrite_historical_data(self):
+  from car_catalog import merge_historical
+  before=merge_historical(CATALOG,self.history());m=before['models'][-1]
+  record={'source_id':'https://example.dk/model|64','bound_slug':m['slug'],'family':'Kia e-Soul','variant':'64 kWh','brand':'Kia','model':'e-Soul 64 kWh','values':{'price':250000,'consumption':99},'source':{'url':'https://example.dk/model','source_date':'2026-10-26','kind':'retail-api'}}
+  after,report=up.apply_records(before,[record],CONFIG,TODAY);self.assertEqual(before,after);self.assertFalse(report['updated_models'])
+ def test_historical_prices_and_nedc_range_are_rejected(self):
+  from car_catalog import merge_historical
+  for key,value in [('price',269999),('range_standard','NEDC')]:
+   history=self.history();history['models'][0][key]=value
+   with self.assertRaises(ValueError):merge_historical(CATALOG,history)
+ def test_charger_rating_is_not_vehicle_dc_peak_power(self):
+  for m in self.history()['models']:
+   self.assertIsNone(m['charging']);self.assertEqual(m['provenance']['consumption']['source_date'],'2019-05-03')
+   self.assertEqual(m['model_year'],2019)
+ def test_historical_records_do_not_match_current_variant_prices(self):
+  m=self.history()['models'][0]
+  record={'brand':'Kia','family':'Kia e-Soul','variant':'39,2 kWh (2019)'}
+  self.assertIsNone(up.exact_existing_variant(record,[m]))
 if __name__=='__main__':unittest.main()

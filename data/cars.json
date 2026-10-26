@@ -4451,6 +4451,88 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/ds/n8|Pallas 74 kWh 230 (FWD)"
       ]
+    },
+    {
+      "slug": "kia-e-soul-39-2-kwh-2019",
+      "brand": "Kia",
+      "model": "e-Soul 39,2 kWh (2019)",
+      "price": null,
+      "battery": 39.2,
+      "range": 276,
+      "consumption": 15.6,
+      "charging": null,
+      "status": "active",
+      "origin": "historical",
+      "availability": "discontinued",
+      "model_year": 2019,
+      "range_standard": "WLTP",
+      "indexable": true,
+      "modified": "2026-10-26",
+      "provenance": {
+        "battery": {
+          "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
+          "label": "Kia Import Danmark · lancering 2019",
+          "source_date": "2019-05-03",
+          "checked_at": "2026-10-26",
+          "kind": "historical-manufacturer"
+        },
+        "range": {
+          "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
+          "label": "Kia Import Danmark · lancering 2019",
+          "source_date": "2019-05-03",
+          "checked_at": "2026-10-26",
+          "kind": "historical-manufacturer"
+        },
+        "consumption": {
+          "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
+          "label": "Kia Import Danmark · lancering 2019",
+          "source_date": "2019-05-03",
+          "checked_at": "2026-10-26",
+          "kind": "historical-manufacturer"
+        }
+      },
+      "price_note": "Tidligere model fra 2019. Indtast din egen købspris i beregnerne."
+    },
+    {
+      "slug": "kia-e-soul-64-kwh-2019",
+      "brand": "Kia",
+      "model": "e-Soul 64 kWh (2019)",
+      "price": null,
+      "battery": 64,
+      "range": 452,
+      "consumption": 15.7,
+      "charging": null,
+      "status": "active",
+      "origin": "historical",
+      "availability": "discontinued",
+      "model_year": 2019,
+      "range_standard": "WLTP",
+      "indexable": true,
+      "modified": "2026-10-26",
+      "provenance": {
+        "battery": {
+          "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
+          "label": "Kia Import Danmark · lancering 2019",
+          "source_date": "2019-05-03",
+          "checked_at": "2026-10-26",
+          "kind": "historical-manufacturer"
+        },
+        "range": {
+          "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
+          "label": "Kia Import Danmark · lancering 2019",
+          "source_date": "2019-05-03",
+          "checked_at": "2026-10-26",
+          "kind": "historical-manufacturer"
+        },
+        "consumption": {
+          "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
+          "label": "Kia Import Danmark · lancering 2019",
+          "source_date": "2019-05-03",
+          "checked_at": "2026-10-26",
+          "kind": "historical-manufacturer"
+        }
+      },
+      "price_note": "Tidligere model fra 2019. Indtast din egen købspris i beregnerne."
     }
   ]
 }

@@ -39,6 +39,7 @@ jobs:
           python tests/browser_checks.py
           python tests/full_public_flows.py
           python tests/catalog_browser_checks.py
+          python tests/historical_browser_checks.py
       - name: Gem skærmbilleder og testresultater
         if: always()
         uses: actions/upload-artifact@v4

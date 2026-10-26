@@ -9,6 +9,7 @@ from datetime import date, datetime, timezone
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 import argparse, copy, hashlib, json, math, re, time, unicodedata
+from car_catalog import load_catalog
 ROOT=Path(__file__).parents[1]
 FIELDS=('price','battery','range','consumption','charging')
 BOUNDS={'price':(10000,20000000),'battery':(1,300),'range':(40,1500),'consumption':(3,80),'charging':(0,1000)}
@@ -32,6 +33,7 @@ def identity_terms(value,brand):
 def exact_existing_variant(record,models):
     candidates=[]
     for m in models:
+        if m.get('availability')=='discontinued':continue
         if normalize(m['brand'])!=normalize(record['brand']):continue
         if identity_terms(m['model'],m['brand'])!=identity_terms(record['family']+' '+record['variant'],record['brand']):continue
         battery=re.search(r'(\d+(?:[,.]\d+)?)\s*kWh',record['variant'],re.I)
@@ -135,13 +137,13 @@ def apply_records(catalog,records,config,today):
         key=record['source_id'];bound=record.get('bound_slug') or bindings.get(key)
         existing=by_source.get(key) or by_slug.get(bound)
         if existing is None and record['source']['kind']=='licensed-feed':existing=exact_existing_variant(record,list(by_slug.values()))
-        if existing and existing['slug'] in config['protected_slugs']:continue
+        if existing and (existing['slug'] in config['protected_slugs'] or existing.get('availability')=='discontinued'):continue
         label=record['brand']+' '+record['model']
         if any(normalize(block) in normalize(label) for block in config['blocked_names']):continue
         if existing is None:
             # A base-model price must not silently replace another trim. For a
             # represented family only a complete retail DTO may add variants.
-            family=normalize(record['family']);family_present=any(family in normalize(m['brand']+' '+m['model']) for m in by_slug.values())
+            family=normalize(record['family']);family_present=any(family in normalize(m['brand']+' '+m['model']) for m in by_slug.values() if m.get('availability')!='discontinued')
             if family_present and record['source']['kind']=='licensed-feed':
                 unmatched.append({'family':record['family'],'variant':record['variant'],'reason':'Different or unbound existing variant; old values preserved'});continue
             if len(new)>=limit:continue
@@ -191,7 +193,7 @@ def validate_catalog(data,config):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--fixture-dir',type=Path);args=parser.parse_args();today=date.today()
-    config=json.loads((ROOT/'data/car-sources.json').read_text());catalog=json.loads((ROOT/'data/cars.json').read_text());validate_catalog(catalog,config)
+    config=json.loads((ROOT/'data/car-sources.json').read_text());catalog=load_catalog(ROOT);validate_catalog(catalog,config)
     results=[];records=[];rejected=[]
     # Complete variant records take precedence over model-level price discovery.
     sources=[('retail-'+s['code'],s,retail_records) for s in config['retail_apis']]+[('bil-portalen',config['feed'],feed_records)]
@@ -201,7 +203,7 @@ def main():
             entries,bad=parse(raw,source,today);records+=entries;rejected+=bad;results.append({'id':identifier,'status':'ok','records':len(entries)})
         except Exception as exc:results.append({'id':identifier,'status':'error','error':str(exc)[:250]})
     candidate,report=apply_records(catalog,records,config,today);validate_catalog(candidate,config)
-    report.update(checked_at=datetime.now(timezone.utc).isoformat(),sources=results,source_rejections=rejected,active_models=len(candidate['models']),automatically_priced_models=sum(bool(m.get('source_ids')) for m in candidate['models']),legacy_models_without_automatic_price=sum(not m.get('source_ids') for m in candidate['models']),pending_indexing=sum(not m['indexable'] for m in candidate['models']))
+    report.update(checked_at=datetime.now(timezone.utc).isoformat(),sources=results,source_rejections=rejected,active_models=len(candidate['models']),automatically_priced_models=sum(bool(m.get('source_ids')) for m in candidate['models']),legacy_models_without_automatic_price=sum(not m.get('source_ids') and m.get('availability')!='discontinued' for m in candidate['models']),historical_models=sum(m.get('availability')=='discontinued' for m in candidate['models']),pending_indexing=sum(not m['indexable'] for m in candidate['models']))
     out=ROOT/'test-results';out.mkdir(exist_ok=True);(out/'car-update-status.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print('CAR_UPDATE_RESULT '+json.dumps({k:v for k,v in report.items() if k not in ('unmatched_existing_variants','source_rejections')},ensure_ascii=False))
     if not any(s['status']=='ok' for s in results):raise SystemExit('All car sources failed; live catalogue unchanged')

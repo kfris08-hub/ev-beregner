@@ -63,10 +63,11 @@
       for (const [inputName, carName] of Object.entries(keys)) {
         if (!field(inputName) || (preserveManual && dirtyFields.has(inputName))) continue;
         if (Number.isFinite(chosen[carName])) { field(inputName).value = chosen[carName]; inserted.push(inputName); }
-        else field(inputName).value = field(inputName).defaultValue;
+        else field(inputName).value = inputName === 'price' && chosen.availability === 'discontinued' ? '' : field(inputName).defaultValue;
       }
       const hasData = Object.entries(keys).some(([inputName, carName]) => field(inputName) && Number.isFinite(chosen[carName]));
       modelNote.textContent = hasData ? 'Bildata valgt. Ret tallene efter behov.' : 'Producentdata er ikke bekræftet. Tilpas eksempelværdierne.';
+      if (chosen.availability === 'discontinued') modelNote.textContent = 'Tidligere model (' + chosen.model_year + ').' + (field('price') ? ' Indtast egen købspris.' : ' Ret tallene efter behov.');
       if (id === 8) modelNote.textContent += ' Angiv selv gennemsnitlig ladeeffekt.';
     } else {
       for (const key of ['battery','consumption','price']) if (field(key) && !(preserveManual && dirtyFields.has(key))) field(key).value = field(key).defaultValue;

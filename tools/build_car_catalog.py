@@ -1,6 +1,7 @@
 """Render one shared catalogue into the existing design; retain historical URLs/photos."""
 from pathlib import Path
 import csv, html, io, json, re, xml.etree.ElementTree as ET
+from car_catalog import load_catalog
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk';FIELDS=('price','battery','range','consumption','charging')
 ESC=lambda s:html.escape(str(s),quote=True)
 
@@ -32,6 +33,7 @@ def source_details(m):
             detail='<a href="'+ESC(src['url'])+'" target="_blank" rel="noopener noreferrer">'+ESC(src['label'])+'</a> · '+ESC(src['source_date'])
             if src.get('primary_url'):detail+=' · <a href="'+ESC(src['primary_url'])+'" target="_blank" rel="noopener noreferrer">Producentens prisliste</a>'
             if src.get('license_url'):detail+=' · <a href="'+ESC(src['license_url'])+'">'+ESC(src['license'])+'</a>'
+        elif f=='price' and m.get('availability')=='discontinued':detail='Indtast din egen købspris.'
         else:detail='Kildedato mangler i det tidligere katalog.' if m.get(f) is not None else 'Ikke dokumenteret.'
         content+='<dt>'+labels[f]+'</dt><dd>'+detail+'</dd>'
     note='<p>Batteriets brutto-/nettobasis er ikke oplyst.</p>' if m.get('battery') is not None and not m.get('battery_basis') else ''
@@ -50,13 +52,19 @@ def render_model(m,models,photo):
         text=re.sub(r'<meta[^>]*property="og:image(?::(?:width|height|alt))?"[^>]*>','',text)
         placeholder='<div class="visual photo-wrap"><img alt="'+ESC(label)+' – modelbillede" decoding="async" id="carPhoto" style="display:none"><div class="photo-loading" id="photoLoading">Vi mangler et kontrolleret modelbillede.</div></div><div class="photo-credit" id="photoCredit"></div>'
         text=re.sub(r'<div class="visual photo-wrap">.*?<div class="photo-credit" id="photoCredit">.*?</div>',lambda _:placeholder,text,count=1,flags=re.S)
+    historical=m.get('availability')=='discontinued'
+    text=re.sub(r'<p class="note" id="historicalModelNotice">.*?</p>','',text,flags=re.S)
+    if historical:
+        notice='<p class="note" id="historicalModelNotice">Tidligere model · '+str(m['model_year'])+'. Indtast egen købspris i beregnerne.</p>'
+        text=text.replace('</h1>','</h1>'+notice,1)
     title=label+' – pris, rækkevidde og økonomi | EV Beregner'
-    description=label+': pris '+(fmt(m['price'])+' kr.' if m['price'] is not None else 'ikke oplyst')
+    description=label+': pris '+(fmt(m['price'])+' kr.' if m['price'] is not None else 'egen købspris' if historical else 'ikke oplyst')
     description+=', WLTP '+(fmt(m['range'])+' km' if m['range'] is not None else 'ikke oplyst')
     description+=' og forbrug '+(fmt(m['consumption'],1)+' kWh/100 km' if m['consumption'] is not None else 'ikke oplyst')+'. Beregn strømudgift og sammenlign med benzin og diesel.'
+    if historical:description=label+': WLTP '+fmt(m['range'])+' km og forbrug '+fmt(m['consumption'],1)+' kWh/100 km. Beregn økonomien med din egen købspris.'
     text=re.sub(r'<title>.*?</title>',lambda _:'<title>'+ESC(title)+'</title>',text,count=1,flags=re.S)
     for key,value in [('description',description),('og:description',description),('og:title',label+' – pris og økonomi'),('og:url',BASE+'/elbil/'+m['slug']+'/'),('robots','index, follow' if m['indexable'] else 'noindex, follow')]:text=meta(text,key,value)
-    stats=[('Pris',fmt(m['price'])+' kr.' if m['price'] is not None else 'Ikke oplyst'),('Batteri (brutto)' if m.get('battery_basis')=='gross' else 'Batteri',fmt(m['battery'],1)+' kWh' if m['battery'] is not None else 'Ikke oplyst'),('WLTP',fmt(m['range'])+' km' if m['range'] is not None else 'Ikke oplyst'),('Forbrug (kWh/100 km)',fmt(m['consumption'],1)),('DC-ladning',fmt(m['charging'])+' kW' if m['charging'] is not None else 'Ikke oplyst')]
+    stats=[('Pris',fmt(m['price'])+' kr.' if m['price'] is not None else 'Egen købspris' if historical else 'Ikke oplyst'),('Batteri (brutto)' if m.get('battery_basis')=='gross' else 'Batteri',fmt(m['battery'],1)+' kWh' if m['battery'] is not None else 'Ikke oplyst'),('WLTP',fmt(m['range'])+' km' if m['range'] is not None else 'Ikke oplyst'),('Forbrug (kWh/100 km)',fmt(m['consumption'],1)),('DC-ladning',fmt(m['charging'])+' kW' if m['charging'] is not None else 'Ikke oplyst')]
     grid='<div class="grid">'+''.join('<div class="stat"><small>'+ESC(a)+'</small><strong>'+ESC(b)+'</strong></div>' for a,b in stats)+'</div>'
     text,n=re.subn(r'<div class="grid">(?:<div class="stat">.*?</div>){5}</div>',lambda _:grid,text,count=1,flags=re.S);assert n==1,m['slug']
     text=re.sub(r'<p class="photo-credit">Kilde.*?</p>','',text,flags=re.S)
@@ -85,11 +93,15 @@ def render_model(m,models,photo):
     write(path,text)
 
 def build():
-    catalog=json.loads((ROOT/'data/cars.json').read_text());models=[m for m in catalog['models'] if m['status']=='active'];count=len(models)
+    catalog=load_catalog(ROOT);write(ROOT/'data/cars.json',json.dumps(catalog,ensure_ascii=False,indent=2)+'\n');models=[m for m in catalog['models'] if m['status']=='active'];count=len(models)
     home=(ROOT/'index.html').read_text();rows=[[m['brand'],m['model'],*[m[f] for f in FIELDS]] for m in models]
     home=re.sub(r'(const cars=)\[.*?\](; let selectedCar=)',lambda m:m[1]+json.dumps(rows,ensure_ascii=False,separators=(',',':'))+m[2],home,count=1,flags=re.S)
     slugs={m['brand']+'|||'+m['model']:m['slug'] for m in models}
     home=re.sub(r'(const modelSlugs=)\{.*?\}(;)',lambda m:m[1]+json.dumps(slugs,ensure_ascii=False,separators=(',',':'))+m[2],home,count=1,flags=re.S)
+    historical={m['slug']:m['model_year'] for m in models if m.get('availability')=='discontinued'}
+    marker='const historicalModels='+json.dumps(historical,ensure_ascii=False,separators=(',',':'))+';'
+    if 'const historicalModels=' in home:home=re.sub(r'const historicalModels=\{.*?\};',lambda _:marker,home,count=1)
+    else:home=re.sub(r'(const modelSlugs=\{.*?\};)',lambda x:x[1]+'\n'+marker,home,count=1,flags=re.S)
     home=re.sub(r'\d+ aktuelle elbiler · brug søgning eller filtre',str(count)+' elbiler · brug søgning eller filtre',home)
     home=re.sub(r'\d+ elbiler · brug søgning eller filtre',str(count)+' elbiler · brug søgning eller filtre',home)
     home=re.sub(r'Biloversigten omfatter \d+ modeller/prisvarianter',f'Biloversigten omfatter {count} modeller/prisvarianter',home)
@@ -98,7 +110,7 @@ def build():
         home=home.replace('<div class="details-content">','<div class="details-content"><p class="muted" id="automaticCatalogSource">Bilpriser kontrolleres automatisk dagligt for de tilsluttede datakilder. Kilder og datoer står på modelsiderne; manglende dækning betyder, at ældre oplysninger kan være bevaret.</p>',1)
     write(ROOT/'index.html',home)
     buffer=io.StringIO(newline='');csv.writer(buffer,delimiter=';').writerows([['Mærke','Model/variant','Pris DKK','Batteri kWh','WLTP km','Forbrug kWh/100 km','DC kW'],*rows]);write(ROOT/'bil-data-komplet.csv','\ufeff'+buffer.getvalue())
-    presets=[{'slug':m['slug'],'label':m['brand']+' '+m['model'],**{f:m[f] for f in FIELDS}} for m in models]
+    presets=[{'slug':m['slug'],'label':m['brand']+' '+m['model'],**{f:m[f] for f in FIELDS},**({k:m[k] for k in ('availability','model_year')} if m.get('availability')=='discontinued' else {})} for m in models]
     write(ROOT/'assets/calculator-cars.json',json.dumps({'models':presets},ensure_ascii=False,separators=(',',':'))+'\n')
     manifest=json.loads((ROOT/'data/model-photos.json').read_text())
     for m in models:
@@ -112,7 +124,7 @@ def build():
     for b in brands:
         sections+='<section class="brand" id="'+ident(b)+'"><h2>'+ESC(b)+'</h2><div class="list">'
         for m in sorted([x for x in models if x['brand']==b],key=lambda m:m['model'].casefold()):
-            values=[fmt(m['price'])+(' kr.' if m['price'] is not None else ''),fmt(m['range'])+(' km' if m['range'] is not None else ''),fmt(m['consumption'],1)+(' kWh/100 km' if m['consumption'] is not None else '')]
+            values=[('Egen købspris' if m.get('availability')=='discontinued' and m['price'] is None else fmt(m['price'])+(' kr.' if m['price'] is not None else '')),fmt(m['range'])+(' km' if m['range'] is not None else ''),fmt(m['consumption'],1)+(' kWh/100 km' if m['consumption'] is not None else '')]
             sections+='<a class="car" href="/elbil/'+m['slug']+'/"><b>'+ESC(m['brand']+' '+m['model'])+'</b><span>'+ESC(' · '.join(values))+'</span></a>'
         sections+='</div></section>'
     overview=re.sub(r'<nav class="brandnav".*?</main>',lambda _:nav+sections+'</main>',overview,count=1,flags=re.S)
