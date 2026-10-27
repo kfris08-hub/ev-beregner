@@ -1,37 +1,37 @@
 {
   "updated_models": [
-    "audi-q6-sportback-e-tron-s-line-plus-185-kw-252-hk-2407c33c",
-    "audi-rs-e-tron-gt-performance-pro-550-kw-748-hk-1c77b535",
-    "audi-rs-e-tron-gt-pro-500-kw-680-hk-ce71e289",
-    "audi-s-e-tron-gt-pro-435-kw-591-hk-c86d016c",
-    "audi-s6-avant-e-tron-quattro-370-kw-503-hk-395e6105",
-    "audi-sq6-e-tron-quattro-360-kw-490-hk-4ddf8aaf",
-    "bmw-i3-neue-klasse-i3-40-xdrive-active-9d66072e",
-    "bmw-i5-m60-xdrive-fully-charged-483df0fb",
-    "bmw-i5-sedan-i5-edrive40-m-sport-83442f74",
-    "bmw-ix3-neue-klasse-ix3-40-active-1847e3b5",
-    "bmw-ix4-40-xdrive-m-sport-deee3322",
-    "bmw-ix5-60-xdrive-active-bdda0537",
-    "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5",
-    "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984",
-    "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89"
+    "exlantix-et-advanced-el-313-hk-rwd-74-7-kwh-netto-d0954ae4",
+    "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff",
+    "ford-mustang-mach-e-gt-awd-extended-range-91-kwh-a3ab22eb",
+    "gac-aion-ut-city-44-kwh-lfp-292db36f",
+    "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1",
+    "hyundai-ioniq-3-standard-range-42-2-kwh-147-hk-select-174c43ca",
+    "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd",
+    "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9",
+    "kia-ev6-gt-long-range-performance-84-kwh-awd-242cd29e",
+    "kia-ev9-gt-line-long-range-performance-99-8-kwh-awd-e053e919",
+    "kia-ev9-gt-long-range-performance-99-8-kwh-awd-e9afb03b",
+    "kia-pv5-passenger-access-standard-range-51-5-kwh-fwd-ad4cd2e9",
+    "leapmotor-b03x-life-39-8-kwh-fwd-a5ce734c",
+    "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5",
+    "lexus-tz-450e-executive-a7841a40"
   ],
   "new_models": [
-    "audi-q6-sportback-e-tron-s-line-plus-185-kw-252-hk-2407c33c",
-    "audi-rs-e-tron-gt-pro-500-kw-680-hk-ce71e289",
-    "audi-rs-e-tron-gt-performance-pro-550-kw-748-hk-1c77b535",
-    "audi-s-e-tron-gt-pro-435-kw-591-hk-c86d016c",
-    "audi-s6-avant-e-tron-quattro-370-kw-503-hk-395e6105",
-    "audi-sq6-e-tron-quattro-360-kw-490-hk-4ddf8aaf",
-    "bmw-i3-neue-klasse-i3-40-xdrive-active-9d66072e",
-    "bmw-i5-m60-xdrive-fully-charged-483df0fb",
-    "bmw-i5-sedan-i5-edrive40-m-sport-83442f74",
-    "bmw-ix3-neue-klasse-ix3-40-active-1847e3b5",
-    "bmw-ix4-40-xdrive-m-sport-deee3322",
-    "bmw-ix5-60-xdrive-active-bdda0537",
-    "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5",
-    "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984",
-    "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89"
+    "exlantix-et-advanced-el-313-hk-rwd-74-7-kwh-netto-d0954ae4",
+    "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff",
+    "ford-mustang-mach-e-gt-awd-extended-range-91-kwh-a3ab22eb",
+    "gac-aion-ut-city-44-kwh-lfp-292db36f",
+    "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1",
+    "hyundai-ioniq-3-standard-range-42-2-kwh-147-hk-select-174c43ca",
+    "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd",
+    "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9",
+    "kia-ev6-gt-long-range-performance-84-kwh-awd-242cd29e",
+    "kia-ev9-gt-long-range-performance-99-8-kwh-awd-e9afb03b",
+    "kia-ev9-gt-line-long-range-performance-99-8-kwh-awd-e053e919",
+    "kia-pv5-passenger-access-standard-range-51-5-kwh-fwd-ad4cd2e9",
+    "leapmotor-b03x-life-39-8-kwh-fwd-a5ce734c",
+    "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5",
+    "lexus-tz-450e-executive-a7841a40"
   ],
   "unmatched_existing_variants": [
     {
@@ -416,7 +416,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-10-26T04:14:39.667557+00:00",
+  "checked_at": "2026-10-27T04:13:36.672087+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -440,8 +440,9 @@
     }
   ],
   "source_rejections": [],
-  "active_models": 211,
-  "automatically_priced_models": 72,
+  "active_models": 228,
+  "automatically_priced_models": 87,
   "legacy_models_without_automatic_price": 139,
-  "pending_indexing": 19
+  "historical_models": 2,
+  "pending_indexing": 34
 }

@@ -4533,6 +4533,441 @@
         }
       },
       "price_note": "Tidligere model fra 2019. Indtast din egen købspris i beregnerne."
+    },
+    {
+      "slug": "exlantix-et-advanced-el-313-hk-rwd-74-7-kwh-netto-d0954ae4",
+      "brand": "Exlantix",
+      "model": "ET Advanced EL 313 hk RWD (74,7 kWh netto)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/exlantix/et",
+          "primary_url": "https://exlantix.dk/priser-og-specifikationer/et/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 399990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/exlantix/et|Advanced EL 313 hk RWD (74,7 kWh netto)"
+      ]
+    },
+    {
+      "slug": "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff",
+      "brand": "Ford",
+      "model": "E-Tourneo Custom Titanium RWD kort (L1)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/ford/e-tourneo-custom",
+          "primary_url": "https://katalog.ford.dk/prislister/personbiler/tourneo-custom/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 359995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/ford/e-tourneo-custom|E-Tourneo Custom Titanium RWD kort (L1)"
+      ]
+    },
+    {
+      "slug": "ford-mustang-mach-e-gt-awd-extended-range-91-kwh-a3ab22eb",
+      "brand": "Ford",
+      "model": "Mustang Mach-E GT AWD Extended Range (91 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/ford/mustang-mach-e-gt",
+          "primary_url": "https://katalog.ford.dk/prislister/personbiler/mustang-mach-e/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 474990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/ford/mustang-mach-e-gt|Mustang Mach-E GT AWD Extended Range (91 kWh)"
+      ]
+    },
+    {
+      "slug": "gac-aion-ut-city-44-kwh-lfp-292db36f",
+      "brand": "GAC",
+      "model": "AION UT City (44 kWh LFP)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/gac/aion-ut",
+          "primary_url": "https://cdn.prod.website-files.com/6a731be76755cb3116adf7a4/6ab2de73b7dbe2cd54c4a415_GAC_UT_prisliste_DK_23.09.2026.pdf",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 159990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/gac/aion-ut|City (44 kWh LFP)"
+      ]
+    },
+    {
+      "slug": "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1",
+      "brand": "Hongqi",
+      "model": "EHS7 Premium 344 hk 2WD (81,6 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/hongqi/ehs7",
+          "primary_url": "https://hongqi.dk/priser-og-specifikationer/ehs7/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 369990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/hongqi/ehs7|Premium 344 hk 2WD (81,6 kWh)"
+      ]
+    },
+    {
+      "slug": "hyundai-ioniq-3-standard-range-42-2-kwh-147-hk-select-174c43ca",
+      "brand": "Hyundai",
+      "model": "IONIQ 3 Standard Range 42,2 kWh 147 hk Select",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/hyundai/ioniq-3",
+          "primary_url": "https://katalog.hyundai.dk/NicChristiansenGruppen/Hyundai/Specifikationer/ioniq-3/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 209995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/hyundai/ioniq-3|Standard Range 42,2 kWh 147 hk Select"
+      ]
+    },
+    {
+      "slug": "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd",
+      "brand": "JAC",
+      "model": "E30X Green City 40 (41 kWh LFP)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/jac/e30x",
+          "primary_url": "https://cdn.sanity.io/files/mcx434c9/production/67235aec3daa1082d4d8c433c43a61a4efe636f6.pdf",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 174995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/jac/e30x|Green City 40 (41 kWh LFP)"
+      ]
+    },
+    {
+      "slug": "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9",
+      "brand": "Kia",
+      "model": "EV4 Fastback Prestige Long Range (81,4 kWh, FWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/kia/ev4-fastback",
+          "primary_url": "https://api.kiaonline.dk/dokumenter/ev4-fastback-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 329999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/kia/ev4-fastback|EV4 Fastback Prestige Long Range (81,4 kWh, FWD)"
+      ]
+    },
+    {
+      "slug": "kia-ev6-gt-long-range-performance-84-kwh-awd-242cd29e",
+      "brand": "Kia",
+      "model": "EV6 GT Long Range Performance (84 kWh, AWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/kia/ev6-gt-2026",
+          "primary_url": "https://api.kiaonline.dk/dokumenter/ev6-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 474999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/kia/ev6-gt-2026|EV6 GT Long Range Performance (84 kWh, AWD)"
+      ]
+    },
+    {
+      "slug": "kia-ev9-gt-long-range-performance-99-8-kwh-awd-e9afb03b",
+      "brand": "Kia",
+      "model": "EV9 GT Long Range Performance (99,8 kWh, AWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/kia/ev9-gt",
+          "primary_url": "https://api.kiaonline.dk/dokumenter/ev9-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 799999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/kia/ev9-gt|EV9 GT Long Range Performance (99,8 kWh, AWD)"
+      ]
+    },
+    {
+      "slug": "kia-ev9-gt-line-long-range-performance-99-8-kwh-awd-e053e919",
+      "brand": "Kia",
+      "model": "EV9 GT-Line Long Range Performance (99,8 kWh, AWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/kia/ev9-gt-line",
+          "primary_url": "https://api.kiaonline.dk/dokumenter/ev9-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 699999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/kia/ev9-gt-line|EV9 GT-Line Long Range Performance (99,8 kWh, AWD)"
+      ]
+    },
+    {
+      "slug": "kia-pv5-passenger-access-standard-range-51-5-kwh-fwd-ad4cd2e9",
+      "brand": "Kia",
+      "model": "PV5 Passenger Access Standard Range (51,5 kWh, FWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/kia/pv5-passenger",
+          "primary_url": "https://api.kiaonline.dk/dokumenter/pv5-passenger-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 279999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/kia/pv5-passenger|PV5 Passenger Access Standard Range (51,5 kWh, FWD)"
+      ]
+    },
+    {
+      "slug": "leapmotor-b03x-life-39-8-kwh-fwd-a5ce734c",
+      "brand": "Leapmotor",
+      "model": "B03X Life 39,8 kWh FWD",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/leapmotor/b03x",
+          "primary_url": "https://leapmotor.dk/priser-og-specifikationer/b03x/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 149990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/leapmotor/b03x|Life 39,8 kWh FWD"
+      ]
+    },
+    {
+      "slug": "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5",
+      "brand": "Leapmotor",
+      "model": "B05 Life 56,2 kWh RWD",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/leapmotor/b05",
+          "primary_url": "https://leapmotor.dk/priser-og-specifikationer/b05/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 179990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/leapmotor/b05|Life 56,2 kWh RWD"
+      ]
+    },
+    {
+      "slug": "lexus-tz-450e-executive-a7841a40",
+      "brand": "Lexus",
+      "model": "TZ 450e Executive",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-10-27",
+      "indexable": false,
+      "modified": "2026-10-27",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/lexus/tz",
+          "primary_url": "https://www.lexus.dk/content/dam/lexus/nmsc/denmark/documents/Lexus-TZ-PrislisteOGPrivatleasing.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 649500,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/lexus/tz|TZ 450e Executive"
+      ]
     }
   ]
 }
