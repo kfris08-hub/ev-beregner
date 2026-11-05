@@ -1,0 +1,42 @@
+name: Kontroller reparation af bilopdatering
+on:
+  push:
+    branches: [fix/mobile-catalog-20261105]
+permissions:
+  contents: read
+jobs:
+  prospective-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prøveopdater katalog uden udgivelse
+        run: |
+          python tools/update_car_catalog.py
+          python tools/build_car_catalog.py
+          python tools/build_calculator_pages.py
+      - name: Kontroller data og alle beregnere
+        run: |
+          python tests/car_catalog.test.py
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - run: python -m pip install playwright==1.56.0
+      - name: Gentag alle browsertests fra den daglige opdatering
+        run: |
+          python tests/catalog_browser_checks.py
+          python tests/historical_browser_checks.py
+          python tests/full_public_flows.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: repareret-katalog-test
+          path: test-results/
