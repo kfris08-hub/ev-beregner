@@ -1,92 +1,83 @@
 name: Opdater braendstofpriser
-
 on:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '11 * * * *'
   workflow_dispatch:
-
 permissions:
   contents: write
-
+  pages: write
 concurrency:
   group: site-data-updates
   cancel-in-progress: false
-
 jobs:
   update:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-
-      - name: Hent seneste benzin- og dieselpris
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Hent aktuelle standard-pumpepriser fra OK
+        run: python tools/update_fuel_prices.py
+      - name: Opdater samme prisgrundlag i HTML og data
+        run: |
+          python tools/build_car_catalog.py
+          python tools/build_calculator_pages.py
+      - name: Kontroller datakilde, priser, metadata og alle beregnere
+        run: |
+          python tests/fuel_prices.test.py
+          python tests/fuel_snapshot_checks.py
+          node tests/fuel_prices.test.cjs
+          python tests/car_catalog.test.py
+          python tests/sitemap_freshness_checks.py
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller forsiden, modelsider, egne priser og fejl
+        run: python tests/fuel_browser_checks.py
+      - name: Gem kontrollerede pumpepriser og sider
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/fuel-prices.json data/cars.json data/model-photos.json index.html elbil/ assets/calculator-cars.json bil-data-komplet.csv sitemap.xml beregnere/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Opdater gennemsnit af faktiske OK-pumpepriser'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Udgiv den kontrollerede opdatering
+        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+      - name: Bekræft offentliggørelse af det nye prisgrundlag
+        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
         run: |
           python - <<'PY2'
-          import urllib.request,re,json,datetime,pathlib
-
-          url='https://www.drivkraftdanmark.dk/priser-og-forbrug/'
-          req=urllib.request.Request(
-              url,
-              headers={'User-Agent':'Mozilla/5.0 EVBeregner/1.0'}
-          )
-
-          html=urllib.request.urlopen(
-              req,
-              timeout=30
-          ).read().decode('utf-8','ignore')
-
-          text=re.sub(r'<[^>]+>',' ',html)
-          text=re.sub(r'\s+',' ',text)
-
-          def find(label):
-              m=re.search(
-                  label+r'.{0,160}?([0-9]{1,2}[,.][0-9]{2})',
-                  text,
-                  re.I
-              )
-              if not m:
-                  raise RuntimeError('Kunne ikke finde '+label)
-
-              return float(
-                  m.group(1).replace(',','.')
-              )
-
-          petrol=find('Benzin')
-          diesel=find('Diesel')
-
-          p=pathlib.Path('data/fuel-prices.json')
-
-          now=datetime.datetime.now(
-              datetime.timezone.utc
-          ).astimezone().isoformat(timespec='minutes')
-
-          out={
-              'petrol95':petrol,
-              'diesel':diesel,
-              'source_date':datetime.date.today().isoformat(),
-              'updated':now,
-              'source':'Drivkraft Danmark'
-          }
-
-          p.parent.mkdir(exist_ok=True)
-
-          p.write_text(
-              json.dumps(
-                  out,
-                  ensure_ascii=False,
-                  indent=2
-              )+'\n'
-          )
-
-          print(out)
+          import json,os,time,urllib.request
+          expected=json.load(open('data/fuel-prices.json'))['checked_at']
+          for attempt in range(18):
+            url='https://www.evberegn.dk/data/fuel-prices.json?build='+os.environ['GITHUB_RUN_ID']+'-'+str(attempt)
+            try:
+              with urllib.request.urlopen(url,timeout=15) as r:published=json.load(r)
+              if published.get('checked_at')==expected and published.get('price_type')=='pump_average':
+                print('De kontrollerede pumpepriser er offentliggjort');break
+            except Exception:pass
+            time.sleep(10)
+          else:raise SystemExit('Prisopdateringen er ikke bekræftet på den offentlige hjemmeside')
           PY2
-
-      - name: Gem hvis priserne er aendret
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/fuel-prices.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Opdater automatiske braendstofpriser"
-          git push
-
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pumpepris-kontrol
+          path: test-results/

@@ -16,6 +16,9 @@ jobs:
           node-version: '22'
       - name: Kontroller metadata, sitemap og links
         run: |
+          python3 tests/fuel_prices.test.py
+          python3 tests/fuel_snapshot_checks.py
+          node tests/fuel_prices.test.cjs
           python3 tests/car_catalog.test.py
           python tests/sitemap_freshness_checks.py
           python3 tests/seo_checks.py
@@ -41,6 +44,7 @@ jobs:
           python tests/full_public_flows.py
           python tests/catalog_browser_checks.py
           python tests/historical_browser_checks.py
+          python tests/fuel_browser_checks.py
       - name: Gem skærmbilleder og testresultater
         if: always()
         uses: actions/upload-artifact@v4

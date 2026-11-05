@@ -121,10 +121,10 @@
     if (field('fuelPrice')) tasks.push((async () => {
       try {
         const data = await core.fetchJSON('/data/fuel-prices.json', { cache: 'no-cache' });
-        const value = core.number(data.petrol95); if (!Number.isFinite(value) || value < 0) throw new Error('invalid');
+        const snapshot = core.fuelPrices(data), value = snapshot.petrol95;
         if (token !== requestToken || dirtyPrices.has('fuelPrice')) return;
         field('fuelPrice').value = value.toFixed(2);
-        fuelStatus = 'Benzin: ' + (data.source || 'markedspris') + (data.source_date ? ' · ' + data.source_date : '') + '.';
+        fuelStatus = 'Benzin: ' + core.fuelLabel(data, 'petrol95') + '.';
       } catch (_) { if (token === requestToken && !dirtyPrices.has('fuelPrice')) fuelStatus = 'Benzinprisen kunne ikke hentes. Brug din egen pris.'; }
     })());
     await Promise.allSettled(tasks);
