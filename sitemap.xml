@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.evberegn.dk/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/opel-rocks-electric-rocks-electric/</loc>
@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/peugeot-e-2008-e-2008-vision/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <image:image>
       <image:loc>https://www.evberegn.dk/assets/cars/peugeot-e-2008-e-2008-vision-403058f873f6.webp</image:loc>
     </image:image>
@@ -1297,7 +1297,7 @@
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/peugeot-e-208-gt-pack-el-156-54-kwh-aeea4f65/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/peugeot-e-208-prestige-el-156-54-kwh-e73303cd/</loc>
@@ -1309,7 +1309,7 @@
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/peugeot-e-2008-gt-el-156-54-kwh-59333caf/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/peugeot-e-2008-gt-sky-el-156-54-kwh-6ff5e04f/</loc>
@@ -1317,7 +1317,7 @@
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/peugeot-e-2008-style-el-136-50-kwh-ab81ad96/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/elbil/kia-e-soul-39-2-kwh-2019/</loc>
@@ -1326,6 +1326,10 @@
   <url>
     <loc>https://www.evberegn.dk/elbil/kia-e-soul-64-kwh-2019/</loc>
     <lastmod>2026-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.evberegn.dk/elbil/peugeot-e-2008-gt-white-edition-el-156-54-kwh-2ac142d9/</loc>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://www.evberegn.dk/beregnere/ladepris/</loc>

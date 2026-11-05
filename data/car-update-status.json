@@ -1,37 +1,41 @@
 {
   "updated_models": [
-    "exlantix-et-advanced-el-313-hk-rwd-74-7-kwh-netto-d0954ae4",
-    "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff",
-    "ford-mustang-mach-e-gt-awd-extended-range-91-kwh-a3ab22eb",
-    "gac-aion-ut-city-44-kwh-lfp-292db36f",
-    "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1",
-    "hyundai-ioniq-3-standard-range-42-2-kwh-147-hk-select-174c43ca",
-    "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd",
-    "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9",
-    "kia-ev6-gt-long-range-performance-84-kwh-awd-242cd29e",
-    "kia-ev9-gt-line-long-range-performance-99-8-kwh-awd-e053e919",
-    "kia-ev9-gt-long-range-performance-99-8-kwh-awd-e9afb03b",
-    "kia-pv5-passenger-access-standard-range-51-5-kwh-fwd-ad4cd2e9",
-    "leapmotor-b03x-life-39-8-kwh-fwd-a5ce734c",
-    "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5",
-    "lexus-tz-450e-executive-a7841a40"
+    "lotus-eletre-600-indstigningsversion-109-kwh-netto-awd-38a55ea4",
+    "lotus-emeya-600-gt-indstigningsversion-i-dk-98-9-kwh-netto-awd-43b77d74",
+    "mazda-mazda6e-takumi-258-hk-68-8-kwh-9af15f58",
+    "mercedes-benz-amg-cla-45-4matic-plus-mercedes-amg-cla-45-4matic-plus-sedan-b40893e7",
+    "mercedes-benz-amg-gt-4-dors-coupe-elektrisk-mercedes-amg-gt-53-4-dors-coupe-2283888a",
+    "mercedes-benz-c-klasse-elektrisk-c-300-4matic-electric-0765353a",
+    "mercedes-benz-cla-shooting-brake-with-eq-technology-cla-200-shooting-brake-advance-edition-d21b29a0",
+    "mercedes-benz-cla-with-eq-technology-cla-200-advance-edition-887b6d42",
+    "mercedes-benz-eqe-sedan-eqe-350-plus-amg-edition-b63641df",
+    "mercedes-benz-eqs-450-plus-ff9dbef1",
+    "mercedes-benz-eqs-suv-450-plus-04aa0b45",
+    "mercedes-benz-g-580-med-eq-teknologi-g-580-electric-amg-edition-1c31082b",
+    "mercedes-benz-gla-elektrisk-gla-200-electric-5f5e46a1",
+    "mercedes-benz-glb-elektrisk-glb-200-6793ca7c",
+    "peugeot-e-2008-e-2008-vision",
+    "peugeot-e-2008-gt-el-156-54-kwh-59333caf",
+    "peugeot-e-2008-gt-white-edition-el-156-54-kwh-2ac142d9",
+    "peugeot-e-2008-style-el-136-50-kwh-ab81ad96",
+    "peugeot-e-208-gt-pack-el-156-54-kwh-aeea4f65"
   ],
   "new_models": [
-    "exlantix-et-advanced-el-313-hk-rwd-74-7-kwh-netto-d0954ae4",
-    "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff",
-    "ford-mustang-mach-e-gt-awd-extended-range-91-kwh-a3ab22eb",
-    "gac-aion-ut-city-44-kwh-lfp-292db36f",
-    "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1",
-    "hyundai-ioniq-3-standard-range-42-2-kwh-147-hk-select-174c43ca",
-    "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd",
-    "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9",
-    "kia-ev6-gt-long-range-performance-84-kwh-awd-242cd29e",
-    "kia-ev9-gt-long-range-performance-99-8-kwh-awd-e9afb03b",
-    "kia-ev9-gt-line-long-range-performance-99-8-kwh-awd-e053e919",
-    "kia-pv5-passenger-access-standard-range-51-5-kwh-fwd-ad4cd2e9",
-    "leapmotor-b03x-life-39-8-kwh-fwd-a5ce734c",
-    "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5",
-    "lexus-tz-450e-executive-a7841a40"
+    "peugeot-e-2008-gt-white-edition-el-156-54-kwh-2ac142d9",
+    "lotus-eletre-600-indstigningsversion-109-kwh-netto-awd-38a55ea4",
+    "lotus-emeya-600-gt-indstigningsversion-i-dk-98-9-kwh-netto-awd-43b77d74",
+    "mazda-mazda6e-takumi-258-hk-68-8-kwh-9af15f58",
+    "mercedes-benz-amg-cla-45-4matic-plus-mercedes-amg-cla-45-4matic-plus-sedan-b40893e7",
+    "mercedes-benz-amg-gt-4-dors-coupe-elektrisk-mercedes-amg-gt-53-4-dors-coupe-2283888a",
+    "mercedes-benz-c-klasse-elektrisk-c-300-4matic-electric-0765353a",
+    "mercedes-benz-cla-shooting-brake-with-eq-technology-cla-200-shooting-brake-advance-edition-d21b29a0",
+    "mercedes-benz-cla-with-eq-technology-cla-200-advance-edition-887b6d42",
+    "mercedes-benz-eqe-sedan-eqe-350-plus-amg-edition-b63641df",
+    "mercedes-benz-eqs-450-plus-ff9dbef1",
+    "mercedes-benz-eqs-suv-450-plus-04aa0b45",
+    "mercedes-benz-g-580-med-eq-teknologi-g-580-electric-amg-edition-1c31082b",
+    "mercedes-benz-gla-elektrisk-gla-200-electric-5f5e46a1",
+    "mercedes-benz-glb-elektrisk-glb-200-6793ca7c"
   ],
   "unmatched_existing_variants": [
     {
@@ -416,7 +420,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-10-27T04:13:36.672087+00:00",
+  "checked_at": "2026-11-05T17:30:31.830340+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -426,12 +430,12 @@
     {
       "id": "retail-e-208",
       "status": "ok",
-      "records": 7
+      "records": 6
     },
     {
       "id": "retail-e-2008",
       "status": "ok",
-      "records": 4
+      "records": 5
     },
     {
       "id": "bil-portalen",
@@ -440,9 +444,9 @@
     }
   ],
   "source_rejections": [],
-  "active_models": 228,
-  "automatically_priced_models": 87,
+  "active_models": 243,
+  "automatically_priced_models": 102,
   "legacy_models_without_automatic_price": 139,
   "historical_models": 2,
-  "pending_indexing": 34
+  "pending_indexing": 48
 }

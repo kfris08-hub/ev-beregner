@@ -23,7 +23,7 @@ Opel;Frontera Electric Edition;199990;44;305;18.2;100
 Leapmotor;B10 Life;199990;56.2;361;16.0;140
 Renault;Renault 4 E-Tech Evolution 40 kWh;199990;40;308;14.7;80
 Citroën;ë-C3 Aircross You!;199990;44;306;18.1;100
-Peugeot;E-2008 e-2008 Vision;214990;50.0;331;15.9;100
+Peugeot;E-2008 e-2008 Vision;204990;50.0;331;15.9;100
 MG;MGS5 EV Standard Range Comfort;199999;49;340;15.5;120
 Jaecoo;J5 EV Comfort;209900;60.9;402;16.6;130
 Firefly;Firefly Select;209900;42.1;330;14.5;100
@@ -185,12 +185,12 @@ Alfa Romeo;Junior Veloce EL 280;324990;54.0;344;19.0;
 Peugeot;E-208 Style EL 136 / 50 kWh;179990;50.0;362;15.4;
 Peugeot;E-208 Allure EL 156 / 54 kWh;199990;54.0;432;14.1;
 Peugeot;E-208 GT EL 156 / 54 kWh;224990;54.0;400;14.4;
-Peugeot;E-208 GT Pack EL 156 / 54 kWh;209990;54.0;421;14.5;
+Peugeot;E-208 GT Pack EL 156 / 54 kWh;219990;54.0;421;14.5;
 Peugeot;E-208 Prestige EL 156 / 54 kWh;189990;54.0;432;14.1;
 Peugeot;E-208 GTi EL 281 / 54 kWh;299990;54.0;353;17.0;
-Peugeot;E-2008 GT EL 156 / 54 kWh;219990;54.0;401;15.4;
+Peugeot;E-2008 GT EL 156 / 54 kWh;234990;54.0;401;15.4;
 Peugeot;E-2008 GT SKY EL 156 / 54 kWh;244990;54.0;403;15.9;
-Peugeot;E-2008 Style EL 136 / 50 kWh;199990;50.0;331;15.9;
+Peugeot;E-2008 Style EL 136 / 50 kWh;214990;50.0;331;15.9;
 Audi;A2 e-tron 125 kW;279990;;;;
 Audi;A6 Avant e-tron S line plus 210 kW (286 hk);534990;;;;
 Audi;A6 Sportback e-tron S line plus 210 kW (286 hk);519990;;;;
@@ -227,3 +227,18 @@ Kia;PV5 Passenger Access Standard Range (51,5 kWh, FWD);279999;;;;
 Leapmotor;B03X Life 39,8 kWh FWD;149990;;;;
 Leapmotor;B05 Life 56,2 kWh RWD;179990;;;;
 Lexus;TZ 450e Executive;649500;;;;
+Peugeot;E-2008 GT White Edition EL 156 / 54 kWh;229990;54.0;401;15.4;
+Lotus;Eletre 600 (indstigningsversion, 109 kWh netto, AWD);1035000;;;;
+Lotus;Emeya 600 GT (indstigningsversion i DK, 98,9 kWh netto, AWD);1135000;;;;
+Mazda;Mazda6e Takumi 258 hk 68,8 kWh;299990;;;;
+Mercedes-Benz;AMG CLA 45 4MATIC+ Mercedes-AMG CLA 45 4MATIC+ (sedan);623000;;;;
+Mercedes-Benz;AMG GT 4-dørs Coupé (elektrisk) Mercedes-AMG GT 53 4-dørs Coupé;1118998;;;;
+Mercedes-Benz;C-Klasse (elektrisk) C 300 4MATIC electric;504901;;;;
+Mercedes-Benz;CLA Shooting Brake with EQ Technology CLA 200 Shooting Brake Advance Edition;409900;;;;
+Mercedes-Benz;CLA with EQ Technology CLA 200 Advance Edition;399900;;;;
+Mercedes-Benz;EQE Sedan EQE 350+ AMG Edition;535554;;;;
+Mercedes-Benz;EQS 450+;995000;;;;
+Mercedes-Benz;EQS SUV 450+;1139300;;;;
+Mercedes-Benz;G 580 med EQ-teknologi G 580 Electric AMG Edition;1595000;;;;
+Mercedes-Benz;GLA (elektrisk) GLA 200 electric;385900;;;;
+Mercedes-Benz;GLB (elektrisk) GLB 200;399900;;;;

@@ -449,7 +449,7 @@
     {
       "brand": "Peugeot",
       "model": "E-2008 e-2008 Vision",
-      "price": 214990,
+      "price": 204990,
       "battery": 50.0,
       "range": 331,
       "consumption": 15.9,
@@ -457,14 +457,14 @@
       "slug": "peugeot-e-2008-e-2008-vision",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-05",
       "origin": "existing",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
           "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
           "primary_url": "https://www.peugeot.dk/modeller/2008.html",
-          "source_date": "2026-10-25",
+          "source_date": "2026-11-05",
           "kind": "retail-api"
         },
         "consumption": {
@@ -3613,13 +3613,13 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-05",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
           "url": "https://pricelists-api.cars4ever.eu/api/models/e-208/retail",
           "primary_url": "https://www.peugeot.dk/modeller/208.html",
-          "source_date": "2026-10-25",
+          "source_date": "2026-11-05",
           "kind": "retail-api"
         },
         "consumption": {
@@ -3644,7 +3644,7 @@
           "kind": "retail-api"
         }
       },
-      "price": 209990,
+      "price": 219990,
       "battery": 54.0,
       "range": 421,
       "consumption": 14.5,
@@ -3760,13 +3760,13 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-05",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
           "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
           "primary_url": "https://www.peugeot.dk/modeller/2008.html",
-          "source_date": "2026-10-25",
+          "source_date": "2026-11-05",
           "kind": "retail-api"
         },
         "consumption": {
@@ -3791,7 +3791,7 @@
           "kind": "retail-api"
         }
       },
-      "price": 219990,
+      "price": 234990,
       "battery": 54.0,
       "range": 401,
       "consumption": 15.4,
@@ -3858,13 +3858,13 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-05",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
           "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
           "primary_url": "https://www.peugeot.dk/modeller/2008.html",
-          "source_date": "2026-10-25",
+          "source_date": "2026-11-05",
           "kind": "retail-api"
         },
         "consumption": {
@@ -3889,7 +3889,7 @@
           "kind": "retail-api"
         }
       },
-      "price": 199990,
+      "price": 214990,
       "battery": 50.0,
       "range": 331,
       "consumption": 15.9,
@@ -4967,6 +4967,461 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/lexus/tz|TZ 450e Executive"
+      ]
+    },
+    {
+      "slug": "peugeot-e-2008-gt-white-edition-el-156-54-kwh-2ac142d9",
+      "brand": "Peugeot",
+      "model": "E-2008 GT White Edition EL 156 / 54 kWh",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": true,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-2008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/2008.html",
+          "source_date": "2026-11-05",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-2008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/2008.html",
+          "source_date": "2026-11-05",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-2008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/2008.html",
+          "source_date": "2026-11-05",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-2008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/2008.html",
+          "source_date": "2026-11-05",
+          "kind": "retail-api"
+        }
+      },
+      "price": 229990,
+      "battery": 54.0,
+      "range": 401,
+      "consumption": 15.4,
+      "charging": null,
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail|GT White Edition|EL 156 / 54 kWh"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+    },
+    {
+      "slug": "lotus-eletre-600-indstigningsversion-109-kwh-netto-awd-38a55ea4",
+      "brand": "Lotus",
+      "model": "Eletre 600 (indstigningsversion, 109 kWh netto, AWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/lotus/eletre",
+          "primary_url": "https://www.lotuscars.com/da-DK/eletre",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1035000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/lotus/eletre|Eletre 600 (indstigningsversion, 109 kWh netto, AWD)"
+      ]
+    },
+    {
+      "slug": "lotus-emeya-600-gt-indstigningsversion-i-dk-98-9-kwh-netto-awd-43b77d74",
+      "brand": "Lotus",
+      "model": "Emeya 600 GT (indstigningsversion i DK, 98,9 kWh netto, AWD)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/lotus/emeya",
+          "primary_url": "https://www.lotuscars.com/da-DK/emeya",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1135000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/lotus/emeya|Emeya 600 GT (indstigningsversion i DK, 98,9 kWh netto, AWD)"
+      ]
+    },
+    {
+      "slug": "mazda-mazda6e-takumi-258-hk-68-8-kwh-9af15f58",
+      "brand": "Mazda",
+      "model": "Mazda6e Takumi 258 hk 68,8 kWh",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mazda/mazda6e-2026",
+          "primary_url": "https://media-assets.mazda.eu/raw/upload//mazdadk/globalassets/mmdk/2026-prislister/maj/mazda6e-priser-og-udstyr-maj-2026.pdf?rnd=49b773",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 299990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mazda/mazda6e-2026|Mazda6e Takumi 258 hk 68,8 kWh"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-amg-cla-45-4matic-plus-mercedes-amg-cla-45-4matic-plus-sedan-b40893e7",
+      "brand": "Mercedes-Benz",
+      "model": "AMG CLA 45 4MATIC+ Mercedes-AMG CLA 45 4MATIC+ (sedan)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/amg-cla-45",
+          "primary_url": "https://www.mynewsdesk.com/dk/mercedes-benz-danmark/pressreleases/ny-cla-har-sat-rekord-paa-nurburgring-og-kan-blive-din-fra-623-punktum-000-kroner-3469430",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 623000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/amg-cla-45|Mercedes-AMG CLA 45 4MATIC+ (sedan)"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-amg-gt-4-dors-coupe-elektrisk-mercedes-amg-gt-53-4-dors-coupe-2283888a",
+      "brand": "Mercedes-Benz",
+      "model": "AMG GT 4-dørs Coupé (elektrisk) Mercedes-AMG GT 53 4-dørs Coupé",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/amg-gt-4-door",
+          "primary_url": "https://www.mercedes-benz.dk/passengercars/models/coupe/amg-gt-4-door/overview.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1118998,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/amg-gt-4-door|Mercedes-AMG GT 53 4-dørs Coupé"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-c-klasse-elektrisk-c-300-4matic-electric-0765353a",
+      "brand": "Mercedes-Benz",
+      "model": "C-Klasse (elektrisk) C 300 4MATIC electric",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/c-klasse-2026",
+          "primary_url": "https://www.mercedes-benz.dk/passengercars/models/saloon/c-class-electric/overview.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 504901,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/c-klasse-2026|C 300 4MATIC electric"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-cla-shooting-brake-with-eq-technology-cla-200-shooting-brake-advance-edition-d21b29a0",
+      "brand": "Mercedes-Benz",
+      "model": "CLA Shooting Brake with EQ Technology CLA 200 Shooting Brake Advance Edition",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/cla-shooting-brake-eq",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/03_2026/standard/CLA%20CX174%20%28MY807%29%20prisliste%2004.03.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 409900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/cla-shooting-brake-eq|CLA 200 Shooting Brake Advance Edition"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-cla-with-eq-technology-cla-200-advance-edition-887b6d42",
+      "brand": "Mercedes-Benz",
+      "model": "CLA with EQ Technology CLA 200 Advance Edition",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/cla-eq-2026",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/03_2026/standard/CLA%20CX174%20%28MY807%29%20prisliste%2004.03.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 399900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/cla-eq-2026|CLA 200 Advance Edition"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-eqe-sedan-eqe-350-plus-amg-edition-b63641df",
+      "brand": "Mercedes-Benz",
+      "model": "EQE Sedan EQE 350+ AMG Edition",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/eqe",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/09_26/standard/V295%20EQE%20prisliste%2008.04.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 535554,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/eqe|EQE 350+ AMG Edition"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-eqs-450-plus-ff9dbef1",
+      "brand": "Mercedes-Benz",
+      "model": "EQS 450+",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/eqs-450",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/05_2026/standard/V297%20EQS%20FL%20%28MY807%29%20prisliste%2007.05.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 995000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/eqs-450|EQS 450+"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-eqs-suv-450-plus-04aa0b45",
+      "brand": "Mercedes-Benz",
+      "model": "EQS SUV 450+",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/eqs-suv-2026",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/01_2026/standard/X296%20EQS%20SUV%20prisliste%2001.01.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1139300,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/eqs-suv-2026|EQS SUV 450+"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-g-580-med-eq-teknologi-g-580-electric-amg-edition-1c31082b",
+      "brand": "Mercedes-Benz",
+      "model": "G 580 med EQ-teknologi G 580 Electric AMG Edition",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/mercedes-g-580-eq-2026",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/06_2026/standard/G580%20Electric%20AMG%20Edition%20prisliste%2023.06.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1595000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/mercedes-g-580-eq-2026|G 580 Electric AMG Edition"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-gla-elektrisk-gla-200-electric-5f5e46a1",
+      "brand": "Mercedes-Benz",
+      "model": "GLA (elektrisk) GLA 200 electric",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/gla",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/08_2026/standard/GLA%20electric%20prisliste%2030.07.2026.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 385900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/gla|GLA 200 electric"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-glb-elektrisk-glb-200-6793ca7c",
+      "brand": "Mercedes-Benz",
+      "model": "GLB (elektrisk) GLB 200",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-05",
+      "indexable": false,
+      "modified": "2026-11-05",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/glb",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/03_2026/standard/GLB%20EQ%20X244%20%28MY807%29%20prisliste%2004.03.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 399900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/glb|GLB 200"
       ]
     }
   ]
