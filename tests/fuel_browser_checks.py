@@ -6,6 +6,9 @@ from playwright.async_api import async_playwright,expect
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk';PUBLIC=os.environ.get('FUEL_PUBLIC')=='1'
 async def main():
  data=json.loads((ROOT/'data/fuel-prices.json').read_text());results=[]
+ if PUBLIC:
+  import time,urllib.request
+  with urllib.request.urlopen(BASE+'/data/fuel-prices.json?kontrol='+str(time.time_ns()),timeout=15) as response:data=json.load(response)
  async with async_playwright() as pw:
   browser=await pw.chromium.launch(executable_path='/usr/bin/google-chrome',headless=True,args=['--no-sandbox','--disable-dev-shm-usage'])
   for width in [390,1280]:
