@@ -10,7 +10,7 @@ Billedet viser hverken indekseringsårsager, søgeord, landingssider eller genne
 
 Kontrollen før rettelsen omfattede 240 HTML-sider, 201 canonical-adresser i sitemap, 193 lokale assets, 2.671 interne linkforekomster og 181 billedmetadataobjekter. Den samlede HTTP/metadata/link-kontrol gav ingen fejl og ingen advarsler. Alle 20 beregnere, de fem beregnerlandingssider og de centrale offentlige brugerforløb bestod browserkontrollen.
 
-En separat billedgennemgang mødte én HTTP 503 på /elbil/polestar-2-long-range-single-motor-rwd/. Den fulde crawl fik ikke denne fejl. Kontrollen gentages særskilt for at afgøre, om den kan gentages; et enkelt 503-svar dokumenterer ikke en vedvarende blokering for Google.
+En separat billedgennemgang mødte én HTTP 503 på /elbil/polestar-2-long-range-single-motor-rwd/. Den fulde crawl fik ikke denne fejl. Den særskilte gentagelse bestod for alle modelbilleder og modelsider. 503-fejlen kunne ikke gentages i den kontrol; et enkelt svar dokumenterer ikke en vedvarende blokering for Google.
 
 Det aktuelle katalog før genoptagelse indeholder 228 valgbare varianter. Af dem er 194 modeller indexable og 34 prisbaserede modeller bevidst noindex, fordi tekniske data mangler. Dertil kommer fire tidligere udtagne varianter med noindex og én gammel IONIQ-adresse med canonical/viderestilling. De bevidst udeladte sider indgår ikke i sitemap. De 34 kan ikke automatisk sidestilles med Search Consoles gruppe på 149.
 
@@ -31,3 +31,7 @@ Rettelserne genoptager vedligeholdelsen og gør sitemapdatoerne præcise. De dok
 
 Kontrol af publiceret baseline: https://github.com/kfris08-hub/ev-beregner/actions/runs/42066741352
 Prøveopdatering med mobilrettelsen: https://github.com/kfris08-hub/ev-beregner/actions/runs/42067305354
+
+Rettelsernes samlede prøveopdatering inklusive dato-regression: https://github.com/kfris08-hub/ev-beregner/actions/runs/42073385193
+Google om indekseringskategorier: https://support.google.com/webmasters/answer/7440203
+Google om præcise sitemapdatoer: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
