@@ -32,6 +32,7 @@ jobs:
       - name: Kontroller datakilde, priser, metadata og alle beregnere
         run: |
           python tests/fuel_prices.test.py
+          python tests/fuel_snapshot_checks.py
           node tests/fuel_prices.test.cjs
           python tests/car_catalog.test.py
           python tests/sitemap_freshness_checks.py

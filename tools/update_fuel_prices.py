@@ -102,10 +102,12 @@ def saved_reference(root,now=None):
     now=now or datetime.now(timezone.utc)
     try:
         data=json.loads((Path(root)/'data/fuel-prices.json').read_text())
-        if data.get('price_type')!='pump_average' or data.get('currency')!='DKK' or data.get('unit')!='DKK/l':return None
+        if data.get('price_type')!='pump_average' or data.get('currency')!='DKK' or data.get('unit')!='DKK/l' or data.get('source_chain')!='OK':return None
         checked=timestamp(data.get('checked_at',data.get('updated')))
         if checked<now-timedelta(hours=48) or checked>now+timedelta(minutes=10):return None
-        for key in ('petrol95','diesel'):amount(data[key])
+        for key in ('petrol95','diesel'):
+            amount(data[key])
+            if not isinstance(data.get('coverage',{}).get(key),int) or data['coverage'][key]<1:return None
         return data
     except (OSError,ValueError,KeyError,TypeError):return None
 

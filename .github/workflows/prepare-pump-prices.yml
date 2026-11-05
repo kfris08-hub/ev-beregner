@@ -23,6 +23,7 @@ jobs:
       - name: Kontroller kilde, data, metadata og alle 20 beregnere
         run: |
           python tests/fuel_prices.test.py
+          python tests/fuel_snapshot_checks.py
           node tests/fuel_prices.test.cjs
           python tests/car_catalog.test.py
           python tests/sitemap_freshness_checks.py
