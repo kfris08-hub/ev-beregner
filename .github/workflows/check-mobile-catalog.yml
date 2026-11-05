@@ -23,6 +23,7 @@ jobs:
       - name: Kontroller data og alle beregnere
         run: |
           python tests/car_catalog.test.py
+          python tests/sitemap_freshness_checks.py
           python tests/seo_checks.py
           python tests/model_photo_checks.py
           python tests/image_metadata_checks.py
