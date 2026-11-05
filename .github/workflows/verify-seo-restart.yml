@@ -1,0 +1,51 @@
+name: Bekræft genoptaget bilopdatering
+on:
+  push:
+    branches: [verify/seo-restart-20261105]
+permissions:
+  contents: read
+  actions: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Start den reparerede opdatering på main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update-car-catalog.yml --repo "$GITHUB_REPOSITORY" --ref main
+      - name: Afvent udgivelse og kontroller det rigtige sitemap
+        run: |
+          python - <<'PY'
+          import datetime,json,os,pathlib,re,time,urllib.request,xml.etree.ElementTree as ET
+          base='https://www.evberegn.dk';today=datetime.date.today().isoformat()
+          def fetch(path):
+            url=base+path+('?' if '?' not in path else '&')+'kontrol='+os.environ['GITHUB_RUN_ID']
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'EVBeregn-SEO-check/1.0'}),timeout=15) as r:return r.status,r.read()
+          for attempt in range(48):
+            try:
+              status=json.loads(fetch('/data/car-update-status.json')[1])
+              if status.get('checked_at','').startswith(today):break
+            except Exception:pass
+            time.sleep(10)
+          else:raise SystemExit('Den reparerede opdatering er endnu ikke offentliggjort')
+          catalog=json.loads(fetch('/data/cars.json')[1])['models']
+          ns='http://www.sitemaps.org/schemas/sitemap/0.9';tree=ET.fromstring(fetch('/sitemap.xml')[1])
+          entries={n.findtext('{'+ns+'}loc'):n.findtext('{'+ns+'}lastmod') for n in tree}
+          expected={base+'/',base+'/elbil/'}|{base+'/elbil/'+m['slug']+'/' for m in catalog if m['indexable']}|{base+'/beregnere/'+s+'/' for s in ['ladepris','elbil-vs-benzin','opladningstid','leasing-vs-koeb','samlet-biloekonomi']}
+          assert set(entries)==expected,(len(entries),len(expected))
+          assert entries[base+'/']==entries[base+'/elbil/']==today,entries
+          paths=['/','/elbil/','/elbil/tesla-model-y-standard-rwd/','/elbil/kia-e-soul-64-kwh-2019/','/beregnere/elbil-vs-benzin/']
+          responses={}
+          for path in paths:
+            code,body=fetch(path);responses[path]=code
+            assert code==200 and b'canonical' in body,path
+          result={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'catalog_status':status['checked_at'],'active_models':len(catalog),'sitemap_urls':len(entries),'home_lastmod':entries[base+'/'],'overview_lastmod':entries[base+'/elbil/'],'intentionally_noindex_models':sum(not m['indexable'] for m in catalog),'sample_http_statuses':responses,'all_checks':'passed'}
+          pathlib.Path('test-results').mkdir(exist_ok=True);pathlib.Path('test-results/seo-repair-public.json').write_text(json.dumps(result,indent=2))
+          print('SEO_REPAIR_PUBLIC_RESULT '+json.dumps(result))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlig-kontrol-af-reparation
+          path: test-results/
