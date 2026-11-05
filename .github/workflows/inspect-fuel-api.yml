@@ -1,0 +1,28 @@
+name: Undersøg officielle pumpepriser
+on:
+  push:
+    branches: [inspect/fuel-pump-api-20261105]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hent OKs offentlige stationspriser
+        run: |
+          python3 - <<'PY'
+          import urllib.request,json,collections,base64,zlib,datetime
+          url='https://mobility-prices.ok.dk/api/v1/fuel-prices'
+          req=urllib.request.Request(url,headers={'User-Agent':'EVBeregn/1.0 (+https://www.evberegn.dk)','Accept':'application/json'})
+          with urllib.request.urlopen(req,timeout=35) as r:raw=r.read(5000000);print('HEADERS',r.status,r.headers.get('content-type'),r.headers.get('date'))
+          d=json.loads(raw);print('ROOT',type(d).__name__,list(d)[:10] if isinstance(d,dict) else len(d));items=d['items'];print('COUNT',len(items));print('SAMPLE',json.dumps(items[:2],ensure_ascii=False))
+          products=collections.defaultdict(list);stamps=[]
+          for s in items:
+            stamps.append(s.get('last_updated_time'))
+            for p in s.get('prices',[]):products[p.get('product_name')].append(p.get('price'))
+          for name,values in products.items():
+            nums=[float(v) for v in values if v is not None]
+            print('PRODUCT',name,len(values),min(nums) if nums else None,max(nums) if nums else None,round(sum(nums)/len(nums),4) if nums else None)
+          print('DATES',min(s for s in stamps if s),max(s for s in stamps if s))
+          print('PUMP_FIXTURE_ZLIB',base64.b64encode(zlib.compress(raw)).decode())
+          PY
