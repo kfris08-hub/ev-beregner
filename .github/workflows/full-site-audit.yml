@@ -2,7 +2,7 @@ name: Gennemgå hele den udgivne hjemmeside
 on:
   workflow_dispatch:
   push:
-    branches: [verify/full-site-2026-10-25]
+    branches: [verify/audit-seo-2026-11-05]
 permissions:
   contents: read
 jobs:
@@ -92,4 +92,34 @@ jobs:
         if: always()
         with:
           name: offentlige-brugerforloeb
+          path: test-results/
+
+  next-update-diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Prøveimport uden at ændre den udgivne side
+        run: |
+          python tools/update_car_catalog.py
+          python tools/build_car_catalog.py
+          python tools/build_calculator_pages.py
+      - name: Angiv præcis årsag ved mobilfejl
+        run: |
+          python - <<'PY'
+
+          import pathlib
+          p=pathlib.Path('tests/full_public_flows.py')
+          text=p.read_text().replace("assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1')",'''assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1'), await page.evaluate("""() => ({width: innerWidth, scroll: document.documentElement.scrollWidth, offenders: [...document.querySelectorAll('body *')].filter(e => {const r=e.getBoundingClientRect();return r.width && r.right>innerWidth+1}).slice(0,14).map(e=>({tag:e.tagName,id:e.id,cls:e.className,text:e.innerText?.slice(0,160),right:e.getBoundingClientRect().right}))})""")''')
+          p.write_text(text)
+          PY
+      - name: Gentag mobiltesten med de nye data
+        run: python tests/full_public_flows.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: diagnose-naeste-bilopdatering
           path: test-results/
