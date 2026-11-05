@@ -1,0 +1,55 @@
+name: Bekræft offentlige pumpepriser
+on:
+  push:
+    branches: ['verify/pump-prices-20261105']
+permissions:
+  contents: read
+  actions: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Start den automatiske prisopdatering på main og afvent resultatet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import datetime,json,os,subprocess,time
+          repo=os.environ['GITHUB_REPOSITORY']
+          start=datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(seconds=2)
+          subprocess.run(['gh','workflow','run','update-fuel-prices.yml','--ref','main','--repo',repo],check=True)
+          run_id=None
+          for attempt in range(150):
+            result=subprocess.run(['gh','api',f'repos/{repo}/actions/workflows/update-fuel-prices.yml/runs?branch=main&event=workflow_dispatch&per_page=5'],check=True,capture_output=True,text=True)
+            runs=json.loads(result.stdout)['workflow_runs']
+            selected=[r for r in runs if datetime.datetime.fromisoformat(r['created_at'].replace('Z','+00:00'))>=start]
+            if selected:
+              run=selected[0]
+              if run_id is None:
+                run_id=run['id'];print('PRODUCTION_PUMP_RUN '+str(run_id),flush=True)
+              if run['status']=='completed':
+                print('PRODUCTION_PUMP_RESULT '+json.dumps({'id':run['id'],'conclusion':run['conclusion']}),flush=True)
+                if run['conclusion']!='success':raise SystemExit('Den automatiske prisopdatering fejlede')
+                break
+            time.sleep(5)
+          else:raise SystemExit('Prisopdateringen blev ikke færdig inden for ventetiden')
+          PY
+      - name: Brug seneste offentliggjorte kildekode
+        run: |
+          git fetch origin main
+          git checkout --detach origin/main
+      - run: python -m pip install playwright==1.56.0
+      - name: Test den offentlige hjemmeside på mobil og computer
+        env:
+          FUEL_PUBLIC: '1'
+        run: python tests/fuel_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlig-pumpepris-kontrol
+          path: test-results/
