@@ -17,6 +17,7 @@ jobs:
       - name: Kontroller metadata, sitemap og links
         run: |
           python3 tests/car_catalog.test.py
+          python tests/sitemap_freshness_checks.py
           python3 tests/seo_checks.py
           python3 tests/model_photo_checks.py
           python3 tests/image_metadata_checks.py

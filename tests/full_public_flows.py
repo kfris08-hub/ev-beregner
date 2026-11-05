@@ -49,7 +49,7 @@ async def main():
                 assert await page.locator('#search').input_value()==''
                 await page.get_by_role('button',name='VIS BILER',exact=True).click()
                 await expect(page.locator('#carList .car-card')).to_have_count(len(MODELS))
-                assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1')
+                assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1'), 'Horizontal overflow: viewport='+str(width)+'; scrollWidth='+str(await page.evaluate('document.documentElement.scrollWidth'))
             await case('search-filters-sort-select-reset',filters)
             async def cards():
                 await page.goto(BASE+'/',wait_until='load')

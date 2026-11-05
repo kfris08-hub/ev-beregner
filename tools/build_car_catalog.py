@@ -1,5 +1,6 @@
 """Render one shared catalogue into the existing design; retain historical URLs/photos."""
 from pathlib import Path
+from datetime import date
 import csv, html, io, json, re, xml.etree.ElementTree as ET
 from car_catalog import load_catalog
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk';FIELDS=('price','battery','range','consumption','charging')
@@ -7,7 +8,9 @@ ESC=lambda s:html.escape(str(s),quote=True)
 
 def write(path,text):
     path.parent.mkdir(parents=True,exist_ok=True)
-    if not path.exists() or path.read_text(encoding='utf-8')!=text:path.write_text(text,encoding='utf-8')
+    changed=not path.exists() or path.read_text(encoding='utf-8')!=text
+    if changed:path.write_text(text,encoding='utf-8')
+    return changed
 
 def fmt(value,digits=0):
     if value is None:return 'Ikke oplyst'
@@ -108,7 +111,7 @@ def build():
     home=re.sub(r'Se alle \d+ elbiler',f'Se alle {count} elbiler',home)
     if 'id="automaticCatalogSource"' not in home:
         home=home.replace('<div class="details-content">','<div class="details-content"><p class="muted" id="automaticCatalogSource">Bilpriser kontrolleres automatisk dagligt for de tilsluttede datakilder. Kilder og datoer står på modelsiderne; manglende dækning betyder, at ældre oplysninger kan være bevaret.</p>',1)
-    write(ROOT/'index.html',home)
+    home_changed=write(ROOT/'index.html',home)
     buffer=io.StringIO(newline='');csv.writer(buffer,delimiter=';').writerows([['Mærke','Model/variant','Pris DKK','Batteri kWh','WLTP km','Forbrug kWh/100 km','DC kW'],*rows]);write(ROOT/'bil-data-komplet.csv','\ufeff'+buffer.getvalue())
     presets=[{'slug':m['slug'],'label':m['brand']+' '+m['model'],**{f:m[f] for f in FIELDS},**({k:m[k] for k in ('availability','model_year')} if m.get('availability')=='discontinued' else {})} for m in models]
     write(ROOT/'assets/calculator-cars.json',json.dumps({'models':presets},ensure_ascii=False,separators=(',',':'))+'\n')
@@ -131,13 +134,14 @@ def build():
     overview=re.sub(r'<p class="intro">.*?</p>','<p class="intro">Find en elbil efter mærke, og se pris, rækkevidde og forbrug.</p>',overview,count=1,flags=re.S)
     overview=meta(overview,'description',f'Se {count} elbiler samlet efter mærke. Sammenlign pris, WLTP-rækkevidde og forbrug, og åbn beregninger for hver elbil.')
     graph={'@context':'https://schema.org','@graph':[{'@type':'CollectionPage','name':'Alle elbiler – priser, rækkevidde og forbrug','url':BASE+'/elbil/'},{'@type':'ItemList','name':'Elbiler i EV Beregner','numberOfItems':count,'itemListElement':[{'@type':'ListItem','position':i,'name':m['brand']+' '+m['model'],'url':BASE+'/elbil/'+m['slug']+'/'} for i,m in enumerate(sorted(models,key=lambda x:(x['brand'].casefold(),x['model'].casefold())),1)]}]}
-    overview=re.sub(r'(<script type="application/ld\+json">).*?(</script>)',lambda x:x[1]+json.dumps(graph,ensure_ascii=False)+x[2],overview,count=1,flags=re.S);write(ROOT/'elbil/index.html',overview)
+    overview=re.sub(r'(<script type="application/ld\+json">).*?(</script>)',lambda x:x[1]+json.dumps(graph,ensure_ascii=False)+x[2],overview,count=1,flags=re.S);overview_changed=write(ROOT/'elbil/index.html',overview)
     NS='http://www.sitemaps.org/schemas/sitemap/0.9';IM='http://www.google.com/schemas/sitemap-image/1.1';ET.register_namespace('',NS);ET.register_namespace('image',IM)
     old=ET.parse(ROOT/'sitemap.xml');last={n.find('{'+NS+'}loc').text:n.findtext('{'+NS+'}lastmod') for n in old.getroot()};root=ET.Element('{'+NS+'}urlset')
     urls=[(BASE+'/',None),(BASE+'/elbil/',None)]+[(BASE+'/elbil/'+m['slug']+'/',m) for m in models if m['indexable']]+[(BASE+'/beregnere/'+p['slug']+'/',None) for p in json.loads((ROOT/'data/calculator-pages.json').read_text())]
     for url,m in urls:
         n=ET.SubElement(root,'{'+NS+'}url');ET.SubElement(n,'{'+NS+'}loc').text=url
-        stamp=m['modified'] if m else last.get(url) or '2026-10-25';ET.SubElement(n,'{'+NS+'}lastmod').text=stamp
+        content_changed=(url==BASE+'/' and home_changed) or (url==BASE+'/elbil/' and overview_changed)
+        stamp=m['modified'] if m else date.today().isoformat() if content_changed else last.get(url) or '2026-10-25';ET.SubElement(n,'{'+NS+'}lastmod').text=stamp
         photo=manifest['models'].get(m['slug']) if m else None
         if photo and photo['status']=='verified':image=ET.SubElement(n,'{'+IM+'}image');ET.SubElement(image,'{'+IM+'}loc').text=BASE+photo['src']
     ET.indent(root,space='  ');write(ROOT/'sitemap.xml',ET.tostring(root,encoding='unicode',xml_declaration=True))
