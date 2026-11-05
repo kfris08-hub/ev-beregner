@@ -1,0 +1,10 @@
+const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),test=require('node:test'),assert=require('node:assert/strict');
+const context={Date,Intl,Number,Math,Object,Error,AbortController,setTimeout,clearTimeout};context.window=context;vm.createContext(context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,'../assets/ev-core.js'),'utf8'),context);
+const core=context.EVCore,NOW=Date.parse('2026-11-05T12:00:00Z');
+const data=()=>({petrol95:16.09,diesel:18.39,currency:'DKK',unit:'DKK/l',price_type:'pump_average',source_chain:'OK',coverage:{petrol95:689,diesel:690},updated:'2026-11-05T12:00:00Z',checked_at:'2026-11-05T12:00:00Z'});
+test('documented pump snapshot is accepted with its exact values',()=>{const d=core.fuelPrices(data(),NOW);assert.equal(d.petrol95,16.09);assert.equal(d.diesel,18.39);});
+test('legacy indicative prices cannot be presented as current pump prices',()=>assert.throws(()=>core.fuelPrices({petrol95:18.19,diesel:20.39,source:'Drivkraft Danmark',updated:'2026-11-05T12:00:00Z'},NOW)));
+test('stale or future snapshots fail rather than becoming current',()=>{for(const hours of [49,-24])assert.throws(()=>core.fuelPrices(data(),NOW+hours*3600000));});
+test('wrong currency units or coverage cannot pass',()=>{for(const patch of [{currency:'EUR'},{unit:'ore/l'},{coverage:{petrol95:0,diesel:10}},{price_type:'list'},{petrol95:1609},{diesel:0},{petrol95:true}])assert.throws(()=>core.fuelPrices({...data(),...patch},NOW));});
+test('labels identify provider, sample size and the actual check time',()=>{assert.match(core.fuelLabel(data(),'petrol95',NOW),/689 OK-stationer/);assert.match(core.fuelLabel(data(),undefined,NOW),/OK-pumpepriser/);assert.doesNotMatch(core.fuelLabel(data(),'petrol95',NOW),/markedspris|lands/);});

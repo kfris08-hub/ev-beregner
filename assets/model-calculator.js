@@ -3,7 +3,8 @@
   const core = global.EVCore;
   const registeredConsumption = core.number(document.currentScript.dataset.consumption);
   const field = id => document.getElementById(id);
-  const fuel = { petrol95: 18.49, diesel: 20.19 };
+  const initial = document.currentScript.dataset;
+  const fuel = { petrol95: core.number(initial.petrol) || 16, diesel: core.number(initial.diesel) || 16 };
   let priceStatus = 'Elpris: eksempelværdi.';
   let fuelStatus = 'Benzin/diesel: eksempelpriser.';
   let electricRequest = 0;
@@ -39,10 +40,9 @@
   async function loadFuel() {
     try {
       const data = await core.fetchJSON('/data/fuel-prices.json', { cache: 'no-cache' });
-      const petrol = core.number(data.petrol95), diesel = core.number(data.diesel);
-      if (!Number.isFinite(petrol) || petrol < 0 || !Number.isFinite(diesel) || diesel < 0) throw new Error('Ugyldig brændstofpris');
+      const snapshot = core.fuelPrices(data), petrol = snapshot.petrol95, diesel = snapshot.diesel;
       fuel.petrol95 = petrol; fuel.diesel = diesel;
-      fuelStatus = 'Benzin/diesel: ' + (data.source || 'vejledende markedspris') + (data.source_date ? ' · ' + data.source_date : '') + '.';
+      fuelStatus = core.fuelLabel(data) + '.';
     } catch (_) { fuelStatus = 'Brændstofpriser kunne ikke opdateres – eksempelpriser bruges.'; }
     calculate();
   }

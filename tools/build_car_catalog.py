@@ -1,8 +1,9 @@
 """Render one shared catalogue into the existing design; retain historical URLs/photos."""
 from pathlib import Path
 from datetime import date
-import csv, html, io, json, re, xml.etree.ElementTree as ET
+import csv, html, io, json, math, re, xml.etree.ElementTree as ET
 from car_catalog import load_catalog
+from update_fuel_prices import saved_reference
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk';FIELDS=('price','battery','range','consumption','charging')
 ESC=lambda s:html.escape(str(s),quote=True)
 
@@ -43,7 +44,9 @@ def source_details(m):
     if m.get('price_note'):note+='<p>'+ESC(m['price_note'])+'</p>'
     return '<details class="note" id="modelSources"><summary>Kilder og datoer</summary><dl>'+content+'</dl>'+note+'</details>'
 
-def render_model(m,models,photo):
+def render_model(m,models,photo,fuel=None):
+    petrol=fuel['petrol95'] if fuel else 16
+    diesel=fuel['diesel'] if fuel else 16
     path=ROOT/'elbil'/m['slug']/'index.html';is_new=not path.exists()
     text=path.read_text() if not is_new else (ROOT/'templates/model.html').read_text()
     old_graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S)[1]);old_page=next(n for n in old_graph['@graph'] if n['@type']=='WebPage')
@@ -82,6 +85,11 @@ def render_model(m,models,photo):
         consumption=m['consumption']
         text=re.sub(r'<label>Dit forbrugsskøn.*?</label>','',text,count=1,flags=re.S)
         text=re.sub(r'<p class="note" id="modelDataNotice">.*?</p>','',text,count=1,flags=re.S)
+    for key,value in {'petAnnual':fmt(math.floor(20000/16*petrol+.5))+' kr.','dieselAnnual':fmt(math.floor(20000/20*diesel+.5))+' kr.'}.items():text=replace_id(text,'b',key,ESC(value))
+    for key,value in {'petPrice':fmt(petrol,2)+' kr./l','dieselPrice':fmt(diesel,2)+' kr./l'}.items():text=replace_id(text,'div',key,ESC(value))
+    text=re.sub(r'<script[^>]*src="/assets/model-calculator\.js[^"]*"[^>]*>',lambda match:re.sub(r'\sdata-(?:petrol|diesel)="[^"]*"','',match[0])[:-1]+' data-petrol="'+str(petrol)+'" data-diesel="'+str(diesel)+'">',text,count=1)
+    text=re.sub(r'/assets/ev-core\.js\?[^"]+','/assets/ev-core.js?v=20261105-fuel1',text)
+    text=re.sub(r'/assets/model-calculator\.js\?[^"]+','/assets/model-calculator.js?v=20261105-fuel1',text)
     for identifier,value in {'r100':fmt(consumption*2,2)+' kr.','rkm':fmt(consumption*2/100,2)+' kr.','ryear':fmt(consumption*400)+' kr.','rkwh':fmt(consumption*200)+' kWh','evAnnual':fmt(consumption*400)+' kr.'}.items():text=replace_id(text,'b',identifier,ESC(value))
     other=sorted([x for x in models if x['slug']!=m['slug']],key=lambda x:abs(x['price']-m['price']) if x['price'] is not None and m['price'] is not None else float('inf'))[:3]
     alts=''.join('<a class="alt" href="/elbil/'+x['slug']+'/"><b>'+ESC(x['brand']+' '+x['model'])+'</b><span>'+fmt(x['price'])+(' kr.' if x['price'] is not None else '')+' · '+fmt(x['range'])+(' km WLTP' if x['range'] is not None else '')+'</span></a>' for x in other)
@@ -97,7 +105,11 @@ def render_model(m,models,photo):
 
 def build():
     catalog=load_catalog(ROOT);write(ROOT/'data/cars.json',json.dumps(catalog,ensure_ascii=False,indent=2)+'\n');models=[m for m in catalog['models'] if m['status']=='active'];count=len(models)
-    home=(ROOT/'index.html').read_text();rows=[[m['brand'],m['model'],*[m[f] for f in FIELDS]] for m in models]
+    fuel=saved_reference(ROOT)
+    home=(ROOT/'index.html').read_text()
+    petrol=fuel['petrol95'] if fuel else 16;diesel=fuel['diesel'] if fuel else 16
+    home=re.sub(r'(let energyPrices=\{electric:2,petrol:)[0-9.]+(,diesel:)[0-9.]+',lambda m:m[1]+str(petrol)+m[2]+str(diesel),home,count=1)
+    rows=[[m['brand'],m['model'],*[m[f] for f in FIELDS]] for m in models]
     home=re.sub(r'(const cars=)\[.*?\](; let selectedCar=)',lambda m:m[1]+json.dumps(rows,ensure_ascii=False,separators=(',',':'))+m[2],home,count=1,flags=re.S)
     slugs={m['brand']+'|||'+m['model']:m['slug'] for m in models}
     home=re.sub(r'(const modelSlugs=)\{.*?\}(;)',lambda m:m[1]+json.dumps(slugs,ensure_ascii=False,separators=(',',':'))+m[2],home,count=1,flags=re.S)
@@ -118,7 +130,7 @@ def build():
     manifest=json.loads((ROOT/'data/model-photos.json').read_text())
     for m in models:
         manifest['models'].setdefault(m['slug'],{'label':m['brand']+' '+m['model'],'status':'missing','reviewed':False,'reason':'Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt.'})
-        render_model(m,models,manifest['models'][m['slug']])
+        render_model(m,models,manifest['models'][m['slug']],fuel)
     write(ROOT/'data/model-photos.json',json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     overview=(ROOT/'elbil/index.html').read_text();brands=sorted({m['brand'] for m in models},key=str.casefold)
     ident=lambda b:'brand-'+str(brands.index(b))

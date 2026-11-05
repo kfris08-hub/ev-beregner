@@ -43,5 +43,20 @@
   function electricPrice(data) {
     return number(typeof data === 'number' ? data : data?.price ?? data?.pris ?? data?.total ?? data?.value ?? data?.kwh);
   }
-  global.EVCore = { number, getStored, setStored, getArea, setArea, fetchJSON, electricPrice };
+  function fuelPrices(data, now = Date.now()) {
+    if (data?.price_type !== 'pump_average' || data?.currency !== 'DKK' || data?.unit !== 'DKK/l' || data?.source_chain !== 'OK') throw new Error('Ingen dokumenterede pumpepriser');
+    const petrol95 = number(data.petrol95), diesel = number(data.diesel);
+    if (![petrol95, diesel].every(value => Number.isFinite(value) && value >= 5 && value <= 60)) throw new Error('Ugyldige pumpepriser');
+    const checked = Date.parse(data.checked_at || data.updated);
+    if (!Number.isFinite(checked) || checked > now + 600000 || now - checked > 48 * 3600000) throw new Error('Pumpepriserne er forældede');
+    for (const key of ['petrol95', 'diesel']) if (!Number.isInteger(data.coverage?.[key]) || data.coverage[key] < 1) throw new Error('Manglende prisdækning');
+    return { ...data, petrol95, diesel };
+  }
+  function fuelLabel(data, type, now = Date.now()) {
+    const snapshot = fuelPrices(data, now);
+    const time = new Intl.DateTimeFormat('da-DK', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Copenhagen' }).format(new Date(snapshot.checked_at || snapshot.updated));
+    const label = type ? 'Gns. fra ' + snapshot.coverage[type] + ' OK-stationer' : 'OK-pumpepriser · gennemsnit';
+    return label + ' · kontrolleret ' + time;
+  }
+  global.EVCore = { number, getStored, setStored, getArea, setArea, fetchJSON, electricPrice, fuelPrices, fuelLabel };
 })(window);
