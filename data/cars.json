@@ -5423,6 +5423,441 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/glb|GLB 200"
       ]
+    },
+    {
+      "slug": "mercedes-benz-glc-elektrisk-glc-250-electric-24766b68",
+      "brand": "Mercedes-Benz",
+      "model": "GLC (elektrisk) GLC 250 electric",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mercedes-benz/glc-2026",
+          "primary_url": "https://www.mercedes-benz.dk/content/dam/denmark/passengercars/pricelist/2026/07_2026/standard/GLC%20X540%20%28MY807%29%20prisliste%2009.06.2026%20EKSTERN.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 522900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mercedes-benz/glc-2026|GLC 250 electric"
+      ]
+    },
+    {
+      "slug": "mg-mg4-ev-ny-mg4-ev-premium-long-range-64-kwh-lfp-142b68af",
+      "brand": "MG",
+      "model": "MG4 EV Ny MG4 EV Premium Long Range (64 kWh LFP)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mg/mg4-2026",
+          "primary_url": "https://api.mgmotors.dk/dokumenter/ny-mg4-ev-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 219999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mg/mg4-2026|Ny MG4 EV Premium Long Range (64 kWh LFP)"
+      ]
+    },
+    {
+      "slug": "mg-mg4-ev-urban-comfort-standard-range-42-8-kwh-lfp-7a80e456",
+      "brand": "MG",
+      "model": "MG4 EV Urban Comfort Standard Range (42,8 kWh LFP)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mg/mg4-ev-urban",
+          "primary_url": "https://api.mgmotors.dk/dokumenter/mg4-ev-urban-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 174999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mg/mg4-ev-urban|MG4 EV Urban Comfort Standard Range (42,8 kWh LFP)"
+      ]
+    },
+    {
+      "slug": "mg-mgs6-ev-luxury-long-range-77-kwh-ncm-baghjulstrk-1f355cf0",
+      "brand": "MG",
+      "model": "MGS6 EV Luxury Long Range (77 kWh NCM, baghjulstræk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mg/mgs6-ev",
+          "primary_url": "https://api.mgmotors.dk/dokumenter/mgs6-ev-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 299999,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mg/mgs6-ev|MGS6 EV Luxury Long Range (77 kWh NCM, baghjulstræk)"
+      ]
+    },
+    {
+      "slug": "mini-aceman-mini-aceman-e-essential-trim-24622bd4",
+      "brand": "MINI",
+      "model": "Aceman MINI Aceman E Essential Trim",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mini/aceman-2026",
+          "primary_url": "https://www.mini.dk/da_DK/hjem/modeller/fuldelektrisk-mini-aceman/models.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 242700,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mini/aceman-2026|MINI Aceman E Essential Trim"
+      ]
+    },
+    {
+      "slug": "mini-cooper-electric-mini-cooper-e-essential-trim-33e18c24",
+      "brand": "MINI",
+      "model": "Cooper Electric MINI Cooper E Essential Trim",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mini/cooper-electric-2026",
+          "primary_url": "https://www.mini.dk/da_DK/hjem/modeller/fuldelektrisk-mini-cooper/models.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 226700,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mini/cooper-electric-2026|MINI Cooper E Essential Trim"
+      ]
+    },
+    {
+      "slug": "nio-et5-touring-standard-range-73-5-kwh-netto-3bc7985d",
+      "brand": "NIO",
+      "model": "ET5 Touring Standard Range (73,5 kWh netto)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/nio/et5-touring",
+          "primary_url": "https://ipaper.ipapercms.dk/NicChristiansenGruppen/nio/specifikationer/nio-et5-touring/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 359900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/nio/et5-touring|Standard Range (73,5 kWh netto)"
+      ]
+    },
+    {
+      "slug": "opel-corsa-electric-city-136-hk-50-kwh-c67422e4",
+      "brand": "Opel",
+      "model": "Corsa Electric City 136 hk (50 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/opel/corsa-electric-2026",
+          "primary_url": "https://www.opel.dk/modeller/corsa-modeller/oversigt-corsa.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 239990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/opel/corsa-electric-2026|Corsa Electric City 136 hk (50 kWh)"
+      ]
+    },
+    {
+      "slug": "opel-zafira-e-shuttle-75-kwh-136-hk-9-sder-eb33b9b7",
+      "brand": "Opel",
+      "model": "Zafira-e Shuttle 75 kWh 136 hk (9 sæder)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/opel/zafira-electric",
+          "primary_url": "https://www.opel.dk/tools/prislister/zafira-e-priser-specifikationer.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 409990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/opel/zafira-electric|Shuttle 75 kWh 136 hk (9 sæder)"
+      ]
+    },
+    {
+      "slug": "polestar-4-coupe-single-motor-rear-motor-0e4e33a7",
+      "brand": "Polestar",
+      "model": "4 coupé Single motor (Rear motor)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/polestar/polestar-4-2026",
+          "primary_url": "https://www.polestar.com/dk/polestar-4-models/polestar-4-coupe/specifications/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 465000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/polestar/polestar-4-2026|Single motor (Rear motor)"
+      ]
+    },
+    {
+      "slug": "polestar-4-suv-rear-motor-45df552b",
+      "brand": "Polestar",
+      "model": "4 SUV Rear motor",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/polestar/polestar-4-suv",
+          "primary_url": "https://www.polestar.com/dk/polestar-4-models/polestar-4-suv/specifications/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 465000,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/polestar/polestar-4-suv|Rear motor"
+      ]
+    },
+    {
+      "slug": "porsche-cayenne-turbo-electric-dc385549",
+      "brand": "Porsche",
+      "model": "Cayenne Turbo Electric",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/porsche/cayenne-turbo-electric",
+          "primary_url": "https://configurator.porsche.com/da-DK/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1954900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/porsche/cayenne-turbo-electric|Cayenne Turbo Electric"
+      ]
+    },
+    {
+      "slug": "porsche-taycan-cross-turismo-taycan-4-cross-turismo-3340adc6",
+      "brand": "Porsche",
+      "model": "Taycan Cross Turismo Taycan 4 Cross Turismo",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/porsche/taycan-cross-turismo",
+          "primary_url": "https://configurator.porsche.com/da-DK/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1139900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/porsche/taycan-cross-turismo|Taycan 4 Cross Turismo"
+      ]
+    },
+    {
+      "slug": "porsche-taycan-sport-turismo-055ac51e",
+      "brand": "Porsche",
+      "model": "Taycan Sport Turismo",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/porsche/taycan-sport-turismo",
+          "primary_url": "https://configurator.porsche.com/da-DK/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1009900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/porsche/taycan-sport-turismo|Taycan Sport Turismo"
+      ]
+    },
+    {
+      "slug": "porsche-taycan-turbo-gt-85118446",
+      "brand": "Porsche",
+      "model": "Taycan Turbo GT",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-06",
+      "indexable": false,
+      "modified": "2026-11-06",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/porsche/taycan-turbo-gt",
+          "primary_url": "https://configurator.porsche.com/da-DK/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 2974900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/porsche/taycan-turbo-gt|Taycan Turbo GT"
+      ]
     }
   ]
 }
