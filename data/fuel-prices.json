@@ -9,9 +9,9 @@
   "source_chain": "OK",
   "source_url": "https://mobility-prices.ok.dk/api/v1/fuel-prices",
   "documentation_url": "https://www.ok.dk/globalassets/pdfer/diverse/offentlig-api-dokumentation.pdf",
-  "updated": "2026-11-06T17:26:17+00:00",
-  "checked_at": "2026-11-06T17:26:17+00:00",
-  "source_date": "2026-11-06",
+  "updated": "2026-11-06T23:02:07+00:00",
+  "checked_at": "2026-11-06T23:02:07+00:00",
+  "source_date": "2026-11-07",
   "coverage": {
     "petrol95": 689,
     "diesel": 690
@@ -26,8 +26,8 @@
       "max": 18.39
     }
   },
-  "latest_station_update": "2026-11-06T17:25:00+00:00",
-  "oldest_station_update": "2026-11-06T17:25:00+00:00",
+  "latest_station_update": "2026-11-06T23:00:48+00:00",
+  "oldest_station_update": "2026-11-06T23:00:48+00:00",
   "station_max_age_hours": 72,
   "excluded_stations": 0,
   "method": "Unweighted mean: each current OK station counts once per standard product. Not a national average or a local quote."
