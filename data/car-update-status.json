@@ -1,37 +1,37 @@
 {
   "updated_models": [
-    "mercedes-benz-glc-elektrisk-glc-250-electric-24766b68",
-    "mg-mg4-ev-ny-mg4-ev-premium-long-range-64-kwh-lfp-142b68af",
-    "mg-mg4-ev-urban-comfort-standard-range-42-8-kwh-lfp-7a80e456",
-    "mg-mgs6-ev-luxury-long-range-77-kwh-ncm-baghjulstrk-1f355cf0",
-    "mini-aceman-mini-aceman-e-essential-trim-24622bd4",
-    "mini-cooper-electric-mini-cooper-e-essential-trim-33e18c24",
-    "nio-et5-touring-standard-range-73-5-kwh-netto-3bc7985d",
-    "opel-corsa-electric-city-136-hk-50-kwh-c67422e4",
-    "opel-zafira-e-shuttle-75-kwh-136-hk-9-sder-eb33b9b7",
-    "polestar-4-coupe-single-motor-rear-motor-0e4e33a7",
-    "polestar-4-suv-rear-motor-45df552b",
-    "porsche-cayenne-turbo-electric-dc385549",
-    "porsche-taycan-cross-turismo-taycan-4-cross-turismo-3340adc6",
-    "porsche-taycan-sport-turismo-055ac51e",
-    "porsche-taycan-turbo-gt-85118446"
+    "land-rover-range-rover-electric-se-swb-ev-450-hk-awd-fb481745",
+    "land-rover-range-rover-sport-electric-dynamic-se-ev-450-hk-awd-01b63f19",
+    "porsche-taycan-turbo-s-33b0f8ca",
+    "renault-4-e-tech-electric-evolution-40-kwh-4f6b5cef",
+    "renault-5-e-tech-electric-evolution-40-kwh-120-hk-d51cfe82",
+    "renault-scenic-e-tech-electric-techno-87-kwh-220-hk-53646e1f",
+    "renault-twingo-e-tech-electric-evolution-27-5-kwh-80-hk-a172a18e",
+    "skoda-elroq-rs-4x4-250-kw-340-hk-cd5fd72c",
+    "skoda-enyaq-coupe-rs-4x4-250-kw-340-hk-6b5a9fa9",
+    "skoda-epiq-35-essence-85-kw-116-hk-2c5278ae",
+    "skoda-peaq-60-selection-150-kw-204-hk-50ea8b6c",
+    "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2",
+    "tesla-model-3-highland-2026-model-3-baghjulstrk-9efd493a",
+    "tesla-model-y-2026-facelift-model-y-baghjulstrk-bdba2d68",
+    "toyota-proace-verso-electric-combi-long-75-kwh-136-hk-9-personer-fe4ba22b"
   ],
   "new_models": [
-    "mercedes-benz-glc-elektrisk-glc-250-electric-24766b68",
-    "mg-mg4-ev-ny-mg4-ev-premium-long-range-64-kwh-lfp-142b68af",
-    "mg-mg4-ev-urban-comfort-standard-range-42-8-kwh-lfp-7a80e456",
-    "mg-mgs6-ev-luxury-long-range-77-kwh-ncm-baghjulstrk-1f355cf0",
-    "mini-aceman-mini-aceman-e-essential-trim-24622bd4",
-    "mini-cooper-electric-mini-cooper-e-essential-trim-33e18c24",
-    "nio-et5-touring-standard-range-73-5-kwh-netto-3bc7985d",
-    "opel-corsa-electric-city-136-hk-50-kwh-c67422e4",
-    "opel-zafira-e-shuttle-75-kwh-136-hk-9-sder-eb33b9b7",
-    "polestar-4-coupe-single-motor-rear-motor-0e4e33a7",
-    "polestar-4-suv-rear-motor-45df552b",
-    "porsche-cayenne-turbo-electric-dc385549",
-    "porsche-taycan-cross-turismo-taycan-4-cross-turismo-3340adc6",
-    "porsche-taycan-sport-turismo-055ac51e",
-    "porsche-taycan-turbo-gt-85118446"
+    "porsche-taycan-turbo-s-33b0f8ca",
+    "land-rover-range-rover-electric-se-swb-ev-450-hk-awd-fb481745",
+    "land-rover-range-rover-sport-electric-dynamic-se-ev-450-hk-awd-01b63f19",
+    "renault-4-e-tech-electric-evolution-40-kwh-4f6b5cef",
+    "renault-5-e-tech-electric-evolution-40-kwh-120-hk-d51cfe82",
+    "renault-scenic-e-tech-electric-techno-87-kwh-220-hk-53646e1f",
+    "renault-twingo-e-tech-electric-evolution-27-5-kwh-80-hk-a172a18e",
+    "skoda-elroq-rs-4x4-250-kw-340-hk-cd5fd72c",
+    "skoda-enyaq-coupe-rs-4x4-250-kw-340-hk-6b5a9fa9",
+    "skoda-epiq-35-essence-85-kw-116-hk-2c5278ae",
+    "skoda-peaq-60-selection-150-kw-204-hk-50ea8b6c",
+    "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2",
+    "tesla-model-3-highland-2026-model-3-baghjulstrk-9efd493a",
+    "tesla-model-y-2026-facelift-model-y-baghjulstrk-bdba2d68",
+    "toyota-proace-verso-electric-combi-long-75-kwh-136-hk-9-personer-fe4ba22b"
   ],
   "unmatched_existing_variants": [
     {
@@ -416,7 +416,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-06T11:27:19.277951+00:00",
+  "checked_at": "2026-11-07T10:39:47.924467+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -440,9 +440,9 @@
     }
   ],
   "source_rejections": [],
-  "active_models": 258,
-  "automatically_priced_models": 117,
+  "active_models": 273,
+  "automatically_priced_models": 132,
   "legacy_models_without_automatic_price": 139,
   "historical_models": 2,
-  "pending_indexing": 63
+  "pending_indexing": 78
 }

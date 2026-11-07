@@ -5858,6 +5858,441 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/taycan-turbo-gt|Taycan Turbo GT"
       ]
+    },
+    {
+      "slug": "porsche-taycan-turbo-s-33b0f8ca",
+      "brand": "Porsche",
+      "model": "Taycan Turbo S",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/porsche/taycan-turbo-s",
+          "primary_url": "https://configurator.porsche.com/da-DK/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 2509900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/porsche/taycan-turbo-s|Taycan Turbo S"
+      ]
+    },
+    {
+      "slug": "land-rover-range-rover-electric-se-swb-ev-450-hk-awd-fb481745",
+      "brand": "Land Rover",
+      "model": "Range Rover Electric SE (SWB) EV 450 hk AWD",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/land-rover/range-rover-electric-2026",
+          "primary_url": "https://api.eu-denmark.lr.prod.reffine.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEFEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--00caecdff58512a9f50ec175cc94da76d664bc7e/L460_RR_BEV_Onepager_MY27_K9_LH.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1754900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/land-rover/range-rover-electric-2026|Range Rover Electric SE (SWB) EV 450 hk AWD"
+      ]
+    },
+    {
+      "slug": "land-rover-range-rover-sport-electric-dynamic-se-ev-450-hk-awd-01b63f19",
+      "brand": "Land Rover",
+      "model": "Range Rover Sport Electric Dynamic SE EV 450 hk AWD",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/land-rover/range-rover-sport-electric",
+          "primary_url": "https://api.eu-denmark.lr.prod.reffine.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGdEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--eddcc9bb702eacac72560a7888effc959c271eef/L461_RRS_BEV_Onepager_MY27_K3_LH.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 1234900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/land-rover/range-rover-sport-electric|Range Rover Sport Electric Dynamic SE EV 450 hk AWD"
+      ]
+    },
+    {
+      "slug": "renault-4-e-tech-electric-evolution-40-kwh-4f6b5cef",
+      "brand": "Renault",
+      "model": "4 E-Tech electric Evolution (40 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/renault/renault-4-e-tech-2026",
+          "primary_url": "https://edge.sitecorecloud.io/hedinitaban27a1-hedin8837-prod5c4b-4604/media/project/hedin/distribution-cars/renaultdksite/cardocuments/prisliste-renault-4-e-tech-electric.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 199990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/renault/renault-4-e-tech-2026|Evolution (40 kWh)"
+      ]
+    },
+    {
+      "slug": "renault-5-e-tech-electric-evolution-40-kwh-120-hk-d51cfe82",
+      "brand": "Renault",
+      "model": "5 E-Tech electric Evolution 40 kWh 120 hk",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/renault/renault-5-e-tech-2026",
+          "primary_url": "https://edge.sitecorecloud.io/hedinitaban27a1-hedin8837-prod5c4b-4604/media/project/hedin/distribution-cars/renaultdksite/cardocuments/prisliste-renault-5-e-tech-electric.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 189990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/renault/renault-5-e-tech-2026|Evolution 40 kWh 120 hk"
+      ]
+    },
+    {
+      "slug": "renault-scenic-e-tech-electric-techno-87-kwh-220-hk-53646e1f",
+      "brand": "Renault",
+      "model": "Scenic E-Tech electric Techno 87 kWh 220 hk",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/renault/scenic-e-tech-2026",
+          "primary_url": "https://edge.sitecorecloud.io/hedinitaban27a1-hedin8837-prod5c4b-4604/media/project/hedin/distribution-cars/renaultdksite/cardocuments/prisliste-scenic-e-tech-electric.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 299990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/renault/scenic-e-tech-2026|Techno 87 kWh 220 hk"
+      ]
+    },
+    {
+      "slug": "renault-twingo-e-tech-electric-evolution-27-5-kwh-80-hk-a172a18e",
+      "brand": "Renault",
+      "model": "Twingo E-Tech electric Evolution 27,5 kWh 80 hk",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/renault/twingo-e-tech",
+          "primary_url": "https://edge.sitecorecloud.io/hedinitaban27a1-hedin8837-prod5c4b-4604/media/project/hedin/distribution-cars/renaultdksite/cardocuments/prisliste-twingo-e-tech-electric.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 146990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/renault/twingo-e-tech|Evolution 27,5 kWh 80 hk"
+      ]
+    },
+    {
+      "slug": "skoda-elroq-rs-4x4-250-kw-340-hk-cd5fd72c",
+      "brand": "Skoda",
+      "model": "Elroq RS 4x4 250 kW (340 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/skoda/elroq-rs",
+          "primary_url": "https://ww4.skoda.dk/prislister/elroq/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 403895,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/skoda/elroq-rs|Elroq RS 4x4 250 kW (340 hk)"
+      ]
+    },
+    {
+      "slug": "skoda-enyaq-coupe-rs-4x4-250-kw-340-hk-6b5a9fa9",
+      "brand": "Skoda",
+      "model": "Enyaq Coupé RS 4x4 250 kW (340 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/skoda/enyaq-coupe-rs",
+          "primary_url": "https://ww4.skoda.dk/prislister/enyaq-coupe/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 479595,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/skoda/enyaq-coupe-rs|Enyaq Coupé RS 4x4 250 kW (340 hk)"
+      ]
+    },
+    {
+      "slug": "skoda-epiq-35-essence-85-kw-116-hk-2c5278ae",
+      "brand": "Skoda",
+      "model": "Epiq 35 Essence 85 kW (116 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/skoda/epiq",
+          "primary_url": "https://ww4.skoda.dk/prislister/epiq/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 189995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/skoda/epiq|Epiq 35 Essence 85 kW (116 hk)"
+      ]
+    },
+    {
+      "slug": "skoda-peaq-60-selection-150-kw-204-hk-50ea8b6c",
+      "brand": "Skoda",
+      "model": "Peaq 60 Selection 150 kW (204 hk)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/skoda/peaq",
+          "primary_url": "https://ww4.skoda.dk/prislister/peaq/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 340095,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/skoda/peaq|Peaq 60 Selection 150 kW (204 hk)"
+      ]
+    },
+    {
+      "slug": "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2",
+      "brand": "Subaru",
+      "model": "Uncharted Adventure FWD (57,7 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/subaru/uncharted",
+          "primary_url": "https://www.subaru.dk/kob-ejerskab/prisliste/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 289900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/subaru/uncharted|Adventure FWD (57,7 kWh)"
+      ]
+    },
+    {
+      "slug": "tesla-model-3-highland-2026-model-3-baghjulstrk-9efd493a",
+      "brand": "Tesla",
+      "model": "Model 3 Highland 2026 Model 3 Baghjulstræk",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/tesla/model-3-highland-2026",
+          "primary_url": "https://www.tesla.com/da_dk/model3/design",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 269990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/tesla/model-3-highland-2026|Model 3 Baghjulstræk"
+      ]
+    },
+    {
+      "slug": "tesla-model-y-2026-facelift-model-y-baghjulstrk-bdba2d68",
+      "brand": "Tesla",
+      "model": "Model Y (2026 Facelift) Model Y Baghjulstræk",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/tesla/model-y-2026-facelift",
+          "primary_url": "https://www.tesla.com/da_dk/modely/design",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 304990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/tesla/model-y-2026-facelift|Model Y Baghjulstræk"
+      ]
+    },
+    {
+      "slug": "toyota-proace-verso-electric-combi-long-75-kwh-136-hk-9-personer-fe4ba22b",
+      "brand": "Toyota",
+      "model": "Proace Verso Electric Combi Long 75 kWh 136 hk, 9 personer",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-07",
+      "indexable": false,
+      "modified": "2026-11-07",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/toyota/proace-verso",
+          "primary_url": "https://modelinformation.toyota.dk/Toyota/specs/Prislister/proace-verso/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 464900,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/toyota/proace-verso|Proace Verso Electric Combi Long 75 kWh 136 hk, 9 personer"
+      ]
     }
   ]
 }
