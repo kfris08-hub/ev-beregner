@@ -139,7 +139,12 @@ def build():
     for m in models:
         manifest['models'].setdefault(m['slug'],{'label':m['brand']+' '+m['model'],'status':'missing','reviewed':False,'reason':'Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt.'})
     shared=reuse(models,manifest,json.loads((ROOT/'data/photo-families.json').read_text()))
-    for m in models:render_model(m,models,manifest['models'][m['slug']],fuel)
+    for m in models:
+        photo=manifest['models'][m['slug']]
+        if m['slug'] in shared:m['modified']=date.today().isoformat()
+        if photo.get('status')=='verified' and photo.get('reviewed_at','')>m['modified']:m['modified']=photo['reviewed_at']
+        render_model(m,models,photo,fuel)
+    write(ROOT/'data/cars.json',json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
     print('PHOTO_REUSE_RESULT '+json.dumps({'added':len(shared),'slugs':shared}))
     write(ROOT/'data/model-photos.json',json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     overview=(ROOT/'elbil/index.html').read_text();brands=sorted({m['brand'] for m in models},key=str.casefold)

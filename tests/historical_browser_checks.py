@@ -25,7 +25,8 @@ async def main():
      response=await page.goto(BASE+'/elbil/'+m['slug']+'/',wait_until='load');assert response.status==200
      assert '2019' in await page.locator('#historicalModelNotice').inner_text()
      assert 'Egen købspris' in await page.locator('.stat').first.inner_text()
-     assert await page.locator('#photoLoading').is_visible()
+     assert await page.locator('#carPhoto').is_visible()
+     assert await page.locator('#carPhoto').evaluate('(image)=>image.complete && image.naturalWidth>=700')
      assert not re.search(r'269\.999|324\.999|339\.999',await page.locator('body').inner_text())
      assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1')
      if js:

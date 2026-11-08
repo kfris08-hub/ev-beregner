@@ -32,7 +32,7 @@ def main():
   for slug in targets:
    label=manifest['models'][slug]['label']
    manifest['models'][slug]={k:photo[k] for k in ('identity','file','url','original_url','source','author','license','license_url','description','original_width','original_height','reviewed_at')}
-   manifest['models'][slug].update(label=label,status='verified',reviewed=True,checked_at=date.today().isoformat(),credit=photo['author'],attribution='',modifications='Nedskaleret og konverteret til WebP; ingen beskæring.',src=src,width=image.width,height=image.height,bytes=len(data),sha256=digest,caption='Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant.')
+   manifest['models'][slug].update(label=label,status='verified',reviewed=True,checked_at=date.today().isoformat(),credit=photo['author'],attribution='',modifications='Nedskaleret og konverteret til WebP; ingen beskæring.',src=src,width=image.width,height=image.height,bytes=len(data),sha256=digest,caption=photo.get('caption') or 'Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant.')
    count+=1
   time.sleep(1)
  (ROOT/'data/model-photos.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

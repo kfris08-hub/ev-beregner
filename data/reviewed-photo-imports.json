@@ -162,6 +162,280 @@
       ],
       "identity": "Audi Q6 Sportback e-tron",
       "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "corsa-0",
+      "file": "File:2023 Opel Corsa-e IAA 2023 1X7A0385.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2023_Opel_Corsa-e_IAA_2023_1X7A0385.jpg/1280px-2023_Opel_Corsa-e_IAA_2023_1X7A0385.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/2023_Opel_Corsa-e_IAA_2023_1X7A0385.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:2023_Opel_Corsa-e_IAA_2023_1X7A0385.jpg",
+      "author": "Alexander-93",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Opel Corsa-e (Facelift) at IAA 2023",
+      "original_width": 5086,
+      "original_height": 2910,
+      "identity": "Opel Corsa Electric",
+      "slugs": [
+        "opel-corsa-electric-city-136-hk-50-kwh-c67422e4"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "berlingo-1",
+      "file": "File:Citroën ë-Berlingo Automesse Ludwigsburg 2024 IMG 1657.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Citro%C3%ABn_%C3%AB-Berlingo_Automesse_Ludwigsburg_2024_IMG_1657.jpg/1280px-Citro%C3%ABn_%C3%AB-Berlingo_Automesse_Ludwigsburg_2024_IMG_1657.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Citro%C3%ABn_%C3%AB-Berlingo_Automesse_Ludwigsburg_2024_IMG_1657.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_%C3%AB-Berlingo_Automesse_Ludwigsburg_2024_IMG_1657.jpg",
+      "author": "Alexander-93",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Citroën ë-Berlingo at Automesse Ludwigsburg 2024",
+      "original_width": 4572,
+      "original_height": 3043,
+      "identity": "Citroën ë-Berlingo",
+      "slugs": [
+        "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5"
+      ],
+      "reviewed_at": "2026-11-08",
+      "caption": "Modelbillede af ë-Berlingo. Længde, sædeantal og udstyr kan afvige."
+    },
+    {
+      "id": "spacetourer-0",
+      "file": "File:Citroen e-Spacetourer Classic-Gala 2021 1X7A0113.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Citroen_e-Spacetourer_Classic-Gala_2021_1X7A0113.jpg/1280px-Citroen_e-Spacetourer_Classic-Gala_2021_1X7A0113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Citroen_e-Spacetourer_Classic-Gala_2021_1X7A0113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Citroen_e-Spacetourer_Classic-Gala_2021_1X7A0113.jpg",
+      "author": "Alexander Migl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Citroen_e-Spacetourer at Classic-Gala 2021",
+      "original_width": 5603,
+      "original_height": 3738,
+      "identity": "Citroën ë-SpaceTourer",
+      "slugs": [
+        "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984"
+      ],
+      "reviewed_at": "2026-11-08",
+      "caption": "Modelbillede af ë-SpaceTourer. Længde, sædeantal og udstyr kan afvige."
+    },
+    {
+      "id": "ds8-1",
+      "file": "File:DS No8, Auto 2025, Zurich (20251029-P1073674).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/DS_No8%2C_Auto_2025%2C_Zurich_%2820251029-P1073674%29.jpg/1280px-DS_No8%2C_Auto_2025%2C_Zurich_%2820251029-P1073674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/DS_No8%2C_Auto_2025%2C_Zurich_%2820251029-P1073674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:DS_No8,_Auto_2025,_Zurich_(20251029-P1073674).jpg",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "description": "DS No 8 at Auto Zürich 2025",
+      "original_width": 5184,
+      "original_height": 3456,
+      "identity": "DS N°8",
+      "slugs": [
+        "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "sterra-et-1",
+      "file": "File:Exlantix ET front Poznań Motor Show 2026.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Exlantix_ET_front_Pozna%C5%84_Motor_Show_2026.jpg/1280px-Exlantix_ET_front_Pozna%C5%84_Motor_Show_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Exlantix_ET_front_Pozna%C5%84_Motor_Show_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Exlantix_ET_front_Pozna%C5%84_Motor_Show_2026.jpg",
+      "author": "Peżot",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Exlantix ET at 2026 Poznań Motor Show",
+      "original_width": 6000,
+      "original_height": 4000,
+      "identity": "Exlantix ET",
+      "slugs": [
+        "exlantix-et-advanced-el-313-hk-rwd-74-7-kwh-netto-d0954ae4"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "tourneo-0",
+      "file": "File:Ford E-Turneo Custom, Auto 2025, Zurich (20251029-P1074509).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Ford_E-Turneo_Custom%2C_Auto_2025%2C_Zurich_%2820251029-P1074509%29.jpg/1280px-Ford_E-Turneo_Custom%2C_Auto_2025%2C_Zurich_%2820251029-P1074509%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ford_E-Turneo_Custom%2C_Auto_2025%2C_Zurich_%2820251029-P1074509%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Ford_E-Turneo_Custom,_Auto_2025,_Zurich_(20251029-P1074509).jpg",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "description": "Ford E-Tourneo Custom at Auto Zürich 2025",
+      "original_width": 5184,
+      "original_height": 3888,
+      "identity": "Ford E-Tourneo Custom",
+      "slugs": [
+        "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff"
+      ],
+      "reviewed_at": "2026-11-08",
+      "caption": "Modelbillede af E-Tourneo Custom. Længde, sædeantal og udstyr kan afvige."
+    },
+    {
+      "id": "ehs7-0",
+      "file": "File:Hongqi EHS7 - Front (Alt).png",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Hongqi_EHS7_-_Front_%28Alt%29.png/1280px-Hongqi_EHS7_-_Front_%28Alt%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Hongqi_EHS7_-_Front_%28Alt%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Hongqi_EHS7_-_Front_(Alt).png",
+      "author": "Raszbeary",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Hongqi EHS7 (Front view alternative)",
+      "original_width": 3237,
+      "original_height": 2093,
+      "identity": "Hongqi EHS7",
+      "slugs": [
+        "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "e30x-1",
+      "file": "File:JAC E30X front Poznań Motor Show 2026.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/JAC_E30X_front_Pozna%C5%84_Motor_Show_2026.jpg/1280px-JAC_E30X_front_Pozna%C5%84_Motor_Show_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/JAC_E30X_front_Pozna%C5%84_Motor_Show_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:JAC_E30X_front_Pozna%C5%84_Motor_Show_2026.jpg",
+      "author": "Peżot",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "JAC E30X at 2026 Poznań Motor Show",
+      "original_width": 6000,
+      "original_height": 4000,
+      "identity": "JAC E30X",
+      "slugs": [
+        "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "ev4-fastback-1",
+      "file": "File:2026 Kia EV4 (Front) on display at the 2025 NYC Auto Show.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2026_Kia_EV4_%28Front%29_on_display_at_the_2025_NYC_Auto_Show.jpg/1280px-2026_Kia_EV4_%28Front%29_on_display_at_the_2025_NYC_Auto_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/2026_Kia_EV4_%28Front%29_on_display_at_the_2025_NYC_Auto_Show.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:2026_Kia_EV4_(Front)_on_display_at_the_2025_NYC_Auto_Show.jpg",
+      "author": "Raszbeary",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "description": "2026 Kia EV4 (Front) on display at the 2025 NYC Auto Show",
+      "original_width": 4272,
+      "original_height": 2848,
+      "identity": "Kia EV4 Fastback",
+      "slugs": [
+        "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "b05-0",
+      "file": "File:Leapmotor B05 front Poznań Motor Show 2026.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Leapmotor_B05_front_Pozna%C5%84_Motor_Show_2026.jpg/1280px-Leapmotor_B05_front_Pozna%C5%84_Motor_Show_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Leapmotor_B05_front_Pozna%C5%84_Motor_Show_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Leapmotor_B05_front_Pozna%C5%84_Motor_Show_2026.jpg",
+      "author": "Peżot",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Leapmotor B05 at 2026 Poznań Motor Show",
+      "original_width": 6000,
+      "original_height": 4000,
+      "identity": "Leapmotor B05",
+      "slugs": [
+        "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "eqs-suv-0",
+      "file": "File:Mercedes-Benz EQS 450 4MATIC SUV (X296) front.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Mercedes-Benz_EQS_450_4MATIC_SUV_%28X296%29_front.jpg/1280px-Mercedes-Benz_EQS_450_4MATIC_SUV_%28X296%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Mercedes-Benz_EQS_450_4MATIC_SUV_%28X296%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_EQS_450_4MATIC_SUV_(X296)_front.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "X296系メルセデス・ベンツ・EQS 450 4MATIC SUVをフロントから撮影。",
+      "original_width": 2560,
+      "original_height": 1920,
+      "identity": "Mercedes-Benz EQS SUV",
+      "slugs": [
+        "mercedes-benz-eqs-suv-450-plus-04aa0b45"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "g580-1",
+      "file": "File:Mercedes-Benz G 580 with EQ Technology DSC 8256.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg/1280px-Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_G_580_with_EQ_Technology_DSC_8256.jpg",
+      "author": "Alexander Migl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Mercedes-Benz G 580 with EQ Technology in Böblingen",
+      "original_width": 4544,
+      "original_height": 3038,
+      "identity": "Mercedes-Benz G 580 with EQ Technology",
+      "slugs": [
+        "mercedes-benz-g-580-med-eq-teknologi-g-580-electric-amg-edition-1c31082b"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "cross-turismo-1",
+      "file": "File:Porsche Taycan Turbo Cross Turismo White - front.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Porsche_Taycan_Turbo_Cross_Turismo_White_-_front.jpg/1280px-Porsche_Taycan_Turbo_Cross_Turismo_White_-_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Porsche_Taycan_Turbo_Cross_Turismo_White_-_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Porsche_Taycan_Turbo_Cross_Turismo_White_-_front.jpg",
+      "author": "Ethan Llamas",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "White Porsche Taycan Turbo Cross Turismo at Sports Cars for a Cause 2025 at Seven NEO, Bonifacio Global City",
+      "original_width": 4632,
+      "original_height": 2978,
+      "identity": "Porsche Taycan Cross Turismo",
+      "slugs": [
+        "porsche-taycan-cross-turismo-taycan-4-cross-turismo-3340adc6"
+      ],
+      "reviewed_at": "2026-11-08"
+    },
+    {
+      "id": "sport-turismo-0",
+      "file": "File:Porsche, Auto 2024, Zurich (PANA0858).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Porsche%2C_Auto_2024%2C_Zurich_%28PANA0858%29.jpg/1280px-Porsche%2C_Auto_2024%2C_Zurich_%28PANA0858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Porsche%2C_Auto_2024%2C_Zurich_%28PANA0858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Porsche,_Auto_2024,_Zurich_(PANA0858).jpg",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "description": "Porsche at Auto Zürich 2024",
+      "original_width": 5184,
+      "original_height": 3888,
+      "identity": "Porsche Taycan Sport Turismo",
+      "slugs": [
+        "porsche-taycan-sport-turismo-055ac51e"
+      ],
+      "reviewed_at": "2026-11-08",
+      "identity_evidence": "The source file is categorized as Porsche Taycan Sport Turismo; body also visually reviewed."
+    },
+    {
+      "id": "uncharted-1",
+      "file": "File:Subaru Uncharted, Auto 2025, Zurich (20251029-P1074437).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Subaru_Uncharted%2C_Auto_2025%2C_Zurich_%2820251029-P1074437%29.jpg/1280px-Subaru_Uncharted%2C_Auto_2025%2C_Zurich_%2820251029-P1074437%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Subaru_Uncharted%2C_Auto_2025%2C_Zurich_%2820251029-P1074437%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "https://commons.wikimedia.org/wiki/File:Subaru_Uncharted,_Auto_2025,_Zurich_(20251029-P1074437).jpg",
+      "author": "Matti Blume",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "description": "Subaru Uncharted at Auto Zürich 2025",
+      "original_width": 5184,
+      "original_height": 3456,
+      "identity": "Subaru Uncharted",
+      "slugs": [
+        "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2"
+      ],
+      "reviewed_at": "2026-11-08"
     }
   ]
 }
