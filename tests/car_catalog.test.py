@@ -80,6 +80,27 @@ class CatalogTests(unittest.TestCase):
    self.assertTrue((root/'test-results/car-update-status.json').is_file())
    self.assertFalse((root/'data/car-update-status.json').exists())
  def test_catalog_validates_existing_models(self):up.validate_catalog(CATALOG,CONFIG)
+class ExactBindingTests(unittest.TestCase):
+ def test_complete_retail_dto_finds_same_existing_trim(self):
+  m={'brand':'Peugeot','model':'E-5008 E-5008 Allure','battery':73}
+  r={'brand':'Peugeot','family':'Peugeot E-5008','variant':'Allure|EL 210','values':{'battery':73}}
+  self.assertIs(up.exact_existing_variant(r,[m]),m)
+  r['variant']='GT|EL 210';self.assertIsNone(up.exact_existing_variant(r,[m]))
+ def test_complete_retail_dto_never_crosses_battery_size(self):
+  m={'brand':'Peugeot','model':'E-5008 Allure','battery':73}
+  r={'brand':'Peugeot','family':'Peugeot E-5008','variant':'Allure|EL 210','values':{'battery':98}}
+  self.assertIsNone(up.exact_existing_variant(r,[m]))
+ def test_explicit_wrong_battery_binding_is_quarantined(self):
+  config=copy.deepcopy(CONFIG);slug='citroen-e-c3-you'
+  config['bindings']=[{'url':'https://example.dk/model','variant':'You! 44 kWh','slug':slug,'battery':30}]
+  record={'source_id':'https://example.dk/model|You! 44 kWh','brand':'Citroën','family':'Citroën ë-C3','variant':'You! 44 kWh','model':'ë-C3 You!','values':{'price':150000},'source':{'url':'https://example.dk/model','source_date':'2026-10-25','kind':'licensed-feed'}}
+  out,report=up.apply_records(CATALOG,[record],config,TODAY);self.assertEqual(out,CATALOG);self.assertTrue(report['quarantine'])
+ def test_reviewed_bindings_are_unique_and_preserve_current_battery(self):
+  by_slug={m['slug']:m for m in CATALOG['models']};keys=set()
+  for b in CONFIG['bindings']:
+   key=b['url']+'|'+b['variant'];self.assertNotIn(key,keys);keys.add(key)
+   if b.get('battery') is not None:self.assertAlmostEqual(by_slug[b['slug']]['battery'],b['battery'])
+
 class HistoricalCatalogTests(unittest.TestCase):
  def history(self):return json.loads((ROOT/'data/historical-cars.json').read_text())
  def test_historical_records_are_readded_and_idempotent(self):
@@ -106,3 +127,4 @@ class HistoricalCatalogTests(unittest.TestCase):
   record={'brand':'Kia','family':'Kia e-Soul','variant':'39,2 kWh (2019)'}
   self.assertIsNone(up.exact_existing_variant(record,[m]))
 if __name__=='__main__':unittest.main()
+

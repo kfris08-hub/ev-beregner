@@ -31,6 +31,8 @@ jobs:
           python tools/build_calculator_pages.py
       - name: Kontroller data, historiske adresser, billeder og alle beregnere
         run: |
+          python tests/publication.test.py
+          python tests/photo_reuse.test.py
           python tests/car_catalog.test.py
           python tests/sitemap_freshness_checks.py
           python tests/seo_checks.py
@@ -51,34 +53,18 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/cars.json data/car-update-status.json data/model-photos.json index.html elbil/ assets/calculator-cars.json bil-data-komplet.csv sitemap.xml beregnere/
+          git add data/cars.json data/car-update-status.json data/model-photos.json index.html elbil/ assets/calculator-cars.json bil-data-komplet.csv sitemap.xml beregnere/ .github/docs/BILLEDDÆKNING.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Opdater dokumenterede bilpriser og nye varianter automatisk'
           git push origin "HEAD:${GITHUB_REF_NAME}"
           echo 'changed=true' >> "$GITHUB_OUTPUT"
       # GITHUB_TOKEN pushes do not start another workflow or a Pages build.
       # Explicitly request the existing branch-based Pages build after tests pass.
-      - name: Udgiv den kontrollerede opdatering
+      - name: Udgiv med genforsøg og bekræft den offentlige version
         if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
-      - name: Kontrollér at den nye status er offentliggjort
-        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
-        run: |
-          python - <<'PY2'
-          import json,os,time,urllib.request
-          expected=json.load(open('data/car-update-status.json'))['checked_at']
-          for attempt in range(18):
-            url='https://www.evberegn.dk/data/car-update-status.json?build='+os.environ['GITHUB_RUN_ID']+'-'+str(attempt)
-            try:
-              with urllib.request.urlopen(url,timeout=15) as r:actual=json.load(r)
-              if actual.get('checked_at')==expected:
-                print('Publiceret bilkatalog og kontrolstatus bekræftet');break
-            except Exception:pass
-            time.sleep(10)
-          else:raise SystemExit('Pages har ikke offentliggjort den kontrollerede status inden for tidsgrænsen')
-          PY2
+        run: python tools/publish_site.py --verify data/car-update-status.json
       - name: Gem kontrolrapport også ved kilde- eller testfejl
         if: always()
         uses: actions/upload-artifact@v4
@@ -99,3 +85,4 @@ jobs:
               for s in r['sources']:f.write(f"- {s['id']}: {s['status']} ({s.get('records',0)} varianter)\n")
               f.write(f"\nTidligere modeller: {r.get('historical_models',0)}. Nye varianter: {len(r['new_models'])}. Tilbageholdte prisændringer: {len(r['quarantine'])}. Ufuldstændige sider uden Google-indeksering: {r['pending_indexing']}.\n")
           PY
+

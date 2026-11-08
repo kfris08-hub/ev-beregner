@@ -112,7 +112,8 @@ try:
     expected={BASE+p for p in pages if p.rstrip('/').split('/')[-1] not in incomplete and not (catalog.get(p.rstrip('/').split('/')[-1],{}).get('status') in ('withdrawn','redirect'))}
     assert len(site_entries)==len(set(site_entries))==len(expected) and set(site_entries)==expected
     image_nodes=root.findall('.//{http://www.google.com/schemas/sitemap-image/1.1}loc')
-    assert len(image_nodes)==sum(p['status']=='verified' for p in catalog.values()) and {i.text for i in image_nodes}=={BASE+p['src'] for p in catalog.values() if p['status']=='verified'}
+    indexed_photos=[p for slug,p in catalog.items() if p['status']=='verified' and slug not in incomplete]
+    assert len(image_nodes)==len(indexed_photos) and {i.text for i in image_nodes}=={BASE+p['src'] for p in indexed_photos}
     robot_text=robot_response['body'].decode('utf-8');robot=RobotFileParser();robot.parse(robot_text.splitlines())
     assert BASE+'/sitemap.xml' in robot_text
     assert all(robot.can_fetch('Googlebot',u) for u in expected|assets)
@@ -133,3 +134,4 @@ record={'checked_at':datetime.now(timezone.utc).isoformat(),'html_pages':len(pag
 (OUT/'full-public-crawl.json').write_text(json.dumps(record,ensure_ascii=False,indent=2))
 print('FULL_PUBLIC_CRAWL_RESULT '+json.dumps({k:v for k,v in record.items() if k not in ('responses','external_links')},ensure_ascii=False),flush=True)
 assert not errors,errors[:10]
+

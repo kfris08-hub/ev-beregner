@@ -1,50 +1,65 @@
-name: Undersøg kilder og fotografier
+name: Klargør rettelser uden at ændre hjemmesiden
 on:
   push:
     branches: [fix/site-repairs-20261108]
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: prepare-site-repairs-20261108
+  cancel-in-progress: false
 jobs:
-  sources:
+  prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - run: python -m pip install Pillow==11.3.0
-      - name: Undersøg datakilder og licenser uden at ændre hjemmesiden
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Importér de visuelt kontrollerede fotografier
+        run: python tools/import_reviewed_photos.py
+      - name: Hent variantdata og opbyg sider
         run: |
-          python - <<'PY'
-          import base64,hashlib,html,io,json,re,time,urllib.parse,urllib.request
-          from PIL import Image,ImageDraw
-          from pathlib import Path
-          def get(url):
-           req=urllib.request.Request(url,headers={'User-Agent':'EVBeregnTechnicalReview/1.0 (+https://www.evberegn.dk)'})
-           with urllib.request.urlopen(req,timeout=18) as r:return r.read()
-          feed=json.loads(get('https://bil-portalen.dk/data/bilpriser.json'))
-          print('SOURCE_ROWS '+json.dumps([r for r in feed['modeller'] if r.get('drivlinje')=='Elbil'],ensure_ascii=False),flush=True)
-          queries=[('soul','Kia e-Soul 2020 front'),('es90','Volvo ES90 front'),('aceman','Mini Aceman front'),('corsa','Opel Corsa Electric F front'),('eletre','Lotus Eletre front'),('emeya','Lotus Emeya front'),('et5-touring','Nio ET5 Touring front'),('a6-avant','Audi A6 Avant e-tron front'),('q4-sportback','Audi Q4 Sportback e-tron front'),('q6-sportback','Audi Q6 Sportback e-tron front'),('mini3','Kia e-Soul 2019 SK3')]
-          shots=[]
-          for ident,query in queries:
-           try:
-            args={'action':'query','format':'json','generator':'search','gsrsearch':query,'gsrnamespace':6,'gsrlimit':2,'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':1280}
-            payload=json.loads(get('https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(args)))
-            pages=payload.get('query',{}).get('pages',{})
-            for n,p in enumerate(pages.values()):
-             info=p['imageinfo'][0];meta=info.get('extmetadata',{});license=meta.get('LicenseShortName',{}).get('value','')
-             if not re.match(r'CC (?:BY|BY-SA|0)',license) and license!='CC0':continue
-             if info.get('width',0)<700:continue
-             url=info.get('thumburl') or info['url']
-             body=get(url);im=Image.open(io.BytesIO(body));thumb=im.convert('RGB');thumb.thumbnail((310,175))
-             key=ident+'-'+str(n);shots.append((key,thumb))
-             record={'id':key,'file':p['title'],'url':url,'original_url':info['url'],'source':info.get('descriptionurl'),'author':html.unescape(re.sub('<[^>]+>','',meta.get('Artist',{}).get('value',''))).strip(),'license':license,'license_url':meta.get('LicenseUrl',{}).get('value',''),'description':html.unescape(re.sub('<[^>]+>','',meta.get('ImageDescription',{}).get('value',''))).strip(),'original_width':info['width'],'original_height':info['height']}
-             print('PHOTO_CANDIDATE '+json.dumps(record,ensure_ascii=False),flush=True)
-             time.sleep(1)
-           except Exception as e:print('PHOTO_PROBE_ERROR '+json.dumps({'id':ident,'error':str(e)}),flush=True)
-           time.sleep(1)
-          if shots:
-           sheet=Image.new('RGB',(960,220*((len(shots)+2)//3)),'white');draw=ImageDraw.Draw(sheet)
-           for i,(key,im) in enumerate(shots):
-            x=(i%3)*320;y=(i//3)*220;draw.text((x+5,y+5),key,fill='black');sheet.paste(im,(x,y+30))
-           out=io.BytesIO();sheet.save(out,format='JPEG',quality=72);print('PHOTO_CONTACT_SHEET '+base64.b64encode(out.getvalue()).decode(),flush=True)
-          
-          PY
+          python tools/update_fuel_prices.py
+          python tools/update_car_catalog.py
+          python tools/build_car_catalog.py
+          python tools/build_calculator_pages.py
+      - name: Kontroller kildekoblinger, metadata, billeder og formler
+        run: |
+          python tests/publication.test.py
+          python tests/photo_reuse.test.py
+          python tests/car_catalog.test.py
+          python tests/fuel_prices.test.py
+          python tests/fuel_snapshot_checks.py
+          python tests/sitemap_freshness_checks.py
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/fuel_prices.test.cjs
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+      - name: Kontroller prisangivelse, egne priser, mobil og gamle adresser
+        run: |
+          python tests/repairs_browser_checks.py
+          python tests/full_public_flows.py
+          python tests/historical_browser_checks.py
+      - name: Gem kun kontrollerede ændringer på rettelsesgrenen
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cars.json data/fuel-prices.json data/car-update-status.json data/model-photos.json index.html elbil/ assets/calculator-cars.json assets/cars/ bil-data-komplet.csv sitemap.xml beregnere/ .github/docs/BILLEDDÆKNING.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Opbyg kontrollerede priser, modelbilleder og nye beregningssider'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kontrollerede-rettelser
+          path: test-results/
