@@ -1,12 +1,52 @@
-name: Gennemgå hele den udgivne hjemmeside
+name: Bekræft alle udgivne rettelser
 on:
   workflow_dispatch:
   push:
-    branches: [verify/full-site-2026-10-25]
+    branches: [verify/site-repairs-20261108]
 permissions:
   contents: read
 jobs:
+  publish:
+    permissions:
+      contents: read
+      actions: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Genstart udgivelsen og bekræft den automatiske prisopdatering
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import datetime,json,os,subprocess,time
+          repo=os.environ['GITHUB_REPOSITORY']
+          def api(path):
+            r=subprocess.run(['gh','api',path],check=True,capture_output=True,text=True);return json.loads(r.stdout)
+          old=api(f'repos/{repo}/actions/runs/42515684591')
+          if old.get('status')=='queued' and old.get('name')=='pages build and deployment':
+            r=subprocess.run(['gh','api','--method','POST',f'repos/{repo}/actions/runs/42515684591/cancel'],capture_output=True,text=True)
+            print('OLD_QUEUED_PAGES_CANCEL '+str(r.returncode),flush=True)
+          start=datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(seconds=2)
+          subprocess.run(['gh','workflow','run','update-fuel-prices.yml','--ref','main','--repo',repo],check=True)
+          selected_id=None
+          for attempt in range(180):
+            data=api(f'repos/{repo}/actions/workflows/update-fuel-prices.yml/runs?branch=main&event=workflow_dispatch&per_page=5')
+            selected=[r for r in data['workflow_runs'] if datetime.datetime.fromisoformat(r['created_at'].replace('Z','+00:00'))>=start]
+            if selected:
+              run=selected[0]
+              if selected_id is None:selected_id=run['id'];print('PRODUCTION_REPAIRS_RUN '+str(selected_id),flush=True)
+              if run['status']=='completed':
+                print('PRODUCTION_REPAIRS_RESULT '+json.dumps({'id':run['id'],'conclusion':run['conclusion']}),flush=True)
+                if run['conclusion']!='success':raise SystemExit('Prisopdatering eller offentliggørelse fejlede')
+                break
+            time.sleep(5)
+          else:raise SystemExit('Den automatiske udgivelse blev ikke afsluttet inden ventetidens udløb')
+          PY
   source:
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,6 +65,7 @@ jobs:
           node tests/calculators.test.cjs
           node tests/calculator_math.test.cjs
   public-crawl:
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,6 +80,7 @@ jobs:
           name: offentlig-crawl
           path: test-results/
   public-calculators:
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -60,6 +102,7 @@ jobs:
           name: offentlige-beregnere
           path: test-results/
   public-photos:
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -77,6 +120,7 @@ jobs:
           name: offentlige-modelbilleder
           path: test-results/
   public-flows:
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -92,4 +136,31 @@ jobs:
         if: always()
         with:
           name: offentlige-brugerforloeb
+          path: test-results/
+
+  public-fuel-and-catalog:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller alle automatiske varianter, egne priser og historiske modeller
+        env:
+          FUEL_PUBLIC: '1'
+          REPAIRS_PUBLIC: '1'
+          HISTORICAL_PUBLIC: '1'
+          CATALOG_PUBLIC: '1'
+        run: |
+          python tests/fuel_browser_checks.py
+          python tests/repairs_browser_checks.py
+          python tests/historical_browser_checks.py
+          python tests/catalog_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlig-katalog-og-priskontrol
           path: test-results/
