@@ -5323,6 +5323,36 @@
       "status": "missing",
       "reviewed": false,
       "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851": {
+      "label": "Volkswagen ID. Tiguan Trend 190 hk (58 kWh)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43": {
+      "label": "Volkswagen ID.3 Neo Trend 170 hk (50 kWh)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482": {
+      "label": "Volkswagen ID.7 GTX Max 340 hk 4MOTION (86 kWh)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "volvo-es90-single-motor-ultra-75e7ee4f": {
+      "label": "Volvo ES90 Single Motor Ultra",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
+    },
+    "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b": {
+      "label": "XPENG G9L RWD Long Range Ultra (7 sæder)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
     }
   }
 }

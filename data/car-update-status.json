@@ -1,37 +1,17 @@
 {
   "updated_models": [
-    "land-rover-range-rover-electric-se-swb-ev-450-hk-awd-fb481745",
-    "land-rover-range-rover-sport-electric-dynamic-se-ev-450-hk-awd-01b63f19",
-    "porsche-taycan-turbo-s-33b0f8ca",
-    "renault-4-e-tech-electric-evolution-40-kwh-4f6b5cef",
-    "renault-5-e-tech-electric-evolution-40-kwh-120-hk-d51cfe82",
-    "renault-scenic-e-tech-electric-techno-87-kwh-220-hk-53646e1f",
-    "renault-twingo-e-tech-electric-evolution-27-5-kwh-80-hk-a172a18e",
-    "skoda-elroq-rs-4x4-250-kw-340-hk-cd5fd72c",
-    "skoda-enyaq-coupe-rs-4x4-250-kw-340-hk-6b5a9fa9",
-    "skoda-epiq-35-essence-85-kw-116-hk-2c5278ae",
-    "skoda-peaq-60-selection-150-kw-204-hk-50ea8b6c",
-    "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2",
-    "tesla-model-3-highland-2026-model-3-baghjulstrk-9efd493a",
-    "tesla-model-y-2026-facelift-model-y-baghjulstrk-bdba2d68",
-    "toyota-proace-verso-electric-combi-long-75-kwh-136-hk-9-personer-fe4ba22b"
+    "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43",
+    "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482",
+    "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851",
+    "volvo-es90-single-motor-ultra-75e7ee4f",
+    "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b"
   ],
   "new_models": [
-    "porsche-taycan-turbo-s-33b0f8ca",
-    "land-rover-range-rover-electric-se-swb-ev-450-hk-awd-fb481745",
-    "land-rover-range-rover-sport-electric-dynamic-se-ev-450-hk-awd-01b63f19",
-    "renault-4-e-tech-electric-evolution-40-kwh-4f6b5cef",
-    "renault-5-e-tech-electric-evolution-40-kwh-120-hk-d51cfe82",
-    "renault-scenic-e-tech-electric-techno-87-kwh-220-hk-53646e1f",
-    "renault-twingo-e-tech-electric-evolution-27-5-kwh-80-hk-a172a18e",
-    "skoda-elroq-rs-4x4-250-kw-340-hk-cd5fd72c",
-    "skoda-enyaq-coupe-rs-4x4-250-kw-340-hk-6b5a9fa9",
-    "skoda-epiq-35-essence-85-kw-116-hk-2c5278ae",
-    "skoda-peaq-60-selection-150-kw-204-hk-50ea8b6c",
-    "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2",
-    "tesla-model-3-highland-2026-model-3-baghjulstrk-9efd493a",
-    "tesla-model-y-2026-facelift-model-y-baghjulstrk-bdba2d68",
-    "toyota-proace-verso-electric-combi-long-75-kwh-136-hk-9-personer-fe4ba22b"
+    "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851",
+    "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43",
+    "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482",
+    "volvo-es90-single-motor-ultra-75e7ee4f",
+    "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b"
   ],
   "unmatched_existing_variants": [
     {
@@ -416,7 +396,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-07T10:39:47.924467+00:00",
+  "checked_at": "2026-11-08T10:44:46.015063+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -440,9 +420,9 @@
     }
   ],
   "source_rejections": [],
-  "active_models": 273,
-  "automatically_priced_models": 132,
+  "active_models": 278,
+  "automatically_priced_models": 137,
   "legacy_models_without_automatic_price": 139,
   "historical_models": 2,
-  "pending_indexing": 78
+  "pending_indexing": 83
 }

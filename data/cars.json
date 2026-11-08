@@ -6293,6 +6293,151 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/toyota/proace-verso|Proace Verso Electric Combi Long 75 kWh 136 hk, 9 personer"
       ]
+    },
+    {
+      "slug": "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851",
+      "brand": "Volkswagen",
+      "model": "ID. Tiguan Trend 190 hk (58 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": false,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/volkswagen/id-tiguan",
+          "primary_url": "https://www.volkswagen.dk/app/da/prisliste/id-tiguan/",
+          "source_date": "2026-10-14",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 299995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/volkswagen/id-tiguan|ID. Tiguan Trend 190 hk (58 kWh)"
+      ]
+    },
+    {
+      "slug": "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43",
+      "brand": "Volkswagen",
+      "model": "ID.3 Neo Trend 170 hk (50 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": false,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/volkswagen/id3-2026",
+          "primary_url": "https://www.volkswagen.dk/app/da/prisliste/id3-neo/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 249995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/volkswagen/id3-2026|ID.3 Neo Trend 170 hk (50 kWh)"
+      ]
+    },
+    {
+      "slug": "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482",
+      "brand": "Volkswagen",
+      "model": "ID.7 GTX Max 340 hk 4MOTION (86 kWh)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": false,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/volkswagen/id7-gtx-2026",
+          "primary_url": "https://www.volkswagen.dk/app/da/prisliste/id7/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 549995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/volkswagen/id7-gtx-2026|ID.7 GTX Max 340 hk 4MOTION (86 kWh)"
+      ]
+    },
+    {
+      "slug": "volvo-es90-single-motor-ultra-75e7ee4f",
+      "brand": "Volvo",
+      "model": "ES90 Single Motor Ultra",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": false,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/volvo/es90-2026",
+          "primary_url": "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltaaaa646304b66314/6ac4ed5d496c1b62dc19d17a/MY27_ES90_Oktober-26_27-priser_KUN_Ultra_DEL-1.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 670860,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/volvo/es90-2026|ES90 Single Motor Ultra"
+      ]
+    },
+    {
+      "slug": "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b",
+      "brand": "XPENG",
+      "model": "G9L RWD Long Range Ultra (7 sæder)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": false,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/xpeng/g9l",
+          "primary_url": "https://store.xpeng.com/dk/configurator/G9L",
+          "source_date": "2026-10-19",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 639995,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "source_ids": [
+        "https://bil-portalen.dk/bil/xpeng/g9l|RWD Long Range Ultra (7 sæder)"
+      ]
     }
   ]
 }
