@@ -1,0 +1,29 @@
+name: Undersøg kilder til rettelser
+on:
+  push:
+    branches: [fix/site-repairs-20261108]
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Læs offentlige kilder uden at ændre kataloget
+        run: |
+          python - <<'PY'
+          import concurrent.futures,json,urllib.request,urllib.error
+          codes=['','e-308','e-3008','e-5008','C3','e-C3','C3Aircross','e-C3-Aircross','C4','e-C4','C4X','e-C4X','C5Aircross','Corsa','Mokka','Astra','Frontera','Grandland','Avenger','GrandePanda','500e','600e','DS3','DS8']
+          def probe(code):
+            url='https://pricelists-api.cars4ever.eu/api/models'+('/'+code+'/retail' if code else '')
+            try:
+              with urllib.request.urlopen(url,timeout=12) as r:d=json.load(r)
+              if not isinstance(d,dict):return {'code':code,'type':type(d).__name__,'sample':d[:6] if isinstance(d,list) else str(d)[:600]}
+              return {'code':code,'name':d.get('name'),'keys':list(d),'trims':d.get('trims'),'engines':d.get('engines'),'variants':d.get('variants')}
+            except Exception as e:return {'code':code,'error':str(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+            for r in ex.map(probe,codes):print('RETAIL_PROBE '+json.dumps(r,ensure_ascii=False),flush=True)
+          with urllib.request.urlopen('https://bil-portalen.dk/data/bilpriser.json',timeout=20) as r:d=json.load(r)
+          print('FEED_PROBE '+json.dumps({'keys':list(d),'sample':d['modeller'][:3]},ensure_ascii=False),flush=True)
+          PY
