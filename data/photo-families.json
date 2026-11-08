@@ -7,61 +7,93 @@
       "names": [
         "Alfa Romeo Junior",
         "Alfa Romeo Junior Elettrica"
+      ],
+      "brands": [
+        "Alfa Romeo"
       ]
     },
     {
       "donor": "peugeot-208-e-208-vision",
       "names": [
         "Peugeot E-208"
+      ],
+      "brands": [
+        "Peugeot"
       ]
     },
     {
       "donor": "peugeot-e-2008-e-2008-vision",
       "names": [
         "Peugeot E-2008"
+      ],
+      "brands": [
+        "Peugeot"
       ]
     },
     {
       "donor": "peugeot-e-3008-e-3008-allure",
       "names": [
         "Peugeot E-3008"
+      ],
+      "brands": [
+        "Peugeot"
       ]
     },
     {
       "donor": "peugeot-e-5008-e-5008-allure",
       "names": [
         "Peugeot E-5008"
+      ],
+      "brands": [
+        "Peugeot"
       ]
     },
     {
       "donor": "bmw-i5-2023-edrive40-m-sport",
       "names": [
         "BMW i5 Sedan",
-        "BMW i5 M60"
+        "BMW i5 M60",
+        "BMW i5 M60 xDrive"
+      ],
+      "brands": [
+        "BMW"
       ]
     },
     {
       "donor": "bmw-ix3-2025-50-xdrive",
       "names": [
         "BMW iX3 (Neue Klasse)"
+      ],
+      "brands": [
+        "BMW"
       ]
     },
     {
       "donor": "ford-mustang-mach-e-standard-range-rwd",
       "names": [
         "Ford Mustang Mach-E GT"
+      ],
+      "brands": [
+        "Ford"
       ]
     },
     {
       "donor": "gac-aion-aion-ut-ut-60-kwh",
       "names": [
         "GAC AION UT"
+      ],
+      "brands": [
+        "GAC Aion",
+        "GAC"
       ]
     },
     {
       "donor": "kia-ev6-standard-range-rwd",
       "names": [
         "Kia EV6 GT"
+      ],
+      "brands": [
+        "Kia"
       ]
     },
     {
@@ -69,84 +101,129 @@
       "names": [
         "Kia EV9 GT",
         "Kia EV9 GT-Line"
+      ],
+      "brands": [
+        "Kia"
       ]
     },
     {
       "donor": "kia-pv5-standard-rwd",
       "names": [
         "Kia PV5 Passenger"
+      ],
+      "brands": [
+        "Kia"
       ]
     },
     {
       "donor": "mazda-6e-takumi",
       "names": [
-        "Mazda Mazda6e"
+        "Mazda Mazda6e",
+        "Mazda6e"
+      ],
+      "brands": [
+        "Mazda"
       ]
     },
     {
       "donor": "mercedes-benz-cla-200-advance-edition",
       "names": [
         "Mercedes-Benz CLA with EQ Technology"
+      ],
+      "brands": [
+        "Mercedes-Benz"
       ]
     },
     {
       "donor": "mercedes-benz-cla-shooting-brake-cla-250-advance-edition",
       "names": [
         "Mercedes-Benz CLA Shooting Brake with EQ Technology"
+      ],
+      "brands": [
+        "Mercedes-Benz"
       ]
     },
     {
       "donor": "mercedes-benz-eqe-350",
       "names": [
         "Mercedes-Benz EQE Sedan"
+      ],
+      "brands": [
+        "Mercedes-Benz"
       ]
     },
     {
       "donor": "mercedes-benz-eqs-580-4matic",
       "names": [
         "Mercedes-Benz EQS 450+"
+      ],
+      "brands": [
+        "Mercedes-Benz"
       ]
     },
     {
       "donor": "mercedes-benz-glb-glb-250",
       "names": [
         "Mercedes-Benz GLB (elektrisk)"
+      ],
+      "brands": [
+        "Mercedes-Benz"
       ]
     },
     {
       "donor": "mercedes-benz-glc-with-eq-technology-400-4matic",
       "names": [
         "Mercedes-Benz GLC (elektrisk)"
+      ],
+      "brands": [
+        "Mercedes-Benz"
       ]
     },
     {
       "donor": "mg-s6-ev-luxury-long-range-rwd",
       "names": [
-        "MG MGS6 EV"
+        "MG MGS6 EV",
+        "MGS6 EV"
+      ],
+      "brands": [
+        "MG"
       ]
     },
     {
       "donor": "mg-mg4-urban-2026-comfort-standard-range",
       "names": [
-        "MG MG4 EV Urban"
+        "MG MG4 EV Urban",
+        "MG4 EV Urban"
+      ],
+      "brands": [
+        "MG"
       ]
     },
     {
       "donor": "mini-electric-cooper-e",
       "names": [
         "MINI Cooper Electric"
+      ],
+      "brands": [
+        "Mini"
       ]
     },
     {
       "donor": "polestar-4-long-range-single-motor-rwd",
       "names": [
         "Polestar 4 coupé"
+      ],
+      "brands": [
+        "Polestar"
       ]
     },
     {
       "donor": "porsche-cayenne-electric-cayenne-e4",
       "names": [
         "Porsche Cayenne Turbo Electric"
+      ],
+      "brands": [
+        "Porsche"
       ]
     },
     {
@@ -154,60 +231,90 @@
       "names": [
         "Porsche Taycan Turbo GT",
         "Porsche Taycan Turbo S"
+      ],
+      "brands": [
+        "Porsche"
       ]
     },
     {
       "donor": "renault-renault-4-e-tech-evolution-40-kwh",
       "names": [
         "Renault 4 E-Tech electric"
+      ],
+      "brands": [
+        "Renault"
       ]
     },
     {
       "donor": "renault-renault-5-e-tech-evolution-40-kwh",
       "names": [
         "Renault 5 E-Tech electric"
+      ],
+      "brands": [
+        "Renault"
       ]
     },
     {
       "donor": "renault-scenic-e-tech-evolution-60-kwh",
       "names": [
         "Renault Scenic E-Tech electric"
+      ],
+      "brands": [
+        "Renault"
       ]
     },
     {
       "donor": "renault-twingo-electric-evolution-27-5-kwh",
       "names": [
         "Renault Twingo E-Tech electric"
+      ],
+      "brands": [
+        "Renault"
       ]
     },
     {
       "donor": "skoda-elroq-60",
       "names": [
         "Skoda Elroq RS"
+      ],
+      "brands": [
+        "Skoda"
       ]
     },
     {
       "donor": "skoda-enyaq-coupe-60",
       "names": [
         "Skoda Enyaq Coupé RS"
+      ],
+      "brands": [
+        "Skoda"
       ]
     },
     {
       "donor": "tesla-model-3-standard-rwd",
       "names": [
         "Tesla Model 3 Highland 2026"
+      ],
+      "brands": [
+        "Tesla"
       ]
     },
     {
       "donor": "tesla-model-y-standard-rwd",
       "names": [
         "Tesla Model Y (2026 Facelift)"
+      ],
+      "brands": [
+        "Tesla"
       ]
     },
     {
       "donor": "volkswagen-id-7-pure",
       "names": [
         "Volkswagen ID.7 GTX"
+      ],
+      "brands": [
+        "Volkswagen"
       ]
     },
     {
@@ -216,18 +323,36 @@
         "Audi RS e-tron GT",
         "Audi RS e-tron GT performance",
         "Audi S e-tron GT"
+      ],
+      "brands": [
+        "Audi"
       ]
     },
     {
       "donor": "audi-q6-e-tron-e-tron-s-line-plus",
       "names": [
         "Audi SQ6 e-tron"
+      ],
+      "brands": [
+        "Audi"
       ]
     },
     {
       "donor": "audi-a6-avant-e-tron-s-line-plus-210-kw-286-hk-c42a5dcf",
       "names": [
         "Audi S6 Avant e-tron"
+      ],
+      "brands": [
+        "Audi"
+      ]
+    },
+    {
+      "donor": "audi-a6-e-tron-sportback-progress-plus",
+      "names": [
+        "Audi A6 Sportback e-tron"
+      ],
+      "brands": [
+        "Audi"
       ]
     }
   ]

@@ -6,15 +6,16 @@ def normalized(value):
  return re.sub(r'[^a-z0-9]+',' ',value.encode('ascii','ignore').decode().lower()).strip()
 
 def reuse(models,manifest,config):
- families={normalized(name):entry['donor'] for entry in config['families'] for name in entry['names']}
+ families={normalized(name):entry for entry in config['families'] for name in entry['names']}
  changed=[]
  for model in models:
   slug=model['slug'];current=manifest['models'].get(slug,{})
   if current.get('status')!='missing':continue
   # Exact curated family identity, never a name substring or fuzzy similarity.
   family=model.get('model_family')
-  donor_slug=families.get(normalized(family)) if family else None
-  donor=manifest['models'].get(donor_slug,{})
+  entry=families.get(normalized(family)) if family else None
+  if not entry or normalized(model['brand']) not in {normalized(b) for b in entry['brands']}:continue
+  donor_slug=entry['donor'];donor=manifest['models'].get(donor_slug,{})
   if donor.get('status')!='verified' or donor.get('reviewed') is not True or donor.get('usage')=='editorial-only':continue
   photo=copy.deepcopy(donor)
   photo.update(label=model['brand']+' '+model['model'],shared_from=donor_slug,matched_family=family,caption='Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant.')

@@ -8,7 +8,7 @@ class PhotoReuseTests(unittest.TestCase):
   self.donor={'status':'verified','reviewed':True,'src':'/assets/cars/a.webp','sha256':'same','source':'https://commons.wikimedia.org/wiki/File:a.jpg','author':'Photographer','license':'CC BY 4.0','license_url':'https://creativecommons.org/licenses/by/4.0/','reviewed_at':'2026-10-24'}
   self.manifest={'models':{'donor':copy.deepcopy(self.donor),'new':{'status':'missing'}}}
   self.model={'slug':'new','brand':'Test','model':'Car GT','model_family':'Test Car','indexable':False}
-  self.config={'families':[{'donor':'donor','names':['Test Car']}]}
+  self.config={'families':[{'donor':'donor','names':['Test Car'],'brands':['Test']}]}
  def test_same_family_keeps_license_and_original_review_and_noindex(self):
   self.assertEqual(reuse([self.model],self.manifest,self.config),['new']);p=self.manifest['models']['new']
   for k in ('src','sha256','source','author','license','license_url','reviewed_at'):self.assertEqual(p[k],self.donor[k])
@@ -18,6 +18,8 @@ class PhotoReuseTests(unittest.TestCase):
    self.model['model_family']=family;self.assertFalse(reuse([self.model],self.manifest,self.config))
  def test_restricted_editorial_photo_is_not_reused(self):
   self.manifest['models']['donor']['usage']='editorial-only';self.assertFalse(reuse([self.model],self.manifest,self.config))
+ def test_wrong_brand_cannot_claim_a_curated_family(self):
+  self.model['brand']='Other';self.assertFalse(reuse([self.model],self.manifest,self.config))
  def test_existing_photo_is_never_overwritten(self):
   self.manifest['models']['new']=copy.deepcopy(self.donor);self.assertFalse(reuse([self.model],self.manifest,self.config))
  def test_repeated_build_is_idempotent(self):
