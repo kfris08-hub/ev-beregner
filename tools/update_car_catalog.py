@@ -36,6 +36,8 @@ def exact_existing_variant(record,models):
         if m.get('availability')=='discontinued':continue
         if normalize(m['brand'])!=normalize(record['brand']):continue
         if identity_terms(m['model'],m['brand'])!=identity_terms(record['family']+' '+record['variant'],record['brand']):continue
+        source_power=re.search(r'\bEL\s*(\d+)\b',record['variant'],re.I);model_power=re.search(r'\bEL\s*(\d+)\b',m['model'],re.I)
+        if source_power and model_power and source_power[1]!=model_power[1]:continue
         battery=re.search(r'(\d+(?:[,.]\d+)?)\s*kWh',record['variant'],re.I)
         capacity=float(battery[1].replace(',','.')) if battery else record.get('values',{}).get('battery')
         if capacity is not None and (m.get('battery') is None or abs(capacity-m['battery'])>.6):continue
@@ -138,7 +140,11 @@ def apply_records(catalog,records,config,today):
     for record in records:
         key=record['source_id'];bound=record.get('bound_slug') or bindings.get(key)
         existing=by_source.get(key) or by_slug.get(bound)
-        if existing is None:existing=exact_existing_variant(record,list(by_slug.values()))
+        if existing is None:
+            match=exact_existing_variant(record,list(by_slug.values()))
+            # Two engines with the same trim and battery still need distinct identities.
+            peers=[r for r in records if r['source']['kind']==record['source']['kind'] and r['source']['url']==record['source']['url'] and match and exact_existing_variant(r,[match]) is match]
+            if len(peers)==1:existing=match
         if existing and (existing['slug'] in config['protected_slugs'] or existing.get('availability')=='discontinued'):continue
         if existing and key in binding_guards and (existing.get('battery') is None or abs(existing['battery']-binding_guards[key])>.1):
             rejected.append({'model':existing['slug'],'reason':'Reviewed battery binding changed; retained previous data'});continue

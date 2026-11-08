@@ -90,6 +90,14 @@ class ExactBindingTests(unittest.TestCase):
   m={'brand':'Peugeot','model':'E-5008 Allure','battery':73}
   r={'brand':'Peugeot','family':'Peugeot E-5008','variant':'Allure|EL 210','values':{'battery':98}}
   self.assertIsNone(up.exact_existing_variant(r,[m]))
+ def test_equal_battery_does_not_hide_different_stated_power(self):
+  m={'brand':'Peugeot','model':'E-208 GT EL 156 / 54 kWh','battery':54}
+  r={'brand':'Peugeot','family':'Peugeot E-208','variant':'GT|EL 281 / 54 kWh','values':{'battery':54}}
+  self.assertIsNone(up.exact_existing_variant(r,[m]))
+ def test_two_possible_engines_do_not_overwrite_a_generic_existing_trim(self):
+  original={'schema_version':1,'models':[{'slug':'test-car-allure','brand':'Test Motors','model':'Car Allure','price':200000,'battery':73,'range':500,'consumption':16,'charging':100,'status':'active','indexable':True,'origin':'existing','modified':'2026-10-24','provenance':{}}]}
+  records=[{'source_id':'https://example.dk/api|'+str(power),'brand':'Test Motors','family':'Test Motors Car','variant':'Allure|EL '+str(power),'model':'Car Allure EL '+str(power),'values':{'price':210000,'battery':73,'range':500,'consumption':16},'source':{'url':'https://example.dk/api','source_date':'2026-10-25','kind':'retail-api'}} for power in [210,230]]
+  after,_=up.apply_records(original,records,CONFIG,TODAY);self.assertEqual(after['models'][0],original['models'][0])
  def test_explicit_wrong_battery_binding_is_quarantined(self):
   config=copy.deepcopy(CONFIG);slug='citroen-e-c3-you'
   config['bindings']=[{'url':'https://example.dk/model','variant':'You! 44 kWh','slug':slug,'battery':30}]
