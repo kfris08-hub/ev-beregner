@@ -67,6 +67,7 @@
       }
       const hasData = Object.entries(keys).some(([inputName, carName]) => field(inputName) && Number.isFinite(chosen[carName]));
       modelNote.textContent = hasData ? 'Bildata valgt. Ret tallene efter behov.' : 'Producentdata er ikke bekræftet. Tilpas eksempelværdierne.';
+      if (chosen.price_status === 'catalogue' && field('price')) modelNote.textContent += ' Katalogpris – ret til din købspris.';
       if (chosen.availability === 'discontinued') modelNote.textContent = 'Tidligere model (' + chosen.model_year + ').' + (field('price') ? ' Indtast egen købspris.' : ' Ret tallene efter behov.');
       if (id === 8) modelNote.textContent += ' Angiv selv gennemsnitlig ladeeffekt.';
     } else {
@@ -140,3 +141,4 @@
   }).catch(() => { modelNote.textContent = 'Biloversigten kunne ikke hentes. Beregneren virker med dine egne tal.'; });
   showPriceStatus(); calculate(false);
 })(window);
+

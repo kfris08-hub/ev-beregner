@@ -82,6 +82,84 @@
       "slug": "zeekr-x-core-rwd",
       "url": "https://bil-portalen.dk/bil/zeekr/x",
       "variant": "Core RWD (49 kWh brutto)"
+    },
+    {
+      "slug": "citroen-e-c3-you",
+      "url": "https://bil-portalen.dk/bil/citroen/e-c3",
+      "variant": "You! 113 EL (30 kWh)",
+      "battery": 30
+    },
+    {
+      "slug": "citroen-e-c3-aircross-you",
+      "url": "https://bil-portalen.dk/bil/citroen/c3-aircross-2026",
+      "variant": "You! 113 EL (44 kWh)",
+      "battery": 44
+    },
+    {
+      "slug": "hyundai-inster-standard-range-essential",
+      "url": "https://bil-portalen.dk/bil/hyundai/inster-2026",
+      "variant": "Standard Range 42 kWh 97 hk Essential (4 sæder)",
+      "battery": 42
+    },
+    {
+      "slug": "kia-ev2-standard-range-access",
+      "url": "https://bil-portalen.dk/bil/kia/ev2-2026",
+      "variant": "Access (42,2 kWh)",
+      "battery": 42.2
+    },
+    {
+      "slug": "leapmotor-b10-life",
+      "url": "https://bil-portalen.dk/bil/leapmotor/b10",
+      "variant": "Life 56,2 kWh RWD",
+      "battery": 56.2
+    },
+    {
+      "slug": "maxus-eterron-9-luxury",
+      "url": "https://bil-portalen.dk/bil/maxus/eterron-9",
+      "variant": "Luxury, firehjulstræk (102,2 kWh LFP)",
+      "battery": 102.2
+    },
+    {
+      "slug": "mazda-cx-6e-takumi",
+      "url": "https://bil-portalen.dk/bil/mazda/cx-6e",
+      "variant": "CX-6e Takumi 258 hk 78 kWh (19\" fælge)",
+      "battery": 78
+    },
+    {
+      "slug": "polestar-2-long-range-single-motor-rwd",
+      "url": "https://bil-portalen.dk/bil/polestar/polestar-2",
+      "variant": "Long range Single motor",
+      "battery": 79
+    },
+    {
+      "slug": "toyota-urban-cruiser-active",
+      "url": "https://bil-portalen.dk/bil/toyota/urban-cruiser-2026",
+      "variant": "Urban Cruiser Active 49 kWh 4x2 144 hk",
+      "battery": 49
+    },
+    {
+      "slug": "toyota-c-hr-active-fwd",
+      "url": "https://bil-portalen.dk/bil/toyota/c-hr-plus",
+      "variant": "C-HR+ Active 2WD 77 kWh 224 hk",
+      "battery": 77
+    },
+    {
+      "slug": "subaru-solterra-limited",
+      "url": "https://bil-portalen.dk/bil/subaru/solterra",
+      "variant": "Limited AWD (73,1 kWh)",
+      "battery": 73.1
+    },
+    {
+      "slug": "nissan-ariya-2026-engage-plus-63-kwh",
+      "url": "https://bil-portalen.dk/bil/nissan/ariya-2026",
+      "variant": "Ariya Engage Plus 63 kWh 2WD",
+      "battery": 63
+    },
+    {
+      "slug": "nissan-leaf-2026-engage-52-kwh",
+      "url": "https://bil-portalen.dk/bil/nissan/leaf-2026",
+      "variant": "Leaf Engage 52 kWh",
+      "battery": 52
     }
   ],
   "retail_apis": [
@@ -114,6 +192,22 @@
       "bindings": {
         "Vision|EL 136 / 50 kWh": "peugeot-e-2008-e-2008-vision"
       }
+    },
+    {
+      "brand": "Peugeot",
+      "family": "E-3008",
+      "code": "e-3008",
+      "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+      "official_url": "https://www.peugeot.dk/modeller/3008.html",
+      "bindings": {}
+    },
+    {
+      "brand": "Peugeot",
+      "family": "E-5008",
+      "code": "e-5008",
+      "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+      "official_url": "https://www.peugeot.dk/modeller/5008.html",
+      "bindings": {}
     }
   ],
   "protected_slugs": [

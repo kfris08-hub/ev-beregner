@@ -36,8 +36,11 @@ def exact_existing_variant(record,models):
         if m.get('availability')=='discontinued':continue
         if normalize(m['brand'])!=normalize(record['brand']):continue
         if identity_terms(m['model'],m['brand'])!=identity_terms(record['family']+' '+record['variant'],record['brand']):continue
+        source_power=re.search(r'\bEL\s*(\d+)\b',record['variant'],re.I);model_power=re.search(r'\bEL\s*(\d+)\b',m['model'],re.I)
+        if source_power and model_power and source_power[1]!=model_power[1]:continue
         battery=re.search(r'(\d+(?:[,.]\d+)?)\s*kWh',record['variant'],re.I)
-        if battery and (m.get('battery') is None or abs(float(battery[1].replace(',','.'))-m['battery'])>.6):continue
+        capacity=float(battery[1].replace(',','.')) if battery else record.get('values',{}).get('battery')
+        if capacity is not None and (m.get('battery') is None or abs(capacity-m['battery'])>.6):continue
         candidates.append(m)
     return candidates[0] if len(candidates)==1 else None
 
@@ -132,12 +135,26 @@ def retail_records(data,config,today):
 def apply_records(catalog,records,config,today):
     candidate=copy.deepcopy(catalog);by_slug={m['slug']:m for m in candidate['models']};by_source={s:m for m in candidate['models'] for s in m.get('source_ids',[])}
     bindings={b['url']+'|'+b['variant']:b['slug'] for b in config['bindings']}
+    binding_guards={b['url']+'|'+b['variant']:b['battery'] for b in config['bindings'] if b.get('battery') is not None}
     changes=[];new=[];unmatched=[];rejected=[];limit=max(0,config['max_new_per_day']-sum(m.get('discovered')==today.isoformat() for m in candidate['models'] if m.get('origin')=='automatic'))
     for record in records:
         key=record['source_id'];bound=record.get('bound_slug') or bindings.get(key)
         existing=by_source.get(key) or by_slug.get(bound)
-        if existing is None and record['source']['kind']=='licensed-feed':existing=exact_existing_variant(record,list(by_slug.values()))
+        if existing is None:
+            match=exact_existing_variant(record,list(by_slug.values()))
+            # Two engines with the same trim and battery still need distinct identities.
+            peers=[r for r in records if r['source']['kind']==record['source']['kind'] and r['source']['url']==record['source']['url'] and match and exact_existing_variant(r,[match]) is match]
+            if len(peers)==1:existing=match
         if existing and (existing['slug'] in config['protected_slugs'] or existing.get('availability')=='discontinued'):continue
+        if existing and key in binding_guards and (existing.get('battery') is None or abs(existing['battery']-binding_guards[key])>.1):
+            rejected.append({'model':existing['slug'],'reason':'Reviewed battery binding changed; retained previous data'});continue
+        if existing and normalize(existing['brand'])!=normalize(record['brand']):
+            rejected.append({'model':existing['slug'],'reason':'Source brand differs; retained previous data'});continue
+        if existing and existing.get('origin')=='existing':
+            spec=re.search(r'(\d+(?:[,.]\d+)?)\s*kWh',record['variant'],re.I)
+            capacity=float(spec[1].replace(',','.')) if spec else record.get('values',{}).get('battery')
+            if capacity is not None and existing.get('battery') is not None and abs(capacity-existing['battery'])>.6:
+                rejected.append({'model':existing['slug'],'reason':'Battery identity differs; retained previous data'});continue
         label=record['brand']+' '+record['model']
         if any(normalize(block) in normalize(label) for block in config['blocked_names']):continue
         if existing is None:
@@ -156,6 +173,7 @@ def apply_records(catalog,records,config,today):
             old=existing.get('price');price=record['values'].get('price')
             if old and price and not .6<=price/old<=1.4:
                 rejected.append({'model':existing['slug'],'reason':'Price change exceeds 40%; retained last known price'});continue
+        if existing.get('model_family')!=record['family']:existing['model_family']=record['family']
         changed=False
         for field,value in record['values'].items():
             if value is None:continue
@@ -210,3 +228,4 @@ def main():
     (ROOT/'data/cars.json').write_text(json.dumps(candidate,ensure_ascii=False,indent=2)+'\n')
     (ROOT/'data/car-update-status.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':main()
+

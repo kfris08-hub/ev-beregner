@@ -56,6 +56,9 @@ for slug,photo in catalog.items():
 assert seen=={p.name for p in (ROOT/'assets/cars').glob('*.webp')},'Unreferenced photos should not be published'
 root=ET.parse(ROOT/'sitemap.xml')
 images=root.findall('.//{http://www.google.com/schemas/sitemap-image/1.1}loc')
-assert {x.text for x in images}=={ORIGIN+p['src'] for p in catalog.values() if p['status']=='verified'}
-assert len(images)==verified
+indexed={m['slug'] for m in json.loads((ROOT/'data/cars.json').read_text())['models'] if m['indexable']}
+expected=[ORIGIN+p['src'] for slug,p in catalog.items() if p['status']=='verified' and slug in indexed]
+assert {x.text for x in images}==set(expected)
+assert len(images)==len(expected)
 print(f'PASS: all {len(catalog)} photo records, {verified} reviewed local photos, {sum(p['status']=='missing' for p in catalog.values())} missing states, four withdrawn entries and one alias, credits, licenses, hashes, static HTML, Open Graph and image sitemap.')
+

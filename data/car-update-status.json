@@ -1,17 +1,31 @@
 {
   "updated_models": [
-    "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43",
-    "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482",
-    "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851",
-    "volvo-es90-single-motor-ultra-75e7ee4f",
-    "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b"
+    "citroen-e-c3-aircross-you",
+    "citroen-e-c3-you",
+    "hyundai-inster-standard-range-essential",
+    "kia-ev2-standard-range-access",
+    "leapmotor-b10-life",
+    "maxus-eterron-9-luxury",
+    "mazda-cx-6e-takumi",
+    "nissan-ariya-2026-engage-plus-63-kwh",
+    "nissan-leaf-2026-engage-52-kwh",
+    "peugeot-e-3008-gt-el-210-a3a44fa2",
+    "peugeot-e-3008-gt-pack-el-210-b7c75d04",
+    "peugeot-e-5008-e-5008-allure",
+    "peugeot-e-5008-gt-limited-el-210-10d3fd50",
+    "peugeot-e-5008-gt-pack-el-210-bfd2f5a9",
+    "peugeot-e-5008-vision-el-210-770c7959",
+    "polestar-2-long-range-single-motor-rwd",
+    "subaru-solterra-limited",
+    "toyota-c-hr-active-fwd",
+    "toyota-urban-cruiser-active"
   ],
   "new_models": [
-    "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851",
-    "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43",
-    "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482",
-    "volvo-es90-single-motor-ultra-75e7ee4f",
-    "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b"
+    "peugeot-e-3008-gt-el-210-a3a44fa2",
+    "peugeot-e-3008-gt-pack-el-210-b7c75d04",
+    "peugeot-e-5008-vision-el-210-770c7959",
+    "peugeot-e-5008-gt-pack-el-210-bfd2f5a9",
+    "peugeot-e-5008-gt-limited-el-210-10d3fd50"
   ],
   "unmatched_existing_variants": [
     {
@@ -52,16 +66,6 @@
     {
       "family": "BYD Tang",
       "variant": "Flagship (AWD)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Citroën ë-C3",
-      "variant": "You! 113 EL (30 kWh)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Citroën ë-C3 Aircross",
-      "variant": "You! 113 EL (44 kWh)",
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
@@ -135,11 +139,6 @@
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
-      "family": "Hyundai Inster",
-      "variant": "Standard Range 42 kWh 97 hk Essential (4 sæder)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
       "family": "Hyundai IONIQ 5 N",
       "variant": "IONIQ 5 N 84 kWh 4WD",
       "reason": "Different or unbound existing variant; old values preserved"
@@ -175,11 +174,6 @@
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
-      "family": "Kia EV2",
-      "variant": "Access (42,2 kWh)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
       "family": "Kia EV5",
       "variant": "EV5 Access Standard Range (60,3 kWh, FWD)",
       "reason": "Different or unbound existing variant; old values preserved"
@@ -195,23 +189,8 @@
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
-      "family": "Leapmotor B10",
-      "variant": "Life 56,2 kWh RWD",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
       "family": "Lexus RZ",
       "variant": "RZ 350e Executive",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Maxus eTerron 9",
-      "variant": "Luxury, firehjulstræk (102,2 kWh LFP)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Mazda CX-6e",
-      "variant": "CX-6e Takumi 258 hk 78 kWh (19\" fælge)",
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
@@ -255,16 +234,6 @@
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
-      "family": "Nissan Ariya",
-      "variant": "Ariya Engage Plus 63 kWh 2WD",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Nissan Leaf",
-      "variant": "Leaf Engage 52 kWh",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
       "family": "Nissan Micra",
       "variant": "Micra Engage 40 kWh",
       "reason": "Different or unbound existing variant; old values preserved"
@@ -272,21 +241,6 @@
     {
       "family": "Omoda 5 EV",
       "variant": "Premium+ (61 kWh LFP)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Peugeot E-3008",
-      "variant": "GT EL 210 (73 kWh netto)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Peugeot E-5008",
-      "variant": "Vision EL 210 (73 kWh netto)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Polestar 2",
-      "variant": "Long range Single motor",
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
@@ -310,11 +264,6 @@
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
-      "family": "Subaru Solterra",
-      "variant": "Limited AWD (73,1 kWh)",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
       "family": "Toyota bZ4X",
       "variant": "bZ4X Active 57,7 kWh 4x2 167 hk",
       "reason": "Different or unbound existing variant; old values preserved"
@@ -322,16 +271,6 @@
     {
       "family": "Toyota bZ4X Touring",
       "variant": "bZ4X Touring Active Tech 4x2 224 hk",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Toyota C-HR+",
-      "variant": "C-HR+ Active 2WD 77 kWh 224 hk",
-      "reason": "Different or unbound existing variant; old values preserved"
-    },
-    {
-      "family": "Toyota Urban Cruiser",
-      "variant": "Urban Cruiser Active 49 kWh 4x2 144 hk",
       "reason": "Different or unbound existing variant; old values preserved"
     },
     {
@@ -396,7 +335,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-08T10:44:46.015063+00:00",
+  "checked_at": "2026-11-08T21:25:50.256959+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -414,15 +353,25 @@
       "records": 5
     },
     {
+      "id": "retail-e-3008",
+      "status": "ok",
+      "records": 2
+    },
+    {
+      "id": "retail-e-5008",
+      "status": "ok",
+      "records": 4
+    },
+    {
       "id": "bil-portalen",
       "status": "ok",
       "records": 201
     }
   ],
   "source_rejections": [],
-  "active_models": 278,
-  "automatically_priced_models": 137,
-  "legacy_models_without_automatic_price": 139,
+  "active_models": 283,
+  "automatically_priced_models": 156,
+  "legacy_models_without_automatic_price": 125,
   "historical_models": 2,
   "pending_indexing": 83
 }

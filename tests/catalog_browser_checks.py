@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk'
+PHOTOS=json.loads((ROOT/'data/model-photos.json').read_text())['models']
 MODELS=json.loads((ROOT/'data/cars.json').read_text())['models'];PUBLIC=os.environ.get('CATALOG_PUBLIC')=='1'
 async def main():
  results=[]
@@ -26,8 +27,14 @@ async def main():
      response=await page.goto(BASE+'/elbil/'+m['slug']+'/',wait_until='load');assert response.status==200
      assert await page.locator('h1').inner_text()==m['brand']+' '+m['model']
      assert ('noindex' in await page.locator('meta[name=robots]').get_attribute('content'))==(not m['indexable'])
-     assert await page.locator('#photoLoading').is_visible()
-     assert not await page.locator('#carPhoto').get_attribute('src')
+     photo=PHOTOS[m['slug']]
+     if photo['status']=='verified':
+      assert await page.locator('#carPhoto').is_visible()
+      assert await page.locator('#carPhoto').get_attribute('src')==photo['src']
+      assert await page.locator('#carPhoto').evaluate('(image)=>image.complete && image.naturalWidth>=700')
+     else:
+      assert await page.locator('#photoLoading').is_visible()
+      assert not await page.locator('#carPhoto').get_attribute('src')
      await page.locator('#modelSources summary').click();assert await page.locator('#modelSources dd').first.is_visible();await page.locator('#modelSources summary').click()
      if javascript:
       if m['consumption'] is None:await page.locator('#modelConsumption').fill('18')
