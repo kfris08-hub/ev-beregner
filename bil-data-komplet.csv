@@ -5,7 +5,7 @@ Fiat;Topolino Topolino;77500;5.5;75;7.3;0
 Micro;Microlino Dolce;79000;10.5;177;6.3;0
 Elveon Motors;Min-E Sedan;;;;;
 Maxus;eDeliver 3 Standard Range 52 kWh;124900;52;238;23.6;60
-Citroën;ë-C3 You!;139990;30;204;15.0;30
+Citroën;ë-C3 You!;154990;30;204;15.0;30
 Renault;Twingo Electric Evolution 27,5 kWh;146990;27.5;263;10.5;50
 BYD;Dolphin Surf Active;149995;30;220;15.5;65
 Smart;EQ ForTwo Premium;169900;17.6;132;16.0;22
@@ -97,7 +97,7 @@ Mazda;CX-6e Takumi;329990;78;484;18.0;200
 BYD;Sealion 7 Design RWD;329995;82.5;482;19.9;230
 Mercedes-Benz;EQT 200 Standard;334691;45;278;19.3;80
 Subaru;Solterra Limited;334900;73.1;532;17.0;150
-Peugeot;E-5008 E-5008 Allure;344990;73;502;17.7;160
+Peugeot;E-5008 E-5008 Allure;349990;73.0;500;17.8;160
 Toyota;bZ4X Touring FWD;349990;74.7;560;15.8;150
 MG;Marvel R Executive;349990;70;402;20.9;92
 Volkswagen;ID. Buzz Kort Life;349995;79;461;20.6;185
@@ -159,7 +159,7 @@ BMW;iX3 (2025) 50 xDrive;599000;108.7;805;15.1;400
 Mercedes-Benz;EQE SUV 350;599990;90.6;565;19.0;170
 Mercedes-Benz;GLC with EQ Technology 400 4MATIC;619900;94;713;15.0;330
 Mercedes-Benz;VLE VLE 300;639995;116;700;19.0;320
-Maxus;eTerron 9 Luxury;649990;102.2;430;26.0;115
+Maxus;eTerron 9 Luxury;629990;102.2;430;26.0;115
 Lexus;RZ 450e+;649990;96;575;19.0;150
 Hongqi;EH7 Luxury;649990;111;655;19.0;250
 Audi;Q8 e-tron 50 quattro;649990;89;491;21.0;170
@@ -277,3 +277,8 @@ Volkswagen;ID.3 Neo Trend 170 hk (50 kWh);249995;;;;
 Volkswagen;ID.7 GTX Max 340 hk 4MOTION (86 kWh);549995;;;;
 Volvo;ES90 Single Motor Ultra;670860;;;;
 XPENG;G9L RWD Long Range Ultra (7 sæder);639995;;;;
+Peugeot;E-3008 GT EL 210;304990;73.0;519;17.1;
+Peugeot;E-3008 GT Pack EL 210;314990;73.0;519;17.1;
+Peugeot;E-5008 Vision EL 210;314990;73.0;500;17.8;
+Peugeot;E-5008 GT Pack EL 210;379990;73.0;492;18.1;
+Peugeot;E-5008 GT Limited EL 210;359990;73.0;497;17.9;

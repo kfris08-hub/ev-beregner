@@ -94,7 +94,7 @@
     {
       "brand": "Citroën",
       "model": "ë-C3 You!",
-      "price": 139990,
+      "price": 154990,
       "battery": 30,
       "range": 204,
       "consumption": 15.0,
@@ -102,9 +102,23 @@
       "slug": "citroen-e-c3-you",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/citroen/e-c3",
+          "primary_url": "https://www.citroen.dk/information/prislister/e-c3-priser_specs.html",
+          "source_date": "2026-10-16",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Citroën ë-C3",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/citroen/e-c3|You! 113 EL (30 kWh)"
+      ]
     },
     {
       "brand": "Renault",
@@ -147,7 +161,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/byd/dolphin-surf-2026|Active (30 kWh)"
-      ]
+      ],
+      "model_family": "BYD Dolphin Surf"
     },
     {
       "brand": "Smart",
@@ -223,9 +238,23 @@
       "slug": "hyundai-inster-standard-range-essential",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/hyundai/inster-2026",
+          "primary_url": "https://katalog.hyundai.dk/NicChristiansenGruppen/Hyundai/Specifikationer/inster/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Hyundai Inster",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/hyundai/inster-2026|Standard Range 42 kWh 97 hk Essential (4 sæder)"
+      ]
     },
     {
       "brand": "MG",
@@ -268,9 +297,23 @@
       "slug": "kia-ev2-standard-range-access",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/kia/ev2-2026",
+          "primary_url": "https://api.kiaonline.dk/dokumenter/ev2-priser.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Kia EV2",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/kia/ev2-2026|Access (42,2 kWh)"
+      ]
     },
     {
       "brand": "Nissan",
@@ -328,7 +371,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/fiat/grande-panda|La Prima 44 kWh 113 hk"
-      ]
+      ],
+      "model_family": "Fiat Grande Panda"
     },
     {
       "brand": "Fiat",
@@ -371,7 +415,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/volkswagen/id-polo|ID. Polo Trend 116 hk (37 kWh)"
-      ]
+      ],
+      "model_family": "Volkswagen ID. Polo"
     },
     {
       "brand": "Opel",
@@ -399,7 +444,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/opel/frontera-electric|Edition 44 kWh 113 hk"
-      ]
+      ],
+      "model_family": "Opel Frontera Electric"
     },
     {
       "brand": "Leapmotor",
@@ -412,9 +458,23 @@
       "slug": "leapmotor-b10-life",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/leapmotor/b10",
+          "primary_url": "https://leapmotor.dk/priser-og-specifikationer/b10/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Leapmotor B10",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/leapmotor/b10|Life 56,2 kWh RWD"
+      ]
     },
     {
       "brand": "Renault",
@@ -442,9 +502,23 @@
       "slug": "citroen-e-c3-aircross-you",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/citroen/c3-aircross-2026",
+          "primary_url": "https://www.citroen.dk/information/prislister/e-c3-aircross-priser_specs.html",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Citroën ë-C3 Aircross",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/citroen/c3-aircross-2026|You! 113 EL (44 kWh)"
+      ]
     },
     {
       "brand": "Peugeot",
@@ -492,7 +566,8 @@
       "source_ids": [
         "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail|Vision|EL 136 / 50 kWh"
       ],
-      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
+      "model_family": "Peugeot E-2008"
     },
     {
       "brand": "MG",
@@ -535,7 +610,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/jaecoo/j5-ev|Comfort (60,9 kWh LFP)"
-      ]
+      ],
+      "model_family": "Jaecoo J5 EV"
     },
     {
       "brand": "Firefly",
@@ -608,7 +684,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/byd/dolphin-2026|Comfort"
-      ]
+      ],
+      "model_family": "BYD Dolphin"
     },
     {
       "brand": "Jeep",
@@ -726,7 +803,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/opel/mokka-electric|Base 54 kWh 156 hk"
-      ]
+      ],
+      "model_family": "Opel Mokka Electric"
     },
     {
       "brand": "BYD",
@@ -769,7 +847,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/suzuki/e-vitara|Club 2WD (49 kWh)"
-      ]
+      ],
+      "model_family": "Suzuki e Vitara"
     },
     {
       "brand": "Omoda",
@@ -797,9 +876,23 @@
       "slug": "toyota-urban-cruiser-active",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/toyota/urban-cruiser-2026",
+          "primary_url": "https://modelinformation.toyota.dk/Toyota/specs/Prislister/urban-cruiser/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Toyota Urban Cruiser",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/toyota/urban-cruiser-2026|Urban Cruiser Active 49 kWh 4x2 144 hk"
+      ]
     },
     {
       "brand": "Alfa Romeo",
@@ -848,7 +941,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/Junior/retail|Core|EL 156",
         "https://bil-portalen.dk/bil/alfa-romeo/junior-elettrica|Core EL 156 (54 kWh)"
       ],
-      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
+      "model_family": "Alfa Romeo Junior Elettrica"
     },
     {
       "brand": "XPENG",
@@ -882,7 +976,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/xpeng/l03|RWD Standard Range"
-      ]
+      ],
+      "model_family": "XPENG L03"
     },
     {
       "brand": "Volvo",
@@ -925,9 +1020,23 @@
       "slug": "nissan-leaf-2026-engage-52-kwh",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/nissan/leaf-2026",
+          "primary_url": "https://www-europe.nissan-cdn.net/content/dam/Nissan/dk/brochures/cpls/DEN_LEAF_Kundeprisliste.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Nissan Leaf",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/nissan/leaf-2026|Leaf Engage 52 kWh"
+      ]
     },
     {
       "brand": "Cupra",
@@ -1000,7 +1109,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/ev3-2026|EV3 Access Standard Range (58,3 kWh, FWD)"
-      ]
+      ],
+      "model_family": "Kia EV3"
     },
     {
       "brand": "Zeekr",
@@ -1028,7 +1138,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/zeekr/x|Core RWD (49 kWh brutto)"
-      ]
+      ],
+      "model_family": "Zeekr X"
     },
     {
       "brand": "Citroën",
@@ -1116,7 +1227,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/alpine/a290|GT EL 180 (52 kWh)"
-      ]
+      ],
+      "model_family": "Alpine A290"
     },
     {
       "brand": "Kia",
@@ -1144,7 +1256,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/ev4-2026|EV4 Hatchback Access Standard Range (58,3 kWh, FWD)"
-      ]
+      ],
+      "model_family": "Kia EV4"
     },
     {
       "brand": "Tesla",
@@ -1187,7 +1300,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/opel/grandland-electric|Edition EL 210 (73 kWh netto)"
-      ]
+      ],
+      "model_family": "Opel Grandland Electric"
     },
     {
       "brand": "Peugeot",
@@ -1230,7 +1344,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/hyundai/ioniq-6|Standard Range 63 kWh 170 hk RWD Essential"
-      ]
+      ],
+      "model_family": "Hyundai IONIQ 6"
     },
     {
       "brand": "Hyundai",
@@ -1258,7 +1373,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/hyundai/ioniq-5-2026|Standard Range 63 kWh 170 hk RWD Essential"
-      ]
+      ],
+      "model_family": "Hyundai IONIQ 5"
     },
     {
       "brand": "BYD",
@@ -1286,7 +1402,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/byd/seal-u-2026|Comfort 71,8 kWh"
-      ]
+      ],
+      "model_family": "BYD Seal U"
     },
     {
       "brand": "BYD",
@@ -1320,7 +1437,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/byd/atto-3|Design (RWD)"
-      ]
+      ],
+      "model_family": "BYD Atto 3 Evo"
     },
     {
       "brand": "Ford",
@@ -1393,9 +1511,23 @@
       "slug": "nissan-ariya-2026-engage-plus-63-kwh",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/nissan/ariya-2026",
+          "primary_url": "https://www-europe.nissan-cdn.net/content/dam/Nissan/dk/brochures/cpls/ARIYA_Prisliste.pdf",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Nissan Ariya",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/nissan/ariya-2026|Ariya Engage Plus 63 kWh 2WD"
+      ]
     },
     {
       "brand": "Changan",
@@ -1438,9 +1570,23 @@
       "slug": "toyota-c-hr-active-fwd",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/toyota/c-hr-plus",
+          "primary_url": "https://modelinformation.toyota.dk/Toyota/specs/Prislister/toyota-c-hr/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Toyota C-HR+",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/toyota/c-hr-plus|C-HR+ Active 2WD 77 kWh 224 hk"
+      ]
     },
     {
       "brand": "Toyota",
@@ -1553,7 +1699,8 @@
       "battery_basis": "gross",
       "source_ids": [
         "https://bil-portalen.dk/bil/xpeng/g6-2026|RWD Standard Range"
-      ]
+      ],
+      "model_family": "XPENG G6"
     },
     {
       "brand": "Volkswagen",
@@ -1656,7 +1803,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/skoda/enyaq-2026-facelift|Enyaq 60 Selection 140 kW (190 hk)"
-      ]
+      ],
+      "model_family": "Skoda Enyaq"
     },
     {
       "brand": "GWM",
@@ -1774,7 +1922,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/zeekr/7gt|Core RWD (75 kWh brutto)"
-      ]
+      ],
+      "model_family": "Zeekr 7GT"
     },
     {
       "brand": "Aiways",
@@ -1832,9 +1981,23 @@
       "slug": "mazda-cx-6e-takumi",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/mazda/cx-6e",
+          "primary_url": "https://media-assets.mazda.eu/raw/upload//mazdadk/globalassets/mmdk/2026-prislister/juli/mazda-cx-6e-priser-og-udstyr-september-update.pdf?rnd=4a7b3b",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Mazda CX-6e",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/mazda/cx-6e|CX-6e Takumi 258 hk 78 kWh (19\" fælge)"
+      ]
     },
     {
       "brand": "BYD",
@@ -1877,24 +2040,72 @@
       "slug": "subaru-solterra-limited",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/subaru/solterra",
+          "primary_url": "https://www.subaru.dk/kob-ejerskab/prisliste/",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Subaru Solterra",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/subaru/solterra|Limited AWD (73,1 kWh)"
+      ]
     },
     {
       "brand": "Peugeot",
       "model": "E-5008 E-5008 Allure",
-      "price": 344990,
-      "battery": 73,
-      "range": 502,
-      "consumption": 17.7,
+      "price": 349990,
+      "battery": 73.0,
+      "range": 500,
+      "consumption": 17.8,
       "charging": 160,
       "slug": "peugeot-e-5008-e-5008-allure",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        }
+      },
+      "model_family": "Peugeot E-5008",
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail|Allure|EL 210"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
     },
     {
       "brand": "Toyota",
@@ -2012,7 +2223,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/xpeng/p7-plus|RWD Long Range"
-      ]
+      ],
+      "model_family": "XPENG P7+"
     },
     {
       "brand": "KGM",
@@ -2070,7 +2282,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/subaru/e-outback|Limited AWD (74,7 kWh)"
-      ]
+      ],
+      "model_family": "Subaru E-Outback"
     },
     {
       "brand": "BMW",
@@ -2098,7 +2311,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/ix1-2026|iX1 eDrive20 M Sport"
-      ]
+      ],
+      "model_family": "BMW iX1"
     },
     {
       "brand": "Honda",
@@ -2156,7 +2370,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/volkswagen/id7-pro-s|ID.7 Pure 204 hk (59 kWh)"
-      ]
+      ],
+      "model_family": "Volkswagen ID.7"
     },
     {
       "brand": "Zeekr",
@@ -2184,7 +2399,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/zeekr/7x|Core RWD (75 kWh brutto)"
-      ]
+      ],
+      "model_family": "Zeekr 7X"
     },
     {
       "brand": "Mini",
@@ -2362,7 +2578,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/eqa-2026|EQA 250+ AMG Edition"
-      ]
+      ],
+      "model_family": "Mercedes-Benz EQA"
     },
     {
       "brand": "Mercedes-Benz",
@@ -2390,7 +2607,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/eqb|EQB 250+ AMG Edition"
-      ]
+      ],
+      "model_family": "Mercedes-Benz EQB"
     },
     {
       "brand": "Mercedes-Benz",
@@ -2523,7 +2741,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/nio/et5|Standard Range (73,5 kWh netto)"
-      ]
+      ],
+      "model_family": "NIO ET5"
     },
     {
       "brand": "BMW",
@@ -2611,7 +2830,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/lexus/es-2026|ES 350e Executive"
-      ]
+      ],
+      "model_family": "Lexus ES"
     },
     {
       "brand": "Polestar",
@@ -2639,9 +2859,23 @@
       "slug": "polestar-2-long-range-single-motor-rwd",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/polestar/polestar-2",
+          "primary_url": "https://www.polestar.com/dk/polestar-2/specifications/",
+          "source_date": "2026-10-08",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Polestar 2",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/polestar/polestar-2|Long range Single motor"
+      ]
     },
     {
       "brand": "NIO",
@@ -2684,7 +2918,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/xpeng/g9|RWD Standard Range"
-      ]
+      ],
+      "model_family": "XPENG G9"
     },
     {
       "brand": "MG",
@@ -2727,7 +2962,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/alpine/a390|GT EL 400 (89 kWh, AWD)"
-      ]
+      ],
+      "model_family": "Alpine A390"
     },
     {
       "brand": "Hyundai",
@@ -2800,7 +3036,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/q6-e-tron-2026|Q6 e-tron S line plus 185 kW (252 hk)"
-      ]
+      ],
+      "model_family": "Audi Q6 e-tron"
     },
     {
       "brand": "Mercedes-Benz",
@@ -2888,7 +3125,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/i5-touring-2026|i5 eDrive40 Touring M Sport"
-      ]
+      ],
+      "model_family": "BMW i5 Touring"
     },
     {
       "brand": "Audi",
@@ -2983,7 +3221,7 @@
     {
       "brand": "Maxus",
       "model": "eTerron 9 Luxury",
-      "price": 649990,
+      "price": 629990,
       "battery": 102.2,
       "range": 430,
       "consumption": 26.0,
@@ -2991,9 +3229,23 @@
       "slug": "maxus-eterron-9-luxury",
       "status": "active",
       "indexable": true,
-      "modified": "2026-10-24",
+      "modified": "2026-11-08",
       "origin": "existing",
-      "provenance": {}
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/maxus/eterron-9",
+          "primary_url": "https://cdn.sanity.io/files/mcx434c9/production/324f5759f17d035b4c1a1f5c1d3f0d7b31b04217.pdf",
+          "source_date": "2026-10-09",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "model_family": "Maxus eTerron 9",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/maxus/eterron-9|Luxury, firehjulstræk (102,2 kWh LFP)"
+      ]
     },
     {
       "brand": "Lexus",
@@ -3066,7 +3318,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/polestar/polestar-3-2026|Rear motor"
-      ]
+      ],
+      "model_family": "Polestar 3"
     },
     {
       "brand": "Genesis",
@@ -3139,7 +3392,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/macan-electric|Macan Electric"
-      ]
+      ],
+      "model_family": "Porsche Macan Electric"
     },
     {
       "brand": "BMW",
@@ -3227,7 +3481,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/taycan|Taycan"
-      ]
+      ],
+      "model_family": "Porsche Taycan"
     },
     {
       "brand": "Audi",
@@ -3255,7 +3510,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/e-tron-gt|e-tron GT quattro Pro 370 kW (503 hk)"
-      ]
+      ],
+      "model_family": "Audi e-tron GT quattro"
     },
     {
       "brand": "Porsche",
@@ -3343,7 +3599,8 @@
       },
       "source_ids": [
         "https://bil-portalen.dk/bil/polestar/polestar-5-2026|Dual motor"
-      ]
+      ],
+      "model_family": "Polestar 5"
     },
     {
       "brand": "Mercedes-Benz",
@@ -3367,7 +3624,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Alfa Romeo Junior · dansk prisliste",
@@ -3407,7 +3664,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/Junior/retail|Speciale|EL 156"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Alfa Romeo Junior"
     },
     {
       "slug": "alfa-romeo-junior-veloce-el-280-96c096ad",
@@ -3416,7 +3674,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Alfa Romeo Junior · dansk prisliste",
@@ -3456,7 +3714,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/Junior/retail|Veloce|EL 280"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Alfa Romeo Junior"
     },
     {
       "slug": "peugeot-e-208-style-el-136-50-kwh-a5afbfc4",
@@ -3465,7 +3724,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
@@ -3506,7 +3765,8 @@
         "https://bil-portalen.dk/bil/peugeot/e-208|Style EL 136 (50 kWh)"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-208"
     },
     {
       "slug": "peugeot-e-208-allure-el-156-54-kwh-69e95618",
@@ -3515,7 +3775,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
@@ -3555,7 +3815,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-208/retail|Allure|EL 156 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-208"
     },
     {
       "slug": "peugeot-e-208-gt-el-156-54-kwh-e3218d76",
@@ -3564,7 +3825,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
@@ -3604,7 +3865,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-208/retail|GT|EL 156 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-208"
     },
     {
       "slug": "peugeot-e-208-gt-pack-el-156-54-kwh-aeea4f65",
@@ -3613,7 +3875,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
@@ -3653,7 +3915,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-208/retail|GT Pack|EL 156 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-208"
     },
     {
       "slug": "peugeot-e-208-prestige-el-156-54-kwh-e73303cd",
@@ -3662,7 +3925,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
@@ -3702,7 +3965,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-208/retail|Prestige|EL 156 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-208"
     },
     {
       "slug": "peugeot-e-208-gti-el-281-54-kwh-f30d7158",
@@ -3711,7 +3975,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-208 · dansk prisliste",
@@ -3751,7 +4015,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-208/retail|GTi|EL 281 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-208"
     },
     {
       "slug": "peugeot-e-2008-gt-el-156-54-kwh-59333caf",
@@ -3760,7 +4025,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
@@ -3800,7 +4065,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail|GT|EL 156 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-2008"
     },
     {
       "slug": "peugeot-e-2008-gt-sky-el-156-54-kwh-6ff5e04f",
@@ -3809,7 +4075,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
@@ -3849,7 +4115,8 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail|GT SKY|EL 156 / 54 kWh"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-2008"
     },
     {
       "slug": "peugeot-e-2008-style-el-136-50-kwh-ab81ad96",
@@ -3858,7 +4125,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
@@ -3899,7 +4166,8 @@
         "https://bil-portalen.dk/bil/peugeot/e-2008|Style EL 136 (50 kWh)"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Peugeot E-2008"
     },
     {
       "slug": "audi-a2-e-tron-125-kw-7fec4126",
@@ -3928,7 +4196,8 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/a2-e-tron|A2 e-tron 125 kW"
       ],
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Audi A2 e-tron"
     },
     {
       "slug": "audi-a6-avant-e-tron-s-line-plus-210-kw-286-hk-c42a5dcf",
@@ -3937,7 +4206,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": false,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -3957,7 +4226,8 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/a6-e-tron-2026|A6 Avant e-tron S line plus 210 kW (286 hk)"
       ],
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Audi A6 Avant e-tron"
     },
     {
       "slug": "audi-a6-sportback-e-tron-s-line-plus-210-kw-286-hk-16340766",
@@ -3986,7 +4256,8 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/a6-sportback-e-tron|A6 Sportback e-tron S line plus 210 kW (286 hk)"
       ],
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Audi A6 Sportback e-tron"
     },
     {
       "slug": "audi-q4-sportback-e-tron-150-kw-204-hk-bc06455a",
@@ -3995,7 +4266,7 @@
       "status": "active",
       "origin": "automatic",
       "indexable": false,
-      "modified": "2026-10-25",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4015,7 +4286,8 @@
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/q4-sportback-e-tron|Q4 Sportback e-tron 150 kW (204 hk)"
       ],
-      "discovered": "2026-10-25"
+      "discovered": "2026-10-25",
+      "model_family": "Audi Q4 Sportback e-tron"
     },
     {
       "slug": "audi-q6-sportback-e-tron-s-line-plus-185-kw-252-hk-2407c33c",
@@ -4025,7 +4297,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4044,7 +4316,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/q6-sportback-e-tron|Q6 Sportback e-tron S line plus 185 kW (252 hk)"
-      ]
+      ],
+      "model_family": "Audi Q6 Sportback e-tron"
     },
     {
       "slug": "audi-rs-e-tron-gt-pro-500-kw-680-hk-ce71e289",
@@ -4054,7 +4327,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4073,7 +4346,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/rs-e-tron-gt|RS e-tron GT Pro 500 kW (680 hk)"
-      ]
+      ],
+      "model_family": "Audi RS e-tron GT"
     },
     {
       "slug": "audi-rs-e-tron-gt-performance-pro-550-kw-748-hk-1c77b535",
@@ -4083,7 +4357,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4102,7 +4376,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/rs-e-tron-gt-performance|RS e-tron GT performance Pro 550 kW (748 hk)"
-      ]
+      ],
+      "model_family": "Audi RS e-tron GT performance"
     },
     {
       "slug": "audi-s-e-tron-gt-pro-435-kw-591-hk-c86d016c",
@@ -4112,7 +4387,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4131,7 +4406,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/s-e-tron-gt|S e-tron GT Pro 435 kW (591 hk)"
-      ]
+      ],
+      "model_family": "Audi S e-tron GT"
     },
     {
       "slug": "audi-s6-avant-e-tron-quattro-370-kw-503-hk-395e6105",
@@ -4141,7 +4417,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4160,7 +4436,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/s6-avant-e-tron|S6 Avant e-tron quattro 370 kW (503 hk)"
-      ]
+      ],
+      "model_family": "Audi S6 Avant e-tron"
     },
     {
       "slug": "audi-sq6-e-tron-quattro-360-kw-490-hk-4ddf8aaf",
@@ -4170,7 +4447,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4189,7 +4466,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/audi/sq6-e-tron|SQ6 e-tron quattro 360 kW (490 hk)"
-      ]
+      ],
+      "model_family": "Audi SQ6 e-tron"
     },
     {
       "slug": "bmw-i3-neue-klasse-i3-40-xdrive-active-9d66072e",
@@ -4218,7 +4496,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/i3|i3 40 xDrive Active"
-      ]
+      ],
+      "model_family": "BMW i3 (Neue Klasse)"
     },
     {
       "slug": "bmw-i5-m60-xdrive-fully-charged-483df0fb",
@@ -4247,7 +4526,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/i5-m60|i5 M60 xDrive Fully Charged"
-      ]
+      ],
+      "model_family": "BMW i5 M60 xDrive"
     },
     {
       "slug": "bmw-i5-sedan-i5-edrive40-m-sport-83442f74",
@@ -4257,7 +4537,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4276,7 +4556,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/i5|i5 eDrive40 M Sport"
-      ]
+      ],
+      "model_family": "BMW i5 Sedan"
     },
     {
       "slug": "bmw-ix3-neue-klasse-ix3-40-active-1847e3b5",
@@ -4286,7 +4567,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4305,7 +4586,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/ix3-2026|iX3 40 Active"
-      ]
+      ],
+      "model_family": "BMW iX3 (Neue Klasse)"
     },
     {
       "slug": "bmw-ix4-40-xdrive-m-sport-deee3322",
@@ -4334,7 +4616,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/ix4|iX4 40 xDrive M Sport"
-      ]
+      ],
+      "model_family": "BMW iX4"
     },
     {
       "slug": "bmw-ix5-60-xdrive-active-bdda0537",
@@ -4363,7 +4646,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/bmw/ix5|iX5 60 xDrive Active"
-      ]
+      ],
+      "model_family": "BMW iX5"
     },
     {
       "slug": "citroen-e-berlingo-vtr-sport-xl-136-el-52-kwh-7-sder-4da400f5",
@@ -4373,7 +4657,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4392,7 +4676,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/citroen/e-berlingo|VTR Sport XL 136 EL (52 kWh, 7 sæder)"
-      ]
+      ],
+      "model_family": "Citroën ë-Berlingo"
     },
     {
       "slug": "citroen-e-spacetourer-business-75-kwh-136-el-9-sder-429f6984",
@@ -4402,7 +4687,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4421,7 +4706,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/citroen/e-spacetourer|Business 75 kWh 136 EL (9 sæder)"
-      ]
+      ],
+      "model_family": "Citroën ë-SpaceTourer"
     },
     {
       "slug": "ds-automobiles-n8-pallas-74-kwh-230-fwd-d0cbfa89",
@@ -4431,7 +4717,7 @@
       "origin": "automatic",
       "discovered": "2026-10-26",
       "indexable": false,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4450,7 +4736,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/ds/n8|Pallas 74 kWh 230 (FWD)"
-      ]
+      ],
+      "model_family": "DS Automobiles N°8"
     },
     {
       "slug": "kia-e-soul-39-2-kwh-2019",
@@ -4467,7 +4754,7 @@
       "model_year": 2019,
       "range_standard": "WLTP",
       "indexable": true,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "battery": {
           "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
@@ -4508,7 +4795,7 @@
       "model_year": 2019,
       "range_standard": "WLTP",
       "indexable": true,
-      "modified": "2026-10-26",
+      "modified": "2026-11-08",
       "provenance": {
         "battery": {
           "url": "https://www.mynewsdesk.com/dk/kia-motors-denmark/pressreleases/kia-praesenterer-modelprogrammet-paa-den-nye-e-soul-2865057",
@@ -4542,7 +4829,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4561,7 +4848,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/exlantix/et|Advanced EL 313 hk RWD (74,7 kWh netto)"
-      ]
+      ],
+      "model_family": "Exlantix ET"
     },
     {
       "slug": "ford-e-tourneo-custom-titanium-rwd-kort-l1-458b73ff",
@@ -4571,7 +4859,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4590,7 +4878,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/ford/e-tourneo-custom|E-Tourneo Custom Titanium RWD kort (L1)"
-      ]
+      ],
+      "model_family": "Ford E-Tourneo Custom"
     },
     {
       "slug": "ford-mustang-mach-e-gt-awd-extended-range-91-kwh-a3ab22eb",
@@ -4600,7 +4889,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4619,7 +4908,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/ford/mustang-mach-e-gt|Mustang Mach-E GT AWD Extended Range (91 kWh)"
-      ]
+      ],
+      "model_family": "Ford Mustang Mach-E GT"
     },
     {
       "slug": "gac-aion-ut-city-44-kwh-lfp-292db36f",
@@ -4629,7 +4919,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4648,7 +4938,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/gac/aion-ut|City (44 kWh LFP)"
-      ]
+      ],
+      "model_family": "GAC AION UT"
     },
     {
       "slug": "hongqi-ehs7-premium-344-hk-2wd-81-6-kwh-54c1fbd1",
@@ -4658,7 +4949,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4677,7 +4968,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/hongqi/ehs7|Premium 344 hk 2WD (81,6 kWh)"
-      ]
+      ],
+      "model_family": "Hongqi EHS7"
     },
     {
       "slug": "hyundai-ioniq-3-standard-range-42-2-kwh-147-hk-select-174c43ca",
@@ -4706,7 +4998,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/hyundai/ioniq-3|Standard Range 42,2 kWh 147 hk Select"
-      ]
+      ],
+      "model_family": "Hyundai IONIQ 3"
     },
     {
       "slug": "jac-e30x-green-city-40-41-kwh-lfp-e73a2bcd",
@@ -4716,7 +5009,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4735,7 +5028,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/jac/e30x|Green City 40 (41 kWh LFP)"
-      ]
+      ],
+      "model_family": "JAC E30X"
     },
     {
       "slug": "kia-ev4-fastback-prestige-long-range-81-4-kwh-fwd-467d49b9",
@@ -4745,7 +5039,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4764,7 +5058,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/ev4-fastback|EV4 Fastback Prestige Long Range (81,4 kWh, FWD)"
-      ]
+      ],
+      "model_family": "Kia EV4 Fastback"
     },
     {
       "slug": "kia-ev6-gt-long-range-performance-84-kwh-awd-242cd29e",
@@ -4774,7 +5069,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4793,7 +5088,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/ev6-gt-2026|EV6 GT Long Range Performance (84 kWh, AWD)"
-      ]
+      ],
+      "model_family": "Kia EV6 GT"
     },
     {
       "slug": "kia-ev9-gt-long-range-performance-99-8-kwh-awd-e9afb03b",
@@ -4803,7 +5099,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4822,7 +5118,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/ev9-gt|EV9 GT Long Range Performance (99,8 kWh, AWD)"
-      ]
+      ],
+      "model_family": "Kia EV9 GT"
     },
     {
       "slug": "kia-ev9-gt-line-long-range-performance-99-8-kwh-awd-e053e919",
@@ -4832,7 +5129,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4851,7 +5148,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/ev9-gt-line|EV9 GT-Line Long Range Performance (99,8 kWh, AWD)"
-      ]
+      ],
+      "model_family": "Kia EV9 GT-Line"
     },
     {
       "slug": "kia-pv5-passenger-access-standard-range-51-5-kwh-fwd-ad4cd2e9",
@@ -4861,7 +5159,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4880,7 +5178,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/kia/pv5-passenger|PV5 Passenger Access Standard Range (51,5 kWh, FWD)"
-      ]
+      ],
+      "model_family": "Kia PV5 Passenger"
     },
     {
       "slug": "leapmotor-b03x-life-39-8-kwh-fwd-a5ce734c",
@@ -4909,7 +5208,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/leapmotor/b03x|Life 39,8 kWh FWD"
-      ]
+      ],
+      "model_family": "Leapmotor B03X"
     },
     {
       "slug": "leapmotor-b05-life-56-2-kwh-rwd-fd499ff5",
@@ -4919,7 +5219,7 @@
       "origin": "automatic",
       "discovered": "2026-10-27",
       "indexable": false,
-      "modified": "2026-10-27",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -4938,7 +5238,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/leapmotor/b05|Life 56,2 kWh RWD"
-      ]
+      ],
+      "model_family": "Leapmotor B05"
     },
     {
       "slug": "lexus-tz-450e-executive-a7841a40",
@@ -4967,7 +5268,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/lexus/tz|TZ 450e Executive"
-      ]
+      ],
+      "model_family": "Lexus TZ"
     },
     {
       "slug": "peugeot-e-2008-gt-white-edition-el-156-54-kwh-2ac142d9",
@@ -4977,7 +5279,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": true,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Peugeot E-2008 · dansk prisliste",
@@ -5016,7 +5318,8 @@
       "source_ids": [
         "https://pricelists-api.cars4ever.eu/api/models/e-2008/retail|GT White Edition|EL 156 / 54 kWh"
       ],
-      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste.",
+      "model_family": "Peugeot E-2008"
     },
     {
       "slug": "lotus-eletre-600-indstigningsversion-109-kwh-netto-awd-38a55ea4",
@@ -5026,7 +5329,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5045,7 +5348,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/lotus/eletre|Eletre 600 (indstigningsversion, 109 kWh netto, AWD)"
-      ]
+      ],
+      "model_family": "Lotus Eletre"
     },
     {
       "slug": "lotus-emeya-600-gt-indstigningsversion-i-dk-98-9-kwh-netto-awd-43b77d74",
@@ -5055,7 +5359,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5074,7 +5378,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/lotus/emeya|Emeya 600 GT (indstigningsversion i DK, 98,9 kWh netto, AWD)"
-      ]
+      ],
+      "model_family": "Lotus Emeya"
     },
     {
       "slug": "mazda-mazda6e-takumi-258-hk-68-8-kwh-9af15f58",
@@ -5103,7 +5408,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mazda/mazda6e-2026|Mazda6e Takumi 258 hk 68,8 kWh"
-      ]
+      ],
+      "model_family": "Mazda6e"
     },
     {
       "slug": "mercedes-benz-amg-cla-45-4matic-plus-mercedes-amg-cla-45-4matic-plus-sedan-b40893e7",
@@ -5132,7 +5438,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/amg-cla-45|Mercedes-AMG CLA 45 4MATIC+ (sedan)"
-      ]
+      ],
+      "model_family": "Mercedes-Benz AMG CLA 45 4MATIC+"
     },
     {
       "slug": "mercedes-benz-amg-gt-4-dors-coupe-elektrisk-mercedes-amg-gt-53-4-dors-coupe-2283888a",
@@ -5161,7 +5468,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/amg-gt-4-door|Mercedes-AMG GT 53 4-dørs Coupé"
-      ]
+      ],
+      "model_family": "Mercedes-Benz AMG GT 4-dørs Coupé (elektrisk)"
     },
     {
       "slug": "mercedes-benz-c-klasse-elektrisk-c-300-4matic-electric-0765353a",
@@ -5190,7 +5498,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/c-klasse-2026|C 300 4MATIC electric"
-      ]
+      ],
+      "model_family": "Mercedes-Benz C-Klasse (elektrisk)"
     },
     {
       "slug": "mercedes-benz-cla-shooting-brake-with-eq-technology-cla-200-shooting-brake-advance-edition-d21b29a0",
@@ -5200,7 +5509,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5219,7 +5528,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/cla-shooting-brake-eq|CLA 200 Shooting Brake Advance Edition"
-      ]
+      ],
+      "model_family": "Mercedes-Benz CLA Shooting Brake with EQ Technology"
     },
     {
       "slug": "mercedes-benz-cla-with-eq-technology-cla-200-advance-edition-887b6d42",
@@ -5229,7 +5539,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5248,7 +5558,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/cla-eq-2026|CLA 200 Advance Edition"
-      ]
+      ],
+      "model_family": "Mercedes-Benz CLA with EQ Technology"
     },
     {
       "slug": "mercedes-benz-eqe-sedan-eqe-350-plus-amg-edition-b63641df",
@@ -5258,7 +5569,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5277,7 +5588,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/eqe|EQE 350+ AMG Edition"
-      ]
+      ],
+      "model_family": "Mercedes-Benz EQE Sedan"
     },
     {
       "slug": "mercedes-benz-eqs-450-plus-ff9dbef1",
@@ -5287,7 +5599,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5306,7 +5618,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/eqs-450|EQS 450+"
-      ]
+      ],
+      "model_family": "Mercedes-Benz EQS 450+"
     },
     {
       "slug": "mercedes-benz-eqs-suv-450-plus-04aa0b45",
@@ -5316,7 +5629,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5335,7 +5648,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/eqs-suv-2026|EQS SUV 450+"
-      ]
+      ],
+      "model_family": "Mercedes-Benz EQS SUV"
     },
     {
       "slug": "mercedes-benz-g-580-med-eq-teknologi-g-580-electric-amg-edition-1c31082b",
@@ -5345,7 +5659,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5364,7 +5678,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/mercedes-g-580-eq-2026|G 580 Electric AMG Edition"
-      ]
+      ],
+      "model_family": "Mercedes-Benz G 580 med EQ-teknologi"
     },
     {
       "slug": "mercedes-benz-gla-elektrisk-gla-200-electric-5f5e46a1",
@@ -5393,7 +5708,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/gla|GLA 200 electric"
-      ]
+      ],
+      "model_family": "Mercedes-Benz GLA (elektrisk)"
     },
     {
       "slug": "mercedes-benz-glb-elektrisk-glb-200-6793ca7c",
@@ -5403,7 +5719,7 @@
       "origin": "automatic",
       "discovered": "2026-11-05",
       "indexable": false,
-      "modified": "2026-11-05",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5422,7 +5738,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/glb|GLB 200"
-      ]
+      ],
+      "model_family": "Mercedes-Benz GLB (elektrisk)"
     },
     {
       "slug": "mercedes-benz-glc-elektrisk-glc-250-electric-24766b68",
@@ -5432,7 +5749,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5451,7 +5768,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mercedes-benz/glc-2026|GLC 250 electric"
-      ]
+      ],
+      "model_family": "Mercedes-Benz GLC (elektrisk)"
     },
     {
       "slug": "mg-mg4-ev-ny-mg4-ev-premium-long-range-64-kwh-lfp-142b68af",
@@ -5480,7 +5798,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mg/mg4-2026|Ny MG4 EV Premium Long Range (64 kWh LFP)"
-      ]
+      ],
+      "model_family": "MG4 EV"
     },
     {
       "slug": "mg-mg4-ev-urban-comfort-standard-range-42-8-kwh-lfp-7a80e456",
@@ -5509,7 +5828,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mg/mg4-ev-urban|MG4 EV Urban Comfort Standard Range (42,8 kWh LFP)"
-      ]
+      ],
+      "model_family": "MG4 EV Urban"
     },
     {
       "slug": "mg-mgs6-ev-luxury-long-range-77-kwh-ncm-baghjulstrk-1f355cf0",
@@ -5538,7 +5858,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mg/mgs6-ev|MGS6 EV Luxury Long Range (77 kWh NCM, baghjulstræk)"
-      ]
+      ],
+      "model_family": "MGS6 EV"
     },
     {
       "slug": "mini-aceman-mini-aceman-e-essential-trim-24622bd4",
@@ -5548,7 +5869,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5567,7 +5888,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mini/aceman-2026|MINI Aceman E Essential Trim"
-      ]
+      ],
+      "model_family": "MINI Aceman"
     },
     {
       "slug": "mini-cooper-electric-mini-cooper-e-essential-trim-33e18c24",
@@ -5577,7 +5899,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5596,7 +5918,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/mini/cooper-electric-2026|MINI Cooper E Essential Trim"
-      ]
+      ],
+      "model_family": "MINI Cooper Electric"
     },
     {
       "slug": "nio-et5-touring-standard-range-73-5-kwh-netto-3bc7985d",
@@ -5606,7 +5929,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5625,7 +5948,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/nio/et5-touring|Standard Range (73,5 kWh netto)"
-      ]
+      ],
+      "model_family": "NIO ET5 Touring"
     },
     {
       "slug": "opel-corsa-electric-city-136-hk-50-kwh-c67422e4",
@@ -5635,7 +5959,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5654,7 +5978,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/opel/corsa-electric-2026|Corsa Electric City 136 hk (50 kWh)"
-      ]
+      ],
+      "model_family": "Opel Corsa Electric"
     },
     {
       "slug": "opel-zafira-e-shuttle-75-kwh-136-hk-9-sder-eb33b9b7",
@@ -5683,7 +6008,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/opel/zafira-electric|Shuttle 75 kWh 136 hk (9 sæder)"
-      ]
+      ],
+      "model_family": "Opel Zafira-e"
     },
     {
       "slug": "polestar-4-coupe-single-motor-rear-motor-0e4e33a7",
@@ -5693,7 +6019,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5712,7 +6038,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/polestar/polestar-4-2026|Single motor (Rear motor)"
-      ]
+      ],
+      "model_family": "Polestar 4 coupé"
     },
     {
       "slug": "polestar-4-suv-rear-motor-45df552b",
@@ -5741,7 +6068,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/polestar/polestar-4-suv|Rear motor"
-      ]
+      ],
+      "model_family": "Polestar 4 SUV"
     },
     {
       "slug": "porsche-cayenne-turbo-electric-dc385549",
@@ -5751,7 +6079,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5770,7 +6098,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/cayenne-turbo-electric|Cayenne Turbo Electric"
-      ]
+      ],
+      "model_family": "Porsche Cayenne Turbo Electric"
     },
     {
       "slug": "porsche-taycan-cross-turismo-taycan-4-cross-turismo-3340adc6",
@@ -5780,7 +6109,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5799,7 +6128,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/taycan-cross-turismo|Taycan 4 Cross Turismo"
-      ]
+      ],
+      "model_family": "Porsche Taycan Cross Turismo"
     },
     {
       "slug": "porsche-taycan-sport-turismo-055ac51e",
@@ -5809,7 +6139,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5828,7 +6158,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/taycan-sport-turismo|Taycan Sport Turismo"
-      ]
+      ],
+      "model_family": "Porsche Taycan Sport Turismo"
     },
     {
       "slug": "porsche-taycan-turbo-gt-85118446",
@@ -5838,7 +6169,7 @@
       "origin": "automatic",
       "discovered": "2026-11-06",
       "indexable": false,
-      "modified": "2026-11-06",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5857,7 +6188,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/taycan-turbo-gt|Taycan Turbo GT"
-      ]
+      ],
+      "model_family": "Porsche Taycan Turbo GT"
     },
     {
       "slug": "porsche-taycan-turbo-s-33b0f8ca",
@@ -5867,7 +6199,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5886,7 +6218,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/porsche/taycan-turbo-s|Taycan Turbo S"
-      ]
+      ],
+      "model_family": "Porsche Taycan Turbo S"
     },
     {
       "slug": "land-rover-range-rover-electric-se-swb-ev-450-hk-awd-fb481745",
@@ -5915,7 +6248,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/land-rover/range-rover-electric-2026|Range Rover Electric SE (SWB) EV 450 hk AWD"
-      ]
+      ],
+      "model_family": "Range Rover Electric"
     },
     {
       "slug": "land-rover-range-rover-sport-electric-dynamic-se-ev-450-hk-awd-01b63f19",
@@ -5944,7 +6278,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/land-rover/range-rover-sport-electric|Range Rover Sport Electric Dynamic SE EV 450 hk AWD"
-      ]
+      ],
+      "model_family": "Range Rover Sport Electric"
     },
     {
       "slug": "renault-4-e-tech-electric-evolution-40-kwh-4f6b5cef",
@@ -5954,7 +6289,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -5973,7 +6308,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/renault/renault-4-e-tech-2026|Evolution (40 kWh)"
-      ]
+      ],
+      "model_family": "Renault 4 E-Tech electric"
     },
     {
       "slug": "renault-5-e-tech-electric-evolution-40-kwh-120-hk-d51cfe82",
@@ -5983,7 +6319,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6002,7 +6338,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/renault/renault-5-e-tech-2026|Evolution 40 kWh 120 hk"
-      ]
+      ],
+      "model_family": "Renault 5 E-Tech electric"
     },
     {
       "slug": "renault-scenic-e-tech-electric-techno-87-kwh-220-hk-53646e1f",
@@ -6012,7 +6349,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6031,7 +6368,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/renault/scenic-e-tech-2026|Techno 87 kWh 220 hk"
-      ]
+      ],
+      "model_family": "Renault Scenic E-Tech electric"
     },
     {
       "slug": "renault-twingo-e-tech-electric-evolution-27-5-kwh-80-hk-a172a18e",
@@ -6041,7 +6379,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6060,7 +6398,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/renault/twingo-e-tech|Evolution 27,5 kWh 80 hk"
-      ]
+      ],
+      "model_family": "Renault Twingo E-Tech electric"
     },
     {
       "slug": "skoda-elroq-rs-4x4-250-kw-340-hk-cd5fd72c",
@@ -6070,7 +6409,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6089,7 +6428,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/skoda/elroq-rs|Elroq RS 4x4 250 kW (340 hk)"
-      ]
+      ],
+      "model_family": "Skoda Elroq RS"
     },
     {
       "slug": "skoda-enyaq-coupe-rs-4x4-250-kw-340-hk-6b5a9fa9",
@@ -6099,7 +6439,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6118,7 +6458,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/skoda/enyaq-coupe-rs|Enyaq Coupé RS 4x4 250 kW (340 hk)"
-      ]
+      ],
+      "model_family": "Skoda Enyaq Coupé RS"
     },
     {
       "slug": "skoda-epiq-35-essence-85-kw-116-hk-2c5278ae",
@@ -6147,7 +6488,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/skoda/epiq|Epiq 35 Essence 85 kW (116 hk)"
-      ]
+      ],
+      "model_family": "Skoda Epiq"
     },
     {
       "slug": "skoda-peaq-60-selection-150-kw-204-hk-50ea8b6c",
@@ -6176,7 +6518,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/skoda/peaq|Peaq 60 Selection 150 kW (204 hk)"
-      ]
+      ],
+      "model_family": "Skoda Peaq"
     },
     {
       "slug": "subaru-uncharted-adventure-fwd-57-7-kwh-6abe29d2",
@@ -6186,7 +6529,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6205,7 +6548,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/subaru/uncharted|Adventure FWD (57,7 kWh)"
-      ]
+      ],
+      "model_family": "Subaru Uncharted"
     },
     {
       "slug": "tesla-model-3-highland-2026-model-3-baghjulstrk-9efd493a",
@@ -6215,7 +6559,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6234,7 +6578,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/tesla/model-3-highland-2026|Model 3 Baghjulstræk"
-      ]
+      ],
+      "model_family": "Tesla Model 3 Highland 2026"
     },
     {
       "slug": "tesla-model-y-2026-facelift-model-y-baghjulstrk-bdba2d68",
@@ -6244,7 +6589,7 @@
       "origin": "automatic",
       "discovered": "2026-11-07",
       "indexable": false,
-      "modified": "2026-11-07",
+      "modified": "2026-11-08",
       "provenance": {
         "price": {
           "label": "Bil-Portalen (bil-portalen.dk)",
@@ -6263,7 +6608,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/tesla/model-y-2026-facelift|Model Y Baghjulstræk"
-      ]
+      ],
+      "model_family": "Tesla Model Y (2026 Facelift)"
     },
     {
       "slug": "toyota-proace-verso-electric-combi-long-75-kwh-136-hk-9-personer-fe4ba22b",
@@ -6292,7 +6638,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/toyota/proace-verso|Proace Verso Electric Combi Long 75 kWh 136 hk, 9 personer"
-      ]
+      ],
+      "model_family": "Toyota Proace Verso Electric"
     },
     {
       "slug": "volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851",
@@ -6321,7 +6668,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/volkswagen/id-tiguan|ID. Tiguan Trend 190 hk (58 kWh)"
-      ]
+      ],
+      "model_family": "Volkswagen ID. Tiguan"
     },
     {
       "slug": "volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43",
@@ -6350,7 +6698,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/volkswagen/id3-2026|ID.3 Neo Trend 170 hk (50 kWh)"
-      ]
+      ],
+      "model_family": "Volkswagen ID.3 Neo"
     },
     {
       "slug": "volkswagen-id-7-gtx-max-340-hk-4motion-86-kwh-fdeaf482",
@@ -6379,7 +6728,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/volkswagen/id7-gtx-2026|ID.7 GTX Max 340 hk 4MOTION (86 kWh)"
-      ]
+      ],
+      "model_family": "Volkswagen ID.7 GTX"
     },
     {
       "slug": "volvo-es90-single-motor-ultra-75e7ee4f",
@@ -6408,7 +6758,8 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/volvo/es90-2026|ES90 Single Motor Ultra"
-      ]
+      ],
+      "model_family": "Volvo ES90"
     },
     {
       "slug": "xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b",
@@ -6437,7 +6788,260 @@
       "charging": null,
       "source_ids": [
         "https://bil-portalen.dk/bil/xpeng/g9l|RWD Long Range Ultra (7 sæder)"
-      ]
+      ],
+      "model_family": "XPENG G9L"
+    },
+    {
+      "slug": "peugeot-e-3008-gt-el-210-a3a44fa2",
+      "brand": "Peugeot",
+      "model": "E-3008 GT EL 210",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": true,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        }
+      },
+      "price": 304990,
+      "battery": 73.0,
+      "range": 519,
+      "consumption": 17.1,
+      "charging": null,
+      "model_family": "Peugeot E-3008",
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail|GT|EL 210",
+        "https://bil-portalen.dk/bil/peugeot/e-3008-2026|GT EL 210 (73 kWh netto)"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+    },
+    {
+      "slug": "peugeot-e-3008-gt-pack-el-210-b7c75d04",
+      "brand": "Peugeot",
+      "model": "E-3008 GT Pack EL 210",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": true,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-3008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/3008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        }
+      },
+      "price": 314990,
+      "battery": 73.0,
+      "range": 519,
+      "consumption": 17.1,
+      "charging": null,
+      "model_family": "Peugeot E-3008",
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-3008/retail|GT Pack|EL 210"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+    },
+    {
+      "slug": "peugeot-e-5008-vision-el-210-770c7959",
+      "brand": "Peugeot",
+      "model": "E-5008 Vision EL 210",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": true,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        }
+      },
+      "price": 314990,
+      "battery": 73.0,
+      "range": 500,
+      "consumption": 17.8,
+      "charging": null,
+      "model_family": "Peugeot E-5008",
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail|Vision|EL 210",
+        "https://bil-portalen.dk/bil/peugeot/5008-2026|Vision EL 210 (73 kWh netto)"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+    },
+    {
+      "slug": "peugeot-e-5008-gt-pack-el-210-bfd2f5a9",
+      "brand": "Peugeot",
+      "model": "E-5008 GT Pack EL 210",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": true,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        }
+      },
+      "price": 379990,
+      "battery": 73.0,
+      "range": 492,
+      "consumption": 18.1,
+      "charging": null,
+      "model_family": "Peugeot E-5008",
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail|GT Pack|EL 210"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+    },
+    {
+      "slug": "peugeot-e-5008-gt-limited-el-210-10d3fd50",
+      "brand": "Peugeot",
+      "model": "E-5008 GT Limited EL 210",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-08",
+      "indexable": true,
+      "modified": "2026-11-08",
+      "provenance": {
+        "price": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "consumption": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "range": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        },
+        "battery": {
+          "label": "Peugeot E-5008 · dansk prisliste",
+          "url": "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail",
+          "primary_url": "https://www.peugeot.dk/modeller/5008.html",
+          "source_date": "2026-11-08",
+          "kind": "retail-api"
+        }
+      },
+      "price": 359990,
+      "battery": 73.0,
+      "range": 497,
+      "consumption": 17.9,
+      "charging": null,
+      "model_family": "Peugeot E-5008",
+      "source_ids": [
+        "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail|GT Limited|EL 210"
+      ],
+      "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
     }
   ]
 }
