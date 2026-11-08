@@ -1,0 +1,48 @@
+name: Kontroller resterende modelbilleder
+on:
+  push:
+    branches: [inspect/remaining-photos-20261108]
+permissions:
+  contents: read
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install Pillow==11.3.0
+      - name: Kontroller fotografier og licenser
+        run: |
+          python - <<'PY'
+          import base64,hashlib,html,io,json,re,time,urllib.parse,urllib.request
+          from PIL import Image,ImageDraw
+          from pathlib import Path
+          def get(url):
+           req=urllib.request.Request(url,headers={'User-Agent':'EVBeregnTechnicalReview/1.0 (+https://www.evberegn.dk)'})
+           with urllib.request.urlopen(req,timeout=18) as r:return r.read()
+          queries=[["corsa","Opel Corsa-e front"],["berlingo","Citroen e-Berlingo front"],["spacetourer","Citroen e-Spacetourer front"],["ds8","DS N°8 front"],["sterra-et","Exeed Sterra ET front"],["tourneo","Ford E-Tourneo Custom front"],["ehs7","Hongqi EHS7 front"],["e30x","JAC E30X front"],["ev4-fastback","Kia EV4 sedan front"],["b05","Leapmotor B05 front"],["eqs-suv","Mercedes-Benz EQS SUV front"],["g580","Mercedes-Benz G 580 EQ front"],["zafira","Opel Zafira-e front"],["cross-turismo","Porsche Taycan Cross Turismo front"],["sport-turismo","Porsche Taycan Sport Turismo front"],["uncharted","Subaru Uncharted front"],["proace","Toyota Proace Verso Electric front"]]
+          shots=[]
+          for ident,query in queries:
+           try:
+            args={'action':'query','format':'json','generator':'search','gsrsearch':query,'gsrnamespace':6,'gsrlimit':2,'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':1280}
+            payload=json.loads(get('https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(args)))
+            pages=payload.get('query',{}).get('pages',{})
+            for n,p in enumerate(pages.values()):
+             info=p['imageinfo'][0];meta=info.get('extmetadata',{});license=meta.get('LicenseShortName',{}).get('value','')
+             if not re.match(r'CC (?:BY|BY-SA|0)',license) and license!='CC0':continue
+             if info.get('width',0)<700:continue
+             url=info.get('thumburl') or info['url']
+             body=get(url);im=Image.open(io.BytesIO(body));thumb=im.convert('RGB');thumb.thumbnail((310,175))
+             key=ident+'-'+str(n);shots.append((key,thumb))
+             record={'id':key,'file':p['title'],'url':url,'original_url':info['url'],'source':info.get('descriptionurl'),'author':html.unescape(re.sub('<[^>]+>','',meta.get('Artist',{}).get('value',''))).strip(),'license':license,'license_url':meta.get('LicenseUrl',{}).get('value',''),'description':html.unescape(re.sub('<[^>]+>','',meta.get('ImageDescription',{}).get('value',''))).strip(),'original_width':info['width'],'original_height':info['height']}
+             print('PHOTO_CANDIDATE '+json.dumps(record,ensure_ascii=False),flush=True)
+             time.sleep(1)
+           except Exception as e:print('PHOTO_PROBE_ERROR '+json.dumps({'id':ident,'error':str(e)}),flush=True)
+           time.sleep(1)
+          if shots:
+           sheet=Image.new('RGB',(960,220*((len(shots)+2)//3)),'white');draw=ImageDraw.Draw(sheet)
+           for i,(key,im) in enumerate(shots):
+            x=(i%3)*320;y=(i//3)*220;draw.text((x+5,y+5),key,fill='black');sheet.paste(im,(x,y+30))
+           out=io.BytesIO();sheet.save(out,format='JPEG',quality=72);print('PHOTO_CONTACT_SHEET '+base64.b64encode(out.getvalue()).decode(),flush=True)
+          
+          PY
