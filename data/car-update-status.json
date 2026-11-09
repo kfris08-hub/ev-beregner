@@ -1,32 +1,6 @@
 {
-  "updated_models": [
-    "citroen-e-c3-aircross-you",
-    "citroen-e-c3-you",
-    "hyundai-inster-standard-range-essential",
-    "kia-ev2-standard-range-access",
-    "leapmotor-b10-life",
-    "maxus-eterron-9-luxury",
-    "mazda-cx-6e-takumi",
-    "nissan-ariya-2026-engage-plus-63-kwh",
-    "nissan-leaf-2026-engage-52-kwh",
-    "peugeot-e-3008-gt-el-210-a3a44fa2",
-    "peugeot-e-3008-gt-pack-el-210-b7c75d04",
-    "peugeot-e-5008-e-5008-allure",
-    "peugeot-e-5008-gt-limited-el-210-10d3fd50",
-    "peugeot-e-5008-gt-pack-el-210-bfd2f5a9",
-    "peugeot-e-5008-vision-el-210-770c7959",
-    "polestar-2-long-range-single-motor-rwd",
-    "subaru-solterra-limited",
-    "toyota-c-hr-active-fwd",
-    "toyota-urban-cruiser-active"
-  ],
-  "new_models": [
-    "peugeot-e-3008-gt-el-210-a3a44fa2",
-    "peugeot-e-3008-gt-pack-el-210-b7c75d04",
-    "peugeot-e-5008-vision-el-210-770c7959",
-    "peugeot-e-5008-gt-pack-el-210-bfd2f5a9",
-    "peugeot-e-5008-gt-limited-el-210-10d3fd50"
-  ],
+  "updated_models": [],
+  "new_models": [],
   "unmatched_existing_variants": [
     {
       "family": "Audi Q4 e-tron",
@@ -335,7 +309,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-08T21:25:50.256959+00:00",
+  "checked_at": "2026-11-09T12:04:43.238132+00:00",
   "sources": [
     {
       "id": "retail-Junior",
