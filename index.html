@@ -104,7 +104,7 @@ const historicalModels={"kia-e-soul-39-2-kwh-2019":2019,"kia-e-soul-64-kwh-2019"
 function carLabel(c){return c[0]+" "+c[1]}
 function safeVal(v,suffix=""){return v==null?"—":v+suffix}
 let compareCars=[null,null,null];
-let energyPrices={electric:2,petrol:16.09,diesel:18.19,region:EVCore.getArea()};
+let energyPrices={electric:2,petrol:16.09,diesel:18.09,region:EVCore.getArea()};
 let electricRequest=0;const energyState={electric:"loading",fuel:"loading"};
 function fmtPrice(v,unit){return Number.isFinite(v)?v.toFixed(2).replace(".",",")+" "+unit:"—"}
 function initCompare(){
