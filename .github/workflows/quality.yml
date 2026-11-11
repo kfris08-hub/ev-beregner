@@ -84,7 +84,7 @@ jobs:
           python-version: '3.12'
       - name: Installer browser-testværktøj
         run: python -m pip install playwright==1.56.0 Pillow==11.3.0
-      - name: Kontroller de fem beregnersider på mobil og desktop
+      - name: Kontroller beregnersiderne på mobil og desktop
         run: python tests/calculator_browser_checks.py
       - name: Gem beregnerkontrol og skærmbilleder
         if: always()

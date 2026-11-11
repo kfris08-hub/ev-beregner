@@ -15,8 +15,9 @@ for page in config:
  assert text.count('<h1>')==1 and page['h1'] in text
  assert 'rel="canonical"' in text and any(t=='meta' and a.get('name')=='robots' and 'index, follow' in a.get('content','') for t,a in tags)
  assert 'http-equiv="refresh"' not in text
- inputs={a['name']:a for t,a in tags if t=='input'}
+ inputs={a['name']:a for t,a in tags if t=='input' and a.get('name')}
  assert set(inputs)==set(page['defaults'])
+ assert any(t=='input' and a.get('id')=='shareURL' and 'readonly' in a for t,a in tags)
  for field,expected in page['defaults'].items():assert float(inputs[field]['value'])==float(expected)
  assert examples[page['slug']]['html'] in text,'Static result must use the shared arithmetic'
  assert '<noscript>' in text and 'Gennemgået ' in text and page['reviewed'].split('-')[0] in text
