@@ -48,7 +48,8 @@ class Page(HTMLParser):
         if self.current=='title':self.title+=data
         if self.current=='ld':self.ld[-1]+=data
 def problem(message,url):errors.append({'message':message,'url':url})
-files=[ROOT/'index.html',ROOT/'elbil/index.html',*sorted((ROOT/'elbil').glob('*/index.html')),*sorted((ROOT/'beregnere').glob('*/index.html'))]
+auxiliary=[ROOT/p['slug']/'index.html' for p in json.loads((ROOT/'data/site-pages.json').read_text())]
+files=[*auxiliary,ROOT/'index.html',ROOT/'elbil/index.html',*sorted((ROOT/'elbil').glob('*/index.html')),*sorted((ROOT/'beregnere').glob('*/index.html'))]
 paths=['/' if p==ROOT/'index.html' else '/'+p.relative_to(ROOT).as_posix().removesuffix('index.html') for p in files]
 with ThreadPoolExecutor(max_workers=4) as pool:responses=list(pool.map(fetch,[BASE+p for p in paths]))
 pages={};assets=set();external=set();titles={};descriptions={}
@@ -134,4 +135,5 @@ record={'checked_at':datetime.now(timezone.utc).isoformat(),'html_pages':len(pag
 (OUT/'full-public-crawl.json').write_text(json.dumps(record,ensure_ascii=False,indent=2))
 print('FULL_PUBLIC_CRAWL_RESULT '+json.dumps({k:v for k,v in record.items() if k not in ('responses','external_links')},ensure_ascii=False),flush=True)
 assert not errors,errors[:10]
+
 

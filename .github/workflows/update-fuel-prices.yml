@@ -44,6 +44,9 @@ jobs:
           python tests/calculator_page_checks.py
           node tests/calculators.test.cjs
           node tests/calculator_math.test.cjs
+          node tests/growth.test.cjs
+          python tests/growth.test.py
+          python tests/growth_content_checks.py
       - run: python -m pip install playwright==1.56.0
       - name: Kontroller forsiden, modelsider, egne priser og fejl
         run: python tests/fuel_browser_checks.py
@@ -52,7 +55,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/fuel-prices.json data/cars.json data/model-photos.json index.html elbil/ assets/calculator-cars.json bil-data-komplet.csv sitemap.xml beregnere/ .github/docs/BILLEDDÆKNING.md
+          git add data/fuel-prices.json data/cars.json data/model-photos.json index.html elbil/ assets/calculator-cars.json bil-data-komplet.csv sitemap.xml beregnere/ om/ .github/docs/BILLEDDÆKNING.md
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Opdater gennemsnit af faktiske OK-pumpepriser'
           git push origin "HEAD:${GITHUB_REF_NAME}"
@@ -67,4 +70,5 @@ jobs:
         with:
           name: pumpepris-kontrol
           path: test-results/
+
 

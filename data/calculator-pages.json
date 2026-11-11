@@ -2,7 +2,7 @@
   {
     "slug": "ladepris",
     "calculator": 1,
-    "title": "Beregn ladepris på elbil – hel eller delvis opladning",
+    "title": "Ladepris beregner – hvad koster opladning af elbil?",
     "h1": "Hvad koster det at oplade en elbil?",
     "description": "Beregn ladeprisen ud fra batteri, ladeprocent, samlet elpris og ekstra strømforbrug. Se et gennemregnet eksempel og brug dine egne tal.",
     "intro": "Beregn prisen for en hel eller delvis opladning med din egen elpris.",
@@ -83,14 +83,16 @@
       }
     ],
     "related": [
+      "pris-pr-km",
       "opladningstid",
-      "elbil-vs-benzin"
-    ]
+      "koeretur"
+    ],
+    "reviewed": "2026-11-11"
   },
   {
     "slug": "elbil-vs-benzin",
     "calculator": 3,
-    "title": "Elbil vs. benzin – beregn forskellen i energiudgift",
+    "title": "Elbil vs. benzin beregner – sammenlign energiudgifter",
     "h1": "Elbil eller benzin: hvad koster energien?",
     "description": "Sammenlign elbilens strømudgift med benzinbilens brændstofudgift. Indtast forbrug, priser og årlige kilometer, og se forskellen pr. år.",
     "intro": "Sammenlign elbilens og benzinbilens årlige energiudgifter med dine egne tal.",
@@ -180,14 +182,16 @@
       }
     ],
     "related": [
-      "ladepris",
+      "elbil-vs-diesel",
+      "pris-pr-km",
       "samlet-biloekonomi"
-    ]
+    ],
+    "reviewed": "2026-11-11"
   },
   {
     "slug": "opladningstid",
     "calculator": 8,
-    "title": "Beregn opladningstid på elbil – kWh, procent og kW",
+    "title": "Opladningstid på elbil – beregn timer og minutter",
     "h1": "Hvor lang tid tager det at oplade en elbil?",
     "description": "Beregn teoretisk ladetid ud fra batteri, start- og slutprocent og gennemsnitlig ladeeffekt. Se forskellen på kW, kWh og bilens maksimale effekt.",
     "intro": "Beregn ladetiden ud fra batteri, ladeprocenter og gennemsnitlig effekt.",
@@ -268,12 +272,13 @@
     "related": [
       "ladepris",
       "samlet-biloekonomi"
-    ]
+    ],
+    "reviewed": "2026-11-11"
   },
   {
     "slug": "leasing-vs-koeb",
     "calculator": 12,
-    "title": "Leasing vs. køb – sammenlign bilens omkostninger",
+    "title": "Leasing eller køb? Beregn bilens omkostninger",
     "h1": "Skal du lease eller købe bilen?",
     "description": "Sammenlign leasing med køb over samme periode. Medregn førstegangsydelse, dit skøn over salgspris og øvrige udgifter i stedet for kun købsprisen.",
     "intro": "Sammenlign leasing og køb over samme periode med dit skøn over salgsprisen.",
@@ -369,12 +374,13 @@
     "related": [
       "samlet-biloekonomi",
       "elbil-vs-benzin"
-    ]
+    ],
+    "reviewed": "2026-11-11"
   },
   {
     "slug": "samlet-biloekonomi",
     "calculator": 14,
-    "title": "Beregn samlet biløkonomi – omkostninger over 5 år",
+    "title": "Biløkonomi beregner – hvad koster bilen over 5 år?",
     "h1": "Hvad koster bilen samlet over 5 år?",
     "description": "Beregn bilens nettoomkostning over 5 år ud fra købspris, dit årlige driftsbudget og skønnet salgspris. Se også gennemsnittet pr. måned.",
     "intro": "Beregn bilens omkostninger over fem år med drift og skønnet salgspris.",
@@ -474,6 +480,442 @@
     "related": [
       "leasing-vs-koeb",
       "ladepris"
-    ]
+    ],
+    "reviewed": "2026-11-11"
+  },
+  {
+    "slug": "pris-pr-km",
+    "calculator": 2,
+    "title": "Pris pr. km for elbil – beregn din strømudgift",
+    "h1": "Hvad koster en elbil pr. kilometer?",
+    "description": "Beregn elbilens strømpris pr. km og pr. 100 km. Brug din egen elpris og dit forbrug, og se hvordan opladningens pris ændrer kilometerudgiften.",
+    "intro": "Se strømudgiften pr. kilometer og pr. 100 km med dine egne tal.",
+    "defaults": {
+      "consumption": 16,
+      "electricPrice": 2
+    },
+    "help": {
+      "consumption": "Indtast energiforbruget i kWh pr. 100 km. Brug et tal, der passer til din kørsel og den energi, du betaler for.",
+      "electricPrice": "Din samlede pris for en kWh. Bland hjemme- og udeladning efter den andel af strømmen, du køber hvert sted."
+    },
+    "sections": [
+      {
+        "heading": "Fra forbrug og elpris til kilometerpris",
+        "paragraphs": [
+          "Kilometerprisen findes ved at fordele energien til 100 km på hver kilometer og gange med din elpris. Det er strømudgiften. Forsikring, afgifter, værditab og finansiering skal lægges til i et samlet bilbudget."
+        ],
+        "formula": "Kr. pr. km = kWh pr. 100 km × kr. pr. kWh / 100\nKr. pr. 100 km = kWh pr. 100 km × kr. pr. kWh"
+      },
+      {
+        "heading": "Eksempel: 16 kWh pr. 100 km",
+        "paragraphs": [
+          "Ved 2 kr./kWh koster strømmen 32 kr. for 100 km og 0,32 kr. pr. km. Ved 4 kr./kWh bliver det 64 kr. for 100 km. Priserne i tabellen er valgte scenarier."
+        ],
+        "table": {
+          "headers": [
+            "Elpris i scenariet",
+            "Strøm pr. km",
+            "Strøm pr. 100 km"
+          ],
+          "rows": [
+            [
+              "1,50 kr./kWh",
+              "0,24 kr.",
+              "24 kr."
+            ],
+            [
+              "2,00 kr./kWh",
+              "0,32 kr.",
+              "32 kr."
+            ],
+            [
+              "4,00 kr./kWh",
+              "0,64 kr.",
+              "64 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Brug din egen blanding af ladepriser",
+        "paragraphs": [
+          "Køber du 80 % af strømmen til 2 kr./kWh og 20 % til 4 kr./kWh, er den vægtede pris 2,40 kr./kWh. Med eksemplets forbrug bliver det 0,384 kr. pr. km. Fordel efter kWh, hvis ladeforløbene har forskellige størrelser.",
+          "Faste abonnementer er ikke automatisk en del af en kWh-pris. Brug beregneren for samlet biløkonomi, hvis du også vil medregne bilens andre udgifter."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Er det bilens samlede kilometerpris?",
+        "answer": "Nej. Her beregnes strømmen alene. Brug samlet biløkonomi til køb, drift og forventet salgsværdi."
+      },
+      {
+        "question": "Skal ladetab lægges til?",
+        "answer": "Kun hvis dit forbrug ikke allerede omfatter den energi, du betaler for. Læg ikke samme tab til to gange."
+      },
+      {
+        "question": "Kan jeg bruge en elpris på 0 kr.?",
+        "answer": "Ja. Strømudgiften bliver 0 i det scenarie. Eventuelle abonnementer og andre biludgifter består stadig."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: elforbrug og pris for hjemmeladning",
+        "url": "https://fdm.dk/vaerd-at-vide/ladeloesninger/hvad-koster-det-at-lade-en-elbil-op-hjemme"
+      }
+    ],
+    "related": [
+      "koeretur",
+      "ladepris",
+      "samlet-biloekonomi"
+    ],
+    "reviewed": "2026-11-11"
+  },
+  {
+    "slug": "elbil-vs-diesel",
+    "calculator": 4,
+    "title": "Elbil vs. diesel beregner – sammenlign energiudgifter",
+    "h1": "Elbil eller diesel: hvad koster energien?",
+    "description": "Sammenlign elbilens strømudgift med dieselbilens brændstofudgift for samme antal kilometer. Beregn årsudgiften med egne priser og forbrug.",
+    "intro": "Sammenlign strøm og diesel for det samme årlige kilometertal.",
+    "defaults": {
+      "consumption": 16,
+      "electricPrice": 2,
+      "fuelEconomy": 20,
+      "fuelPrice": 17,
+      "annualKm": 20000
+    },
+    "help": {
+      "consumption": "Elbilens energiforbrug i kWh pr. 100 km. Tilpas tallet til din faktiske kørsel.",
+      "electricPrice": "Den samlede pris pr. kWh for din blanding af hjemmeladning og offentlig opladning.",
+      "fuelEconomy": "Dieselbilens forventede km pr. liter. Tallet skal være større end 0.",
+      "fuelPrice": "Pris pr. liter diesel. 17 kr./l er en eksempelværdi. Knappen kan hente gennemsnittet af aktuelle OK-pumpepriser.",
+      "annualKm": "Samme årlige distance anvendes for begge biler."
+    },
+    "sections": [
+      {
+        "heading": "Sammenlign energi til den samme distance",
+        "paragraphs": [
+          "Beregningen omregner elbilens forbrug til kWh og dieselbilens forbrug til liter. Hver energimængde ganges med den pris, du angiver. En positiv forskel betyder, at diesel koster mere i det valgte scenarie."
+        ],
+        "formula": "El pr. år = årlige km × kWh pr. 100 km / 100 × kr. pr. kWh\nDiesel pr. år = årlige km / km pr. liter × kr. pr. liter\nForskel = dieseludgift − strømudgift"
+      },
+      {
+        "heading": "Eksempel ved 20.000 km om året",
+        "paragraphs": [
+          "Med 16 kWh pr. 100 km bruges 3.200 kWh. Til 2 kr./kWh koster det 6.400 kr. Dieselbilen kører 20 km/l og bruger 1.000 liter. Til eksempelprisen 17 kr./l koster det 17.000 kr. Forskellen er 10.600 kr. i energi om året."
+        ],
+        "table": {
+          "headers": [
+            "Resultat i eksemplet",
+            "Elbil",
+            "Dieselbil"
+          ],
+          "rows": [
+            [
+              "Årlig energiudgift",
+              "6.400 kr.",
+              "17.000 kr."
+            ],
+            [
+              "Energiudgift pr. 100 km",
+              "32 kr.",
+              "85 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Energi er en del af biløkonomien",
+        "paragraphs": [
+          "Resultatet omfatter ikke forskelle i købspris, værditab, forsikring, afgifter og service. En bil kan have lav energiudgift og samtidig højere samlede omkostninger. Prøv samlet biløkonomi for de øvrige poster.",
+          "De hentede brændstofpriser er et gennemsnit af OK-stationer. Din lokale pris kan afvige. Dine indtastede tal bestemmer beregningen, også når diesel er billigere i scenariet."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kan jeg bruge mit faktiske dieselforbrug?",
+        "answer": "Ja. Indtast det antal kilometer, du normalt kører pr. liter."
+      },
+      {
+        "question": "Viser resultatet besparelsen ved at købe en elbil?",
+        "answer": "Det viser forskellen i energiudgift. Bilskiftets købspris, værditab og andre udgifter er ikke med."
+      },
+      {
+        "question": "Kan elbil være dyrere i energi?",
+        "answer": "Ja. En høj elpris eller et andet forbrug kan give en negativ forskel. Beregneren vælger ikke en vinder på forhånd."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: elbilens teknik og energiforbrug",
+        "url": "https://fdm.dk/guides/elbil/hvordan-fungerer-en-elbil"
+      }
+    ],
+    "related": [
+      "elbil-vs-benzin",
+      "pris-pr-km",
+      "samlet-biloekonomi"
+    ],
+    "reviewed": "2026-11-11"
+  },
+  {
+    "slug": "koeretur",
+    "calculator": 6,
+    "title": "Hvad koster turen i elbil? Beregn strøm og pris",
+    "h1": "Hvad koster din køretur i elbil?",
+    "description": "Beregn kWh og strømudgift til en køretur ud fra kilometer, forbrug og elpris. Sammenlign egne ladescenarier og del beregningen.",
+    "intro": "Indtast turens kilometer og se både energibehov og strømudgift.",
+    "defaults": {
+      "km": 250,
+      "consumption": 18,
+      "electricPrice": 2.5
+    },
+    "help": {
+      "km": "Turens samlede distance. Vil du regne en returrejse med, skal begge retninger indgå.",
+      "consumption": "Dit forventede forbrug for turen. Motorvej, last og temperatur kan ændre forbruget.",
+      "electricPrice": "Den gennemsnitlige pris pr. kWh, du forventer at betale for turens strøm. Fordel forskellige ladepriser efter købt energi."
+    },
+    "sections": [
+      {
+        "heading": "Beregn først kWh og derefter pris",
+        "paragraphs": [
+          "Turen omregnes til energi ved at gange kilometer med forbruget og dele med 100. Energien ganges derefter med din pris pr. kWh."
+        ],
+        "formula": "Turens kWh = km × kWh pr. 100 km / 100\nTurens strømudgift = turens kWh × kr. pr. kWh"
+      },
+      {
+        "heading": "Eksempel: 250 km med 18 kWh pr. 100 km",
+        "paragraphs": [
+          "Turen kræver i eksemplet 45 kWh. Til 2,50 kr./kWh er strømudgiften 112,50 kr. Koster den samme energimængde 4 kr./kWh, bliver udgiften 180 kr. Ændrer du afstanden til 500 km for en returrejse, fordobles begge tal."
+        ],
+        "table": {
+          "headers": [
+            "Samme tur, forskellige eksempelpriser",
+            "Strømudgift"
+          ],
+          "rows": [
+            [
+              "2,00 kr./kWh",
+              "90 kr."
+            ],
+            [
+              "2,50 kr./kWh",
+              "112,50 kr."
+            ],
+            [
+              "4,00 kr./kWh",
+              "180 kr."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Et energibudget til turen",
+        "paragraphs": [
+          "Du kan bruge resultatet til at vurdere strømforbruget, men det er ikke en ruteplan med bestemte ladestop. Sammenhold turens energibehov med bilens brugbare batteri og en passende reserve.",
+          "Bro, færge, parkering, abonnementer og eventuelle startgebyrer er ikke med. Hvis forbruget allerede omfatter ladeenergi, skal samme tab ikke lægges til igen."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Er returvejen med?",
+        "answer": "Kun hvis du indtaster begge retningers kilometer. Feltet er turens samlede distance."
+      },
+      {
+        "question": "Fortæller beregneren, hvor jeg skal lade?",
+        "answer": "Nej. Den beregner energi og strømudgift, ikke en rute eller konkrete ladestop."
+      },
+      {
+        "question": "Hvordan regner jeg med flere ladepriser?",
+        "answer": "Brug en vægtet pris efter energimængde. Halvdelen til 2 kr./kWh og halvdelen til 4 kr./kWh giver 3 kr./kWh."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: elforbrug og pris for hjemmeladning",
+        "url": "https://fdm.dk/vaerd-at-vide/ladeloesninger/hvad-koster-det-at-lade-en-elbil-op-hjemme"
+      }
+    ],
+    "related": [
+      "raekkevidde",
+      "pris-pr-km",
+      "ladepris"
+    ],
+    "reviewed": "2026-11-11"
+  },
+  {
+    "slug": "raekkevidde",
+    "calculator": 7,
+    "title": "Rækkevidde på elbil – beregn ud fra batteri og forbrug",
+    "h1": "Hvor langt rækker batteriet i din elbil?",
+    "description": "Beregn et matematisk rækkeviddeoverslag ud fra brugbar batterikapacitet og forventet forbrug. Se forskellen mellem forskellige forbrugsscenarier.",
+    "intro": "Se et rækkeviddeoverslag med brugbart batteri og dit forventede forbrug.",
+    "defaults": {
+      "battery": 60,
+      "consumption": 18
+    },
+    "help": {
+      "battery": "Energi, du har til rådighed i beregningen. Brug brugbar kapacitet frem for bruttotal, og fratræk en reserve, hvis den ikke skal bruges.",
+      "consumption": "Forventet kWh pr. 100 km for din kørsel. Tallet skal være større end 0. Brug et tal, der passer til samme energibasis som batteriet."
+    },
+    "sections": [
+      {
+        "heading": "Fra kWh til kilometer",
+        "paragraphs": [
+          "Batteriets energi deles med forbruget pr. 100 km. Resultatet ganges med 100 for at få kilometer. Modellen antager samme forbrug på hele turen."
+        ],
+        "formula": "Rækkevidde i km = tilgængelige kWh / kWh pr. 100 km × 100"
+      },
+      {
+        "heading": "Eksempel med 60 kWh til rådighed",
+        "paragraphs": [
+          "Ved 18 kWh pr. 100 km bliver overslaget cirka 333 km. Ændrer forbruget sig, ændrer rækkevidden sig også. Tabellen bruger samme batteri, så du kan se betydningen af forskellige forbrugsscenarier."
+        ],
+        "table": {
+          "headers": [
+            "Forbrug i scenariet",
+            "Beregnet rækkevidde"
+          ],
+          "rows": [
+            [
+              "15 kWh/100 km",
+              "400 km"
+            ],
+            [
+              "18 kWh/100 km",
+              "Cirka 333 km"
+            ],
+            [
+              "22 kWh/100 km",
+              "Cirka 273 km"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Batterital, reserve og faktisk kørsel",
+        "paragraphs": [
+          "En oplyst batteristørrelse kan være brutto eller netto. Vælg den energi, du faktisk vil bruge. Har du 60 kWh brugbart og ønsker at beholde 6 kWh som reserve, kan du indtaste 54 kWh. Ved 18 kWh pr. 100 km giver det 300 km.",
+          "Overslaget er ikke en WLTP-test eller et løfte om faktisk rækkevidde. Hastighed, temperatur, terræn og last kan påvirke forbruget. Brug egne erfaringer og bilens energivisning, når du planlægger en konkret tur."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Er resultatet bilens WLTP-rækkevidde?",
+        "answer": "Nej. Det er et regnestykke med dine egne input, ikke et officielt testresultat."
+      },
+      {
+        "question": "Kan jeg regne fra en delvis opladning?",
+        "answer": "Ja. Indtast den energimængde, der skal bruges. 60 kWh brugbart ved 50 % svarer til 30 kWh, før du eventuelt fratrækker en reserve."
+      },
+      {
+        "question": "Hvorfor kan jeg ikke bruge et forbrug på 0?",
+        "answer": "Beregningen dividerer med forbruget. Tallet skal derfor være større end 0."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Tesla: forhold, der påvirker rækkevidden",
+        "url": "https://www.tesla.com/da_dk/support/range"
+      }
+    ],
+    "related": [
+      "koeretur",
+      "opladningstid",
+      "ladepris"
+    ],
+    "reviewed": "2026-11-11"
+  },
+  {
+    "slug": "stroemforbrug-elbil",
+    "calculator": 9,
+    "title": "Elbilens strømforbrug pr. år – beregn kWh og gennemsnit",
+    "h1": "Hvor meget strøm bruger din elbil om året?",
+    "description": "Beregn elbilens årlige strømforbrug i kWh ud fra kørelængde og forbrug. Se også gennemsnittet pr. måned og dag.",
+    "intro": "Beregn årlige kWh og få et gennemsnit pr. måned og dag.",
+    "defaults": {
+      "annualKm": 20000,
+      "consumption": 16
+    },
+    "help": {
+      "annualKm": "Dit forventede årlige kilometertal. Medtag både pendling og andre ture.",
+      "consumption": "Forbrug i kWh pr. 100 km. Brug et tal, der svarer til den energi, du vil budgettere med, og undgå at lægge samme ladetab til to gange."
+    },
+    "sections": [
+      {
+        "heading": "Beregn dit årlige energibehov",
+        "paragraphs": [
+          "Kilometertallet ganges med forbruget og deles med 100. Måneds- og dagstallene er gennemsnit, ikke et estimat af hver konkret måneds eller dags opladning."
+        ],
+        "formula": "kWh pr. år = årlige km × kWh pr. 100 km / 100\nMånedligt gennemsnit = årlige kWh / 12\nDagligt gennemsnit = årlige kWh / 365"
+      },
+      {
+        "heading": "Eksempel med 16 kWh pr. 100 km",
+        "paragraphs": [
+          "Ved 20.000 km om året er energibehovet 3.200 kWh, svarende til cirka 267 kWh om måneden. Ved en valgt pris på 2 kr./kWh ville den energimængde koste 6.400 kr. Brug prisberegnerne til at arbejde videre med dine ladepriser."
+        ],
+        "table": {
+          "headers": [
+            "Årlig kørsel i scenariet",
+            "kWh om året",
+            "Gennemsnit pr. måned"
+          ],
+          "rows": [
+            [
+              "10.000 km",
+              "1.600 kWh",
+              "Cirka 133 kWh"
+            ],
+            [
+              "15.000 km",
+              "2.400 kWh",
+              "200 kWh"
+            ],
+            [
+              "20.000 km",
+              "3.200 kWh",
+              "Cirka 267 kWh"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Budget for bilen og hjemmets elmåler",
+        "paragraphs": [
+          "Skeln mellem bilens energiforbrug og al energi registreret ved opladning. Et batteribaseret forbrug kan give et andet tal end den energi, elmåleren registrerer. Brug en fælles opgørelsesmåde i dit budget.",
+          "Din kørsel kan være ujævnt fordelt over året. Månedsbeløbet er en fordeling af årsforbruget og tager ikke højde for bestemte måneders temperatur eller ferie."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "question": "Er husets øvrige strømforbrug med?",
+        "answer": "Nej. Beregningen gælder den angivne kørsel. Boligens øvrige elforbrug skal lægges til separat."
+      },
+      {
+        "question": "Er det den præcise ekstra elregning?",
+        "answer": "Nej. Resultatet er energi i kWh. Pris, faste betalinger og din aftale skal med i et udgiftsbudget."
+      },
+      {
+        "question": "Hvorfor divideres årsforbruget med 365?",
+        "answer": "Det giver et simpelt dagligt gennemsnit. Du lader ikke nødvendigvis bilen hver dag."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FDM: elforbrug og pris for hjemmeladning",
+        "url": "https://fdm.dk/vaerd-at-vide/ladeloesninger/hvad-koster-det-at-lade-en-elbil-op-hjemme"
+      }
+    ],
+    "related": [
+      "pris-pr-km",
+      "ladepris",
+      "koeretur"
+    ],
+    "reviewed": "2026-11-11"
   }
 ]

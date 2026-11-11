@@ -14,11 +14,16 @@
   const priceButton = document.getElementById('loadPrices');
   const area = document.getElementById('priceArea');
   const dirtyPrices = new Set(), dirtyFields = new Set();
-  let catalogue = [], chosen = null, requestToken = 0;
-  let electricStatus = 'Elpris: eksempelværdi.', fuelStatus = 'Benzin: eksempelpris.';
+  const sharing = global.EVCalculationShare, shareStatus = document.getElementById('shareStatus');
+  const shareButton = document.getElementById('shareCalculation'), shareURL = document.getElementById('shareURL');
+  const keys = definition.fields.map(([key]) => key);
+  const diesel = definition.fields.some(field => field[3] === 'liveDiesel'), fuelKind = diesel ? 'diesel' : 'petrol95', fuelName = diesel ? 'Diesel' : 'Benzin';
+  let catalogue = [], chosen = null, requestToken = 0, resultValid = true;
+  let electricStatus = 'Elpris: eksempelværdi.', fuelStatus = fuelName + ': eksempelpris.';
   const values = () => Object.fromEntries(definition.fields.map(([key]) => [key, field(key).value]));
   function calculate(report) {
     const inputs = values(), errors = api.validate(id, inputs);
+    resultValid = false;
     for (const [key] of definition.fields) {
       field(key).setCustomValidity(errors[key] || '');
       field(key).setAttribute('aria-invalid', errors[key] ? 'true' : 'false');
@@ -32,7 +37,7 @@
     }
     try {
       result.innerHTML = api.render(id, api.compute(id, inputs));
-      message.textContent = '';
+      message.textContent = ''; resultValid = true;
     } catch (_) {
       message.textContent = 'Tallene er for store til en gyldig beregning. Prøv mindre værdier.';
       result.textContent = 'Resultatet kunne ikke beregnes.';
@@ -69,6 +74,7 @@
       modelNote.textContent = hasData ? 'Bildata valgt. Ret tallene efter behov.' : 'Producentdata er ikke bekræftet. Tilpas eksempelværdierne.';
       if (chosen.price_status === 'catalogue' && field('price')) modelNote.textContent += ' Katalogpris – ret til din købspris.';
       if (chosen.availability === 'discontinued') modelNote.textContent = 'Tidligere model (' + chosen.model_year + ').' + (field('price') ? ' Indtast egen købspris.' : ' Ret tallene efter behov.');
+      if (field('battery') && !['net','netto'].includes(chosen.battery_basis)) modelNote.textContent += ' Kontrollér brugbar batterikapacitet.';
       if (id === 8) modelNote.textContent += ' Angiv selv gennemsnitlig ladeeffekt.';
     } else {
       for (const key of ['battery','consumption','price']) if (field(key) && !(preserveManual && dirtyFields.has(key))) field(key).value = field(key).defaultValue;
@@ -84,18 +90,19 @@
   form.addEventListener('submit', event => { event.preventDefault(); calculate(true); });
   form.addEventListener('input', event => {
     if(event.target.name) dirtyFields.add(event.target.name);
+    if (shareStatus) shareStatus.textContent = ''; if (shareURL) shareURL.hidden = true;
     if (['electricPrice', 'fuelPrice'].includes(event.target.name)) {
       dirtyPrices.add(event.target.name);
       if (event.target.name === 'electricPrice') electricStatus = 'Elpris: egen indtastning.';
-      else fuelStatus = 'Benzin: egen indtastning.';
+      else fuelStatus = fuelName + ': egen indtastning.';
       showPriceStatus();
     }
     calculate(false);
   });
   document.getElementById('calculateButton').disabled = false;
   document.querySelectorAll('[data-js-only]').forEach(node => { node.hidden = false; });
-  selection.addEventListener('change', () => selectCar(selection.value, true));
-  global.addEventListener('hashchange', () => { if (catalogue.length) selectCar(requestedCar(), false); });
+  selection.addEventListener('change', () => { shareStatus.textContent = ''; shareURL.hidden = true; selectCar(selection.value, true); });
+  global.addEventListener('hashchange', () => { if (catalogue.length) selectCar(requestedCar(), false); restoreShared(); calculate(false); });
   if (area) {
     area.value = core.getArea();
     area.addEventListener('change', () => {
@@ -107,6 +114,7 @@
   }
   if (priceButton) priceButton.addEventListener('click', async () => {
     const token = ++requestToken, region = core.setArea(area.value);
+    shareStatus.textContent = ''; shareURL.hidden = true;
     dirtyPrices.clear(); priceButton.disabled = true; priceButton.textContent = 'Henter priser…';
     const tasks = [
       (async () => {
@@ -122,11 +130,11 @@
     if (field('fuelPrice')) tasks.push((async () => {
       try {
         const data = await core.fetchJSON('/data/fuel-prices.json', { cache: 'no-cache' });
-        const snapshot = core.fuelPrices(data), value = snapshot.petrol95;
+        const snapshot = core.fuelPrices(data), value = snapshot[fuelKind];
         if (token !== requestToken || dirtyPrices.has('fuelPrice')) return;
         field('fuelPrice').value = value.toFixed(2);
-        fuelStatus = 'Benzin: ' + core.fuelLabel(data, 'petrol95') + '.';
-      } catch (_) { if (token === requestToken && !dirtyPrices.has('fuelPrice')) fuelStatus = 'Benzinprisen kunne ikke hentes. Brug din egen pris.'; }
+        fuelStatus = fuelName + ': ' + core.fuelLabel(data, fuelKind) + '.';
+      } catch (_) { if (token === requestToken && !dirtyPrices.has('fuelPrice')) fuelStatus = fuelName + 'prisen kunne ikke hentes. Brug din egen pris.'; }
     })());
     await Promise.allSettled(tasks);
     if (token === requestToken) {
@@ -134,11 +142,48 @@
       showPriceStatus(); calculate(false);
     }
   });
-  core.fetchJSON('/assets/calculator-cars.json?v=20261024-pages1', { cache: 'force-cache' }).then(data => {
+  function restoreShared() {
+    if (!sharing) return;
+    const saved = sharing.decode(global.location.hash, id, keys);
+    if (!saved) return;
+    if (saved.error || Object.keys(api.validate(id, saved.values)).length) {
+      shareStatus.textContent = 'Linkets tal kunne ikke indlæses. Brug eksempelværdier eller dine egne tal.'; return;
+    }
+    for (const [key, value] of Object.entries(saved.values)) { field(key).value = value; dirtyFields.add(key); if (['electricPrice','fuelPrice'].includes(key)) dirtyPrices.add(key); }
+    requestToken++; if (priceButton) { priceButton.disabled = false; priceButton.textContent = 'Hent vejledende priser'; }
+    if (saved.area && area) { area.value = saved.area; core.setArea(saved.area); }
+    if (field('electricPrice')) electricStatus = 'Elpris: fra delt beregning.';
+    if (field('fuelPrice')) fuelStatus = fuelName + ': fra delt beregning.';
+    shareStatus.textContent = 'Tal fra en delt beregning. Priser kan have ændret sig.';
+    showPriceStatus();
+  }
+  if (shareButton && sharing) shareButton.addEventListener('click', async () => {
+    calculate(false); if (!resultValid) { shareStatus.textContent = 'Ret tallene, før du deler beregningen.'; return; }
+    try {
+      const base = document.querySelector('link[rel="canonical"]').href;
+      const url = sharing.encode(base, id, keys, values(), chosen ? chosen.slug : requestedCar(), area ? area.value : '');
+      if (typeof navigator.share === 'function') {
+        await navigator.share({title: document.title, text: 'Min beregning på EV Beregner', url});
+        shareStatus.textContent = 'Linket til beregningen er klar.';
+      } else if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        await navigator.clipboard.writeText(url); shareStatus.textContent = 'Link kopieret. Modtageren får de samme indtastede tal.';
+      } else { shareURL.hidden = false; shareURL.value = url; shareURL.focus(); shareURL.select(); shareStatus.textContent = 'Kopiér linket nedenfor.'; }
+    } catch (error) {
+      if (error.name === 'AbortError') { shareStatus.textContent = 'Deling annulleret.'; return; }
+      shareURL.hidden = false;
+      try { shareURL.value = sharing.encode(document.querySelector('link[rel="canonical"]').href, id, keys, values(), chosen ? chosen.slug : requestedCar(), area ? area.value : ''); } catch (_) { shareURL.hidden = true; }
+      shareStatus.textContent = 'Brug linkfeltet til at kopiere beregningen.'; if (!shareURL.hidden) { shareURL.focus(); shareURL.select(); }
+    }
+  });
+  const printButton = document.getElementById('printCalculation');
+  if (printButton) printButton.addEventListener('click', () => { calculate(false); if (resultValid) global.print(); else shareStatus.textContent = 'Ret tallene, før du printer.'; });
+  restoreShared();
+  core.fetchJSON('/assets/calculator-cars.json', { cache: 'no-cache' }).then(data => {
     catalogue = data.models.filter(car => /^[a-z0-9-]+$/.test(car.slug));
     for (const car of catalogue) { const option = document.createElement('option'); option.value = car.slug; option.textContent = car.label; selection.appendChild(option); }
     selection.disabled = false; selectCar(requestedCar(), false, true);
   }).catch(() => { modelNote.textContent = 'Biloversigten kunne ikke hentes. Beregneren virker med dine egne tal.'; });
   showPriceStatus(); calculate(false);
 })(window);
+
 

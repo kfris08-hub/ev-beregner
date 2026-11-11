@@ -27,7 +27,7 @@ async def main():
             async def case(name,fn):
                 try:await fn();results.append({'viewport':label,'case':name,'result':'passed'})
                 except Exception as e:
-                    results.append({'viewport':label,'case':name,'result':'failed','error':str(e)[:1200]})
+                    results.append({'viewport':label,'case':name,'result':'failed','error':str(e)[:1200],'compare_events':await page.evaluate('window.__compareEvents||[]') if name.startswith('three-car') else []})
                     await page.screenshot(path=str(OUT/('failure-'+label+'-'+name+'.png')),full_page=True)
             async def filters():
                 await page.goto(BASE+'/',wait_until='load')
@@ -69,15 +69,17 @@ async def main():
             await case('calculator-direct-link-overlay',overlay_stacking)
             async def comparison():
                 await page.goto(BASE+'/',wait_until='load')
+                await page.evaluate('window.__compareEvents=[];["pointerdown","mousedown","mouseup","click","focusin"].forEach(type=>document.addEventListener(type,e=>{if(e.target.closest("#sammenlign"))window.__compareEvents.push({type,id:e.target.id,tag:e.target.tagName,text:e.target.textContent.slice(0,80)});},true));')
                 for slot,label2 in enumerate(['Tesla Model Y Standard RWD','Kia EV3 Standard Range Access','Elveon Motors Min-E Sedan']):
                     await page.locator('#cmpSearch'+str(slot)).fill(label2)
                     await page.locator('#cmpResults'+str(slot)+' .compare-option').first.click()
+                    await expect(page.locator('#cmpSelected'+str(slot))).to_contain_text(label2.split(' ')[0])
                 await expect(page.locator('#compareOutput table')).to_be_visible()
-                assert 'Ikke oplyst' in await page.locator('#compareOutput').inner_text()
-                assert await page.locator('#compareOutput td.winner').filter(has_text='Ikke oplyst').count()==0
-                assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1')
+                await expect(page.locator('#compareOutput')).to_contain_text('Ikke oplyst')
+                assert await page.locator('#compareOutput td.winner').filter(has_text='Ikke oplyst').count()==0, 'Unknown data were highlighted as a winner'
+                assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1'), 'Comparison overflow: '+str(await page.evaluate('({width:innerWidth,scroll:document.documentElement.scrollWidth,overflow:[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1 && getComputedStyle(e).position!=="fixed").slice(0,25).map(e=>({tag:e.tagName,id:e.id,cls:e.className,right:e.getBoundingClientRect().right}))})'))
                 await page.locator('#cmpSelected2 button').click()
-                assert await page.locator('#compareOutput .compare-head').count()==2
+                await expect(page.locator('#compareOutput .compare-head')).to_have_count(2)
             await case('three-car-comparison-unknown-remove',comparison)
             async def general_mode():
                 await page.goto(BASE+'/?car=tesla-model-y-standard-rwd',wait_until='load')
@@ -137,3 +139,4 @@ async def main():
     print('FULL_PUBLIC_FLOWS_RESULT '+json.dumps({'origin':'public' if PUBLIC else 'checked-out source','cases':len(results),'passed':len(results)-len(failed),'failed':failed,'real_price_observations':providers},ensure_ascii=False),flush=True)
     assert not failed,failed
 if __name__=='__main__':asyncio.run(main())
+

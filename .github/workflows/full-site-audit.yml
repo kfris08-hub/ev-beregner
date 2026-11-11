@@ -24,6 +24,9 @@ jobs:
           python tests/calculator_page_checks.py
           node tests/calculators.test.cjs
           node tests/calculator_math.test.cjs
+          node tests/growth.test.cjs
+          python tests/growth.test.py
+          python tests/growth_content_checks.py
   public-crawl:
     runs-on: ubuntu-latest
     steps:
@@ -50,7 +53,7 @@ jobs:
         env:
           CALCULATOR_PUBLIC: '1'
         run: python tests/browser_checks.py
-      - name: Kontroller fem nye beregnersider med og uden JavaScript
+      - name: Kontroller beregnersider med og uden JavaScript
         env:
           CALCULATOR_PUBLIC: '1'
         run: python tests/calculator_browser_checks.py
@@ -92,4 +95,27 @@ jobs:
         if: always()
         with:
           name: offentlige-brugerforloeb
+          path: test-results/
+
+
+  public-growth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller deling, nye værktøjer, priser og navigation
+        env:
+          GROWTH_PUBLIC: '1'
+          FUEL_PUBLIC: '1'
+        run: |
+          python tests/growth_browser_checks.py
+          python tests/fuel_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-vaekstfunktioner
           path: test-results/

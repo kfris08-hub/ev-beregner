@@ -13,16 +13,18 @@ for page in config:
  text=(ROOT/'beregnere'/page['slug']/'index.html').read_text();tags=Markup(text).tags;canonical=BASE+'/beregnere/'+page['slug']+'/'
  assert [(a.get('href')) for t,a in tags if t=='link' and a.get('rel')=='canonical']==[canonical]
  assert text.count('<h1>')==1 and page['h1'] in text
- assert 'rel="canonical"' in text and 'name="robots" content="index, follow"' in text
+ assert 'rel="canonical"' in text and any(t=='meta' and a.get('name')=='robots' and 'index, follow' in a.get('content','') for t,a in tags)
  assert 'http-equiv="refresh"' not in text
- inputs={a['name']:a for t,a in tags if t=='input'}
+ inputs={a['name']:a for t,a in tags if t=='input' and a.get('name')}
  assert set(inputs)==set(page['defaults'])
+ assert any(t=='input' and a.get('id')=='shareURL' and 'readonly' in a for t,a in tags)
  for field,expected in page['defaults'].items():assert float(inputs[field]['value'])==float(expected)
  assert examples[page['slug']]['html'] in text,'Static result must use the shared arithmetic'
- assert '<noscript>' in text and 'Gennemgået 24. oktober 2026' in text
+ assert '<noscript>' in text and 'Gennemgået ' in text and page['reviewed'].split('-')[0] in text
  assert all(source['url'] in text for source in page['sources'])
  assert all('/beregnere/'+slug+'/' in text for slug in page['related'])
  assert all(f'help_{key}' in text and f'error_{key}' in text for key in inputs)
+ assert 'id="shareCalculation"' in text and 'id="printCalculation"' in text
  for tag,attrs in tags:
   path=attrs.get('src') if tag=='script' else attrs.get('href') if tag=='link' and attrs.get('rel')=='stylesheet' else None
   if path and path.startswith('/'):assert (ROOT/urlsplit(path).path.lstrip('/')).is_file(),path
@@ -33,6 +35,8 @@ home=(ROOT/'index.html').read_text();cars=json.loads(re.search(r'const cars=(\[.
 slugs=json.loads(re.search(r'const modelSlugs=(\{.*?\});',home,re.S)[1]);catalog=json.loads((ROOT/'assets/calculator-cars.json').read_text())['models']
 assert len(catalog)==len([m for m in json.loads((ROOT/'data/cars.json').read_text())['models'] if m['status']=='active'])
 by_slug={c['slug']:c for c in catalog}
+for m in json.loads((ROOT/'data/cars.json').read_text())['models']:
+ if m.get('price') is not None and not m.get('provenance',{}).get('price') and m.get('availability')!='discontinued':assert by_slug[m['slug']].get('price_status')=='catalogue',m['slug']
 for c in cars:
  actual=by_slug[slugs[c[0]+'|||'+c[1]]]
  assert [actual[k] for k in ('price','battery','range','consumption','charging')]==c[2:]
@@ -41,4 +45,5 @@ for path in (ROOT/'elbil').glob('*/index.html'):
  text=path.read_text()
  if 'noindex, follow' in text or 'http-equiv="refresh"' in text:continue
  for slug in ['ladepris','elbil-vs-benzin','opladningstid']:assert '/beregnere/'+slug+'/#bil='+path.parent.name in text
-print('PASS: five standalone HTML calculators, shared static examples, canonical metadata, structured data, sources, consistent shared car presets and links from the homepage and all active models.')
+print('PASS: reviewed standalone HTML calculators, shared static examples, canonical metadata, structured data, sources, consistent shared car presets and links from the homepage and all active models.')
+

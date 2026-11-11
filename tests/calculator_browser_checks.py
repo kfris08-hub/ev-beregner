@@ -7,7 +7,7 @@ from urllib.parse import urlsplit,unquote
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk';PUBLIC=os.environ.get('CALCULATOR_PUBLIC')=='1'
 PAGES=json.loads((ROOT/'data/calculator-pages.json').read_text());RESULTS=ROOT/'test-results';RESULTS.mkdir(exist_ok=True)
-EXPECTED={'ladepris':'132 kr.','elbil-vs-benzin':'13.800','opladningstid':'3,27','leasing-vs-koeb':'158.964','samlet-biloekonomi':'225.000'}
+EXPECTED={'ladepris':'132 kr.','elbil-vs-benzin':'13.800','opladningstid':'3,27','leasing-vs-koeb':'158.964','samlet-biloekonomi':'225.000','pris-pr-km':'0,32','elbil-vs-diesel':'10.600','koeretur':'112,5','raekkevidde':'333,33','stroemforbrug-elbil':'3.200'}
 async def main():
  report=[];panels=[]
  async with async_playwright() as pw:
@@ -71,7 +71,7 @@ async def main():
       elif slug=='leasing-vs-koeb':
        await page.locator('#calc_resaleValue').fill('100000');assert '8.964' in await page.locator('#answer').inner_text()
        await page.locator('#calc_months').fill('0');assert await page.locator('#calc_months').get_attribute('aria-invalid')=='true'
-      else:
+      elif slug=='samlet-biloekonomi':
        await page.locator('#carSelect').select_option('tesla-model-y-standard-rwd')
        assert await page.locator('#calc_price').input_value()=='304990'
        await page.locator('#carSelect').select_option('elveon-motors-min-e-sedan-base')
@@ -130,3 +130,4 @@ async def main():
  except ImportError:pass
  print('CALCULATOR_BROWSER_RESULT '+json.dumps({'origin':'public' if PUBLIC else 'checked-out source','page_viewport_js_cases':len(report),'model_transfer':'passed','late_manual_price':'passed','price_api_failure':'passed','all_checks':'passed'}),flush=True)
 if __name__=='__main__':asyncio.run(main())
+
