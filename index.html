@@ -120,7 +120,7 @@ function initCompare(){
 function searchCompare(slot,q){
  const box=document.getElementById('cmpResults'+slot); const term=carSearchText(q||'');
  let found=term?cars.filter(c=>carSearchText(carLabel(c)).includes(term)).slice(0,10):cars.slice(0,8);
- box.innerHTML=found.map(c=>{const i=cars.indexOf(c);return `<div class="compare-option" onclick="chooseCompare(${slot},${i})"><strong>${carLabel(c)}</strong><small>${carPrice(c)} · ${carMetric(c[4],"km")} · ${carMetric(c[5],"kWh/100 km")}</small></div>`}).join('') || '<div class="compare-option"><small>Ingen biler fundet</small></div>';
+ box.innerHTML=found.map(c=>{const i=cars.indexOf(c);return `<button type="button" class="compare-option" onmousedown="event.preventDefault()" onclick="chooseCompare(${slot},${i})"><strong>${carLabel(c)}</strong><small>${carPrice(c)} · ${carMetric(c[4],"km")} · ${carMetric(c[5],"kWh/100 km")}</small></button>`}).join('') || '<div class="compare-option"><small>Ingen biler fundet</small></div>';
  box.style.display='block';
 }
 function chooseCompare(slot,index){compareCars[slot]=cars[index];document.getElementById('cmpSearch'+slot).value='';document.getElementById('cmpResults'+slot).style.display='none';const c=cars[index];document.getElementById('cmpSelected'+slot).innerHTML=`<button onclick="event.stopPropagation();removeCompare(${slot})">×</button><strong>${c[0]}</strong><br>${c[1]}`;renderCompare()}

@@ -17,3 +17,5 @@
 
 
 .all-cars-seo .related-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.all-cars-seo .related-list a{border:1px solid #29374d;border-radius:12px;padding:14px;background:#081522;overflow-wrap:anywhere}@media(max-width:550px){.all-cars-seo .related-list{grid-template-columns:1fr}}
+
+button.compare-option{display:block;width:100%;text-align:left;background:transparent;color:inherit;font:inherit;border-top:0;border-left:0;border-right:0}button.compare-option:focus-visible{outline:2px solid #10ddb2;outline-offset:-3px}

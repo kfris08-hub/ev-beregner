@@ -27,7 +27,7 @@ async def main():
             async def case(name,fn):
                 try:await fn();results.append({'viewport':label,'case':name,'result':'passed'})
                 except Exception as e:
-                    results.append({'viewport':label,'case':name,'result':'failed','error':str(e)[:1200]})
+                    results.append({'viewport':label,'case':name,'result':'failed','error':str(e)[:1200],'compare_events':await page.evaluate('window.__compareEvents||[]') if name.startswith('three-car') else []})
                     await page.screenshot(path=str(OUT/('failure-'+label+'-'+name+'.png')),full_page=True)
             async def filters():
                 await page.goto(BASE+'/',wait_until='load')
@@ -69,6 +69,7 @@ async def main():
             await case('calculator-direct-link-overlay',overlay_stacking)
             async def comparison():
                 await page.goto(BASE+'/',wait_until='load')
+                await page.evaluate('window.__compareEvents=[];["pointerdown","mousedown","mouseup","click","focusin"].forEach(type=>document.addEventListener(type,e=>{if(e.target.closest("#sammenlign"))window.__compareEvents.push({type,id:e.target.id,tag:e.target.tagName,text:e.target.textContent.slice(0,80)});},true));')
                 for slot,label2 in enumerate(['Tesla Model Y Standard RWD','Kia EV3 Standard Range Access','Elveon Motors Min-E Sedan']):
                     await page.locator('#cmpSearch'+str(slot)).fill(label2)
                     await page.locator('#cmpResults'+str(slot)+' .compare-option').first.click()
