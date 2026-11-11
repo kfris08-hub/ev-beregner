@@ -32,15 +32,17 @@ WITHDRAWN={'kia-ev1-standard-range','kia-sportage-ev-standard','volvo-ex50-singl
 ALIAS={'hyundai-ioniq-7-standard':'hyundai-ioniq-9-rwd-advanced'}
 EXCLUDED=WITHDRAWN|set(ALIAS)
 guides=sorted((ROOT/'beregnere').glob('*/index.html'))
-assert len(guides)==5
+guide_config=json.loads((ROOT/'data/calculator-pages.json').read_text())
+assert len(guides)==len(guide_config)
+auxiliary=[ROOT/p['slug']/'index.html' for p in json.loads((ROOT/'data/site-pages.json').read_text())]
 pages={}
-for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models,*guides]:
+for path in [ROOT/'index.html',ROOT/'elbil/index.html',*models,*guides,*auxiliary]:
  relative=path.relative_to(ROOT).as_posix()
  url=ORIGIN+('/' if relative=='index.html' else '/'+relative.removesuffix('index.html'))
  pages[url]=Page(path.read_text())
 sitemap=ET.parse(ROOT/'sitemap.xml')
 locations=[x.text for x in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-assert len(locations)==len(set(locations))==len(active)-len(unindexed)+7
+assert len(locations)==len(set(locations))==len(active)-len(unindexed)+2+len(guides)+len(auxiliary)
 assert set(locations)=={u for u in pages if u.rstrip('/').split('/')[-1] not in EXCLUDED|unindexed},'Sitemap must contain exactly the indexable canonical pages'
 robot=RobotFileParser();robot.parse((ROOT/'robots.txt').read_text().splitlines())
 for url,page in pages.items():
@@ -97,4 +99,5 @@ for forbidden in EXCLUDED:
  assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',overview)
  assert not re.search(r'href="/elbil/'+re.escape(forbidden)+r'/"',home_text)
 assert 'unzip -o' not in (ROOT/'.github/workflows/installer.yml').read_text()
-print(f'PASS: {len(pages)} URLs, {len(locations)} canonical sitemap entries, {len(active)} selectable variants, five calculator pages, historical explanations/alias, unknown data and all 20 calculators.')
+print(f'PASS: {len(pages)} URLs, {len(locations)} canonical sitemap entries, {len(active)} selectable variants, {len(guides)} calculator pages, historical explanations/alias, unknown data and all 20 calculators.')
+

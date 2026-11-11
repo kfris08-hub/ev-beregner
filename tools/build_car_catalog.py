@@ -101,6 +101,8 @@ def render_model(m,models,photo,fuel=None):
     text=re.sub(r'(<h2>Andre elbiler</h2><div class="alts">).*?(</div>)',lambda x:x[1]+alts+x[2],text,count=1,flags=re.S)
     text=text.replace('<button onclick="calculate()">','<button aria-label="BEREGN" onclick="calculate()">')
     text=re.sub(r'Se alle \d+ elbiler',f'Se alle {len(models)} elbiler',text)
+    if 'id="modelToolHub"' not in text:
+        text=text.replace('</main>','<nav class="all-models-link" id="modelToolHub" aria-label="Flere beregninger"><a href="/beregnere/#bil='+m['slug']+'">Find en beregner efter dit spørgsmål →</a> · <a href="/om/">Om og kilder</a></nav></main>',1)
     url=BASE+'/elbil/'+m['slug']+'/'
     page={'@type':'WebPage','name':label+' – pris og økonomi','url':url,'description':description,'dateModified':m['modified']}
     if not is_new and old_page.get('primaryImageOfPage'):page['primaryImageOfPage']=old_page['primaryImageOfPage']
@@ -164,7 +166,7 @@ def build():
     overview=re.sub(r'(<script type="application/ld\+json">).*?(</script>)',lambda x:x[1]+json.dumps(graph,ensure_ascii=False)+x[2],overview,count=1,flags=re.S);overview_changed=write(ROOT/'elbil/index.html',overview)
     NS='http://www.sitemaps.org/schemas/sitemap/0.9';IM='http://www.google.com/schemas/sitemap-image/1.1';ET.register_namespace('',NS);ET.register_namespace('image',IM)
     old=ET.parse(ROOT/'sitemap.xml');last={n.find('{'+NS+'}loc').text:n.findtext('{'+NS+'}lastmod') for n in old.getroot()};root=ET.Element('{'+NS+'}urlset')
-    urls=[(BASE+'/',None),(BASE+'/elbil/',None)]+[(BASE+'/elbil/'+m['slug']+'/',m) for m in models if m['indexable']]+[(BASE+'/beregnere/'+p['slug']+'/',None) for p in json.loads((ROOT/'data/calculator-pages.json').read_text())]
+    urls=[(BASE+'/',None),(BASE+'/elbil/',None)]+[(BASE+'/elbil/'+m['slug']+'/',m) for m in models if m['indexable']]+[(BASE+'/beregnere/'+p['slug']+'/',None) for p in json.loads((ROOT/'data/calculator-pages.json').read_text())]+[(BASE+'/'+p['slug']+'/',None) for p in json.loads((ROOT/'data/site-pages.json').read_text())]
     for url,m in urls:
         n=ET.SubElement(root,'{'+NS+'}url');ET.SubElement(n,'{'+NS+'}loc').text=url
         content_changed=(url==BASE+'/' and home_changed) or (url==BASE+'/elbil/' and overview_changed)
@@ -175,4 +177,5 @@ def build():
     render_photos(ROOT)
     print(f'Built catalogue: {count} active variants; {sum(m["indexable"] for m in models)} indexable model pages; 20 calculators preserved.')
 if __name__=='__main__':build()
+
 
