@@ -1,0 +1,190 @@
+name: Udgiv og bekræft vækstforbedringer
+on:
+  workflow_dispatch:
+  push:
+    branches: [verify/growth-20261111]
+permissions:
+  contents: read
+  actions: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Udgiv med den eksisterende pristjeneste
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PYCODE'
+          import datetime,json,os,subprocess,time
+          repo=os.environ['GITHUB_REPOSITORY']
+          def api(path):
+            r=subprocess.run(['gh','api',path],check=True,capture_output=True,text=True);return json.loads(r.stdout)
+          start=datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(seconds=2)
+          subprocess.run(['gh','workflow','run','update-fuel-prices.yml','--ref','main','--repo',repo],check=True)
+          selected_id=None
+          for attempt in range(180):
+            data=api(f'repos/{repo}/actions/workflows/update-fuel-prices.yml/runs?branch=main&event=workflow_dispatch&per_page=5')
+            selected=[r for r in data['workflow_runs'] if datetime.datetime.fromisoformat(r['created_at'].replace('Z','+00:00'))>=start]
+            if selected:
+              run=selected[0]
+              if selected_id is None:selected_id=run['id'];print('PRODUCTION_GROWTH_RUN '+str(selected_id),flush=True)
+              if run['status']=='completed':
+                print('PRODUCTION_GROWTH_RESULT '+json.dumps({'id':run['id'],'conclusion':run['conclusion']}),flush=True)
+                if run['conclusion']!='success':raise SystemExit('Prisopdatering eller offentliggørelse fejlede')
+                break
+            time.sleep(5)
+          else:raise SystemExit('Udgivelsen blev ikke afsluttet inden ventetidens udløb')
+          PYCODE
+  source:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kontroller metadata, billeder, sitemap og beregnere
+        run: |
+          python tests/seo_checks.py
+          python tests/model_photo_checks.py
+          python tests/image_metadata_checks.py
+          python tests/calculator_page_checks.py
+          node tests/calculators.test.cjs
+          node tests/calculator_math.test.cjs
+          node tests/growth.test.cjs
+          python tests/growth.test.py
+          python tests/growth_content_checks.py
+  public-crawl:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gennemgå alle offentlige sider og lokale links og assets
+        run: python tests/full_public_crawl.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlig-crawl
+          path: test-results/
+  public-calculators:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller 20 beregnere på den rigtige hjemmeside
+        env:
+          CALCULATOR_PUBLIC: '1'
+        run: python tests/browser_checks.py
+      - name: Kontroller beregnersider med og uden JavaScript
+        env:
+          CALCULATOR_PUBLIC: '1'
+        run: python tests/calculator_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-beregnere
+          path: test-results/
+  public-photos:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller samtlige modelbilleder og billedmetadata
+        env:
+          PHOTO_PUBLIC: '1'
+        run: python tests/photo_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-modelbilleder
+          path: test-results/
+  public-flows:
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Kontroller søgning, bilvalg, sammenligning, knapper og rigtige pristjenester
+        env:
+          FLOW_PUBLIC: '1'
+        run: python tests/full_public_flows.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-brugerforloeb
+          path: test-results/
+
+
+  public-growth:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Kontroller deling, nye værktøjer, priser og navigation
+        env:
+          GROWTH_PUBLIC: '1'
+          FUEL_PUBLIC: '1'
+        run: |
+          python tests/growth_browser_checks.py
+          python tests/fuel_browser_checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offentlige-vaekstfunktioner
+          path: test-results/
+
+  search-notifications:
+    needs: [source, public-crawl, public-calculators, public-photos, public-flows, public-growth]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Afprøv den daglige kontrol og søgemaskinebeskeder
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PYCODE'
+          import datetime,json,os,subprocess,time
+          repo=os.environ['GITHUB_REPOSITORY'];start=datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(seconds=2)
+          subprocess.run(['gh','workflow','run','search-growth-check.yml','--ref','main','--repo',repo],check=True)
+          for attempt in range(180):
+            r=subprocess.run(['gh','api',f'repos/{repo}/actions/workflows/search-growth-check.yml/runs?branch=main&event=workflow_dispatch&per_page=5'],check=True,capture_output=True,text=True)
+            selected=[v for v in json.loads(r.stdout)['workflow_runs'] if datetime.datetime.fromisoformat(v['created_at'].replace('Z','+00:00'))>=start]
+            if selected:
+              run=selected[0]
+              if attempt==0:print('SEARCH_GROWTH_RUN '+str(run['id']),flush=True)
+              if run['status']=='completed':
+                print('SEARCH_GROWTH_RESULT '+json.dumps({'id':run['id'],'conclusion':run['conclusion']}),flush=True)
+                if run['conclusion']!='success':raise SystemExit('Den daglige kontrol eller beskeden fejlede')
+                break
+            time.sleep(5)
+          else:raise SystemExit('Kontrollen blev ikke afsluttet inden ventetidens udløb')
+          PYCODE
