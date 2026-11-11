@@ -73,11 +73,11 @@ async def main():
                     await page.locator('#cmpSearch'+str(slot)).fill(label2)
                     await page.locator('#cmpResults'+str(slot)+' .compare-option').first.click()
                 await expect(page.locator('#compareOutput table')).to_be_visible()
-                assert 'Ikke oplyst' in await page.locator('#compareOutput').inner_text()
-                assert await page.locator('#compareOutput td.winner').filter(has_text='Ikke oplyst').count()==0
-                assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1')
+                assert 'Ikke oplyst' in await page.locator('#compareOutput').inner_text(), 'Unknown model data were displayed as known'
+                assert await page.locator('#compareOutput td.winner').filter(has_text='Ikke oplyst').count()==0, 'Unknown data were highlighted as a winner'
+                assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth+1'), 'Comparison overflow: '+str(await page.evaluate('({width:innerWidth,scroll:document.documentElement.scrollWidth,overflow:[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1 && getComputedStyle(e).position!=="fixed").slice(0,25).map(e=>({tag:e.tagName,id:e.id,cls:e.className,right:e.getBoundingClientRect().right}))})'))
                 await page.locator('#cmpSelected2 button').click()
-                assert await page.locator('#compareOutput .compare-head').count()==2
+                assert await page.locator('#compareOutput .compare-head').count()==2, 'Removing a compared car did not update the table'
             await case('three-car-comparison-unknown-remove',comparison)
             async def general_mode():
                 await page.goto(BASE+'/?car=tesla-model-y-standard-rwd',wait_until='load')
@@ -137,3 +137,4 @@ async def main():
     print('FULL_PUBLIC_FLOWS_RESULT '+json.dumps({'origin':'public' if PUBLIC else 'checked-out source','cases':len(results),'passed':len(results)-len(failed),'failed':failed,'real_price_observations':providers},ensure_ascii=False),flush=True)
     assert not failed,failed
 if __name__=='__main__':asyncio.run(main())
+
