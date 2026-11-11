@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "petrol95": 16.09,
-  "diesel": 18.09,
+  "petrol95": 15.89,
+  "diesel": 17.89,
   "currency": "DKK",
   "unit": "DKK/l",
   "price_type": "pump_average",
@@ -9,8 +9,8 @@
   "source_chain": "OK",
   "source_url": "https://mobility-prices.ok.dk/api/v1/fuel-prices",
   "documentation_url": "https://www.ok.dk/globalassets/pdfer/diverse/offentlig-api-dokumentation.pdf",
-  "updated": "2026-11-11T02:44:34+00:00",
-  "checked_at": "2026-11-11T02:44:34+00:00",
+  "updated": "2026-11-11T10:46:20+00:00",
+  "checked_at": "2026-11-11T10:46:20+00:00",
   "source_date": "2026-11-11",
   "coverage": {
     "petrol95": 689,
@@ -18,16 +18,16 @@
   },
   "range": {
     "petrol95": {
-      "min": 16.09,
-      "max": 16.09
+      "min": 15.89,
+      "max": 15.89
     },
     "diesel": {
-      "min": 18.09,
-      "max": 18.09
+      "min": 17.89,
+      "max": 17.89
     }
   },
-  "latest_station_update": "2026-11-11T02:42:32+00:00",
-  "oldest_station_update": "2026-11-11T02:42:32+00:00",
+  "latest_station_update": "2026-11-11T10:44:16+00:00",
+  "oldest_station_update": "2026-11-11T10:44:16+00:00",
   "station_max_age_hours": 72,
   "excluded_stations": 0,
   "method": "Unweighted mean: each current OK station counts once per standard product. Not a national average or a local quote."
