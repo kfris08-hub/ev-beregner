@@ -18,10 +18,11 @@
   const shareButton = document.getElementById('shareCalculation'), shareURL = document.getElementById('shareURL');
   const keys = definition.fields.map(([key]) => key);
   const diesel = definition.fields.some(field => field[3] === 'liveDiesel'), fuelKind = diesel ? 'diesel' : 'petrol95', fuelName = diesel ? 'Diesel' : 'Benzin';
-  let catalogue = [], chosen = null, requestToken = 0, resultValid = true;
+  let catalogue = [], chosen = null, requestToken = 0, resultValid = true, pdfURL = '';
   let electricStatus = 'Elpris: eksempelværdi.', fuelStatus = fuelName + ': eksempelpris.';
   const values = () => Object.fromEntries(definition.fields.map(([key]) => [key, field(key).value]));
   function calculate(report) {
+    clearPDF();
     const inputs = values(), errors = api.validate(id, inputs);
     resultValid = false;
     for (const [key] of definition.fields) {
@@ -175,8 +176,55 @@
       shareStatus.textContent = 'Brug linkfeltet til at kopiere beregningen.'; if (!shareURL.hidden) { shareURL.focus(); shareURL.select(); }
     }
   });
+  function clearPDF() {
+    const link = document.getElementById('pdfDownload');
+    if (link) { link.hidden = true; link.removeAttribute('href'); }
+    if (pdfURL) { global.URL.revokeObjectURL(pdfURL); pdfURL = ''; }
+  }
+  function resultLines() {
+    const lines = []; let current = '';
+    const flush = () => { const text = current.replace(/\s+/g, ' ').trim(); if (text) lines.push(text); current = ''; };
+    function visit(node) {
+      if (node.nodeType === 3) { current += node.textContent; return; }
+      if (node.nodeType !== 1) return;
+      if (node.tagName === 'TABLE') { flush(); for (const row of node.rows) lines.push(Array.from(row.cells, cell => cell.textContent.trim()).join(': ')); return; }
+      if (node.tagName === 'BR') { flush(); return; }
+      const block = ['P','DIV','LI','H2','H3'].includes(node.tagName);
+      if (block) flush();
+      for (const child of node.childNodes) visit(child);
+      if (block) flush();
+    }
+    visit(result); flush(); return lines;
+  }
+  const pdfButton = document.getElementById('downloadCalculation');
+  if (pdfButton) pdfButton.addEventListener('click', () => {
+    calculate(false);
+    if (!resultValid) { shareStatus.textContent = 'Ret tallene, før du gemmer en PDF.'; return; }
+    try {
+      const source = document.querySelector('link[rel="canonical"]').href;
+      const report = {
+        title: document.querySelector('h1').textContent, savedAt: new Date().toLocaleString('da-DK'),
+        car: chosen ? chosen.label : 'Egne tal',
+        fields: definition.fields.map(([key, label]) => ({ label, value: field(key).value.replace('.', ',') })),
+        result: resultLines(), notes: [modelNote.textContent, priceStatus ? priceStatus.textContent : ''], source,
+        shareURL: sharing ? sharing.encode(source, id, keys, values(), chosen ? chosen.slug : requestedCar(), area ? area.value : '') : ''
+      };
+      const bytes = global.EVCalculationPDF.build(report);
+      pdfURL = global.URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
+      const link = document.getElementById('pdfDownload');
+      link.href = pdfURL; link.download = 'evberegner-' + new URL(source).pathname.split('/').filter(Boolean).pop() + '-' + new Date().toISOString().slice(0, 10) + '.pdf';
+      link.hidden = false; link.click();
+      shareStatus.textContent = 'PDF-filen er klar. Brug Åbn PDF, hvis download ikke starter.';
+    } catch (_) { clearPDF(); shareStatus.textContent = 'PDF-filen kunne ikke oprettes. Prøv igen, eller brug Print i browseren.'; }
+  });
   const printButton = document.getElementById('printCalculation');
-  if (printButton) printButton.addEventListener('click', () => { calculate(false); if (resultValid) global.print(); else shareStatus.textContent = 'Ret tallene, før du printer.'; });
+  if (printButton) printButton.addEventListener('click', () => {
+    calculate(false);
+    if (!resultValid) { shareStatus.textContent = 'Ret tallene, før du printer.'; return; }
+    shareStatus.textContent = 'Hvis printdialogen ikke åbner, kan du bruge Gem PDF.';
+    try { if (typeof global.print === 'function') global.print(); }
+    catch (_) { shareStatus.textContent = 'Print kunne ikke åbnes i denne browser. Brug Gem PDF.'; }
+  });
   restoreShared();
   core.fetchJSON('/assets/calculator-cars.json', { cache: 'no-cache' }).then(data => {
     catalogue = data.models.filter(car => /^[a-z0-9-]+$/.test(car.slug));
