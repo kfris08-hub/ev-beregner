@@ -1,0 +1,26 @@
+name: Kontroller offentlig PDF-download
+on:
+  push:
+    branches: [verify/mobile-pdf-20261112]
+permissions:
+  contents: read
+jobs:
+  public-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer kontrolværktøjer
+        run: python -m pip install playwright==1.56.0 PyMuPDF==1.26.6
+      - name: Hent og læs rigtige PDF-filer fra evberegn.dk
+        env:
+          PDF_PUBLIC: '1'
+        run: python tests/pdf_browser_checks.py
+      - name: Gem offentlige PDF-filer og kontrolresultater
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: offentlig-pdf-kontrol
+          path: test-results/pdf/
