@@ -94,7 +94,7 @@ async def main():
    await page.locator('#printCalculation').click()
    await expect(page.locator('#shareStatus')).to_contain_text('Gem PDF')
    await download(page,str(width)+'-print-unavailable')
-   await page.evaluate('window.__printed=0;window.print=()=>{window.__printed++;};')
+   await page.evaluate('() => {window.__printed=0;window.print=()=>{window.__printed++;};}')
    await page.locator('#printCalculation').click()
    try:await page.wait_for_function('window.__printed===1')
    except Exception:
