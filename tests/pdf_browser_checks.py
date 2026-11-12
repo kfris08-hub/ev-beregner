@@ -94,8 +94,12 @@ async def main():
    await page.locator('#printCalculation').click()
    await expect(page.locator('#shareStatus')).to_contain_text('Gem PDF')
    await download(page,str(width)+'-print-unavailable')
-   await page.evaluate('window.print=()=>{window.__printed=(window.__printed||0)+1;};')
-   await page.locator('#printCalculation').click();assert await page.evaluate('window.__printed===1')
+   await page.evaluate('window.__printed=0;window.print=()=>{window.__printed++;};')
+   await page.locator('#printCalculation').click()
+   try:await page.wait_for_function('window.__printed===1')
+   except Exception:
+    print('PRINT_DIAGNOSTIC '+json.dumps(await page.evaluate('({calls:window.__printed,url:location.href,status:document.getElementById("shareStatus").textContent,message:document.getElementById("calcMessage").textContent})')))
+    raise
    await expect(page.locator('#shareStatus')).to_contain_text('Gem PDF')
    await download(page,str(width)+'-print-ignored')
    await page.locator('#calc_consumption').fill('')
