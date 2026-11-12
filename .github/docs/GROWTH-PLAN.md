@@ -32,3 +32,11 @@ Officiel baggrund:
 - https://developers.google.com/search/docs/fundamentals/creating-helpful-content
 - https://www.indexnow.org/documentation
 
+
+## Distribution efter den første udgivelse
+
+12. november 2026: Den offentlige kontrol er bestået med 302 HTML-sider, 214 sitemap-adresser og 229 lokale assets. Den tidligere 503 på kontroladressen og et enkelt billede var midlertidig; kontroladressen svarede korrekt 404 i gentagelsen. IndexNow modtog alle 214 adresser med HTTP 200 kl. 16.34 UTC. Kvitteringen er gemt i `.github/state/indexnow.json`. Den eksisterende nøglefil blev kontrolleret: den præcise filadresse svarede HTTP 200, og indholdet matchede den forventede nøgle. Modtagelsen bekræfter ikke indeksering eller flere besøgende.
+
+Markedsføringsmateriale og en plan for de første 14 dage findes i [MARKETING-KIT.md](MARKETING-KIT.md). Prioritér én Facebook-side og konkrete, nyttige regneeksempler med direkte links. Den tilgængelige chat har ingen forbindelse til at oprette eller publicere på Facebook eller LinkedIn. Materiale, som kun er klargjort, skal beskrives som klargjort. Der må ikke rapporteres eksterne opslag, kontakter eller kampagner som gennemført uden faktiske publiceringslinks eller kvitteringer.
+
+Repoets README præsenterer nu værktøjet med direkte links. Det er en begrænset distributionskanal og erstatter ikke en ekstern lancering. Aktuelle Search Console-, profil- og annoncekontotal er stadig ikke tilgængelige; der er ingen dokumenteret trafikeffekt endnu.
