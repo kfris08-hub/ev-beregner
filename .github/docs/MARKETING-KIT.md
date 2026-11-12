@@ -13,15 +13,24 @@ De første tre emner er strømpris pr. kilometer, energiudgiften mod benzin og �
 Navn: **EV Beregner**
 
 Kort beskrivelse:
-> 20 gratis beregnere til elbilens strøm og økonomi. Beregn ladepris, kilometerpris og energiforbrug med dine egne tal.
+> 20 gratis beregnere til elbilens ladepris, kilometerpris og biløkonomi. Brug dine egne tal.
 
 Websted: https://www.evberegn.dk/
 
-Profilbillede: Projektets eksisterende EV-logo, hvis det kan beskæres læseligt til platformens profilfelt.
+Profilbillede: Projektets eksisterende EV-logo: https://www.evberegn.dk/favicon-512x512.png
 
-Omslagsmateriale: Det eksisterende, egenproducerede linkbillede på https://www.evberegn.dk/assets/social/ev-beregner.png . Se forhåndsvisningen på Facebook og tilpas beskæringen, hvis platformens felt skærer tekst væk. Der loves ikke en bestemt Facebook-billedstørrelse uden at kontrollere den aktuelle upload.
+Billede til introduktionsopslaget: Det eksisterende, egenproducerede billede i 1200 × 630 pixels: https://www.evberegn.dk/assets/social/ev-beregner.png . De emnespecifikke billeder er angivet ved hvert opslag nedenfor.
 
-Facebook-siden skal oprettes og administreres via ejerens egen konto. Der er ingen Facebook-/LinkedIn-publiceringsforbindelse i denne chat. Kontotrinet kan derfor ikke udføres her; ingen adgangskoder skal deles i chatten. Der er ikke oprettet en side eller aftalt offentliggørelse på en fremmed profil.
+Facebook-siden skal først oprettes og administreres via ejerens egen konto. Ved klargøringen er der endnu ingen tilsluttet publiceringsforbindelse. Kontooprettelse og login skal foretages hos Facebook; ingen adgangskoder skal deles i chatten.
+
+## Vejen til automatisk udgivelse og måling
+
+1. Opret Facebook-siden **EV Beregner** via ejerens eget Facebook-login. Brug navnet, den korte beskrivelse og logoet ovenfor.
+2. Tilføj **Metricool**, vælg gratisniveauet, og knyt Facebook-siden til kontoen. Tilføj derefter Metricool-forbindelsen i ChatGPT. Ifølge den officielle planoversigt kontrolleret 12. november 2026 inkluderer gratisniveauet én brandprofil, op til 20 opslag om måneden og MCP-forbindelsen. Det er nok til den foreslåede start med to opslag om ugen. Gratisniveauet omfatter ikke LinkedIn. Kilde: https://help.metricool.com/plans-add-ons-and-api-access-explained-xux1u og https://help.metricool.com/how-to-connect-metricools-mcp-with-chatgpt-0lrl3 .
+3. Når den rigtige side er tilsluttet, og de konkrete opslag er godkendt, kan den tilgængelige publiceringsfunktion bruges til at lægge dem i kalenderen. Planlægningen må først beskrives som gennemført efter en faktisk bekræftelse og datoer fra tjenesten. Tilslutningen giver ikke i sig selv gruppeadgang.
+4. Tilføj **Windsor.ai**, vælg Google Search Console som den ene datakilde på gratisniveauet, og tilknyt ejendommen for evberegn.dk. Gratisniveauet beskrives som én bruger, én datakilde og én konto med de seneste 30 dages data uden kreditkort. Kilde: https://windsor.ai/how-to-connect-google-search-console-to-chatgpt . Det gør en sammenligning af de seneste 14 dage med de foregående 14 dage mulig, når dataadgangen virker.
+
+Disse forbindelser er fundet og foreslået, men er endnu ikke bekræftet tilsluttet. Ingen opslag er planlagt i Metricool endnu, og der er endnu ikke hentet Search Console-tal via Windsor.ai. Der startes ikke et betalt abonnement eller en betalt annoncekampagne.
 
 ## Første 14 dage efter den faktiske sideoprettelse
 
