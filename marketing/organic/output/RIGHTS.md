@@ -2,6 +2,8 @@
 
 Ægte mobilskærmbilleder fra https://www.evberegn.dk/, ikke AI-genereret brugerflade.
 Ingen eksterne annoncer eller analytics indlæses under optagelsen.
+Annoncers iframes er skjult alene ved optagelsen; brugerflade, tal og funktioner
+er uændrede. Der er ikke foretaget ændringer på den offentlige hjemmeside.
 
 Modelbillede: Hyundai IONIQ 5. Foto: TTTNIS, CC0 1.0.
 Original: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg
