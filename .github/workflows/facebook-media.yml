@@ -1,0 +1,40 @@
+name: Facebook website demonstrations
+on:
+  push:
+    branches: [marketing/facebook-20261113]
+    paths:
+      - '.github/workflows/facebook-media.yml'
+      - 'marketing/organic/*.py'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install capture tools
+        run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Capture actual website and verify calculations
+        run: python marketing/organic/capture.py
+      - name: Render original demonstrations
+        run: python marketing/organic/render.py
+      - name: Retain licensed source evidence
+        run: |
+          cp marketing/organic/RIGHTS.md marketing/organic/output/RIGHTS.md
+          rm marketing/organic/output/motif-*.wav
+      - uses: actions/upload-artifact@v4
+        with:
+          name: facebook-demos-20261113
+          path: marketing/organic/output/
+          retention-days: 30
+      - name: Store collateral on marketing branch only
+        run: |
+          git config user.name 'EV Beregner marketing'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add marketing/organic/output/
+          git commit -m 'Store reviewed website demonstration exports'
+          git push origin HEAD:marketing/facebook-20261113
