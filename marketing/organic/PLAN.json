@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-11-13",
+  "brandId": "8064733",
+  "facebookPageId": "1430242190176506",
+  "timezone": "Europe/Copenhagen",
+  "automation": "Automation_f3eba54d15948191b97abaaae584203f",
+  "plan": [
+    {
+      "key": "car-choice-reel",
+      "date": "2026-11-15T10:00:00+01:00",
+      "file": "vaelg-din-elbil.mp4",
+      "type": "REEL",
+      "title": "Vælg din elbil og regn videre",
+      "text": "Har du en elbil – eller en bestemt model i tankerne?\n\nPå https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.\n\nSe hvordan i videoen: find modellen → vælg bilen → beregn med dine egne tal.\n\nEksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh er valgt til demonstrationen. Kilometerprisen dækker strømudgiften, ikke alle bilens omkostninger.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.\n\n#elbil #elbiløkonomi #EVBeregner"
+    },
+    {
+      "key": "considered-car-image",
+      "date": "2026-11-21T10:00:00+01:00",
+      "file": "opslag-1.png",
+      "type": "POST",
+      "title": "Se bilen før du regner",
+      "text": "Overvejer du at købe elbil?\n\nStart med den model, du har i tankerne: https://www.evberegn.dk/\n\nSøg efter bilen, åbn modelsiden og regn videre på fx strøm pr. kilometer, ladepris eller forskellen på el og benzin. Du kan også vælge den elbil, du allerede kører i.\n\nDu bruger EV Beregner gratis på hjemmesiden – direkte i browseren og uden login. Ret tallene, så de passer til din købspris, dit forbrug og din elaftale.\n\nBilledet viser Hyundai IONIQ 5 som eksempel. Modelbilleder kan afvige i udstyr og farve; enkelte modeller mangler foto. Katalogdata er vejledende og er ikke et aktuelt pristilbud. Foto: TTTNIS / CC0; kilde og forbehold på modelsiden.\n\n#elbil #bilkøb #EVBeregner"
+    },
+    {
+      "key": "charging-own-car-reel",
+      "date": "2026-11-26T10:00:00+01:00",
+      "file": "din-bil-din-ladepris.mp4",
+      "type": "REEL",
+      "title": "Din bil – din ladepris",
+      "text": "Hvad koster en opladning af den bil, du kører i – eller overvejer at købe?\n\nPrøv selv på hjemmesiden: https://www.evberegn.dk/\n\nVælg bilmodellen, og regn videre med dens batteridata. Ret startprocent, slutprocent, elpris og ekstra strømforbrug, så beregningen passer til dit eksempel.\n\nEV Beregner er gratis og virker direkte i browseren. Uden login.\n\nI videoen bruges Hyundai IONIQ 5 og et valgt eksempel: 63 kWh, 20–80 %, 2,00 kr./kWh og 10 % ekstra strømforbrug. Beregnet ladepris: 83,16 kr. Batteridata er katalogdata; beløbet er et regneeksempel, ikke en live ladepris.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige; billedkilde og forbehold står på modelsiden.\n\n#elbil #opladning #EVBeregner"
+    },
+    {
+      "key": "own-input-image",
+      "date": "2026-11-28T10:00:00+01:00",
+      "file": "opslag-2.png",
+      "type": "POST",
+      "title": "Din bil, dine egne tal",
+      "text": "Den samme elbil kan koste forskelligt at lade, alt efter din aftale.\n\nPå https://www.evberegn.dk/ vælger du din bil og retter elprisen og forbruget, før du beregner. Så tager regnestykket udgangspunkt i dine tal.\n\nDu kan også vælge en model, du overvejer at købe, og undersøge økonomien, før du beslutter dig.\n\n20 gratis beregnere på hjemmesiden. Direkte i browseren – uden login.\n\nSkærmbilledet er et regneeksempel: 16 kWh/100 km og 2,00 kr./kWh giver 0,32 kr. i strøm pr. km. Det er strømudgiften; fx værditab, forsikring og finansiering kommer oveni. Modeldata og priser skal tilpasses din bil og aftale.\n\n#elbil #ladepris #EVBeregner"
+    }
+  ]
+}

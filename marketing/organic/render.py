@@ -44,7 +44,7 @@ VIDEOS = [
   (0,3,'model',['Har du en elbil i tankerne?']),
   (3,7,'search',['Find din model']),
   (7,11,'selected',['Vælg bilen på hjemmesiden']),
-  (11,16,'kilometer',['Regn med bilens forbrug']),
+  (11,16,'kilometer-result',['Regn med bilens forbrug']),
   (16,20,None,[]) ]},
  {'file':'din-bil-din-ladepris.mp4','seconds':20,'beats':[
   (0,4,'charge',['Hvad koster din opladning?']),
@@ -74,15 +74,8 @@ for number,spec in enumerate(VIDEOS,1):
     contact=[]
     for start,end,asset,lines in spec['beats']:
         base=label(screen(asset).copy(),lines) if asset else cta()
-        # Annotation is a conventional focus marker; no invented website control.
         for frame in range(round(start*FPS),round(end*FPS)):
             image=base.copy()
-            if asset in ('search','charge'):
-                t=frame/FPS-start
-                if .15<t<.85:
-                    d=ImageDraw.Draw(image);r=9+int(20*(t-.15)/.7)
-                    x,y=(W-90,420 if asset=='search' else 750)
-                    d.ellipse((x-r,y-r,x+r,y+r),outline=TEAL,width=3)
             proc.stdin.write(image.tobytes())
         thumb=base.resize((216,384))
         contact.append(thumb)

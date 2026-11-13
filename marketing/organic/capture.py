@@ -51,7 +51,7 @@ with sync_playwright() as p:
     assert '0,32' in page.locator('#answer').inner_text()
     shot('kilometer', '#carSelect')
     proof['km_result'] = page.locator('#answer').inner_text()
-    shot('kilometer-result', '#calc_electricPrice')
+    shot('kilometer-result', '#answer')
 
     visit('/beregnere/ladepris/#bil=' + SLUG)
     page.wait_for_function('!document.querySelector("#carSelect").disabled')
@@ -62,7 +62,7 @@ with sync_playwright() as p:
     proof['charge_fields'] = page.locator('.calc-field input').evaluate_all('(es) => es.map(e => ({id:e.id,value:e.value}))')
     proof['charge_result'] = page.locator('#answer').inner_text()
     shot('charge', '#carSelect')
-    shot('charge-result', '#calc_electricPrice')
+    shot('charge-result', '#answer')
     browser.close()
 (OUT / 'capture-proof.json').write_text(json.dumps(proof, ensure_ascii=False, indent=2))
 print(json.dumps(proof, ensure_ascii=False))
