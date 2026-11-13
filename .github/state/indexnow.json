@@ -5,7 +5,7 @@
       "images": []
     },
     "https://www.evberegn.dk/elbil/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-13",
       "images": []
     },
     "https://www.evberegn.dk/elbil/opel-rocks-electric-rocks-electric/": {
@@ -1209,43 +1209,43 @@
       ]
     },
     "https://www.evberegn.dk/beregnere/ladepris/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/elbil-vs-benzin/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/opladningstid/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/leasing-vs-koeb/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/samlet-biloekonomi/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/pris-pr-km/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/elbil-vs-diesel/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/koeretur/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/raekkevidde/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/stroemforbrug-elbil/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-12",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/": {
@@ -1258,8 +1258,8 @@
     }
   },
   "last_submission": {
-    "checked_at": "2026-11-12T16:34:29.614860+00:00",
-    "submitted": 214,
+    "checked_at": "2026-11-13T13:24:34.673855+00:00",
+    "submitted": 11,
     "http_status": 200,
     "meaning": "Received, not a confirmation of indexing",
     "google_submission": false
