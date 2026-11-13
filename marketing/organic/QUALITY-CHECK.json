@@ -1,0 +1,44 @@
+[
+  {
+    "file": "vaelg-din-elbil.mp4",
+    "fully_decoded": true,
+    "duration": "20.000000",
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "width": 720,
+        "height": 1280,
+        "sample_rate": null
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "width": null,
+        "height": null,
+        "sample_rate": "44100"
+      }
+    ]
+  },
+  {
+    "file": "din-bil-din-ladepris.mp4",
+    "fully_decoded": true,
+    "duration": "20.000000",
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "width": 720,
+        "height": 1280,
+        "sample_rate": null
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "width": null,
+        "height": null,
+        "sample_rate": "44100"
+      }
+    ]
+  }
+]

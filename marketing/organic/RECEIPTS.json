@@ -1,0 +1,93 @@
+{
+  "verified": true,
+  "verified_on": "2026-11-13",
+  "brandId": "8064733",
+  "facebookPageId": "1430242190176506",
+  "timezone": "Europe/Copenhagen",
+  "new_scheduled": 4,
+  "total_pending": 8,
+  "marketing_branch": "marketing/facebook-20261113",
+  "media_commit": "1e13c0c2eedbf2a0385a3f23b30f4fb87a387807",
+  "successful_render_workflow": 43491222758,
+  "heygen_generations": 0,
+  "paid_spend": 0,
+  "website_modified": false,
+  "posts": [
+    {
+      "key": "car-choice-reel",
+      "id": 427367138,
+      "uuid": "8403383719013468039",
+      "date": {
+        "dateTime": "2026-11-15T10:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "REEL",
+      "title": "Vælg din elbil og regn videre",
+      "status": "PENDING",
+      "autoPublish": true,
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-1906549249988751242.mp4"
+      ],
+      "source": "https://raw.githubusercontent.com/kfris08-hub/ev-beregner/1e13c0c2eedbf2a0385a3f23b30f4fb87a387807/marketing/organic/output/vaelg-din-elbil.mp4",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=8403383719013468039",
+      "text": "Har du en elbil – eller en bestemt model i tankerne?\n\nPå https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.\n\nSe hvordan i videoen: find modellen → vælg bilen → beregn med dine egne tal.\n\nEksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh er valgt til demonstrationen. Kilometerprisen dækker strømudgiften, ikke alle bilens omkostninger.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.\n\n#elbil #elbiløkonomi #EVBeregner"
+    },
+    {
+      "key": "considered-car-image",
+      "id": 427367157,
+      "uuid": "-6965175447170495098",
+      "date": {
+        "dateTime": "2026-11-21T10:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "POST",
+      "title": "Se bilen før du regner",
+      "status": "PENDING",
+      "autoPublish": true,
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-11280706685607647115.png"
+      ],
+      "source": "https://raw.githubusercontent.com/kfris08-hub/ev-beregner/1e13c0c2eedbf2a0385a3f23b30f4fb87a387807/marketing/organic/output/opslag-1.png",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=-6965175447170495098",
+      "text": "Overvejer du at købe elbil?\n\nStart med den model, du har i tankerne: https://www.evberegn.dk/\n\nSøg efter bilen, åbn modelsiden og regn videre på fx strøm pr. kilometer, ladepris eller forskellen på el og benzin. Du kan også vælge den elbil, du allerede kører i.\n\nDu bruger EV Beregner gratis på hjemmesiden – direkte i browseren og uden login. Ret tallene, så de passer til din købspris, dit forbrug og din elaftale.\n\nBilledet viser Hyundai IONIQ 5 som eksempel. Modelbilleder kan afvige i udstyr og farve; enkelte modeller mangler foto. Katalogdata er vejledende og er ikke et aktuelt pristilbud. Foto: TTTNIS / CC0; kilde og forbehold på modelsiden.\n\n#elbil #bilkøb #EVBeregner"
+    },
+    {
+      "key": "charging-own-car-reel",
+      "id": 427367174,
+      "uuid": "281769916129888821",
+      "date": {
+        "dateTime": "2026-11-26T10:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "REEL",
+      "title": "Din bil – din ladepris",
+      "status": "PENDING",
+      "autoPublish": true,
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-10394462017593155752.mp4"
+      ],
+      "source": "https://raw.githubusercontent.com/kfris08-hub/ev-beregner/1e13c0c2eedbf2a0385a3f23b30f4fb87a387807/marketing/organic/output/din-bil-din-ladepris.mp4",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=281769916129888821",
+      "text": "Hvad koster en opladning af den bil, du kører i – eller overvejer at købe?\n\nPrøv selv på hjemmesiden: https://www.evberegn.dk/\n\nVælg bilmodellen, og regn videre med dens batteridata. Ret startprocent, slutprocent, elpris og ekstra strømforbrug, så beregningen passer til dit eksempel.\n\nEV Beregner er gratis og virker direkte i browseren. Uden login.\n\nI videoen bruges Hyundai IONIQ 5 og et valgt eksempel: 63 kWh, 20–80 %, 2,00 kr./kWh og 10 % ekstra strømforbrug. Beregnet ladepris: 83,16 kr. Batteridata er katalogdata; beløbet er et regneeksempel, ikke en live ladepris.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige; billedkilde og forbehold står på modelsiden.\n\n#elbil #opladning #EVBeregner"
+    },
+    {
+      "key": "own-input-image",
+      "id": 427367190,
+      "uuid": "-5373484419553016410",
+      "date": {
+        "dateTime": "2026-11-28T10:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "POST",
+      "title": "Din bil, dine egne tal",
+      "status": "PENDING",
+      "autoPublish": true,
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-2426478458440564936.png"
+      ],
+      "source": "https://raw.githubusercontent.com/kfris08-hub/ev-beregner/1e13c0c2eedbf2a0385a3f23b30f4fb87a387807/marketing/organic/output/opslag-2.png",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=-5373484419553016410",
+      "text": "Den samme elbil kan koste forskelligt at lade, alt efter din aftale.\n\nPå https://www.evberegn.dk/ vælger du din bil og retter elprisen og forbruget, før du beregner. Så tager regnestykket udgangspunkt i dine tal.\n\nDu kan også vælge en model, du overvejer at købe, og undersøge økonomien, før du beslutter dig.\n\n20 gratis beregnere på hjemmesiden. Direkte i browseren – uden login.\n\nSkærmbilledet er et regneeksempel: 16 kWh/100 km og 2,00 kr./kWh giver 0,32 kr. i strøm pr. km. Det er strømudgiften; fx værditab, forsikring og finansiering kommer oveni. Modeldata og priser skal tilpasses din bil og aftale.\n\n#elbil #ladepris #EVBeregner"
+    }
+  ]
+}
