@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "verified_on": "2026-11-13",
+  "id": 427572506,
+  "uuid": "-7638871568609361077",
+  "type": "STORY",
+  "date": {
+    "dateTime": "2026-11-14T10:05:00",
+    "timezone": "Europe/Copenhagen"
+  },
+  "status": "PENDING",
+  "autoPublish": true,
+  "media": [
+    "https://static.metricool.com/planner/202611/8064733-file-2263391737818180074.jpeg"
+  ],
+  "source": "https://raw.githubusercontent.com/kfris08-hub/ev-beregner/f06733e31f2534c4a1378a786c084a312a0c8ad1/marketing/organic/stories/facebook-story-bilvalg-20261114.jpg",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=-7638871568609361077",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "format": "single static image",
+  "original_saturday_post_preserved": true,
+  "sunday_reel_preserved": true
+}
