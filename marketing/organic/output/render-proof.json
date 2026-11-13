@@ -1,0 +1,107 @@
+{
+  "style": "documentary interface demo, dark/teal",
+  "sources": "real evberegn.dk captures",
+  "heygen_generations": 0,
+  "videos": [
+    {
+      "file": "vaelg-din-elbil.mp4",
+      "bytes": 594069,
+      "seconds": "20.000000",
+      "width": 720,
+      "height": 1280,
+      "frame_rate": "24/1",
+      "website_visible_from_second": 0,
+      "speech": false,
+      "text": [
+        [
+          0,
+          3,
+          "model",
+          [
+            "Har du en elbil i tankerne?"
+          ]
+        ],
+        [
+          3,
+          7,
+          "search",
+          [
+            "Find din model"
+          ]
+        ],
+        [
+          7,
+          11,
+          "selected",
+          [
+            "Vælg bilen på hjemmesiden"
+          ]
+        ],
+        [
+          11,
+          16,
+          "kilometer",
+          [
+            "Regn med bilens forbrug"
+          ]
+        ],
+        [
+          16,
+          20,
+          null,
+          []
+        ]
+      ]
+    },
+    {
+      "file": "din-bil-din-ladepris.mp4",
+      "bytes": 566183,
+      "seconds": "20.000000",
+      "width": 720,
+      "height": 1280,
+      "frame_rate": "24/1",
+      "website_visible_from_second": 0,
+      "speech": false,
+      "text": [
+        [
+          0,
+          4,
+          "charge",
+          [
+            "Hvad koster din opladning?"
+          ]
+        ],
+        [
+          4,
+          8,
+          "model",
+          [
+            "Start med din bilmodel"
+          ]
+        ],
+        [
+          8,
+          12,
+          "charge",
+          [
+            "Tilpas procent og elpris"
+          ]
+        ],
+        [
+          12,
+          16,
+          "charge-result",
+          [
+            "Se din beregnede ladepris"
+          ]
+        ],
+        [
+          16,
+          20,
+          null,
+          []
+        ]
+      ]
+    }
+  ]
+}

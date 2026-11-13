@@ -1,0 +1,72 @@
+{
+  "site": "https://www.evberegn.dk",
+  "model": "hyundai-ioniq-5-standard-range-rwd-essential",
+  "viewport": [
+    420,
+    748
+  ],
+  "screens": [
+    {
+      "file": "model.png",
+      "url": "https://www.evberegn.dk/elbil/hyundai-ioniq-5-standard-range-rwd-essential/",
+      "title": "Hyundai IONIQ 5 Standard Range RWD Essential – pris, rækkevidde og økonomi | EV Beregner"
+    },
+    {
+      "file": "search.png",
+      "url": "https://www.evberegn.dk/",
+      "title": "EV Beregner – ladepris, kilometerpris og biløkonomi"
+    },
+    {
+      "file": "selected.png",
+      "url": "https://www.evberegn.dk/?car=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "EV Beregner – ladepris, kilometerpris og biløkonomi"
+    },
+    {
+      "file": "kilometer.png",
+      "url": "https://www.evberegn.dk/beregnere/pris-pr-km/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Pris pr. km for elbil – beregn din strømudgift | EV Beregner"
+    },
+    {
+      "file": "kilometer-result.png",
+      "url": "https://www.evberegn.dk/beregnere/pris-pr-km/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Pris pr. km for elbil – beregn din strømudgift | EV Beregner"
+    },
+    {
+      "file": "charge.png",
+      "url": "https://www.evberegn.dk/beregnere/ladepris/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Ladepris beregner – hvad koster opladning af elbil? | EV Beregner"
+    },
+    {
+      "file": "charge-result.png",
+      "url": "https://www.evberegn.dk/beregnere/ladepris/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Ladepris beregner – hvad koster opladning af elbil? | EV Beregner"
+    }
+  ],
+  "third_party_requests": "aborted",
+  "model_image_credit": "Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant. Foto: TTTNIS · CC0 · Billedkilde og original. Nedskaleret og konverteret til WebP; ingen beskæring.",
+  "selected_model_link": "/elbil/hyundai-ioniq-5-standard-range-rwd-essential/",
+  "km_result": "Strøm pr. kilometer\t0,32 kr.\nStrøm pr. 100 km\t32 kr.\n\nKun strømudgiften. Bilens øvrige omkostninger er ikke med.",
+  "charge_fields": [
+    {
+      "id": "calc_battery",
+      "value": "63"
+    },
+    {
+      "id": "calc_electricPrice",
+      "value": "2"
+    },
+    {
+      "id": "calc_from",
+      "value": "20"
+    },
+    {
+      "id": "calc_to",
+      "value": "80"
+    },
+    {
+      "id": "calc_overhead",
+      "value": "10"
+    }
+  ],
+  "charge_result": "Pris for opladningen:\n83,16 kr.\nEnergi til batteriet\t37,8 kWh\nEnergi, du betaler for\t41,58 kWh"
+}
