@@ -18,6 +18,10 @@ jobs:
           python-version: '3.12'
       - name: Install capture tools
         run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Install video encoder
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
       - name: Capture actual website and verify calculations
         run: python marketing/organic/capture.py
       - name: Render original demonstrations
