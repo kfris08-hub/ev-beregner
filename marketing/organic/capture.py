@@ -9,7 +9,7 @@ OUT.mkdir(exist_ok=True)
 BASE = 'https://www.evberegn.dk'
 SLUG = 'hyundai-ioniq-5-standard-range-rwd-essential'
 NAME = 'Hyundai IONIQ 5 Standard Range RWD Essential'
-proof = {'site': BASE, 'model': SLUG, 'viewport': [420, 748], 'screens': [], 'third_party_requests': 'aborted'}
+proof = {'site': BASE, 'model': SLUG, 'viewport': [420, 748], 'screens': [], 'third_party_requests': 'aborted', 'capture_treatment': 'Third-party advertising iframes hidden in screenshots only; website controls and values unchanged.'}
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path='/usr/bin/google-chrome', args=['--no-sandbox'])
@@ -21,7 +21,7 @@ with sync_playwright() as p:
     def shot(name, selector=None):
         if selector:
             page.locator(selector).evaluate('(e) => window.scrollTo(0, e.getBoundingClientRect().top + window.scrollY - 148)')
-        page.screenshot(path=str(OUT / (name + '.png')))
+        page.screenshot(path=str(OUT / (name + '.png')), style='iframe { visibility: hidden !important; }')
         proof['screens'].append({'file': name + '.png', 'url': page.url, 'title': page.title()})
 
     visit('/elbil/' + SLUG + '/')
