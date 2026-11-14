@@ -1,0 +1,23 @@
+name: Inspect supplied Metricool tracker
+on:
+  push:
+    branches: [verify/metricool-source-20261114]
+    paths: ['.github/workflows/metricool-source.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read the official script without sending a tracking event
+        run: |
+          python - <<'PY'
+          import urllib.request,base64,json,hashlib
+          url='https://tracker.metricool.com/resources/be.js'
+          with urllib.request.urlopen(url,timeout=30) as r:
+              raw=r.read(300001)
+              assert len(raw)<=300000
+              print('SOURCE_META '+json.dumps({'url':url,'http_status':r.status,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'cookie_names':[x.split('=',1)[0] for x in r.headers.get_all('Set-Cookie',[])]}))
+          print('SOURCE_BASE64 '+base64.b64encode(raw).decode())
+          PY
