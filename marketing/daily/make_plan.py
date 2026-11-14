@@ -2,7 +2,7 @@
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
-import csv, json
+import csv, json, re
 
 P=Path(__file__).parent
 BASE='https://www.evberegn.dk'
@@ -49,6 +49,8 @@ def campaign_url(path,day,kind):
 
 existing=json.loads((P/'CALENDAR-BASELINE.json').read_text())
 by_slot={(x['date'][:10],x['type']):x for x in existing if x['providers'] and x['providers'][0]['status'] in ('PENDING','PUBLISHED')}
+NOVEMBER_EXTRA_REELS={20,22,24,27,30}
+DECEMBER_AUTO_REELS={1,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,29,31}
 entries=[];days=[]
 for offset in range((END-START).days+1):
     day=START+timedelta(days=offset)
@@ -61,22 +63,33 @@ for offset in range((END-START).days+1):
         if kind=='POST' and not old and (str(day),'REEL') in by_slot and by_slot[(str(day),'REEL')]['date'][11:16]=='10:00':at='13:00'
         url=campaign_url(path,day,kind)
         caption=title+'\n\n'+explain+'\n\nPrøv gratis på hjemmesiden: '+url+'\n\nDirekte i browseren – uden login.\n\n'+caveat+'\n\n#elbil #EVBeregner'
-        item={'date':str(day),'time':at,'timezone':'Europe/Copenhagen','type':kind,'theme':theme,'title':title,'destination':url,'caption':caption if kind!='STORY' else '',
+        actual_title=title
+        if old:
+            caption=old['text']
+            actual_title=old.get('title') or title
+            link=re.search(r'https://[^\s]+',caption)
+            if link:url=link[0]
+        item={'date':str(day),'time':at,'timezone':'Europe/Copenhagen','type':kind,'theme':theme,'title':actual_title,'destination':url,'caption':caption if kind!='STORY' else '',
               'status':'already_scheduled' if old and old['providers'][0]['status']=='PENDING' else 'already_published' if old else 'production_plan_only',
               'existing_id':old['id'] if old else None,'existing_uuid':old['uuid'] if old else None,
               'production':'reuse_existing' if old else 'original_non_heygen','heygen_generation_allowed':False,
               'format':'1080x1350 image or useful feed text' if kind=='POST' else '9:16, 12–25 sec, H.264/AAC, real website visible by second 2' if kind=='REEL' else 'one static 1080x1920 image, facebookData.type=STORY, visible 24 hours',
               'visual_brief':('Vis én konkret side og et kort forklarende budskab.' if kind=='POST' else 'Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.' if kind=='REEL' else 'Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.'),
               'quality_note':caveat,'existing_media':old['media'] if old else []}
+        reserved=kind=='REEL' and ((day.month==11 and day.day in NOVEMBER_EXTRA_REELS) or (day.month==12 and day.day in DECEMBER_AUTO_REELS))
+        item['publication_route']='METRICOOL_CONFIRMED' if old else 'METRICOOL_RESERVED_NOT_SCHEDULED' if reserved else 'MANUAL_META_BUSINESS_SUITE'
+        item['owner_action']='Do not duplicate in Meta Business Suite' if old or reserved else 'Upload the finished daily file and caption in Meta Business Suite'
         posts.append(item);entries.append(item)
     days.append({'date':str(day),'theme':theme,'items':posts})
 
 plan={'created':'2026-11-14','timezone':'Europe/Copenhagen','start':str(START),'end':str(END),'daily_target':{'POST':1,'REEL':1,'STORY':1},'target_items':len(entries),
       'production_is_not_publication':True,'publishing_limit':{'last_known_plan':'Metricool Free','monthly_publications':20,'source':'https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9','budget_changes_authorized':False},
       'heygen':{'november_new_generations':0,'december_maximum_attempts':3,'managed_by':'separate December automation','tentative_publication_dates':['2026-12-07','2026-12-17','2026-12-27'],'require_actual_quota_reset':True,'if_not_available':'use a non-HeyGen screen demonstration instead','never_extra_daily_slot':True},'days':days}
+plan['owner_choice']='Remain free. Produce material daily; owner schedules manual-route slots in Meta Business Suite.'
+plan['allocation']={'november_existing_publications_and_queue':len([x for x in existing if x['date'].startswith('2026-11')]),'november_extra_reserved_reels':sorted(NOVEMBER_EXTRA_REELS),'december_reserved_reels':sorted(DECEMBER_AUTO_REELS),'rule':'Only locally allocated Metricool slots may be auto-scheduled, within the actual free quota. Reserved does not mean scheduled.'}
 (P/'DAILY-PLAN.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2))
 with (P/'DAGLIG-KALENDER.csv').open('w',encoding='utf-8-sig',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=['date','time','type','theme','title','status','existing_uuid','destination','caption']);w.writeheader();w.writerows({k:item[k] for k in w.fieldnames} for item in entries)
+    w=csv.DictWriter(f,fieldnames=['date','time','type','theme','title','status','publication_route','owner_action','existing_uuid','destination','caption']);w.writeheader();w.writerows({k:item[k] for k in w.fieldnames} for item in entries)
 
 md=['# EV Beregner – daglig Facebook-plan','',f'Periode: {START}–{END}. Én POST, én REEL og én STORY pr. dag som produktionsmål. {len(entries)} planlagte indholdspladser; dette er ikke en kvittering for udgivelse.','',
 '## Daglig rytme','','| Tid, dansk | Format | Opgave |','|---|---|---|','| 10.00 | Opslag | Ét konkret spørgsmål, en nyttig forklaring og link til hjemmesiden. |','| 14.00 | Reel | Kort demonstration af den ægte hjemmeside og ét resultat. |','| 19.00 | Story | Ét lodret stillbillede med én pointe og evberegn.dk. |','',
@@ -84,13 +97,14 @@ md=['# EV Beregner – daglig Facebook-plan','',f'Periode: {START}–{END}. Én 
 '## Første uge','','| Dato | Tema | Opslag | Reel | Story |','|---|---|---|']
 for day in days[:7]:
     slots={x['type']:x for x in day['items']}
-    cell=lambda k:slots[k]['time']+(' – allerede planlagt' if slots[k]['status']=='already_scheduled' else ' – materiale skal produceres')
+    cell=lambda k:slots[k]['time']+(' – Metricool, planlagt' if slots[k]['status']=='already_scheduled' else ' – Metricool, kun reserveret' if slots[k]['publication_route']=='METRICOOL_RESERVED_NOT_SCHEDULED' else ' – manuel i Meta Business Suite')
     md.append('| '+day['date']+' | '+day['theme']+' | '+cell('POST')+' | '+cell('REEL')+' | '+cell('STORY')+' |')
+md+=['','## Gratis fordeling af udgivelser','','METRICOOL_CONFIRMED betyder faktisk planlagt i tjenesten. METRICOOL_RESERVED_NOT_SCHEDULED betyder kun en lokal reservation, som først skal produceres og få en udgivelseskvittering. MANUAL_META_BUSINESS_SUITE betyder, at ejeren selv planlægger den færdige fil og tekst.','', 'Eksisterende aftaler bevares. Fem ekstra november-Reels reserveres20,22,24,27,30november. I december reserveres20 Reels1,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,29,31. Dermed holdes den kendte gratis kapacitet på20 om måneden.','', 'Ejeren skal ikke også uploade de bekræftede eller reserverede Metricool-pladser i Meta Business Suite. Den daglige opgave må omvendt ikke auto-publicere de manuelle pladser. Manglende kvote eller færdigt materiale meldes konkret frem for at fremstille en reservation som planlagt.']
 md+=['','## Produktion uden HeyGen','','Hele november og hovedparten af december laves med rigtige skærmbilleder, korte skærmdemonstrationer, kontrolleret typografi og original/klart licenseret lyd. Ingen AI-tegnet hjemmeside, opdigtede kundeudtalelser eller ubekræftede bilpriser.','',
 'Reelen viser hjemmesiden senest efter to sekunder. En Story er et særskilt stillbillede i historiefeltet, ikke en genudgivet Reel. Brug den præcise stavning EV Beregner, gratis og evberegn.dk. Vis især bilvalg → modelside/billede → relevant beregner med bilens data og egne input.','',
 '## HeyGen i december','','Højst tre nye generationer/forsøg i december, aldrig før december og aldrig flere end den faktiske ledige kvote. Den særskilte decemberopgave kontrollerer nulstillingsdatoen. Filmene erstatter tre af de almindelige daglige Reels. Foreløbige udgivelsesdatoer er 7., 17. og 27. december; hvis kvoten eller kvaliteten ikke er klar, bruges en lokal skærmdemonstration den dag. Ingen køb eller opgraderinger.','',
-'## Udgivelse og den konkrete grænse','','Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Kalenderen viser 5 udgivne og 8 kommende novemberudgivelser på kontroltidspunktet; en kontovisning kan indeholde yderligere forbrug.','',
-'Daglig produktion kan fortsætte gratis. Fuld automatisk udgivelse af alle tre formater afventer en udgivelsesvej med tilstrækkelig kapacitet. Den gratis mulighed er at bruge de færdige filer og tekster i Meta Business Suite; det kræver brugerens planlægning dér, fordi der ikke er en tilsluttet native Meta-udgivelsesforbindelse i denne chat. Et selvvalgt, selvbetalt Metricool-abonnement med tilstrækkelig kapacitet er en anden mulighed. Intet abonnement er ændret eller købt.','',
+'## Udgivelse og den konkrete grænse','','Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Kalenderen viser 5 udgivne og 10 kommende novemberudgivelser på kontroltidspunktet; en kontovisning kan indeholde yderligere forbrug.','',
+'Ejeren har valgt at holde det gratis. Den daglige opgave producerer materialet, og ejeren planlægger de manuelle pladser i Meta Business Suite. Der er ingen tilsluttet native Meta-udgivelsesforbindelse her. Intet abonnement er ændret eller købt.','',
 'Den daglige opgave må kun planlægge inden for den kendte kvote og skal regne både udgivet og allerede reserveret indhold med. Den må aldrig fremstille et udkast, en CSV-række eller en produceret fil som et planlagt/udgivet opslag. Kvittering og kalender i tjenesten er sandhedskilden.','',
 '## Kontrol og opfølgning','','Kontrollér stavning, faktiske beregninger, billedrettigheder, mobilvisning og destination før planlægning. Alle priser er daterede kilder eller udtrykkelige regneeksempler. Energiudgift er ikke total ejerøkonomi. Billeder kan mangle eller vise andet udstyr.','',
 'Nye links bruger utm_source=facebook og utm_medium=organic_social før eventuelle #fragmenter. Følg reelle linkklik og samtykkebaserede Metricool-webbesøg og trafikkilder. Ingen købt trafik, annonceklik eller testbeacons. Brug resultater til at forbedre emner og åbninger, ikke til at opfinde vækst.','',

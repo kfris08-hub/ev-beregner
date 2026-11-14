@@ -16,13 +16,21 @@ Eksisterende publiceringstider bevares. 15. og 26. november ligger den eksistere
 
 | Dato | Tema | Opslag | Reel | Story |
 |---|---|---|
-| 2026-11-15 | Bilvalg | 13:00 – materiale skal produceres | 10:00 – allerede planlagt | 19:00 – materiale skal produceres |
-| 2026-11-16 | Kilometerpris | 10:00 – allerede planlagt | 14:00 – materiale skal produceres | 19:00 – materiale skal produceres |
-| 2026-11-17 | Køretur | 10:00 – materiale skal produceres | 14:00 – materiale skal produceres | 19:00 – materiale skal produceres |
-| 2026-11-18 | Ladepris | 10:00 – materiale skal produceres | 12:00 – allerede planlagt | 19:00 – materiale skal produceres |
-| 2026-11-19 | El mod benzin | 10:00 – allerede planlagt | 14:00 – materiale skal produceres | 19:00 – materiale skal produceres |
-| 2026-11-20 | Vinterforbrug | 10:00 – materiale skal produceres | 14:00 – materiale skal produceres | 19:00 – materiale skal produceres |
-| 2026-11-21 | Bil før køb | 10:00 – allerede planlagt | 14:00 – materiale skal produceres | 19:00 – materiale skal produceres |
+| 2026-11-15 | Bilvalg | 13:00 – Metricool, planlagt | 10:00 – Metricool, planlagt | 19:00 – Metricool, planlagt |
+| 2026-11-16 | Kilometerpris | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
+| 2026-11-17 | Køretur | 10:00 – manuel i Meta Business Suite | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
+| 2026-11-18 | Ladepris | 10:00 – manuel i Meta Business Suite | 12:00 – Metricool, planlagt | 19:00 – manuel i Meta Business Suite |
+| 2026-11-19 | El mod benzin | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
+| 2026-11-20 | Vinterforbrug | 10:00 – manuel i Meta Business Suite | 14:00 – Metricool, kun reserveret | 19:00 – manuel i Meta Business Suite |
+| 2026-11-21 | Bil før køb | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
+
+## Gratis fordeling af udgivelser
+
+METRICOOL_CONFIRMED betyder faktisk planlagt i tjenesten. METRICOOL_RESERVED_NOT_SCHEDULED betyder kun en lokal reservation, som først skal produceres og få en udgivelseskvittering. MANUAL_META_BUSINESS_SUITE betyder, at ejeren selv planlægger den færdige fil og tekst.
+
+Eksisterende aftaler bevares. Fem ekstra november-Reels reserveres20,22,24,27,30november. I december reserveres20 Reels1,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,29,31. Dermed holdes den kendte gratis kapacitet på20 om måneden.
+
+Ejeren skal ikke også uploade de bekræftede eller reserverede Metricool-pladser i Meta Business Suite. Den daglige opgave må omvendt ikke auto-publicere de manuelle pladser. Manglende kvote eller færdigt materiale meldes konkret frem for at fremstille en reservation som planlagt.
 
 ## Produktion uden HeyGen
 
@@ -36,9 +44,9 @@ Højst tre nye generationer/forsøg i december, aldrig før december og aldrig f
 
 ## Udgivelse og den konkrete grænse
 
-Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Kalenderen viser 5 udgivne og 8 kommende novemberudgivelser på kontroltidspunktet; en kontovisning kan indeholde yderligere forbrug.
+Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Kalenderen viser 5 udgivne og 10 kommende novemberudgivelser på kontroltidspunktet; en kontovisning kan indeholde yderligere forbrug.
 
-Daglig produktion kan fortsætte gratis. Fuld automatisk udgivelse af alle tre formater afventer en udgivelsesvej med tilstrækkelig kapacitet. Den gratis mulighed er at bruge de færdige filer og tekster i Meta Business Suite; det kræver brugerens planlægning dér, fordi der ikke er en tilsluttet native Meta-udgivelsesforbindelse i denne chat. Et selvvalgt, selvbetalt Metricool-abonnement med tilstrækkelig kapacitet er en anden mulighed. Intet abonnement er ændret eller købt.
+Ejeren har valgt at holde det gratis. Den daglige opgave producerer materialet, og ejeren planlægger de manuelle pladser i Meta Business Suite. Der er ingen tilsluttet native Meta-udgivelsesforbindelse her. Intet abonnement er ændret eller købt.
 
 Den daglige opgave må kun planlægge inden for den kendte kvote og skal regne både udgivet og allerede reserveret indhold med. Den må aldrig fremstille et udkast, en CSV-række eller en produceret fil som et planlagt/udgivet opslag. Kvittering og kalender i tjenesten er sandhedskilden.
 

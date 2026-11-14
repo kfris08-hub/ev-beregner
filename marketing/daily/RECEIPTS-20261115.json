@@ -1,0 +1,55 @@
+{
+  "verified": true,
+  "date": "2026-11-15",
+  "timezone": "Europe/Copenhagen",
+  "posts": [
+    {
+      "id": 427367138,
+      "uuid": "8403383719013468039",
+      "date": {
+        "dateTime": "2026-11-15T10:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "REEL",
+      "status": "PENDING",
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-1906549249988751242.mp4"
+      ],
+      "text": "Har du en elbil – eller en bestemt model i tankerne?\n\nPå https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.\n\nSe hvordan i videoen: find modellen → vælg bilen → beregn med dine egne tal.\n\nEksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh er valgt til demonstrationen. Kilometerprisen dækker strømudgiften, ikke alle bilens omkostninger.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.\n\n#elbil #elbiløkonomi #EVBeregner",
+      "autoPublish": true
+    },
+    {
+      "id": 428400343,
+      "uuid": "-4996663419840479223",
+      "date": {
+        "dateTime": "2026-11-15T13:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "POST",
+      "status": "PENDING",
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-3255686828875595644.jpeg"
+      ],
+      "text": "Har du en bestemt elbil i tankerne?\n\nPå EV Beregners hjemmeside kan du finde din egen bil – eller en model, du overvejer at købe – og regne videre med dens data.\n\nFind modellen, åbn modelsiden, og tilpas fx elpris og forbrug til dine forhold.\n\nPrøv gratis direkte i browseren, uden login:\nhttps://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post\n\nHer er Toyota bZ4X vist som eksempel. Ikke alle varianter har foto, og udstyr og farve kan afvige. Biloplysninger er vejledende. Foto: TTTNIS / CC0; kilde på modelsiden.\n\n#elbil #EVBeregner",
+      "autoPublish": true
+    },
+    {
+      "id": 428400357,
+      "uuid": "105779028072090749",
+      "date": {
+        "dateTime": "2026-11-15T19:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "STORY",
+      "status": "PENDING",
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-15085539356463928845.jpeg"
+      ],
+      "text": "",
+      "autoPublish": true
+    }
+  ],
+  "owner_manual_upload_required": false,
+  "heygen_used": 0,
+  "monthly_free_policy": "20 maximum; remaining manual slots go through owner in Meta Business Suite"
+}

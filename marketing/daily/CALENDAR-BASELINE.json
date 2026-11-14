@@ -250,5 +250,43 @@
       }
     ],
     "autoPublish": true
+  },
+  {
+    "id": 428400343,
+    "uuid": "-4996663419840479223",
+    "date": "2026-11-15T13:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "Har du en elbil i tankerne?",
+    "text": "Har du en bestemt elbil i tankerne?\n\nPå EV Beregners hjemmeside kan du finde din egen bil – eller en model, du overvejer at købe – og regne videre med dens data.\n\nFind modellen, åbn modelsiden, og tilpas fx elpris og forbrug til dine forhold.\n\nPrøv gratis direkte i browseren, uden login:\nhttps://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post\n\nHer er Toyota bZ4X vist som eksempel. Ikke alle varianter har foto, og udstyr og farve kan afvige. Biloplysninger er vejledende. Foto: TTTNIS / CC0; kilde på modelsiden.\n\n#elbil #EVBeregner",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-3255686828875595644.jpeg"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 428400357,
+    "uuid": "105779028072090749",
+    "date": "2026-11-15T19:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "STORY",
+    "title": "Din bil – eller den næste?",
+    "text": "",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-15085539356463928845.jpeg"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
   }
 ]

@@ -40,18 +40,22 @@
           "timezone": "Europe/Copenhagen",
           "type": "POST",
           "theme": "Bilvalg",
-          "title": "Din elbil – eller din næste?",
+          "title": "Har du en elbil i tankerne?",
           "destination": "https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post",
-          "caption": "Din elbil – eller din næste?\n\nFind din egen elbil eller en model, du overvejer at købe. Åbn modelsiden, se oplysningerne, og regn videre med dine egne tal.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post\n\nDirekte i browseren – uden login.\n\nModelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.\n\n#elbil #EVBeregner",
-          "status": "production_plan_only",
-          "existing_id": null,
-          "existing_uuid": null,
-          "production": "original_non_heygen",
+          "caption": "Har du en bestemt elbil i tankerne?\n\nPå EV Beregners hjemmeside kan du finde din egen bil – eller en model, du overvejer at købe – og regne videre med dens data.\n\nFind modellen, åbn modelsiden, og tilpas fx elpris og forbrug til dine forhold.\n\nPrøv gratis direkte i browseren, uden login:\nhttps://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post\n\nHer er Toyota bZ4X vist som eksempel. Ikke alle varianter har foto, og udstyr og farve kan afvige. Biloplysninger er vejledende. Foto: TTTNIS / CC0; kilde på modelsiden.\n\n#elbil #EVBeregner",
+          "status": "already_scheduled",
+          "existing_id": 428400343,
+          "existing_uuid": "-4996663419840479223",
+          "production": "reuse_existing",
           "heygen_generation_allowed": false,
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
-          "existing_media": []
+          "existing_media": [
+            "https://static.metricool.com/planner/202611/8064733-file-3255686828875595644.jpeg"
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-15",
@@ -59,9 +63,9 @@
           "timezone": "Europe/Copenhagen",
           "type": "REEL",
           "theme": "Bilvalg",
-          "title": "Din elbil – eller din næste?",
-          "destination": "https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_reel",
-          "caption": "Din elbil – eller din næste?\n\nFind din egen elbil eller en model, du overvejer at købe. Åbn modelsiden, se oplysningerne, og regn videre med dine egne tal.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_reel\n\nDirekte i browseren – uden login.\n\nModelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.\n\n#elbil #EVBeregner",
+          "title": "Vælg din elbil og regn videre",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "Har du en elbil – eller en bestemt model i tankerne?\n\nPå https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.\n\nSe hvordan i videoen: find modellen → vælg bilen → beregn med dine egne tal.\n\nEksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh er valgt til demonstrationen. Kilometerprisen dækker strømudgiften, ikke alle bilens omkostninger.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.\n\n#elbil #elbiløkonomi #EVBeregner",
           "status": "already_scheduled",
           "existing_id": 427367138,
           "existing_uuid": "8403383719013468039",
@@ -72,7 +76,9 @@
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-1906549249988751242.mp4"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-15",
@@ -80,18 +86,22 @@
           "timezone": "Europe/Copenhagen",
           "type": "STORY",
           "theme": "Bilvalg",
-          "title": "Din elbil – eller din næste?",
+          "title": "Din bil – eller den næste?",
           "destination": "https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_story",
           "caption": "",
-          "status": "production_plan_only",
-          "existing_id": null,
-          "existing_uuid": null,
-          "production": "original_non_heygen",
+          "status": "already_scheduled",
+          "existing_id": 428400357,
+          "existing_uuid": "105779028072090749",
+          "production": "reuse_existing",
           "heygen_generation_allowed": false,
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
-          "existing_media": []
+          "existing_media": [
+            "https://static.metricool.com/planner/202611/8064733-file-15085539356463928845.jpeg"
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         }
       ]
     },
@@ -106,8 +116,8 @@
           "type": "POST",
           "theme": "Kilometerpris",
           "title": "Hvad koster strømmen til 100 km?",
-          "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_post",
-          "caption": "Hvad koster strømmen til 100 km?\n\nMed 16 kWh/100 km og en valgt elpris på 2 kr./kWh er strømudgiften 32 kr. pr. 100 km. Prøv med dit eget forbrug og din samlede elpris.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_post\n\nDirekte i browseren – uden login.\n\nEt regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.\n\n#elbil #EVBeregner",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster strømmen til 100 km i din elbil?\n\nMed et forbrug på 16 kWh/100 km og en samlet elpris på 2 kr./kWh bliver det 32 kr. i strøm pr. 100 km.\n\nDet er et regneeksempel. Brug dit eget forbrug og din egen elpris her:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2\n\nJeg står bag det gratis værktøj EV Beregner. Bilens øvrige omkostninger er ikke med i denne beregning.",
           "status": "already_scheduled",
           "existing_id": 427119724,
           "existing_uuid": "-6589191064007917297",
@@ -118,7 +128,9 @@
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-1436563993951226378.png"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-16",
@@ -137,7 +149,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-16",
@@ -156,7 +170,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -181,7 +197,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-17",
@@ -200,7 +218,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-17",
@@ -219,7 +239,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -244,7 +266,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-18",
@@ -252,9 +276,9 @@
           "timezone": "Europe/Copenhagen",
           "type": "REEL",
           "theme": "Ladepris",
-          "title": "Hvad koster 20 til 80 procent?",
-          "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_reel",
-          "caption": "Hvad koster 20 til 80 procent?\n\nVælg en bil, og tilpas batteri, startprocent, slutprocent, elpris og ekstra strømforbrug. Se prisen på netop dit regneeksempel.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_reel\n\nDirekte i browseren – uden login.\n\nElprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.\n\n#elbil #EVBeregner",
+          "title": "Hvad koster opladning fra 20 til 80 procent?",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster det at lade fra 20 til 80 %?\n\nI eksemplet: 60 kWh brugbart batteri, 2 kr./kWh og 10 % ekstra strømforbrug. 36 kWh til batteriet bliver til 39,6 kWh betalt energi og en pris på 79,20 kr.\n\nDet er valgte forudsætninger, ikke en aktuel markedspris. Øvrige gebyrer er ikke med. Beregn med dine egne tal:\nhttps://www.evberegn.dk/beregnere/ladepris/#s=1&k=1&battery=60&electricPrice=2&from=20&to=80&overhead=10\n\nEV Beregner · gratis og uden login.\n#elbil #opladning",
           "status": "already_scheduled",
           "existing_id": 427119812,
           "existing_uuid": "5694237824031212205",
@@ -265,7 +289,9 @@
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-1161898881754985951.mp4"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-18",
@@ -284,7 +310,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -299,8 +327,8 @@
           "type": "POST",
           "theme": "El mod benzin",
           "title": "El eller benzin med dine egne tal?",
-          "destination": "https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_post",
-          "caption": "El eller benzin med dine egne tal?\n\nSammenlign energiudgiften ved samme årlige kørsel. Indtast eget elforbrug, km/l, elpris og benzinpris.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_post\n\nDirekte i browseren – uden login.\n\nEnergiforskellen er ikke en beregning af alle ejeromkostninger.\n\n#elbil #EVBeregner",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nStrøm eller benzin: hvad bliver energiudgiften med dine tal?\n\nEt valgt eksempel med 20.000 km om året:\n• Elbil: 16 kWh/100 km og 2 kr./kWh = 6.400 kr. i strøm.\n• Benzinbil: 16 km/l og 16 kr./l = 20.000 kr. i benzin.\n\nForskellen på 13.600 kr. gælder kun energien i dette eksempel. Købspris, værditab, forsikring og øvrige biludgifter skal vurderes særskilt.\n\nPrøv dine egne forudsætninger: https://www.evberegn.dk/beregnere/elbil-vs-benzin/#s=1&k=3&consumption=16&electricPrice=2&fuelEconomy=16&fuelPrice=16&annualKm=20000\n\nJeg står bag EV Beregner. Priserne ovenfor er valgte eksempelpriser.",
           "status": "already_scheduled",
           "existing_id": 427119752,
           "existing_uuid": "-2622971657274569533",
@@ -311,7 +339,9 @@
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-16750293250475280474.png"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-19",
@@ -330,7 +360,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-19",
@@ -349,7 +381,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -374,7 +408,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-20",
@@ -393,7 +429,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-20",
@@ -412,7 +450,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -426,9 +466,9 @@
           "timezone": "Europe/Copenhagen",
           "type": "POST",
           "theme": "Bil før køb",
-          "title": "Regn på bilen, før du beslutter dig",
-          "destination": "https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_post",
-          "caption": "Regn på bilen, før du beslutter dig\n\nFind den model, du overvejer, og brug dens data som udgangspunkt. Ret især købspris, elpris og forbrug til dine forhold.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_post\n\nDirekte i browseren – uden login.\n\nKatalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.\n\n#elbil #EVBeregner",
+          "title": "Se bilen før du regner",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "Overvejer du at købe elbil?\n\nStart med den model, du har i tankerne: https://www.evberegn.dk/\n\nSøg efter bilen, åbn modelsiden og regn videre på fx strøm pr. kilometer, ladepris eller forskellen på el og benzin. Du kan også vælge den elbil, du allerede kører i.\n\nDu bruger EV Beregner gratis på hjemmesiden – direkte i browseren og uden login. Ret tallene, så de passer til din købspris, dit forbrug og din elaftale.\n\nBilledet viser Hyundai IONIQ 5 som eksempel. Modelbilleder kan afvige i udstyr og farve; enkelte modeller mangler foto. Katalogdata er vejledende og er ikke et aktuelt pristilbud. Foto: TTTNIS / CC0; kilde og forbehold på modelsiden.\n\n#elbil #bilkøb #EVBeregner",
           "status": "already_scheduled",
           "existing_id": 427367157,
           "existing_uuid": "-6965175447170495098",
@@ -439,7 +479,9 @@
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-11280706685607647115.png"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-21",
@@ -458,7 +500,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-21",
@@ -477,7 +521,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -502,7 +548,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-22",
@@ -521,7 +569,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-22",
@@ -540,7 +590,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -555,8 +607,8 @@
           "type": "POST",
           "theme": "Rækkevidde",
           "title": "Batteri og forbrug: hvor langt rækker det?",
-          "destination": "https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_post",
-          "caption": "Batteri og forbrug: hvor langt rækker det?\n\nIndtast den batterikapacitet og det forbrug, du vil regne med. Sammenlign flere scenarier.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_post\n\nDirekte i browseren – uden login.\n\nBeregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.\n\n#elbil #EVBeregner",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nSamme batteri kan give meget forskellig rækkevidde.\n\nMed 60 kWh brugbart batteri og et forventet forbrug på 18 kWh/100 km er det matematiske overslag cirka 333 km. Ved 24 kWh/100 km bliver overslaget 250 km.\n\nSe hvad et andet forbrug gør ved dit regnestykke: https://www.evberegn.dk/beregnere/raekkevidde/#s=1&k=7&battery=60&consumption=18\n\nDet er et matematisk overslag. Den faktiske rækkevidde afhænger blandt andet af hastighed, temperatur og kørselsforhold. Jeg står bag EV Beregner.",
           "status": "already_scheduled",
           "existing_id": 427119772,
           "existing_uuid": "7973124568287167665",
@@ -567,7 +619,9 @@
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-54899677469853673.png"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-23",
@@ -586,7 +640,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-23",
@@ -605,7 +661,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -630,7 +688,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-24",
@@ -649,7 +709,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-24",
@@ -668,7 +730,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -693,7 +757,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-25",
@@ -712,7 +778,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-25",
@@ -731,7 +799,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -756,7 +826,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-26",
@@ -765,8 +837,8 @@
           "type": "REEL",
           "theme": "Din bils opladning",
           "title": "Din bil – din ladepris",
-          "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_reel",
-          "caption": "Din bil – din ladepris\n\nVælg bilmodellen og regn videre på en delvis opladning. Ret elpris og ekstra strømforbrug til dit eksempel.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_reel\n\nDirekte i browseren – uden login.\n\nBatteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.\n\n#elbil #EVBeregner",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "Hvad koster en opladning af den bil, du kører i – eller overvejer at købe?\n\nPrøv selv på hjemmesiden: https://www.evberegn.dk/\n\nVælg bilmodellen, og regn videre med dens batteridata. Ret startprocent, slutprocent, elpris og ekstra strømforbrug, så beregningen passer til dit eksempel.\n\nEV Beregner er gratis og virker direkte i browseren. Uden login.\n\nI videoen bruges Hyundai IONIQ 5 og et valgt eksempel: 63 kWh, 20–80 %, 2,00 kr./kWh og 10 % ekstra strømforbrug. Beregnet ladepris: 83,16 kr. Batteridata er katalogdata; beløbet er et regneeksempel, ikke en live ladepris.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige; billedkilde og forbehold står på modelsiden.\n\n#elbil #opladning #EVBeregner",
           "status": "already_scheduled",
           "existing_id": 427367174,
           "existing_uuid": "281769916129888821",
@@ -777,7 +849,9 @@
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-10394462017593155752.mp4"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-26",
@@ -796,7 +870,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -821,7 +897,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-27",
@@ -840,7 +918,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-27",
@@ -859,7 +939,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -873,9 +955,9 @@
           "timezone": "Europe/Copenhagen",
           "type": "POST",
           "theme": "Egne tal",
-          "title": "Din bil. Din elpris. Dine tal.",
-          "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261128_post",
-          "caption": "Din bil. Din elpris. Dine tal.\n\nBilvalget er et udgangspunkt. Ret forbruget og elprisen, så beregningen passer til dig.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261128_post\n\nDirekte i browseren – uden login.\n\nEksempelværdier er ikke et løfte om din faktiske strømudgift.\n\n#elbil #EVBeregner",
+          "title": "Din bil, dine egne tal",
+          "destination": "https://www.evberegn.dk/",
+          "caption": "Den samme elbil kan koste forskelligt at lade, alt efter din aftale.\n\nPå https://www.evberegn.dk/ vælger du din bil og retter elprisen og forbruget, før du beregner. Så tager regnestykket udgangspunkt i dine tal.\n\nDu kan også vælge en model, du overvejer at købe, og undersøge økonomien, før du beslutter dig.\n\n20 gratis beregnere på hjemmesiden. Direkte i browseren – uden login.\n\nSkærmbilledet er et regneeksempel: 16 kWh/100 km og 2,00 kr./kWh giver 0,32 kr. i strøm pr. km. Det er strømudgiften; fx værditab, forsikring og finansiering kommer oveni. Modeldata og priser skal tilpasses din bil og aftale.\n\n#elbil #ladepris #EVBeregner",
           "status": "already_scheduled",
           "existing_id": 427367190,
           "existing_uuid": "-5373484419553016410",
@@ -886,7 +968,9 @@
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
           "existing_media": [
             "https://static.metricool.com/planner/202611/8064733-file-2426478458440564936.png"
-          ]
+          ],
+          "publication_route": "METRICOOL_CONFIRMED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-28",
@@ -905,7 +989,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-28",
@@ -924,7 +1010,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -949,7 +1037,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-29",
@@ -968,7 +1058,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-29",
@@ -987,7 +1079,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1012,7 +1106,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-11-30",
@@ -1031,7 +1127,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-11-30",
@@ -1050,7 +1148,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1075,7 +1175,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-01",
@@ -1094,7 +1196,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-01",
@@ -1113,7 +1217,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1138,7 +1244,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-02",
@@ -1157,7 +1265,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-02",
@@ -1176,7 +1286,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1201,7 +1313,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-03",
@@ -1220,7 +1334,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-03",
@@ -1239,7 +1355,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1264,7 +1382,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-04",
@@ -1283,7 +1403,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-04",
@@ -1302,7 +1424,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1327,7 +1451,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-05",
@@ -1346,7 +1472,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-05",
@@ -1365,7 +1493,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1390,7 +1520,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-06",
@@ -1409,7 +1541,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-06",
@@ -1428,7 +1562,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1453,7 +1589,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-07",
@@ -1472,7 +1610,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-07",
@@ -1491,7 +1631,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1516,7 +1658,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-08",
@@ -1535,7 +1679,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-08",
@@ -1554,7 +1700,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1579,7 +1727,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Energibehov er ikke det samme som en fuld rute- eller ladestopplan.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-09",
@@ -1598,7 +1748,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Energibehov er ikke det samme som en fuld rute- eller ladestopplan.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-09",
@@ -1617,7 +1769,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Energibehov er ikke det samme som en fuld rute- eller ladestopplan.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1642,7 +1796,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-10",
@@ -1661,7 +1817,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-10",
@@ -1680,7 +1838,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1705,7 +1865,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-11",
@@ -1724,7 +1886,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-11",
@@ -1743,7 +1907,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1768,7 +1934,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-12",
@@ -1787,7 +1955,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-12",
@@ -1806,7 +1976,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1831,7 +2003,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-13",
@@ -1850,7 +2024,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-13",
@@ -1869,7 +2045,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1894,7 +2072,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-14",
@@ -1913,7 +2093,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-14",
@@ -1932,7 +2114,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -1957,7 +2141,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-15",
@@ -1976,7 +2162,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-15",
@@ -1995,7 +2183,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2020,7 +2210,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-16",
@@ -2039,7 +2231,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-16",
@@ -2058,7 +2252,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2083,7 +2279,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-17",
@@ -2102,7 +2300,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-17",
@@ -2121,7 +2321,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2146,7 +2348,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-18",
@@ -2165,7 +2369,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-18",
@@ -2184,7 +2390,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2209,7 +2417,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-19",
@@ -2228,7 +2438,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-19",
@@ -2247,7 +2459,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2272,7 +2486,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-20",
@@ -2291,7 +2507,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-20",
@@ -2310,7 +2528,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2335,7 +2555,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-21",
@@ -2354,7 +2576,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-21",
@@ -2373,7 +2597,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2398,7 +2624,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-22",
@@ -2417,7 +2645,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-22",
@@ -2436,7 +2666,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2461,7 +2693,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-23",
@@ -2480,7 +2714,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-23",
@@ -2499,7 +2735,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2524,7 +2762,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-24",
@@ -2543,7 +2783,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-24",
@@ -2562,7 +2804,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2587,7 +2831,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-25",
@@ -2606,7 +2852,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-25",
@@ -2625,7 +2873,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2650,7 +2900,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-26",
@@ -2669,7 +2921,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-26",
@@ -2688,7 +2942,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2713,7 +2969,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-27",
@@ -2732,7 +2990,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-27",
@@ -2751,7 +3011,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2776,7 +3038,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-28",
@@ -2795,7 +3059,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-28",
@@ -2814,7 +3080,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2839,7 +3107,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-29",
@@ -2858,7 +3128,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-29",
@@ -2877,7 +3149,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2902,7 +3176,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-30",
@@ -2921,7 +3197,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-30",
@@ -2940,7 +3218,9 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     },
@@ -2965,7 +3245,9 @@
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         },
         {
           "date": "2026-12-31",
@@ -2984,7 +3266,9 @@
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
+          "owner_action": "Do not duplicate in Meta Business Suite"
         },
         {
           "date": "2026-12-31",
@@ -3003,9 +3287,45 @@
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
-          "existing_media": []
+          "existing_media": [],
+          "publication_route": "MANUAL_META_BUSINESS_SUITE",
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
         }
       ]
     }
-  ]
+  ],
+  "owner_choice": "Remain free. Produce material daily; owner schedules manual-route slots in Meta Business Suite.",
+  "allocation": {
+    "november_existing_publications_and_queue": 15,
+    "november_extra_reserved_reels": [
+      20,
+      22,
+      24,
+      27,
+      30
+    ],
+    "december_reserved_reels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      28,
+      29,
+      31
+    ],
+    "rule": "Only locally allocated Metricool slots may be auto-scheduled, within the actual free quota. Reserved does not mean scheduled."
+  }
 }
