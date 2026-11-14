@@ -1,6 +1,6 @@
 {
   "sample_rate": 24000,
-  "seconds": 35.408,
+  "seconds": 35.528000000000006,
   "lines": [
     {
       "index": 0,
@@ -401,40 +401,35 @@
       "index": 10,
       "speaker": "B",
       "section": "closing",
-      "spoken": "E ve beregn, punktum de kå.",
-      "caption": "evberegn.dk",
-      "start": 28.601666,
-      "end": 30.746375,
+      "spoken": "Du finder linket i opslaget.",
+      "caption": "Du finder linket\ni opslaget.",
+      "start": 28.575125000000003,
+      "end": 30.371916000000002,
       "words": [
         {
-          "text": "E",
-          "start": 28.601666,
-          "end": 28.782082000000003
+          "text": "Du",
+          "start": 28.575125000000003,
+          "end": 28.704
         },
         {
-          "text": "ve",
-          "start": 28.782083000000004,
-          "end": 28.949624000000004
+          "text": "finder",
+          "start": 28.704,
+          "end": 28.9875
         },
         {
-          "text": "beregn",
-          "start": 28.949625,
-          "end": 29.529541000000002
+          "text": "linket",
+          "start": 28.9875,
+          "end": 29.464291000000003
         },
         {
-          "text": "punktum",
-          "start": 29.67125,
-          "end": 30.109375
+          "text": "i",
+          "start": 29.464291000000003,
+          "end": 29.657582
         },
         {
-          "text": "de",
-          "start": 30.109416000000003,
-          "end": 30.238249000000003
-        },
-        {
-          "text": "kå",
-          "start": 30.23825,
-          "end": 30.676375
+          "text": "opslaget",
+          "start": 29.657583000000002,
+          "end": 30.301916000000002
         }
       ]
     },
@@ -442,35 +437,45 @@
       "index": 11,
       "speaker": "B",
       "section": "closing",
-      "spoken": "Du behøver ikke logge ind.",
-      "caption": "Du behøver ikke\nlogge ind.",
-      "start": 31.565583000000004,
-      "end": 33.413916,
+      "spoken": "Og du behøver ikke oprette en konto.",
+      "caption": "Og du behøver ikke\noprette en konto.",
+      "start": 31.217666,
+      "end": 33.529916,
       "words": [
         {
-          "text": "Du",
-          "start": 31.565583000000004,
-          "end": 31.642916000000003
+          "text": "Og",
+          "start": 31.217666,
+          "end": 31.2692069
+        },
+        {
+          "text": "du",
+          "start": 31.269208000000003,
+          "end": 31.385166
         },
         {
           "text": "behøver",
-          "start": 31.642916000000003,
-          "end": 32.093957
+          "start": 31.385166,
+          "end": 31.745999
         },
         {
           "text": "ikke",
-          "start": 32.093958,
-          "end": 32.416083
+          "start": 31.746000000000002,
+          "end": 32.081041
         },
         {
-          "text": "logge",
-          "start": 32.416083,
-          "end": 32.738249
+          "text": "oprette",
+          "start": 32.081041,
+          "end": 32.622291000000004
         },
         {
-          "text": "ind.",
-          "start": 32.73825,
-          "end": 33.343916
+          "text": "en",
+          "start": 32.622291000000004,
+          "end": 32.815582
+        },
+        {
+          "text": "konto",
+          "start": 32.815583000000004,
+          "end": 33.459916
         }
       ]
     }
@@ -492,7 +497,7 @@
   "word_alignment": "service-returned WordBoundary metadata; UTF-8 normalized source text matches",
   "pronunciation_notes": {
     "brand": "E V Beregner with Danish voice locale",
-    "domain": "E ve beregn, punktum de kå.",
+    "domain": "The address is displayed graphically; speech says the link is in the post.",
     "legal": "conditional clause comes first; whole sentence is synthesized together"
   },
   "turns": [
@@ -824,8 +829,8 @@
         "rate": "-3%",
         "pitch": "-5Hz"
       },
-      "spoken": "Nej, det er en gratis hjemmeside. E ve beregn, punktum de kå. Du behøver ikke logge ind.",
-      "seconds": 8.712,
+      "spoken": "Nej, det er en gratis hjemmeside. Du finder linket i opslaget. Og du behøver ikke oprette en konto.",
+      "seconds": 8.832,
       "words": [
         {
           "offset": 1144160,
@@ -858,59 +863,64 @@
           "text": "hjemmeside"
         },
         {
-          "offset": 31056660,
-          "duration": 1804160,
-          "text": "E"
-        },
-        {
-          "offset": 32860830,
-          "duration": 1675410,
-          "text": "ve"
-        },
-        {
-          "offset": 34536250,
-          "duration": 5799160,
-          "text": "beregn"
-        },
-        {
-          "offset": 41752500,
-          "duration": 4381250,
-          "text": "punktum"
-        },
-        {
-          "offset": 46134160,
-          "duration": 1288330,
-          "text": "de"
-        },
-        {
-          "offset": 47422500,
-          "duration": 4381250,
-          "text": "kå"
-        },
-        {
-          "offset": 60695830,
-          "duration": 773330,
+          "offset": 30791250,
+          "duration": 1288750,
           "text": "Du"
         },
         {
-          "offset": 61469160,
-          "duration": 4510410,
+          "offset": 32080000,
+          "duration": 2835000,
+          "text": "finder"
+        },
+        {
+          "offset": 34915000,
+          "duration": 4767910,
+          "text": "linket"
+        },
+        {
+          "offset": 39682910,
+          "duration": 1932910,
+          "text": "i"
+        },
+        {
+          "offset": 41615830,
+          "duration": 6443330,
+          "text": "opslaget"
+        },
+        {
+          "offset": 57216660,
+          "duration": 515409,
+          "text": "Og"
+        },
+        {
+          "offset": 57732080,
+          "duration": 1159580,
+          "text": "du"
+        },
+        {
+          "offset": 58891660,
+          "duration": 3608330,
           "text": "behøver"
         },
         {
-          "offset": 65979580,
-          "duration": 3221250,
+          "offset": 62500000,
+          "duration": 3350410,
           "text": "ikke"
         },
         {
-          "offset": 69200830,
-          "duration": 3221660,
-          "text": "logge"
+          "offset": 65850410,
+          "duration": 5412500,
+          "text": "oprette"
         },
         {
-          "offset": 72422500,
-          "duration": 6056660,
-          "text": "ind."
+          "offset": 71262910,
+          "duration": 1932910,
+          "text": "en"
+        },
+        {
+          "offset": 73195830,
+          "duration": 6443330,
+          "text": "konto"
         }
       ]
     }
