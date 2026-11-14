@@ -1,0 +1,95 @@
+{
+  "sample_rate": 22050,
+  "seconds": 23.708208616780045,
+  "lines": [
+    {
+      "index": 0,
+      "speaker": "A",
+      "spoken": "Jeg overvejer elbil efter den nye aftale.",
+      "caption": "Jeg overvejer elbil\nefter den nye aftale.",
+      "start": 0.4,
+      "end": 2.8380952380952382
+    },
+    {
+      "index": 1,
+      "speaker": "B",
+      "spoken": "Stigningen i registreringsafgiften udskydes ét år,",
+      "caption": "Stigningen i\nregistreringsafgiften\nudskydes ét år,",
+      "start": 3.158095238095238,
+      "end": 6.432108843537415
+    },
+    {
+      "index": 2,
+      "speaker": "B",
+      "spoken": "hvis aftalen bliver til lov.",
+      "caption": "hvis aftalen\nbliver til lov.",
+      "start": 6.652108843537415,
+      "end": 8.347165532879819
+    },
+    {
+      "index": 3,
+      "speaker": "A",
+      "spoken": "Men hvad koster en elbil at køre i?",
+      "caption": "Men hvad koster\nen elbil at køre i?",
+      "start": 8.66716553287982,
+      "end": 10.559591836734695
+    },
+    {
+      "index": 4,
+      "speaker": "B",
+      "spoken": "Prøv E V Beregner.",
+      "caption": "Prøv EV Beregner.",
+      "start": 10.879591836734695,
+      "end": 12.098639455782315
+    },
+    {
+      "index": 5,
+      "speaker": "B",
+      "spoken": "Find bilen, du overvejer,",
+      "caption": "Find bilen,\ndu overvejer,",
+      "start": 12.318639455782316,
+      "end": 13.633197278911567
+    },
+    {
+      "index": 6,
+      "speaker": "B",
+      "spoken": "og beregn strømudgiften med dine egne tal.",
+      "caption": "og beregn strømudgiften\nmed dine egne tal.",
+      "start": 13.853197278911567,
+      "end": 16.42371882086168
+    },
+    {
+      "index": 7,
+      "speaker": "A",
+      "spoken": "Er det en app?",
+      "caption": "Er det en app?",
+      "start": 16.74371882086168,
+      "end": 17.69573696145125
+    },
+    {
+      "index": 8,
+      "speaker": "B",
+      "spoken": "Det er en gratis hjemmeside.",
+      "caption": "Det er en\ngratis hjemmeside.",
+      "start": 18.01573696145125,
+      "end": 19.559863945578233
+    },
+    {
+      "index": 9,
+      "speaker": "B",
+      "spoken": "E V beregn punktum D K. Uden login.",
+      "caption": "evberegn.dk\nUden login.",
+      "start": 19.77986394557823,
+      "end": 22.508208616780045
+    }
+  ],
+  "speech_model": "Piper da_DK-talesyntese-medium",
+  "dataset_license": "CC0",
+  "model_card": "# Model card for talesyntese (medium)\n\n* Language: da_DK (Danish, Denmark)\n* Speakers: 1\n* Quality: medium\n* Samplerate: 22,050Hz\n\n## Dataset\n\n* URL: https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-21/\n* License: CC0\n\n## Training\n\nFinetuned from U.S. English lessac voice (medium quality).\n",
+  "speech_source": "https://huggingface.co/rhasspy/piper-voices/blob/main/da/da_DK/talesyntese/medium/MODEL_CARD",
+  "generation": "offline neural speech with two tonal variations of one public model; no real-person clone",
+  "listening_review": "not_performed",
+  "captions_timing": "measured full utterance WAV intervals, no guessed word alignment",
+  "heygen_generations": 0,
+  "paid_services": 0
+}
