@@ -1,484 +1,460 @@
 {
-  "engine": "faster-whisper small, Danish, CPU int8, no initial prompt",
-  "transcript": "Jeg overvarer faktisk L-bil efter den nye aftale. Ja, hvis aftalen bliver til lov, udskyde stigningen i registreringsafgiften med et år. Men hvad koster en L-bil egentlig at køre i? Prøv E-V beregner. Find bilen, du overvarer og regner på strømudgiften med dine egne tal. Skal jeg hente en app? Nej, det er en gratis hjemmeside. www.beregn.dk Du behøver ikke lokke indisk.",
+  "engine": "faster-whisper medium, Danish, CPU int8, no initial prompt",
+  "transcript": "Jeg overvejer faktisk elbil efter den nye aftale. Ja, hvis aftalen bliver til lov, udskyde stigningen i registreringsafgiften med 1 år. Men hvad koster en elbil egentlig at køre i? Prøv EVB regner. Find bilen du overvejer og regn på strømudgiften med dine egne tal. Skal jeg hente en app? Nej, det er en gratis hjemmeside. evberegn.dk Du behøver ikke logge indisk.",
   "segments": [
     {
       "start": 0.05,
-      "end": 3.15,
-      "text": " Jeg overvarer faktisk L-bil efter den nye aftale.",
-      "avg_logprob": -0.19812906455637805,
+      "end": 4.27,
+      "text": " Jeg overvejer faktisk elbil efter den nye aftale.",
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
           "start": 0.05,
-          "end": 0.55,
+          "end": 0.59,
           "word": " Jeg",
-          "probability": 0.21248963475227356
+          "probability": 0.7587878108024597
         },
         {
-          "start": 0.55,
-          "end": 1.03,
-          "word": " overvarer",
-          "probability": 0.8860068122545878
+          "start": 0.59,
+          "end": 1.07,
+          "word": " overvejer",
+          "probability": 0.9739142457644144
         },
         {
-          "start": 1.03,
-          "end": 1.47,
+          "start": 1.07,
+          "end": 1.53,
           "word": " faktisk",
-          "probability": 0.9761247038841248
+          "probability": 0.9974059760570526
         },
         {
-          "start": 1.47,
-          "end": 1.67,
-          "word": " L",
-          "probability": 0.388407438993454
+          "start": 1.53,
+          "end": 1.99,
+          "word": " elbil",
+          "probability": 0.8130064010620117
         },
         {
-          "start": 1.67,
-          "end": 1.85,
-          "word": "-bil",
-          "probability": 0.8359125256538391
-        },
-        {
-          "start": 1.85,
-          "end": 2.23,
+          "start": 1.99,
+          "end": 2.31,
           "word": " efter",
-          "probability": 0.979951024055481
+          "probability": 0.9705660343170166
         },
         {
-          "start": 2.23,
-          "end": 2.43,
+          "start": 2.31,
+          "end": 2.47,
           "word": " den",
-          "probability": 0.9918571710586548
+          "probability": 0.9738709926605225
         },
         {
-          "start": 2.43,
-          "end": 2.63,
+          "start": 2.47,
+          "end": 2.75,
           "word": " nye",
-          "probability": 0.9966817498207092
+          "probability": 0.9966118633747101
         },
         {
-          "start": 2.63,
-          "end": 3.15,
+          "start": 2.75,
+          "end": 4.27,
           "word": " aftale.",
-          "probability": 0.8945532639821371
+          "probability": 0.9817747672398885
         }
       ]
     },
     {
-      "start": 4.51,
-      "end": 9.71,
-      "text": " Ja, hvis aftalen bliver til lov, udskyde stigningen i registreringsafgiften med et år.",
-      "avg_logprob": -0.19812906455637805,
+      "start": 4.69,
+      "end": 9.89,
+      "text": " Ja, hvis aftalen bliver til lov, udskyde stigningen i registreringsafgiften med 1 år.",
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
-          "start": 4.51,
-          "end": 4.73,
+          "start": 4.69,
+          "end": 4.95,
           "word": " Ja,",
-          "probability": 0.7995673418045044
+          "probability": 0.9654922485351562
         },
         {
-          "start": 5.27,
-          "end": 5.35,
+          "start": 5.25,
+          "end": 5.49,
           "word": " hvis",
-          "probability": 0.9857578277587891
+          "probability": 0.9964446425437927
         },
         {
-          "start": 5.35,
-          "end": 5.91,
+          "start": 5.49,
+          "end": 5.99,
           "word": " aftalen",
-          "probability": 0.9675138592720032
+          "probability": 0.9978334903717041
         },
         {
-          "start": 5.91,
-          "end": 6.11,
+          "start": 5.99,
+          "end": 6.19,
           "word": " bliver",
-          "probability": 0.9879930019378662
+          "probability": 0.9933227896690369
         },
         {
-          "start": 6.11,
-          "end": 6.31,
+          "start": 6.19,
+          "end": 6.43,
           "word": " til",
-          "probability": 0.9732061624526978
+          "probability": 0.9906737208366394
         },
         {
-          "start": 6.31,
-          "end": 6.69,
+          "start": 6.43,
+          "end": 6.81,
           "word": " lov,",
-          "probability": 0.7135668843984604
+          "probability": 0.9525549113750458
         },
         {
-          "start": 6.89,
-          "end": 7.29,
+          "start": 6.93,
+          "end": 7.37,
           "word": " udskyde",
-          "probability": 0.6254705339670181
+          "probability": 0.75433149933815
         },
         {
-          "start": 7.29,
-          "end": 7.77,
-          "word": " stigningen",
-          "probability": 0.8397051890691122
-        },
-        {
-          "start": 7.77,
+          "start": 7.37,
           "end": 7.85,
-          "word": " i",
-          "probability": 0.9890617728233337
+          "word": " stigningen",
+          "probability": 0.975539485613505
         },
         {
           "start": 7.85,
-          "end": 8.91,
+          "end": 7.95,
+          "word": " i",
+          "probability": 0.9921426773071289
+        },
+        {
+          "start": 7.95,
+          "end": 9.13,
           "word": " registreringsafgiften",
-          "probability": 0.7749709550823484
+          "probability": 0.92930006980896
         },
         {
-          "start": 8.91,
-          "end": 9.31,
+          "start": 9.13,
+          "end": 9.39,
           "word": " med",
-          "probability": 0.9572455883026123
+          "probability": 0.9873453974723816
         },
         {
-          "start": 9.31,
-          "end": 9.51,
-          "word": " et",
-          "probability": 0.6309556365013123
+          "start": 9.39,
+          "end": 9.61,
+          "word": " 1",
+          "probability": 0.3276442885398865
         },
         {
-          "start": 9.51,
-          "end": 9.71,
+          "start": 9.61,
+          "end": 9.89,
           "word": " år.",
-          "probability": 0.9969712495803833
+          "probability": 0.9742164015769958
         }
       ]
     },
     {
-      "start": 11.09,
-      "end": 13.49,
-      "text": " Men hvad koster en L-bil egentlig at køre i?",
-      "avg_logprob": -0.19812906455637805,
+      "start": 11.19,
+      "end": 13.69,
+      "text": " Men hvad koster en elbil egentlig at køre i?",
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
-          "start": 11.09,
-          "end": 11.23,
+          "start": 11.19,
+          "end": 11.27,
           "word": " Men",
-          "probability": 0.9200136661529541
+          "probability": 0.983089029788971
         },
         {
-          "start": 11.23,
-          "end": 11.37,
+          "start": 11.27,
+          "end": 11.47,
           "word": " hvad",
-          "probability": 0.9823182821273804
+          "probability": 0.9750707745552063
         },
         {
-          "start": 11.37,
-          "end": 11.67,
+          "start": 11.47,
+          "end": 11.75,
           "word": " koster",
-          "probability": 0.871433824300766
+          "probability": 0.9203947186470032
         },
         {
-          "start": 11.67,
-          "end": 11.89,
+          "start": 11.75,
+          "end": 12.03,
           "word": " en",
-          "probability": 0.9929258823394775
+          "probability": 0.994905948638916
         },
         {
-          "start": 11.89,
-          "end": 12.15,
-          "word": " L",
-          "probability": 0.9890555143356323
+          "start": 12.03,
+          "end": 12.47,
+          "word": " elbil",
+          "probability": 0.9979150295257568
         },
         {
-          "start": 12.15,
-          "end": 12.33,
-          "word": "-bil",
-          "probability": 0.9918858706951141
-        },
-        {
-          "start": 12.33,
-          "end": 12.79,
+          "start": 12.47,
+          "end": 12.89,
           "word": " egentlig",
-          "probability": 0.9751813411712646
+          "probability": 0.9625701606273651
         },
         {
-          "start": 12.79,
-          "end": 12.97,
+          "start": 12.89,
+          "end": 13.11,
           "word": " at",
-          "probability": 0.8225749731063843
+          "probability": 0.9833952188491821
         },
         {
-          "start": 12.97,
-          "end": 13.25,
+          "start": 13.11,
+          "end": 13.33,
           "word": " køre",
-          "probability": 0.9816508293151855
+          "probability": 0.9976740777492523
         },
         {
-          "start": 13.25,
-          "end": 13.49,
+          "start": 13.33,
+          "end": 13.69,
           "word": " i?",
-          "probability": 0.9793983101844788
+          "probability": 0.9973539113998413
         }
       ]
     },
     {
-      "start": 14.77,
-      "end": 16.17,
-      "text": " Prøv E-V beregner.",
-      "avg_logprob": -0.19812906455637805,
+      "start": 14.89,
+      "end": 16.31,
+      "text": " Prøv EVB regner.",
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
-          "start": 14.77,
-          "end": 15.15,
+          "start": 14.89,
+          "end": 15.21,
           "word": " Prøv",
-          "probability": 0.977601150671641
+          "probability": 0.9785368243853251
         },
         {
-          "start": 15.15,
-          "end": 15.35,
-          "word": " E",
-          "probability": 0.36966636776924133
+          "start": 15.21,
+          "end": 15.89,
+          "word": " EVB",
+          "probability": 0.5793192088603973
         },
         {
-          "start": 15.35,
-          "end": 15.53,
-          "word": "-V",
-          "probability": 0.7381318509578705
-        },
-        {
-          "start": 15.53,
-          "end": 16.17,
-          "word": " beregner.",
-          "probability": 0.6724993685881296
+          "start": 15.89,
+          "end": 16.31,
+          "word": " regner.",
+          "probability": 0.6540882140398026
         }
       ]
     },
     {
-      "start": 17.17,
-      "end": 21.63,
-      "text": " Find bilen, du overvarer og regner på strømudgiften med dine egne tal.",
-      "avg_logprob": -0.19812906455637805,
+      "start": 17.35,
+      "end": 21.79,
+      "text": " Find bilen du overvejer og regn på strømudgiften med dine egne tal.",
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
-          "start": 17.17,
-          "end": 17.45,
+          "start": 17.35,
+          "end": 17.51,
           "word": " Find",
-          "probability": 0.6935825943946838
+          "probability": 0.7547326683998108
         },
         {
-          "start": 17.45,
-          "end": 17.95,
-          "word": " bilen,",
-          "probability": 0.9921213984489441
+          "start": 17.51,
+          "end": 18.13,
+          "word": " bilen",
+          "probability": 0.9974780678749084
         },
         {
-          "start": 18.25,
-          "end": 18.25,
+          "start": 18.13,
+          "end": 18.35,
           "word": " du",
-          "probability": 0.9943142533302307
+          "probability": 0.6725715398788452
         },
         {
-          "start": 18.25,
-          "end": 18.93,
-          "word": " overvarer",
-          "probability": 0.9943063457806905
+          "start": 18.35,
+          "end": 18.99,
+          "word": " overvejer",
+          "probability": 0.9834619760513306
         },
         {
-          "start": 18.93,
-          "end": 19.33,
+          "start": 18.99,
+          "end": 19.37,
           "word": " og",
-          "probability": 0.8121147751808167
+          "probability": 0.7796111106872559
         },
         {
-          "start": 19.33,
-          "end": 19.53,
-          "word": " regner",
-          "probability": 0.6347265243530273
+          "start": 19.37,
+          "end": 19.59,
+          "word": " regn",
+          "probability": 0.9912417531013489
         },
         {
-          "start": 19.53,
-          "end": 19.69,
+          "start": 19.59,
+          "end": 19.83,
           "word": " på",
-          "probability": 0.9888021945953369
+          "probability": 0.9982181191444397
         },
         {
-          "start": 19.69,
-          "end": 20.43,
+          "start": 19.83,
+          "end": 20.63,
           "word": " strømudgiften",
-          "probability": 0.8757993493761335
+          "probability": 0.9662527782576424
         },
         {
-          "start": 20.43,
-          "end": 20.77,
+          "start": 20.63,
+          "end": 20.89,
           "word": " med",
-          "probability": 0.9808957576751709
+          "probability": 0.996167004108429
         },
         {
-          "start": 20.77,
-          "end": 21.03,
+          "start": 20.89,
+          "end": 21.21,
           "word": " dine",
-          "probability": 0.9815517663955688
+          "probability": 0.997600257396698
         },
         {
-          "start": 21.03,
-          "end": 21.41,
+          "start": 21.21,
+          "end": 21.59,
           "word": " egne",
-          "probability": 0.7381813228130341
+          "probability": 0.9764638841152191
         },
         {
-          "start": 21.41,
-          "end": 21.63,
+          "start": 21.59,
+          "end": 21.79,
           "word": " tal.",
-          "probability": 0.7122600674629211
+          "probability": 0.8850515484809875
         }
       ]
     },
     {
-      "start": 22.75,
-      "end": 24.25,
+      "start": 23.13,
+      "end": 24.41,
       "text": " Skal jeg hente en app?",
-      "avg_logprob": -0.19812906455637805,
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
-          "start": 22.75,
-          "end": 23.35,
+          "start": 23.13,
+          "end": 23.41,
           "word": " Skal",
-          "probability": 0.8887626230716705
+          "probability": 0.9838366508483887
         },
         {
-          "start": 23.35,
-          "end": 23.49,
+          "start": 23.41,
+          "end": 23.59,
           "word": " jeg",
-          "probability": 0.9764950275421143
+          "probability": 0.9983317255973816
         },
         {
-          "start": 23.49,
-          "end": 23.75,
+          "start": 23.59,
+          "end": 23.85,
           "word": " hente",
-          "probability": 0.9694180190563202
+          "probability": 0.9930101037025452
         },
         {
-          "start": 23.75,
-          "end": 23.99,
+          "start": 23.85,
+          "end": 24.13,
           "word": " en",
-          "probability": 0.9872999787330627
+          "probability": 0.9913723468780518
         },
         {
-          "start": 23.99,
-          "end": 24.25,
+          "start": 24.13,
+          "end": 24.41,
           "word": " app?",
-          "probability": 0.8160526156425476
+          "probability": 0.8959022760391235
         }
       ]
     },
     {
-      "start": 25.35,
-      "end": 27.55,
+      "start": 25.73,
+      "end": 28.09,
       "text": " Nej, det er en gratis hjemmeside.",
-      "avg_logprob": -0.19812906455637805,
+      "avg_logprob": -0.13200446509290487,
       "words": [
         {
-          "start": 25.35,
-          "end": 25.89,
+          "start": 25.73,
+          "end": 26.09,
           "word": " Nej,",
-          "probability": 0.9216837882995605
+          "probability": 0.8495333790779114
         },
         {
-          "start": 26.27,
-          "end": 26.35,
+          "start": 26.23,
+          "end": 26.39,
           "word": " det",
-          "probability": 0.9906405210494995
+          "probability": 0.9984945058822632
         },
         {
-          "start": 26.35,
-          "end": 26.49,
+          "start": 26.39,
+          "end": 26.55,
           "word": " er",
-          "probability": 0.9970135688781738
+          "probability": 0.9980108141899109
         },
         {
-          "start": 26.49,
-          "end": 26.63,
+          "start": 26.55,
+          "end": 26.69,
           "word": " en",
-          "probability": 0.9397913813591003
+          "probability": 0.9843485951423645
         },
         {
-          "start": 26.63,
-          "end": 27.05,
+          "start": 26.69,
+          "end": 27.15,
           "word": " gratis",
-          "probability": 0.8772111535072327
+          "probability": 0.9942054748535156
         },
         {
-          "start": 27.05,
-          "end": 27.55,
+          "start": 27.15,
+          "end": 28.09,
           "word": " hjemmeside.",
-          "probability": 0.9371009916067123
+          "probability": 0.9334052503108978
         }
       ]
     },
     {
-      "start": 28.39,
-      "end": 30.57,
-      "text": " www.beregn.dk",
-      "avg_logprob": -0.33038758554241876,
+      "start": 28.09,
+      "end": 31.17,
+      "text": " evberegn.dk",
+      "avg_logprob": -0.14275838931401572,
       "words": [
         {
-          "start": 28.39,
-          "end": 28.87,
-          "word": " www",
-          "probability": 0.6235811114311218
+          "start": 28.09,
+          "end": 29.71,
+          "word": " evberegn",
+          "probability": 0.6028239329655966
         },
         {
-          "start": 28.87,
-          "end": 29.45,
-          "word": ".beregn",
-          "probability": 0.5628173053264618
-        },
-        {
-          "start": 29.45,
-          "end": 30.57,
+          "start": 29.71,
+          "end": 31.17,
           "word": ".dk",
-          "probability": 0.9035470883051554
+          "probability": 0.9943697055180868
         }
       ]
     },
     {
-      "start": 31.21,
-      "end": 33.23,
-      "text": " Du behøver ikke lokke indisk.",
-      "avg_logprob": -0.33038758554241876,
+      "start": 31.17,
+      "end": 33.29,
+      "text": " Du behøver ikke logge indisk.",
+      "avg_logprob": -0.14275838931401572,
       "words": [
         {
-          "start": 31.21,
-          "end": 31.69,
+          "start": 31.17,
+          "end": 31.77,
           "word": " Du",
-          "probability": 0.6154231429100037
+          "probability": 0.8625494241714478
         },
         {
-          "start": 31.69,
-          "end": 32.11,
+          "start": 31.77,
+          "end": 32.19,
           "word": " behøver",
-          "probability": 0.8454359769821167
+          "probability": 0.997921347618103
         },
         {
-          "start": 32.11,
-          "end": 32.39,
+          "start": 32.19,
+          "end": 32.53,
           "word": " ikke",
-          "probability": 0.9779786467552185
+          "probability": 0.978029727935791
         },
         {
-          "start": 32.39,
-          "end": 32.75,
-          "word": " lokke",
-          "probability": 0.3188282996416092
+          "start": 32.53,
+          "end": 32.95,
+          "word": " logge",
+          "probability": 0.8272736966609955
         },
         {
-          "start": 32.75,
-          "end": 33.23,
+          "start": 32.95,
+          "end": 33.29,
           "word": " indisk.",
-          "probability": 0.7947480082511902
+          "probability": 0.9738024473190308
         }
       ]
     }
   ],
   "anchor_checks": {
-    "elbil": false,
+    "elbil": true,
     "lov": true,
     "registreringsafgift": true,
     "år": true,
