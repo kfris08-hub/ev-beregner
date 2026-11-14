@@ -1,0 +1,25 @@
+name: Verify concise public photo credits
+on:
+  push:
+    branches: [verify/photo-copy-20261114]
+    paths: ['.github/workflows/verify-photo-copy.yml', 'verification/photo_copy.py']
+permissions:
+  contents: read
+jobs:
+  public-copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0
+      - name: Verify all public pages and the reported model on mobile and desktop
+        run: python verification/photo_copy.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-copy-check
+          path: test-results/
+          retention-days: 14
