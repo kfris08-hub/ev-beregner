@@ -8,7 +8,7 @@ from playwright.async_api import async_playwright
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk'
 CATALOG=json.loads((ROOT/'data/model-photos.json').read_text())['models']
 PUBLIC=os.environ.get('PHOTO_PUBLIC')=='1'
-SAMPLES=['tesla-model-y-standard-rwd','kia-ev3-standard-range-access','skoda-elroq-60','volkswagen-id-4-pure','hyundai-ioniq-5-standard-range-rwd-essential','bmw-ix3-2025-50-xdrive']
+SAMPLES=['jaecoo-j5-ev-comfort','tesla-model-y-standard-rwd','kia-ev3-standard-range-access','skoda-elroq-60','volkswagen-id-4-pure','hyundai-ioniq-5-standard-range-rwd-essential','bmw-ix3-2025-50-xdrive']
 async def main():
  results=[];external=[]
  async with async_playwright() as pw:
@@ -51,7 +51,7 @@ async def main():
     kind='loadedWithoutJavaScript'
    else:
     assert await page.locator('#photoLoading').is_visible(),slug
-    assert 'kontrolleret modelbillede' in await page.locator('#photoLoading').inner_text(),slug
+    assert 'Der er endnu ikke et billede af denne model.' in await page.locator('#photoLoading').inner_text(),slug
     kind='explicitMissingState'
    assert not await page.evaluate('document.documentElement.scrollWidth > innerWidth+1'),slug
    results.append({'slug':slug,'result':kind})

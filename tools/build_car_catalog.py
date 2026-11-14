@@ -61,7 +61,7 @@ def render_model(m,models,photo,fuel=None):
     if is_new:
         text=text.replace('tesla-model-3-standard-rwd',m['slug']).replace(ESC(old_label),ESC(label))
         text=re.sub(r'<meta[^>]*property="og:image(?::(?:width|height|alt))?"[^>]*>','',text)
-        placeholder='<div class="visual photo-wrap"><img alt="'+ESC(label)+' – modelbillede" decoding="async" id="carPhoto" style="display:none"><div class="photo-loading" id="photoLoading">Vi mangler et kontrolleret modelbillede.</div></div><div class="photo-credit" id="photoCredit"></div>'
+        placeholder='<div class="visual photo-wrap"><img alt="'+ESC(label)+' – modelbillede" decoding="async" id="carPhoto" style="display:none"><div class="photo-loading" id="photoLoading">Der er endnu ikke et billede af denne model.</div></div><div class="photo-credit" id="photoCredit"></div>'
         text=re.sub(r'<div class="visual photo-wrap">.*?<div class="photo-credit" id="photoCredit">.*?</div>',lambda _:placeholder,text,count=1,flags=re.S)
     historical=m.get('availability')=='discontinued'
     text=re.sub(r'<p class="note" id="historicalModelNotice">.*?</p>','',text,flags=re.S)

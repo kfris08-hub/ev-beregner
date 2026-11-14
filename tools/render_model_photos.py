@@ -17,11 +17,11 @@ def render(root=ROOT):
    note=photo.get('caption') or 'Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant.'
    image=f'<img alt="{ESC(photo["identity"])} – modelbillede" decoding="async" id="carPhoto" loading="eager" fetchpriority="high" src="{ESC(photo["src"])}" width="{photo["width"]}" height="{photo["height"]}">'
    loading='<div class="photo-loading" id="photoLoading" style="display:none">Modelbilledet kunne ikke indlæses.</div>'
-   credit=f'{ESC(note)} Foto: {ESC(photo["author"])} · <a href="{ESC(photo["license_url"])}" target="_blank" rel="noopener noreferrer">{ESC(photo["license"])}</a> · <a href="{ESC(photo["source"])}" target="_blank" rel="noopener noreferrer">Billedkilde og original</a>. {ESC(photo["modifications"])}'
+   credit=f'{ESC(note)} Foto: {ESC(photo["author"])} · <a href="{ESC(photo["license_url"])}" target="_blank" rel="noopener noreferrer">{ESC(photo["license"])}</a> · <a href="{ESC(photo["source"])}" target="_blank" rel="noopener noreferrer">Billedkilde og original</a>.'
    if photo.get('attribution') and photo['attribution']!=photo['author']:credit+=' '+ESC(photo['attribution'])
   else:
    image=f'<img alt="{ESC(photo["label"])} – modelbillede" decoding="async" id="carPhoto" style="display:none">'
-   loading='<div class="photo-loading" id="photoLoading">Vi mangler et kontrolleret modelbillede.</div>'
+   loading='<div class="photo-loading" id="photoLoading">Der er endnu ikke et billede af denne model.</div>'
    credit=''
   block=f'<div class="visual photo-wrap">{image}{loading}</div><div class="photo-credit" id="photoCredit">{credit}</div>'
   text,n=re.subn(r'<div class="visual photo-wrap">.*?<div class="photo-credit" id="photoCredit">.*?</div>',lambda _:block,text,count=1,flags=re.S)
