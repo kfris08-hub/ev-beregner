@@ -1,0 +1,923 @@
+{
+  "sample_rate": 24000,
+  "seconds": 35.408,
+  "lines": [
+    {
+      "index": 0,
+      "speaker": "A",
+      "section": "arrival",
+      "spoken": "Jeg overvejer faktisk elbil efter den nye aftale.",
+      "caption": "Jeg overvejer faktisk elbil\nefter den nye aftale.",
+      "start": 0.3875,
+      "end": 3.3325,
+      "words": [
+        {
+          "text": "Jeg",
+          "start": 0.3875,
+          "end": 0.5
+        },
+        {
+          "text": "overvejer",
+          "start": 0.5,
+          "end": 0.95
+        },
+        {
+          "text": "faktisk",
+          "start": 0.95,
+          "end": 1.425
+        },
+        {
+          "text": "elbil",
+          "start": 1.425,
+          "end": 1.9375
+        },
+        {
+          "text": "efter",
+          "start": 1.9375,
+          "end": 2.2375
+        },
+        {
+          "text": "den",
+          "start": 2.2375,
+          "end": 2.4
+        },
+        {
+          "text": "nye",
+          "start": 2.4,
+          "end": 2.625
+        },
+        {
+          "text": "aftale",
+          "start": 2.625,
+          "end": 3.2625
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "speaker": "B",
+      "section": "tax",
+      "spoken": "Ja, hvis aftalen bliver til lov,",
+      "caption": "Ja, hvis aftalen\nbliver til lov,",
+      "start": 4.484208000000001,
+      "end": 6.706291,
+      "words": [
+        {
+          "text": "Ja",
+          "start": 4.484208000000001,
+          "end": 4.832166
+        },
+        {
+          "text": "hvis",
+          "start": 4.961,
+          "end": 5.3605
+        },
+        {
+          "text": "aftalen",
+          "start": 5.3605,
+          "end": 5.9275
+        },
+        {
+          "text": "bliver",
+          "start": 5.9275,
+          "end": 6.095041
+        },
+        {
+          "text": "til",
+          "start": 6.095041,
+          "end": 6.223916
+        },
+        {
+          "text": "lov",
+          "start": 6.223916,
+          "end": 6.636291
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "speaker": "B",
+      "section": "tax",
+      "spoken": "udskydes stigningen i registreringsafgiften",
+      "caption": "udskydes stigningen i\nregistreringsafgiften",
+      "start": 6.765125,
+      "end": 9.116041000000001,
+      "words": [
+        {
+          "text": "udskydes",
+          "start": 6.765125,
+          "end": 7.280583
+        },
+        {
+          "text": "stigningen",
+          "start": 7.280583,
+          "end": 7.692958000000001
+        },
+        {
+          "text": "i",
+          "start": 7.692958000000001,
+          "end": 7.821833
+        },
+        {
+          "text": "registreringsafgiften",
+          "start": 7.821833,
+          "end": 9.046041
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "speaker": "B",
+      "section": "tax",
+      "spoken": "med ét år.",
+      "caption": "med ét år.",
+      "start": 9.046041,
+      "end": 9.902166000000001,
+      "words": [
+        {
+          "text": "med",
+          "start": 9.046041,
+          "end": 9.265124
+        },
+        {
+          "text": "ét",
+          "start": 9.265125000000001,
+          "end": 9.471291
+        },
+        {
+          "text": "år",
+          "start": 9.471333000000001,
+          "end": 9.832166
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "speaker": "A",
+      "section": "cost_question",
+      "spoken": "Men hvad koster en elbil egentlig at køre i?",
+      "caption": "Men hvad koster en elbil\negentlig at køre i?",
+      "start": 11.0715,
+      "end": 13.629000000000001,
+      "words": [
+        {
+          "text": "Men",
+          "start": 11.0715,
+          "end": 11.209000000000001
+        },
+        {
+          "text": "hvad",
+          "start": 11.209000000000001,
+          "end": 11.3215
+        },
+        {
+          "text": "koster",
+          "start": 11.3215,
+          "end": 11.709000000000001
+        },
+        {
+          "text": "en",
+          "start": 11.709000000000001,
+          "end": 11.896500000000001
+        },
+        {
+          "text": "elbil",
+          "start": 11.896500000000001,
+          "end": 12.409
+        },
+        {
+          "text": "egentlig",
+          "start": 12.409,
+          "end": 12.784
+        },
+        {
+          "text": "at",
+          "start": 12.784,
+          "end": 12.909
+        },
+        {
+          "text": "køre",
+          "start": 12.909,
+          "end": 13.246500000000001
+        },
+        {
+          "text": "i",
+          "start": 13.246500000000001,
+          "end": 13.559000000000001
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "speaker": "B",
+      "section": "website",
+      "spoken": "Prøv E V Beregner.",
+      "caption": "Prøv EV Beregner.",
+      "start": 14.744791000000001,
+      "end": 16.361166,
+      "words": [
+        {
+          "text": "Prøv",
+          "start": 14.744791000000001,
+          "end": 15.131374000000001
+        },
+        {
+          "text": "E",
+          "start": 15.131375000000002,
+          "end": 15.337541000000002
+        },
+        {
+          "text": "V",
+          "start": 15.337541000000002,
+          "end": 15.556624000000001
+        },
+        {
+          "text": "Beregner",
+          "start": 15.556625000000002,
+          "end": 16.291166
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "speaker": "B",
+      "section": "website",
+      "spoken": "Find bilen, du overvejer,",
+      "caption": "Find bilen,\ndu overvejer,",
+      "start": 17.169791000000004,
+      "end": 19.056791000000004,
+      "words": [
+        {
+          "text": "Find",
+          "start": 17.169791000000004,
+          "end": 17.466166
+        },
+        {
+          "text": "bilen",
+          "start": 17.466166,
+          "end": 17.955874
+        },
+        {
+          "text": "du",
+          "start": 18.097625,
+          "end": 18.252250000000004
+        },
+        {
+          "text": "overvejer",
+          "start": 18.252250000000004,
+          "end": 18.986791000000004
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "speaker": "B",
+      "section": "website",
+      "spoken": "og regn på strømudgiften med dine egne tal.",
+      "caption": "og regn på strømudgiften\nmed dine egne tal.",
+      "start": 19.128541000000002,
+      "end": 21.891833000000002,
+      "words": [
+        {
+          "text": "og",
+          "start": 19.128541000000002,
+          "end": 19.270291
+        },
+        {
+          "text": "regn",
+          "start": 19.270291,
+          "end": 19.540916000000003
+        },
+        {
+          "text": "på",
+          "start": 19.540916000000003,
+          "end": 19.643999
+        },
+        {
+          "text": "strømudgiften",
+          "start": 19.644000000000002,
+          "end": 20.571833
+        },
+        {
+          "text": "med",
+          "start": 20.571833,
+          "end": 20.726458
+        },
+        {
+          "text": "dine",
+          "start": 20.726458,
+          "end": 21.048624000000004
+        },
+        {
+          "text": "egne",
+          "start": 21.048625,
+          "end": 21.383666
+        },
+        {
+          "text": "tal",
+          "start": 21.383708000000002,
+          "end": 21.821833
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "speaker": "A",
+      "section": "app_question",
+      "spoken": "Skal jeg hente en app?",
+      "caption": "Skal jeg hente en app?",
+      "start": 23.014000000000003,
+      "end": 24.4965,
+      "words": [
+        {
+          "text": "Skal",
+          "start": 23.014000000000003,
+          "end": 23.314
+        },
+        {
+          "text": "jeg",
+          "start": 23.314,
+          "end": 23.4765
+        },
+        {
+          "text": "hente",
+          "start": 23.4765,
+          "end": 23.764000000000003
+        },
+        {
+          "text": "en",
+          "start": 23.764000000000003,
+          "end": 23.939
+        },
+        {
+          "text": "app",
+          "start": 23.939,
+          "end": 24.4265
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "speaker": "B",
+      "section": "closing",
+      "spoken": "Nej, det er en gratis hjemmeside.",
+      "caption": "Nej, det er en\ngratis hjemmeside.",
+      "start": 25.610416,
+      "end": 27.780958000000002,
+      "words": [
+        {
+          "text": "Nej",
+          "start": 25.610416,
+          "end": 26.035666000000003
+        },
+        {
+          "text": "det",
+          "start": 26.151666000000002,
+          "end": 26.332082000000003
+        },
+        {
+          "text": "er",
+          "start": 26.332083,
+          "end": 26.448041000000003
+        },
+        {
+          "text": "en",
+          "start": 26.448041000000003,
+          "end": 26.602666000000003
+        },
+        {
+          "text": "gratis",
+          "start": 26.602708000000003,
+          "end": 27.015083
+        },
+        {
+          "text": "hjemmeside",
+          "start": 27.015083,
+          "end": 27.710958
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "speaker": "B",
+      "section": "closing",
+      "spoken": "E ve beregn, punktum de kå.",
+      "caption": "evberegn.dk",
+      "start": 28.601666,
+      "end": 30.746375,
+      "words": [
+        {
+          "text": "E",
+          "start": 28.601666,
+          "end": 28.782082000000003
+        },
+        {
+          "text": "ve",
+          "start": 28.782083000000004,
+          "end": 28.949624000000004
+        },
+        {
+          "text": "beregn",
+          "start": 28.949625,
+          "end": 29.529541000000002
+        },
+        {
+          "text": "punktum",
+          "start": 29.67125,
+          "end": 30.109375
+        },
+        {
+          "text": "de",
+          "start": 30.109416000000003,
+          "end": 30.238249000000003
+        },
+        {
+          "text": "kå",
+          "start": 30.23825,
+          "end": 30.676375
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "speaker": "B",
+      "section": "closing",
+      "spoken": "Du behøver ikke logge ind.",
+      "caption": "Du behøver ikke\nlogge ind.",
+      "start": 31.565583000000004,
+      "end": 33.413916,
+      "words": [
+        {
+          "text": "Du",
+          "start": 31.565583000000004,
+          "end": 31.642916000000003
+        },
+        {
+          "text": "behøver",
+          "start": 31.642916000000003,
+          "end": 32.093957
+        },
+        {
+          "text": "ikke",
+          "start": 32.093958,
+          "end": 32.416083
+        },
+        {
+          "text": "logge",
+          "start": 32.416083,
+          "end": 32.738249
+        },
+        {
+          "text": "ind.",
+          "start": 32.73825,
+          "end": 33.343916
+        }
+      ]
+    }
+  ],
+  "speech_model": "Microsoft da-DK-JeppeNeural via edge-tts 7.3.1",
+  "roles": {
+    "A": {
+      "voice": "da-DK-JeppeNeural",
+      "rate": "+0%",
+      "pitch": "+4Hz"
+    },
+    "B": {
+      "voice": "da-DK-JeppeNeural",
+      "rate": "-3%",
+      "pitch": "-5Hz"
+    }
+  },
+  "post_pitch_shifting": false,
+  "word_alignment": "service-returned WordBoundary metadata; UTF-8 normalized source text matches",
+  "pronunciation_notes": {
+    "brand": "E V Beregner with Danish voice locale",
+    "domain": "E ve beregn, punktum de kå.",
+    "legal": "conditional clause comes first; whole sentence is synthesized together"
+  },
+  "turns": [
+    {
+      "turn": 0,
+      "speaker": "A",
+      "settings": {
+        "voice": "da-DK-JeppeNeural",
+        "rate": "+0%",
+        "pitch": "+4Hz"
+      },
+      "spoken": "Jeg overvejer faktisk elbil efter den nye aftale.",
+      "seconds": 3.864,
+      "words": [
+        {
+          "offset": 1375000,
+          "duration": 1125000,
+          "text": "Jeg"
+        },
+        {
+          "offset": 2500000,
+          "duration": 4500000,
+          "text": "overvejer"
+        },
+        {
+          "offset": 7000000,
+          "duration": 4750000,
+          "text": "faktisk"
+        },
+        {
+          "offset": 11750000,
+          "duration": 5125000,
+          "text": "elbil"
+        },
+        {
+          "offset": 16875000,
+          "duration": 3000000,
+          "text": "efter"
+        },
+        {
+          "offset": 19875000,
+          "duration": 1625000,
+          "text": "den"
+        },
+        {
+          "offset": 21500000,
+          "duration": 2250000,
+          "text": "nye"
+        },
+        {
+          "offset": 23750000,
+          "duration": 6375000,
+          "text": "aftale"
+        }
+      ]
+    },
+    {
+      "turn": 1,
+      "speaker": "B",
+      "settings": {
+        "voice": "da-DK-JeppeNeural",
+        "rate": "-3%",
+        "pitch": "-5Hz"
+      },
+      "spoken": "Ja, hvis aftalen bliver til lov, udskydes stigningen i registreringsafgiften med ét år.",
+      "seconds": 6.36,
+      "words": [
+        {
+          "offset": 1402080,
+          "duration": 3479580,
+          "text": "Ja"
+        },
+        {
+          "offset": 6170000,
+          "duration": 3995000,
+          "text": "hvis"
+        },
+        {
+          "offset": 10165000,
+          "duration": 5670000,
+          "text": "aftalen"
+        },
+        {
+          "offset": 15835000,
+          "duration": 1675410,
+          "text": "bliver"
+        },
+        {
+          "offset": 17510410,
+          "duration": 1288750,
+          "text": "til"
+        },
+        {
+          "offset": 18799160,
+          "duration": 4123750,
+          "text": "lov"
+        },
+        {
+          "offset": 24211250,
+          "duration": 5154580,
+          "text": "udskydes"
+        },
+        {
+          "offset": 29365830,
+          "duration": 4123750,
+          "text": "stigningen"
+        },
+        {
+          "offset": 33489580,
+          "duration": 1288750,
+          "text": "i"
+        },
+        {
+          "offset": 34778330,
+          "duration": 12242080,
+          "text": "registreringsafgiften"
+        },
+        {
+          "offset": 47020410,
+          "duration": 2190830,
+          "text": "med"
+        },
+        {
+          "offset": 49211250,
+          "duration": 2061660,
+          "text": "ét"
+        },
+        {
+          "offset": 51273330,
+          "duration": 3608330,
+          "text": "år"
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "speaker": "A",
+      "settings": {
+        "voice": "da-DK-JeppeNeural",
+        "rate": "+0%",
+        "pitch": "+4Hz"
+      },
+      "spoken": "Men hvad koster en elbil egentlig at køre i?",
+      "seconds": 3.48,
+      "words": [
+        {
+          "offset": 1375000,
+          "duration": 1375000,
+          "text": "Men"
+        },
+        {
+          "offset": 2750000,
+          "duration": 1125000,
+          "text": "hvad"
+        },
+        {
+          "offset": 3875000,
+          "duration": 3875000,
+          "text": "koster"
+        },
+        {
+          "offset": 7750000,
+          "duration": 1875000,
+          "text": "en"
+        },
+        {
+          "offset": 9625000,
+          "duration": 5125000,
+          "text": "elbil"
+        },
+        {
+          "offset": 14750000,
+          "duration": 3750000,
+          "text": "egentlig"
+        },
+        {
+          "offset": 18500000,
+          "duration": 1250000,
+          "text": "at"
+        },
+        {
+          "offset": 19750000,
+          "duration": 3375000,
+          "text": "køre"
+        },
+        {
+          "offset": 23125000,
+          "duration": 3125000,
+          "text": "i"
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "speaker": "B",
+      "settings": {
+        "voice": "da-DK-JeppeNeural",
+        "rate": "-3%",
+        "pitch": "-5Hz"
+      },
+      "spoken": "Prøv E V Beregner. Find bilen, du overvejer, og regn på strømudgiften med dine egne tal.",
+      "seconds": 8.04,
+      "words": [
+        {
+          "offset": 1007910,
+          "duration": 3865830,
+          "text": "Prøv"
+        },
+        {
+          "offset": 4873750,
+          "duration": 2061660,
+          "text": "E"
+        },
+        {
+          "offset": 6935410,
+          "duration": 2190830,
+          "text": "V"
+        },
+        {
+          "offset": 9126250,
+          "duration": 7345410,
+          "text": "Beregner"
+        },
+        {
+          "offset": 25257910,
+          "duration": 2963750,
+          "text": "Find"
+        },
+        {
+          "offset": 28221660,
+          "duration": 4897080,
+          "text": "bilen"
+        },
+        {
+          "offset": 34536250,
+          "duration": 1546250,
+          "text": "du"
+        },
+        {
+          "offset": 36082500,
+          "duration": 7345410,
+          "text": "overvejer"
+        },
+        {
+          "offset": 44845410,
+          "duration": 1417500,
+          "text": "og"
+        },
+        {
+          "offset": 46262910,
+          "duration": 2706250,
+          "text": "regn"
+        },
+        {
+          "offset": 48969160,
+          "duration": 1030830,
+          "text": "på"
+        },
+        {
+          "offset": 50000000,
+          "duration": 9278330,
+          "text": "strømudgiften"
+        },
+        {
+          "offset": 59278330,
+          "duration": 1546250,
+          "text": "med"
+        },
+        {
+          "offset": 60824580,
+          "duration": 3221660,
+          "text": "dine"
+        },
+        {
+          "offset": 64046250,
+          "duration": 3350410,
+          "text": "egne"
+        },
+        {
+          "offset": 67397080,
+          "duration": 4381250,
+          "text": "tal"
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "speaker": "A",
+      "settings": {
+        "voice": "da-DK-JeppeNeural",
+        "rate": "+0%",
+        "pitch": "+4Hz"
+      },
+      "spoken": "Skal jeg hente en app?",
+      "seconds": 2.352,
+      "words": [
+        {
+          "offset": 1000000,
+          "duration": 3000000,
+          "text": "Skal"
+        },
+        {
+          "offset": 4000000,
+          "duration": 1625000,
+          "text": "jeg"
+        },
+        {
+          "offset": 5625000,
+          "duration": 2875000,
+          "text": "hente"
+        },
+        {
+          "offset": 8500000,
+          "duration": 1750000,
+          "text": "en"
+        },
+        {
+          "offset": 10250000,
+          "duration": 4875000,
+          "text": "app"
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "speaker": "B",
+      "settings": {
+        "voice": "da-DK-JeppeNeural",
+        "rate": "-3%",
+        "pitch": "-5Hz"
+      },
+      "spoken": "Nej, det er en gratis hjemmeside. E ve beregn, punktum de kå. Du behøver ikke logge ind.",
+      "seconds": 8.712,
+      "words": [
+        {
+          "offset": 1144160,
+          "duration": 4252500,
+          "text": "Nej"
+        },
+        {
+          "offset": 6556660,
+          "duration": 1804160,
+          "text": "det"
+        },
+        {
+          "offset": 8360830,
+          "duration": 1159580,
+          "text": "er"
+        },
+        {
+          "offset": 9520410,
+          "duration": 1546250,
+          "text": "en"
+        },
+        {
+          "offset": 11067080,
+          "duration": 4123750,
+          "text": "gratis"
+        },
+        {
+          "offset": 15190830,
+          "duration": 6958750,
+          "text": "hjemmeside"
+        },
+        {
+          "offset": 31056660,
+          "duration": 1804160,
+          "text": "E"
+        },
+        {
+          "offset": 32860830,
+          "duration": 1675410,
+          "text": "ve"
+        },
+        {
+          "offset": 34536250,
+          "duration": 5799160,
+          "text": "beregn"
+        },
+        {
+          "offset": 41752500,
+          "duration": 4381250,
+          "text": "punktum"
+        },
+        {
+          "offset": 46134160,
+          "duration": 1288330,
+          "text": "de"
+        },
+        {
+          "offset": 47422500,
+          "duration": 4381250,
+          "text": "kå"
+        },
+        {
+          "offset": 60695830,
+          "duration": 773330,
+          "text": "Du"
+        },
+        {
+          "offset": 61469160,
+          "duration": 4510410,
+          "text": "behøver"
+        },
+        {
+          "offset": 65979580,
+          "duration": 3221250,
+          "text": "ikke"
+        },
+        {
+          "offset": 69200830,
+          "duration": 3221660,
+          "text": "logge"
+        },
+        {
+          "offset": 72422500,
+          "duration": 6056660,
+          "text": "ind."
+        }
+      ]
+    }
+  ],
+  "listening_review": "not_performed",
+  "speech_source": "https://github.com/rany2/edge-tts",
+  "generation": "Microsoft Edge online Read Aloud voice, no paid Azure API or credentials; two prosody settings of one native Danish voice",
+  "heygen_generations": 0,
+  "paid_services": 0
+}
