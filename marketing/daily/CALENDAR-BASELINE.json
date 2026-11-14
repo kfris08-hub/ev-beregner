@@ -1,0 +1,254 @@
+[
+  {
+    "id": 426091794,
+    "uuid": "4183287988105003880",
+    "date": "2026-11-13T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "",
+    "text": "Velkommen til EV Beregner. Her kan du gratis regne på elbilens ladepris, strøm pr. kilometer og biløkonomi.\n\nDer er 20 beregnere. Brug dine egne tal, eller vælg en bil som udgangspunkt. Der kræves ingen brugeroprettelse.\n\nFind den beregning, du har brug for: https://www.evberegn.dk/beregnere/\n\nJeg står bag EV Beregner og tager gerne imod konkrete forslag til værktøjet.",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-7451981673011428668.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122102747061544901/posts/122103343371544901"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 426194027,
+    "uuid": "2121996151543449791",
+    "date": "2026-11-12T21:40:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "REEL",
+    "title": "Samme batteri, forskellig rækkevidde",
+    "text": "Samme batteri. To rækkevidder.\n\n60 kWh brugbar energi giver matematisk cirka 333 km ved 18 kWh/100 km og 250 km ved 24 kWh/100 km. Det er overslag. Hastighed, temperatur og kørselsforhold påvirker den faktiske rækkevidde.\n\nPrøv med dit eget batteri og forventede forbrug:\nhttps://www.evberegn.dk/beregnere/raekkevidde/#s=1&k=7&battery=60&consumption=18\n\nEV Beregner · gratis og uden login.\n#elbil #rækkevidde",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-16148741509061621709.mp4"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/29808251942197708"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427118224,
+    "uuid": "7125140747090871791",
+    "date": "2026-11-13T16:47:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "REEL",
+    "title": "Hvad koster 100 km i elbil?",
+    "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster dine 100 km i elbil?\n\n16 kWh/100 km og en samlet elpris på 2 kr./kWh giver 32 kr. i strøm pr. 100 km. Det er et valgt regneeksempel; bilens øvrige omkostninger er ikke med.\n\nPrøv med dit eget forbrug og din egen elpris:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2\n\nEV Beregner · gratis og uden login.\n#elbil #elbiløkonomi",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-7543045243674691839.mp4"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/1040987162350669"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427119724,
+    "uuid": "-6589191064007917297",
+    "date": "2026-11-16T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "",
+    "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster strømmen til 100 km i din elbil?\n\nMed et forbrug på 16 kWh/100 km og en samlet elpris på 2 kr./kWh bliver det 32 kr. i strøm pr. 100 km.\n\nDet er et regneeksempel. Brug dit eget forbrug og din egen elpris her:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2\n\nJeg står bag det gratis værktøj EV Beregner. Bilens øvrige omkostninger er ikke med i denne beregning.",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-1436563993951226378.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427119752,
+    "uuid": "-2622971657274569533",
+    "date": "2026-11-19T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "",
+    "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nStrøm eller benzin: hvad bliver energiudgiften med dine tal?\n\nEt valgt eksempel med 20.000 km om året:\n• Elbil: 16 kWh/100 km og 2 kr./kWh = 6.400 kr. i strøm.\n• Benzinbil: 16 km/l og 16 kr./l = 20.000 kr. i benzin.\n\nForskellen på 13.600 kr. gælder kun energien i dette eksempel. Købspris, værditab, forsikring og øvrige biludgifter skal vurderes særskilt.\n\nPrøv dine egne forudsætninger: https://www.evberegn.dk/beregnere/elbil-vs-benzin/#s=1&k=3&consumption=16&electricPrice=2&fuelEconomy=16&fuelPrice=16&annualKm=20000\n\nJeg står bag EV Beregner. Priserne ovenfor er valgte eksempelpriser.",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-16750293250475280474.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427119772,
+    "uuid": "7973124568287167665",
+    "date": "2026-11-23T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "",
+    "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nSamme batteri kan give meget forskellig rækkevidde.\n\nMed 60 kWh brugbart batteri og et forventet forbrug på 18 kWh/100 km er det matematiske overslag cirka 333 km. Ved 24 kWh/100 km bliver overslaget 250 km.\n\nSe hvad et andet forbrug gør ved dit regnestykke: https://www.evberegn.dk/beregnere/raekkevidde/#s=1&k=7&battery=60&consumption=18\n\nDet er et matematisk overslag. Den faktiske rækkevidde afhænger blandt andet af hastighed, temperatur og kørselsforhold. Jeg står bag EV Beregner.",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-54899677469853673.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427119812,
+    "uuid": "5694237824031212205",
+    "date": "2026-11-18T12:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "REEL",
+    "title": "Hvad koster opladning fra 20 til 80 procent?",
+    "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster det at lade fra 20 til 80 %?\n\nI eksemplet: 60 kWh brugbart batteri, 2 kr./kWh og 10 % ekstra strømforbrug. 36 kWh til batteriet bliver til 39,6 kWh betalt energi og en pris på 79,20 kr.\n\nDet er valgte forudsætninger, ikke en aktuel markedspris. Øvrige gebyrer er ikke med. Beregn med dine egne tal:\nhttps://www.evberegn.dk/beregnere/ladepris/#s=1&k=1&battery=60&electricPrice=2&from=20&to=80&overhead=10\n\nEV Beregner · gratis og uden login.\n#elbil #opladning",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-1161898881754985951.mp4"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427367138,
+    "uuid": "8403383719013468039",
+    "date": "2026-11-15T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "REEL",
+    "title": "Vælg din elbil og regn videre",
+    "text": "Har du en elbil – eller en bestemt model i tankerne?\n\nPå https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.\n\nSe hvordan i videoen: find modellen → vælg bilen → beregn med dine egne tal.\n\nEksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh er valgt til demonstrationen. Kilometerprisen dækker strømudgiften, ikke alle bilens omkostninger.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.\n\n#elbil #elbiløkonomi #EVBeregner",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-1906549249988751242.mp4"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427367157,
+    "uuid": "-6965175447170495098",
+    "date": "2026-11-21T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "Se bilen før du regner",
+    "text": "Overvejer du at købe elbil?\n\nStart med den model, du har i tankerne: https://www.evberegn.dk/\n\nSøg efter bilen, åbn modelsiden og regn videre på fx strøm pr. kilometer, ladepris eller forskellen på el og benzin. Du kan også vælge den elbil, du allerede kører i.\n\nDu bruger EV Beregner gratis på hjemmesiden – direkte i browseren og uden login. Ret tallene, så de passer til din købspris, dit forbrug og din elaftale.\n\nBilledet viser Hyundai IONIQ 5 som eksempel. Modelbilleder kan afvige i udstyr og farve; enkelte modeller mangler foto. Katalogdata er vejledende og er ikke et aktuelt pristilbud. Foto: TTTNIS / CC0; kilde og forbehold på modelsiden.\n\n#elbil #bilkøb #EVBeregner",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-11280706685607647115.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427367174,
+    "uuid": "281769916129888821",
+    "date": "2026-11-26T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "REEL",
+    "title": "Din bil – din ladepris",
+    "text": "Hvad koster en opladning af den bil, du kører i – eller overvejer at købe?\n\nPrøv selv på hjemmesiden: https://www.evberegn.dk/\n\nVælg bilmodellen, og regn videre med dens batteridata. Ret startprocent, slutprocent, elpris og ekstra strømforbrug, så beregningen passer til dit eksempel.\n\nEV Beregner er gratis og virker direkte i browseren. Uden login.\n\nI videoen bruges Hyundai IONIQ 5 og et valgt eksempel: 63 kWh, 20–80 %, 2,00 kr./kWh og 10 % ekstra strømforbrug. Beregnet ladepris: 83,16 kr. Batteridata er katalogdata; beløbet er et regneeksempel, ikke en live ladepris.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige; billedkilde og forbehold står på modelsiden.\n\n#elbil #opladning #EVBeregner",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-10394462017593155752.mp4"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427367190,
+    "uuid": "-5373484419553016410",
+    "date": "2026-11-28T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "Din bil, dine egne tal",
+    "text": "Den samme elbil kan koste forskelligt at lade, alt efter din aftale.\n\nPå https://www.evberegn.dk/ vælger du din bil og retter elprisen og forbruget, før du beregner. Så tager regnestykket udgangspunkt i dine tal.\n\nDu kan også vælge en model, du overvejer at købe, og undersøge økonomien, før du beslutter dig.\n\n20 gratis beregnere på hjemmesiden. Direkte i browseren – uden login.\n\nSkærmbilledet er et regneeksempel: 16 kWh/100 km og 2,00 kr./kWh giver 0,32 kr. i strøm pr. km. Det er strømudgiften; fx værditab, forsikring og finansiering kommer oveni. Modeldata og priser skal tilpasses din bil og aftale.\n\n#elbil #ladepris #EVBeregner",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-2426478458440564936.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427510223,
+    "uuid": "-531919666625558318",
+    "date": "2026-11-14T10:00:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "POST",
+    "title": "Hvad koster weekendens køretur?",
+    "text": "Skal du ud at køre i weekenden?\n\nSe, hvad strømmen til turen kan koste på hjemmesiden:\nhttps://www.evberegn.dk/beregnere/koeretur/\n\nVælg din egen elbil – eller en model, du overvejer at købe. Indtast turens kilometer, og ret forbrug og elpris, så tallene passer til dig.\n\nEV Beregner er gratis og virker direkte i browseren. Uden login.\n\nBeregningen viser strømudgiften til turen. Fx værditab, forsikring og andre biludgifter er ikke med. Bilens katalogdata er vejledende; brug dit eget forbrug og din samlede elpris.\n\n#elbil #biløkonomi #EVBeregner",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-8463209200881897333.png"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122102747061544901/posts/122104325415544901"
+      }
+    ],
+    "autoPublish": true
+  },
+  {
+    "id": 427572506,
+    "uuid": "-7638871568609361077",
+    "date": "2026-11-14T10:05:00",
+    "timezone": "Europe/Copenhagen",
+    "type": "STORY",
+    "title": "Din elbil – eller din næste?",
+    "text": "",
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-2263391737818180074.jpeg"
+    ],
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122102747061544901/posts/1125581723788068"
+      }
+    ],
+    "autoPublish": true
+  }
+]

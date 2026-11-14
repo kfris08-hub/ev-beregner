@@ -1,0 +1,31 @@
+name: Prepare daily Facebook starter images
+on:
+  push:
+    branches: [marketing/facebook-20261113]
+    paths: ['marketing/daily/render_starter.py', '.github/workflows/daily-facebook-starter.yml']
+permissions:
+  contents: write
+jobs:
+  starter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.56.0 Pillow==11.3.0
+      - name: Create feed image and actual Story image from the live website
+        run: python marketing/daily/render_starter.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daily-starter-20261115
+          path: marketing/daily/starter-output/
+          retention-days: 30
+      - name: Store collateral on marketing branch only
+        run: |
+          git config user.name 'EV Beregner marketing'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add marketing/daily/starter-output/
+          git commit -m 'Store new daily feed and Story images'
+          git push origin HEAD:marketing/facebook-20261113
