@@ -27,8 +27,8 @@ TURNS=[
   ('Skal jeg hente en app?','Skal jeg hente en app?')]),
  ('B','closing',[
   ('Nej, det er en gratis hjemmeside.','Nej, det er en\ngratis hjemmeside.'),
-  ('E ve beregn, punktum de kå.','evberegn.dk'),
-  ('Du behøver ikke logge ind.','Du behøver ikke\nlogge ind.')]),
+  ('Du finder linket i opslaget.','Du finder linket\ni opslaget.'),
+  ('Og du behøver ikke oprette en konto.','Og du behøver ikke\noprette en konto.')]),
 ]
 def norm(t):return ''.join(c for c in t.lower() if c.isalnum())
 async def main():
@@ -74,7 +74,7 @@ async def main():
  with wave.open(str(OUT/'dialogue.wav'),'wb') as w:
   w.setnchannels(1);w.setsampwidth(2);w.setframerate(SR);w.writeframes(b''.join(chunks))
  subprocess.run(['ffmpeg','-v','error','-y','-i',str(OUT/'dialogue.wav'),'-c:a','libmp3lame','-b:a','128k',str(OUT/'dialogue.mp3')],check=True)
- report={'sample_rate':SR,'seconds':cursor,'lines':timeline,'speech_model':'Microsoft da-DK-JeppeNeural via edge-tts 7.3.1','roles':ROLES,'post_pitch_shifting':False,'word_alignment':'service-returned WordBoundary metadata; UTF-8 normalized source text matches','pronunciation_notes':{'brand':'E V Beregner with Danish voice locale','domain':'E ve beregn, punktum de kå.','legal':'conditional clause comes first; whole sentence is synthesized together'},'turns':word_report,'listening_review':'not_performed','speech_source':'https://github.com/rany2/edge-tts','generation':'Microsoft Edge online Read Aloud voice, no paid Azure API or credentials; two prosody settings of one native Danish voice','heygen_generations':0,'paid_services':0}
+ report={'sample_rate':SR,'seconds':cursor,'lines':timeline,'speech_model':'Microsoft da-DK-JeppeNeural via edge-tts 7.3.1','roles':ROLES,'post_pitch_shifting':False,'word_alignment':'service-returned WordBoundary metadata; UTF-8 normalized source text matches','pronunciation_notes':{'brand':'E V Beregner with Danish voice locale','domain':'The address is displayed graphically; speech says the link is in the post.','legal':'conditional clause comes first; whole sentence is synthesized together'},'turns':word_report,'listening_review':'not_performed','speech_source':'https://github.com/rany2/edge-tts','generation':'Microsoft Edge online Read Aloud voice, no paid Azure API or credentials; two prosody settings of one native Danish voice','heygen_generations':0,'paid_services':0}
  (OUT/'TIMELINE.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
  print(json.dumps({'seconds':cursor,'phrases':len(timeline),'turns':len(TURNS),'bytes':(OUT/'dialogue.mp3').stat().st_size}))
 try:asyncio.run(main())

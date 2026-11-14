@@ -13,7 +13,7 @@ concurrency:
 jobs:
   speech:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,16 +21,18 @@ jobs:
           python-version: '3.11'
       - name: Install speech tools
         run: |
-          python -m pip install edge-tts==7.3.1
+          python -m pip install edge-tts==7.3.1 faster-whisper==1.2.1
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
       - name: Produce natural Danish speech
         run: python marketing/animated-20261115/improve_voice.py
+      - name: Independently transcribe the revised speech
+        run: python marketing/animated-20261115/review_voice.py
       - name: Save audio and actual word timings on marketing branch
         run: |
           git config user.name "EV Beregner media"
           git config user.email "media@users.noreply.github.com"
-          git add marketing/animated-20261115/voice-v2/dialogue.mp3 marketing/animated-20261115/voice-v2/TIMELINE.json
+          git add marketing/animated-20261115/voice-v2/dialogue.mp3 marketing/animated-20261115/voice-v2/TIMELINE.json marketing/animated-20261115/voice-v2/ASR-REVIEW.json
           git commit -m "Save native Danish neural dialogue with measured word timings"
           git pull --rebase origin marketing/facebook-20261113
           git push origin HEAD:marketing/facebook-20261113
