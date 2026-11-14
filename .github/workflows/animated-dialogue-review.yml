@@ -1,9 +1,6 @@
 name: Review Danish dialogue pronunciation
 on:
-  push:
-    branches: [marketing/facebook-20261113]
-    paths:
-      - marketing/animated-20261115/review_voice.py
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
