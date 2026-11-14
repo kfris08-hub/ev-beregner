@@ -52,7 +52,7 @@ for slug,photo in catalog.items():
   assert image['contentUrl']==ORIGIN+photo['src'] and image['license']==photo['license_url'] and image['creditText']==photo['author'],slug
  else:
   assert photo['status']=='missing' and photo.get('reason'),slug
-  assert not page.image.get('src') and 'Vi mangler et kontrolleret modelbillede.' in text,slug
+  assert not page.image.get('src') and 'Der er endnu ikke et billede af denne model.' in text,slug
 assert seen=={p.name for p in (ROOT/'assets/cars').glob('*.webp')},'Unreferenced photos should not be published'
 root=ET.parse(ROOT/'sitemap.xml')
 images=root.findall('.//{http://www.google.com/schemas/sitemap-image/1.1}loc')
