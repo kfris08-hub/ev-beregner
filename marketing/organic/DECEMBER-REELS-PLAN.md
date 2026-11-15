@@ -5,7 +5,7 @@ Ejerens seneste instruktion 13. november 2026: Lav flere reklame-reels i decembe
 ## Det seeren skal se
 
 - Den ægte hjemmeside eller en ægte beregnerside er synlig fra starten, senest inden for de første 2 sekunder. Vis en konkret, læsbar mobilvisning uden browserramme. Optagelsen hentes fra evberegn.dk; den bliver ikke tegnet af en billed-/videomodel.
-- Bevar den aftalte naturtro stil med to fiktive voksne personer, der taler dansk og viser værktøjet. En ændring til én avatarpræsentator må ikke ske ubemærket.
+- Følg den nye ejerinstruktion fra 15. november: som udgangspunkt tre fiktive voksne ved elbilen, og kvinder i centrale, varierede roller i mindst to af de næste tre personfilm. De taler naturligt dansk og viser værktøjet. En ændring til én avatarpræsentator må ikke ske ubemærket.
 - Under forklaringen vises den ægte side med de indtastede tal og det tilhørende resultat som et tydeligt fuldskærmsklip. Et genereret telefonbillede med opdigtet skrift er ikke produktevidens.
 - Slut af med den korrekt gengivne adresse **evberegn.dk**, så det er klart, hvor seeren skal gå hen. Facebook-opslagsteksten starter også med hjemmesidelinket.
 
@@ -47,3 +47,9 @@ Se filmen i normal hastighed, og lyt til hele dialogen. Kontroller især de før
 ## Facebook-status 13. november 2026
 
 Rækkevidde-reelen blev udgivet 12. november: https://facebook.com/reel/29808251942197708 . Den indeholder ejerens rapporterede tekstfejl; den er ikke slettet eller erstattet af dette dokument. Kilometerpris-reelen er nu offentliggjort: https://facebook.com/reel/1040987162350669 . Den blev flyttet frem fra 15. november og har hjemmesidelinket først i opslagsteksten. Opladningsreelen står fortsat til 18. november kl. 12 dansk tid. De øvrige fremtidige billedopslag har også hjemmesiden tydeligt i første linje. Der er ikke ændret i Facebook-sidens profilfelter. Kvitteringer findes i NOVEMBER-13-PUBLICATION.json.
+
+## Opdateret kreativ retning 15. november
+
+Brug marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md og NAESTE-TRE-MANUSKRIPTER.md som den aktuelle kreative retning. Manuskripterne om bilvalg, køretur og leasing/køb erstatter de tidligere foreløbige idéer som udgangspunkt; de er ikke færdige film eller bekræftede udgivelser. Vælg ved produktion passende ledige, allerede reserverede Reel-pladser i DAILY-PLAN.json og koordinér dagens øvrige formater, uden at flytte en faktisk aftale eller miste variation og de 20 beregnere. De tidligere datoer er foreløbige, ikke garantier.
+
+Læg en læsbar opfordring til hjemmesiden omkring sekund 10–15, behold rigtig hjemmesidevisning senest sekund 2, og læg tekst på efter generering. Tildel kvinder både spørgende, forklarende og besluttende roller. Mål Reel-specifik rækkevidde og kønsfordeling, når data findes; ingen garanti for en bestemt fordeling. Alle kvoter, rettigheder, forbehold og kvalitetskrav ovenfor gælder stadig. Ingen ny generering er udført med denne opdatering.

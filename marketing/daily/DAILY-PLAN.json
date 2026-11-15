@@ -295,7 +295,16 @@
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster den opladning, du faktisk har brug for?",
+            "scenario": "En kvindelig elbilejer forklarer sin ven, hvilke egne input opladningsberegningen bruger.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-18",
@@ -339,7 +348,16 @@
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster den opladning, du faktisk har brug for?",
+            "scenario": "En kvindelig elbilejer forklarer sin ven, hvilke egne input opladningsberegningen bruger.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -389,7 +407,16 @@
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Giver el mening med mine kilometer?",
+            "scenario": "To veninder undersøger energiudgifter med samme egne forudsætninger; ingen sikker besparelse.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-19",
@@ -410,7 +437,16 @@
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Giver el mening med mine kilometer?",
+            "scenario": "To veninder undersøger energiudgifter med samme egne forudsætninger; ingen sikker besparelse.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -437,7 +473,16 @@
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad sker der, hvis mit forbrug stiger?",
+            "scenario": "En kvindelig fører undersøger forskellen i matematisk rækkevidde med sin ven.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-20",
@@ -458,7 +503,16 @@
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad sker der, hvis mit forbrug stiger?",
+            "scenario": "En kvindelig fører undersøger forskellen i matematisk rækkevidde med sin ven.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-20",
@@ -479,7 +533,16 @@
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad sker der, hvis mit forbrug stiger?",
+            "scenario": "En kvindelig fører undersøger forskellen i matematisk rækkevidde med sin ven.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -529,7 +592,16 @@
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Jeg overvejer den her elbil. Hvad skal jeg regne på?",
+            "scenario": "En kvinde vælger selv bil; en kvindelig ven forklarer modelvalg og relevante beregnere.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-21",
@@ -550,7 +622,16 @@
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Jeg overvejer den her elbil. Hvad skal jeg regne på?",
+            "scenario": "En kvinde vælger selv bil; en kvindelig ven forklarer modelvalg og relevante beregnere.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -577,7 +658,16 @@
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvornår kan jeg køre igen?",
+            "scenario": "En kvindelig elbilejer forklarer, at ladetid er et overslag med valgte forudsætninger.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-22",
@@ -598,7 +688,16 @@
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvornår kan jeg køre igen?",
+            "scenario": "En kvindelig elbilejer forklarer, at ladetid er et overslag med valgte forudsætninger.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-22",
@@ -619,7 +718,16 @@
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvornår kan jeg køre igen?",
+            "scenario": "En kvindelig elbilejer forklarer, at ladetid er et overslag med valgte forudsætninger.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -669,7 +777,16 @@
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor langt rækker det med mit eget forbrug?",
+            "scenario": "Venner ved en elbil sammenligner to egne forbrugstal; en kvinde viser beregneren.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-23",
@@ -690,7 +807,16 @@
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor langt rækker det med mit eget forbrug?",
+            "scenario": "Venner ved en elbil sammenligner to egne forbrugstal; en kvinde viser beregneren.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -717,7 +843,16 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger mine ture på et helt år?",
+            "scenario": "En kvindelig pendler bruger egne kilometer og forbrug, uden at hendes brugsmønster gøres typisk for et køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-24",
@@ -738,7 +873,16 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger mine ture på et helt år?",
+            "scenario": "En kvindelig pendler bruger egne kilometer og forbrug, uden at hendes brugsmønster gøres typisk for et køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-24",
@@ -759,7 +903,16 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger mine ture på et helt år?",
+            "scenario": "En kvindelig pendler bruger egne kilometer og forbrug, uden at hendes brugsmønster gøres typisk for et køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -786,7 +939,16 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Regner jeg med den elpris, jeg selv betaler?",
+            "scenario": "En kvindelig bilejer forklarer forskellen mellem en valgt eksempelpris og sin egen samlede elpris.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-25",
@@ -807,7 +969,16 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Regner jeg med den elpris, jeg selv betaler?",
+            "scenario": "En kvindelig bilejer forklarer forskellen mellem en valgt eksempelpris og sin egen samlede elpris.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-25",
@@ -828,7 +999,16 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Regner jeg med den elpris, jeg selv betaler?",
+            "scenario": "En kvindelig bilejer forklarer forskellen mellem en valgt eksempelpris og sin egen samlede elpris.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -855,7 +1035,16 @@
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil – din ladepris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-26",
@@ -899,7 +1088,16 @@
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil – din ladepris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -926,7 +1124,16 @@
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad skal bilen fylde i mit budget?",
+            "scenario": "En kvinde undersøger sit eget budget sammen med venner; strøm og øvrige udgifter holdes adskilt.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-27",
@@ -947,7 +1154,16 @@
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad skal bilen fylde i mit budget?",
+            "scenario": "En kvinde undersøger sit eget budget sammen med venner; strøm og øvrige udgifter holdes adskilt.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-27",
@@ -968,7 +1184,16 @@
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad skal bilen fylde i mit budget?",
+            "scenario": "En kvinde undersøger sit eget budget sammen med venner; strøm og øvrige udgifter holdes adskilt.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1018,7 +1243,16 @@
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Kan jeg bruge min egen bil og mine egne tal?",
+            "scenario": "En kvindelig elbilejer viser værktøjet til en mandlig ven, der er ny i elbiler.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-28",
@@ -1039,7 +1273,16 @@
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Kan jeg bruge min egen bil og mine egne tal?",
+            "scenario": "En kvindelig elbilejer viser værktøjet til en mandlig ven, der er ny i elbiler.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1066,7 +1309,16 @@
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Skal jeg lease eller købe min næste elbil?",
+            "scenario": "To veninder sammenligner egne tilbud over samme periode; begge er aktive beslutningstagere.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-29",
@@ -1087,7 +1339,16 @@
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Skal jeg lease eller købe min næste elbil?",
+            "scenario": "To veninder sammenligner egne tilbud over samme periode; begge er aktive beslutningstagere.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-29",
@@ -1108,7 +1369,16 @@
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Skal jeg lease eller købe min næste elbil?",
+            "scenario": "To veninder sammenligner egne tilbud over samme periode; begge er aktive beslutningstagere.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1135,7 +1405,16 @@
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Har jeg fået bilens andre udgifter med?",
+            "scenario": "En blandet vennegruppe, hvor en kvinde forklarer forskellen på strømudgift og samlet biløkonomi.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-30",
@@ -1156,7 +1435,16 @@
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Har jeg fået bilens andre udgifter med?",
+            "scenario": "En blandet vennegruppe, hvor en kvinde forklarer forskellen på strømudgift og samlet biløkonomi.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-11-30",
@@ -1177,7 +1465,16 @@
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Har jeg fået bilens andre udgifter med?",
+            "scenario": "En blandet vennegruppe, hvor en kvinde forklarer forskellen på strømudgift og samlet biløkonomi.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1204,7 +1501,16 @@
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger du på strøm derhjemme?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-01",
@@ -1225,7 +1531,16 @@
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger du på strøm derhjemme?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-01",
@@ -1246,7 +1561,16 @@
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger du på strøm derhjemme?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1273,7 +1597,16 @@
           "quality_note": "Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "El eller diesel: sammenlign energien",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-02",
@@ -1294,7 +1627,16 @@
           "quality_note": "Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "El eller diesel: sammenlign energien",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-02",
@@ -1315,7 +1657,16 @@
           "quality_note": "Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "El eller diesel: sammenlign energien",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1342,7 +1693,16 @@
           "quality_note": "Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvilken batterikapacitet regner du med?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-03",
@@ -1363,7 +1723,16 @@
           "quality_note": "Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvilken batterikapacitet regner du med?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-03",
@@ -1384,7 +1753,16 @@
           "quality_note": "Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvilken batterikapacitet regner du med?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1411,7 +1789,16 @@
           "quality_note": "Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Kan solceller dække en del af bilens strøm?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-04",
@@ -1432,7 +1819,16 @@
           "quality_note": "Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Kan solceller dække en del af bilens strøm?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-04",
@@ -1453,7 +1849,16 @@
           "quality_note": "Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Kan solceller dække en del af bilens strøm?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1480,7 +1885,16 @@
           "quality_note": "Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster vedligeholdelse pr. kilometer?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-05",
@@ -1501,7 +1915,16 @@
           "quality_note": "Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster vedligeholdelse pr. kilometer?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-05",
@@ -1522,7 +1945,16 @@
           "quality_note": "Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster vedligeholdelse pr. kilometer?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1549,7 +1981,16 @@
           "quality_note": "En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder energien for dit årsbudget?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-06",
@@ -1570,7 +2011,16 @@
           "quality_note": "En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder energien for dit årsbudget?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-06",
@@ -1591,7 +2041,16 @@
           "quality_note": "En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder energien for dit årsbudget?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1618,7 +2077,16 @@
           "quality_note": "Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad svarer dit årsoverslag til pr. måned?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-07",
@@ -1639,7 +2107,16 @@
           "quality_note": "Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad svarer dit årsoverslag til pr. måned?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-07",
@@ -1660,7 +2137,16 @@
           "quality_note": "Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad svarer dit årsoverslag til pr. måned?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1687,7 +2173,16 @@
           "quality_note": "Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Skal du køre langt? Start med dit eget forbrug",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-08",
@@ -1708,7 +2203,16 @@
           "quality_note": "Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Skal du køre langt? Start med dit eget forbrug",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-08",
@@ -1729,7 +2233,16 @@
           "quality_note": "Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Skal du køre langt? Start med dit eget forbrug",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1756,7 +2269,16 @@
           "quality_note": "Energibehov er ikke det samme som en fuld rute- eller ladestopplan.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor mange kWh kræver køreturen?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-09",
@@ -1777,7 +2299,16 @@
           "quality_note": "Energibehov er ikke det samme som en fuld rute- eller ladestopplan.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor mange kWh kræver køreturen?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-09",
@@ -1798,7 +2329,16 @@
           "quality_note": "Energibehov er ikke det samme som en fuld rute- eller ladestopplan.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor mange kWh kræver køreturen?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1825,7 +2365,16 @@
           "quality_note": "Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder dit skøn over værditab?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-10",
@@ -1846,7 +2395,16 @@
           "quality_note": "Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder dit skøn over værditab?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-10",
@@ -1867,7 +2425,16 @@
           "quality_note": "Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder dit skøn over værditab?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1894,7 +2461,16 @@
           "quality_note": "Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Brugt elbil? Brug din egen købspris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-11",
@@ -1915,7 +2491,16 @@
           "quality_note": "Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Brugt elbil? Brug din egen købspris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-11",
@@ -1936,7 +2521,16 @@
           "quality_note": "Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Brugt elbil? Brug din egen købspris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -1963,7 +2557,16 @@
           "quality_note": "Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder ekstra strømforbrug ved opladning?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-12",
@@ -1984,7 +2587,16 @@
           "quality_note": "Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder ekstra strømforbrug ved opladning?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-12",
@@ -2005,7 +2617,16 @@
           "quality_note": "Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder ekstra strømforbrug ved opladning?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2032,7 +2653,16 @@
           "quality_note": "Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Sammenlign to biler med samme forudsætninger",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-13",
@@ -2053,7 +2683,16 @@
           "quality_note": "Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Sammenlign to biler med samme forudsætninger",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-13",
@@ -2074,7 +2713,16 @@
           "quality_note": "Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Sammenlign to biler med samme forudsætninger",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2101,7 +2749,16 @@
           "quality_note": "Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Find den beregner, du faktisk har brug for",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-14",
@@ -2122,7 +2779,16 @@
           "quality_note": "Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Find den beregner, du faktisk har brug for",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-14",
@@ -2143,7 +2809,16 @@
           "quality_note": "Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Find den beregner, du faktisk har brug for",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2170,7 +2845,16 @@
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din elbil – eller din næste?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-15",
@@ -2191,7 +2875,16 @@
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din elbil – eller din næste?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-15",
@@ -2212,7 +2905,16 @@
           "quality_note": "Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din elbil – eller din næste?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2239,7 +2941,16 @@
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster strømmen til 100 km?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-16",
@@ -2260,7 +2971,16 @@
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster strømmen til 100 km?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-16",
@@ -2281,7 +3001,16 @@
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster strømmen til 100 km?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2308,7 +3037,16 @@
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster weekendens eller hverdagens tur?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-17",
@@ -2329,7 +3067,16 @@
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster weekendens eller hverdagens tur?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-17",
@@ -2350,7 +3097,16 @@
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster weekendens eller hverdagens tur?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2377,7 +3133,16 @@
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster 20 til 80 procent?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-18",
@@ -2398,7 +3163,16 @@
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster 20 til 80 procent?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-18",
@@ -2419,7 +3193,16 @@
           "quality_note": "Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster 20 til 80 procent?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2446,7 +3229,16 @@
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "El eller benzin med dine egne tal?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-19",
@@ -2467,7 +3259,16 @@
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "El eller benzin med dine egne tal?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-19",
@@ -2488,7 +3289,16 @@
           "quality_note": "Energiforskellen er ikke en beregning af alle ejeromkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "El eller benzin med dine egne tal?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2515,7 +3325,16 @@
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad gør højere forbrug ved rækkevidden?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-20",
@@ -2536,7 +3355,16 @@
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad gør højere forbrug ved rækkevidden?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-20",
@@ -2557,7 +3385,16 @@
           "quality_note": "Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad gør højere forbrug ved rækkevidden?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2584,7 +3421,16 @@
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Regn på bilen, før du beslutter dig",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-21",
@@ -2605,7 +3451,16 @@
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Regn på bilen, før du beslutter dig",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-21",
@@ -2626,7 +3481,16 @@
           "quality_note": "Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Regn på bilen, før du beslutter dig",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2653,7 +3517,16 @@
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor lang tid skal bilen lade?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-22",
@@ -2674,7 +3547,16 @@
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor lang tid skal bilen lade?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-22",
@@ -2695,7 +3577,16 @@
           "quality_note": "Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor lang tid skal bilen lade?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2722,7 +3613,16 @@
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Batteri og forbrug: hvor langt rækker det?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-23",
@@ -2743,7 +3643,16 @@
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Batteri og forbrug: hvor langt rækker det?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-23",
@@ -2764,7 +3673,16 @@
           "quality_note": "Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Batteri og forbrug: hvor langt rækker det?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2791,7 +3709,16 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor mange kWh bruger din elbil om året?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-24",
@@ -2812,7 +3739,16 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor mange kWh bruger din elbil om året?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-24",
@@ -2833,7 +3769,16 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvor mange kWh bruger din elbil om året?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2860,7 +3805,16 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder din ladepris for økonomien?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-25",
@@ -2881,7 +3835,16 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder din ladepris for økonomien?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-25",
@@ -2902,7 +3865,16 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad betyder din ladepris for økonomien?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2929,7 +3901,16 @@
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil – din ladepris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-26",
@@ -2950,7 +3931,16 @@
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil – din ladepris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-26",
@@ -2971,7 +3961,16 @@
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil – din ladepris",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -2998,7 +3997,16 @@
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad fylder bilen i dit månedsbudget?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-27",
@@ -3019,7 +4027,16 @@
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad fylder bilen i dit månedsbudget?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-27",
@@ -3040,7 +4057,16 @@
           "quality_note": "Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad fylder bilen i dit månedsbudget?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -3067,7 +4093,16 @@
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil. Din elpris. Dine tal.",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-28",
@@ -3088,7 +4123,16 @@
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil. Din elpris. Dine tal.",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-28",
@@ -3109,7 +4153,16 @@
           "quality_note": "Eksempelværdier er ikke et løfte om din faktiske strømudgift.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Din bil. Din elpris. Dine tal.",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -3136,7 +4189,16 @@
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Leasing eller køb over samme periode?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-29",
@@ -3157,7 +4219,16 @@
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Leasing eller køb over samme periode?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-29",
@@ -3178,7 +4249,16 @@
           "quality_note": "Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Leasing eller køb over samme periode?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -3205,7 +4285,16 @@
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster bilen samlet over fem år?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-30",
@@ -3226,7 +4315,16 @@
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster bilen samlet over fem år?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-30",
@@ -3247,7 +4345,16 @@
           "quality_note": "Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad koster bilen samlet over fem år?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     },
@@ -3274,7 +4381,16 @@
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger du på strøm derhjemme?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-31",
@@ -3295,7 +4411,16 @@
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
           "existing_media": [],
           "publication_route": "METRICOOL_RESERVED_NOT_SCHEDULED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger du på strøm derhjemme?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         },
         {
           "date": "2026-12-31",
@@ -3316,7 +4441,16 @@
           "quality_note": "Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "creative_brief": {
+            "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+            "source": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+            "opening_question": "Hvad bruger du på strøm derhjemme?",
+            "scenario": "Et konkret hverdagsspørgsmål; variér kvinder som bilvælgere, førere og forklarere uden at antage interesser ud fra køn.",
+            "person_scene_status": "not_produced",
+            "production_note": "Question-answer structure using verified real UI and typography; new talking person footage only when actually available within rights and quota.",
+            "no_extra_publication": true
+          }
         }
       ]
     }
@@ -3355,5 +4489,31 @@
     ],
     "rule": "Only locally allocated Metricool slots may be auto-scheduled, within the actual free quota. Reserved does not mean scheduled."
   },
-  "latest_production_run": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
+  "latest_production_run": "marketing/daily/runs/2026-11-15/READY-CONTENT.json",
+  "creative_direction": {
+    "version": "SAMTALE-OG-BREDERE-PUBLIKUM-20261115",
+    "owner_instruction_date": "2026-11-15",
+    "brief": "marketing/creative/SAMTALE-OG-BREDERE-PUBLIKUM.md",
+    "scripts": "marketing/creative/NAESTE-TRE-MANUSKRIPTER.md",
+    "reference": "Owner-identified Reel with three adults meeting at an electric car",
+    "goal": "Retain the conversation format and test broader reach among women",
+    "next_person_films": {
+      "people": 3,
+      "women_in_central_roles_minimum_of_next_three": 2
+    },
+    "real_website_visible_by_second": 2,
+    "website_call_to_action_seconds": [
+      10,
+      15
+    ],
+    "private_analytics_in_public_plan": false,
+    "organic_audience_guaranteed": false,
+    "new_november_heygen_generations": 0,
+    "publication_routes_or_appointments_changed": false,
+    "already_finished_manual_packages_preserved": [
+      "2026-11-16",
+      "2026-11-17"
+    ],
+    "note": "Scripts and briefs are not finished films or scheduled publications."
+  }
 }

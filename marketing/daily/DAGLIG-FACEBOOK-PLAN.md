@@ -2,12 +2,20 @@
 
 Periode: 2026-11-15–2026-12-31. Én POST, én REEL og én STORY pr. dag som produktionsmål. 141 planlagte indholdspladser; dette er ikke en kvittering for udgivelse.
 
+## Kreativ retning fra 15. november 2026
+
+Følg samtaleformen fra ejerens reference med tre personer ved bilen. Nye personfilm får kvinder i centrale og varierede roller i mindst to af de næste tre film. Se [den fælles brief](../creative/SAMTALE-OG-BREDERE-PUBLIKUM.md) og [de tre manuskripter](../creative/NAESTE-TRE-MANUSKRIPTER.md). Dette er en afprøvning; organisk kønsfordeling kan ikke garanteres.
+
+Åbn med ét konkret spørgsmål. Vis den ægte hjemmeside og EV Beregner senest sekund 2, giv et nyttigt svar hurtigt og en tydelig vej til hjemmesiden omkring sekund 10–15. Brug rolig dansk tale og kontrollerede tekstlag. Indtil ny personproduktion er mulig, bruges spørgsmål–svar-formen med rigtige skærmklip og typografi; illustrativ grafik kaldes ikke nye talende mennesker.
+
+De færdige pakker til 16.–17. november og alle eksisterende aftaler bevares. Den kreative retning er lagt på endnu ikke producerede planrækker. Der er ikke produceret eller planlagt nye film med denne opdatering. Højst tre HeyGen-forsøg i december; ingen i november. Den separate decemberopgave vælger passende allerede reserverede Reel-pladser ved produktion.
+
 ## Daglig rytme
 
 | Tid, dansk | Format | Opgave |
 |---|---|---|
 | 10.00 | Opslag | Ét konkret spørgsmål, en nyttig forklaring og link til hjemmesiden. |
-| 14.00 | Reel | Kort demonstration af den ægte hjemmeside og ét resultat. |
+| 14.00 | Reel | Ét spørgsmål og et svar med ægte hjemmeside; personfilm når færdige og kvalitetssikrede. |
 | 19.00 | Story | Ét lodret stillbillede med én pointe og evberegn.dk. |
 
 Eksisterende publiceringstider bevares. 15. og 26. november ligger den eksisterende Reel kl. 10; dagens ekstra opslag foreslås kl. 13. Opladningsreelen 18. november forbliver kl. 12. Ingen dubletter.
@@ -16,7 +24,7 @@ Eksisterende publiceringstider bevares. 15. og 26. november ligger den eksistere
 
 | Dato | Tema | Opslag | Reel | Story |
 |---|---|---|
-| 2026-11-15 | Bilvalg | 13:00 – Metricool, planlagt | 10:00 – Metricool, planlagt | 19:00 – Metricool, planlagt |
+| 2026-11-15 | Bilvalg | 13:00 – udgivet på Facebook | 10:00 – udgivet på Facebook | 19:00 – udgivet på Facebook |
 | 2026-11-16 | Kilometerpris | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
 | 2026-11-17 | Køretur | 10:00 – manuel i Meta Business Suite | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
 | 2026-11-18 | Ladepris | 10:00 – manuel i Meta Business Suite | 12:00 – Metricool, planlagt | 19:00 – manuel i Meta Business Suite |
@@ -44,7 +52,7 @@ Højst tre nye generationer/forsøg i december, aldrig før december og aldrig f
 
 ## Udgivelse og den konkrete grænse
 
-Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Kalenderen viser 5 udgivne og 10 kommende novemberudgivelser på kontroltidspunktet; en kontovisning kan indeholde yderligere forbrug.
+Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Se de daterede kalender- og udgivelseskvitteringer for den aktuelle fordeling mellem udgivet og kommende indhold; en kontovisning kan indeholde yderligere forbrug.
 
 Ejeren har valgt at holde det gratis. Den daglige opgave producerer materialet, og ejeren planlægger de manuelle pladser i Meta Business Suite. Der er ingen tilsluttet native Meta-udgivelsesforbindelse her. Intet abonnement er ændret eller købt.
 
