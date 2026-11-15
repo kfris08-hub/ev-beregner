@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Europe/Copenhagen",
+  "manual_materials": [
+    {
+      "date": "2026-11-17",
+      "time": "10:00",
+      "timezone": "Europe/Copenhagen",
+      "type": "POST",
+      "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
+      "publication_route": "MANUAL_META_BUSINESS_SUITE",
+      "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-17-post.jpg",
+      "caption": "Hvad koster din næste køretur i strøm? ⚡\n\nEt regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.\n\nFind din egen elbil – eller den, du overvejer at købe. Indtast turens samlede kilometer, og brug dit eget forventede forbrug og din samlede elpris.\n\nPrøv gratis på EV Beregners hjemmeside, uden login:\nhttps://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5\n\nBeregningen viser strømudgiften. Fx værditab, forsikring, parkering og andre biludgifter er ikke med. Priser og forbrug her er valgte eksempelværdier.\n\n#elbil #elbiløkonomi #EVBeregner\n",
+      "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+      "scheduled": false,
+      "public_url": null
+    },
+    {
+      "date": "2026-11-17",
+      "time": "14:00",
+      "timezone": "Europe/Copenhagen",
+      "type": "REEL",
+      "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
+      "publication_route": "MANUAL_META_BUSINESS_SUITE",
+      "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-17-reel.mp4",
+      "caption": "Hvad koster din næste køretur i strøm? ⚡\n\nEt regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.\n\nFind din egen elbil – eller den, du overvejer at købe. Indtast turens samlede kilometer, og brug dit eget forventede forbrug og din samlede elpris.\n\nPrøv gratis på EV Beregners hjemmeside, uden login:\nhttps://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5\n\nBeregningen viser strømudgiften. Fx værditab, forsikring, parkering og andre biludgifter er ikke med. Priser og forbrug her er valgte eksempelværdier.\n\nHyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke alle varianter har foto. Foto: TTTNIS / CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg\n\n#elbil #elbiløkonomi #EVBeregner\n",
+      "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+      "scheduled": false,
+      "public_url": null
+    },
+    {
+      "date": "2026-11-17",
+      "time": "19:00",
+      "timezone": "Europe/Copenhagen",
+      "type": "STORY",
+      "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
+      "publication_route": "MANUAL_META_BUSINESS_SUITE",
+      "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-17-story.jpg",
+      "caption": "",
+      "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_story#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+      "scheduled": false,
+      "public_url": null
+    }
+  ],
+  "metricool_post": null,
+  "native_meta_calendar_access": false
+}

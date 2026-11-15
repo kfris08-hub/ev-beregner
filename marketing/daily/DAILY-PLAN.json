@@ -55,7 +55,10 @@
             "https://static.metricool.com/planner/202611/8064733-file-3255686828875595644.jpeg"
           ],
           "publication_route": "METRICOOL_CONFIRMED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "calendar_verified_utc": "2026-11-15 09:08:54 UTC",
+          "publication_status": "PENDING",
+          "public_url": null
         },
         {
           "date": "2026-11-15",
@@ -66,7 +69,7 @@
           "title": "Vælg din elbil og regn videre",
           "destination": "https://www.evberegn.dk/",
           "caption": "Har du en elbil – eller en bestemt model i tankerne?\n\nPå https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.\n\nSe hvordan i videoen: find modellen → vælg bilen → beregn med dine egne tal.\n\nEksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh er valgt til demonstrationen. Kilometerprisen dækker strømudgiften, ikke alle bilens omkostninger.\n\nModelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.\n\n#elbil #elbiløkonomi #EVBeregner",
-          "status": "already_scheduled",
+          "status": "PUBLISHED",
           "existing_id": 427367138,
           "existing_uuid": "8403383719013468039",
           "production": "reuse_existing",
@@ -78,7 +81,15 @@
             "https://static.metricool.com/planner/202611/8064733-file-1906549249988751242.mp4"
           ],
           "publication_route": "METRICOOL_CONFIRMED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "calendar_verified_utc": "2026-11-15 09:08:54 UTC",
+          "publication_status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1149250870815125",
+          "repair_candidate": {
+            "path": "marketing/daily/runs/2026-11-15/output/2026-11-15-reel-clean.mp4",
+            "status": "READY_NOT_APPLIED",
+            "reason": "Original 10:00 time passed before replacement was verified. Existing publication preserved; no duplicate or reschedule."
+          }
         },
         {
           "date": "2026-11-15",
@@ -101,7 +112,10 @@
             "https://static.metricool.com/planner/202611/8064733-file-15085539356463928845.jpeg"
           ],
           "publication_route": "METRICOOL_CONFIRMED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "calendar_verified_utc": "2026-11-15 09:08:54 UTC",
+          "publication_status": "PENDING",
+          "public_url": null
         }
       ]
     },
@@ -130,7 +144,10 @@
             "https://static.metricool.com/planner/202611/8064733-file-1436563993951226378.png"
           ],
           "publication_route": "METRICOOL_CONFIRMED",
-          "owner_action": "Do not duplicate in Meta Business Suite"
+          "owner_action": "Do not duplicate in Meta Business Suite",
+          "calendar_verified_utc": "2026-11-15 09:08:54 UTC",
+          "publication_status": "PENDING",
+          "public_url": null
         },
         {
           "date": "2026-11-16",
@@ -139,19 +156,21 @@
           "type": "REEL",
           "theme": "Kilometerpris",
           "title": "Hvad koster strømmen til 100 km?",
-          "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel",
-          "caption": "Hvad koster strømmen til 100 km?\n\nMed 16 kWh/100 km og en valgt elpris på 2 kr./kWh er strømudgiften 32 kr. pr. 100 km. Prøv med dit eget forbrug og din samlede elpris.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel\n\nDirekte i browseren – uden login.\n\nEt regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.\n\n#elbil #EVBeregner",
-          "status": "production_plan_only",
+          "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
+          "caption": "Hvad koster dine 100 km i strøm? ⚡\n\nI dette regneeksempel giver 16 kWh/100 km og en samlet elpris på 2,00 kr./kWh en strømudgift på 32 kr. pr. 100 km.\n\nVælg din egen elbil – eller en model, du overvejer at købe – og ret forbrug og elpris, så tallene passer til dig.\n\nPrøv gratis på hjemmesiden, uden login:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2\n\nDet viste er et regneeksempel, ikke en aktuel elpris eller bilens samlede ejeromkostning. Brug dit eget forbrug og din egen samlede elpris.\n\nHyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke alle varianter har foto. Foto: TTTNIS / CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg\n\n#elbil #elbiløkonomi #EVBeregner\n",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "finished_original_non_heygen",
           "heygen_generation_allowed": false,
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar",
+          "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-16-reel.mp4",
+          "production_receipt": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
         },
         {
           "date": "2026-11-16",
@@ -160,19 +179,21 @@
           "type": "STORY",
           "theme": "Kilometerpris",
           "title": "Hvad koster strømmen til 100 km?",
-          "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story",
+          "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
           "caption": "",
-          "status": "production_plan_only",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "finished_original_non_heygen",
           "heygen_generation_allowed": false,
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar",
+          "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-16-story.jpg",
+          "production_receipt": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
         }
       ]
     },
@@ -187,19 +208,21 @@
           "type": "POST",
           "theme": "Køretur",
           "title": "Hvad koster weekendens eller hverdagens tur?",
-          "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post",
-          "caption": "Hvad koster weekendens eller hverdagens tur?\n\nIndtast turens kilometer, bilens forbrug og din elpris. Du kan vælge bilmodellen som udgangspunkt og rette tallene.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post\n\nDirekte i browseren – uden login.\n\nResultatet viser strømudgiften, ikke alle bilens omkostninger.\n\n#elbil #EVBeregner",
-          "status": "production_plan_only",
+          "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+          "caption": "Hvad koster din næste køretur i strøm? ⚡\n\nEt regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.\n\nFind din egen elbil – eller den, du overvejer at købe. Indtast turens samlede kilometer, og brug dit eget forventede forbrug og din samlede elpris.\n\nPrøv gratis på EV Beregners hjemmeside, uden login:\nhttps://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5\n\nBeregningen viser strømudgiften. Fx værditab, forsikring, parkering og andre biludgifter er ikke med. Priser og forbrug her er valgte eksempelværdier.\n\n#elbil #elbiløkonomi #EVBeregner\n",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "finished_original_non_heygen",
           "heygen_generation_allowed": false,
           "format": "1080x1350 image or useful feed text",
           "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar",
+          "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-17-post.jpg",
+          "production_receipt": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
         },
         {
           "date": "2026-11-17",
@@ -208,19 +231,21 @@
           "type": "REEL",
           "theme": "Køretur",
           "title": "Hvad koster weekendens eller hverdagens tur?",
-          "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel",
-          "caption": "Hvad koster weekendens eller hverdagens tur?\n\nIndtast turens kilometer, bilens forbrug og din elpris. Du kan vælge bilmodellen som udgangspunkt og rette tallene.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel\n\nDirekte i browseren – uden login.\n\nResultatet viser strømudgiften, ikke alle bilens omkostninger.\n\n#elbil #EVBeregner",
-          "status": "production_plan_only",
+          "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+          "caption": "Hvad koster din næste køretur i strøm? ⚡\n\nEt regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.\n\nFind din egen elbil – eller den, du overvejer at købe. Indtast turens samlede kilometer, og brug dit eget forventede forbrug og din samlede elpris.\n\nPrøv gratis på EV Beregners hjemmeside, uden login:\nhttps://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5\n\nBeregningen viser strømudgiften. Fx værditab, forsikring, parkering og andre biludgifter er ikke med. Priser og forbrug her er valgte eksempelværdier.\n\nHyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke alle varianter har foto. Foto: TTTNIS / CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg\n\n#elbil #elbiløkonomi #EVBeregner\n",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "finished_original_non_heygen",
           "heygen_generation_allowed": false,
           "format": "9:16, 12–25 sec, H.264/AAC, real website visible by second 2",
           "visual_brief": "Vis den ægte side fra start; vælg bil eller ret ét relevant input; vis det korrekte resultat; slut med evberegn.dk.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar",
+          "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-17-reel.mp4",
+          "production_receipt": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
         },
         {
           "date": "2026-11-17",
@@ -229,19 +254,21 @@
           "type": "STORY",
           "theme": "Køretur",
           "title": "Hvad koster weekendens eller hverdagens tur?",
-          "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_story",
+          "destination": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_story#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
           "caption": "",
-          "status": "production_plan_only",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "finished_original_non_heygen",
           "heygen_generation_allowed": false,
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
           "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
           "quality_note": "Resultatet viser strømudgiften, ikke alle bilens omkostninger.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite"
+          "owner_action": "Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar",
+          "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-17-story.jpg",
+          "production_receipt": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
         }
       ]
     },
@@ -3327,5 +3354,6 @@
       31
     ],
     "rule": "Only locally allocated Metricool slots may be auto-scheduled, within the actual free quota. Reserved does not mean scheduled."
-  }
+  },
+  "latest_production_run": "marketing/daily/runs/2026-11-15/READY-CONTENT.json"
 }

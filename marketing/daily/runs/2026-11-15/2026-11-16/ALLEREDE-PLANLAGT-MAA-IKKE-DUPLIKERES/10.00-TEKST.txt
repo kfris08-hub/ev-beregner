@@ -1,0 +1,11 @@
+EV Beregner er en hjemmeside: https://www.evberegn.dk/
+Brug den gratis direkte i din browser – uden login.
+
+Hvad koster strømmen til 100 km i din elbil?
+
+Med et forbrug på 16 kWh/100 km og en samlet elpris på 2 kr./kWh bliver det 32 kr. i strøm pr. 100 km.
+
+Det er et regneeksempel. Brug dit eget forbrug og din egen elpris her:
+https://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2
+
+Jeg står bag det gratis værktøj EV Beregner. Bilens øvrige omkostninger er ikke med i denne beregning.

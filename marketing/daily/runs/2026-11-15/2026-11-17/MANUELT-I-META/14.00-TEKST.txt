@@ -1,0 +1,14 @@
+Hvad koster din næste køretur i strøm? ⚡
+
+Et regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.
+
+Find din egen elbil – eller den, du overvejer at købe. Indtast turens samlede kilometer, og brug dit eget forventede forbrug og din samlede elpris.
+
+Prøv gratis på EV Beregners hjemmeside, uden login:
+https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5
+
+Beregningen viser strømudgiften. Fx værditab, forsikring, parkering og andre biludgifter er ikke med. Priser og forbrug her er valgte eksempelværdier.
+
+Hyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke alle varianter har foto. Foto: TTTNIS / CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg
+
+#elbil #elbiløkonomi #EVBeregner

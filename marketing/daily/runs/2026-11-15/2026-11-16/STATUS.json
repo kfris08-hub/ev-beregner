@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Europe/Copenhagen",
+  "manual_materials": [
+    {
+      "date": "2026-11-16",
+      "time": "14:00",
+      "timezone": "Europe/Copenhagen",
+      "type": "REEL",
+      "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
+      "publication_route": "MANUAL_META_BUSINESS_SUITE",
+      "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-16-reel.mp4",
+      "caption": "Hvad koster dine 100 km i strøm? ⚡\n\nI dette regneeksempel giver 16 kWh/100 km og en samlet elpris på 2,00 kr./kWh en strømudgift på 32 kr. pr. 100 km.\n\nVælg din egen elbil – eller en model, du overvejer at købe – og ret forbrug og elpris, så tallene passer til dig.\n\nPrøv gratis på hjemmesiden, uden login:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2\n\nDet viste er et regneeksempel, ikke en aktuel elpris eller bilens samlede ejeromkostning. Brug dit eget forbrug og din egen samlede elpris.\n\nHyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke alle varianter har foto. Foto: TTTNIS / CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg\n\n#elbil #elbiløkonomi #EVBeregner\n",
+      "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
+      "scheduled": false,
+      "public_url": null
+    },
+    {
+      "date": "2026-11-16",
+      "time": "19:00",
+      "timezone": "Europe/Copenhagen",
+      "type": "STORY",
+      "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
+      "publication_route": "MANUAL_META_BUSINESS_SUITE",
+      "media_path": "marketing/daily/runs/2026-11-15/output/2026-11-16-story.jpg",
+      "caption": "",
+      "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
+      "scheduled": false,
+      "public_url": null
+    }
+  ],
+  "metricool_post": {
+    "id": 427119724,
+    "uuid": "-6589191064007917297",
+    "date": {
+      "dateTime": "2026-11-16T10:00:00",
+      "timezone": "Europe/Copenhagen"
+    },
+    "type": "POST",
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING",
+        "publicUrl": null,
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/8064733-file-1436563993951226378.png"
+    ],
+    "autoPublish": true,
+    "draft": false,
+    "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster strømmen til 100 km i din elbil?\n\nMed et forbrug på 16 kWh/100 km og en samlet elpris på 2 kr./kWh bliver det 32 kr. i strøm pr. 100 km.\n\nDet er et regneeksempel. Brug dit eget forbrug og din egen elpris her:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2\n\nJeg står bag det gratis værktøj EV Beregner. Bilens øvrige omkostninger er ikke med i denne beregning.",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=-6589191064007917297"
+  },
+  "native_meta_calendar_access": false
+}

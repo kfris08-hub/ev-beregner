@@ -1,0 +1,24 @@
+{
+  "id": 427119724,
+  "uuid": "-6589191064007917297",
+  "date": {
+    "dateTime": "2026-11-16T10:00:00",
+    "timezone": "Europe/Copenhagen"
+  },
+  "type": "POST",
+  "providers": [
+    {
+      "network": "facebook",
+      "status": "PENDING",
+      "publicUrl": null,
+      "detailedStatus": "Pending"
+    }
+  ],
+  "media": [
+    "https://static.metricool.com/planner/202611/8064733-file-1436563993951226378.png"
+  ],
+  "autoPublish": true,
+  "draft": false,
+  "text": "EV Beregner er en hjemmeside: https://www.evberegn.dk/\nBrug den gratis direkte i din browser – uden login.\n\nHvad koster strømmen til 100 km i din elbil?\n\nMed et forbrug på 16 kWh/100 km og en samlet elpris på 2 kr./kWh bliver det 32 kr. i strøm pr. 100 km.\n\nDet er et regneeksempel. Brug dit eget forbrug og din egen elpris her:\nhttps://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2\n\nJeg står bag det gratis værktøj EV Beregner. Bilens øvrige omkostninger er ikke med i denne beregning.",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=8064733&openWithPostUuid=-6589191064007917297"
+}

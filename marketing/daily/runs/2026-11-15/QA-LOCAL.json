@@ -1,0 +1,53 @@
+{
+  "checked": "2026-11-15",
+  "videos": [
+    {
+      "file": "2026-11-15-reel-clean.mp4",
+      "seconds": "20.000000",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "width": 720,
+      "height": 1280,
+      "full_decode": "PASS",
+      "sha256": "5ae1681fec7f0ac74a696f28a3c6c0d0836162f8b0a78aba612851650b3088fb"
+    },
+    {
+      "file": "2026-11-16-reel.mp4",
+      "seconds": "20.000000",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "width": 720,
+      "height": 1280,
+      "full_decode": "PASS",
+      "sha256": "b9550e9e072fd1d12ec49ab1658943f37f23a6307a8a4c0a52da4b9b77a79e3b",
+      "layout": "Headline above actual result rows; source result units remain visible"
+    },
+    {
+      "file": "2026-11-17-reel.mp4",
+      "seconds": "20.000000",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "width": 720,
+      "height": 1280,
+      "full_decode": "PASS",
+      "sha256": "e80a98cc9a39064abac7d858888959c26f259b29171b59f3423ad6ea95ac24db",
+      "layout": "Headline above actual result rows; source result units remain visible"
+    }
+  ],
+  "live_math_and_shared_links": "PASS",
+  "visual_semantic_states": "reviewed",
+  "encoded_frame_samples": [
+    1,
+    11
+  ],
+  "listening_review": "not_performed",
+  "whole_video_player_review": "not_performed",
+  "story_format": "single still JPEG",
+  "source_capture_blocks_ads_and_analytics": true,
+  "manual_assets_ready": 5,
+  "new_metricool_posts_created": 0,
+  "today_clean_reel_applied": false,
+  "today_clean_reel_reason": "Original slot reached 10:00 before replacement was verified; published Reel preserved.",
+  "source_run": "https://github.com/kfris08-hub/ev-beregner/actions/runs/43698677739",
+  "affected_videos_rechecked": 2
+}

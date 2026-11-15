@@ -1,0 +1,6 @@
+Billedets synlige tekst er færdig. Opret som Story, ikke som Reel.
+
+Hvis Meta-editoren tilbyder et linkmærkat, kan dette link bruges:
+https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2
+
+Et trykt domæne i et billede er ikke automatisk klikbart.
