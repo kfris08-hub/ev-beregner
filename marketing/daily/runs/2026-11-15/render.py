@@ -19,7 +19,11 @@ def screen(name):
         ratio=min(W/image.width,1030/image.height)
         image=image.resize((round(image.width*ratio),round(image.height*ratio)),Image.Resampling.LANCZOS)
         canvas=Image.new('RGB',(W,H),INK);canvas.paste(image,((W-image.width)//2,90));return canvas
-    return image.resize((W,H),Image.Resampling.LANCZOS)
+    image=image.resize((W,H),Image.Resampling.LANCZOS)
+    if name.endswith('-result'):
+        # Keep the actual result rows and their units clear of the headline.
+        canvas=Image.new('RGB',(W,H),INK);canvas.paste(image,(0,150));return canvas
+    return image
 
 def overlay(lines,y=270):
     layer=Image.new('RGBA',(W,H),(0,0,0,0));d=ImageDraw.Draw(layer);yy=y;entries=[]
@@ -56,7 +60,7 @@ def make_reel(date):
     frames=[];sheet=[]
     for start,end,asset,copy in events:
         layer=overlay(copy,270 if start<9 else 285)
-        if start==9:layer=Image.alpha_composite(layer,overlay(note,625))
+        if start==9:layer=Image.alpha_composite(layer,overlay(note,710))
         base=screen(asset).copy().convert('RGBA');settled=Image.alpha_composite(base,layer).convert('RGB')
         sheet.append(settled.resize((216,384)))
         frames.append((start,end,base,layer,settled))
