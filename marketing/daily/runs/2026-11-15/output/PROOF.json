@@ -1,0 +1,94 @@
+{
+  "checked_utc": "2026-11-15",
+  "source": "https://www.evberegn.dk",
+  "model": "hyundai-ioniq-5-standard-range-rwd-essential",
+  "rights": {
+    "author": "TTTNIS",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg"
+  },
+  "captures": [
+    {
+      "file": "model.png",
+      "url": "https://www.evberegn.dk/elbil/hyundai-ioniq-5-standard-range-rwd-essential/",
+      "http": 200,
+      "crop": "Ends after full source credit, before catalogue price"
+    },
+    {
+      "file": "2026-11-16-inputs.png",
+      "url": "https://www.evberegn.dk/beregnere/pris-pr-km/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Pris pr. km for elbil – beregn din strømudgift | EV Beregner",
+      "http": 200
+    },
+    {
+      "file": "2026-11-16-result.png",
+      "url": "https://www.evberegn.dk/beregnere/pris-pr-km/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Pris pr. km for elbil – beregn din strømudgift | EV Beregner",
+      "http": 200
+    },
+    {
+      "file": "2026-11-17-inputs.png",
+      "url": "https://www.evberegn.dk/beregnere/koeretur/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Hvad koster turen i elbil? Beregn strøm og pris | EV Beregner",
+      "http": 200
+    },
+    {
+      "file": "2026-11-17-result.png",
+      "url": "https://www.evberegn.dk/beregnere/koeretur/#bil=hyundai-ioniq-5-standard-range-rwd-essential",
+      "title": "Hvad koster turen i elbil? Beregn strøm og pris | EV Beregner",
+      "http": 200
+    }
+  ],
+  "days": {
+    "2026-11-16": {
+      "calculator": "pris-pr-km",
+      "calculator_id": 2,
+      "inputs": {
+        "consumption": 16,
+        "electricPrice": 2
+      },
+      "computed": {
+        "perKm": 0.32,
+        "per100": 32
+      },
+      "answer": "Strøm pr. kilometer\t0,32 kr.\nStrøm pr. 100 km\t32 kr.\n\nKun strømudgiften. Bilens øvrige omkostninger er ikke med.",
+      "share_url": "https://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
+      "links": {
+        "post": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_post#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
+        "reel": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2",
+        "story": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2"
+      },
+      "shared_link_reload": "PASS",
+      "model_selection_retained": true
+    },
+    "2026-11-17": {
+      "calculator": "koeretur",
+      "calculator_id": 6,
+      "inputs": {
+        "km": 75,
+        "consumption": 18,
+        "electricPrice": 2.5
+      },
+      "computed": {
+        "energy": 13.5,
+        "total": 33.75
+      },
+      "answer": "Turens energibehov\t13,5 kWh\nTurens strømudgift\t33,75 kr.\n\nRegnet for den samlede distance, du har indtastet.",
+      "share_url": "https://www.evberegn.dk/beregnere/koeretur/#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+      "links": {
+        "post": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+        "reel": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5",
+        "story": "https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_story#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5"
+      },
+      "shared_link_reload": "PASS",
+      "model_selection_retained": true
+    }
+  },
+  "blocked_requests": 10,
+  "new_heygen_jobs": 0,
+  "paid_services": 0,
+  "website_changed": false,
+  "photo_credit": "Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant. Foto: TTTNIS · CC0 · Billedkilde og original.",
+  "real_analytics_or_ad_events": 0
+}

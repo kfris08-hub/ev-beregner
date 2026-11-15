@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-15",
+  "style": {
+    "direction": "Actual website with restrained kinetic type, dark/teal branding",
+    "font": "DejaVu Sans Bold",
+    "exclusions": [
+      "no fake UI",
+      "no current-price promise",
+      "no generated people or voices"
+    ]
+  },
+  "videos": [
+    {
+      "file": "2026-11-16-reel.mp4",
+      "seconds": "20.000000",
+      "width": 720,
+      "height": 1280,
+      "website_visible_from_second": 0,
+      "decode": "PASS",
+      "speech": false,
+      "music": "original programmatic motif",
+      "listening_review": "not_performed",
+      "full_player_review": "not_performed",
+      "safe_area": "conservative provisional organic-Reel bounds, all essential overlay text measured"
+    },
+    {
+      "file": "2026-11-17-reel.mp4",
+      "seconds": "20.000000",
+      "width": 720,
+      "height": 1280,
+      "website_visible_from_second": 0,
+      "decode": "PASS",
+      "speech": false,
+      "music": "original programmatic motif",
+      "listening_review": "not_performed",
+      "full_player_review": "not_performed",
+      "safe_area": "conservative provisional organic-Reel bounds, all essential overlay text measured"
+    }
+  ],
+  "stills": [
+    {
+      "file": "2026-11-16-story.jpg",
+      "width": 1080,
+      "height": 1920,
+      "type": "STORY",
+      "rights": "Original text/typography; no external photo or music",
+      "numeric_example_verified_in_live_calculator": true
+    },
+    {
+      "file": "2026-11-17-story.jpg",
+      "width": 1080,
+      "height": 1920,
+      "type": "STORY",
+      "rights": "Original text/typography; no external photo or music",
+      "numeric_example_verified_in_live_calculator": true
+    },
+    {
+      "file": "2026-11-17-post.jpg",
+      "width": 1080,
+      "height": 1350,
+      "type": "POST",
+      "rights": "Original text/typography; no external photo or music",
+      "numeric_example_verified_in_live_calculator": true
+    }
+  ],
+  "new_heygen_jobs": 0,
+  "paid_services": 0,
+  "today_repair": {
+    "file": "2026-11-15-reel-clean.mp4",
+    "seconds": "20.000000",
+    "fix": "Fresh opening image without technical processing note; full photographer/source/license retained",
+    "rest_of_video": "Original edit from second 3 onward",
+    "audio": "Original AAC copied unchanged",
+    "calendar_action": "Update existing UUID 8403383719013468039, preserve 15 November 10:00; never create a duplicate",
+    "decode": "PASS"
+  }
+}
