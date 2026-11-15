@@ -1,0 +1,45 @@
+name: Prepare daily Facebook buffer 16-17 November
+on:
+  push:
+    branches: [marketing/facebook-20261113]
+    paths:
+      - marketing/daily/runs/2026-11-15/capture.py
+      - marketing/daily/runs/2026-11-15/render.py
+      - .github/workflows/daily-facebook-buffer-20261115.yml
+permissions:
+  contents: write
+concurrency:
+  group: daily-facebook-buffer-20261115
+  cancel-in-progress: false
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install capture and rendering tools
+        run: |
+          python -m pip install playwright==1.56.0 Pillow==11.3.0
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Capture live site with ads and analytics blocked
+        run: python marketing/daily/runs/2026-11-15/capture.py
+      - name: Produce two Reels and three actual still images
+        run: python marketing/daily/runs/2026-11-15/render.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-buffer-20261115
+          path: marketing/daily/runs/2026-11-15/output/
+          retention-days: 30
+      - name: Save finished collateral on marketing branch only
+        run: |
+          git config user.name 'EV Beregner marketing'
+          git config user.email 'media@users.noreply.github.com'
+          git add marketing/daily/runs/2026-11-15/output/
+          git commit -m 'Prepare manual Facebook media for 16-17 November'
+          git pull --rebase origin marketing/facebook-20261113
+          git push origin HEAD:marketing/facebook-20261113
