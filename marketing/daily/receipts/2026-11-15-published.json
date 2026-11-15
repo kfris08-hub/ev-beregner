@@ -1,0 +1,73 @@
+{
+  "verified_utc": "2026-11-15 18:07:14 UTC",
+  "brand_id": "8064733",
+  "facebook_page_id": "1430242190176506",
+  "timezone": "Europe/Copenhagen",
+  "source": "Metricool live calendar read",
+  "publications": [
+    {
+      "id": "427367138",
+      "uuid": "8403383719013468039",
+      "date": {
+        "dateTime": "2026-11-15T10:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "REEL",
+      "providers": [
+        {
+          "network": "facebook",
+          "id": "1149250870815125",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/reel/1149250870815125",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-1906549249988751242.mp4"
+      ]
+    },
+    {
+      "id": "428400343",
+      "uuid": "-4996663419840479223",
+      "date": {
+        "dateTime": "2026-11-15T13:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "POST",
+      "providers": [
+        {
+          "network": "facebook",
+          "id": "122105503131544901",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/122102747061544901/posts/122105503131544901",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-3255686828875595644.jpeg"
+      ]
+    },
+    {
+      "id": "428400357",
+      "uuid": "105779028072090749",
+      "date": {
+        "dateTime": "2026-11-15T19:00:00",
+        "timezone": "Europe/Copenhagen"
+      },
+      "type": "STORY",
+      "providers": [
+        {
+          "network": "facebook",
+          "id": "1833322427709437",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/122102747061544901/posts/1833322427709437",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202611/8064733-file-15085539356463928845.jpeg"
+      ]
+    }
+  ],
+  "new_publications_created": 0
+}
