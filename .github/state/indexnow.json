@@ -1,11 +1,11 @@
 {
   "confirmed_snapshot": {
     "https://www.evberegn.dk/": {
-      "lastmod": "2026-11-14",
+      "lastmod": "2026-11-16",
       "images": []
     },
     "https://www.evberegn.dk/elbil/": {
-      "lastmod": "2026-11-15",
+      "lastmod": "2026-11-16",
       "images": []
     },
     "https://www.evberegn.dk/elbil/opel-rocks-electric-rocks-electric/": {
@@ -1095,7 +1095,7 @@
       ]
     },
     "https://www.evberegn.dk/elbil/alfa-romeo-junior-speciale-el-156-1c915c63/": {
-      "lastmod": "2026-11-08",
+      "lastmod": "2026-11-16",
       "images": [
         "https://www.evberegn.dk/assets/cars/alfa-romeo-junior-core-676dfe94f298.webp"
       ]
@@ -1258,7 +1258,7 @@
     }
   },
   "last_submission": {
-    "checked_at": "2026-11-15T12:56:21.725001+00:00",
+    "checked_at": "2026-11-16T13:57:54.615027+00:00",
     "submitted": 3,
     "http_status": 200,
     "meaning": "Received, not a confirmation of indexing",
