@@ -3624,13 +3624,13 @@
       "status": "active",
       "origin": "automatic",
       "indexable": true,
-      "modified": "2026-11-08",
+      "modified": "2026-11-16",
       "provenance": {
         "price": {
           "label": "Alfa Romeo Junior · dansk prisliste",
           "url": "https://pricelists-api.cars4ever.eu/api/models/Junior/retail",
           "primary_url": "https://www.alfaromeo.dk/modeller/junior-elettrica",
-          "source_date": "2026-10-25",
+          "source_date": "2026-11-16",
           "kind": "retail-api"
         },
         "consumption": {
@@ -3655,7 +3655,7 @@
           "kind": "retail-api"
         }
       },
-      "price": 244990,
+      "price": 249990,
       "battery": 54.0,
       "range": 409,
       "consumption": 15.2,

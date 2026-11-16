@@ -1,5 +1,7 @@
 {
-  "updated_models": [],
+  "updated_models": [
+    "alfa-romeo-junior-speciale-el-156-1c915c63"
+  ],
   "new_models": [],
   "unmatched_existing_variants": [
     {
@@ -309,7 +311,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-15T11:28:07.733607+00:00",
+  "checked_at": "2026-11-16T12:00:38.386805+00:00",
   "sources": [
     {
       "id": "retail-Junior",
