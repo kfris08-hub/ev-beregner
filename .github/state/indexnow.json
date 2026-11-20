@@ -1,11 +1,11 @@
 {
   "confirmed_snapshot": {
     "https://www.evberegn.dk/": {
-      "lastmod": "2026-11-18",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/elbil/": {
-      "lastmod": "2026-11-19",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/elbil/opel-rocks-electric-rocks-electric/": {
@@ -1209,57 +1209,57 @@
       ]
     },
     "https://www.evberegn.dk/beregnere/ladepris/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/elbil-vs-benzin/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/opladningstid/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/leasing-vs-koeb/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/samlet-biloekonomi/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/pris-pr-km/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/elbil-vs-diesel/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/koeretur/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/raekkevidde/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/stroemforbrug-elbil/": {
-      "lastmod": "2026-11-12",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/beregnere/": {
-      "lastmod": "2026-11-11",
+      "lastmod": "2026-11-20",
       "images": []
     },
     "https://www.evberegn.dk/om/": {
-      "lastmod": "2026-11-14",
+      "lastmod": "2026-11-20",
       "images": []
     }
   },
   "last_submission": {
-    "checked_at": "2026-11-19T14:40:04.799515+00:00",
-    "submitted": 1,
+    "checked_at": "2026-11-20T20:40:30.906292+00:00",
+    "submitted": 14,
     "http_status": 200,
     "meaning": "Received, not a confirmation of indexing",
     "google_submission": false
