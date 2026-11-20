@@ -48,7 +48,7 @@ async def main():
    await page.goto(BASE+'/?car=tesla-model-y-standard-rwd#beregner-2')
    await page.wait_for_function('currentCalculator === 2')
    await page.locator('#calc_electricPrice').fill('0');await page.evaluate('calculate()')
-   assert '0.00 kr.' in await page.locator('#answer').inner_text()
+   assert '0,00 kr.' in await page.locator('#answer').inner_text()
    await page.screenshot(path=str(ROOT/'test-results'/f'calculator-{label}.png'),full_page=True)
    await page.goto(BASE+'/?car=elveon-motors-min-e-sedan-base')
    await page.wait_for_function('selectedCar !== null')

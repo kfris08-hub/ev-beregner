@@ -37,6 +37,14 @@ function setup(kind,options={}){
  return {context,elements,requests,storage,listeners,run(code){return vm.runInContext(code,context)},cleanup(){for(const timer of timers)clearTimeout(timer)}};
 }
 const settle=()=>new Promise(resolve=>setImmediate(resolve));
+test('overflow in a sum or multiplication cannot appear as a valid homepage result',()=>{
+ for(const id of [13,18]){
+  const h=setup('home');h.run('openCalculator('+id+')');
+  for(const field of h.run('calculators[currentCalculator].fields'))h.elements.get('calc_'+field[0]).value='1e308';
+  h.run('calculate()');const text=h.elements.get('answer').textContent;
+  assert.match(text,/for store/);assert.doesNotMatch(text,/Infinity|NaN|∞/);h.cleanup();
+ }
+});
 test('all 20 calculators return finite default results',async()=>{const h=setup('home');await settle();assert.equal(h.run('Object.keys(calculators).length'),20);for(let id=1;id<=20;id++){h.run(`openCalculator(${id});calculate()`);const answer=h.elements.get('answer').innerText;assert.ok(answer.length>0,'calculator '+id);assert.doesNotMatch(answer,/NaN|Infinity|∞/,'calculator '+id);}h.cleanup();});
 test('model selection survives the link to the homepage',()=>{const h=setup('home',{url:'https://www.evberegn.dk/?car=tesla-model-y-standard-rwd'});assert.equal(h.run('selectedCar[0]+" "+selectedCar[1]'),'Tesla Model Y Standard RWD');h.run('openCalculator(2)');assert.equal(h.elements.get('calc_consumption').value,'15.5');h.cleanup();});
 test('unknown slug remains a general calculation',()=>{const h=setup('home',{url:'https://www.evberegn.dk/?car=missing'});assert.equal(h.run('selectedCar'),null);h.cleanup();});
