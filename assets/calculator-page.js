@@ -9,6 +9,8 @@
   const result = document.getElementById('answer');
   const message = document.getElementById('calcMessage');
   const selection = document.getElementById('carSelect');
+  const carSearch = document.getElementById('carSearch');
+  const carSearchStatus = document.getElementById('carSearchStatus');
   const modelNote = document.getElementById('modelNote');
   const priceStatus = document.getElementById('priceStatus');
   const priceButton = document.getElementById('loadPrices');
@@ -20,6 +22,20 @@
   const diesel = definition.fields.some(field => field[3] === 'liveDiesel'), fuelKind = diesel ? 'diesel' : 'petrol95', fuelName = diesel ? 'Diesel' : 'Benzin';
   let catalogue = [], chosen = null, requestToken = 0, resultValid = true, pdfURL = '';
   let electricStatus = 'Elpris: eksempelværdi.', fuelStatus = fuelName + ': eksempelpris.';
+  const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/æ/g, 'ae').replace(/ø/g, 'o').replace(/[^a-z0-9]+/g, ' ').trim();
+  function filterCarOptions() {
+    const query = normalize(carSearch ? carSearch.value : '');
+    const matches = catalogue.filter(car => normalize(car.label).includes(query));
+    selection.replaceChildren();
+    const own = document.createElement('option'); own.value = ''; own.textContent = 'Brug egne tal'; selection.appendChild(own);
+    for (const car of catalogue) {
+      if (!matches.includes(car) && (!chosen || car.slug !== chosen.slug)) continue;
+      const option = document.createElement('option'); option.value = car.slug; option.textContent = car.label; selection.appendChild(option);
+    }
+    selection.value = chosen ? chosen.slug : '';
+    if (carSearchStatus) carSearchStatus.textContent = query ? matches.length + ' bilvarianter matcher. Vælg i listen nedenfor.' : '';
+  }
+  if (carSearch) carSearch.addEventListener('input', filterCarOptions);
   const values = () => Object.fromEntries(definition.fields.map(([key]) => [key, field(key).value]));
   function calculate(report) {
     clearPDF();
@@ -228,7 +244,7 @@
   restoreShared();
   core.fetchJSON('/assets/calculator-cars.json', { cache: 'no-cache' }).then(data => {
     catalogue = data.models.filter(car => /^[a-z0-9-]+$/.test(car.slug));
-    for (const car of catalogue) { const option = document.createElement('option'); option.value = car.slug; option.textContent = car.label; selection.appendChild(option); }
+    filterCarOptions();
     selection.disabled = false; selectCar(requestedCar(), false, true);
   }).catch(() => { modelNote.textContent = 'Biloversigten kunne ikke hentes. Beregneren virker med dine egne tal.'; });
   showPriceStatus(); calculate(false);

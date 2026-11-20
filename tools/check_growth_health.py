@@ -3,9 +3,12 @@ from datetime import datetime,timezone
 from pathlib import Path
 from urllib.request import Request,urlopen
 import json,time
+from public_http import fetch_public
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk'
 def fetch(path):
- with urlopen(Request(BASE+path+'?health='+str(time.time_ns()),headers={'User-Agent':'EVBeregnerTechnicalAudit/1.0','Cache-Control':'no-cache'}),timeout=20) as r:return json.load(r)
+ response=fetch_public(BASE+path+'?health='+str(time.time_ns()))
+ if response['status']!=200:raise RuntimeError('Public data response '+str(response['status'])+': '+path)
+ return json.loads(response['body'])
 def age(data,field,now):
  stamp=datetime.fromisoformat(data[field].replace('Z','+00:00'))
  if stamp.tzinfo is None:raise ValueError('Timestamp without timezone')

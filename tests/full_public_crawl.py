@@ -12,13 +12,9 @@ import hashlib,json,re,time,xml.etree.ElementTree as ET
 ROOT=Path(__file__).parents[1];BASE='https://www.evberegn.dk';OUT=ROOT/'test-results';OUT.mkdir(exist_ok=True)
 catalog=json.loads((ROOT/'data/model-photos.json').read_text())['models']
 errors=[];warnings=[]
-def fetch(url,method='GET'):
-    started=time.monotonic()
-    try:
-        with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0 EVBeregnerTechnicalAudit/1.0'},method=method),timeout=25) as r:
-            return {'url':url,'status':r.status,'final':r.geturl(),'headers':{k.lower():v for k,v in r.headers.items()},'body':r.read() if method=='GET' else b'','seconds':round(time.monotonic()-started,3)}
-    except HTTPError as e:return {'url':url,'status':e.code,'final':e.geturl(),'headers':{k.lower():v for k,v in e.headers.items()},'body':e.read(),'seconds':round(time.monotonic()-started,3)}
-    except Exception as e:return {'url':url,'status':0,'error':str(e),'headers':{},'body':b''}
+import sys
+sys.path.insert(0,str(ROOT/'tools'))
+from public_http import fetch_public as fetch
 class Page(HTMLParser):
     def __init__(self,text):
         super().__init__();self.title='';self.h1=0;self.canonical=[];self.descriptions=[];self.robots=[];self.ids=set();self.links=[];self.assets=[];self.metas={};self.ld=[];self.images=[];self.refresh=False;self.current=None;self.feed(text)

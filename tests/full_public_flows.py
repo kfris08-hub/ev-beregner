@@ -19,7 +19,7 @@ async def main():
                     if not name or name.endswith('/'):name+='index.html'
                     file=ROOT/name
                     await r.fulfill(status=200 if file.is_file() else 404,body=file.read_bytes() if file.is_file() else b'missing',content_type=mimetypes.guess_type(name)[0] or 'application/octet-stream')
-                elif 'a-ads.com' in host or host=='aads.com':await r.abort()
+                elif 'metricool.com' in host or 'a-ads.com' in host or host=='aads.com':await r.abort()
                 elif host=='elpriser.org':await r.fulfill(status=200,json={'price':2.5})
                 else:await r.continue_()
             await context.route('**/*',route)
@@ -114,7 +114,7 @@ async def main():
         context=await browser.new_context(viewport={'width':390,'height':844})
         async def live_route(r):
             host=urlsplit(r.request.url).netloc
-            if 'a-ads.com' in host or host=='aads.com':await r.abort()
+            if 'metricool.com' in host or 'a-ads.com' in host or host=='aads.com':await r.abort()
             else:await r.continue_()
         await context.route('**/*',live_route)
         page=await context.new_page();page.set_default_timeout(15000)
