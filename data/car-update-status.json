@@ -1,6 +1,10 @@
 {
-  "updated_models": [],
-  "new_models": [],
+  "updated_models": [
+    "dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451"
+  ],
+  "new_models": [
+    "dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451"
+  ],
   "unmatched_existing_variants": [
     {
       "family": "Audi Q4 e-tron",
@@ -309,7 +313,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-22T11:57:53.653254+00:00",
+  "checked_at": "2026-11-23T13:37:21.118621+00:00",
   "sources": [
     {
       "id": "retail-Junior",
@@ -339,13 +343,13 @@
     {
       "id": "bil-portalen",
       "status": "ok",
-      "records": 201
+      "records": 202
     }
   ],
   "source_rejections": [],
-  "active_models": 283,
-  "automatically_priced_models": 156,
+  "active_models": 284,
+  "automatically_priced_models": 157,
   "legacy_models_without_automatic_price": 125,
   "historical_models": 2,
-  "pending_indexing": 83
+  "pending_indexing": 84
 }

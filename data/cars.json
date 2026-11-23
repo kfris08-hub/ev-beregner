@@ -7042,6 +7042,36 @@
         "https://pricelists-api.cars4ever.eu/api/models/e-5008/retail|GT Limited|EL 210"
       ],
       "price_note": "Vejledende pris. Udstyr og eventuelle kampagnevilkår fremgår af producentens prisliste."
+    },
+    {
+      "slug": "dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451",
+      "brand": "Dacia",
+      "model": "Spring Journey (60 kW, 27,5 kWh LFP)",
+      "status": "active",
+      "origin": "automatic",
+      "discovered": "2026-11-23",
+      "indexable": false,
+      "modified": "2026-11-23",
+      "provenance": {
+        "price": {
+          "label": "Bil-Portalen (bil-portalen.dk)",
+          "url": "https://bil-portalen.dk/bil/dacia/spring-2026",
+          "primary_url": "https://edge.sitecorecloud.io/hedinitaban27a1-hedin8837-prod5c4b-4604/media/project/hedin/distribution-cars/daciadksite/cardocuments/prisliste-spring.pdf",
+          "source_date": "2026-11-23",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "kind": "licensed-feed"
+        }
+      },
+      "price": 145990,
+      "battery": null,
+      "range": null,
+      "consumption": null,
+      "charging": null,
+      "model_family": "Dacia Spring",
+      "source_ids": [
+        "https://bil-portalen.dk/bil/dacia/spring-2026|Spring Journey (60 kW, 27,5 kWh LFP)"
+      ]
     }
   ]
 }

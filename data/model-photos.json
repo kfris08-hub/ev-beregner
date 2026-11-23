@@ -7173,6 +7173,12 @@
       "shared_from": "peugeot-e-5008-e-5008-allure",
       "matched_family": "Peugeot E-5008",
       "caption": "Modelbillede. Udstyr, farve og fælge kan afvige fra den valgte variant."
+    },
+    "dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451": {
+      "label": "Dacia Spring Journey (60 kW, 27,5 kWh LFP)",
+      "status": "missing",
+      "reviewed": false,
+      "reason": "Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt."
     }
   }
 }

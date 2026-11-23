@@ -1,6 +1,6 @@
 # Billeddækning
 
-261 af 283 aktive modelsider har et fast, lokalt modelbillede med kilde, fotograf og licens.
+261 af 284 aktive modelsider har et fast, lokalt modelbillede med kilde, fotograf og licens.
 
 Billederne viser modellen. Udstyrsvariant, fælge og farve kan afvige; det er angivet ved billederne. Ingen billeder vælges ved automatisk søgning i besøgendes browser.
 
@@ -30,6 +30,7 @@ Billederne viser modellen. Udstyrsvariant, fælge og farve kan afvige; det er an
 | Volkswagen ID. Tiguan Trend 190 hk (58 kWh) | [/elbil/volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851/](https://www.evberegn.dk/elbil/volkswagen-id-tiguan-trend-190-hk-58-kwh-ac88f851/) | Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt. |
 | Volkswagen ID.3 Neo Trend 170 hk (50 kWh) | [/elbil/volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43/](https://www.evberegn.dk/elbil/volkswagen-id-3-neo-trend-170-hk-50-kwh-48608d43/) | Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt. |
 | XPENG G9L RWD Long Range Ultra (7 sæder) | [/elbil/xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b/](https://www.evberegn.dk/elbil/xpeng-g9l-rwd-long-range-ultra-7-sder-3073e60b/) | Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt. |
+| Dacia Spring Journey (60 kW, 27,5 kWh LFP) | [/elbil/dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451/](https://www.evberegn.dk/elbil/dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451/) | Nyt modelnavn fra dokumenteret datakilde; intet kontrolleret foto tilgængeligt. |
 
 ## Udtagne varianter og tidligere modelnavn
 
