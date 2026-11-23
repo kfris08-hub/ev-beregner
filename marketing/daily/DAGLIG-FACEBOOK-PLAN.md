@@ -1,69 +1,79 @@
 # EV Beregner – daglig Facebook-plan
 
-Periode: 2026-11-15–2026-12-31. Én POST, én REEL og én STORY pr. dag som produktionsmål. 141 planlagte indholdspladser; dette er ikke en kvittering for udgivelse.
+Periode: 2026-11-15–2026-12-31. Produktionsmål: én POST, én REEL og én separat billed-STORY dagligt. 141 indholdspladser er ikke det samme som 141 planlagte publiceringer.
 
-## Kreativ retning fra 15. november 2026
+## Kreativ retning fra 23. november 2026
 
-Følg samtaleformen fra ejerens reference med tre personer ved bilen. Nye personfilm får kvinder i centrale og varierede roller i mindst to af de næste tre film. Se [den fælles brief](../creative/SAMTALE-OG-BREDERE-PUBLIKUM.md) og [de tre manuskripter](../creative/NAESTE-TRE-MANUSKRIPTER.md). Dette er en afprøvning; organisk kønsfordeling kan ikke garanteres.
+Følg [REEL-RETNING-20261123.md](../creative/REEL-RETNING-20261123.md) og [de 38 episodebriefs](../creative/FREMTIDIGE-REELS-20261123.md). Nye Reels bruger naturlig dansk dialog mellem normalt to fiktive voksne ved bilen. Et konkret spørgsmål, et hurtigt nyttigt svar og et roligt tempo styret af faktisk tale. Ingen hjemmesidevisning i nye standardfilm. evberegn.dk, gratis/uden login og like/følg står tydeligt til sidst. Kvinder har varierede centrale roller i mindst to af hver næste tre personfilm. Ingen garanti for rækkevidde eller organisk kønsfordeling.
 
-Åbn med ét konkret spørgsmål. Vis den ægte hjemmeside og EV Beregner senest sekund 2, giv et nyttigt svar hurtigt og en tydelig vej til hjemmesiden omkring sekund 10–15. Brug rolig dansk tale og kontrollerede tekstlag. Indtil ny personproduktion er mulig, bruges spørgsmål–svar-formen med rigtige skærmklip og typografi; illustrativ grafik kaldes ikke nye talende mennesker.
+Nyheds- og politiske vinkler kræver en aktuel primær kilde, dato og korrekt status: forslag, aftale, vedtaget eller trådt i kraft. Genkontrollér før udgivelse. En ældre gældende regel er ikke en ny aftale. Ellers bruges et nyttigt hverdagsspørgsmål.
 
-De færdige pakker til 16.–17. november og alle eksisterende aftaler bevares. Den kreative retning er lagt på endnu ikke producerede planrækker. Der er ikke produceret eller planlagt nye film med denne opdatering. Højst tre HeyGen-forsøg i december; ingen i november. Den separate decemberopgave vælger passende allerede reserverede Reel-pladser ved produktion.
+## Hvem udgiver?
 
-## Daglig rytme
+METRICOOL_CONFIRMED kræver en rigtig aftale med ID/UUID og genlæsning. METRICOOL_RESERVED_NOT_SCHEDULED er kun en lokal reservation. MANUAL_META_BUSINESS_SUITE er ejerens manuelle vej og må aldrig auto-planlægges i Metricool. Er filen allerede i Meta, udskifter ejeren den på samme plads; opret ikke en dublet. Tjenestens aktuelle kalender går forud.
 
-| Tid, dansk | Format | Opgave |
-|---|---|---|
-| 10.00 | Opslag | Ét konkret spørgsmål, en nyttig forklaring og link til hjemmesiden. |
-| 14.00 | Reel | Ét spørgsmål og et svar med ægte hjemmeside; personfilm når færdige og kvalitetssikrede. |
-| 19.00 | Story | Ét lodret stillbillede med én pointe og evberegn.dk. |
+Metricool Free har højst 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Medregn udgivet, kommende, udløbne Stories og faste reservationer. Den faktiske kontotæller går forud, når den kan læses. Tre formater dagligt kræver 90–93 udgivelser om måneden; resten udgiver ejeren manuelt i Meta. Ingen køb eller opgraderinger.
 
-Eksisterende publiceringstider bevares. 15. og 26. november ligger den eksisterende Reel kl. 10; dagens ekstra opslag foreslås kl. 13. Opladningsreelen 18. november forbliver kl. 12. Ingen dubletter.
+Ingen nye HeyGen-job i november. Den separate decemberopgave håndterer højst tre faktiske decemberforsøg inklusive fejlede forsøg, inden for den reelle kvote. Film erstatter eksisterende Reel-pladser. En Story er ét lodret 1080×1920-stillbillede, ikke en Reel. POST forklarer dagens pointe og linker til relevant værktøj. Eksisterende datoer og tider bevares.
 
-## Første uge
+## Kalenderoversigt
 
-| Dato | Tema | Opslag | Reel | Story |
-|---|---|---|
-| 2026-11-15 | Bilvalg | 13:00 – udgivet på Facebook | 10:00 – udgivet på Facebook | 19:00 – udgivet på Facebook |
-| 2026-11-16 | Kilometerpris | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
-| 2026-11-17 | Køretur | 10:00 – manuel i Meta Business Suite | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
-| 2026-11-18 | Ladepris | 10:00 – manuel i Meta Business Suite | 12:00 – Metricool, planlagt | 19:00 – manuel i Meta Business Suite |
-| 2026-11-19 | El mod benzin | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
-| 2026-11-20 | Vinterforbrug | 10:00 – manuel i Meta Business Suite | 14:00 – Metricool, kun reserveret | 19:00 – manuel i Meta Business Suite |
-| 2026-11-21 | Bil før køb | 10:00 – Metricool, planlagt | 14:00 – manuel i Meta Business Suite | 19:00 – manuel i Meta Business Suite |
+Status er senest dokumenterede kontrol. Manual betyder ikke, at ejeren endnu ikke har lagt filen ind.
 
-## Gratis fordeling af udgivelser
-
-METRICOOL_CONFIRMED betyder faktisk planlagt i tjenesten. METRICOOL_RESERVED_NOT_SCHEDULED betyder kun en lokal reservation, som først skal produceres og få en udgivelseskvittering. MANUAL_META_BUSINESS_SUITE betyder, at ejeren selv planlægger den færdige fil og tekst.
-
-Eksisterende aftaler bevares. Fem ekstra november-Reels reserveres20,22,24,27,30november. I december reserveres20 Reels1,2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,28,29,31. Dermed holdes den kendte gratis kapacitet på20 om måneden.
-
-Ejeren skal ikke også uploade de bekræftede eller reserverede Metricool-pladser i Meta Business Suite. Den daglige opgave må omvendt ikke auto-publicere de manuelle pladser. Manglende kvote eller færdigt materiale meldes konkret frem for at fremstille en reservation som planlagt.
-
-## Produktion uden HeyGen
-
-Hele november og hovedparten af december laves med rigtige skærmbilleder, korte skærmdemonstrationer, kontrolleret typografi og original/klart licenseret lyd. Ingen AI-tegnet hjemmeside, opdigtede kundeudtalelser eller ubekræftede bilpriser.
-
-Reelen viser hjemmesiden senest efter to sekunder. En Story er et særskilt stillbillede i historiefeltet, ikke en genudgivet Reel. Brug den præcise stavning EV Beregner, gratis og evberegn.dk. Vis især bilvalg → modelside/billede → relevant beregner med bilens data og egne input.
-
-## HeyGen i december
-
-Højst tre nye generationer/forsøg i december, aldrig før december og aldrig flere end den faktiske ledige kvote. Den særskilte decemberopgave kontrollerer nulstillingsdatoen. Filmene erstatter tre af de almindelige daglige Reels. Foreløbige udgivelsesdatoer er 7., 17. og 27. december; hvis kvoten eller kvaliteten ikke er klar, bruges en lokal skærmdemonstration den dag. Ingen køb eller opgraderinger.
-
-## Udgivelse og den konkrete grænse
-
-Den hidtil anvendte Metricool Free-plan tillader 20 faktiske publiceringer pr. kalendermåned på tværs af formater. Tre daglige udgivelser kræver 90–93 om måneden. En API-forbindelse hæver ikke grænsen. Se de daterede kalender- og udgivelseskvitteringer for den aktuelle fordeling mellem udgivet og kommende indhold; en kontovisning kan indeholde yderligere forbrug.
-
-Ejeren har valgt at holde det gratis. Den daglige opgave producerer materialet, og ejeren planlægger de manuelle pladser i Meta Business Suite. Der er ingen tilsluttet native Meta-udgivelsesforbindelse her. Intet abonnement er ændret eller købt.
-
-Den daglige opgave må kun planlægge inden for den kendte kvote og skal regne både udgivet og allerede reserveret indhold med. Den må aldrig fremstille et udkast, en CSV-række eller en produceret fil som et planlagt/udgivet opslag. Kvittering og kalender i tjenesten er sandhedskilden.
+| Dato | Tema | POST | REEL | STORY |
+|---|---|---|---|---|
+| 2026-11-15 | Bilvalg | 13:00 · Metricool-aftale · PUBLISHED | 10:00 · Metricool-aftale · PUBLISHED | 19:00 · Metricool-aftale · PUBLISHED |
+| 2026-11-16 | Kilometerpris | 10:00 · Metricool-aftale · PUBLISHED | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-17 | Køretur | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-18 | Ladepris | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 12:00 · Metricool-aftale · PUBLISHED | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-19 | El mod benzin | 10:00 · Metricool-aftale · PUBLISHED | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-20 | Vinterforbrug | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · Metricool-reservation · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-21 | Bil før køb | 10:00 · Metricool-aftale · PUBLISHED | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-22 | Opladningstid | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · Metricool-reservation · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-23 | Rækkevidde | 10:00 · Metricool-aftale · PUBLISHED | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-24 | Årligt strømforbrug | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · Metricool-aftale · PENDING | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-25 | Din elaftale | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
+| 2026-11-26 | Din bils opladning | 13:00 · manuel Meta · production_plan_only | 10:00 · Metricool-aftale · PENDING | 19:00 · manuel Meta · production_plan_only |
+| 2026-11-27 | Månedsbudget | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-11-28 | Egne tal | 10:00 · Metricool-aftale · PENDING | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-11-29 | Leasing eller køb | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-11-30 | Samlet biløkonomi | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-01 | Hjemmeladning | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-02 | El mod diesel | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-03 | Tilgængeligt batteri | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-04 | Solceller | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-05 | Vedligeholdelse | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-06 | Årlig energiforskel | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-07 | Besparelse pr. måned | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-08 | Længere tur | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-09 | Energi til turen | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-10 | Værditab | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-11 | Historisk model | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-12 | Ladetab | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-13 | To biler | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-14 | Dit værktøj | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-15 | Bilvalg | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-16 | Kilometerpris | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-17 | Køretur | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-18 | Ladepris | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-19 | El mod benzin | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-20 | Vinterforbrug | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-21 | Bil før køb | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-22 | Opladningstid | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-23 | Rækkevidde | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-24 | Årligt strømforbrug | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-25 | Din elaftale | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-26 | Din bils opladning | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-27 | Månedsbudget | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-28 | Egne tal | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-29 | Leasing eller køb | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-30 | Samlet biløkonomi | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
+| 2026-12-31 | Hjemmeladning | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
 
 ## Kontrol og opfølgning
 
-Kontrollér stavning, faktiske beregninger, billedrettigheder, mobilvisning og destination før planlægning. Alle priser er daterede kilder eller udtrykkelige regneeksempler. Energiudgift er ikke total ejerøkonomi. Billeder kan mangle eller vise andet udstyr.
+Kontrollér tekst, faktiske produktfunktioner, priser/forbehold, licenser, lyd, mobilvisning og destination. Nye links bruger utm_source=facebook og utm_medium=organic_social før #fragmenter; bevar bilvalg og delte input.
 
-Nye links bruger utm_source=facebook og utm_medium=organic_social før eventuelle #fragmenter. Følg reelle linkklik og samtykkebaserede Metricool-webbesøg og trafikkilder. Ingen købt trafik, annonceklik eller testbeacons. Brug resultater til at forbedre emner og åbninger, ikke til at opfinde vækst.
+Følg op efter sammenlignelige 48 timer og 7 dage. Visninger er ikke unik rækkevidde eller webbesøg. Alle klik er ikke automatisk linkklik. Brug Reel-specifik kønsfordeling, når den findes; mål både absolut rækkevidde og andel. Samtykkebaserede webtal kan være forsinkede og ufuldstændige. Private kontotal gemmes privat. Ingen kunstige besøg eller testbeacons.
 
-## Filer
-
-DAILY-PLAN.json indeholder alle dagsbriefs og eksisterende kalender-ID’er. DAGLIG-KALENDER.csv er en oversigt, ikke en garanti for import i Meta Business Suite. Færdige dagsfiler og verificerede kvitteringer opbevares særskilt.
+DAILY-PLAN.json er den kanoniske produktionsplan. Markdown og CSV er oversigter, ikke publiceringskvitteringer eller garanteret Meta-import. make_plan.py opdaterer kun oversigter og nulstiller ikke datoer, ruter eller kalender-ID’er.

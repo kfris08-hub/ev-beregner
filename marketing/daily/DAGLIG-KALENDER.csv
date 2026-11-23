@@ -1,5 +1,5 @@
-﻿date,time,type,theme,title,status,publication_route,owner_action,existing_uuid,destination,caption
-2026-11-15,13:00,POST,Bilvalg,Har du en elbil i tankerne?,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,-4996663419840479223,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post,"Har du en bestemt elbil i tankerne?
+﻿date,time,type,theme,title,status,publication_route,owner_action,existing_id,existing_uuid,destination,caption
+2026-11-15,13:00,POST,Bilvalg,Har du en elbil i tankerne?,PUBLISHED,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,428400343,-4996663419840479223,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_post,"Har du en bestemt elbil i tankerne?
 
 På EV Beregners hjemmeside kan du finde din egen bil – eller en model, du overvejer at købe – og regne videre med dens data.
 
@@ -11,7 +11,7 @@ https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campa
 Her er Toyota bZ4X vist som eksempel. Ikke alle varianter har foto, og udstyr og farve kan afvige. Biloplysninger er vejledende. Foto: TTTNIS / CC0; kilde på modelsiden.
 
 #elbil #EVBeregner"
-2026-11-15,10:00,REEL,Bilvalg,Vælg din elbil og regn videre,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,8403383719013468039,https://www.evberegn.dk/,"Har du en elbil – eller en bestemt model i tankerne?
+2026-11-15,10:00,REEL,Bilvalg,Vælg din elbil og regn videre,PUBLISHED,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,427367138,8403383719013468039,https://www.evberegn.dk/,"Har du en elbil – eller en bestemt model i tankerne?
 
 På https://www.evberegn.dk/ kan du finde bilen, se modeloplysninger og regne videre med dens data. Det er en hjemmeside, som du bruger gratis direkte i browseren. Uden login.
 
@@ -22,8 +22,8 @@ Eksemplet viser Hyundai IONIQ 5. Forbrug er katalogdata; elprisen 2,00 kr./kWh e
 Modelbillede: TTTNIS / CC0. Udstyr og farve kan afvige. Billedkilde og dataforbehold findes på modelsiden.
 
 #elbil #elbiløkonomi #EVBeregner"
-2026-11-15,19:00,STORY,Bilvalg,Din bil – eller den næste?,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,105779028072090749,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_story,
-2026-11-16,10:00,POST,Kilometerpris,Hvad koster strømmen til 100 km?,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,-6589191064007917297,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
+2026-11-15,19:00,STORY,Bilvalg,Din bil – eller den næste?,PUBLISHED,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,428400357,105779028072090749,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261115_story,
+2026-11-16,10:00,POST,Kilometerpris,Hvad koster strømmen til 100 km?,PUBLISHED,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,427119724,-6589191064007917297,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
 Brug den gratis direkte i din browser – uden login.
 
 Hvad koster strømmen til 100 km i din elbil?
@@ -34,7 +34,7 @@ Det er et regneeksempel. Brug dit eget forbrug og din egen elpris her:
 https://www.evberegn.dk/beregnere/pris-pr-km/#s=1&k=2&consumption=16&electricPrice=2
 
 Jeg står bag det gratis værktøj EV Beregner. Bilens øvrige omkostninger er ikke med i denne beregning."
-2026-11-16,14:00,REEL,Kilometerpris,Hvad koster strømmen til 100 km?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2,"Hvad koster dine 100 km i strøm? ⚡
+2026-11-16,14:00,REEL,Kilometerpris,Hvad koster strømmen til 100 km?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_reel#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2,"Hvad koster dine 100 km i strøm? ⚡
 
 I dette regneeksempel giver 16 kWh/100 km og en samlet elpris på 2,00 kr./kWh en strømudgift på 32 kr. pr. 100 km.
 
@@ -49,8 +49,8 @@ Hyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke a
 
 #elbil #elbiløkonomi #EVBeregner
 "
-2026-11-16,19:00,STORY,Kilometerpris,Hvad koster strømmen til 100 km?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2,
-2026-11-17,10:00,POST,Køretur,Hvad koster weekendens eller hverdagens tur?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5,"Hvad koster din næste køretur i strøm? ⚡
+2026-11-16,19:00,STORY,Kilometerpris,Hvad koster strømmen til 100 km?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261116_story#s=1&k=2&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2,
+2026-11-17,10:00,POST,Køretur,Hvad koster weekendens eller hverdagens tur?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_post#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5,"Hvad koster din næste køretur i strøm? ⚡
 
 Et regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.
 
@@ -63,7 +63,7 @@ Beregningen viser strømudgiften. Fx værditab, forsikring, parkering og andre b
 
 #elbil #elbiløkonomi #EVBeregner
 "
-2026-11-17,14:00,REEL,Køretur,Hvad koster weekendens eller hverdagens tur?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5,"Hvad koster din næste køretur i strøm? ⚡
+2026-11-17,14:00,REEL,Køretur,Hvad koster weekendens eller hverdagens tur?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_reel#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5,"Hvad koster din næste køretur i strøm? ⚡
 
 Et regneeksempel: 75 km med et forventet forbrug på 18 kWh/100 km kræver 13,5 kWh. Ved en valgt elpris på 2,50 kr./kWh bliver strømudgiften 33,75 kr.
 
@@ -78,19 +78,25 @@ Hyundai IONIQ 5 er vist som eksempel. Udstyr, farve og fælge kan afvige. Ikke a
 
 #elbil #elbiløkonomi #EVBeregner
 "
-2026-11-17,19:00,STORY,Køretur,Hvad koster weekendens eller hverdagens tur?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_story#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5,
-2026-11-18,10:00,POST,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_post,"Hvad koster 20 til 80 procent?
+2026-11-17,19:00,STORY,Køretur,Hvad koster weekendens eller hverdagens tur?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload this finished file in Meta Business Suite only if not already present in your native Meta calendar,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261117_story#s=1&k=6&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&km=75&consumption=18&electricPrice=2.5,
+2026-11-18,10:00,POST,Ladepris,Hvad koster 20 til 80 procent?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if the same date/format is not already scheduled or published there,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_post#s=1&k=1&area=DK1&battery=60&electricPrice=2&from=20&to=80&overhead=10,"Hvad koster det at lade fra 20 til 80 %? ⚡
 
-Vælg en bil, og tilpas batteri, startprocent, slutprocent, elpris og ekstra strømforbrug. Se prisen på netop dit regneeksempel.
+Et valgt regneeksempel:
+• 60 kWh brugbar batterikapacitet.
+• 20 til 80 % giver 36 kWh til batteriet.
+• Med 10 % ekstra strømforbrug betaler du for 39,6 kWh.
+• Ved en valgt elpris på 2,00 kr./kWh bliver strømudgiften 79,20 kr.
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_post
+Vælg din egen elbil – eller en model, du overvejer – og tilpas batteri, ladeprocenter, samlet elpris og ekstra strømforbrug til dine forhold.
 
-Direkte i browseren – uden login.
+Prøv gratis på EV Beregners hjemmeside, direkte i browseren uden login:
+https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_post#s=1&k=1&area=DK1&battery=60&electricPrice=2&from=20&to=80&overhead=10
 
-Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.
+Det er valgte eksempelværdier, ikke en aktuel markedspris eller et pristilbud. Øvrige ladegebyrer og biludgifter er ikke med.
 
-#elbil #EVBeregner"
-2026-11-18,12:00,REEL,Ladepris,Hvad koster opladning fra 20 til 80 procent?,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,5694237824031212205,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
+#elbil #opladning #EVBeregner
+"
+2026-11-18,12:00,REEL,Ladepris,Hvad koster opladning fra 20 til 80 procent?,PUBLISHED,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,427119812,5694237824031212205,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
 Brug den gratis direkte i din browser – uden login.
 
 Hvad koster det at lade fra 20 til 80 %?
@@ -102,8 +108,8 @@ https://www.evberegn.dk/beregnere/ladepris/#s=1&k=1&battery=60&electricPrice=2&f
 
 EV Beregner · gratis og uden login.
 #elbil #opladning"
-2026-11-18,19:00,STORY,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_story,
-2026-11-19,10:00,POST,El mod benzin,El eller benzin med dine egne tal?,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,-2622971657274569533,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
+2026-11-18,19:00,STORY,Ladepris,Hvad koster 20 til 80 procent?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if the same date/format is not already scheduled or published there,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261118_story#s=1&k=1&area=DK1&battery=60&electricPrice=2&from=20&to=80&overhead=10,
+2026-11-19,10:00,POST,El mod benzin,El eller benzin med dine egne tal?,PUBLISHED,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,427119752,-2622971657274569533,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
 Brug den gratis direkte i din browser – uden login.
 
 Strøm eller benzin: hvad bliver energiudgiften med dine tal?
@@ -117,42 +123,58 @@ Forskellen på 13.600 kr. gælder kun energien i dette eksempel. Købspris, vær
 Prøv dine egne forudsætninger: https://www.evberegn.dk/beregnere/elbil-vs-benzin/#s=1&k=3&consumption=16&electricPrice=2&fuelEconomy=16&fuelPrice=16&annualKm=20000
 
 Jeg står bag EV Beregner. Priserne ovenfor er valgte eksempelpriser."
-2026-11-19,14:00,REEL,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_reel,"El eller benzin med dine egne tal?
+2026-11-19,14:00,REEL,El mod benzin,El eller benzin med dine egne tal?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled/published there,,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_reel#s=1&k=3&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2&fuelEconomy=16&fuelPrice=16&annualKm=20000,"Strøm eller benzin – hvad viser dine egne tal? ⚡
 
-Sammenlign energiudgiften ved samme årlige kørsel. Indtast eget elforbrug, km/l, elpris og benzinpris.
+Prøv gratis på EV Beregners hjemmeside:
+https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_reel#s=1&k=3&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2&fuelEconomy=16&fuelPrice=16&annualKm=20000
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_reel
+I filmens valgte regneeksempel med 20.000 km om året:
+• Elbil: 16 kWh/100 km og 2,00 kr./kWh giver 6.400 kr. i strøm.
+• Benzinbil: 16 km/l og 16,00 kr./l giver 20.000 kr. i benzin.
 
-Direkte i browseren – uden login.
+Det er en forskel på 13.600 kr. for energien i netop dette eksempel. Købspris, værditab, forsikring og øvrige biludgifter er ikke med. El- og benzinpriserne er valgte eksempler, ikke aktuelle pristilbud.
 
-Energiforskellen er ikke en beregning af alle ejeromkostninger.
+Vælg din egen elbil – eller den, du overvejer – og tilpas forbrug, priser og kilometer. Det er en hjemmeside, som du bruger direkte i browseren uden login.
 
-#elbil #EVBeregner"
-2026-11-19,19:00,STORY,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_story,
-2026-11-20,10:00,POST,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_post,"Hvad gør højere forbrug ved rækkevidden?
+Modelbillede: Hyundai IONIQ 5 som eksempel. Udstyr, farve og fælge kan afvige, og nogle varianter mangler foto. Foto: TTTNIS, CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg
 
-Prøv to selvvalgte forbrugstal med samme batteri, og se forskellen i det matematiske overslag.
+#elbil #biløkonomi #EVBeregner
+"
+2026-11-19,19:00,STORY,El mod benzin,El eller benzin med dine egne tal?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled/published there,,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261119_story#s=1&k=3&bil=hyundai-ioniq-5-standard-range-rwd-essential&area=DK1&consumption=16&electricPrice=2&fuelEconomy=16&fuelPrice=16&annualKm=20000,
+2026-11-20,10:00,POST,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled or published there,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_post#s=1&k=7&battery=60&consumption=20,"Hvad gør et højere forbrug ved rækkevidden? ⚡
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_post
+Prøv med dine egne tal på EV Beregners hjemmeside:
+https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_post#s=1&k=7&battery=60&consumption=20
 
-Direkte i browseren – uden login.
+Et valgt regneeksempel med samme 60 kWh brugbare energi:
+• Ved 20 kWh/100 km bliver det matematiske overslag 300 km.
+• Ved 26 kWh/100 km bliver overslaget cirka 231 km.
 
-Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.
+Forbrugstallene er valgte scenarier. Det er ikke en prognose eller en garanti for din faktiske vinterrækkevidde. Hastighed, temperatur og kørselsforhold kan påvirke forbruget.
 
-#elbil #EVBeregner"
-2026-11-20,14:00,REEL,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_reel,"Hvad gør højere forbrug ved rækkevidden?
+Vælg din egen elbil – eller en model, du overvejer – og brug en passende brugbar energimængde og dit forventede forbrug. Brug EV Beregner gratis direkte i browseren uden login.
 
-Prøv to selvvalgte forbrugstal med samme batteri, og se forskellen i det matematiske overslag.
+#elbil #vinterkørsel #EVBeregner
+"
+2026-11-20,14:00,REEL,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,METRICOOL_RESERVED_NOT_SCHEDULED,MAA_IKKE_DUPLIKERES_I_META: reconcile the unconfirmed Metricool request before any repeat or manual fallback,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_reel#s=1&k=7&battery=60&consumption=26,"Hvad gør et højere forbrug ved rækkevidden? ⚡
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_reel
+Prøv med dine egne tal på EV Beregners hjemmeside:
+https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_reel#s=1&k=7&battery=60&consumption=26
 
-Direkte i browseren – uden login.
+Et valgt regneeksempel med samme 60 kWh brugbare energi:
+• Ved 20 kWh/100 km bliver det matematiske overslag 300 km.
+• Ved 26 kWh/100 km bliver overslaget cirka 231 km.
 
-Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.
+Forbrugstallene er valgte scenarier. Det er ikke en prognose eller en garanti for din faktiske vinterrækkevidde. Hastighed, temperatur og kørselsforhold kan påvirke forbruget.
 
-#elbil #EVBeregner"
-2026-11-20,19:00,STORY,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_story,
-2026-11-21,10:00,POST,Bil før køb,Se bilen før du regner,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,-6965175447170495098,https://www.evberegn.dk/,"Overvejer du at købe elbil?
+Vælg din egen elbil – eller en model, du overvejer – og brug en passende brugbar energimængde og dit forventede forbrug. Brug EV Beregner gratis direkte i browseren uden login.
+
+Modelbillede: Hyundai IONIQ 5 som illustration. Regneeksemplets 60 kWh er selvvalgt og ikke en batterioplysning om den fotograferede variant. Udstyr, farve og fælge kan afvige, og nogle varianter mangler foto. Foto: TTTNIS, CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg
+
+#elbil #vinterkørsel #EVBeregner
+"
+2026-11-20,19:00,STORY,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled or published there,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261120_story#s=1&k=7&battery=60&consumption=20,
+2026-11-21,10:00,POST,Bil før køb,Se bilen før du regner,PUBLISHED,METRICOOL_CONFIRMED,MÅ_IKKE_DUPLIKERES_I_META,427367157,-6965175447170495098,https://www.evberegn.dk/,"Overvejer du at købe elbil?
 
 Start med den model, du har i tankerne: https://www.evberegn.dk/
 
@@ -163,42 +185,52 @@ Du bruger EV Beregner gratis på hjemmesiden – direkte i browseren og uden log
 Billedet viser Hyundai IONIQ 5 som eksempel. Modelbilleder kan afvige i udstyr og farve; enkelte modeller mangler foto. Katalogdata er vejledende og er ikke et aktuelt pristilbud. Foto: TTTNIS / CC0; kilde og forbehold på modelsiden.
 
 #elbil #bilkøb #EVBeregner"
-2026-11-21,14:00,REEL,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_reel,"Regn på bilen, før du beslutter dig
+2026-11-21,14:00,REEL,Bil før køb,"Regn på bilen, før du beslutter dig",MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled or published there,,,https://www.evberegn.dk/elbil/hyundai-ioniq-5-standard-range-rwd-essential/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_reel,"Elbil i tankerne? Se modellen, og regn med dine egne tal.
 
-Find den model, du overvejer, og brug dens data som udgangspunkt. Ret især købspris, elpris og forbrug til dine forhold.
+Start med modelsiden i eksemplet:
+https://www.evberegn.dk/elbil/hyundai-ioniq-5-standard-range-rwd-essential/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_reel
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_reel
+På EV Beregners hjemmeside kan du finde din egen elbil – eller en model, du overvejer – og regne videre på strømudgift, opladning og økonomi. Gratis direkte i browseren uden login.
 
-Direkte i browseren – uden login.
+Videoens valgte eksempel: 16 kWh/100 km og 2 kr./kWh giver 32 kr. i strøm pr. 100 km, svarende til 0,32 kr. pr. km. Det er kun strømudgiften. Fx købspris, værditab, forsikring og finansiering kommer til.
 
-Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.
+Tilpas især forbrug, elpris og din konkrete købspris. Katalogdata er vejledende, og katalogpriser er ikke sikre aktuelle tilbud. Brug din egen købspris ved brugte eller historiske biler. Eksempelværdierne er selvvalgte; de er ikke et tilbud eller en garanti for den fotograferede variants økonomi.
 
-#elbil #EVBeregner"
-2026-11-21,19:00,STORY,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_story,
-2026-11-22,10:00,POST,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_post,"Hvor lang tid skal bilen lade?
+Modelbillede: Hyundai IONIQ 5 som illustration. Udstyr, farve og fælge kan afvige, og nogle varianter mangler foto. Foto: TTTNIS, CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg . Licens: https://creativecommons.org/publicdomain/zero/1.0/ .
 
-Tilpas batteri, start- og slutprocent og den gennemsnitlige ladeeffekt. Se et overslag over tiden.
+#elbil #bilkøb #EVBeregner
+"
+2026-11-21,19:00,STORY,Bil før køb,"Regn på bilen, før du beslutter dig",MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled or published there,,,https://www.evberegn.dk/elbil/hyundai-ioniq-5-standard-range-rwd-essential/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261121_story,
+2026-11-22,10:00,POST,Opladningstid,Hvor lang tid skal bilen lade?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled or published there,,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_post#s=1&k=8&battery=60&from=20&to=80&power=72,"Hvor lang tid skal bilen lade?
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_post
+Prøv et overslag med dine egne tal på EV Beregners hjemmeside:
+https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_post#s=1&k=8&battery=60&from=20&to=80&power=72
 
-Direkte i browseren – uden login.
+Et valgt regneeksempel: 60 kWh brugbar energi og opladning fra 20 til 80 % kræver 36 kWh til batteriet. Ved 72 kW i gennemsnit bliver den teoretiske tid 30 minutter.
 
-Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.
+Brug en realistisk gennemsnitlig ladeeffekt. Bilens maksimale kW er ikke en konstant effekt gennem hele opladningen. Ladekurve, temperatur og ladestander kan påvirke tiden, og faktisk ladetid kan afvige. Tallene er selvvalgte, ikke en garanti eller en specifikation af en fotograferet bil.
 
-#elbil #EVBeregner"
-2026-11-22,14:00,REEL,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_reel,"Hvor lang tid skal bilen lade?
+Vælg din egen elbil eller den, du overvejer, og tilpas batteridata og ladeforudsætninger. EV Beregner er gratis og bruges direkte i browseren uden login.
 
-Tilpas batteri, start- og slutprocent og den gennemsnitlige ladeeffekt. Se et overslag over tiden.
+#elbil #opladning #EVBeregner
+"
+2026-11-22,14:00,REEL,Opladningstid,Hvor lang tid skal bilen lade?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,METRICOOL_RESERVED_NOT_SCHEDULED,MÅ_IKKE_DUPLIKERES_I_META; ingen aftale bekræftet,,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_reel#s=1&k=8&battery=60&from=20&to=80&power=72,"Hvor lang tid skal bilen lade?
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_reel
+Prøv et overslag med dine egne tal på EV Beregners hjemmeside:
+https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_reel#s=1&k=8&battery=60&from=20&to=80&power=72
 
-Direkte i browseren – uden login.
+Et valgt regneeksempel: 60 kWh brugbar energi og opladning fra 20 til 80 % kræver 36 kWh til batteriet. Ved 72 kW i gennemsnit bliver den teoretiske tid 30 minutter.
 
-Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.
+Brug en realistisk gennemsnitlig ladeeffekt. Bilens maksimale kW er ikke en konstant effekt gennem hele opladningen. Ladekurve, temperatur og ladestander kan påvirke tiden, og faktisk ladetid kan afvige. Tallene er selvvalgte, ikke en garanti eller en specifikation af en fotograferet bil.
 
-#elbil #EVBeregner"
-2026-11-22,19:00,STORY,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_story,
-2026-11-23,10:00,POST,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,7973124568287167665,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
+Vælg din egen elbil eller den, du overvejer, og tilpas batteridata og ladeforudsætninger. EV Beregner er gratis og bruges direkte i browseren uden login.
+
+Modelbillede: Hyundai IONIQ 5 som illustration. Udstyr, farve og fælge kan afvige, og nogle varianter mangler foto. Foto: TTTNIS, CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg . Licens: https://creativecommons.org/publicdomain/zero/1.0/ .
+
+#elbil #opladning #EVBeregner
+"
+2026-11-22,19:00,STORY,Opladningstid,Hvor lang tid skal bilen lade?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,Upload manually in Meta only if not already scheduled or published there,,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261122_story#s=1&k=8&battery=60&from=20&to=80&power=72,
+2026-11-23,10:00,POST,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,PUBLISHED,METRICOOL_CONFIRMED,MÅ_IKKE_DUPLIKERES_I_META,427119772,7973124568287167665,https://www.evberegn.dk/,"EV Beregner er en hjemmeside: https://www.evberegn.dk/
 Brug den gratis direkte i din browser – uden login.
 
 Samme batteri kan give meget forskellig rækkevidde.
@@ -208,65 +240,85 @@ Med 60 kWh brugbart batteri og et forventet forbrug på 18 kWh/100 km er det mat
 Se hvad et andet forbrug gør ved dit regnestykke: https://www.evberegn.dk/beregnere/raekkevidde/#s=1&k=7&battery=60&consumption=18
 
 Det er et matematisk overslag. Den faktiske rækkevidde afhænger blandt andet af hastighed, temperatur og kørselsforhold. Jeg står bag EV Beregner."
-2026-11-23,14:00,REEL,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_reel,"Batteri og forbrug: hvor langt rækker det?
+2026-11-23,14:00,REEL,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,"Upload manuelt i Meta Business Suite, hvis pladsen ikke allerede er brugt.",,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_reel#s=1&k=7&battery=60&consumption=18,"Samme batteri – hvorfor ændrer rækkevidden sig?
 
-Indtast den batterikapacitet og det forbrug, du vil regne med. Sammenlign flere scenarier.
+Prøv med dine egne tal på hjemmesiden:
+https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_reel#s=1&k=7&battery=60&consumption=18
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_reel
+Et valgt regneeksempel: Med 60 kWh brugbar energi giver 18 kWh/100 km et matematisk overslag på cirka 333 km. Ved 24 kWh/100 km er overslaget 250 km.
 
-Direkte i browseren – uden login.
+Det er ikke en garanti for faktisk rækkevidde eller specifikationer af den viste bil. Hastighed, temperatur og kørselsforhold påvirker forbruget. Kontrollér den brugbare batterikapacitet, og prøv flere forbrugstal.
 
-Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.
+Find din egen elbil eller en model, du overvejer, og regn videre med dine egne oplysninger. EV Beregner er gratis på evberegn.dk – direkte i browseren uden login.
 
-#elbil #EVBeregner"
-2026-11-23,19:00,STORY,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_story,
-2026-11-24,10:00,POST,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_post,"Hvor mange kWh bruger din elbil om året?
+Følg EV Beregner på Facebook for flere konkrete regneeksempler.
 
-Gang dine årlige kilometer med dit forventede forbrug. Beregneren viser dit årlige energibehov.
+Modelbillede: Hyundai IONIQ 5 som illustration. Udstyr, farve og fælge kan afvige; nogle varianter mangler foto. Foto: TTTNIS, CC0. Kilde: https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5.jpg . Licens: https://creativecommons.org/publicdomain/zero/1.0/ .
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_post
+#elbil #rækkevidde #EVBeregner
+"
+2026-11-23,19:00,STORY,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,"Upload manuelt i Meta Business Suite, hvis pladsen ikke allerede er brugt.",,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261123_story#s=1&k=7&battery=60&consumption=18,
+2026-11-24,10:00,POST,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,"Upload manuelt i Meta, hvis pladsen ikke allerede er brugt.",,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_post#s=1&k=9&annualKm=20000&consumption=16,"Hvor meget strøm bruger din elbil på et år?
 
-Direkte i browseren – uden login.
+Prøv på hjemmesiden:
+https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_post#s=1&k=9&annualKm=20000&consumption=16
 
-Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.
+Et valgt regneeksempel: 20.000 km om året og 16 kWh/100 km giver 3.200 kWh/år. Det svarer til cirka 267 kWh pr. måned i gennemsnit; det faktiske månedsforbrug kan variere.
 
-#elbil #EVBeregner"
-2026-11-24,14:00,REEL,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_reel,"Hvor mange kWh bruger din elbil om året?
+Vælg din elbil – eller en model, du overvejer – og tilpas forbrug og kilometer. EV Beregner er gratis direkte i browseren uden login.
 
-Gang dine årlige kilometer med dit forventede forbrug. Beregneren viser dit årlige energibehov.
+Resultatet viser strømforbrug, ikke hele bilbudgettet. Afstem tallet med din bil, kørsel og målegrundlaget for forbruget. Ladetab kan allerede indgå i de oplyste tal.
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_reel
+#elbil #strømforbrug #EVBeregner
+"
+2026-11-24,14:00,REEL,Årligt strømforbrug,Hvad bruger en elbil i strøm på et helt år?,PENDING,METRICOOL_CONFIRMED,MÅ_IKKE_DUPLIKERES_I_META; faktisk planlagt i Metricool.,439445275,1172321356632051659,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_reel#s=1&k=9&annualKm=20000&consumption=16,"Kan du bruge naboens strømforbrug, når du vælger elbil? ⚡
 
-Direkte i browseren – uden login.
+Find din egen bil – eller den, du overvejer – og regn på din egen kørsel:
+https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_reel#s=1&k=9&annualKm=20000&consumption=16
 
-Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.
+Årligt strømforbrug afhænger blandt andet af kilometer og forbrug. Brug realistiske tal, og kontrollér målegrundlaget, så ladetab ikke tælles to gange. Strømforbrug er ikke hele bilbudgettet.
 
-#elbil #EVBeregner"
-2026-11-24,19:00,STORY,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_story,
-2026-11-25,10:00,POST,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_post,"Hvad betyder din ladepris for økonomien?
+EV Beregner er en gratis hjemmeside, direkte i browseren uden login. Like og følg Facebook-siden for flere forståelige regneeksempler.
 
-Prøv to selvvalgte elpriser med samme bilforbrug. Se, hvordan strømudgiften pr. kilometer ændrer sig.
+Illustreret, fiktiv samtale med syntetiske danske stemmer.
+#elbil #biløkonomi #EVBeregner"
+2026-11-24,19:00,STORY,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,"Upload manuelt i Meta, hvis pladsen ikke allerede er brugt.",,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_story#s=1&k=9&annualKm=20000&consumption=16,
+2026-11-25,10:00,POST,Din elaftale,Hvad betyder din ladepris for økonomien?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,"Upload manuelt i Meta, hvis du ikke allerede har planlagt pladsen.",,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_post#s=1&k=2&consumption=16&electricPrice=2,"Samme elbil. Hvad betyder din egen elpris?
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_post
+Prøv på hjemmesiden:
+https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_post#s=1&k=2&consumption=16&electricPrice=2
 
-Direkte i browseren – uden login.
+Et valgt regneeksempel med samme forbrug på 16 kWh/100 km:
+• 2,00 kr./kWh giver 0,32 kr. pr. km.
+• 4,00 kr./kWh giver 0,64 kr. pr. km.
 
-De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.
+Brug din egen samlede pris pr. kWh med relevante afgifter, nettarif og moms. Eventuelle faste abonnementer skal regnes med særskilt; de indgår ikke automatisk i kilometerprisen.
 
-#elbil #EVBeregner"
-2026-11-25,14:00,REEL,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_reel,"Hvad betyder din ladepris for økonomien?
+Vælg din egen elbil eller en model, du overvejer, og ret forbrug og elpris. EV Beregner er gratis på evberegn.dk – direkte i browseren uden login.
 
-Prøv to selvvalgte elpriser med samme bilforbrug. Se, hvordan strømudgiften pr. kilometer ændrer sig.
+De to priser er regneeksempler, ikke livepriser eller tilbud. Resultatet viser kun strømudgiften, ikke alle bilens omkostninger. Undgå at lægge ladetab til igen, hvis de allerede indgår i dit forbrugstal.
 
-Prøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_reel
+Følg EV Beregner på Facebook for flere enkle regneeksempler.
 
-Direkte i browseren – uden login.
+#elbil #ladepris #EVBeregner
+"
+2026-11-25,14:00,REEL,Din elaftale,Elafgiften er sat ned. Hvad betyder det for min elbil?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,UDSKIFT_MEDIET_I_META_HVIS_ALLEREDE_PLANLAGT; opret ikke en ekstra Reel på samme plads.,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_reel#s=1&k=2&consumption=16&electricPrice=2,"Lav elafgift er ikke det samme som gratis opladning ⚡
 
-De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.
+Hvad betyder din samlede elpris for din elbil? Prøv med egne tal:
+https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_reel#s=1&k=2&consumption=16&electricPrice=2
 
-#elbil #EVBeregner"
-2026-11-25,19:00,STORY,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_story,
-2026-11-26,13:00,POST,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_post,"Din bil – din ladepris
+Den almindelige elafgift er midlertidigt sat ned i 2026 og 2027. Det er en gældende regel – ikke en ny aftale annonceret i dag. Strøm, netbetaling og moms har stadig betydning. Brug din samlede relevante elpris og bilens forbrug, når du regner på energiudgiften pr. kilometer. Tjek dine egne aftalevilkår.
+
+Vælg din elbil eller en model, du overvejer. EV Beregner er en gratis hjemmeside uden login. Like og følg siden for flere konkrete forklaringer om elbil og økonomi.
+
+Kilde: Skattestyrelsen
+https://skat.dk/erhverv/afgifter-paa-varer-og-ydelser-punktafgifter/nyhedsbrev-afgifter/midlertidig-nedsaettelse-af-elafgiften-i-2026-og-2027
+
+Illustreret, fiktiv samtale med syntetiske danske stemmer. Energiudgift er ikke alle ejeromkostninger.
+#elbil #elafgift #EVBeregner
+"
+2026-11-25,19:00,STORY,Din elaftale,Hvad betyder din ladepris for økonomien?,MATERIALER_KLAR_UDGIVELSE_AFVENTER,MANUAL_META_BUSINESS_SUITE,"Upload manuelt i Meta, hvis du ikke allerede har planlagt pladsen.",,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_story#s=1&k=2&consumption=16&electricPrice=2,
+2026-11-26,13:00,POST,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_post,"Din bil – din ladepris
 
 Vælg bilmodellen og regn videre på en delvis opladning. Ret elpris og ekstra strømforbrug til dit eksempel.
 
@@ -277,21 +329,19 @@ Direkte i browseren – uden login.
 Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.
 
 #elbil #EVBeregner"
-2026-11-26,10:00,REEL,Din bils opladning,Din bil – din ladepris,already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,281769916129888821,https://www.evberegn.dk/,"Hvad koster en opladning af den bil, du kører i – eller overvejer at købe?
+2026-11-26,10:00,REEL,Din bils opladning,"Betaler jeg for et helt batteri, når jeg kun lader lidt?",PENDING,METRICOOL_CONFIRMED,MÅ_IKKE_DUPLIKERES_I_META; faktisk planlagt i Metricool.,439444081,281769916129888821,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_reel,"Betaler du for et helt batteri, når du kun lader en del op? ⚡
 
-Prøv selv på hjemmesiden: https://www.evberegn.dk/
+Regn på din egen opladning her:
+https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_reel
 
-Vælg bilmodellen, og regn videre med dens batteridata. Ret startprocent, slutprocent, elpris og ekstra strømforbrug, så beregningen passer til dit eksempel.
+Vælg din elbil – eller en, du overvejer – og kontrollér batterikapaciteten. Ret startprocent, slutprocent og din samlede elpris. Brutto- og brugbar batterikapacitet kan være forskellige; brug det relevante tal. Ekstra strømforbrug og ladetab kan ændre energiudgiften, og tab skal ikke tælles to gange.
 
-EV Beregner er gratis og virker direkte i browseren. Uden login.
+EV Beregner er en gratis hjemmeside direkte i browseren uden login. Like og følg Facebook-siden for flere enkle forklaringer om elbiler.
 
-I videoen bruges Hyundai IONIQ 5 og et valgt eksempel: 63 kWh, 20–80 %, 2,00 kr./kWh og 10 % ekstra strømforbrug. Beregnet ladepris: 83,16 kr. Batteridata er katalogdata; beløbet er et regneeksempel, ikke en live ladepris.
-
-Modelbillede: TTTNIS / CC0. Udstyr og farve kan afvige; billedkilde og forbehold står på modelsiden.
-
+Illustreret, fiktiv samtale med syntetiske danske stemmer. Ladeprisen er et regneoverslag over energi, ikke et aktuelt tilbud eller alle bilens omkostninger.
 #elbil #opladning #EVBeregner"
-2026-11-26,19:00,STORY,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_story,
-2026-11-27,10:00,POST,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261127_post#beregner-13,"Hvad fylder bilen i dit månedsbudget?
+2026-11-26,19:00,STORY,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_story,
+2026-11-27,10:00,POST,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261127_post#beregner-13,"Hvad fylder bilen i dit månedsbudget?
 
 Saml de udgifter, du faktisk har til finansiering, forsikring, strøm og andet, i et månedsbudget.
 
@@ -302,7 +352,7 @@ Direkte i browseren – uden login.
 Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.
 
 #elbil #EVBeregner"
-2026-11-27,14:00,REEL,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261127_reel#beregner-13,"Hvad fylder bilen i dit månedsbudget?
+2026-11-27,14:00,REEL,Månedsbudget,Er strømmen virkelig hele mit bilbudget?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261127_reel#beregner-13,"Hvad fylder bilen i dit månedsbudget?
 
 Saml de udgifter, du faktisk har til finansiering, forsikring, strøm og andet, i et månedsbudget.
 
@@ -313,8 +363,8 @@ Direkte i browseren – uden login.
 Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.
 
 #elbil #EVBeregner"
-2026-11-27,19:00,STORY,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261127_story#beregner-13,
-2026-11-28,10:00,POST,Egne tal,"Din bil, dine egne tal",already_scheduled,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,-5373484419553016410,https://www.evberegn.dk/,"Den samme elbil kan koste forskelligt at lade, alt efter din aftale.
+2026-11-27,19:00,STORY,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261127_story#beregner-13,
+2026-11-28,10:00,POST,Egne tal,"Din bil, dine egne tal",PENDING,METRICOOL_CONFIRMED,Do not duplicate in Meta Business Suite,427367190,-5373484419553016410,https://www.evberegn.dk/,"Den samme elbil kan koste forskelligt at lade, alt efter din aftale.
 
 På https://www.evberegn.dk/ vælger du din bil og retter elprisen og forbruget, før du beregner. Så tager regnestykket udgangspunkt i dine tal.
 
@@ -325,7 +375,7 @@ Du kan også vælge en model, du overvejer at købe, og undersøge økonomien, f
 Skærmbilledet er et regneeksempel: 16 kWh/100 km og 2,00 kr./kWh giver 0,32 kr. i strøm pr. km. Det er strømudgiften; fx værditab, forsikring og finansiering kommer oveni. Modeldata og priser skal tilpasses din bil og aftale.
 
 #elbil #ladepris #EVBeregner"
-2026-11-28,14:00,REEL,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261128_reel,"Din bil. Din elpris. Dine tal.
+2026-11-28,14:00,REEL,Egne tal,"Naboen siger, hans bil kører næsten gratis. Gør min også?",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261128_reel,"Din bil. Din elpris. Dine tal.
 
 Bilvalget er et udgangspunkt. Ret forbruget og elprisen, så beregningen passer til dig.
 
@@ -336,8 +386,8 @@ Direkte i browseren – uden login.
 Eksempelværdier er ikke et løfte om din faktiske strømudgift.
 
 #elbil #EVBeregner"
-2026-11-28,19:00,STORY,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261128_story,
-2026-11-29,10:00,POST,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261129_post,"Leasing eller køb over samme periode?
+2026-11-28,19:00,STORY,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261128_story,
+2026-11-29,10:00,POST,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261129_post,"Leasing eller køb over samme periode?
 
 Medregn førstegangsydelse, den månedlige leasingydelse og dit eget skøn over bilens salgspris ved køb.
 
@@ -348,7 +398,7 @@ Direkte i browseren – uden login.
 Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.
 
 #elbil #EVBeregner"
-2026-11-29,14:00,REEL,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261129_reel,"Leasing eller køb over samme periode?
+2026-11-29,14:00,REEL,Leasing eller køb,Den lave månedsydelse ser god ud. Hvad mangler jeg?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261129_reel,"Leasing eller køb over samme periode?
 
 Medregn førstegangsydelse, den månedlige leasingydelse og dit eget skøn over bilens salgspris ved køb.
 
@@ -359,8 +409,8 @@ Direkte i browseren – uden login.
 Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.
 
 #elbil #EVBeregner"
-2026-11-29,19:00,STORY,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261129_story,
-2026-11-30,10:00,POST,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261130_post,"Hvad koster bilen samlet over fem år?
+2026-11-29,19:00,STORY,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261129_story,
+2026-11-30,10:00,POST,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261130_post,"Hvad koster bilen samlet over fem år?
 
 Tag købspris, dit skøn over salgspris og de løbende udgifter med i regnestykket.
 
@@ -371,7 +421,7 @@ Direkte i browseren – uden login.
 Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.
 
 #elbil #EVBeregner"
-2026-11-30,14:00,REEL,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261130_reel,"Hvad koster bilen samlet over fem år?
+2026-11-30,14:00,REEL,Samlet biløkonomi,Er den billigste bil også den billigste at eje?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261130_reel,"Hvad koster bilen samlet over fem år?
 
 Tag købspris, dit skøn over salgspris og de løbende udgifter med i regnestykket.
 
@@ -382,8 +432,8 @@ Direkte i browseren – uden login.
 Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.
 
 #elbil #EVBeregner"
-2026-11-30,19:00,STORY,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261130_story,
-2026-12-01,10:00,POST,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261201_post#beregner-10,"Hvad bruger du på strøm derhjemme?
+2026-11-30,19:00,STORY,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261130_story,
+2026-12-01,10:00,POST,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261201_post#beregner-10,"Hvad bruger du på strøm derhjemme?
 
 Indtast dit årlige kørselsbehov, forbrug og en samlet elpris, som passer til din aftale.
 
@@ -394,7 +444,7 @@ Direkte i browseren – uden login.
 Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.
 
 #elbil #EVBeregner"
-2026-12-01,14:00,REEL,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261201_reel#beregner-10,"Hvad bruger du på strøm derhjemme?
+2026-12-01,14:00,REEL,Hjemmeladning,Kan en ladeboks betale sig for mine kilometer?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261201_reel#beregner-10,"Hvad bruger du på strøm derhjemme?
 
 Indtast dit årlige kørselsbehov, forbrug og en samlet elpris, som passer til din aftale.
 
@@ -405,8 +455,8 @@ Direkte i browseren – uden login.
 Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.
 
 #elbil #EVBeregner"
-2026-12-01,19:00,STORY,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261201_story#beregner-10,
-2026-12-02,10:00,POST,El mod diesel,El eller diesel: sammenlign energien,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-diesel/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261202_post,"El eller diesel: sammenlign energien
+2026-12-01,19:00,STORY,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261201_story#beregner-10,
+2026-12-02,10:00,POST,El mod diesel,El eller diesel: sammenlign energien,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/elbil-vs-diesel/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261202_post,"El eller diesel: sammenlign energien
 
 Sammenlign samme antal kilometer med dit elforbrug, km/l og dine energi- og brændstofpriser.
 
@@ -417,7 +467,7 @@ Direkte i browseren – uden login.
 Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.
 
 #elbil #EVBeregner"
-2026-12-02,14:00,REEL,El mod diesel,El eller diesel: sammenlign energien,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-diesel/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261202_reel,"El eller diesel: sammenlign energien
+2026-12-02,14:00,REEL,El mod diesel,Dieselbilen bruger liter. Elbilen bruger kWh. Hvordan sammenligner jeg?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/elbil-vs-diesel/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261202_reel,"El eller diesel: sammenlign energien
 
 Sammenlign samme antal kilometer med dit elforbrug, km/l og dine energi- og brændstofpriser.
 
@@ -428,8 +478,8 @@ Direkte i browseren – uden login.
 Forskellen gælder energien; købspris, finansiering og værditab skal vurderes særskilt.
 
 #elbil #EVBeregner"
-2026-12-02,19:00,STORY,El mod diesel,El eller diesel: sammenlign energien,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-diesel/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261202_story,
-2026-12-03,10:00,POST,Tilgængeligt batteri,Hvilken batterikapacitet regner du med?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261203_post,"Hvilken batterikapacitet regner du med?
+2026-12-02,19:00,STORY,El mod diesel,El eller diesel: sammenlign energien,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/elbil-vs-diesel/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261202_story,
+2026-12-03,10:00,POST,Tilgængeligt batteri,Hvilken batterikapacitet regner du med?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261203_post,"Hvilken batterikapacitet regner du med?
 
 Prøv med den kapacitet, bilen faktisk kan bruge, når den er dokumenteret. Ret katalogtallet, hvis det ikke passer til dit formål.
 
@@ -440,7 +490,7 @@ Direkte i browseren – uden login.
 Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.
 
 #elbil #EVBeregner"
-2026-12-03,14:00,REEL,Tilgængeligt batteri,Hvilken batterikapacitet regner du med?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261203_reel,"Hvilken batterikapacitet regner du med?
+2026-12-03,14:00,REEL,Tilgængeligt batteri,Batteriet er på papiret stort. Kan jeg bruge det hele?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261203_reel,"Hvilken batterikapacitet regner du med?
 
 Prøv med den kapacitet, bilen faktisk kan bruge, når den er dokumenteret. Ret katalogtallet, hvis det ikke passer til dit formål.
 
@@ -451,8 +501,8 @@ Direkte i browseren – uden login.
 Brutto og netto er forskellige oplysninger; ukendte data må ikke kaldes bekræftede.
 
 #elbil #EVBeregner"
-2026-12-03,19:00,STORY,Tilgængeligt batteri,Hvilken batterikapacitet regner du med?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261203_story,
-2026-12-04,10:00,POST,Solceller,Kan solceller dække en del af bilens strøm?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261204_post#beregner-11,"Kan solceller dække en del af bilens strøm?
+2026-12-03,19:00,STORY,Tilgængeligt batteri,Hvilken batterikapacitet regner du med?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261203_story,
+2026-12-04,10:00,POST,Solceller,Kan solceller dække en del af bilens strøm?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261204_post#beregner-11,"Kan solceller dække en del af bilens strøm?
 
 Sammenhold bilens årlige energibehov med den solenergi, du vil regne med.
 
@@ -463,7 +513,7 @@ Direkte i browseren – uden login.
 Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.
 
 #elbil #EVBeregner"
-2026-12-04,14:00,REEL,Solceller,Kan solceller dække en del af bilens strøm?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261204_reel#beregner-11,"Kan solceller dække en del af bilens strøm?
+2026-12-04,14:00,REEL,Solceller,Er strøm fra mine solceller gratis til bilen?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261204_reel#beregner-11,"Kan solceller dække en del af bilens strøm?
 
 Sammenhold bilens årlige energibehov med den solenergi, du vil regne med.
 
@@ -474,8 +524,8 @@ Direkte i browseren – uden login.
 Et årsoverslag sikrer ikke, at produktion og opladning falder på samme tidspunkt.
 
 #elbil #EVBeregner"
-2026-12-04,19:00,STORY,Solceller,Kan solceller dække en del af bilens strøm?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261204_story#beregner-11,
-2026-12-05,10:00,POST,Vedligeholdelse,Hvad koster vedligeholdelse pr. kilometer?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261205_post#beregner-15,"Hvad koster vedligeholdelse pr. kilometer?
+2026-12-04,19:00,STORY,Solceller,Kan solceller dække en del af bilens strøm?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261204_story#beregner-11,
+2026-12-05,10:00,POST,Vedligeholdelse,Hvad koster vedligeholdelse pr. kilometer?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261205_post#beregner-15,"Hvad koster vedligeholdelse pr. kilometer?
 
 Fordel dit eget årlige vedligeholdelsesbudget på dine kilometer.
 
@@ -486,7 +536,7 @@ Direkte i browseren – uden login.
 Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.
 
 #elbil #EVBeregner"
-2026-12-05,14:00,REEL,Vedligeholdelse,Hvad koster vedligeholdelse pr. kilometer?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261205_reel#beregner-15,"Hvad koster vedligeholdelse pr. kilometer?
+2026-12-05,14:00,REEL,Vedligeholdelse,Ingen olie. Betyder det ingen vedligeholdelse?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261205_reel#beregner-15,"Hvad koster vedligeholdelse pr. kilometer?
 
 Fordel dit eget årlige vedligeholdelsesbudget på dine kilometer.
 
@@ -497,8 +547,8 @@ Direkte i browseren – uden login.
 Dit budget skal passe til din bil; det er ikke en garanti for fremtidige reparationer.
 
 #elbil #EVBeregner"
-2026-12-05,19:00,STORY,Vedligeholdelse,Hvad koster vedligeholdelse pr. kilometer?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261205_story#beregner-15,
-2026-12-06,10:00,POST,Årlig energiforskel,Hvad betyder energien for dit årsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261206_post#beregner-17,"Hvad betyder energien for dit årsbudget?
+2026-12-05,19:00,STORY,Vedligeholdelse,Hvad koster vedligeholdelse pr. kilometer?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261205_story#beregner-15,
+2026-12-06,10:00,POST,Årlig energiforskel,Hvad betyder energien for dit årsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261206_post#beregner-17,"Hvad betyder energien for dit årsbudget?
 
 Sammenhold de årlige energiudgifter i dine egne scenarier.
 
@@ -509,7 +559,7 @@ Direkte i browseren – uden login.
 En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.
 
 #elbil #EVBeregner"
-2026-12-06,14:00,REEL,Årlig energiforskel,Hvad betyder energien for dit årsbudget?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261206_reel#beregner-17,"Hvad betyder energien for dit årsbudget?
+2026-12-06,14:00,REEL,Årlig energiforskel,Hvor stor bliver forskellen på energiregningen på et helt år?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261206_reel#beregner-17,"Hvad betyder energien for dit årsbudget?
 
 Sammenhold de årlige energiudgifter i dine egne scenarier.
 
@@ -520,8 +570,8 @@ Direkte i browseren – uden login.
 En energiforskel er ikke automatisk en besparelse på hele bilbudgettet.
 
 #elbil #EVBeregner"
-2026-12-06,19:00,STORY,Årlig energiforskel,Hvad betyder energien for dit årsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261206_story#beregner-17,
-2026-12-07,10:00,POST,Besparelse pr. måned,Hvad svarer dit årsoverslag til pr. måned?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261207_post#beregner-20,"Hvad svarer dit årsoverslag til pr. måned?
+2026-12-06,19:00,STORY,Årlig energiforskel,Hvad betyder energien for dit årsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261206_story#beregner-17,
+2026-12-07,10:00,POST,Besparelse pr. måned,Hvad svarer dit årsoverslag til pr. måned?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261207_post#beregner-20,"Hvad svarer dit årsoverslag til pr. måned?
 
 Fordel en selvvalgt årlig besparelse på 12 måneder, og brug beløbet i dit budget.
 
@@ -532,7 +582,7 @@ Direkte i browseren – uden login.
 Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.
 
 #elbil #EVBeregner"
-2026-12-07,14:00,REEL,Besparelse pr. måned,Hvad svarer dit årsoverslag til pr. måned?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261207_reel#beregner-20,"Hvad svarer dit årsoverslag til pr. måned?
+2026-12-07,14:00,REEL,Besparelse pr. måned,Kan jeg bare dele min forventede besparelse med tolv?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261207_reel#beregner-20,"Hvad svarer dit årsoverslag til pr. måned?
 
 Fordel en selvvalgt årlig besparelse på 12 måneder, og brug beløbet i dit budget.
 
@@ -543,8 +593,8 @@ Direkte i browseren – uden login.
 Det er en fordeling af dit input, ikke en uafhængig garanti for besparelse.
 
 #elbil #EVBeregner"
-2026-12-07,19:00,STORY,Besparelse pr. måned,Hvad svarer dit årsoverslag til pr. måned?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261207_story#beregner-20,
-2026-12-08,10:00,POST,Længere tur,Skal du køre langt? Start med dit eget forbrug,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261208_post,"Skal du køre langt? Start med dit eget forbrug
+2026-12-07,19:00,STORY,Besparelse pr. måned,Hvad svarer dit årsoverslag til pr. måned?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261207_story#beregner-20,
+2026-12-08,10:00,POST,Længere tur,Skal du køre langt? Start med dit eget forbrug,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261208_post,"Skal du køre langt? Start med dit eget forbrug
 
 Regn på turens strømudgift med dine kilometer og dit forventede forbrug. Prøv et andet forbrug for at se forskellen.
 
@@ -555,7 +605,7 @@ Direkte i browseren – uden login.
 Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.
 
 #elbil #EVBeregner"
-2026-12-08,14:00,REEL,Længere tur,Skal du køre langt? Start med dit eget forbrug,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261208_reel,"Skal du køre langt? Start med dit eget forbrug
+2026-12-08,14:00,REEL,Længere tur,"Hvad koster weekendturen, hvis vi tager min bil?",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261208_reel,"Skal du køre langt? Start med dit eget forbrug
 
 Regn på turens strømudgift med dine kilometer og dit forventede forbrug. Prøv et andet forbrug for at se forskellen.
 
@@ -566,8 +616,8 @@ Direkte i browseren – uden login.
 Ladestop, kø, parkering og andre rejseudgifter indgår ikke automatisk i strømoverslaget.
 
 #elbil #EVBeregner"
-2026-12-08,19:00,STORY,Længere tur,Skal du køre langt? Start med dit eget forbrug,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261208_story,
-2026-12-09,10:00,POST,Energi til turen,Hvor mange kWh kræver køreturen?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261209_post#beregner-19,"Hvor mange kWh kræver køreturen?
+2026-12-08,19:00,STORY,Længere tur,Skal du køre langt? Start med dit eget forbrug,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261208_story,
+2026-12-09,10:00,POST,Energi til turen,Hvor mange kWh kræver køreturen?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261209_post#beregner-19,"Hvor mange kWh kræver køreturen?
 
 Se energibehovet til et selvvalgt antal kilometer og et selvvalgt forbrug.
 
@@ -578,7 +628,7 @@ Direkte i browseren – uden login.
 Energibehov er ikke det samme som en fuld rute- eller ladestopplan.
 
 #elbil #EVBeregner"
-2026-12-09,14:00,REEL,Energi til turen,Hvor mange kWh kræver køreturen?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261209_reel#beregner-19,"Hvor mange kWh kræver køreturen?
+2026-12-09,14:00,REEL,Energi til turen,"Hvor mange kWh kræver turen, før vi taler om kroner?",production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261209_reel#beregner-19,"Hvor mange kWh kræver køreturen?
 
 Se energibehovet til et selvvalgt antal kilometer og et selvvalgt forbrug.
 
@@ -589,8 +639,8 @@ Direkte i browseren – uden login.
 Energibehov er ikke det samme som en fuld rute- eller ladestopplan.
 
 #elbil #EVBeregner"
-2026-12-09,19:00,STORY,Energi til turen,Hvor mange kWh kræver køreturen?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261209_story#beregner-19,
-2026-12-10,10:00,POST,Værditab,Hvad betyder dit skøn over værditab?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261210_post#beregner-16,"Hvad betyder dit skøn over værditab?
+2026-12-09,19:00,STORY,Energi til turen,Hvor mange kWh kræver køreturen?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261209_story#beregner-19,
+2026-12-10,10:00,POST,Værditab,Hvad betyder dit skøn over værditab?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261210_post#beregner-16,"Hvad betyder dit skøn over værditab?
 
 Prøv at ændre købsprisen og perioden, og se hvordan det generelle estimat påvirker regnestykket.
 
@@ -601,7 +651,7 @@ Direkte i browseren – uden login.
 Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.
 
 #elbil #EVBeregner"
-2026-12-10,14:00,REEL,Værditab,Hvad betyder dit skøn over værditab?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261210_reel#beregner-16,"Hvad betyder dit skøn over værditab?
+2026-12-10,14:00,REEL,Værditab,Min bil står stille. Kan den stadig koste mig penge?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261210_reel#beregner-16,"Hvad betyder dit skøn over værditab?
 
 Prøv at ændre købsprisen og perioden, og se hvordan det generelle estimat påvirker regnestykket.
 
@@ -612,8 +662,8 @@ Direkte i browseren – uden login.
 Modellen er et generelt estimat og kan ikke forudsige den konkrete salgspris.
 
 #elbil #EVBeregner"
-2026-12-10,19:00,STORY,Værditab,Hvad betyder dit skøn over værditab?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261210_story#beregner-16,
-2026-12-11,10:00,POST,Historisk model,Brugt elbil? Brug din egen købspris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261211_post,"Brugt elbil? Brug din egen købspris
+2026-12-10,19:00,STORY,Værditab,Hvad betyder dit skøn over værditab?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261210_story#beregner-16,
+2026-12-11,10:00,POST,Historisk model,Brugt elbil? Brug din egen købspris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261211_post,"Brugt elbil? Brug din egen købspris
 
 Find en relevant historisk model, fx Kia e-Soul, når den findes i bilvalget, og indtast din faktiske købspris.
 
@@ -624,7 +674,7 @@ Direkte i browseren – uden login.
 Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.
 
 #elbil #EVBeregner"
-2026-12-11,14:00,REEL,Historisk model,Brugt elbil? Brug din egen købspris,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261211_reel,"Brugt elbil? Brug din egen købspris
+2026-12-11,14:00,REEL,Historisk model,Den brugte model er i kataloget. Er prisen stadig rigtig?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261211_reel,"Brugt elbil? Brug din egen købspris
 
 Find en relevant historisk model, fx Kia e-Soul, når den findes i bilvalget, og indtast din faktiske købspris.
 
@@ -635,8 +685,8 @@ Direkte i browseren – uden login.
 Historiske oplysninger er daterede, og manglende specifikationer må ikke gøres til nul.
 
 #elbil #EVBeregner"
-2026-12-11,19:00,STORY,Historisk model,Brugt elbil? Brug din egen købspris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261211_story,
-2026-12-12,10:00,POST,Ladetab,Hvad betyder ekstra strømforbrug ved opladning?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261212_post,"Hvad betyder ekstra strømforbrug ved opladning?
+2026-12-11,19:00,STORY,Historisk model,Brugt elbil? Brug din egen købspris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261211_story,
+2026-12-12,10:00,POST,Ladetab,Hvad betyder ekstra strømforbrug ved opladning?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261212_post,"Hvad betyder ekstra strømforbrug ved opladning?
 
 Prøv med og uden et selvvalgt ekstra strømforbrug, og se forskellen i prisen.
 
@@ -647,7 +697,7 @@ Direkte i browseren – uden login.
 Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.
 
 #elbil #EVBeregner"
-2026-12-12,14:00,REEL,Ladetab,Hvad betyder ekstra strømforbrug ved opladning?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261212_reel,"Hvad betyder ekstra strømforbrug ved opladning?
+2026-12-12,14:00,REEL,Ladetab,Hvorfor er måleren og bilens batteri ikke altid enige?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261212_reel,"Hvad betyder ekstra strømforbrug ved opladning?
 
 Prøv med og uden et selvvalgt ekstra strømforbrug, og se forskellen i prisen.
 
@@ -658,8 +708,8 @@ Direkte i browseren – uden login.
 Procenten er dit valg til eksemplet, ikke en påstand om alle ladere eller alle biler.
 
 #elbil #EVBeregner"
-2026-12-12,19:00,STORY,Ladetab,Hvad betyder ekstra strømforbrug ved opladning?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261212_story,
-2026-12-13,10:00,POST,To biler,Sammenlign to biler med samme forudsætninger,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261213_post,"Sammenlign to biler med samme forudsætninger
+2026-12-12,19:00,STORY,Ladetab,Hvad betyder ekstra strømforbrug ved opladning?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261212_story,
+2026-12-13,10:00,POST,To biler,Sammenlign to biler med samme forudsætninger,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261213_post,"Sammenlign to biler med samme forudsætninger
 
 Brug samme kilometer og energipriser, og tilpas bilernes egne forbrugstal, før du sammenligner.
 
@@ -670,7 +720,7 @@ Direkte i browseren – uden login.
 Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.
 
 #elbil #EVBeregner"
-2026-12-13,14:00,REEL,To biler,Sammenlign to biler med samme forudsætninger,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261213_reel,"Sammenlign to biler med samme forudsætninger
+2026-12-13,14:00,REEL,To biler,Vi overvejer to biler. Kan vi regne med de samme antagelser?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261213_reel,"Sammenlign to biler med samme forudsætninger
 
 Brug samme kilometer og energipriser, og tilpas bilernes egne forbrugstal, før du sammenligner.
 
@@ -681,8 +731,8 @@ Direkte i browseren – uden login.
 Vejledende katalogdata skal passe til den præcise variant, du vil undersøge.
 
 #elbil #EVBeregner"
-2026-12-13,19:00,STORY,To biler,Sammenlign to biler med samme forudsætninger,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261213_story,
-2026-12-14,10:00,POST,Dit værktøj,"Find den beregner, du faktisk har brug for",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261214_post,"Find den beregner, du faktisk har brug for
+2026-12-13,19:00,STORY,To biler,Sammenlign to biler med samme forudsætninger,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261213_story,
+2026-12-14,10:00,POST,Dit værktøj,"Find den beregner, du faktisk har brug for",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261214_post,"Find den beregner, du faktisk har brug for
 
 Vælg mellem de 20 beregnere, find din bil som udgangspunkt, eller brug dine egne tal.
 
@@ -693,7 +743,7 @@ Direkte i browseren – uden login.
 Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.
 
 #elbil #EVBeregner"
-2026-12-14,14:00,REEL,Dit værktøj,"Find den beregner, du faktisk har brug for",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261214_reel,"Find den beregner, du faktisk har brug for
+2026-12-14,14:00,REEL,Dit værktøj,Skal jeg kende alle tyve beregnere for at komme i gang?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261214_reel,"Find den beregner, du faktisk har brug for
 
 Vælg mellem de 20 beregnere, find din bil som udgangspunkt, eller brug dine egne tal.
 
@@ -704,8 +754,8 @@ Direkte i browseren – uden login.
 Vælg et værktøj, der dækker spørgsmålet; strømudgift og samlet ejerøkonomi er forskellige beregninger.
 
 #elbil #EVBeregner"
-2026-12-14,19:00,STORY,Dit værktøj,"Find den beregner, du faktisk har brug for",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261214_story,
-2026-12-15,10:00,POST,Bilvalg,Din elbil – eller din næste?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261215_post,"Din elbil – eller din næste?
+2026-12-14,19:00,STORY,Dit værktøj,"Find den beregner, du faktisk har brug for",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261214_story,
+2026-12-15,10:00,POST,Bilvalg,Din elbil – eller din næste?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261215_post,"Din elbil – eller din næste?
 
 Find din egen elbil eller en model, du overvejer at købe. Åbn modelsiden, se oplysningerne, og regn videre med dine egne tal.
 
@@ -716,7 +766,7 @@ Direkte i browseren – uden login.
 Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.
 
 #elbil #EVBeregner"
-2026-12-15,14:00,REEL,Bilvalg,Din elbil – eller din næste?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261215_reel,"Din elbil – eller din næste?
+2026-12-15,14:00,REEL,Bilvalg,Jeg har valgt en bil. Hvordan regner jeg videre med den?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261215_reel,"Din elbil – eller din næste?
 
 Find din egen elbil eller en model, du overvejer at købe. Åbn modelsiden, se oplysningerne, og regn videre med dine egne tal.
 
@@ -727,8 +777,8 @@ Direkte i browseren – uden login.
 Modelbilleder findes ikke til alle varianter; udstyr og farve kan afvige.
 
 #elbil #EVBeregner"
-2026-12-15,19:00,STORY,Bilvalg,Din elbil – eller din næste?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261215_story,
-2026-12-16,10:00,POST,Kilometerpris,Hvad koster strømmen til 100 km?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261216_post,"Hvad koster strømmen til 100 km?
+2026-12-15,19:00,STORY,Bilvalg,Din elbil – eller din næste?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261215_story,
+2026-12-16,10:00,POST,Kilometerpris,Hvad koster strømmen til 100 km?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261216_post,"Hvad koster strømmen til 100 km?
 
 Med 16 kWh/100 km og en valgt elpris på 2 kr./kWh er strømudgiften 32 kr. pr. 100 km. Prøv med dit eget forbrug og din samlede elpris.
 
@@ -739,7 +789,7 @@ Direkte i browseren – uden login.
 Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.
 
 #elbil #EVBeregner"
-2026-12-16,14:00,REEL,Kilometerpris,Hvad koster strømmen til 100 km?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261216_reel,"Hvad koster strømmen til 100 km?
+2026-12-16,14:00,REEL,Kilometerpris,"Samme bil, to elpriser. Hvorfor bliver kilometerprisen forskellig?",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261216_reel,"Hvad koster strømmen til 100 km?
 
 Med 16 kWh/100 km og en valgt elpris på 2 kr./kWh er strømudgiften 32 kr. pr. 100 km. Prøv med dit eget forbrug og din samlede elpris.
 
@@ -750,8 +800,8 @@ Direkte i browseren – uden login.
 Et regneeksempel på strømudgiften; bilens øvrige udgifter kommer oveni.
 
 #elbil #EVBeregner"
-2026-12-16,19:00,STORY,Kilometerpris,Hvad koster strømmen til 100 km?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261216_story,
-2026-12-17,10:00,POST,Køretur,Hvad koster weekendens eller hverdagens tur?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261217_post,"Hvad koster weekendens eller hverdagens tur?
+2026-12-16,19:00,STORY,Kilometerpris,Hvad koster strømmen til 100 km?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261216_story,
+2026-12-17,10:00,POST,Køretur,Hvad koster weekendens eller hverdagens tur?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261217_post,"Hvad koster weekendens eller hverdagens tur?
 
 Indtast turens kilometer, bilens forbrug og din elpris. Du kan vælge bilmodellen som udgangspunkt og rette tallene.
 
@@ -762,7 +812,7 @@ Direkte i browseren – uden login.
 Resultatet viser strømudgiften, ikke alle bilens omkostninger.
 
 #elbil #EVBeregner"
-2026-12-17,14:00,REEL,Køretur,Hvad koster weekendens eller hverdagens tur?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261217_reel,"Hvad koster weekendens eller hverdagens tur?
+2026-12-17,14:00,REEL,Køretur,Julebesøget er langt væk. Hvad bruger køreturen i strøm?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261217_reel,"Hvad koster weekendens eller hverdagens tur?
 
 Indtast turens kilometer, bilens forbrug og din elpris. Du kan vælge bilmodellen som udgangspunkt og rette tallene.
 
@@ -773,8 +823,8 @@ Direkte i browseren – uden login.
 Resultatet viser strømudgiften, ikke alle bilens omkostninger.
 
 #elbil #EVBeregner"
-2026-12-17,19:00,STORY,Køretur,Hvad koster weekendens eller hverdagens tur?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261217_story,
-2026-12-18,10:00,POST,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261218_post,"Hvad koster 20 til 80 procent?
+2026-12-17,19:00,STORY,Køretur,Hvad koster weekendens eller hverdagens tur?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/koeretur/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261217_story,
+2026-12-18,10:00,POST,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261218_post,"Hvad koster 20 til 80 procent?
 
 Vælg en bil, og tilpas batteri, startprocent, slutprocent, elpris og ekstra strømforbrug. Se prisen på netop dit regneeksempel.
 
@@ -785,7 +835,7 @@ Direkte i browseren – uden login.
 Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.
 
 #elbil #EVBeregner"
-2026-12-18,14:00,REEL,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261218_reel,"Hvad koster 20 til 80 procent?
+2026-12-18,14:00,REEL,Ladepris,Er det billigst at lade op nu eller på turen?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261218_reel,"Hvad koster 20 til 80 procent?
 
 Vælg en bil, og tilpas batteri, startprocent, slutprocent, elpris og ekstra strømforbrug. Se prisen på netop dit regneeksempel.
 
@@ -796,8 +846,8 @@ Direkte i browseren – uden login.
 Elprisen er din valgte pris, og batteridata skal passe til den mængde energi, du regner med.
 
 #elbil #EVBeregner"
-2026-12-18,19:00,STORY,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261218_story,
-2026-12-19,10:00,POST,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261219_post,"El eller benzin med dine egne tal?
+2026-12-18,19:00,STORY,Ladepris,Hvad koster 20 til 80 procent?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261218_story,
+2026-12-19,10:00,POST,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261219_post,"El eller benzin med dine egne tal?
 
 Sammenlign energiudgiften ved samme årlige kørsel. Indtast eget elforbrug, km/l, elpris og benzinpris.
 
@@ -808,7 +858,7 @@ Direkte i browseren – uden login.
 Energiforskellen er ikke en beregning af alle ejeromkostninger.
 
 #elbil #EVBeregner"
-2026-12-19,14:00,REEL,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261219_reel,"El eller benzin med dine egne tal?
+2026-12-19,14:00,REEL,El mod benzin,Benzinprisen ændrede sig. Ændrer det mit regnestykke?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261219_reel,"El eller benzin med dine egne tal?
 
 Sammenlign energiudgiften ved samme årlige kørsel. Indtast eget elforbrug, km/l, elpris og benzinpris.
 
@@ -819,8 +869,8 @@ Direkte i browseren – uden login.
 Energiforskellen er ikke en beregning af alle ejeromkostninger.
 
 #elbil #EVBeregner"
-2026-12-19,19:00,STORY,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261219_story,
-2026-12-20,10:00,POST,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261220_post,"Hvad gør højere forbrug ved rækkevidden?
+2026-12-19,19:00,STORY,El mod benzin,El eller benzin med dine egne tal?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/elbil-vs-benzin/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261219_story,
+2026-12-20,10:00,POST,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261220_post,"Hvad gør højere forbrug ved rækkevidden?
 
 Prøv to selvvalgte forbrugstal med samme batteri, og se forskellen i det matematiske overslag.
 
@@ -831,7 +881,7 @@ Direkte i browseren – uden login.
 Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.
 
 #elbil #EVBeregner"
-2026-12-20,14:00,REEL,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261220_reel,"Hvad gør højere forbrug ved rækkevidden?
+2026-12-20,14:00,REEL,Vinterforbrug,Hvorfor ændrer min forventede rækkevidde sig om vinteren?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261220_reel,"Hvad gør højere forbrug ved rækkevidden?
 
 Prøv to selvvalgte forbrugstal med samme batteri, og se forskellen i det matematiske overslag.
 
@@ -842,8 +892,8 @@ Direkte i browseren – uden login.
 Det er et regneeksempel, ikke en garanti for faktisk vinterrækkevidde.
 
 #elbil #EVBeregner"
-2026-12-20,19:00,STORY,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261220_story,
-2026-12-21,10:00,POST,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261221_post,"Regn på bilen, før du beslutter dig
+2026-12-20,19:00,STORY,Vinterforbrug,Hvad gør højere forbrug ved rækkevidden?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261220_story,
+2026-12-21,10:00,POST,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261221_post,"Regn på bilen, før du beslutter dig
 
 Find den model, du overvejer, og brug dens data som udgangspunkt. Ret især købspris, elpris og forbrug til dine forhold.
 
@@ -854,7 +904,7 @@ Direkte i browseren – uden login.
 Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.
 
 #elbil #EVBeregner"
-2026-12-21,14:00,REEL,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261221_reel,"Regn på bilen, før du beslutter dig
+2026-12-21,14:00,REEL,Bil før køb,"Skal jeg købe bilen, før jeg kan regne på den?",production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261221_reel,"Regn på bilen, før du beslutter dig
 
 Find den model, du overvejer, og brug dens data som udgangspunkt. Ret især købspris, elpris og forbrug til dine forhold.
 
@@ -865,8 +915,8 @@ Direkte i browseren – uden login.
 Katalogpriser er vejledende og er ikke nødvendigvis et aktuelt forhandlertilbud.
 
 #elbil #EVBeregner"
-2026-12-21,19:00,STORY,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261221_story,
-2026-12-22,10:00,POST,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261222_post,"Hvor lang tid skal bilen lade?
+2026-12-21,19:00,STORY,Bil før køb,"Regn på bilen, før du beslutter dig",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261221_story,
+2026-12-22,10:00,POST,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261222_post,"Hvor lang tid skal bilen lade?
 
 Tilpas batteri, start- og slutprocent og den gennemsnitlige ladeeffekt. Se et overslag over tiden.
 
@@ -877,7 +927,7 @@ Direkte i browseren – uden login.
 Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.
 
 #elbil #EVBeregner"
-2026-12-22,14:00,REEL,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261222_reel,"Hvor lang tid skal bilen lade?
+2026-12-22,14:00,REEL,Opladningstid,Laderen siger høj effekt. Er batteriet fuldt om et øjeblik?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261222_reel,"Hvor lang tid skal bilen lade?
 
 Tilpas batteri, start- og slutprocent og den gennemsnitlige ladeeffekt. Se et overslag over tiden.
 
@@ -888,8 +938,8 @@ Direkte i browseren – uden login.
 Bilens maksimale ladeeffekt er ikke en konstant effekt gennem hele opladningen.
 
 #elbil #EVBeregner"
-2026-12-22,19:00,STORY,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261222_story,
-2026-12-23,10:00,POST,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261223_post,"Batteri og forbrug: hvor langt rækker det?
+2026-12-22,19:00,STORY,Opladningstid,Hvor lang tid skal bilen lade?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/opladningstid/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261222_story,
+2026-12-23,10:00,POST,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261223_post,"Batteri og forbrug: hvor langt rækker det?
 
 Indtast den batterikapacitet og det forbrug, du vil regne med. Sammenlign flere scenarier.
 
@@ -900,7 +950,7 @@ Direkte i browseren – uden login.
 Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.
 
 #elbil #EVBeregner"
-2026-12-23,14:00,REEL,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261223_reel,"Batteri og forbrug: hvor langt rækker det?
+2026-12-23,14:00,REEL,Rækkevidde,Bilen har en WLTP-rækkevidde. Er det min faste hverdagsrækkevidde?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261223_reel,"Batteri og forbrug: hvor langt rækker det?
 
 Indtast den batterikapacitet og det forbrug, du vil regne med. Sammenlign flere scenarier.
 
@@ -911,8 +961,8 @@ Direkte i browseren – uden login.
 Beregnet rækkevidde er et matematisk overslag; kørselsforhold påvirker den faktiske rækkevidde.
 
 #elbil #EVBeregner"
-2026-12-23,19:00,STORY,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261223_story,
-2026-12-24,10:00,POST,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261224_post,"Hvor mange kWh bruger din elbil om året?
+2026-12-23,19:00,STORY,Rækkevidde,Batteri og forbrug: hvor langt rækker det?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/raekkevidde/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261223_story,
+2026-12-24,10:00,POST,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261224_post,"Hvor mange kWh bruger din elbil om året?
 
 Gang dine årlige kilometer med dit forventede forbrug. Beregneren viser dit årlige energibehov.
 
@@ -923,7 +973,7 @@ Direkte i browseren – uden login.
 Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.
 
 #elbil #EVBeregner"
-2026-12-24,14:00,REEL,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261224_reel,"Hvor mange kWh bruger din elbil om året?
+2026-12-24,14:00,REEL,Årligt strømforbrug,Hvor meget strøm kræver næste års pendling?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261224_reel,"Hvor mange kWh bruger din elbil om året?
 
 Gang dine årlige kilometer med dit forventede forbrug. Beregneren viser dit årlige energibehov.
 
@@ -934,8 +984,8 @@ Direkte i browseren – uden login.
 Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.
 
 #elbil #EVBeregner"
-2026-12-24,19:00,STORY,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261224_story,
-2026-12-25,10:00,POST,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261225_post,"Hvad betyder din ladepris for økonomien?
+2026-12-24,19:00,STORY,Årligt strømforbrug,Hvor mange kWh bruger din elbil om året?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261224_story,
+2026-12-25,10:00,POST,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261225_post,"Hvad betyder din ladepris for økonomien?
 
 Prøv to selvvalgte elpriser med samme bilforbrug. Se, hvordan strømudgiften pr. kilometer ændrer sig.
 
@@ -946,7 +996,7 @@ Direkte i browseren – uden login.
 De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.
 
 #elbil #EVBeregner"
-2026-12-25,14:00,REEL,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261225_reel,"Hvad betyder din ladepris for økonomien?
+2026-12-25,14:00,REEL,Din elaftale,Der er lav elafgift. Skal jeg stadig se på hele elregningen?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261225_reel,"Hvad betyder din ladepris for økonomien?
 
 Prøv to selvvalgte elpriser med samme bilforbrug. Se, hvordan strømudgiften pr. kilometer ændrer sig.
 
@@ -957,8 +1007,8 @@ Direkte i browseren – uden login.
 De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.
 
 #elbil #EVBeregner"
-2026-12-25,19:00,STORY,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261225_story,
-2026-12-26,10:00,POST,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261226_post,"Din bil – din ladepris
+2026-12-25,19:00,STORY,Din elaftale,Hvad betyder din ladepris for økonomien?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261225_story,
+2026-12-26,10:00,POST,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261226_post,"Din bil – din ladepris
 
 Vælg bilmodellen og regn videre på en delvis opladning. Ret elpris og ekstra strømforbrug til dit eksempel.
 
@@ -969,7 +1019,7 @@ Direkte i browseren – uden login.
 Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.
 
 #elbil #EVBeregner"
-2026-12-26,14:00,REEL,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261226_reel,"Din bil – din ladepris
+2026-12-26,14:00,REEL,Din bils opladning,Vi skal kun fra halvfuldt til næsten fuldt. Hvad koster den del?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261226_reel,"Din bil – din ladepris
 
 Vælg bilmodellen og regn videre på en delvis opladning. Ret elpris og ekstra strømforbrug til dit eksempel.
 
@@ -980,8 +1030,8 @@ Direkte i browseren – uden login.
 Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.
 
 #elbil #EVBeregner"
-2026-12-26,19:00,STORY,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261226_story,
-2026-12-27,10:00,POST,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261227_post#beregner-13,"Hvad fylder bilen i dit månedsbudget?
+2026-12-26,19:00,STORY,Din bils opladning,Din bil – din ladepris,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261226_story,
+2026-12-27,10:00,POST,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261227_post#beregner-13,"Hvad fylder bilen i dit månedsbudget?
 
 Saml de udgifter, du faktisk har til finansiering, forsikring, strøm og andet, i et månedsbudget.
 
@@ -992,7 +1042,7 @@ Direkte i browseren – uden login.
 Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.
 
 #elbil #EVBeregner"
-2026-12-27,14:00,REEL,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261227_reel#beregner-13,"Hvad fylder bilen i dit månedsbudget?
+2026-12-27,14:00,REEL,Månedsbudget,"Kan nytårsbudgettet holde til den bil, jeg overvejer?",production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261227_reel#beregner-13,"Hvad fylder bilen i dit månedsbudget?
 
 Saml de udgifter, du faktisk har til finansiering, forsikring, strøm og andet, i et månedsbudget.
 
@@ -1003,8 +1053,8 @@ Direkte i browseren – uden login.
 Brug konkrete udgifter fra dine egne aftaler, og undgå at tælle samme udgift to gange.
 
 #elbil #EVBeregner"
-2026-12-27,19:00,STORY,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261227_story#beregner-13,
-2026-12-28,10:00,POST,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261228_post,"Din bil. Din elpris. Dine tal.
+2026-12-27,19:00,STORY,Månedsbudget,Hvad fylder bilen i dit månedsbudget?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261227_story#beregner-13,
+2026-12-28,10:00,POST,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261228_post,"Din bil. Din elpris. Dine tal.
 
 Bilvalget er et udgangspunkt. Ret forbruget og elprisen, så beregningen passer til dig.
 
@@ -1015,7 +1065,7 @@ Direkte i browseren – uden login.
 Eksempelværdier er ikke et løfte om din faktiske strømudgift.
 
 #elbil #EVBeregner"
-2026-12-28,14:00,REEL,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261228_reel,"Din bil. Din elpris. Dine tal.
+2026-12-28,14:00,REEL,Egne tal,Giver et nyt forbrugstal en ny kilometerpris?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261228_reel,"Din bil. Din elpris. Dine tal.
 
 Bilvalget er et udgangspunkt. Ret forbruget og elprisen, så beregningen passer til dig.
 
@@ -1026,8 +1076,8 @@ Direkte i browseren – uden login.
 Eksempelværdier er ikke et løfte om din faktiske strømudgift.
 
 #elbil #EVBeregner"
-2026-12-28,19:00,STORY,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261228_story,
-2026-12-29,10:00,POST,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261229_post,"Leasing eller køb over samme periode?
+2026-12-28,19:00,STORY,Egne tal,Din bil. Din elpris. Dine tal.,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261228_story,
+2026-12-29,10:00,POST,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261229_post,"Leasing eller køb over samme periode?
 
 Medregn førstegangsydelse, den månedlige leasingydelse og dit eget skøn over bilens salgspris ved køb.
 
@@ -1038,7 +1088,7 @@ Direkte i browseren – uden login.
 Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.
 
 #elbil #EVBeregner"
-2026-12-29,14:00,REEL,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261229_reel,"Leasing eller køb over samme periode?
+2026-12-29,14:00,REEL,Leasing eller køb,Kører jeg for mange kilometer til det leasingtilbud?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261229_reel,"Leasing eller køb over samme periode?
 
 Medregn førstegangsydelse, den månedlige leasingydelse og dit eget skøn over bilens salgspris ved køb.
 
@@ -1049,8 +1099,8 @@ Direkte i browseren – uden login.
 Salgsprisen er et skøn, og relevante gebyrer og øvrige udgifter skal også med.
 
 #elbil #EVBeregner"
-2026-12-29,19:00,STORY,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261229_story,
-2026-12-30,10:00,POST,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261230_post,"Hvad koster bilen samlet over fem år?
+2026-12-29,19:00,STORY,Leasing eller køb,Leasing eller køb over samme periode?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/leasing-vs-koeb/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261229_story,
+2026-12-30,10:00,POST,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261230_post,"Hvad koster bilen samlet over fem år?
 
 Tag købspris, dit skøn over salgspris og de løbende udgifter med i regnestykket.
 
@@ -1061,7 +1111,7 @@ Direkte i browseren – uden login.
 Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.
 
 #elbil #EVBeregner"
-2026-12-30,14:00,REEL,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261230_reel,"Hvad koster bilen samlet over fem år?
+2026-12-30,14:00,REEL,Samlet biløkonomi,"Hvad glemmer jeg, når jeg kun ser på strømprisen?",production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261230_reel,"Hvad koster bilen samlet over fem år?
 
 Tag købspris, dit skøn over salgspris og de løbende udgifter med i regnestykket.
 
@@ -1072,8 +1122,8 @@ Direkte i browseren – uden login.
 Værditab og fremtidige udgifter er skøn, ikke en konkret markedsvurdering.
 
 #elbil #EVBeregner"
-2026-12-30,19:00,STORY,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261230_story,
-2026-12-31,10:00,POST,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261231_post#beregner-10,"Hvad bruger du på strøm derhjemme?
+2026-12-30,19:00,STORY,Samlet biløkonomi,Hvad koster bilen samlet over fem år?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/beregnere/samlet-biloekonomi/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261230_story,
+2026-12-31,10:00,POST,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261231_post#beregner-10,"Hvad bruger du på strøm derhjemme?
 
 Indtast dit årlige kørselsbehov, forbrug og en samlet elpris, som passer til din aftale.
 
@@ -1084,7 +1134,7 @@ Direkte i browseren – uden login.
 Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.
 
 #elbil #EVBeregner"
-2026-12-31,14:00,REEL,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261231_reel#beregner-10,"Hvad bruger du på strøm derhjemme?
+2026-12-31,14:00,REEL,Hjemmeladning,"Nyt år, flere kilometer. Giver hjemmeladning mening nu?",production_plan_only,METRICOOL_RESERVED_NOT_SCHEDULED,Do not duplicate in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261231_reel#beregner-10,"Hvad bruger du på strøm derhjemme?
 
 Indtast dit årlige kørselsbehov, forbrug og en samlet elpris, som passer til din aftale.
 
@@ -1095,4 +1145,4 @@ Direkte i browseren – uden login.
 Hjemmeladningens strømudgift omfatter ikke automatisk alle udgifter til installation og abonnement.
 
 #elbil #EVBeregner"
-2026-12-31,19:00,STORY,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261231_story#beregner-10,
+2026-12-31,19:00,STORY,Hjemmeladning,Hvad bruger du på strøm derhjemme?,production_plan_only,MANUAL_META_BUSINESS_SUITE,Upload the finished daily file and caption in Meta Business Suite,,,https://www.evberegn.dk/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202612&utm_content=20261231_story#beregner-10,

@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-11-23",
+  "topic": "Den lave elafgift og den samlede ladepris",
+  "status": "Gældende midlertidig regel i 2026–2027; ikke en ny udmelding 23. november",
+  "primary_source": "https://skat.dk/erhverv/afgifter-paa-varer-og-ydelser-punktafgifter/nyhedsbrev-afgifter/midlertidig-nedsaettelse-af-elafgiften-i-2026-og-2027",
+  "source_published": "2026-01-01",
+  "legislative_source": "https://www.ft.dk/samling/20251/lovforslag/L24/index.htm",
+  "legislative_status": "Stadfæstet; lov nr. 1775 af 29. december 2025",
+  "valid_from": "2026-01-01",
+  "valid_through": "2027-12-31",
+  "verified_claim": "Den almindelige elafgift er midlertidigt nedsat til 0,8 øre/kWh i perioden. Afgiftssatsen er ikke den samlede forbrugerpris pr. kWh.",
+  "film_claim": "Brug din samlede elpris; strøm, net og moms skal med.",
+  "not_claimed": ["gratis opladning", "samme ladepris for alle", "fuld refusion af hele elprisen", "ny aftale indgået i dag", "konkret besparelse for en bestemt person"],
+  "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/",
+  "publication_recheck": "Genkontrollér primær kilde og eventuelle nye ændringer højst 48 timer før udgivelse."
+}

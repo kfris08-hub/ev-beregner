@@ -1,0 +1,242 @@
+{
+  "roles": {
+    "A": {
+      "name": "Nanna",
+      "voice": "Google Translate TTS / da",
+      "provider": "gTTS"
+    },
+    "B": {
+      "name": "Mikkel",
+      "voice": "da-DK-JeppeNeural"
+    }
+  },
+  "films": [
+    {
+      "date": "2026-11-24",
+      "id": "aarsforbrug",
+      "theme": "Årligt strømforbrug",
+      "destination": "https://www.evberegn.dk/beregnere/stroemforbrug-elbil/",
+      "calculator": 9,
+      "turns": [
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Hvad bruger en elbil i strøm på et helt år?",
+              "Hvad bruger en elbil\ni strøm på et helt år?"
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Det afhænger af dine kilometer og bilens forbrug.",
+              "Det afhænger af dine\nkilometer og bilens forbrug."
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Så jeg kan ikke bare låne naboens tal?",
+              "Så jeg kan ikke bare\nlåne naboens tal?"
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Brug din egen kørsel.",
+              "Brug din egen kørsel."
+            ],
+            [
+              "Vælg bilen, og indtast dine kilometer.",
+              "Vælg bilen, og indtast\ndine kilometer."
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Det vil jeg regne på, før jeg vælger bil.",
+              "Det vil jeg regne på,\nfør jeg vælger bil."
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Prøv e ve beregner.",
+              "Prøv EV Beregner."
+            ],
+            [
+              "Det er en gratis hjemmeside uden login.",
+              "Det er en gratis\nhjemmeside uden login."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "id": "elafgift",
+      "theme": "Din elaftale og den lave elafgift",
+      "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/",
+      "calculator": 2,
+      "news_source": "https://skat.dk/erhverv/afgifter-paa-varer-og-ydelser-punktafgifter/nyhedsbrev-afgifter/midlertidig-nedsaettelse-af-elafgiften-i-2026-og-2027",
+      "news_status": "Current rule for 2026–2027, verified 23 November; not a breaking announcement",
+      "turns": [
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Elafgiften er sat ned.",
+              "Elafgiften er sat ned."
+            ],
+            [
+              "Hvad betyder det for min elbil?",
+              "Hvad betyder det\nfor min elbil?"
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Brug din samlede elpris.",
+              "Brug din samlede elpris."
+            ],
+            [
+              "Strøm, net og moms skal med.",
+              "Strøm, net og moms\nskal med."
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Så jeg skal stadig regne på mine ture?",
+              "Så jeg skal stadig\nregne på mine ture?"
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Ja. Vælg din bil,",
+              "Ja. Vælg din bil,"
+            ],
+            [
+              "og brug dit forbrug og din egen elpris.",
+              "og brug dit forbrug\nog din egen elpris."
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Hvor gør jeg det?",
+              "Hvor gør jeg det?"
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "På e ve beregners hjemmeside.",
+              "På EV Beregners\nhjemmeside."
+            ],
+            [
+              "Gratis og uden login.",
+              "Gratis og uden login."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "id": "delvis-opladning",
+      "theme": "Din bils opladning",
+      "destination": "https://www.evberegn.dk/beregnere/ladepris/",
+      "calculator": 1,
+      "turns": [
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Betaler jeg for et helt batteri,",
+              "Betaler jeg for\net helt batteri,"
+            ],
+            [
+              "når jeg kun lader lidt?",
+              "når jeg kun lader lidt?"
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Du regner på forskellen mellem start og slut.",
+              "Du regner på forskellen\nmellem start og slut."
+            ],
+            [
+              "Og på din egen elpris.",
+              "Og på din egen elpris."
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Kan jeg bruge den bil, jeg overvejer?",
+              "Kan jeg bruge den bil,\njeg overvejer?"
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Ja. Vælg modellen, og tjek batterikapaciteten.",
+              "Ja. Vælg modellen, og\ntjek batterikapaciteten."
+            ]
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            [
+              "Så kan jeg regne på min egen opladning?",
+              "Så kan jeg regne på\nmin egen opladning?"
+            ]
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            [
+              "Prøv e ve beregner.",
+              "Prøv EV Beregner."
+            ],
+            [
+              "Hjemmesiden er gratis og uden login.",
+              "Hjemmesiden er gratis\nog uden login."
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
