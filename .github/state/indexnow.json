@@ -5,7 +5,7 @@
       "images": []
     },
     "https://www.evberegn.dk/elbil/": {
-      "lastmod": "2026-11-23",
+      "lastmod": "2026-11-24",
       "images": []
     },
     "https://www.evberegn.dk/elbil/opel-rocks-electric-rocks-electric/": {
@@ -1258,8 +1258,8 @@
     }
   },
   "last_submission": {
-    "checked_at": "2026-11-23T16:25:58.511963+00:00",
-    "submitted": 2,
+    "checked_at": "2026-11-24T16:20:14.508821+00:00",
+    "submitted": 1,
     "http_status": 200,
     "meaning": "Received, not a confirmation of indexing",
     "google_submission": false
