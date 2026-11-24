@@ -1,10 +1,6 @@
 {
-  "updated_models": [
-    "dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451"
-  ],
-  "new_models": [
-    "dacia-spring-journey-60-kw-27-5-kwh-lfp-c6850451"
-  ],
+  "updated_models": [],
+  "new_models": [],
   "unmatched_existing_variants": [
     {
       "family": "Audi Q4 e-tron",
@@ -313,7 +309,7 @@
     }
   ],
   "quarantine": [],
-  "checked_at": "2026-11-23T13:37:21.118621+00:00",
+  "checked_at": "2026-11-24T14:14:44.630536+00:00",
   "sources": [
     {
       "id": "retail-Junior",
