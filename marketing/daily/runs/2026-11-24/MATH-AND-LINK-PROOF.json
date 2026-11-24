@@ -1,0 +1,80 @@
+{
+  "source": "Current GitHub main arithmetic, retrieved via connector after direct HTTP sandbox block",
+  "annual": {
+    "yearly": 3200,
+    "monthly": 266.6666666666667,
+    "daily": 8.767123287671232
+  },
+  "price_per_km": {
+    "low": {
+      "perKm": 0.32,
+      "per100": 32
+    },
+    "high": {
+      "perKm": 0.64,
+      "per100": 64
+    }
+  },
+  "charging_feature_example": {
+    "batteryEnergy": 36,
+    "paidEnergy": 36,
+    "total": 72
+  },
+  "links": [
+    {
+      "date": "2026-11-24",
+      "type": "POST",
+      "destination": "https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_post#s=1&k=9&annualKm=20000&consumption=16",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "REEL",
+      "destination": "https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_reel#s=1&k=9&annualKm=20000&consumption=16",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "STORY",
+      "destination": "https://www.evberegn.dk/beregnere/stroemforbrug-elbil/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261124_story#s=1&k=9&annualKm=20000&consumption=16",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "POST",
+      "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_post#s=1&k=2&consumption=16&electricPrice=2",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "REEL",
+      "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_reel#s=1&k=2&consumption=16&electricPrice=2",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "STORY",
+      "destination": "https://www.evberegn.dk/beregnere/pris-pr-km/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261125_story#s=1&k=2&consumption=16&electricPrice=2",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "POST",
+      "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_post",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "REEL",
+      "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_reel",
+      "utm_and_shared_fragment": "PASS"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "STORY",
+      "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_story",
+      "utm_and_shared_fragment": "PASS"
+    }
+  ],
+  "advertised_math": "PASS"
+}

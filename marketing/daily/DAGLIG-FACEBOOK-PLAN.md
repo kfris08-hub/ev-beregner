@@ -33,7 +33,7 @@ Status er senest dokumenterede kontrol. Manual betyder ikke, at ejeren endnu ikk
 | 2026-11-23 | Rækkevidde | 10:00 · Metricool-aftale · PUBLISHED | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
 | 2026-11-24 | Årligt strømforbrug | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · Metricool-aftale · PENDING | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
 | 2026-11-25 | Din elaftale | 10:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 14:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
-| 2026-11-26 | Din bils opladning | 13:00 · manuel Meta · production_plan_only | 10:00 · Metricool-aftale · PENDING | 19:00 · manuel Meta · production_plan_only |
+| 2026-11-26 | Din bils opladning | 13:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER | 10:00 · Metricool-aftale · PENDING | 19:00 · manuel Meta · MATERIALER_KLAR_UDGIVELSE_AFVENTER |
 | 2026-11-27 | Månedsbudget | 10:00 · manuel Meta · production_plan_only | 14:00 · Metricool-reservation · production_plan_only | 19:00 · manuel Meta · production_plan_only |
 | 2026-11-28 | Egne tal | 10:00 · Metricool-aftale · PENDING | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |
 | 2026-11-29 | Leasing eller køb | 10:00 · manuel Meta · production_plan_only | 14:00 · manuel Meta · production_plan_only | 19:00 · manuel Meta · production_plan_only |

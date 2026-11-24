@@ -1,0 +1,210 @@
+[
+  {
+    "type": "POST",
+    "file": "/workspace/evberegn-marketing/daily/runs/2026-11-24/output/2026-11-26-post.jpg",
+    "size": [
+      1080,
+      1350
+    ],
+    "text_bounds": [
+      {
+        "text": "EV Beregner",
+        "bounds": [
+          412.0,
+          78,
+          668.0,
+          118
+        ],
+        "font_size": 42
+      },
+      {
+        "text": "Du lader en del.",
+        "bounds": [
+          282.0,
+          198,
+          798.0,
+          250
+        ],
+        "font_size": 66
+      },
+      {
+        "text": "Regn på den del.",
+        "bounds": [
+          267.5,
+          291,
+          812.5,
+          363
+        ],
+        "font_size": 66
+      },
+      {
+        "text": "VALGTE PROCENTER",
+        "bounds": [
+          392.0,
+          481,
+          688.0,
+          503
+        ],
+        "font_size": 30
+      },
+      {
+        "text": "Brug din bil og din samlede elpris.",
+        "bounds": [
+          193.0,
+          792,
+          887.0,
+          833
+        ],
+        "font_size": 41
+      },
+      {
+        "text": "Tilpas start og slut, når du regner.",
+        "bounds": [
+          219.0,
+          862,
+          861.0,
+          903
+        ],
+        "font_size": 38
+      },
+      {
+        "text": "evberegn.dk",
+        "bounds": [
+          300.5,
+          1060,
+          779.5,
+          1138
+        ],
+        "font_size": 77
+      },
+      {
+        "text": "Gratis · uden login",
+        "bounds": [
+          380.5,
+          1176,
+          699.5,
+          1212
+        ],
+        "font_size": 35
+      },
+      {
+        "text": "Regneoverslag over strøm – ikke alle ejerudgifter.",
+        "bounds": [
+          218.0,
+          1262,
+          862.0,
+          1289
+        ],
+        "font_size": 26
+      }
+    ],
+    "photo_credits_required": false,
+    "original_typographic_diagram": true,
+    "website_UI": false,
+    "sha256": "0fbd6f9057105d166b418d062653edb322e3df5e64a30c3a8ed35ab147d4ab30"
+  },
+  {
+    "type": "STORY",
+    "file": "/workspace/evberegn-marketing/daily/runs/2026-11-24/output/2026-11-26-story.jpg",
+    "size": [
+      1080,
+      1920
+    ],
+    "text_bounds": [
+      {
+        "text": "EV Beregner",
+        "bounds": [
+          412.0,
+          303,
+          668.0,
+          343
+        ],
+        "font_size": 42
+      },
+      {
+        "text": "En delvis opladning?",
+        "bounds": [
+          230.0,
+          428,
+          850.0,
+          489
+        ],
+        "font_size": 61
+      },
+      {
+        "text": "VALGTE PROCENTER",
+        "bounds": [
+          392.0,
+          624,
+          688.0,
+          646
+        ],
+        "font_size": 30
+      },
+      {
+        "text": "Brug dine egne",
+        "bounds": [
+          369.0,
+          940,
+          711.0,
+          985
+        ],
+        "font_size": 45
+      },
+      {
+        "text": "start- og slutprocenter.",
+        "bounds": [
+          280.5,
+          1006,
+          799.5,
+          1051
+        ],
+        "font_size": 45
+      },
+      {
+        "text": "Regn på din bil på hjemmesiden",
+        "bounds": [
+          261.0,
+          1210,
+          819.0,
+          1250
+        ],
+        "font_size": 35
+      },
+      {
+        "text": "evberegn.dk",
+        "bounds": [
+          310.0,
+          1304,
+          770.0,
+          1378
+        ],
+        "font_size": 74
+      },
+      {
+        "text": "Gratis · uden login",
+        "bounds": [
+          380.5,
+          1421,
+          699.5,
+          1457
+        ],
+        "font_size": 35
+      },
+      {
+        "text": "Valgte procenter. Et regneoverslag.",
+        "bounds": [
+          303.5,
+          1510,
+          776.5,
+          1537
+        ],
+        "font_size": 27
+      }
+    ],
+    "photo_credits_required": false,
+    "original_typographic_diagram": true,
+    "website_UI": false,
+    "sha256": "da53249bb569e3984592eb0b9865713fb1d9576290cb22b90db102a5f57c954b"
+  }
+]

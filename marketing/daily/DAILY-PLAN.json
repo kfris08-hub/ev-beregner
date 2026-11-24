@@ -911,7 +911,7 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload manuelt i Meta, hvis pladsen ikke allerede er brugt.",
+          "owner_action": "Ejeren lægger filen i Meta, hvis pladsen ikke allerede er brugt.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -924,9 +924,12 @@
             "no_extra_publication": true
           },
           "media_path": "marketing/daily/runs/2026-11-22/2026-11-24/MANUELT-I-META/10.00-POST.jpg",
-          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-22/2026-11-24/MANUELT-I-META/10.00-POST.jpg",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-24/MANUELT-I-META/10.00-POST.jpg",
           "production_receipt": "marketing/daily/runs/2026-11-22/RENDER-PROOF.json",
-          "schedule_attempt_status": "MANUAL_ROUTE"
+          "schedule_attempt_status": "MANUAL_ROUTE",
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         },
         {
           "date": "2026-11-24",
@@ -963,13 +966,15 @@
             "central_role": "Woman as chooser, driver or knowledgeable explainer; vary roles"
           },
           "media_path": null,
-          "local_workspace_path": "/workspace/evberegn-marketing/reels/samtale-serie-20261123/aarsforbrug/EV-Beregner-aarsforbrug-dialog.mp4",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-24/METRICOOL-MA-IKKE-DUPLIKERES/14.00-REEL.mp4",
           "production_receipt": "/workspace/evberegn-marketing/reels/samtale-serie-20261123/aarsforbrug/QUALITY.json",
           "schedule_attempt_status": "VERIFIED_CALENDAR_READBACK",
-          "last_calendar_check": "2026-11-23T08:18:27.492423+00:00",
+          "last_calendar_check": "2026-11-24T09:02:15.956723+00:00",
           "replacement_delivery_required": false,
           "plannerUrl": null,
-          "creative_update_status": "NEW_DIALOGUE_MEDIA_VERIFIED_IN_CALENDAR"
+          "creative_update_status": "NEW_DIALOGUE_MEDIA_VERIFIED_IN_CALENDAR",
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         },
         {
           "date": "2026-11-24",
@@ -990,7 +995,7 @@
           "quality_note": "Et årsoverslag fortæller ikke præcist, hvornår bilen bliver ladet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload manuelt i Meta, hvis pladsen ikke allerede er brugt.",
+          "owner_action": "Ejeren lægger filen i Meta, hvis pladsen ikke allerede er brugt.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -1003,9 +1008,12 @@
             "no_extra_publication": true
           },
           "media_path": "marketing/daily/runs/2026-11-22/2026-11-24/MANUELT-I-META/19.00-STORY.jpg",
-          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-22/2026-11-24/MANUELT-I-META/19.00-STORY.jpg",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-24/MANUELT-I-META/19.00-STORY.jpg",
           "production_receipt": "marketing/daily/runs/2026-11-22/RENDER-PROOF.json",
-          "schedule_attempt_status": "MANUAL_ROUTE"
+          "schedule_attempt_status": "MANUAL_ROUTE",
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         }
       ]
     },
@@ -1032,7 +1040,7 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload manuelt i Meta, hvis du ikke allerede har planlagt pladsen.",
+          "owner_action": "Ejeren lægger filen i Meta, hvis pladsen ikke allerede er brugt.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -1045,10 +1053,12 @@
             "no_extra_publication": true
           },
           "media_path": "marketing/daily/runs/2026-11-23/2026-11-25/MANUELT-I-META/10.00-POST.jpg",
-          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-23/2026-11-25/MANUELT-I-META/10.00-POST.jpg",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-25/MANUELT-I-META/10.00-POST.jpg",
           "production_receipt": "marketing/daily/runs/2026-11-23/RENDER-PROOF.json",
           "schedule_attempt_status": "MANUAL_ROUTE",
-          "artifact_storage": "WORKSPACE_DELIVERY_ZIP; not uploaded to GitHub"
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         },
         {
           "date": "2026-11-25",
@@ -1069,7 +1079,7 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "UDSKIFT_MEDIET_I_META_HVIS_ALLEREDE_PLANLAGT; opret ikke en ekstra Reel på samme plads.",
+          "owner_action": "UDSKIFT_MEDIET_I_META_HVIS_ALLEREDE_PLANLAGT. Ny dialogversion; opret ikke en ekstra Reel.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -1083,11 +1093,13 @@
             "central_role": "Woman as chooser, driver or knowledgeable explainer; vary roles"
           },
           "media_path": null,
-          "local_workspace_path": "/workspace/evberegn-marketing/reels/samtale-serie-20261123/elafgift/EV-Beregner-elafgift-dialog.mp4",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-25/MANUELT-I-META/14.00-REEL.mp4",
           "production_receipt": "/workspace/evberegn-marketing/reels/samtale-serie-20261123/elafgift/QUALITY.json",
           "schedule_attempt_status": "MANUAL_ROUTE",
-          "artifact_storage": "WORKSPACE_DELIVERY_ZIP; not uploaded to GitHub",
-          "replacement_delivery_required": false
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "replacement_delivery_required": false,
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         },
         {
           "date": "2026-11-25",
@@ -1108,7 +1120,7 @@
           "quality_note": "De valgte elpriser er regneeksempler, ikke live tilbud fra ladeudbydere.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload manuelt i Meta, hvis du ikke allerede har planlagt pladsen.",
+          "owner_action": "Ejeren lægger filen i Meta, hvis pladsen ikke allerede er brugt.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -1121,10 +1133,12 @@
             "no_extra_publication": true
           },
           "media_path": "marketing/daily/runs/2026-11-23/2026-11-25/MANUELT-I-META/19.00-STORY.jpg",
-          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-23/2026-11-25/MANUELT-I-META/19.00-STORY.jpg",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-25/MANUELT-I-META/19.00-STORY.jpg",
           "production_receipt": "marketing/daily/runs/2026-11-23/RENDER-PROOF.json",
           "schedule_attempt_status": "MANUAL_ROUTE",
-          "artifact_storage": "WORKSPACE_DELIVERY_ZIP; not uploaded to GitHub"
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         }
       ]
     },
@@ -1140,18 +1154,18 @@
           "theme": "Din bils opladning",
           "title": "Din bil – din ladepris",
           "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_post",
-          "caption": "Din bil – din ladepris\n\nVælg bilmodellen og regn videre på en delvis opladning. Ret elpris og ekstra strømforbrug til dit eksempel.\n\nPrøv gratis på hjemmesiden: https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_post\n\nDirekte i browseren – uden login.\n\nBatteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.\n\n#elbil #EVBeregner",
-          "status": "production_plan_only",
+          "caption": "Lader du kun en del af batteriet op? Regn på den del. ⚡\n\nPrøv på hjemmesiden:\nhttps://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_post\n\nVælg din egen elbil eller en model, du overvejer. Kontrollér batterikapaciteten, og indtast startprocent, slutprocent, din samlede elpris og et eventuelt skøn over ekstra strømforbrug.\n\nBilledets 20 % → 80 % er valgte procenter, ikke en anbefaling til alle biler. Brutto- og brugbar batterikapacitet kan være forskellige. Ladetab skal ikke tælles to gange, hvis de allerede indgår i dine tal.\n\nResultatet er et regneoverslag over strømudgiften, ikke hele bilbudgettet eller et aktuelt tilbud. EV Beregner er gratis direkte i browseren uden login.\n\nLike og følg Facebook-siden for flere enkle forklaringer om elbil og økonomi.\n#elbil #opladning #EVBeregner\n",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "original_typographic_still",
           "heygen_generation_allowed": false,
           "format": "1080x1350 image or useful feed text",
-          "visual_brief": "Vis én konkret side og et kort forklarende budskab.",
+          "visual_brief": "Original dark/turquoise still diagram. Selected 20–80 percent example, no invented UI or model imagery.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "owner_action": "Ejeren lægger filen i Meta, hvis pladsen ikke allerede er brugt.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -1162,7 +1176,12 @@
             "production_note": "Two fictional adults; measured Danish dialogue; no website UI; controlled captions; domain and like/follow at end. New actual footage only within rights and quota.",
             "news_gate": "Verify a primary source, date and proposal/agreement/passed/effective status within 48 hours if news is used; otherwise use the evergreen question.",
             "no_extra_publication": true
-          }
+          },
+          "production_receipt": "marketing/daily/runs/2026-11-24/STILL-RENDER-PROOF.json",
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-26/MANUELT-I-META/13.00-POST.jpg",
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         },
         {
           "date": "2026-11-26",
@@ -1200,12 +1219,15 @@
             "central_role": "Vary adult roles without gender stereotypes"
           },
           "creative_update_status": "NEW_DIALOGUE_MEDIA_VERIFIED_IN_CALENDAR",
-          "local_workspace_path": "/workspace/evberegn-marketing/reels/samtale-serie-20261123/delvis-opladning/EV-Beregner-delvis-opladning-dialog.mp4",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-26/METRICOOL-MA-IKKE-DUPLIKERES/10.00-REEL.mp4",
           "media_path": null,
           "production_receipt": "/workspace/evberegn-marketing/reels/samtale-serie-20261123/delvis-opladning/QUALITY.json",
           "replacement_delivery_required": false,
           "schedule_attempt_status": "VERIFIED_CALENDAR_READBACK",
-          "plannerUrl": null
+          "plannerUrl": null,
+          "last_calendar_check": "2026-11-24T09:02:15.956723+00:00",
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         },
         {
           "date": "2026-11-26",
@@ -1216,17 +1238,17 @@
           "title": "Din bil – din ladepris",
           "destination": "https://www.evberegn.dk/beregnere/ladepris/?utm_source=facebook&utm_medium=organic_social&utm_campaign=daglig_202611&utm_content=20261126_story",
           "caption": "",
-          "status": "production_plan_only",
+          "status": "MATERIALER_KLAR_UDGIVELSE_AFVENTER",
           "existing_id": null,
           "existing_uuid": null,
-          "production": "original_non_heygen",
+          "production": "original_typographic_still",
           "heygen_generation_allowed": false,
           "format": "one static 1080x1920 image, facebookData.type=STORY, visible 24 hours",
-          "visual_brief": "Ét lodret stillbillede med dagens spørgsmål, en rigtig model-/beregnervisning og evberegn.dk. Ingen Reel-publicering.",
+          "visual_brief": "Original dark/turquoise still diagram. Selected 20–80 percent example, no invented UI or model imagery.",
           "quality_note": "Batteriets brutto-/nettobasis kan være ukendt; kontrollér bilens konkrete kapacitet.",
           "existing_media": [],
           "publication_route": "MANUAL_META_BUSINESS_SUITE",
-          "owner_action": "Upload the finished daily file and caption in Meta Business Suite",
+          "owner_action": "Ejeren lægger filen i Meta, hvis pladsen ikke allerede er brugt.",
           "creative_brief": {
             "version": "REEL-RETNING-20261123",
             "source": "marketing/creative/REEL-RETNING-20261123.md",
@@ -1237,7 +1259,12 @@
             "production_note": "Two fictional adults; measured Danish dialogue; no website UI; controlled captions; domain and like/follow at end. New actual footage only within rights and quota.",
             "news_gate": "Verify a primary source, date and proposal/agreement/passed/effective status within 48 hours if news is used; otherwise use the evergreen question.",
             "no_extra_publication": true
-          }
+          },
+          "production_receipt": "marketing/daily/runs/2026-11-24/STILL-RENDER-PROOF.json",
+          "manual_publication_status": "UNKNOWN_NATIVE_META_NOT_CONNECTED",
+          "local_workspace_path": "/workspace/evberegn-marketing/daily/runs/2026-11-24/2026-11-26/MANUELT-I-META/19.00-STORY.jpg",
+          "artifact_storage": "WORKSPACE_DAILY_ZIP; binary not uploaded to GitHub",
+          "last_material_check": "2026-11-24T09:02:15.956723+00:00"
         }
       ]
     },
@@ -4886,7 +4913,21 @@
     ],
     "rule": "Only locally allocated Metricool slots may be auto-scheduled, within the actual free quota. Reserved does not mean scheduled."
   },
-  "latest_production_run": "marketing/daily/runs/2026-11-23/READY-CONTENT.json",
+  "latest_production_run": {
+    "date": "2026-11-24",
+    "material_dates": [
+      "2026-11-24",
+      "2026-11-25",
+      "2026-11-26"
+    ],
+    "new_stills": 2,
+    "reused_stills": 4,
+    "reused_dialogue_reels": 3,
+    "new_Metricool_posts": 0,
+    "new_HeyGen_jobs": 0,
+    "first_incomplete_material_day": "2026-11-27",
+    "daily_target_preserved": true
+  },
   "creative_direction": {
     "version": "REEL-RETNING-20261123",
     "owner_instruction_date": "2026-11-23",
